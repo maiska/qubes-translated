@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: Qrexec3
-permalink: /doc/qrexec3/
+permalink: /de/doc/qrexec3/
+lang: de
+ref: 162
 redirect_from:
 - /en/doc/qrexec3/
 - /doc/Qrexec3/
@@ -19,7 +21,7 @@ redirect_from:
 # Command execution in VMs #
 
 (*This page is about qrexec v3. For qrexec v2, see
-[here](/doc/qrexec2/).*)
+[here](/de/doc/qrexec2/).*)
 
 The **qrexec** framework is used by core Qubes components to implement
 communication between domains. Qubes domains are isolated by design, but
@@ -386,7 +388,7 @@ no separate client script will be used.
 # Qubes RPC internals #
 
 (*This is about the implementation of qrexec v3. For the implementation of
-qrexec v2, see [here](/doc/qrexec2/#qubes-rpc-internals).*)
+qrexec v2, see [here](/de/doc/qrexec2/#qubes-rpc-internals).*)
 
 Qrexec framework consists of a number of processes communicating with each
 other using common IPC protocol (described in detail below). Components

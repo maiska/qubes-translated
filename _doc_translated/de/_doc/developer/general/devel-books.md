@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: Developer Books
-permalink: /doc/devel-books/
+permalink: /de/doc/devel-books/
+lang: de
+ref: 190
 redirect_from:
 - /en/doc/devel-books/
 - /doc/DevelBooks/
@@ -26,4 +28,4 @@ Below is a list of various books that might be useful in learning some basics ne
 - Useful books about Python:
   * _[Programming in Python 3](http://www.qtrac.eu/py3book.html)_, by Mark Summerfield
   * _[Rapid GUI Programming with Python and Qt](http://www.qtrac.eu/pyqtbook.html)_, by Mark Summerfield
-    (Although note that [Qt is being replaced by GTK](/doc/usability-ux/#gnome-kde-and-xfce) in Qubes code.)
+    (Although note that [Qt is being replaced by GTK](/de/doc/usability-ux/#gnome-kde-and-xfce) in Qubes code.)

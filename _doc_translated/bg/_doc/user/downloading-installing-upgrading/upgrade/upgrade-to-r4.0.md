@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: Upgrading to R4.0
-permalink: /doc/upgrade-to-r4.0/
+permalink: /bg/doc/upgrade-to-r4.0/
+lang: bg
+ref: 40
 redirect_from:
 - /en/doc/upgrade-to-r4.0/
 - /doc/UpgradeToR4.0/
@@ -11,7 +13,7 @@ redirect_from:
 Upgrading Qubes R3.2 to R4.0
 ============================
 
-**Before attempting either an in-place upgrade or a clean installation, we strongly recommend that users [back up their systems](/doc/backup-restore/).**
+**Before attempting either an in-place upgrade or a clean installation, we strongly recommend that users [back up their systems](/bg/doc/backup-restore/).**
 
 Current Qubes R3.2 systems cannot be upgraded in-place to R4.0.
 A full backup, clean 4.0 install, and restore is required.
@@ -21,7 +23,7 @@ This can be done by following the procedure below.
 Preparation
 -----------
 
-1. Go to [downloads](/downloads/) and prepare a USB drive or DVD with the R4.0 installer.
+1. Go to [downloads](/bg/downloads/) and prepare a USB drive or DVD with the R4.0 installer.
 
 2. If this is your only computer, and you do not have a R3.2 installer, you should also create a separate R3.2 USB drive or DVD installer at this time.
 
@@ -35,23 +37,23 @@ Backup R3.2
 2. Shutdown all non-essential VMs.
    Typically, `sys-usb` will be the only VM you need to leave running.
 
-3. Follow the **Creating a Backup** section in the [Backup, Restoration, and Migration](/doc/backup-restore/) guide to back up **all VMs** except sys-usb. 
+3. Follow the **Creating a Backup** section in the [Backup, Restoration, and Migration](/bg/doc/backup-restore/) guide to back up **all VMs** except sys-usb. 
 
-6. Verify the integrity of your backup by following the **Restoring from a Backup** section in the [Backup, Restoration, and Migration](/doc/backup-restore/) guide and:
+6. Verify the integrity of your backup by following the **Restoring from a Backup** section in the [Backup, Restoration, and Migration](/bg/doc/backup-restore/) guide and:
 
    * If you're using Qubes Manager, check the box under "Restore options" that says, "Verify backup integrity, do not restore the data."
    * If you're using `qvm-backup-restore` from the command-line, use the `--verify-only` option.
 
 7. If your backup verifies successfully, proceed to the next section.
    If it does not, **stop**.
-   Go back and repeat the backup steps, review the documentation or search the qubes-users mailing list, or ask for assistance on the [qubes-users mailing list](/support/#qubes-users) or IRC.
+   Go back and repeat the backup steps, review the documentation or search the qubes-users mailing list, or ask for assistance on the [qubes-users mailing list](/bg/support/#qubes-users) or IRC.
 
 
 Install R4.0
 ------------
 
 This section provides general guidance on installing R4.0 as part of migrating from R3.2.
-For further details, please see the [installation guide](/doc/installation-guide/).
+For further details, please see the [installation guide](/bg/doc/installation-guide/).
 
 1. Shut down R3.2 and boot the R4.0 installer.
 
@@ -62,7 +64,7 @@ For further details, please see the [installation guide](/doc/installation-guide
    If you did not successfully verify your backup in the previous section, cancel the installation, and go back to do that now. 
 
 3. Complete the R4.0 installation.
-   Ask for assistance on the [qubes-users mailing list](/support/#qubes-users) if you run into trouble.
+   Ask for assistance on the [qubes-users mailing list](/bg/support/#qubes-users) if you run into trouble.
 
 4. If you are unable to successfully install R4.0 on your system, all is not lost.
    Use the R3.2 installer to reinstall R3.2, then restore from your backup.
@@ -83,11 +85,9 @@ Restore from your backup
 
 4. Go to **Qubes menu -> System Tools -> Qubes Manager** to start it.
 
-5. Follow the **Restoring from a Backup** section in the [Backup, Restoration, and Migration](/doc/backup-restore/) guide.
-   We recommend that you restore only your [TemplateBasedVMs](/doc/glossary/#templatebasedvm) and [StandaloneVMs](/doc/glossary/#standalonevm) from R3.2.
-   Using [TemplateVMs](/doc/templates/) and [SystemVMs](/doc/glossary/#systemvm) from R3.2 is not fully supported (see [#3514](https://github.com/QubesOS/qubes-issues/issues/3514)).
-   Instead, we recommend using the TemplateVMs that were created specifically for R4.0, which you can [customize](/doc/software-update-vm/) according to your needs.
-   For the TemplateVM OS versions supported in R4.0, see [Supported Versions](/doc/supported-versions/#templatevms).
+5. Follow the **Restoring from a Backup** section in the [Backup, Restoration, and Migration](/bg/doc/backup-restore/) guide.
+   We recommend that you restore only your [TemplateBasedVMs](/bg/doc/glossary/#templatebasedvm) and [StandaloneVMs   Using [TemplateVMs](/bg/doc/templates/) and [SystemVMs   Instead, we recommend using the TemplateVMs that were created specifically for R4.0, which you can [customize](/bg/doc/software-update-vm/) according to your needs.
+   For the TemplateVM OS versions supported in R4.0, see [Supported Versions](/bg/doc/supported-versions/#templatevms).
    If the restore tool complains about missing templates, you can select the option to restore the AppVMs anyway, then change them afterward to use one of the default R4.0 templates.
 
 Note about additional disp-* qubes created during restore
@@ -113,9 +113,9 @@ Upgrade all Template and Standalone VM(s)
 
 We strongly recommend that you update **all** TemplateVMs and StandaloneVMs before use so that you have the latest security patches from upstream distributions.
 In addition, if the default templates have reached EOL (end-of-life) by the time you install R4.0, we strongly recommend that you upgrade them before use.
-Please see [Supported Versions](/doc/supported-versions/) for information on supported OS versions and consult the guides below for specific upgrade instructions:
+Please see [Supported Versions](/bg/doc/supported-versions/) for information on supported OS versions and consult the guides below for specific upgrade instructions:
 
- * [Upgrading Fedora TemplateVMs](/doc/templates/fedora/#upgrading)
- * [Upgrading Debian TemplateVMs](/doc/templates/debian/#upgrading)
+ * [Upgrading Fedora TemplateVMs](/bg/doc/templates/fedora/#upgrading)
+ * [Upgrading Debian TemplateVMs](/bg/doc/templates/debian/#upgrading)
  * [Updating Whonix TemplateVMs](https://www.whonix.org/wiki/Qubes/Update)
 

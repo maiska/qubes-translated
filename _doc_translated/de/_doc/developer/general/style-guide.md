@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: Style-guide
-permalink: /doc/style-guide/
+permalink: /de/doc/style-guide/
+lang: de
+ref: 184
 ---
 
 Style Guide

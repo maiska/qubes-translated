@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: YubiKey in Qubes
-permalink: /doc/yubi-key/
+permalink: /bg/doc/yubi-key/
+lang: bg
+ref: 2
 redirect_from:
 - /en/doc/yubi-key/
 - /doc/YubiKey/
@@ -11,7 +13,7 @@ Using YubiKey to Qubes authentication
 =====================================
 
 You can use YubiKey to enhance Qubes user authentication, for example to mitigate
-risk of snooping the password. This can also slightly improve security when you have [USB keyboard](/doc/device-handling-security/#security-warning-on-usb-input-devices).
+risk of snooping the password. This can also slightly improve security when you have [USB keyboard](/bg/doc/device-handling-security/#security-warning-on-usb-input-devices).
 
 There (at least) two possible configurations: using OTP mode and using challenge-response mode.
 

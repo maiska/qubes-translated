@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: Qubes R3.0 Release Schedule
-permalink: /doc/releases/3.0/schedule/
+permalink: /bg/doc/releases/3.0/schedule/
+lang: bg
+ref: 179
 redirect_from:
 - /en/doc/releases/3.0/schedule/
 ---

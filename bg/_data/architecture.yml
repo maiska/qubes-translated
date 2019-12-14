@@ -1,82 +1,82 @@
 - title: Introduction
-  url: /intro/
+  url: /bg/intro/
   icon: fa-flag
   sub-pages:
   - title: What is Qubes OS?
-    url: /intro/
+    url: /bg/intro/
   - title: FAQ
-    url: /faq/
+    url: /bg/faq/
     icon: fa-question-circle
   - title: Video Tours
-    url: /video-tours/
+    url: /bg/video-tours/
     icon: fa-play-circle
   - title: From the Experts
-    url: /experts/
+    url: /bg/experts/
   - title: Screenshots
-    url: /screenshots/
+    url: /bg/screenshots/
     icon: fa-picture-o
   - title: Getting Started
-    url: /getting-started/
+    url: /bg/getting-started/
     icon: fa-cubes
   - title: Help and Support
-    url: /support/
+    url: /bg/support/
     icon: fa-life-ring
   - title: Code of Conduct
-    url: /code-of-conduct/
+    url: /bg/code-of-conduct/
   - title: Security Center
-    url: /security/
+    url: /bg/security/
   - title: OS Architecture
-    url: /doc/architecture/
+    url: /bg/doc/architecture/
 
 - title: Downloads
-  url: /downloads/
+  url: /bg/downloads/
   icon: fa-download
   sub-pages:
   - title: System Requirements
-    url: /doc/system-requirements/
+    url: /bg/doc/system-requirements/
   - title: Certified Hardware
-    url: /doc/certified-hardware/
+    url: /bg/doc/certified-hardware/
   - title: Compatibility List
-    url: /hcl/
+    url: /bg/hcl/
   - title: Installation Guide
-    url: /doc/installation-guide/
+    url: /bg/doc/installation-guide/
   - title: Verifying Signatures
-    url: /security/verifying-signatures/
+    url: /bg/security/verifying-signatures/
   - title: Supported Versions
-    url: /doc/supported-versions/
+    url: /bg/doc/supported-versions/
   - title: Version Scheme
-    url: /doc/version-scheme/
+    url: /bg/doc/version-scheme/
   - title: Source Code
-    url: /doc/source-code/
+    url: /bg/doc/source-code/
   - title: Software License
-    url: /doc/license/
+    url: /bg/doc/license/
   - title: Download Mirrors
-    url: /downloads/#mirrors
+    url: /bg/downloads/#mirrors
 
 - title: Documentation
-  url: /doc/
+  url: /bg/doc/
   icon: fa-book
   sub-pages:
   - title: Introduction
-    url: /doc/#introduction
+    url: /bg/doc/#introduction
   - title: Project Security
-    url: /doc/#project-security
+    url: /bg/doc/#project-security
   - title: Choosing Your Hardware
-    url: /doc/#choosing-your-hardware
+    url: /bg/doc/#choosing-your-hardware
   - title: Installing & Upgrading
-    url: /doc/#downloading-installing-and-upgrading-qubes
+    url: /bg/doc/#downloading-installing-and-upgrading-qubes
   - title: Common Tasks
-    url: /doc/#common-tasks
+    url: /bg/doc/#common-tasks
   - title: Managing OSes
-    url: /doc/#managing-operating-systems-within-qubes
+    url: /bg/doc/#managing-operating-systems-within-qubes
   - title: Security in Qubes
-    url: /doc/#security-in-qubes
+    url: /bg/doc/#security-in-qubes
   - title: Advanced Configuration
-    url: /doc/#advanced-configuration
+    url: /bg/doc/#advanced-configuration
   - title: Developer Docs
-    url: /doc/#developer-documentation
+    url: /bg/doc/#developer-documentation
   - title: External Docs
-    url: /doc/#external-documentation
+    url: /bg/doc/#external-documentation
 
 - title: News
   url: /news/
@@ -90,9 +90,9 @@
     url: /news/categories/#talks
   - title: Research
     icon: fa-file-text
-    url: /research/
+    url: /bg/research/
   - title: Statistics
-    url: /statistics/
+    url: /bg/statistics/
     icon: fa-bar-chart
   - title: GitHub
     url: https://github.com/QubesOS
@@ -106,28 +106,28 @@
     url: https://www.linkedin.com/company/qubes-os/
 
 - title: Team
-  url: /team/
+  url: /bg/team/
   icon: fa-users
   sub-pages:
   - title: Report a Security Issue
-    url: /security/
+    url: /bg/security/
     icon: fa-lock
   - title: Report a Bug
-    url: /doc/reporting-bugs/
+    url: /bg/doc/reporting-bugs/
   - title: Press Inquiries
     url: mailto:press@qubes-os.org
   - title: Business Inquiries
     url: mailto:business@qubes-os.org
 
 - title: Donate
-  url: /donate/
+  url: /bg/donate/
   icon: fa-heart
   sub-pages:
   - title: How to donate
-    url: /donate/
+    url: /bg/donate/
   - title: Partners
-    url: /partners/
+    url: /bg/partners/
     icon: fa-globe
   - title: Contributing
-    url: /doc/contributing/
+    url: /bg/doc/contributing/
 

@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: Troubleshooting newer hardware
-permalink: /doc/newer-hardware-troubleshooting/
+permalink: /de/doc/newer-hardware-troubleshooting/
+lang: de
+ref: 72
 ---
 
 Troubleshooting newer hardware

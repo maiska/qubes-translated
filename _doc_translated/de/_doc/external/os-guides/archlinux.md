@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: Archlinux Template
-permalink: /doc/templates/archlinux/
+permalink: /de/doc/templates/archlinux/
+lang: de
+ref: 125
 redirect_from:
 - /doc/archlinux/
 - /en/doc/templates/archlinux/
@@ -26,7 +28,7 @@ Updates for this template are provided by [Olivier Médoc](mailto:o_medoc@yahoo.
 
 ## Installation
 
-A prebuilt template is available only for Qubes 3.2. Before Qubes 3.2, it should be compiled from source as described in [building-archlinux-template](/doc/building-archlinux-template/).
+A prebuilt template is available only for Qubes 3.2. Before Qubes 3.2, it should be compiled from source as described in [building-archlinux-template](/de/doc/building-archlinux-template/).
 
     [user@dom0 ~]$ sudo qubes-dom0-update --enablerepo=qubes-templates-community qubes-template-archlinux
 
@@ -412,7 +414,7 @@ Note: For info on Reflector and its configs: [Reflector](https://wiki.archlinux.
 
 <br>
 <br>
-![arch-template-26](/attachment/wiki/ArchlinuxTemplate/arch-template-26.png)
+![arch-template-26](/de/attachment/wiki/ArchlinuxTemplate/arch-template-26.png)
 <br>
 <br>
 
@@ -427,8 +429,8 @@ Note: For info on Reflector and its configs: [Reflector](https://wiki.archlinux.
 
 ## Want to contribute?
 
-*   [How can I contribute to the Qubes Project?](/doc/contributing/)
+*   [How can I contribute to the Qubes Project?](/de/doc/contributing/)
 
-*   [Guidelines for Documentation Contributors](/doc/doc-guidelines/)
+*   [Guidelines for Documentation Contributors](/de/doc/doc-guidelines/)
 
 <br>

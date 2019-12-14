@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: Emergency Backup Recovery (v3)
-permalink: /doc/backup-emergency-restore-v3/
+permalink: /de/doc/backup-emergency-restore-v3/
+lang: de
+ref: 64
 redirect_from:
 - /en/doc/backup-emergency-restore-v3/
 - /doc/BackupEmergencyRestoreV3/
@@ -71,7 +73,7 @@ any GNU/Linux system with the following procedure.
         compression-filter=gzip
   
     **Note:** If you see `version=2` here, go to [Emergency Backup Recovery -
-    format version 2](/doc/backup-emergency-restore-v2/) instead.
+    format version 2](/de/doc/backup-emergency-restore-v2/) instead.
 
  4. Verify the integrity of the `private.img` file which houses your data.
 

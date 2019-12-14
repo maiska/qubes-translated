@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: Test Bench
-permalink: /doc/test-bench/
+permalink: /de/doc/test-bench/
+lang: de
+ref: 193
 redirect_from:
 - /en/doc/test-bench/
 - /doc/TestBench/
@@ -13,7 +15,7 @@ Test bench for Dom0
 
 This guide shows how to set up simple test bench that automatically test your code you're about to push. It is written especially for `core3` branch of `core-admin.git` repo, but some ideas are universal.
 
-We will set up a spare machine (bare metal, not a virtual) that will be hosting our experimental Dom0. We will communicate with it via Ethernet and SSH. This tutorial assumes you are familiar with [QubesBuilder](/doc/qubes-builder/) and you have it set up and running flawlessly.
+We will set up a spare machine (bare metal, not a virtual) that will be hosting our experimental Dom0. We will communicate with it via Ethernet and SSH. This tutorial assumes you are familiar with [QubesBuilder](/de/doc/qubes-builder/) and you have it set up and running flawlessly.
 
 Setting up the machine
 ----------------------

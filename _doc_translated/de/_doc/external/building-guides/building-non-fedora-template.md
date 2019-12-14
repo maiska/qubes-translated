@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: Building Non-Fedora Template
-permalink: /doc/building-non-fedora-template/
+permalink: /de/doc/building-non-fedora-template/
+lang: de
+ref: 152
 redirect_from:
 - /en/doc/building-non-fedora-template/
 - /doc/BuildingNonFedoraTemplate/
@@ -134,7 +136,7 @@ As soon as you manage to make `qrexec` and `qubes-gui-agent` working, it should 
 
 Several Xen libraries are required for Qubes to work correctly. In fact, you need to make `xenstore` commands working before anything else. For this, Qubes git can be used as several patches have been selected by Qubes developers that could impact the activity inside a VM. Start be retrieving a recent git and identify how you can build a package from it: `git clone https://github.com/QubesOS/qubes-vmm-xen.git`.
 
-Find the .spec file in the git repository (this is the file being used to build rpm packages), and try to adapt it to your OS in order to build a package similar to the target 'vmm-xen'. For example, a PKGBUILD has been created for [ArchLinux](/doc/templates/archlinux/) and can be found in the vmm-xen repository.
+Find the .spec file in the git repository (this is the file being used to build rpm packages), and try to adapt it to your OS in order to build a package similar to the target 'vmm-xen'. For example, a PKGBUILD has been created for [ArchLinux](/de/doc/templates/archlinux/) and can be found in the vmm-xen repository.
 
 Don't be afraid with the complexity of the PKGBUILD, most of the code is almost a copy/paste of required sources and patches found in the .spec file provided in the git repository.
 

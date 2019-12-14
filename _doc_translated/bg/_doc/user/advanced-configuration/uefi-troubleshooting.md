@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: UEFI Troubleshooting
-permalink: /doc/uefi-troubleshooting/
+permalink: /bg/doc/uefi-troubleshooting/
+lang: bg
+ref: 67
 ---
 
 Troubleshooting UEFI related problems
@@ -162,9 +164,9 @@ Installation freezes before getting to Anaconda (Qubes 4.0)
 
 Some systems can freeze with the default UEFI install options.
 You can try the following to remove `noexitboot` and `mapbs`.
-If you have an Nvidia card, see also [Nvidia Troubleshooting](/doc/nvidia-troubleshooting/#disabling-nouveau).
+If you have an Nvidia card, see also [Nvidia Troubleshooting](/bg/doc/nvidia-troubleshooting/#disabling-nouveau).
 
-1. Follow the [steps above](/doc/uefi-troubleshooting/#change-installer-kernel-parameters-in-uefi) to edit the `[qubes-verbose]` section of your installer's `xen.cfg`.
+1. Follow the [steps above](/bg/doc/uefi-troubleshooting/#change-installer-kernel-parameters-in-uefi) to edit the `[qubes-verbose]` section of your installer's `xen.cfg`.
    You want to comment out the `mapbs` and `noexitboot` lines.
    The end result should look like this:
    ~~~
@@ -195,7 +197,7 @@ On some early, buggy UEFI implementations, you may need to disable EFI under Qub
 This can sometimes be done by switching to legacy mode in your BIOS/UEFI configuration.
 If that's not an option there, or legacy mode does not work either, you can try the following to add `efi=no-rs`.
 
-1. Follow the [steps above](/doc/uefi-troubleshooting/#change-installer-kernel-parameters-in-uefi) to edit the `[qubes-verbose]` section of your installer's `xen.cfg`.
+1. Follow the [steps above](/bg/doc/uefi-troubleshooting/#change-installer-kernel-parameters-in-uefi) to edit the `[qubes-verbose]` section of your installer's `xen.cfg`.
    You want to modify the `efi=attr=uc` setting and comment out the `mapbs` and `noexitboot` lines.
    The end result should look like this:
    ~~~
@@ -224,7 +226,7 @@ If that's not an option there, or legacy mode does not work either, you can try 
 6. Go back to `tty6` (Ctrl-Alt-F6) and click `Reboot`.
 7. Continue with setting up default templates and logging in to Qubes.
 
-Whenever there is a kernel or Xen update for Qubes, you will need to follow these [other steps above](/doc/uefi-troubleshooting/#boot-device-not-recognized-after-installing) because your system is using the fallback UEFI bootloader in `[...]/EFI/BOOT` instead of directly booting to the Qubes entry under `[...]/EFI/qubes`.
+Whenever there is a kernel or Xen update for Qubes, you will need to follow these [other steps above](/bg/doc/uefi-troubleshooting/#boot-device-not-recognized-after-installing) because your system is using the fallback UEFI bootloader in `[...]/EFI/BOOT` instead of directly booting to the Qubes entry under `[...]/EFI/qubes`.
 
 Accessing installer Rescue mode on UEFI
 ---------------------------------------

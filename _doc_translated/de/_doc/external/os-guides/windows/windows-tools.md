@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: Qubes Windows Tools
-permalink: /doc/windows-tools/
+permalink: /de/doc/windows-tools/
+lang: de
+ref: 127
 redirect_from:
 - /doc/windows-appvms/
 - /en/doc/windows-appvms/
@@ -15,8 +17,8 @@ Qubes Windows Tools
 Qubes Windows Tools are a set of programs and drivers that provide integration of Windows AppVMs with the rest of the Qubes system. Currently the following features are available for Windows VMs after installation of those tools:
 
 -   Seamless GUI mode that integrates apps windows onto the common Qubes trusted desktop
--   Support for [secure clipboard copy/paste](/doc/copy-paste/) between the Windows VM and other AppVMs
--   Support for [secure file exchange](/doc/copying-files/) between the Windows VM and other AppVMs
+-   Support for [secure clipboard copy/paste](/de/doc/copy-paste/) between the Windows VM and other AppVMs
+-   Support for [secure file exchange](/de/doc/copying-files/) between the Windows VM and other AppVMs
 -   Support for qvm-run and generic qrexec for the Windows VM (e.g. ability to run custom service within/from the Windows VM)
 -   Xen PV drivers for Windows that increase performance compared to qemu emulated devices
 
@@ -33,7 +35,7 @@ NOTES:
 Installing Windows OS in a Qubes VM
 -----------------------------------
 
-Please refer to [this page](/doc/windows-vm/) for instructions on how to install Windows in a Qubes VM.
+Please refer to [this page](/de/doc/windows-vm/) for instructions on how to install Windows in a Qubes VM.
 
 NOTE: It is strongly suggested to enable autologon for any Windows HVMs that will have Qubes Tools installed. To do so, run `netplwiz` command from the `Win+R`/Start menu and uncheck the *Users must enter a user name and password to use this computer* option.
 
@@ -95,8 +97,7 @@ Once you start a Windows-based AppVM with Qubes Tools installed, you can easily 
 qvm-run -a my-win7-appvm explorer.exe
 ~~~
 
-![windows-seamless-4.png](/attachment/wiki/WindowsAppVms/windows-seamless-4.png) ![windows-seamless-1.png](/attachment/wiki/WindowsAppVms/windows-seamless-1.png)
-
+![windows-seamless-4.png](/de/attachment/wiki/WindowsAppVms/windows-seamless-4.png) ![windows-seamless-1.png
 Also, the inter-VM services work as usual -- e.g. to request opening a document or URL in the Windows AppVM from another VM:
 
 ~~~
@@ -113,7 +114,7 @@ Inter-VM file copy and clipboard works for Windows AppVMs the same way as for Li
 
 To simulate CTRL-ALT-DELETE in the HVM (SAS, Secure Attention Sequence), press Ctrl-Alt-Home while having any window of this VM in the foreground.
 
-![windows-seamless-7.png](/attachment/wiki/WindowsAppVms/windows-seamless-7.png)
+![windows-seamless-7.png](/de/attachment/wiki/WindowsAppVms/windows-seamless-7.png)
 
 Changing between seamless and full desktop mode
 -----------------------------------------------
@@ -131,7 +132,7 @@ In order to create a HVM TemplateVM one can use the following command, suitably 
 qvm-create --class TemplateVM win7-x64-template --property virt_mode=HVM --property kernel=''  -l green
 ~~~
 
-... , set memory as appropriate, and install Windows OS (or other OS) into this template the same way as you would install it into a normal HVM -- please see instructions on [this page](/doc/hvm-create/).
+... , set memory as appropriate, and install Windows OS (or other OS) into this template the same way as you would install it into a normal HVM -- please see instructions on [this page](/de/doc/hvm-create/).
 
 If you use this Template as it is, then any HVMs that use it will effectively be DisposableVMs - the User directory will be wiped when the HVN is closed down.
 

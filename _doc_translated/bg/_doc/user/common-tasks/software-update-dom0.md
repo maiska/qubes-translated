@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: Installing and updating software in dom0
-permalink: /doc/software-update-dom0/
+permalink: /bg/doc/software-update-dom0/
+lang: bg
+ref: 50
 redirect_from:
 - /en/doc/software-update-dom0/
 - /doc/SoftwareUpdateDom0/
@@ -149,7 +151,7 @@ to do a lot of work yourself](https://groups.google.com/d/msg/qubes-users/m8sWoy
 
 ### Upgrading over Tor ###
 
-Requires installed [Whonix](/doc/privacy/whonix/).
+Requires installed [Whonix](/bg/doc/privacy/whonix/).
 
 Go to Qubes VM Manager -> System -> Global Settings. See the UpdateVM setting. Choose your desired Whonix-Gateway ProxyVM from the list. For example: sys-whonix.
 

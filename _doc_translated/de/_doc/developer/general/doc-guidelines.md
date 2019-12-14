@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: Documentation Guidelines
-permalink: /doc/doc-guidelines/
+permalink: /de/doc/doc-guidelines/
+lang: de
+ref: 189
 redirect_from:
 - /en/doc/doc-guidelines/
 - /wiki/DocStyle/
@@ -53,42 +55,42 @@ Ok, let's start.
 Every documentation page has an "Edit this page" button.
 It may be on the side (in the desktop layout):
 
-![edit-button-desktop](/attachment/wiki/doc-edit/03-button2.png)
+![edit-button-desktop](/de/attachment/wiki/doc-edit/03-button2.png)
 
 Or at the bottom (in the mobile layout):
 
-![edit-button-mobile](/attachment/wiki/doc-edit/02-button1.png)
+![edit-button-mobile](/de/attachment/wiki/doc-edit/02-button1.png)
 
 When you click on it, you'll be prompted for your GitHub username and password (if you aren't already logged in).
 You can also create an account from here.
 
-![github-sign-in](/attachment/wiki/doc-edit/04-sign-in.png)
+![github-sign-in](/de/attachment/wiki/doc-edit/04-sign-in.png)
 
 If this is your first contribution to the documentation, you need to "fork" the repository (make your own copy). It's easy --- just click the big green button on the next page.
 This step is only needed the first time you make a contribution.
 
-![fork](/attachment/wiki/doc-edit/05-fork.png)
+![fork](/de/attachment/wiki/doc-edit/05-fork.png)
 
 Now you can make your modifications.
 You can also preview the changes to see how they'll be formatted by clicking the "Preview changes" tab.
 If you're making formatting changes, please [render the site locally] to verify that everything looks correct before submitting any changes.
 
-![edit](/attachment/wiki/doc-edit/06-edit.png)
+![edit](/de/attachment/wiki/doc-edit/06-edit.png)
 
 Once you're finished, describe your changes at the bottom and click "Propose file change".
 
-![commit](/attachment/wiki/doc-edit/07-commit-msg.png)
+![commit](/de/attachment/wiki/doc-edit/07-commit-msg.png)
 
 After that, you'll see exactly what modifications you've made.
 At this stage, those changes are still in your own copy of the documentation ("fork").
 If everything looks good, send those changes to us by pressing the "Create pull request" button.
 
-![pull-request](/attachment/wiki/doc-edit/08-review-changes.png)
+![pull-request](/de/attachment/wiki/doc-edit/08-review-changes.png)
 
 You will be able to adjust the pull request message and title there.
 In most cases, the defaults are ok, so you can just confirm by pressing the "Create pull request" button again.
 
-![pull-request-confirm](/attachment/wiki/doc-edit/09-create-pull-request.png)
+![pull-request-confirm](/de/attachment/wiki/doc-edit/09-create-pull-request.png)
 
 That's all!
 We will review your changes.
@@ -97,7 +99,7 @@ Otherwise, we may have some questions for you, which we'll post in a comment on 
 (GitHub will automatically notify you if we do.)
 If, for some reason, we can't accept your pull request, we'll post a comment explaining why we can't.
 
-![done](/attachment/wiki/doc-edit/10-done.png)
+![done](/de/attachment/wiki/doc-edit/10-done.png)
 
 
 How to add images
@@ -106,7 +108,7 @@ How to add images
 To add an image to a page, use the following syntax in the main document:
 
 ```
-![Image Title](/attachment/wiki/page-title/image-filename.png)
+![Image Title](/de/attachment/wiki/page-title/image-filename.png)
 ```
 
 Then, submit your image(s) in a separate pull request to the [qubes-attachment] repository using the same path and filename.
@@ -289,20 +291,20 @@ Please try to write good commit messages, according to the
 
 
 [qubes-doc]: https://github.com/QubesOS/qubes-doc
-[glossary]: /doc/glossary/
-[issue]: /doc/reporting-bugs/
+[glossary]: /de/doc/glossary/
+[issue]: /de/doc/reporting-bugs/
 [contribute]: #how-to-contribute
 [qubes-issues]: https://github.com/QubesOS/qubes-issues/issues
 [gh-fork]: https://guides.github.com/activities/forking/
 [gh-pull]: https://help.github.com/articles/using-pull-requests/
 [GitHub]: https://github.com/
-[support]: /support/
-[version-example]: /doc/template/fedora/upgrade-25-to-26/
+[support]: /de/support/
+[version-example]: /de/doc/template/fedora/upgrade-25-to-26/
 [version-thread]: https://groups.google.com/d/topic/qubes-users/H9BZX4K9Ptk/discussion
-[QSBs]: /security/bulletins/
+[QSBs]: /de/security/bulletins/
 [News]: /news/
 [md]: https://daringfireball.net/projects/markdown/
-[git-commit]: /doc/coding-style/#commit-message-guidelines
+[git-commit]: /de/doc/coding-style/#commit-message-guidelines
 [render the site locally]: https://github.com/QubesOS/qubesos.github.io#instructions
 [qubes-attachment]: https://github.com/QubesOS/qubes-attachment
 

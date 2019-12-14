@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: Fedora Minimal Template Customization
-permalink: /doc/fedora-minimal-template-customization/
+permalink: /de/doc/fedora-minimal-template-customization/
+lang: de
+ref: 134
 redirect_from: /en/doc/fedora-minimal-template-customization/
 ---
 

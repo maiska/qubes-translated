@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: Windows Template Customization
-permalink: /doc/windows-template-customization/
+permalink: /de/doc/windows-template-customization/
+lang: de
+ref: 131
 redirect_from: /en/doc/windows-template-customization/
 ---
 

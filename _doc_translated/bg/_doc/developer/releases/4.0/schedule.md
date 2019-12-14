@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: Qubes R4.0 Release Schedule
-permalink: /doc/releases/4.0/schedule/
+permalink: /bg/doc/releases/4.0/schedule/
+lang: bg
+ref: 173
 redirect_from:
 - /en/doc/releases/4.0/schedule/
 ---
@@ -9,7 +11,7 @@ redirect_from:
 Qubes R4.0 Release Schedule
 ===========================
 
-This schedule is based on [Version Scheme](/doc/version-scheme/#release-schedule).
+This schedule is based on [Version Scheme](/bg/doc/version-scheme/#release-schedule).
 
 |  Date       | Stage                                   |
 | -----------:| --------------------------------------- |

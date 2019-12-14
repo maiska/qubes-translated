@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: How to Make a Multimedia TemplateVM
-permalink: /doc/multimedia/
+permalink: /de/doc/multimedia/
+lang: de
+ref: 145
 redirect_from:
 - /en/doc/multimedia/
 - /doc/Multimedia/

@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: Managing AppVm Shortcuts
-permalink: /doc/managing-appvm-shortcuts/
+permalink: /bg/doc/managing-appvm-shortcuts/
+lang: bg
+ref: 53
 redirect_from:
 - /en/doc/managing-appvm-shortcuts/
 - /doc/ManagingAppVmShortcuts/
@@ -14,7 +16,7 @@ Managing shortcuts to applications in AppVMs
 For ease of use Qubes aggregates shortcuts to applications that are installed in AppVMs and shows them in one "start menu" in dom0.
 Clicking on such shortcut runs the assigned application in its AppVM.
 
-![dom0-menu.png"](/attachment/wiki/ManagingAppVmShortcuts/dom0-menu.png)
+![dom0-menu.png"](/bg/attachment/wiki/ManagingAppVmShortcuts/dom0-menu.png)
 
 To make applications newly installed via the OS's package manager show up in the menu, use the `qvm-sync-appmenus` command (Linux VMs do this automatically):
 
@@ -22,7 +24,7 @@ To make applications newly installed via the OS's package manager show up in the
 
 After that, select the *Add more shortcuts* entry in the VM's submenu to customize which applications are shown:
 
-![dom0-appmenu-select.png"](/attachment/wiki/ManagingAppVmShortcuts/dom0-appmenu-select.png)
+![dom0-appmenu-select.png"](/bg/attachment/wiki/ManagingAppVmShortcuts/dom0-appmenu-select.png)
 
 The above image shows that Windows HVMs are also supported (provided that Qubes Tools are installed).
 
@@ -60,7 +62,7 @@ If you only want to create a shortcut for a single AppVM, you can create a custo
 1. Open a terminal window to Dom0.
 2. Create a custom `.desktop` file in `~/.local/share/applications`.
    Look in the same directory for existing examples, or see the full [file specification](https://specifications.freedesktop.org/desktop-entry-spec/desktop-entry-spec-latest.html).
-   You may use `qvm-run` inside the `.desktop` file; see [Behind the scenes](/doc/managing-appvm-shortcuts/#behind-the-scenes) for more details.
+   You may use `qvm-run` inside the `.desktop` file; see [Behind the scenes](/bg/doc/managing-appvm-shortcuts/#behind-the-scenes) for more details.
 3. Edit the `~/.config/menus/applications-merged/<vmname>-vm.menu` file for the AppVM.
 4. Add a custom menu entry referring to your newly created `.desktop` file.
 
@@ -76,7 +78,7 @@ If you only want to create a shortcut for a single AppVM, you can create a custo
 What about applications in DispVMs?
 -----------------------------------
 
-[See here](/doc/disposablevm-customization/).
+[See here](/bg/doc/disposablevm-customization/).
 
 
 Fixing shortcuts
@@ -100,7 +102,7 @@ $ rm -i ~/.local/share/applications/my-old-vm-*
 Behind the scenes
 -----------------
 
-`qvm-sync-appmenus` works by invoking *GetAppMenus* [Qubes service](/doc/qrexec/) in the target domain.
+`qvm-sync-appmenus` works by invoking *GetAppMenus* [Qubes service](/bg/doc/qrexec/) in the target domain.
 This service enumerates installed applications and sends formatted info back to the dom0 script (`/usr/libexec/qubes-appmenus/qubes-receive-appmenus`) which creates .desktop files in the AppVM/TemplateVM directory.
 
 For Linux VMs the service script is in `/etc/qubes-rpc/qubes.GetAppMenus`. 

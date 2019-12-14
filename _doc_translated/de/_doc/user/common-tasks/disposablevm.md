@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: DisposableVMs
-permalink: /doc/disposablevm/
+permalink: /de/doc/disposablevm/
+lang: de
+ref: 56
 redirect_from:
 - /doc/dispvm/
 - /en/doc/dispvm/
@@ -92,8 +94,7 @@ This app is running in its own dedicated VM -- a DisposableVM created for the pu
 Once you close the viewing application the whole DisposableVM will be destroyed. 
 If you have edited the file and saved the changes, the changed file will be saved back to the original AppVM, overwriting the original.
 
-![r1-open-in-dispvm-1.png](/attachment/wiki/DisposableVms/r1-open-in-dispvm-1.png) ![r1-open-in-dispvm-2.png](/attachment/wiki/DisposableVms/r1-open-in-dispvm-2.png)
-
+![r1-open-in-dispvm-1.png](/de/attachment/wiki/DisposableVms/r1-open-in-dispvm-1.png) ![r1-open-in-dispvm-2.png
 
 ## Opening a fresh web browser instance in a new DisposableVM ##
 
@@ -102,7 +103,7 @@ This can be done easily using the Start Menu: just go to **Application Menu -\> 
 Wait a few seconds until a web browser starts. 
 Once you close the viewing application the whole DisposableVM will be destroyed. 
 
-![r1-open-in-dispvm-3.png](/attachment/wiki/DisposableVms/r1-open-in-dispvm-3.png)
+![r1-open-in-dispvm-3.png](/de/attachment/wiki/DisposableVms/r1-open-in-dispvm-3.png)
 
 
 ## Opening a file in a DisposableVM via command line (from AppVM) ##
@@ -158,8 +159,8 @@ This will create a new DisposableVM based on `online-dvm-template`, open the def
 
 You can change the template used to generate the DisposableVMs, and change settings used in the DisposableVM savefile. 
 These changes will be reflected in every new DisposableVM based on that template. 
-Full instructions can be found [here](/doc/disposablevm-customization/).
+Full instructions can be found [here](/de/doc/disposablevm-customization/).
 
 
-[DisposableVM Template]: /doc/glossary/#disposablevm-template
+[DisposableVM Template]: /de/doc/glossary/#disposablevm-template
 

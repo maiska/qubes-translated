@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: Network Printer
-permalink: /doc/network-printer/
+permalink: /bg/doc/network-printer/
+lang: bg
+ref: 142
 redirect_from:
 - /en/doc/network-printer/
 - /doc/NetworkPrinter/
@@ -30,7 +32,7 @@ As a result, installation of such third-party RPMs in a default template VM expo
 (Again, it's not buggy or malicious drivers that we fear here, but rather malicious installation scripts for those drivers).
 
 In order to mitigate this risk, one might consider creating a custom template (i.e. clone the original template) and then install the third-party, unverified drivers there.
-Such template might then be made a DVM template for [DisposableVM creation](/doc/disposablevm/), which should allow one to print any document by right-clicking on it, choosing "Open in DisposableVM" and print from there.
+Such template might then be made a DVM template for [DisposableVM creation](/bg/doc/disposablevm/), which should allow one to print any document by right-clicking on it, choosing "Open in DisposableVM" and print from there.
 This would allow to print documents from more trusted AppVMs (based on a trusted default template that is not poisoned by third-party printer drivers).
 
 However, one should be aware that most (all?) network printing protocols are insecure, unencrypted protocols. 

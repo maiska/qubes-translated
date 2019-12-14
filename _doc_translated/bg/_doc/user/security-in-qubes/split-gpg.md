@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: Split GPG
-permalink: /doc/split-gpg/
+permalink: /bg/doc/split-gpg/
+lang: bg
+ref: 5
 redirect_from:
 - /en/doc/split-gpg/
 - /doc/SplitGpg/
@@ -32,7 +34,7 @@ which would wait until the user enters the passphrase and steal the key then.)
 
 The diagram below presents the big picture of Split GPG architecture.
 
-![split-gpg-diagram.png](/attachment/wiki/SplitGpg/split-gpg-diagram.png)
+![split-gpg-diagram.png](/bg/attachment/wiki/SplitGpg/split-gpg-diagram.png)
 
 ### Advantages of Split GPG vs. traditional GPG with a smart card ###
 
@@ -58,8 +60,8 @@ out, 5 minutes by default), plus is always notified each time the key is used
 via a tray notification from the domain where GPG backend is running. This
 way it would be easy to spot unexpected requests to decrypt documents.
 
-![r2-split-gpg-1.png](/attachment/wiki/SplitGpg/r2-split-gpg-1.png)
-![r2-split-gpg-3.png](/attachment/wiki/SplitGpg/r2-split-gpg-3.png)
+![r2-split-gpg-1.png](/bg/attachment/wiki/SplitGpg/r2-split-gpg-1.png)
+![r2-split-gpg-3.png](/bg/attachment/wiki/SplitGpg/r2-split-gpg-3.png)
 
 ### Current limitations ###
 
@@ -171,7 +173,7 @@ variables. Instead it is recommended to use a simple script provided by
 `/usr/bin/qubes-gpg-client-wrapper` file by pointing Enigmail to use this
 script instead of the standard GnuPG binary:
 
-![tb-enigmail-split-gpg-settings-2.png](/attachment/wiki/SplitGpg/tb-enigmail-split-gpg-settings-2.png)
+![tb-enigmail-split-gpg-settings-2.png](/bg/attachment/wiki/SplitGpg/tb-enigmail-split-gpg-settings-2.png)
 
 The script also sets the `QUBES_GPG_DOMAIN` variable automatically based on
 the content of the file `/rw/config/gpg-split-domain`, which should be set to
@@ -245,7 +247,7 @@ displayed to accept this.
     [user@work ~]$ export QUBES_GPG_DOMAIN=work-gpg
     [user@work ~]$ qubes-gpg-import-key ~/Downloads/marmarek.asc
 
-![r2-split-gpg-5.png](/attachment/wiki/SplitGpg/r2-split-gpg-5.png)
+![r2-split-gpg-5.png](/bg/attachment/wiki/SplitGpg/r2-split-gpg-5.png)
 
 <br />
 
@@ -403,11 +405,11 @@ exercise caution and use your good judgment.)
 [intro]: #what-is-split-gpg-and-why-should-i-use-it-instead-of-the-standard-gpg
 [se-pinentry]: https://unix.stackexchange.com/a/379373
 [​subkeys]: https://wiki.debian.org/Subkeys
-[copied]: /doc/copying-files#on-inter-qube-file-copy-security
-[pasted]: /doc/copy-paste#on-copypaste-security
+[copied]: /bg/doc/copying-files#on-inter-qube-file-copy-security
+[pasted]: /bg/doc/copy-paste#on-copypaste-security
 [​MUA]: https://en.wikipedia.org/wiki/Mail_user_agent
-[covert channels]: /doc/data-leaks
-[trusting-templates]: /doc/software-update-vm/#notes-on-trusting-your-templatevms
+[covert channels]: /bg/doc/data-leaks
+[trusting-templates]: /bg/doc/software-update-vm/#notes-on-trusting-your-templatevms
 [openpgp-in-qubes-os]: https://groups.google.com/d/topic/qubes-users/Kwfuern-R2U/discussion
 [cabal]: https://alexcabal.com/creating-the-perfect-gpg-keypair/
 [luck]: https://gist.github.com/abeluck/3383449

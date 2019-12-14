@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: The Qubes U2F Proxy
-permalink: /doc/u2f-proxy/
+permalink: /bg/doc/u2f-proxy/
+lang: bg
+ref: 4
 ---
 
 # The Qubes U2F Proxy
@@ -72,8 +74,7 @@ proxy forwards only the data necessary to actually perform the authentication,
 leaving all unnecessary data out, so it won't become a vector of attack. This is
 depicted in the diagram below (click for full size).
 
-[![Qubes U2F Proxy diagram](/attachment/wiki/posts/u2f.svg)](/attachment/wiki/posts/u2f.svg)
-
+[![Qubes U2F Proxy diagram](/bg/attachment/wiki/posts/u2f.svg)
 The Qubes U2F Proxy has two parts: the frontend and the backend. The frontend
 runs in the same qube as the browser and presents a fake USB-like HID device
 using `uhid`. The backend runs in `sys-usb` and behaves like a browser. This is
@@ -191,18 +192,18 @@ and Chromium do not require any special browser extensions.
 
 
 [Qubes U2F Proxy]: https://github.com/QubesOS/qubes-app-u2f
-[USB]: /doc/usb/
+[USB]: /bg/doc/usb/
 [U2F]: https://en.wikipedia.org/wiki/U2F
 [krebs]: https://krebsonsecurity.com/2018/07/google-security-keys-neutralized-employee-phishing/
 [u2f-details]: https://fidoalliance.org/specs/fido-u2f-v1.2-ps-20170411/fido-u2f-overview-v1.2-ps-20170411.html#site-specific-public-private-key-pairs
 [wired]: https://www.wired.com/story/chrome-yubikey-phishing-webusb/
 [BadUSB]: https://www.blackhat.com/us-14/briefings.html#badusb-on-accessories-that-turn-evil
-[qrexec]: /doc/qrexec3/
-[Split GPG]: /doc/split-gpg/
-[Qubes firewall]: /doc/firewall/
+[qrexec]: /bg/doc/qrexec3/
+[Split GPG]: /bg/doc/split-gpg/
+[Qubes firewall]: /bg/doc/firewall/
 [Advanced usage]: #advanced-usage-per-qube-key-access
 [Browser support]: #templatevm-and-browser-support
-[report any bugs you encounter]: /doc/reporting-bugs/
+[report any bugs you encounter]: /bg/doc/reporting-bugs/
 [ff-u2f-addon]: https://addons.mozilla.org/en-US/firefox/addon/u2f-support-add-on/?src=api
-[qubes-devel]: /support/#qubes-devel
+[qubes-devel]: /bg/support/#qubes-devel
 

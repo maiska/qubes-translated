@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: Copying Files between qubes
-permalink: /doc/copying-files/
+permalink: /de/doc/copying-files/
+lang: de
+ref: 58
 redirect_from:
 - /en/doc/copying-files/
 - /doc/CopyingFiles/
@@ -51,5 +53,5 @@ However, one should keep in mind that performing a data transfer from *less trus
 
 See also [this article](https://blog.invisiblethings.org/2011/03/13/partitioning-my-digital-life-into.html) for more information on this topic, and some ideas of how we might solve this problem in some future version of Qubes.
 
-You may also want to read how to [revoke "Yes to All" authorization](/doc/qrexec3/#revoking-yes-to-all-authorization)
+You may also want to read how to [revoke "Yes to All" authorization](/de/doc/qrexec3/#revoking-yes-to-all-authorization)
 

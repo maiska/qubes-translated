@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: Backup, Restoration, and Migration
-permalink: /doc/backup-restore/
+permalink: /de/doc/backup-restore/
+lang: de
+ref: 62
 redirect_from:
 - /en/doc/backup-restore/
 - /doc/BackupRestore/
@@ -34,7 +36,7 @@ VMs in the left-hand **Available** column will not be backed up.
 3. Select the destination for the backup:
 
    If you wish to send your backup to a (currently running) VM, select the VM in the drop-down box next to **Target AppVM**.
-   If you wish to send your backup to a [USB mass storage device](/doc/usb/), you can use the directory selection widget to mount a connected device (under "Other locations" item on the left); or first mount the device in a VM, then select the mount point inside that VM as the backup destination.
+   If you wish to send your backup to a [USB mass storage device](/de/doc/usb/), you can use the directory selection widget to mount a connected device (under "Other locations" item on the left); or first mount the device in a VM, then select the mount point inside that VM as the backup destination.
 
    You must also specify a directory on the device or in the VM, or a command to be executed in the VM as a destination for your backup. 
    For example, if you wish to send your backup to the `~/backups` folder in the target VM, you would simply browse to it using the convenient directory selection dialog (`...`) at the right.
@@ -67,7 +69,7 @@ This brings up the **Qubes Restore VMs** window.
 
 2. Select the source location of the backup to be restored:
 
-   - If your backup is located on a [USB mass storage device](/doc/usb/), attach it first to another VM or select `sys-usb` in the next item.
+   - If your backup is located on a [USB mass storage device](/de/doc/usb/), attach it first to another VM or select `sys-usb` in the next item.
    - If your backup is located in a (currently running) VM, select the VM in the drop-down box next to **AppVM**.
 
    You must also specify the directory and filename of the backup (or a command to be executed in a VM) in the **Backup file** field. 
@@ -107,15 +109,15 @@ In the event a Qubes system is unavailable, you can access your data on any GNU/
 
 Refer to the following for emergency restore of a backup created on:
 
- * [Qubes R4 or newer](/doc/backup-emergency-restore-v4/)
- * [Qubes R3](/doc/backup-emergency-restore-v3/)
- * [Qubes R2 or older](/doc/backup-emergency-restore-v2/)
+ * [Qubes R4 or newer](/de/doc/backup-emergency-restore-v4/)
+ * [Qubes R3](/de/doc/backup-emergency-restore-v3/)
+ * [Qubes R2 or older](/de/doc/backup-emergency-restore-v2/)
 
 
 Migrating Between Two Physical Machines
 ---------------------------------------
 
-In order to migrate your Qubes system from one physical machine to another, simply follow the backup procedure on the old machine, [install Qubes](/downloads/) on the new machine, and follow the restoration procedure on the new machine.
+In order to migrate your Qubes system from one physical machine to another, simply follow the backup procedure on the old machine, [install Qubes](/de/downloads/) on the new machine, and follow the restoration procedure on the new machine.
 All of your settings and data will be preserved!
 
 Choosing a Backup Passphrase

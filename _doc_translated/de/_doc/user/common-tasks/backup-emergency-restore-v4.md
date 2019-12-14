@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: Emergency Backup Recovery (v4)
-permalink: /doc/backup-emergency-restore-v4/
+permalink: /de/doc/backup-emergency-restore-v4/
+lang: de
+ref: 63
 redirect_from:
 - /en/doc/backup-emergency-restore-v4/
 - /doc/BackupEmergencyRestoreV4/

@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: Version Scheme
-permalink: /doc/version-scheme/
+permalink: /de/doc/version-scheme/
+lang: de
+ref: 31
 redirect_from:
 - /en/doc/version-scheme/
 - /doc/VersionScheme/
@@ -84,7 +86,7 @@ should be another RC. If, based on remaining issues, the Committee decides to
 release final, then the Committee agrees upon the release date, which should be
 no later than a week after.
 
-!["Release cycle"](/attachment/wiki/VersionScheme/release-cycle.svg)
+!["Release cycle"](/de/attachment/wiki/VersionScheme/release-cycle.svg)
 
 Bug priorities
 --------------

@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: Out of Memory
-permalink: /doc/out-of-memory/
+permalink: /de/doc/out-of-memory/
+lang: de
+ref: 107
 redirect_from:
 - /en/doc/out-of-memory/
 - /doc/OutOfmemory/

@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: How to Remove VMs Manually
-permalink: /doc/remove-vm-manually/
+permalink: /bg/doc/remove-vm-manually/
+lang: bg
+ref: 106
 ---
 
 How to Remove VMs Manually
@@ -32,5 +34,5 @@ When a template is marked as 'installed by package manager', but cannot be unins
 - If `installed_by_rpm` remains `True`, reboot your computer to bring qubes.xml in sync with qubesd, and try again to remove the template.
 
 
-[normal method]: /doc/templates/#how-to-install-uninstall-reinstall-and-switch
+[normal method]: /bg/doc/templates/#how-to-install-uninstall-reinstall-and-switch
 

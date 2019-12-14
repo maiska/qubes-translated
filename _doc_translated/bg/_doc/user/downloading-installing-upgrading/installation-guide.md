@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: Installation Guide
-permalink: /doc/installation-guide/
+permalink: /bg/doc/installation-guide/
+lang: bg
+ref: 35
 redirect_from:
 - /en/doc/installation-guide/
 - /doc/InstallationGuide/
@@ -135,17 +137,17 @@ Getting Help
 
 
 [QSB #46]: /news/2019/01/23/qsb-46/
-[system requirements]: /doc/system-requirements/
-[Hardware Compatibility List]: /hcl/
-[live USB]: /doc/live-usb/
-[downloads]: /downloads/
-[verifying signatures]: /security/verifying-signatures/
-[security considerations]: /doc/install-security/
-[Custom Installation]: /doc/custom-install/
-[Upgrade Guides]: /doc/upgrade/
+[system requirements]: /bg/doc/system-requirements/
+[Hardware Compatibility List]: /bg/hcl/
+[live USB]: /bg/doc/live-usb/
+[downloads]: /bg/downloads/
+[verifying signatures]: /bg/security/verifying-signatures/
+[security considerations]: /bg/doc/install-security/
+[Custom Installation]: /bg/doc/custom-install/
+[Upgrade Guides]: /bg/doc/upgrade/
 [Rufus]: https://rufus.akeo.ie/
-[documentation]: /doc/
-[improving]: /doc/doc-guidelines/
-[mailing lists]: /support/
-[help]: /help/
+[documentation]: /bg/doc/
+[improving]: /bg/doc/doc-guidelines/
+[mailing lists]: /bg/support/
+[help]: /bg/help/
 

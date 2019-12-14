@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: Martus
-permalink: /doc/martus/
+permalink: /bg/doc/martus/
+lang: bg
+ref: 119
 ---
 
 Martus

@@ -1,7 +1,9 @@
 ---
 layout: default
 title: Code of Conduct
-permalink: /code-of-conduct/
+permalink: /bg/code-of-conduct/
+lang: bg
+ref: 101
 ---
 
 ## Introduction
@@ -65,7 +67,7 @@ The initial published version of this Code of Conduct was adapted from the [Cont
 [history of changes]: https://github.com/QubesOS/qubes-doc/commits/master/about/code-of-conduct.md
 [discussion]: https://github.com/QubesOS/qubes-issues/issues/2163
 [Citizen Code of Conduct]: http://citizencodeofconduct.org/
-[mailing list discussion guidelines]: /support/#discussion-list-guidelines
+[mailing list discussion guidelines]: /bg/support/#discussion-list-guidelines
 [Contributor Covenant, version 1.4]: http://contributor-covenant.org/version/1/4
 [Rust Code of Conduct]: https://www.rust-lang.org/en-US/conduct.html
 

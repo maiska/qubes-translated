@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: Automated Tests
-permalink: /doc/automated-tests/
+permalink: /bg/doc/automated-tests/
+lang: bg
+ref: 197
 redirect_from:
 - /en/doc/automated-tests/
 - /doc/AutomatedTests/
@@ -97,7 +99,7 @@ For instance, to run only the tests for the fedora-21 template, you can use the 
 
 Example test run:
 
-![snapshot-tests2.png](/attachment/wiki/developers/snapshot-tests2.png)
+![snapshot-tests2.png](/bg/attachment/wiki/developers/snapshot-tests2.png)
 
 ### Qubes 4.0
 
@@ -124,7 +126,7 @@ Test run can be altered using environment variables:
 ### Adding a new test to core-admin
 After adding a new unit test to [core-admin/tests](https://github.com/QubesOS/qubes-core-admin/tree/master/tests) you'll have to make sure of two things:
 
-1. That the test will be added to the RPM file created by [QubesBuilder](/doc/qubes-builder/). For this you need to edit the [core-admin/tests/Makefile](https://github.com/QubesOS/qubes-core-admin/tree/master/tests/Makefile)
+1. That the test will be added to the RPM file created by [QubesBuilder](/bg/doc/qubes-builder/). For this you need to edit the [core-admin/tests/Makefile](https://github.com/QubesOS/qubes-core-admin/tree/master/tests/Makefile)
 2. That the test will be loaded by [core-admin/tests/\_\_init\_\_.py](https://github.com/QubesOS/qubes-core-admin/tree/master/tests/__init__.py)
 
 #### Editing the Makefile

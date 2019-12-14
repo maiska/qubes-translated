@@ -1,7 +1,9 @@
 ---
 layout: sidebar
 title: Google Summer of Code
-permalink: /gsoc/
+permalink: /de/gsoc/
+lang: de
+ref: 188
 redirect_from: /GSoC/
 ---
 
@@ -141,7 +143,7 @@ would override all the user changes there). More details:
  - PyGTK
  - RPM package format, (yum) repository basics
 
-**Mentor**: [Marek Marczykowski-Górecki](/team/)
+**Mentor**: [Marek Marczykowski-Górecki](/de/team/)
 
 ### USB passthrough to Windows qubes
 
@@ -165,7 +167,7 @@ would override all the user changes there). More details:
 - C
 - Windows USB stack and/or qemu USB stack
 
-**Mentor**: [Marek Marczykowski-Górecki](/team/)
+**Mentor**: [Marek Marczykowski-Górecki](/de/team/)
 
 ### Dedicated Audio qube
 
@@ -185,7 +187,7 @@ would override all the user changes there). More details:
 - C
 - Python
 
-**Mentor**: [Marek Marczykowski-Górecki](/team/)
+**Mentor**: [Marek Marczykowski-Górecki](/de/team/)
 
 ### Qubes as a Vagrant provider
 
@@ -207,8 +209,7 @@ would override all the user changes there). More details:
  - Ruby
  - Vagrant concepts
 
-**Mentor**: [Wojtek Porczyk](/team/), [Marek Marczykowski-Górecki](/team/)
-
+**Mentor**: [Wojtek Porczyk](/de/team/), [Marek Marczykowski-Górecki
 ### Mechanism for maintaining in-VM configuration
 
 **Project**: Mechanism for maintaining in-VM configuration
@@ -227,7 +228,7 @@ would override all the user changes there). More details:
 - shell and/or python scripting
 - Qubes OS qrexec services
 
-**Mentor**: [Frédéric Pierret](/team/)
+**Mentor**: [Frédéric Pierret](/de/team/)
 
 ### Wayland support in GUI agent and/or GUI daemon
 
@@ -248,7 +249,7 @@ Choose either of GUI agent, GUI daemon. Both are of similar complexity and each 
 - implement tests for new GUI handling, similar to existing tests for X11 based GUI
 
 Relevant links:
- - [Low level GUI documentation](/doc/gui/)
+ - [Low level GUI documentation](/de/doc/gui/)
  - [qubes-gui-agent-linux](https://github.com/qubesos/qubes-gui-agent-linux)
  - [qubes-gui-daemon](https://github.com/qubesos/qubes-gui-daemon)
  - [Use Wayland instead of X11 to increase performance](https://github.com/qubesos/qubes-issues/issues/3366)
@@ -260,7 +261,7 @@ Relevant links:
 - C language
 - using shared memory (synchronization methods etc)
 
-**Mentor**: [Marek Marczykowski-Górecki](/team/).
+**Mentor**: [Marek Marczykowski-Górecki](/de/team/).
 
 ### Qubes Live USB
 
@@ -294,7 +295,7 @@ details: [#1552](https://github.com/QubesOS/qubes-issues/issues/1552),
  - Python and Bash scripting
  - Filesystems and block devices: loop devices, device-mapper, tmpfs, overlayfs, sparse files.
 
-**Mentor**: [Frédéric Pierret](/team/)
+**Mentor**: [Frédéric Pierret](/de/team/)
 
 ### Unikernel-based firewallvm with Qubes firewall settings support
 
@@ -310,7 +311,7 @@ details: [#1552](https://github.com/QubesOS/qubes-issues/issues/1552),
 - Xen network stack,
 - Qubes networking model & firewall semantics.
 
-**Mentor**: [Thomas Leonard](mailto:talex5@gmail.com), [Marek Marczykowski-Górecki](/team/)
+**Mentor**: [Thomas Leonard](mailto:talex5@gmail.com), [Marek Marczykowski-Górecki](/de/team/)
 
 ### LogVM(s)
 
@@ -341,7 +342,7 @@ immune to altering past entries. See
  - systemd
  - Python/Bash scripting
 
-**Mentor**: [Frédéric Pierret](/team/)
+**Mentor**: [Frédéric Pierret](/de/team/)
 
 ### Xen GPU passthrough for Intel integrated GPUs
 **Project**: Xen GPU passthrough for Intel integrated GPUs (largely independent of Qubes)
@@ -374,7 +375,7 @@ details in [#2618](https://github.com/QubesOS/qubes-issues/issues/2618).
  - Basics of x86_64 architecture, PCIe devices handling (DMA, MMIO, interrupts), IOMMU (aka VT-d)
  - Xen hypervisor architecture
 
-**Mentor**: [Marek Marczykowski-Górecki](/team/)
+**Mentor**: [Marek Marczykowski-Górecki](/de/team/)
 
 ### Whonix IPv6 and nftables support
 **Project**: Whonix IPv6 and nftables support
@@ -395,7 +396,7 @@ details in [#2618](https://github.com/QubesOS/qubes-issues/issues/2618).
 - iptables
 - IPv6
 
-**Mentor**: [Patrick Schleizer](/team/)
+**Mentor**: [Patrick Schleizer](/de/team/)
 
 ### Audio support for Qubes Windows Tools
 **Project**: Audio support for Qubes Windows Tools
@@ -406,7 +407,7 @@ details in [#2618](https://github.com/QubesOS/qubes-issues/issues/2618).
 
 **Knowledge prerequisite**: C/C++ languages, familiarity with Windows API, possibly familiarity with Windows audio stack on the driver level.
 
-**Mentor**: [Rafał Wojdyła](/team/)
+**Mentor**: [Rafał Wojdyła](/de/team/)
 
 ### Improve Windows GUI agent performance and stability
 **Project**: Improve Windows GUI agent performance and stability
@@ -417,7 +418,7 @@ details in [#2618](https://github.com/QubesOS/qubes-issues/issues/2618).
 
 **Knowledge prerequisite**: C language, Familiarity with Windows API, especially the windowing stack. Familiarity with profiling and debugging tools for Windows.
 
-**Mentor**: [Rafał Wojdyła](/team/)
+**Mentor**: [Rafał Wojdyła](/de/team/)
 
 ### GUI agent for Windows 8/10
 **Project**: GUI agent for Windows 8/10
@@ -428,7 +429,7 @@ details in [#2618](https://github.com/QubesOS/qubes-issues/issues/2618).
 
 **Knowledge prerequisite**: C/C++ languages, familiarity with Windows API, familiarity with the core Windows WDM driver model. Ideally familiarity with the WDDM display driver model.
 
-**Mentor**: [Rafał Wojdyła](/team/)
+**Mentor**: [Rafał Wojdyła](/de/team/)
 
 ### Unattended Windows installation
 
@@ -452,8 +453,7 @@ details in [#2618](https://github.com/QubesOS/qubes-issues/issues/2618).
  - Linux administration, including handling loop devices, partition tables, filesystems etc
  - For optional features, C language and x86 architecture (ACPI tables)
 
-**Mentor**: [Rafał Wojdyła](/team/), [Marek Marczykowski-Górecki](/team/)
-
+**Mentor**: [Rafał Wojdyła](/de/team/), [Marek Marczykowski-Górecki
 ### GNOME support in dom0 / GUI VM
 
 **Project**: GNOME support in dom0
@@ -488,8 +488,7 @@ details in [#2618](https://github.com/QubesOS/qubes-issues/issues/2618).
  - C language (patching metacity)
  - Probably also javascript - for modifying GNOME shell extensions
 
-**Mentor**: [Frédéric Pierret](/team/), [Marek Marczykowski-Górecki](/team/)
-
+**Mentor**: [Frédéric Pierret](/de/team/), [Marek Marczykowski-Górecki
 ### Generalize the Qubes PDF Converter to other types of files
 
 **Project**: Qubes Converters
@@ -526,9 +525,8 @@ for more information and qubes-specific background.
 
 **Expected results**: Significant progress towards making the Qubes build process deterministic. This would likely involve cooperation with and hacking on several upstream build tools to eliminate sources of variability.
 
-**Knowledge prerequisite**: qubes-builder [[1]](/doc/qubes-builder/) [[2]](/doc/qubes-builder-details/) [[3]](https://github.com/QubesOS/qubes-builder/tree/master/doc), and efficient at introspecting complex systems: comfortable with tracing and debugging tools, ability to quickly identify and locate issues within a large codebase (upstream build tools), etc.
-
-**Mentor**: [Marek Marczykowski-Górecki](/team/)
+**Knowledge prerequisite**: qubes-builder [[1]](/de/doc/qubes-builder/) [[2]
+**Mentor**: [Marek Marczykowski-Górecki](/de/team/)
 
 ### Porting Qubes to ARM/aarch64
 
@@ -556,7 +554,7 @@ Some related discussion:
  - Xen debugging.
  - General ARM architecture knowledge.
  
-**Mentor**: [Marek Marczykowski-Górecki](/team/)
+**Mentor**: [Marek Marczykowski-Górecki](/de/team/)
 
 ### Porting Qubes to POWER9/PPC64
 
@@ -588,7 +586,7 @@ More information and further links can be found in the related issue:
  - KVM or XEN internals
  - General ppc64 architecture knowledge.
  
-**Mentor**: [Marek Marczykowski-Górecki](/team/)
+**Mentor**: [Marek Marczykowski-Górecki](/de/team/)
 
 ### Android development in Qubes
 
@@ -612,17 +610,17 @@ We adapted some of the language here about GSoC from the [KDE GSoC page](https:/
 [2017-archive]: https://summerofcode.withgoogle.com/archive/2017/organizations/5074771758809088/
 [gsoc-qubes]: https://summerofcode.withgoogle.com/organizations/6239659689508864/
 [gsoc]: https://summerofcode.withgoogle.com/
-[team]: /team/
+[team]: /de/team/
 [gsoc-faq]: https://developers.google.com/open-source/gsoc/faq
-[contributing]: /doc/contributing/#contributing-code
-[patches]: /doc/source-code/#how-to-send-patches
-[code-signing]: /doc/code-signing/
-[ml-devel]: /support/#qubes-devel
+[contributing]: /de/doc/contributing/#contributing-code
+[patches]: /de/doc/source-code/#how-to-send-patches
+[code-signing]: /de/doc/code-signing/
+[ml-devel]: /de/support/#qubes-devel
 [gsoc-participate]: https://developers.google.com/open-source/gsoc/
 [gsoc-student]: https://developers.google.com/open-source/gsoc/resources/manual#student_manual
 [how-to-gsoc]: http://teom.org/blog/kde/how-to-write-a-kick-ass-proposal-for-google-summer-of-code/
 [gsoc-submit]: https://summerofcode.withgoogle.com/
-[mailing-lists]: /support/
+[mailing-lists]: /de/support/
 [qubes-issues]: https://github.com/QubesOS/qubes-issues/issues
 [qubes-issues-suggested]: https://github.com/QubesOS/qubes-issues/issues?q=is%3Aissue%20is%3Aopen%20label%3A%22P%3A%20minor%22%20label%3A%22help%20wanted%22
-[qubes-builder]: /doc/qubes-builder/
+[qubes-builder]: /de/doc/qubes-builder/

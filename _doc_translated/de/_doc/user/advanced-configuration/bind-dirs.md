@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: How to make any file in a TemplateBasedVM persistent using bind-dirs
-permalink: /doc/bind-dirs/
+permalink: /de/doc/bind-dirs/
+lang: de
+ref: 79
 redirect_from:
 - /en/doc/bind-dirs/
 ---
@@ -98,5 +100,5 @@ binds=( "${binds[@]/'/var/lib/tor'}" )
 
 [TemplateBasedVMs: make selected files and folders located in the root image persistent- review bind-dirs.sh](https://groups.google.com/forum/#!topic/qubes-devel/tcYQ4eV-XX4/discussion)
 
-[config-file]: /doc/config-files
+[config-file]: /de/doc/config-files
 [whonix]: https://github.com/Whonix/qubes-whonix/blob/8438d13d75822e9ea800b9eb6024063f476636ff/usr/lib/qubes-bind-dirs.d/40_qubes-whonix.conf#L5

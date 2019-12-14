@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: USB Devices
-permalink: /doc/usb-devices/
+permalink: /bg/doc/usb-devices/
+lang: bg
+ref: 48
 redirect_from:
 - /doc/usb/
 ---
@@ -141,19 +143,19 @@ Strip the leading `0000:` and pass the rest to the [`qvm-pci` tool][qvm-pci] to 
 
 
 
-[device handling in qubes]: /doc/device-handling/
-[block device]: /doc/block-devices/
-[security considerations]: /doc/device-handling-security/#usb-security
+[device handling in qubes]: /bg/doc/device-handling/
+[block device]: /bg/doc/block-devices/
+[security considerations]: /bg/doc/device-handling-security/#usb-security
 [usb-challenges]: https://blog.invisiblethings.org/2011/05/31/usb-security-challenges.html
-[usb icon]: /attachment/wiki/Devices/generic-usb.png
+[usb icon]: /bg/attachment/wiki/Devices/generic-usb.png
 [microcontroller programming]: https://www.arduino.cc/en/Main/Howto
-[external audio devices]: /doc/external-audio/
-[optical drives]: /doc/recording-optical-discs/
-[qubes u2f proxy]: /doc/u2f-proxy/
+[external audio devices]: /bg/doc/external-audio/
+[optical drives]: /bg/doc/recording-optical-discs/
+[qubes u2f proxy]: /bg/doc/u2f-proxy/
 [4661]: https://github.com/QubesOS/qubes-issues/issues/4661
 [device manager icon]:/attachment/wiki/Devices/media-removable.png
 [eject icon]:/attachment/wiki/Devices/media-eject.png
 [Installation Section]:#installation-of-qubes-usb-proxy
-[USB-qube howto]: /doc/usb-qubes/
-[keyboard setup]: /doc/usb-qubes/#enable-a-usb-keyboard-for-login
-[qvm-pci]: /doc/pci-devices/
+[USB-qube howto]: /bg/doc/usb-qubes/
+[keyboard setup]: /bg/doc/usb-qubes/#enable-a-usb-keyboard-for-login
+[qvm-pci]: /bg/doc/pci-devices/

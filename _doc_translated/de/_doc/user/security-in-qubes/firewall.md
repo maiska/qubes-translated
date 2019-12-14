@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: The Qubes Firewall
-permalink: /doc/firewall/
+permalink: /de/doc/firewall/
+lang: de
+ref: 6
 redirect_from:
 - /doc/qubes-firewall/
 - /en/doc/qubes-firewall/
@@ -32,7 +34,7 @@ How to edit rules
 In order to edit rules for a given qube, select it in the Qubes
 Manager and press the "firewall" button:
 
-![r2b1-manager-firewall.png](/attachment/wiki/QubesFirewall/r2b1-manager-firewall.png)
+![r2b1-manager-firewall.png](/de/attachment/wiki/QubesFirewall/r2b1-manager-firewall.png)
 
 *R4.0 note:* ICMP and DNS are no longer accessible in the GUI, but can be changed
 via `qvm-firewall` described below. Connections to Updates Proxy are no longer made
@@ -100,7 +102,7 @@ The sys-firewall-2 proxy ensures that:
 2. Changes to the Qubes firewall by the Qubes maintainers cannot lead to unwanted information leakage in combination with user rules deployed in the network service qube.
 3. A compromise of the network service qube does not compromise the Qubes firewall.
 
-For the VPN service please also look at the [VPN documentation](/doc/vpn).
+For the VPN service please also look at the [VPN documentation](/de/doc/vpn).
 
 
 Enabling networking between two qubes
@@ -425,7 +427,7 @@ service is up :-)
 Where to put firewall rules
 ---------------------------
 
-Implicit in the above example [scripts](/doc/config-files/), but worth 
+Implicit in the above example [scripts](/de/doc/config-files/), but worth 
 calling attention to: for all qubes *except* AppVMs supplying networking,
 iptables commands should be added to the `/rw/config/rc.local` script. For
 AppVMs supplying networking (`sys-firewall` inclusive), 

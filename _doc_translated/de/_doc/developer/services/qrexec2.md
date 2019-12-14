@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: Qrexec2
-permalink: /doc/qrexec2/
+permalink: /de/doc/qrexec2/
+lang: de
+ref: 163
 redirect_from:
 - /doc/qrexec2-implementation/
 - /en/doc/qrexec2-implementation/
@@ -12,7 +14,7 @@ redirect_from:
 # Command execution in VMs #
 
 (*This page is about qrexec v2. For qrexec v3, see
-[here](/doc/qrexec3/).*)
+[here](/de/doc/qrexec3/).*)
 
 Qubes **qrexec** is a framework for implementing inter-VM (incl. Dom0-VM)
 services. It offers a mechanism to start programs in VMs, redirect their
@@ -232,7 +234,7 @@ surfaces that are exposed to untrusted or less trusted VMs in that case.
 # Qubes RPC internals #
 
 (*This is about the implementation of qrexec v2. For the implementation of
-qrexec v3, see [here](/doc/qrexec3/#qubes-rpc-internals). Note that the user
+qrexec v3, see [here](/de/doc/qrexec3/#qubes-rpc-internals). Note that the user
 API in v3 is backward compatible: qrexec apps written for Qubes R2 should
 run without modification on Qubes R3.*)
 
@@ -285,13 +287,13 @@ users. `qrexec-client-vm` is designed to be wrapped up by Qubes apps.
 ## All the pieces together at work ##
 
 **Note:** This section is not needed to use qrexec for writing Qubes
-apps. Also note the [qrexec framework implemention in Qubes R3](/doc/qrexec3/)
+apps. Also note the [qrexec framework implemention in Qubes R3](/de/doc/qrexec3/)
 significantly differs from what is described in this section.
 
 The VM-VM channels in Qubes R2 are made via "gluing" two VM-Dom0 and Dom0-VM
 vchan connections:
 
-![qrexec2-internals.png](/attachment/wiki/Qrexec2Implementation/qrexec2-internals.png)
+![qrexec2-internals.png](/de/attachment/wiki/Qrexec2Implementation/qrexec2-internals.png)
 
 Note that Dom0 never examines the actual data flowing in neither of the two
 vchan connections.

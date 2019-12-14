@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: Upgrading to R2
-permalink: /doc/upgrade-to-r2/
+permalink: /de/doc/upgrade-to-r2/
+lang: de
+ref: 47
 redirect_from:
 - /en/doc/upgrade-to-r2/
 - /doc/UpgradeToR2/
@@ -14,18 +16,18 @@ Upgrading Qubes R2 Beta 3 to R2
 
 Current Qubes R2 Beta 3 (R2B3) systems can be upgraded in-place to the latest R2 (R2) release by following the procedure below.
 
-**Before attempting either an in-place upgrade or a clean installation, we strongly recommend that users back up the system by using the built-in [backup tool](/doc/backup-restore/).**
+**Before attempting either an in-place upgrade or a clean installation, we strongly recommend that users back up the system by using the built-in [backup tool](/de/doc/backup-restore/).**
 
 Upgrade Template and Standalone VM(s)
 -------------------------------------
 
--   Qubes R2 comes with new template based on Fedora 20. You can upgrade existing template according to procedure described [here](/doc/templates/fedora/#upgrading).
+-   Qubes R2 comes with new template based on Fedora 20. You can upgrade existing template according to procedure described [here](/de/doc/templates/fedora/#upgrading).
 
 -   **It also possible to download a new Fedora 20-based template from our repositories**. To do this please first upgrade the Dom0 distro as described in the section below.
 
 While technically it is possible to use old Fedora 18 template on R2, it is strongly recommended to upgrade all the Template VMs and Standalone VMs, because Fedora 18 no longer receive security updates.
 
-By default, in Qubes R2, there is only one Template VM, however users are free to create more Template VMs for special purposes, as well as Standalone VMs. If more than one template and/or Standalone VMs are used, then it is recommended to upgrade/replace all of them. More information on using multiple Template VMs, as well as Standalone VMs, can be found [here](/doc/software-update-vm/).
+By default, in Qubes R2, there is only one Template VM, however users are free to create more Template VMs for special purposes, as well as Standalone VMs. If more than one template and/or Standalone VMs are used, then it is recommended to upgrade/replace all of them. More information on using multiple Template VMs, as well as Standalone VMs, can be found [here](/de/doc/software-update-vm/).
 
 Upgrading dom0
 --------------

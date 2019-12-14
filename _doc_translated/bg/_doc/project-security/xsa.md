@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: Xen Security Advisory (XSA) Tracker
-permalink: /security/xsa/
+permalink: /bg/security/xsa/
+lang: bg
+ref: 81
 ---
 
 Xen Security Advisory (XSA) Tracker
@@ -107,7 +109,7 @@ Tracker
 
 
 [XSA]: https://xenbits.xen.org/xsa/
-[QSB]: /security/bulletins/
+[QSB]: /bg/security/bulletins/
 [DoS]: https://en.wikipedia.org/wiki/Denial-of-service_attack
 [Xen Security Policy]: https://www.xenproject.org/security-policy.html
 [Statistics]: #statistics

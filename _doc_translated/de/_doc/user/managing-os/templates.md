@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: Templates
-permalink: /doc/templates/
+permalink: /de/doc/templates/
+lang: de
+ref: 15
 redirect_from:
 - /doc/template/
 - /en/doc/templates/
@@ -15,12 +17,12 @@ Every TemplateBasedVM in Qubes is, as the name implies, based on some TemplateVM
 The TemplateVM is where all the software available to TemplateBasedVMs is installed.
 The default template is based on Fedora, but there are additional templates based on other Linux distributions.
 There are also templates available with or without certain software preinstalled.
-The concept of TemplateVMs is initially described [here](/getting-started/#appvms-qubes-and-templatevms).
-The technical details of this implementation are described in the developer documentation [here](/doc/template-implementation/).
+The concept of TemplateVMs is initially described [here](/de/getting-started/#appvms-qubes-and-templatevms).
+The technical details of this implementation are described in the developer documentation [here](/de/doc/template-implementation/).
 
-Some templates are available in ready-to-use binary form, but some of them are available only as source code, which can be built using the [Qubes Builder](/doc/qubes-builder/).
+Some templates are available in ready-to-use binary form, but some of them are available only as source code, which can be built using the [Qubes Builder](/de/doc/qubes-builder/).
 In particular, some template "flavors" are available in source code form only.
-Take a look at the [Qubes Builder documentation](/doc/qubes-builder/) for instructions on how to compile them.
+Take a look at the [Qubes Builder documentation](/de/doc/qubes-builder/) for instructions on how to compile them.
 
 
 ## Official templates
@@ -29,9 +31,9 @@ These are the official Qubes OS Project templates.
 We build and release updates for these templates.
 We guarantee that the binary updates are compiled from exactly the same source code as we publish.
 
- * [Fedora](/doc/templates/fedora/) (default base template)
- * [Fedora - Minimal](/doc/templates/fedora-minimal)
- * [Debian](/doc/templates/debian/)
+ * [Fedora](/de/doc/templates/fedora/) (default base template)
+ * [Fedora - Minimal](/de/doc/templates/fedora-minimal)
+ * [Debian](/de/doc/templates/debian/)
 
 
 ## Community templates
@@ -40,9 +42,9 @@ These templates are supported by the Qubes community. Some of them are available
 
 By installing these templates, you are trusting not only the Qubes developers and the distribution maintainers, but also the template maintainer. In addition, these templates may be somewhat less stable, since the Qubes developers do not test them.
 
-* [Whonix](/doc/templates/whonix/)
-* [Ubuntu](/doc/templates/ubuntu/)
-* [Archlinux](/doc/templates/archlinux/)
+* [Whonix](/de/doc/templates/whonix/)
+* [Ubuntu](/de/doc/templates/ubuntu/)
+* [Archlinux](/de/doc/templates/archlinux/)
 
 
 ## How to install, uninstall, reinstall, and switch
@@ -66,7 +68,7 @@ To uninstall a TemplateVM, execute the following type of command in dom0:
 
 (where `qubes-template-<name>` is the name of your TemplateVM package)
 
-If this doesn't work, you can [remove it manually](/doc/remove-vm-manually/).
+If this doesn't work, you can [remove it manually](/de/doc/remove-vm-manually/).
 
 If the Applications Menu entry doesn't go away after you uninstall a TemplateVM, execute the following type of command in dom0:
 
@@ -75,7 +77,7 @@ If the Applications Menu entry doesn't go away after you uninstall a TemplateVM,
 
 ### How to reinstall
 
-To reinstall a currently installed TemplateVM, see [here](/doc/reinstall-template/).
+To reinstall a currently installed TemplateVM, see [here](/de/doc/reinstall-template/).
 
 
 ### How to switch templates
@@ -90,7 +92,7 @@ When you install a new template or upgrade a clone of a template, it is recommen
 
         Applications Menu --> System Tools --> Qubes Template Manager
 
-3. Base the [DisposableVM Template](/doc/glossary/#disposablevm-template) on the new template.
+3. Base the [DisposableVM Template](/de/doc/glossary/#disposablevm-template) on the new template.
 
         [user@dom0 ~]$ qvm-create -l red -t new-template new-template-dvm
         [user@dom0 ~]$ qvm-prefs new-template-dvm template_for_dispvms True
@@ -114,14 +116,14 @@ No changes in any other directories in TemplateBasedVMs persist in this manner. 
 
 (1) Upon creation
 (2) Following shutdown
-(3) Including [DisposableVM Templates](/doc/glossary/#disposablevm-template)
+(3) Including [DisposableVM Templates](/de/doc/glossary/#disposablevm-template)
 
 
 ## Updating TemplateVMs
 
-Templates are not automatically updated when [updating dom0](/doc/software-update-dom0/).
+Templates are not automatically updated when [updating dom0](/de/doc/software-update-dom0/).
 This is by design, since doing so would cause all user modifications to templates to be lost.
-Instead, you should update your templates [from within each template](/doc/software-update-vm/).
+Instead, you should update your templates [from within each template](/de/doc/software-update-vm/).
 
 When you create a StandaloneVM from a TemplateVM, the StandaloneVM is independent from the TemplateVM.
 It will not be updated when the TemplateVM is updated.

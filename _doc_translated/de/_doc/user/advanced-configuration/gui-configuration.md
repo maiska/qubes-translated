@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: GUI Configuration and Troubleshooting
-permalink: /doc/gui-configuration/
+permalink: /de/doc/gui-configuration/
+lang: de
+ref: 76
 ---
 
 GUI Configuration and Troubleshooting

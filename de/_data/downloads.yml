@@ -80,13 +80,13 @@ releases:
     docs:
       Installation Guide:
         featured: yes
-        url: /doc/installation-guide/
+        url: /de/doc/installation-guide/
       Release Notes:
-        url: /doc/releases/4.0/release-notes/
+        url: /de/doc/releases/4.0/release-notes/
       Release Schedule:
-        url: /doc/releases/4.0/schedule/
+        url: /de/doc/releases/4.0/schedule/
       Upgrading to Qubes R4.0:
-        url: /doc/releases/4.0/release-notes/#upgrading
+        url: /de/doc/releases/4.0/release-notes/#upgrading
     featured_docs:
       get:
       - Release Notes
@@ -165,13 +165,13 @@ releases:
     docs:
       Installation Guide:
         featured: yes
-        url: /doc/installation-guide/
+        url: /de/doc/installation-guide/
       Release Notes:
-        url: /doc/releases/3.2/release-notes/
+        url: /de/doc/releases/3.2/release-notes/
       Release Schedule:
-        url: /doc/releases/3.2/schedule/
+        url: /de/doc/releases/3.2/schedule/
       Upgrading to Qubes R3.2:
-        url: /doc/releases/3.2/release-notes/#upgrading
+        url: /de/doc/releases/3.2/release-notes/#upgrading
     featured_docs:
       get:
       - Upgrading to Qubes R3.2
@@ -251,13 +251,13 @@ releases:
     docs:
       Installation Guide:
         featured: yes
-        url: /doc/installation-guide/
+        url: /de/doc/installation-guide/
       Release Notes:
-        url: /doc/releases/3.1/release-notes/
+        url: /de/doc/releases/3.1/release-notes/
       Release Schedule:
-        url: /doc/releases/3.1/schedule/
+        url: /de/doc/releases/3.1/schedule/
       Upgrading to Qubes R3.1:
-        url: /doc/releases/3.1/release-notes/#upgrading
+        url: /de/doc/releases/3.1/release-notes/#upgrading
     featured_docs:
       get:
       - Upgrading to Qubes R3.1
@@ -308,7 +308,7 @@ releases:
     docs:
       Usage Guide:
         featured: yes
-        url: /doc/live-usb/
+        url: /de/doc/live-usb/
   Qubes Release 3.0:
     testing: no
     latest: no
@@ -351,13 +351,13 @@ releases:
     docs:
       Installation Guide:
         featured: yes
-        url: /doc/installation-guide/
+        url: /de/doc/installation-guide/
       Release Notes:
-        url: /doc/releases/3.0/release-notes/
+        url: /de/doc/releases/3.0/release-notes/
       Release Schedule:
-        url: /doc/releases/3.0/schedule/
+        url: /de/doc/releases/3.0/schedule/
       Upgrading to Qubes R3.0:
-        url: /doc/releases/3.0/release-notes/#upgrading
+        url: /de/doc/releases/3.0/release-notes/#upgrading
     featured_docs:
       get:
       - Upgrading to Qubes R3.0
@@ -405,11 +405,11 @@ releases:
     docs:
       Installation Guide:
         featured: yes
-        url: /doc/installation-guide/
+        url: /de/doc/installation-guide/
       Release Notes:
-        url: /doc/releases/2.0/release-notes/
+        url: /de/doc/releases/2.0/release-notes/
       Upgrading to Qubes R2:
-        url: /doc/releases/2.0/release-notes/#upgrading
+        url: /de/doc/releases/2.0/release-notes/#upgrading
   Qubes Release 1:
     testing: no
     latest: no
@@ -452,6 +452,6 @@ releases:
     docs:
       Installation Guide:
         featured: yes
-        url: /doc/installation-guide/
+        url: /de/doc/installation-guide/
       Release Notes:
-        url: /doc/releases/1.0/release-notes/
+        url: /de/doc/releases/1.0/release-notes/

@@ -1,7 +1,9 @@
 ---
 layout: sidebar
 title: Google Season of Docs
-permalink: /gsod/
+permalink: /de/gsod/
+lang: de
+ref: 187
 ---
 
 # 2019 Google Season of Docs
@@ -164,15 +166,15 @@ This could be helped by writing consolidated guide with with a clear list of sym
 **Mentor**: [Marek Marczykowski-Górecki][team]
 
 [gsod]: https://developers.google.com/season-of-docs/
-[team]: /team/
+[team]: /de/team/
 [gsod-doc]: https://developers.google.com/season-of-docs/docs/
 [gsod-faq]: https://developers.google.com/season-of-docs/docs/faq
 [gsod.md]: https://github.com/QubesOS/qubes-doc/blob/master/basics_dev/gsod.md
 [gsod-2019-thread]: https://groups.google.com/d/msgid/qubes-project/aac9b148-4081-ebd8-cb9d-9a9191033484%40qubes-os.org
-[Documentation Guidelines]: /doc/doc-guidelines/
-[Help, Support, and Mailing Lists]: /support/
-[intro]: /intro/
-[getting started]: /getting-started/
+[Documentation Guidelines]: /de/doc/doc-guidelines/
+[Help, Support, and Mailing Lists]: /de/support/
+[intro]: /de/intro/
+[getting started]: /de/getting-started/
 [markdown]: https://daringfireball.net/projects/markdown/
 [doc-issues]: https://github.com/QubesOS/qubes-issues/issues?q=is%3Aopen+is%3Aissue+label%3A%22C%3A+doc%22
 

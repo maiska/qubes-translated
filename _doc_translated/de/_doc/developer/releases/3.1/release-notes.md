@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: Qubes R3.1 release notes
-permalink: /doc/releases/3.1/release-notes/
+permalink: /de/doc/releases/3.1/release-notes/
+lang: de
+ref: 178
 ---
 
 Qubes R3.1 release notes
@@ -41,12 +43,12 @@ It is advised to install updates just after system installation to apply bug fix
 Downloads
 ---------
 
-See [Qubes Downloads](/downloads/).
+See [Qubes Downloads](/de/downloads/).
 
 Installation instructions
 -------------------------
 
-See [Installation Guide](/doc/installation-guide/).
+See [Installation Guide](/de/doc/installation-guide/).
 
 Upgrading
 ---------
@@ -54,23 +56,23 @@ Upgrading
 ### From R3.0
 
 The easiest and safest way to upgrade to Qubes R3.1 is to install it from
-scratch and use [qubes backup and restore tools](/doc/backup-restore/) for
+scratch and use [qubes backup and restore tools](/de/doc/backup-restore/) for
 migrating of all of the user VMs.
 
 Users of Qubes R3.0 can upgrade using [experimental
-procedure](/doc/upgrade-to-r3.1/).
+procedure](/de/doc/upgrade-to-r3.1/).
 
 ### From R2 or earlier
 
 When upgrading from earlier versions the easiest and safest way is to install
-it from scratch and use [qubes backup and restore tools](/doc/backup-restore/)
+it from scratch and use [qubes backup and restore tools](/de/doc/backup-restore/)
 for migrating of all of the user VMs.
 
 Alternatively you can [upgrade to R3.0
-using](/doc/releases/3.0/release-notes/#upgrading) first, then follow the
+using](/de/doc/releases/3.0/release-notes/#upgrading) first, then follow the
 instructions above. This will be time consuming process.
 
-[salt-doc]: /doc/salt/
-[pvgrub-doc]: /doc/managing-vm-kernel/
+[salt-doc]: /de/doc/salt/
+[pvgrub-doc]: /de/doc/managing-vm-kernel/
 [input-proxy]: https://github.com/QubesOS/qubes-app-linux-input-proxy/blob/master/README.md
 [github-release-notes]: https://github.com/QubesOS/qubes-issues/issues?q=is%3Aissue+sort%3Aupdated-desc+milestone%3A%22Release+3.1%22+label%3Arelease-notes+is%3Aclosed

@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: Copy and Paste
-permalink: /doc/copy-paste/
+permalink: /bg/doc/copy-paste/
+lang: bg
+ref: 59
 redirect_from:
 - /en/doc/copy-paste/
 - /doc/CopyPaste/
@@ -36,7 +38,7 @@ And [this message](https://groups.google.com/group/qubes-devel/msg/48b4b532cee06
 Copy/Paste between dom0 and other domains
 -----------------------------------------
 
-See ["Copying from (and to) dom0"](/doc/copy-from-dom0/).
+See ["Copying from (and to) dom0"](/bg/doc/copy-from-dom0/).
 
 Clipboard automatic policy enforcement
 --------------------------------------
@@ -66,5 +68,5 @@ The copy/paste shortcuts are configurable in:
 VMs need to be restarted in order for changes in `/etc/qubes/guid.conf` to take effect.
 
 
-[RPC policy]: /doc/rpc-policy/
+[RPC policy]: /bg/doc/rpc-policy/
 

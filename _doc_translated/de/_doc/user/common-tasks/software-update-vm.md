@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: Installing and updating software in VMs
-permalink: /doc/software-update-vm/
+permalink: /de/doc/software-update-vm/
+lang: de
+ref: 49
 redirect_from:
 - /en/doc/software-update-vm/
 - /doc/SoftwareUpdateVM/
@@ -25,7 +27,7 @@ The side effect of this mechanism is, of course, that if you install any softwar
 **This means one normally installs software in the TemplateVM, not in AppVMs.**
 
 The template root filesystem is created in a thin pool, so manual trims are not necessary.
-See [here](/doc/disk-trim) for further discussion on enabling discards/trim support.
+See [here](/de/doc/disk-trim) for further discussion on enabling discards/trim support.
 
 Installing (or updating) software in the TemplateVM
 ----------------------------------------------------
@@ -104,7 +106,7 @@ There are several ways to deal with this problem:
 
 -   Only install packages from trusted sources -- e.g. from the pre-configured Fedora repositories.
     All those packages are signed by Fedora, and we expect that at least the package's installation scripts are not malicious.
-    This is enforced by default (at the [firewall VM level](/doc/firewall/)), by not allowing any networking connectivity in the default template VM, except for access to the Fedora repos.
+    This is enforced by default (at the [firewall VM level](/de/doc/firewall/)), by not allowing any networking connectivity in the default template VM, except for access to the Fedora repos.
 
 -   Use *standalone VMs* (see below) for installation of untrusted software packages.
 
@@ -117,7 +119,7 @@ Some popular questions:
 As far as the template's compromise is concerned, it doesn't really matter whether `/usr/bin/firefox` is buggy and can be exploited, or not.
 What matters is whether its *installation* scripts (such as %post in the rpm.spec) are benign or not.
 Template VM should be used only for installation of packages, and nothing more, so it should never get a chance to actually run `/usr/bin/firefox` and get infected from it, in case it was compromised.
-Also, some of your more trusted AppVMs would have networking restrictions enforced by the [firewall VM](/doc/firewall/), and again they should not fear this proverbial `/usr/bin/firefox` being potentially buggy and easy to compromise.
+Also, some of your more trusted AppVMs would have networking restrictions enforced by the [firewall VM](/de/doc/firewall/), and again they should not fear this proverbial `/usr/bin/firefox` being potentially buggy and easy to compromise.
 
 -   But why trust Fedora?
 

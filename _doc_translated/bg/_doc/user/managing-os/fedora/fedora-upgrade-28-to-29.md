@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: Upgrading the Fedora 28 Template to Fedora 29
-permalink: /doc/template/fedora/upgrade-28-to-29/
+permalink: /bg/doc/template/fedora/upgrade-28-to-29/
+lang: bg
+ref: 20
 redirect_from:
 - /doc/fedora-template-upgrade-28/
 - /en/doc/fedora-template-upgrade-28/
@@ -202,11 +204,11 @@ In this case, you have several options:
      * [Jason M](https://groups.google.com/d/msg/qubes-users/mCXkxlACILQ/5PxDfI-RKAsJ)
 
 
-[TemplateVM]: /doc/templates/
-[Fedora TemplateVM]: /doc/templates/fedora/
-[resize-disk-image]: /doc/resize-disk-image/
+[TemplateVM]: /bg/doc/templates/
+[Fedora TemplateVM]: /bg/doc/templates/fedora/
+[resize-disk-image]: /bg/doc/resize-disk-image/
 [Additional Information]: #additional-information
 [Compacting the Upgraded Template]: #compacting-the-upgraded-template
-[switching]: /doc/templates/#how-to-switch-templates
-[DispVM]: /doc/dispvm/
+[switching]: /bg/doc/templates/#how-to-switch-templates
+[DispVM]: /bg/doc/dispvm/
 

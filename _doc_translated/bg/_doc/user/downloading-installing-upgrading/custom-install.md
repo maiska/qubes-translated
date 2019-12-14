@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: Custom Installation
-permalink: /doc/custom-install/
+permalink: /bg/doc/custom-install/
+lang: bg
+ref: 38
 redirect_from:
  - /doc/encryption-config/
 ---

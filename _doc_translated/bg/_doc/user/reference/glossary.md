@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: Glossary
-permalink: /doc/glossary/
+permalink: /bg/doc/glossary/
+lang: bg
+ref: 13
 redirect_from:
 - /en/doc/glossary/
 - /doc/Glossary/
@@ -38,7 +40,7 @@ Domain
 ------
 An area or set of activities in one's digital life that has certain security requirements and therefore involves the use of certain [qubes](#qube). 
 For example, suppose your "email" domain encompasses the activity of sending PGP-encrypted email. 
-This domain may include your email qube and your [Split GPG](/doc/split-gpg) qube. 
+This domain may include your email qube and your [Split GPG](/bg/doc/split-gpg) qube. 
 Note that domains and qubes are not the same thing.
 In this example, your "email" domain includes the use of two qubes. 
 Furthermore, a qube can fall under multiple domains simultaneously. 
@@ -193,6 +195,6 @@ QWT
 ----
 An abbreviation of Qubes [Windows Tools](#windows-tools).
 
-[Disposable Virtual Machine]: /doc/disposablevm/
-[DisposableVM Customization]: /doc/disposablevm-customization/
+[Disposable Virtual Machine]: /bg/doc/disposablevm/
+[DisposableVM Customization]: /bg/doc/disposablevm-customization/
 

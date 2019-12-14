@@ -1,7 +1,9 @@
 ---
 layout: sidebar
 title: Help, Support, and Mailing Lists
-permalink: /support/
+permalink: /bg/support/
+lang: bg
+ref: 93
 redirect_from:
 - /help/
 - /mailing-lists/
@@ -341,30 +343,30 @@ This list also has an optional [Google Groups web interface][qubes-translation-w
 
 
 [mailing lists]: https://en.wikipedia.org/wiki/Electronic_mailing_list
-[Qubes team]: /team/
-[contributions]: /doc/contributing/
-[code-signing]: /doc/code-signing/
-[contributing software packages]: /doc/package-contributions/
-[contributing to the documentation]: /doc/doc-guidelines/
-[verify]: /security/verifying-signatures/
-[qsb]: /security/bulletins/
+[Qubes team]: /bg/team/
+[contributions]: /bg/doc/contributing/
+[code-signing]: /bg/doc/code-signing/
+[contributing software packages]: /bg/doc/package-contributions/
+[contributing to the documentation]: /bg/doc/doc-guidelines/
+[verify]: /bg/security/verifying-signatures/
+[qsb]: /bg/security/bulletins/
 [qubes-announce-web]: https://groups.google.com/group/qubes-announce
 [Top-posting]: https://en.wikipedia.org/wiki/Posting_style#Top-posting
 [interleave]: https://en.wikipedia.org/wiki/Posting_style#Interleaved_style
 [bottom-post]: https://en.wikipedia.org/wiki/Posting_style#Bottom-posting
 [roadmap]: https://github.com/QubesOS/qubes-issues/milestones
 [smart-questions]: http://www.catb.org/esr/faqs/smart-questions.html
-[Whonix]: /doc/whonix/
-[HCL]: /doc/hcl/
-[Installation Guide]: /doc/installation-guide/
-[System Requirements]: /doc/system-requirements/
-[User FAQ]: /faq/#users
-[documentation]: /doc/
+[Whonix]: /bg/doc/whonix/
+[HCL]: /bg/doc/hcl/
+[Installation Guide]: /bg/doc/installation-guide/
+[System Requirements]: /bg/doc/system-requirements/
+[User FAQ]: /bg/faq/#users
+[documentation]: /bg/doc/
 [MUAs]: https://en.wikipedia.org/wiki/Email_client
 [Thunderbird]: https://www.thunderbird.net/
 [Mutt]: http://www.mutt.org/
-[distrust the infrastructure]: /faq/#what-does-it-mean-to-distrust-the-infrastructure
-[Split GPG]: /doc/split-gpg/
+[distrust the infrastructure]: /bg/faq/#what-does-it-mean-to-distrust-the-infrastructure
+[Split GPG]: /bg/doc/split-gpg/
 [thunderbird-newsgroup]: https://support.mozilla.org/en-US/kb/creating-newsgroup-account
 [qubes-users-archive]: https://www.mail-archive.com/qubes-users@googlegroups.com/
 [qubes-devel-archive]: https://www.mail-archive.com/qubes-devel@googlegroups.com/
@@ -374,8 +376,8 @@ This list also has an optional [Google Groups web interface][qubes-translation-w
 [qubes-project-web]: https://groups.google.com/group/qubes-project
 [business]: https://github.com/QubesOS/qubes-issues/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Abusiness
 [localization]: https://github.com/QubesOS/qubes-issues/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Alocalization
-[coc]: /code-of-conduct/
+[coc]: /bg/code-of-conduct/
 [Transifex]: https://www.transifex.com/otf/qubes/
-[issue tracker]: /doc/reporting-bugs/
-[searching the issue tracker]: /doc/reporting-bugs/#search-tips
+[issue tracker]: /bg/doc/reporting-bugs/
+[searching the issue tracker]: /bg/doc/reporting-bugs/#search-tips
 

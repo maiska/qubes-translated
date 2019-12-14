@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: Security Bulletin Template
-permalink: /security/bulletins/template/
+permalink: /bg/security/bulletins/template/
+lang: bg
+ref: 87
 redirect_from: /doc/security-bulletins/template/
 ---
 

@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: Postfix
-permalink: /doc/postfix/
+permalink: /bg/doc/postfix/
+lang: bg
+ref: 141
 redirect_from:
 - /en/doc/postfix/
 - /doc/Postfix/
@@ -11,8 +13,7 @@ redirect_from:
 Postfix
 =======
 
-Postfix is full featured MTA (Message Transfer Agent). Here we will configure it in smarthost mode as part of common [Mutt](/doc/mutt/)+Postfix+[Fetchmail](/doc/fetchmail/) stack.
-
+Postfix is full featured MTA (Message Transfer Agent). Here we will configure it in smarthost mode as part of common [Mutt](/bg/doc/mutt/)+Postfix+[Fetchmail
 Installation
 ------------
 

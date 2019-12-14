@@ -1,7 +1,9 @@
 ---
 layout: sidebar
 title: Download Mirrors
-permalink: /downloads/mirrors/
+permalink: /de/downloads/mirrors/
+lang: de
+ref: 37
 ---
 
 Qubes Download Mirrors
@@ -26,7 +28,7 @@ helpful in streamlining the process.
  * For website updates and fixes, please contact [Andrew].
 
 
-[mirror-list]: /downloads/#mirrors
-[Wojtek]: /team/#wojtek-porczyk
-[Marek]: /team/#marek-marczykowski-górecki
-[Andrew]: /team/#andrew-david-wong
+[mirror-list]: /de/downloads/#mirrors
+[Wojtek]: /de/team/#wojtek-porczyk
+[Marek]: /de/team/#marek-marczykowski-górecki
+[Andrew]: /de/team/#andrew-david-wong

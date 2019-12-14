@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: Removing TemplateVM Packages
-permalink: /doc/removing-templatevm-packages/
+permalink: /de/doc/removing-templatevm-packages/
+lang: de
+ref: 132
 ---
 
 # Removing TemplateVM Packages

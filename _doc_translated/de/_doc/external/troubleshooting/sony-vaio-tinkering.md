@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: Sony Vaio Tinkering
-permalink: /doc/sony-vaio-tinkering/
+permalink: /de/doc/sony-vaio-tinkering/
+lang: de
+ref: 105
 redirect_from:
 - /en/doc/sony-vaio-tinkering/
 - /doc/SonyVaioTinkering/

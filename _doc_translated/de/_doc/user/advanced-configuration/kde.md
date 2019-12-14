@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: KDE
-permalink: /doc/kde/
+permalink: /de/doc/kde/
+lang: de
+ref: 74
 redirect_from: /en/doc/kde/
 ---
 
@@ -12,7 +14,7 @@ Installation
 ------------
 
 Prior to R3.2, KDE was the default desktop environment in Qubes. Beginning with
-R3.2, however, [XFCE is the new default desktop environment](/doc/releases/3.2/release-notes/). Nonetheless, it is
+R3.2, however, [XFCE is the new default desktop environment](/de/doc/releases/3.2/release-notes/). Nonetheless, it is
 still possible to install KDE by issuing this command in dom0:
 
     $ sudo qubes-dom0-update @kde-desktop-qubes

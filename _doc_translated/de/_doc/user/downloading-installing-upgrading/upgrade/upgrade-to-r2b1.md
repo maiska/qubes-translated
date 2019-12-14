@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: Upgrading to R2B1
-permalink: /doc/upgrade-to-r2b1/
+permalink: /de/doc/upgrade-to-r2b1/
+lang: de
+ref: 46
 redirect_from:
 - /en/doc/upgrade-to-r2b1/
 - /doc/UpgradeToR2B1/

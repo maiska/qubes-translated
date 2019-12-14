@@ -1,7 +1,9 @@
 ---
 layout: team
 title: Team
-permalink: /team/
+permalink: /de/team/
+lang: de
+ref: 207
 redirect_from:
 - /people/
 - /doc/QubesDevelopers/

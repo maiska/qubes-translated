@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: Disk TRIM
-permalink: /doc/disk-trim/
+permalink: /bg/doc/disk-trim/
+lang: bg
+ref: 149
 redirect_from:
 - /en/doc/disk-trim/
 - /doc/DiskTRIM/

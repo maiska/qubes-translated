@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: Qubes R3.2 Release Schedule
-permalink: /doc/releases/3.2/schedule/
+permalink: /de/doc/releases/3.2/schedule/
+lang: de
+ref: 175
 redirect_from:
 - /en/doc/releases/3.2/schedule/
 ---
@@ -9,7 +11,7 @@ redirect_from:
 Qubes R3.2 Release Schedule
 ===========================
 
-This schedule is based on [Version Scheme](/doc/version-scheme/#release-schedule).
+This schedule is based on [Version Scheme](/de/doc/version-scheme/#release-schedule).
 
 |  Date       | Stage                                   |
 | -----------:| --------------------------------------- |

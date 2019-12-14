@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: Dom0 Secure Updates
-permalink: /doc/dom0-secure-updates/
+permalink: /bg/doc/dom0-secure-updates/
+lang: bg
+ref: 168
 redirect_from:
 - /en/doc/dom0-secure-updates/
 - /doc/Dom0SecureUpdates/

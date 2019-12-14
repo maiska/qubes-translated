@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: Device Handling
-permalink: /doc/device-handling/
+permalink: /bg/doc/device-handling/
+lang: bg
+ref: 57
 redirect_from:
 - /doc/external-device-mount-point/
 - /en/doc/external-device-mount-point/
@@ -137,8 +139,8 @@ If no specific `sourceVM:deviceID` combination is given, *all devices of that DE
 [block]:/doc/block-devices/
 [USB]:/doc/usb-devices/
 [PCI]:/doc/pci-devices/
-[security considerations]: /doc/device-handling-security/
-[device manager icon]: /attachment/wiki/Devices/media-removable.png
-[eject icon]: /attachment/wiki/Devices/media-eject.png
+[security considerations]: /bg/doc/device-handling-security/
+[device manager icon]: /bg/attachment/wiki/Devices/media-removable.png
+[eject icon]: /bg/attachment/wiki/Devices/media-eject.png
 [i4692]: https://github.com/QubesOS/qubes-issues/issues/4692
 

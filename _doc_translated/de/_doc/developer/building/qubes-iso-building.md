@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: Qubes ISO Building
-permalink: /doc/qubes-iso-building/
+permalink: /de/doc/qubes-iso-building/
+lang: de
+ref: 202
 redirect_from:
 - /doc/qubes-r3-building/
 - /en/doc/qubes-r3-building/
@@ -32,7 +34,7 @@ It's not required, but if you allocate additional CPU cores, the build process c
 Likewise, more memory (up to 16 GB) can help.
 Last, you may want to disable memory balancing, but keep in mind the impact on your other qubes.
 
-Once you've built the development AppVM, open a Terminal window to it and install the necessary dependencies (see [QubesBuilder](/doc/qubes-builder/) for more info):
+Once you've built the development AppVM, open a Terminal window to it and install the necessary dependencies (see [QubesBuilder](/de/doc/qubes-builder/) for more info):
 
 ~~~
 $ sudo dnf install perl-Digest-SHA rpmdevtools rpm-build dialog rpm-sign python2-sh dpkg-dev debootstrap devscripts
@@ -53,7 +55,7 @@ gpg --import qubes-developers-keys.asc
 ~~~
 
 **Note** In the above process, we do *not* rely on the security of our server (keys.qubes-os.org) nor the connection (ssl, cert) -- we only rely on you getting the Qubes Master Signing Key fingerprint *somehow* and ensuring they match!
-See [Verifying Signatures](/security/verifying-signatures/#1-get-the-qubes-master-signing-key-and-verify-its-authenticity) for verification sources.
+See [Verifying Signatures](/de/security/verifying-signatures/#1-get-the-qubes-master-signing-key-and-verify-its-authenticity) for verification sources.
 
 Now let's bootstrap the builder. Unfortunately, the builder cannot verify itself (the classic Chicken and Egg problem), so we need to verify the signature manually:
 
@@ -72,7 +74,7 @@ The builder will do that for us for each component, every time we build, even fo
 Build using setup script
 -----------------
 
-Let's configure the builder first (see [procedure](/doc/qubes-iso-building/#build-using-manual-steps) at bottom if you would prefer to manually configure):
+Let's configure the builder first (see [procedure](/de/doc/qubes-iso-building/#build-using-manual-steps) at bottom if you would prefer to manually configure):
 
 ~~~
 cd ~/qubes-builder
@@ -105,10 +107,10 @@ make get-sources
 ~~~
 
 When building the Whonix templates, you will often need to add/update the `WHONIX_TBB_VERSION` variable in `builder.conf` at this stage to specify the currently shipping Tor Browser version.
-See the related note under [Extra Whonix Build Options](/doc/building-whonix-template/).
+See the related note under [Extra Whonix Build Options](/de/doc/building-whonix-template/).
 
 You may also want to add `COMPONENTS := $(filter-out gcc,$(COMPONENTS))` to bypass a multiple hour compile step.
-See [QubesBuilder](/doc/qubes-builder/#use-pre-built-qubes-packages) for more detail.
+See [QubesBuilder](/de/doc/qubes-builder/#use-pre-built-qubes-packages) for more detail.
 
 Finally, if you are making a test build, use:
 
@@ -182,7 +184,7 @@ unset GNUPGHOME
 ~~~
 
 When building the Whonix templates, you will often need to add/update the `WHONIX_TBB_VERSION` variable at this stage to specify the currently shipping Tor Browser version.
-See the related note under [Extra Whonix Build Options](/doc/building-whonix-template/).
+See the related note under [Extra Whonix Build Options](/de/doc/building-whonix-template/).
 
 Finally, if you are making a test build, use:
 

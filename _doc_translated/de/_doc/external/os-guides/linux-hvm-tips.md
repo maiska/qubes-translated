@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: Linux HVM Tips
-permalink: /doc/linux-hvm-tips/
+permalink: /de/doc/linux-hvm-tips/
+lang: de
+ref: 124
 redirect_from:
 - /en/doc/linux-hvm-tips/
 - /doc/LinuxHVMTips/

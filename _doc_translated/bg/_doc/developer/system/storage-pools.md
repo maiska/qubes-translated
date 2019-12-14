@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: Storage Pools
-permalink: /doc/storage-pools/
+permalink: /bg/doc/storage-pools/
+lang: bg
+ref: 156
 ---
 
 Storage Pools in Qubes

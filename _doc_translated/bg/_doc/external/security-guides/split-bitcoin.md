@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: Split Bitcoin
-permalink: /doc/split-bitcoin/
+permalink: /bg/doc/split-bitcoin/
+lang: bg
+ref: 112
 ---
 
 How to Set Up a Split Bitcoin Wallet in Qubes
@@ -47,6 +49,6 @@ Important Notes
   traditional physically air-gapped machines, these tools make it very easy to
   copy out public keys.
 
-[inter-VM clipboard]: /doc/copy-paste/
-[inter-VM file copy]: /doc/copying-files/
+[inter-VM clipboard]: /bg/doc/copy-paste/
+[inter-VM file copy]: /bg/doc/copying-files/
 

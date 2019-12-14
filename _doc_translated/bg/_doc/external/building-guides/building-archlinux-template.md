@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: Building Archlinux Template
-permalink: /doc/building-archlinux-template/
+permalink: /bg/doc/building-archlinux-template/
+lang: bg
+ref: 153
 redirect_from:
 - /en/doc/building-archlinux-template/
 - /doc/BuildingArchlinuxTemplate/
@@ -22,13 +24,13 @@ redirect_from:
     the Fedora 23 template. I named the VM “**development**”. These instructions assume a standalone VM based on a       Fedora template is being used.
 <br>
 <br>
-![arch-template-01](/attachment/wiki/ArchlinuxTemplate/arch-template-01.png)
+![arch-template-01](/bg/attachment/wiki/ArchlinuxTemplate/arch-template-01.png)
 <br>
 <br>
 *   Ensure there is at least 25GB preferably 30GB of free space in the private storage. I made the private storage 30GB to be safe.
 <br>
 <br>
-![arch-template-02](/attachment/wiki/ArchlinuxTemplate/arch-template-02.png)
+![arch-template-02](/bg/attachment/wiki/ArchlinuxTemplate/arch-template-02.png)
 <br>
 <br>
 
@@ -41,7 +43,7 @@ redirect_from:
 *   Create user account here https://github.com
 <br>
 <br>
-![arch-template-03](/attachment/wiki/ArchlinuxTemplate/arch-template-03.png)
+![arch-template-03](/bg/attachment/wiki/ArchlinuxTemplate/arch-template-03.png)
 <br>
 <br>
 
@@ -73,7 +75,7 @@ redirect_from:
     *   **$ sudo dnf install git createrepo rpm-build make wget rpmdevtools python2-sh dialog rpm-sign gnupg**
 <br>
 <br>
-![arch-template-04](/attachment/wiki/ArchlinuxTemplate/arch-template-04.png)
+![arch-template-04](/bg/attachment/wiki/ArchlinuxTemplate/arch-template-04.png)
 <br>
 <br>
 
@@ -83,7 +85,7 @@ redirect_from:
 
       gpg --keyserver pgp.mit.edu --recv-keys 0xDDFA1A3E36879494
 
-* Verify its fingerprint, set as 'trusted'. [This is described here](/doc/VerifyingSignatures).
+* Verify its fingerprint, set as 'trusted'. [This is described here](/bg/doc/VerifyingSignatures).
 
 * Download the Qubes developers' keys.
 
@@ -94,7 +96,7 @@ redirect_from:
 
       git clone git://github.com/QubesOS/qubes-builder.git qubes-builder
 
-  ![arch-template-05](/attachment/wiki/ArchlinuxTemplate/arch-template-05.png)
+  ![arch-template-05](/bg/attachment/wiki/ArchlinuxTemplate/arch-template-05.png)
 
 * Copy your gpg keyrings to your local copy of the repository. (Otherwise you will be asked to download the keys again.)
 
@@ -122,13 +124,13 @@ redirect_from:
         *   **$ nano -W qubes-os-r3.2.conf** or **$ gedit qubes-os-r3.2.conf** or etc….
 <br>
 <br>
-![arch-template-06](/attachment/wiki/ArchlinuxTemplate/arch-template-06.png)
+![arch-template-06](/bg/attachment/wiki/ArchlinuxTemplate/arch-template-06.png)
 <br>
 <br>
         *   Go to the first line containing '**DISTS_VM ?= fc23**' it will be preceeded by line '**DIST_DOM0 ?= fc20**'.  Remove '**fc23**' or whatever is listed there leaving only '**DISTS_VM ?=**'. Then save the file and close the text editor.
 <br>
 <br>
-![arch-template-07](/attachment/wiki/ArchlinuxTemplate/arch-template-07.png)
+![arch-template-07](/bg/attachment/wiki/ArchlinuxTemplate/arch-template-07.png)
 <br>
 <br>
 <br>
@@ -142,7 +144,7 @@ redirect_from:
     *   **$ ./setup**
 <br>
 <br>
-![arch-template-08](/attachment/wiki/ArchlinuxTemplate/arch-template-08.png)
+![arch-template-08](/bg/attachment/wiki/ArchlinuxTemplate/arch-template-08.png)
 <br>
 <br>
         *   First screen will ask you to import 'Qubes-Master-Signing-key.asc'.  The 'setup' script not only downloads but confirms the key to that of the key on Qubes-OS website.
@@ -151,7 +153,7 @@ redirect_from:
             *   Select '**OK**' Press '**Enter**'
 <br>
 <br>
-![arch-template-09](/attachment/wiki/ArchlinuxTemplate/arch-template-09.png)
+![arch-template-09](/bg/attachment/wiki/ArchlinuxTemplate/arch-template-09.png)
 <br>
 <br>
 
@@ -161,7 +163,7 @@ redirect_from:
             *   Select '**OK**' Press '**Enter**'
 <br>
 <br>
-![arch-template-10](/attachment/wiki/ArchlinuxTemplate/arch-template-10.png)
+![arch-template-10](/bg/attachment/wiki/ArchlinuxTemplate/arch-template-10.png)
 <br>
 <br>
 
@@ -171,7 +173,7 @@ redirect_from:
             *   Select '**OK**' Press '**Enter**'
 <br>
 <br>
-![arch-template-11](/attachment/wiki/ArchlinuxTemplate/arch-template-11.png)
+![arch-template-11](/bg/attachment/wiki/ArchlinuxTemplate/arch-template-11.png)
 <br>
 <br>
 
@@ -181,7 +183,7 @@ redirect_from:
             *   Select '**OK**' Press '**Enter**'
 <br>
 <br>
-![arch-template-12](/attachment/wiki/ArchlinuxTemplate/arch-template-12.png)
+![arch-template-12](/bg/attachment/wiki/ArchlinuxTemplate/arch-template-12.png)
 <br>
 <br>
 
@@ -190,7 +192,7 @@ redirect_from:
             *   Select '**Yes**' Press '**Enter**'
 <br>
 <br>
-![arch-template-12](/attachment/wiki/ArchlinuxTemplate/arch-template-12a.png)
+![arch-template-12](/bg/attachment/wiki/ArchlinuxTemplate/arch-template-12a.png)
 <br>
 <br>
 
@@ -205,7 +207,7 @@ redirect_from:
             *   Select '**OK**' Press **Enter**
 <br>
 <br>
-![arch-template-13](/attachment/wiki/ArchlinuxTemplate/arch-template-13.png)
+![arch-template-13](/bg/attachment/wiki/ArchlinuxTemplate/arch-template-13.png)
 <br>
 <br>
 
@@ -214,14 +216,14 @@ redirect_from:
             *   Select '**Yes**' Press '**Enter**'
 <br>
 <br>
-![arch-template-14](/attachment/wiki/ArchlinuxTemplate/arch-template-14.png)
+![arch-template-14](/bg/attachment/wiki/ArchlinuxTemplate/arch-template-14.png)
 <br>
 <br>
 
         *   Then wait for download to finish and press '**OK**'
 <br>
 <br>
-![arch-template-14](/attachment/wiki/ArchlinuxTemplate/arch-template-15.png)
+![arch-template-14](/bg/attachment/wiki/ArchlinuxTemplate/arch-template-15.png)
 <br>
 <br>
 
@@ -234,14 +236,14 @@ redirect_from:
             *   Select '**OK**' Press '**Enter**'
 <br>
 <br>
-![arch-template-16](/attachment/wiki/ArchlinuxTemplate/arch-template-16.png)
+![arch-template-16](/bg/attachment/wiki/ArchlinuxTemplate/arch-template-16.png)
 <br>
 <br>
 
             *Note: 'Setup' will close and will output the text of the created build.conf file as well as the needed                    **make** commands to build the template*
 <br>
 <br>
-![arch-template-17](/attachment/wiki/ArchlinuxTemplate/arch-template-17.png)
+![arch-template-17](/bg/attachment/wiki/ArchlinuxTemplate/arch-template-17.png)
 <br>
 <br>
 
@@ -252,7 +254,7 @@ redirect_from:
 *   **$ make install-deps**
 <br>
 <br>
-![arch-template-18](/attachment/wiki/ArchlinuxTemplate/arch-template-18.png)
+![arch-template-18](/bg/attachment/wiki/ArchlinuxTemplate/arch-template-18.png)
 <br>
 <br>
 
@@ -261,7 +263,7 @@ redirect_from:
 *   **$ make get-sources**
 <br>
 <br>
-![arch-template-19](/attachment/wiki/ArchlinuxTemplate/arch-template-19.png)
+![arch-template-19](/bg/attachment/wiki/ArchlinuxTemplate/arch-template-19.png)
 <br>
 <br>
 <br>
@@ -276,7 +278,7 @@ redirect_from:
         *   **$ make qubes-vm**
         <br>
         <br>
-![arch-template-20](/attachment/wiki/ArchlinuxTemplate/arch-template-20.png)
+![arch-template-20](/bg/attachment/wiki/ArchlinuxTemplate/arch-template-20.png)
         <br>
         <br>
 
@@ -305,7 +307,7 @@ redirect_from:
 *   **$ make template**
 <br>
 <br>
-![arch-template-21](/attachment/wiki/ArchlinuxTemplate/arch-template-21.png)
+![arch-template-21](/bg/attachment/wiki/ArchlinuxTemplate/arch-template-21.png)
 <br>
 <br>
 
@@ -326,7 +328,7 @@ redirect_from:
         *   **qubes-template-archlinux-X.X.X-XXXXXXXXXXXX.noarch.rpm**  (this is the template package 'X' replaces version and build digits)
 <br>
 <br>
-![arch-template-22](/attachment/wiki/ArchlinuxTemplate/arch-template-22.png)
+![arch-template-22](/bg/attachment/wiki/ArchlinuxTemplate/arch-template-22.png)
 <br>
 <br>
 
@@ -345,10 +347,10 @@ redirect_from:
 
 <br>
 <br>
-![arch-template-23](/attachment/wiki/ArchlinuxTemplate/arch-template-23.png)
+![arch-template-23](/bg/attachment/wiki/ArchlinuxTemplate/arch-template-23.png)
 <br>
 <br>
-![arch-template-24](/attachment/wiki/ArchlinuxTemplate/arch-template-24.png)
+![arch-template-24](/bg/attachment/wiki/ArchlinuxTemplate/arch-template-24.png)
 <br>
 <br>
 

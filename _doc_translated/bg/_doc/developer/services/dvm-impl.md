@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: DVMimpl
-permalink: /doc/dvm-impl/
+permalink: /bg/doc/dvm-impl/
+lang: bg
+ref: 167
 redirect_from:
 - /en/doc/dvm-impl/
 - /doc/DVMimpl/

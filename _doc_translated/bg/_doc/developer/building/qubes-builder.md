@@ -1,14 +1,16 @@
 ---
 layout: doc
 title: Qubes Builder
-permalink: /doc/qubes-builder/
+permalink: /bg/doc/qubes-builder/
+lang: bg
+ref: 203
 redirect_from:
 - /en/doc/qubes-builder/
 - /doc/QubesBuilder/
 - /wiki/QubesBuilder/
 ---
 
-**Note: See [ISO building instructions](/doc/qubes-iso-building/) for a streamlined overview on how to use the build system.**
+**Note: See [ISO building instructions](/bg/doc/qubes-iso-building/) for a streamlined overview on how to use the build system.**
 
 Building Qubes from scratch
 ===========================
@@ -100,9 +102,9 @@ You can also build selected component separately. Eg. to compile only gui virtua
     make gui-daemon
 
 You can get a full list from make help. For advanced use and preparing sources
-for use with [QubesBuilder](/doc/qubes-builder/) take a look at [doc directory
+for use with [QubesBuilder](/bg/doc/qubes-builder/) take a look at [doc directory
 in QubesBuilder](https://github.com/marmarek/qubes-builder/tree/master/doc) or 
-[QubesBuilderDetails](/doc/qubes-builder-details/) page.
+[QubesBuilderDetails](/bg/doc/qubes-builder-details/) page.
 
 Making customized build
 -----------------------
@@ -165,7 +167,7 @@ And even if it did, there could be leftover packages installed from those repos 
 Code verification keys management
 ---------------------------------
 
-[QubesBuilder](/doc/qubes-builder/) by default verifies signed tags on every downloaded code. Public keys used for that are stored in `keyrings/git`. By default Qubes developers' keys are imported automatically, but if you need some additional keys (for example your own), you can add them using:
+[QubesBuilder](/bg/doc/qubes-builder/) by default verifies signed tags on every downloaded code. Public keys used for that are stored in `keyrings/git`. By default Qubes developers' keys are imported automatically, but if you need some additional keys (for example your own), you can add them using:
 
     GNUPGHOME=$PWD/keyrings/git gpg --import /path/to/key.asc
     GNUPGHOME=$PWD/keyrings/git gpg --edit-key ID_OF_JUST_IMPORTED_KEY

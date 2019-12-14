@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: Data Leaks
-permalink: /doc/data-leaks/
+permalink: /bg/doc/data-leaks/
+lang: bg
+ref: 8
 redirect_from:
 - /en/doc/data-leaks/
 - /doc/DataLeaks/
@@ -14,7 +16,7 @@ Understanding and Preventing Data Leaks
 The Role of the Firewall
 ------------------------
 
-**[Firewalling in Qubes](/doc/firewall/) is not intended to be a leak-prevention mechanism.**
+**[Firewalling in Qubes](/bg/doc/firewall/) is not intended to be a leak-prevention mechanism.**
 
 There are several reasons for this, which will be explained below. However, the main reason is that Qubes cannot prevent an attacker who has compromised one AppVM with restrictive firewall rules from leaking data via cooperative covert channels through another compromised AppVM with nonrestrictive firewall rules.
 

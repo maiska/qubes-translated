@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: VPN
-permalink: /doc/vpn/
+permalink: /bg/doc/vpn/
+lang: bg
+ref: 138
 redirect_from:
 - /doc/privacy/vpn/
 - /en/doc/vpn/
@@ -42,11 +44,11 @@ Set up a ProxyVM as a VPN gateway using NetworkManager
 
 1. Create a new VM, name it, click the ProxyVM radio button, and choose a color and template.
 
-   ![Create\_New\_VM.png](/attachment/wiki/VPN/Create_New_VM.png)
+   ![Create\_New\_VM.png](/bg/attachment/wiki/VPN/Create_New_VM.png)
 
 2. Add the `network-manager` service to this new VM.
 
-   ![Settings-services.png](/attachment/wiki/VPN/Settings-services.png)
+   ![Settings-services.png](/bg/attachment/wiki/VPN/Settings-services.png)
 
 3. Set up your VPN as described in the NetworkManager documentation linked above.
 
@@ -86,7 +88,7 @@ Set up a ProxyVM as a VPN gateway using NetworkManager
 
 6. Configure your AppVMs to use the new VM as a NetVM.
 
-   ![Settings-NetVM.png](/attachment/wiki/VPN/Settings-NetVM.png)
+   ![Settings-NetVM.png](/bg/attachment/wiki/VPN/Settings-NetVM.png)
 
 7. Optionally, you can install some [custom icons](https://github.com/Zrubi/qubes-artwork-proxy-vpn) for your VPN
 
@@ -99,7 +101,7 @@ It has been tested with Fedora 23 and Debian 8 templates.
 
 1. Create a new VM, name it, click the ProxyVM radio button, and choose a color and template.
 
-   ![Create\_New\_VM.png](/attachment/wiki/VPN/Create_New_VM.png)
+   ![Create\_New\_VM.png](/bg/attachment/wiki/VPN/Create_New_VM.png)
 
    Note: Do not enable NetworkManager in the ProxyVM, as it can interfere with the scripts' DNS features.
    If you enabled NetworkManager or used other methods in a previous attempt, do not re-use the old ProxyVM...
@@ -302,9 +304,9 @@ Usage
 
 Configure your AppVMs to use the VPN VM as a NetVM...
 
-![Settings-NetVM.png](/attachment/wiki/VPN/Settings-NetVM.png)
+![Settings-NetVM.png](/bg/attachment/wiki/VPN/Settings-NetVM.png)
 
-If you want to be able to use the [Qubes firewall](/doc/firewall), create a new FirewallVM (as a ProxyVM) and set it to use the VPN VM as its NetVM.
+If you want to be able to use the [Qubes firewall](/bg/doc/firewall), create a new FirewallVM (as a ProxyVM) and set it to use the VPN VM as its NetVM.
 Then, configure AppVMs to use your new FirewallVM as their NetVM.
 
 If you want to update your TemplateVMs through the VPN, enable the `qubes-updates-proxy` service in your new FirewallVM.

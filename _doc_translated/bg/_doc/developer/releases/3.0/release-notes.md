@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: Qubes R3.0 Release Notes
-permalink: /doc/releases/3.0/release-notes/
+permalink: /bg/doc/releases/3.0/release-notes/
+lang: bg
+ref: 180
 redirect_from:
 - /en/doc/releases/3.0/release-notes/
 ---
@@ -45,12 +47,12 @@ It is advised to install updates just after system installation to apply bug fix
 Downloads
 ---------
 
-See [Qubes Downloads](/doc/QubesDownloads/).
+See [Qubes Downloads](/bg/doc/QubesDownloads/).
 
 Installation instructions
 -------------------------
 
-See [Installation Guide](/doc/installation-guide/).
+See [Installation Guide](/bg/doc/installation-guide/).
 
 Upgrading
 ---------
@@ -61,7 +63,7 @@ If you are using Qubes R3.0rc1, R3.0rc2 or R3.0rc3, just install system updates,
 
 ### From R2.0 or earlier
 
-The easiest and safest way to upgrade to Qubes R3.0 is to install it from scratch and use [qubes backup and restore tools](/doc/backup-restore/) for migrating of all of the user VMs.
+The easiest and safest way to upgrade to Qubes R3.0 is to install it from scratch and use [qubes backup and restore tools](/bg/doc/backup-restore/) for migrating of all of the user VMs.
 
-Users of Qubes R2 can upgrade using [experimental procedure](/doc/upgrade-to-r3.0/).
+Users of Qubes R2 can upgrade using [experimental procedure](/bg/doc/upgrade-to-r3.0/).
 

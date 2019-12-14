@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: Whonix for Privacy & Anonymity
-permalink: /doc/whonix/
+permalink: /bg/doc/whonix/
+lang: bg
+ref: 115
 redirect_from:
 - /doc/privacy/whonix/
 - /doc/templates/whonix/
@@ -30,14 +32,14 @@ a **"workstation"**. Qubes security architecture makes use of Whonix's isolation
 by using the gateway as a ProxyVM to route all network traffic through Tor,
 while the workstation is used for making AppVMs.
 
-Whonix in Qubes replaces the deprecated [TorVM](/doc/torvm) service used in earlier
+Whonix in Qubes replaces the deprecated [TorVM](/bg/doc/torvm) service used in earlier
 versions of Qubes.
 
 *The following pages are written by the Whonix developers and are located on their website.*
 
 ## Getting Started with Whonix
 
-Note: To install Whonix in Qubes, you must [install Qubes](/doc/installation-guide/) first.
+Note: To install Whonix in Qubes, you must [install Qubes](/bg/doc/installation-guide/) first.
 
 * [Installing Whonix in Qubes](https://www.whonix.org/wiki/Qubes/Install)
 * [Updating Whonix in Qubes](https://www.whonix.org/wiki/Qubes/Update)

@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: Coding Style
-permalink: /doc/coding-style/
+permalink: /de/doc/coding-style/
+lang: de
+ref: 200
 redirect_from:
 - /en/doc/coding-style/
 - /doc/CodingStyle/

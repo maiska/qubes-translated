@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: RPC Policies
-permalink: /doc/rpc-policy/
+permalink: /de/doc/rpc-policy/
+lang: de
+ref: 70
 ---
 
 RPC Policies
@@ -54,5 +56,5 @@ The fourth rule means that the user gets prompted for any situation not already 
 
 Further details about how this system works can be found in [Qrexec: command execution in VMs][qrexec3].
 
-[qrexec3]: /doc/qrexec3/
+[qrexec3]: /de/doc/qrexec3/
 

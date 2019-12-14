@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: Installing a Windows VM
-permalink: /doc/windows-vm/
+permalink: /de/doc/windows-vm/
+lang: de
+ref: 126
 ---
 
 
@@ -55,7 +57,7 @@ MS Windows versions considerations:
 - The instructions *may* work on other versions than Windows 7 x64 but haven't been tested.
 - Qubes Windows Tools (QWT) only supports Windows 7 x64. Note that there are [known issues](https://github.com/QubesOS/qubes-issues/issues/3585) with QWT on Qubes 4.x
 
-Create a VM named win7new in [HVM](/doc/hvm/) mode (Xen's current PVH limitations precludes from using PVH):
+Create a VM named win7new in [HVM](/de/doc/hvm/) mode (Xen's current PVH limitations precludes from using PVH):
 
 ~~~
 qvm-create --class StandaloneVM --label red --property virt_mode=hvm win7new
@@ -104,7 +106,7 @@ To avoid that error we temporarily have to switch the video adapter to 'cirrus':
 qvm-features win7new video-model cirrus
 ~~~
 
-The VM is now ready to be started; the best practice is to use an installation ISO [located in a VM](/doc/hvm/#installing-an-os-in-an-hvm-domain):
+The VM is now ready to be started; the best practice is to use an installation ISO [located in a VM](/de/doc/hvm/#installing-an-os-in-an-hvm-domain):
 
 ~~~
 qvm-start --cdrom=untrusted:/home/user/windows_install.iso win7new
@@ -170,7 +172,7 @@ Notes about using Xen's VBD (storage) PV driver:
 
 
 Installing Qubes Windows Tools:
-- on R3.2: see [this page](/doc/windows-tools/)
+- on R3.2: see [this page](/de/doc/windows-tools/)
 - R4.0: you'll have to install QWT for Qubes R3.2. Be warned that QWT on R4.0 is a work in progress though (see [issue #3585](https://github.com/QubesOS/qubes-issues/issues/3585) for instructions and known issues).
 
 
@@ -184,5 +186,5 @@ qvm-prefs -s win7new debug false
 Further customization
 ---------------------
 
-Please see the [Customizing Windows 7 templates](/doc/windows-template-customization/) page (despite the focus on preparing the VM for use as a template, most of the instructions are independent from how the VM will be used - ie. TemplateVM or StandaloneVM).
+Please see the [Customizing Windows 7 templates](/de/doc/windows-template-customization/) page (despite the focus on preparing the VM for use as a template, most of the instructions are independent from how the VM will be used - ie. TemplateVM or StandaloneVM).
 
