@@ -1,9 +1,9 @@
 ---
 layout: doc
 title:  USB Qubes
-permalink: /bg/doc/usb-qubes/
-lang: bg
-ref: 66
+permalink: /doc/usb-qubes/
+lang: en
+ref: 149
 redirect_from:
 - /doc/usbvm/
 - /en/doc/usbvm/
@@ -196,15 +196,15 @@ The procedure to hide all USB controllers from dom0 is as follows:
 
 
 [remove your USB-qube]: #removing-a-usb-qube
-[security implications]: /bg/doc/device-handling-security/#usb-security
+[security implications]: /doc/device-handling-security/#usb-security
 [enable your keyboard for login]: #enable-a-usb-keyboard-for-login
 [2270-comm23]: https://github.com/QubesOS/qubes-issues/issues/2270#issuecomment-242900312
-[PCI Devices]: /bg/doc/pci-devices/
-[usb-controller]: /bg/doc/usb-devices/#finding-the-right-usb-controller
-[faq]: /bg/faq/#i-created-a-usbvm-and-assigned-usb-controllers-to-it-now-the-usbvm-wont-boot
-[Security Warning about USB Input Devices]: /bg/doc/device-handling-security/#security-warning-on-usb-input-devices
-[install dom0 updates]: /bg/doc/software-update-dom0/#how-to-update-dom0
+[PCI Devices]: /doc/pci-devices/
+[usb-controller]: /doc/usb-devices/#finding-the-right-usb-controller
+[faq]: /faq/#i-created-a-usbvm-and-assigned-usb-controllers-to-it-now-the-usbvm-wont-boot
+[Security Warning about USB Input Devices]: /doc/device-handling-security/#security-warning-on-usb-input-devices
+[install dom0 updates]: /doc/software-update-dom0/#how-to-update-dom0
 [hiding USB controllers from dom0]: #how-to-hide-all-usb-controllers-from-dom0
-[AEM]: /bg/doc/anti-evil-maid/
+[AEM]: /doc/anti-evil-maid/
 [create a USB qube]: #creating-and-using-a-usb-qube
 

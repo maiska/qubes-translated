@@ -1,9 +1,9 @@
 ---
 layout: doc
 title: How to Reinstall a TemplateVM
-permalink: /de/doc/reinstall-template/
-lang: de
-ref: 16
+permalink: /doc/reinstall-template/
+lang: en
+ref: 103
 redirect_from:
 - /doc/whonix/reinstall/
 ---
@@ -134,5 +134,5 @@ If you want to reinstall more than one TemplateVM, repeat these instructions for
 6. If you temporarily changed all VMs based on the target TemplateVM to the dummy template in step 3, change them back to the new target TemplateVM now.
    If you instead removed all VMs based on the old target TemplateVM, you can recreate your desired VMs from the newly reinstalled target TemplateVM now.
 
-[TemplateVM]: /de/doc/templates/
+[TemplateVM]: /doc/templates/
 

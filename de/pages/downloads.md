@@ -1,9 +1,9 @@
 ---
 layout: boxless
 title: Download Qubes OS
-permalink: /de/downloads/
-lang: de
-ref: 211
+permalink: /downloads/
+lang: en
+ref: 207
 redirect_from:
 - /doc/QubesDownloads/
 - /wiki/QubesDownloads/

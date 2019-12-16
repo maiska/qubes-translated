@@ -1,9 +1,9 @@
 ---
 layout: doc
 title: Management stack
-permalink: /de/doc/salt/
-lang: de
-ref: 69
+permalink: /doc/salt/
+lang: en
+ref: 140
 ---
 
 # Management Infrastructure

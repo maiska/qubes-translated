@@ -1,9 +1,9 @@
 ---
 layout: doc
 title: Multifactor Authentication
-permalink: /de/doc/multifactor-authentication/
-lang: de
-ref: 114
+permalink: /doc/multifactor-authentication/
+lang: en
+ref: 53
 redirect_from:
 - /en/doc/multifactor-authentication/
 - /doc/Multi-factorAuthentication/
@@ -104,15 +104,15 @@ is largely the same.
     If you are prompted to scan a QR code, instead select the option (if
     available) to view the secret key as text:
 
-    ![Secret Key Example 0](/de/attachment/wiki/Multi-factorAuthentication/secret-key-example-0.png)
+    ![Secret Key Example 0](/attachment/wiki/Multi-factorAuthentication/secret-key-example-0.png)
 
     You should then see the secret key as text:
 
-    ![Secret Key Example 1](/de/attachment/wiki/Multi-factorAuthentication/secret-key-example-1.png)
+    ![Secret Key Example 1](/attachment/wiki/Multi-factorAuthentication/secret-key-example-1.png)
 
     Note that the length and format of the secret key may vary by service:
 
-    ![Secret Key Example 2](/de/attachment/wiki/Multi-factorAuthentication/secret-key-example-2.png)
+    ![Secret Key Example 2](/attachment/wiki/Multi-factorAuthentication/secret-key-example-2.png)
 
  2. In your MFA AppVM, you can now use `oathtool` to generate base32 TOTP
     authentication tokens just like Google Authenticator would. In this example,
@@ -179,10 +179,10 @@ is largely the same.
     For a more complete list of compatible services, see [here][usage].
 
 
-[YubiKey]: /de/doc/YubiKey/
+[YubiKey]: /doc/YubiKey/
 [MFA]: https://en.wikipedia.org/wiki/Multi-factor_authentication
 [oathtool]: http://www.nongnu.org/oath-toolkit/man-oathtool.html
 [TOTP]: https://en.wikipedia.org/wiki/Time-based_One-time_Password_Algorithm
 [Google Authenticator]: https://en.wikipedia.org/wiki/Google_Authenticator
-[FedoraMinimal]: /de/doc/Templates/FedoraMinimal/
+[FedoraMinimal]: /doc/Templates/FedoraMinimal/
 [usage]: https://en.wikipedia.org/wiki/Google_Authenticator#Usage

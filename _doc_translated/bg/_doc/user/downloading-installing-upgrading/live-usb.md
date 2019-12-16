@@ -1,22 +1,22 @@
 ---
 layout: doc
 title: Live USB
-permalink: /bg/doc/live-usb/
-lang: bg
-ref: 34
+permalink: /doc/live-usb/
+lang: en
+ref: 115
 ---
 
 Qubes Live USB (alpha)
 ======================
 
 NOTE: This content applies to Qubes versions earlier than R3.2. See the
-[Installation Guide](/bg/doc/installation-guide/) for instructions and warnings
+[Installation Guide](/doc/installation-guide/) for instructions and warnings
 on creating a USB boot drive for testing purposes with Qubes R3.2, R4.0, and
 higher.
 
 Qubes Live USB allows you to run and try Qubes OS without having to install it
 anywhere. Qubes Live USB is currently in alpha. If you use it, please consider
-running the [HCL reporting tool](/bg/hcl/) and sending us the results so that we
+running the [HCL reporting tool](/hcl/) and sending us the results so that we
 can continue to improve it. If  would like to contribute to the Qubes OS
 Project by improving Qubes Live USB and integrating it with the installer,
 please consider applying for a [Google Summer of Code][gsoc-page] scholarship
@@ -42,7 +42,7 @@ traditional Linux distros don't have to bother with:
 
 This last problem has been a result of Qubes using the copy-on-write backing for
 the VMs' root filesystems, which is used to implement our cool
-[Template-based scheme](/bg/doc/software-update-vm/). Normally these are backed by
+[Template-based scheme](/doc/software-update-vm/). Normally these are backed by
 regular files on disk. Even though these files are discardable upon VM reboots,
 they must be preserved during the VM's life span, and they can easily grow to a
 few tens of MBs per VM, sometimes even more. Also, each VM's private
@@ -110,7 +110,7 @@ Downloading and burning
 -----------------------
 
 1. Download the ISO (and its signature for verification) from the
-   [downloads page](/bg/downloads/#qubes-live-usb-alpha).
+   [downloads page](/downloads/#qubes-live-usb-alpha).
 2. "Burn" (copy) the ISO onto a USB drive (replace `/dev/sdX` with your USB
    drive device):
 
@@ -123,5 +123,5 @@ Downloading and burning
    and `of` or specify an incorrect device, you could accidentally overwrite
    your primary system drive. Please be careful!
 
-[project-page]: /bg/gsoc/
+[project-page]: /gsoc/
 [gsoc-page]: https://summerofcode.withgoogle.com/organizations/6239659689508864/

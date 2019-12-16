@@ -1,9 +1,9 @@
 ---
 layout: doc
 title: Changing your Time Zone
-permalink: /bg/doc/change-time-zone/
-lang: bg
-ref: 150
+permalink: /doc/change-time-zone/
+lang: en
+ref: 37
 ---
 
 # Changing your Time Zone #

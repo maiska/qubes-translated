@@ -1,9 +1,9 @@
 ---
 layout: doc
 title: Installation Security
-permalink: /de/doc/install-security/
-lang: de
-ref: 36
+permalink: /doc/install-security/
+lang: en
+ref: 117
 redirect_from:
 - /en/doc/install-security/
 - /doc/InstallSecurity/
@@ -82,9 +82,9 @@ Considering the pros and cons of each, perhaps a USB drive with non-rewritable
 switch might be the option.
 
 
-[verify]: /de/security/verifying-signatures/
+[verify]: /security/verifying-signatures/
 [classic problem]: https://www.ece.cmu.edu/~ganger/712.fall02/papers/p761-thompson.pdf
 [solutions]: https://www.dwheeler.com/trusting-trust/
-[USB qube]: /de/doc/usb-qubes/#creating-and-using-a-usb-qube
+[USB qube]: /doc/usb-qubes/#creating-and-using-a-usb-qube
 [BadUSB]: https://srlabs.de/badusb/
 

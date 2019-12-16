@@ -1,9 +1,9 @@
 ---
 layout: doc
 title: Security
-permalink: /bg/security/
-lang: bg
-ref: 83
+permalink: /security/
+lang: en
+ref: 12
 redirect_from: 
 - /en/security/
 - /en/doc/security/
@@ -68,20 +68,20 @@ Please see [Why and How to Verify Signatures] for information about how to verif
 - [Joanna Rutkowska] ([emeritus, canaries only])
 
 
-[Security FAQ]: /bg/faq/#general--security
-[Security Goals]: /bg/security/goals/
-[Security Pack]: /bg/security/pack/
-[Security Bulletins]: /bg/security/bulletins/
-[Canaries]: /bg/security/canaries/
-[Xen Security Advisory (XSA) Tracker]: /bg/security/xsa/
-[Why and How to Verify Signatures]: /bg/security/verifying-signatures/
+[Security FAQ]: /faq/#general--security
+[Security Goals]: /security/goals/
+[Security Pack]: /security/pack/
+[Security Bulletins]: /security/bulletins/
+[Canaries]: /security/canaries/
+[Xen Security Advisory (XSA) Tracker]: /security/xsa/
+[Why and How to Verify Signatures]: /security/verifying-signatures/
 [PGP Keys]: https://keys.qubes-os.org/keys/
-[Qubes Team]: /bg/team/
+[Qubes Team]: /team/
 [reported security issues]: #reporting-security-issues-in-qubes-os
 [Security Team PGP Key]: https://keys.qubes-os.org/keys/qubes-os-security-team-key.asc
 [Qubes Master Signing Key]: https://keys.qubes-os.org/keys/qubes-master-signing-key.asc
-[Marek Marczykowski-Górecki]: /bg/team/#marek-marczykowski-górecki
-[Simon Gaiser (aka HW42)]: /bg/team/#simon-gaiser-aka-hw42
-[Joanna Rutkowska]: /bg/team/#joanna-rutkowska
+[Marek Marczykowski-Górecki]: /team/#marek-marczykowski-górecki
+[Simon Gaiser (aka HW42)]: /team/#simon-gaiser-aka-hw42
+[Joanna Rutkowska]: /team/#joanna-rutkowska
 [emeritus, canaries only]: /news/2018/11/05/qubes-security-team-update/
 

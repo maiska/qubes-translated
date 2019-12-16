@@ -1,9 +1,9 @@
 ---
 layout: doc
 title: System Documentation
-permalink: /de/doc/system-doc/
-lang: de
-ref: 155
+permalink: /doc/system-doc/
+lang: en
+ref: 164
 redirect_from:
 - /en/doc/system-doc/
 - /doc/SystemDoc/

@@ -1,9 +1,9 @@
 ---
 layout: doc
 title: Passwordless Root Access in VMs
-permalink: /de/doc/vm-sudo/
-lang: de
-ref: 3
+permalink: /doc/vm-sudo/
+lang: en
+ref: 136
 redirect_from:
 - /en/doc/vm-sudo/
 - /doc/VMSudo/

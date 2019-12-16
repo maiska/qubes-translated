@@ -1,8 +1,8 @@
 ---
 layout: team
 title: Team
-permalink: /bg/team/
-lang: bg
+permalink: /en/team/
+lang: en
 ref: 207
 redirect_from:
 - /people/

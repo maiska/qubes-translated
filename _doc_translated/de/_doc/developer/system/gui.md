@@ -1,9 +1,9 @@
 ---
 layout: doc
 title: GUI
-permalink: /de/doc/gui/
-lang: de
-ref: 159
+permalink: /doc/gui/
+lang: en
+ref: 167
 redirect_from:
 - /en/doc/gui/
 - /en/doc/gui-docs/
@@ -68,7 +68,7 @@ To sum up, this solution has the following benefits:
 -   no changes to Xorg code
 -   minimal size of the supporting code
 
-![gui.png](/de/attachment/wiki/GUIdocs/gui.png)
+![gui.png](/attachment/wiki/GUIdocs/gui.png)
 
 Security markers on dom0 windows
 --------------------------------

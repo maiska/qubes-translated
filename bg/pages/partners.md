@@ -1,9 +1,9 @@
 ---
 layout: default
 title: Qubes Partners
-permalink: /bg/partners/
-lang: bg
-ref: 209
+permalink: /partners/
+lang: en
+ref: 211
 redirect_from:
  - /en/partners/
  - /funding/

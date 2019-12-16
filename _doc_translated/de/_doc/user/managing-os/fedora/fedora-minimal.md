@@ -1,9 +1,9 @@
 ---
 layout: doc
 title: The Fedora Minimal TemplateVM
-permalink: /de/doc/templates/fedora-minimal/
-lang: de
-ref: 23
+permalink: /doc/templates/fedora-minimal/
+lang: en
+ref: 108
 redirect_from:
 - /doc/fedora-minimal/
 - /en/doc/templates/fedora-minimal/
@@ -66,14 +66,14 @@ As usual, the required packages are to be installed in the running template with
 
  - Commonly used utilities: `pciutils` `vim-minimal` `less` `psmisc` `gnome-keyring`.
  - Audio: `pulseaudio-qubes`.
- - [FirewallVM](/de/doc/firewall/), such as the template for `sys-firewall`: at least `qubes-core-agent-networking` and `iproute`, and also `qubes-core-agent-dom0-updates` if you want to use it as the `UpdateVM` (which is normally `sys-firewall`).
+ - [FirewallVM](/doc/firewall/), such as the template for `sys-firewall`: at least `qubes-core-agent-networking` and `iproute`, and also `qubes-core-agent-dom0-updates` if you want to use it as the `UpdateVM` (which is normally `sys-firewall`).
  - NetVM, such as the template for `sys-net`: `qubes-core-agent-networking` `qubes-core-agent-network-manager` `NetworkManager-wifi` `network-manager-applet` `wireless-tools` `dejavu-sans-fonts` `notification-daemon` `gnome-keyring` `polkit` `@hardware-support`.
    If your network devices need extra packages for the template to work as a network VM, use the `lspci` command to identify the devices, then run `dnf search firmware` (replace `firmware` with the appropriate device identifier) to find the needed packages and then install them.
    If you need utilities for debugging and analyzing network connections, install `tcpdump` `telnet` `nmap` `nmap-ncat`.
- - [USB qube](/de/doc/usb-qubes/), such as the template for `sys-usb`: `qubes-input-proxy-sender`.
- - [VPN qube](/de/doc/vpn/): Use the `dnf search "NetworkManager VPN plugin"` command to look up the VPN packages you need, based on the VPN technology you'll be using, and install them.
+ - [USB qube](/doc/usb-qubes/), such as the template for `sys-usb`: `qubes-input-proxy-sender`.
+ - [VPN qube](/doc/vpn/): Use the `dnf search "NetworkManager VPN plugin"` command to look up the VPN packages you need, based on the VPN technology you'll be using, and install them.
    Some GNOME related packages may be needed as well.
-   After creation of a machine based on this template, follow the [VPN instructions](/de/doc/vpn/#set-up-a-proxyvm-as-a-vpn-gateway-using-networkmanager) to configure it.
+   After creation of a machine based on this template, follow the [VPN instructions](/doc/vpn/#set-up-a-proxyvm-as-a-vpn-gateway-using-networkmanager) to configure it.
 
 You may also wish to consider additional packages from the `qubes-core-agent` suite:
 
@@ -128,9 +128,9 @@ Users requiring the `rsyslog` service should install it manually.
 To access the `journald` log, use the `journalctl` command.
 
 
-[default Fedora template]: /de/doc/templates/fedora/
-[qubes-users]: /de/support/#qubes-users
-[doc-guidelines]: /de/doc/doc-guidelines/
-[pref-default]: /de/faq/#could-you-please-make-my-preference-the-default
-[customization]: /de/doc/fedora-minimal-template-customization/
+[default Fedora template]: /doc/templates/fedora/
+[qubes-users]: /support/#qubes-users
+[doc-guidelines]: /doc/doc-guidelines/
+[pref-default]: /faq/#could-you-please-make-my-preference-the-default
+[customization]: /doc/fedora-minimal-template-customization/
 

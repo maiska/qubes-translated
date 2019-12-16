@@ -1,9 +1,9 @@
 ---
 layout: doc
 title: Security Goals
-permalink: /bg/security/goals/
-lang: bg
-ref: 85
+permalink: /security/goals/
+lang: en
+ref: 7
 redirect_from:
 - /doc/security-goals/
 - /en/doc/security-goals/

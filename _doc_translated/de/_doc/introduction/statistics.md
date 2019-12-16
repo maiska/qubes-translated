@@ -1,9 +1,9 @@
 ---
 layout: default
 title: Statistics
-permalink: /de/statistics/
-lang: de
-ref: 94
+permalink: /statistics/
+lang: en
+ref: 16
 redirect_from: 
 - /counter/
 ---

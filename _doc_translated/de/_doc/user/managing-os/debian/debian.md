@@ -1,9 +1,9 @@
 ---
 layout: doc
 title: Debian Template
-permalink: /de/doc/templates/debian/
-lang: de
-ref: 24
+permalink: /doc/templates/debian/
+lang: en
+ref: 111
 redirect_from:
 - /doc/debian/
 - /en/doc/templates/debian/
@@ -54,7 +54,7 @@ Upgrading
 
 To upgrade your Debian TemplateVM, please consult the guide that corresponds to your situation:
 
- * [Upgrading the Debian 8 Template to Debian 9](/de/doc/template/debian/upgrade-8-to-9/)
+ * [Upgrading the Debian 8 Template to Debian 9](/doc/template/debian/upgrade-8-to-9/)
 
 
 Known issues
@@ -111,7 +111,7 @@ One solution is to add a dummy interface to allow the package to install correct
 Contributing
 ----------------
 
-If you want to help in improving the template, feel free to [contribute](/de/wiki/ContributingHowto).
+If you want to help in improving the template, feel free to [contribute](/wiki/ContributingHowto).
 
 
 More information
@@ -120,5 +120,5 @@ More information
 * [Debian wiki](https://wiki.debian.org/Qubes)
 
 
-[stretch]: /de/doc/template/debian/upgrade-8-to-9/ 
+[stretch]: /doc/template/debian/upgrade-8-to-9/ 
 

@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Terms of Use
-permalink: /de/terms/
-lang: de
+permalink: /terms/
+lang: en
 ref: 206
 redirect_from:
 - /en/terms/

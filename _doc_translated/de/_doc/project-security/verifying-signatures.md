@@ -1,9 +1,9 @@
 ---
 layout: doc
 title: Verifying Signatures
-permalink: /de/security/verifying-signatures/
-lang: de
-ref: 82
+permalink: /security/verifying-signatures/
+lang: en
+ref: 11
 redirect_from:
 - /doc/verifying-signatures/
 - /en/doc/verifying-signatures/
@@ -431,17 +431,17 @@ If your question is about GPG, please see the [GPG documentation].
 If you still have a question, please address it to the [qubes-users mailing list].
 
 
-[website-trust]: /de/faq/#should-i-trust-this-website
-[Distrusting the Infrastructure]: /de/faq/#what-does-it-mean-to-distrust-the-infrastructure
+[website-trust]: /faq/#should-i-trust-this-website
+[Distrusting the Infrastructure]: /faq/#what-does-it-mean-to-distrust-the-infrastructure
 [verifying repos]: #how-to-verify-qubes-repos
 [Qubes Master Signing Key]: https://keys.qubes-os.org/keys/qubes-master-signing-key.asc
 [keyserver]: https://en.wikipedia.org/wiki/Key_server_%28cryptographic%29#Keyserver_examples
-[Downloads]: /de/downloads/
-[Qubes Security Pack]: /de/security/pack/
+[Downloads]: /downloads/
+[Qubes Security Pack]: /security/pack/
 [Qubes OS Keyserver]: https://keys.qubes-os.org/keys/
 [devel-master-key-msg]: https://groups.google.com/d/msg/qubes-devel/RqR9WPxICwg/kaQwknZPDHkJ
 [user-master-key-msg]: https://groups.google.com/d/msg/qubes-users/CLnB5uFu_YQ/ZjObBpz0S9UJ
-[mailing lists]: /de/support/
+[mailing lists]: /support/
 [Troubleshooting FAQ]: #troubleshooting-faq
 [QMSK]: #1-get-the-qubes-master-signing-key-and-verify-its-authenticity
 [RSK]: #2-get-the-release-signing-key
@@ -449,5 +449,5 @@ If you still have a question, please address it to the [qubes-users mailing list
 [digest file]: #how-to-verify-qubes-iso-digests
 [Qubes repositories]: https://github.com/QubesOS
 [GPG documentation]: https://www.gnupg.org/documentation/
-[qubes-users mailing list]: /de/support/#qubes-users
+[qubes-users mailing list]: /support/#qubes-users
 

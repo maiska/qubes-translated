@@ -1,9 +1,9 @@
 ---
 layout: doc
 title: Signal
-permalink: /de/doc/signal/
-lang: de
-ref: 118
+permalink: /doc/signal/
+lang: en
+ref: 63
 ---
 
 Signal
@@ -58,10 +58,10 @@ Always obtain a trusted key fingerprint via other channels, and always check any
 
 -----
 
-[qubes-verifying-signatures]: /de/security/verifying-signatures/
+[qubes-verifying-signatures]: /security/verifying-signatures/
 [Signal]: https://whispersystems.org/
 [signal-wikipedia]: https://en.wikipedia.org/wiki/Signal_(software)
 [shortcut]: https://support.whispersystems.org/hc/en-us/articles/216839277-Where-is-Signal-Desktop-on-my-computer-
-[shortcut-desktop]: /de/doc/managing-appvm-shortcuts/#tocAnchor-1-1-1
+[shortcut-desktop]: /doc/managing-appvm-shortcuts/#tocAnchor-1-1-1
 [message]: https://groups.google.com/d/msg/qubes-users/rMMgeR-KLbU/XXOFri26BAAJ
-[mailing list]: /de/support/
+[mailing list]: /support/

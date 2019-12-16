@@ -1,9 +1,9 @@
 ---
 layout: intro
 title: An Introduction to Qubes OS
-permalink: /bg/intro/
-lang: bg
-ref: 97
+permalink: /intro/
+lang: en
+ref: 22
 redirect_from:
 - /tour/
 - /en/tour/
@@ -214,24 +214,24 @@ technical details have been omitted here for the sake of presentation.
  * Ready to give Qubes a try? Head on over to the [downloads] page.
 
 
-[disposable qube]: /bg/doc/disposablevm/
-[networking]: /bg/doc/networking/
-[firewalls]: /bg/doc/firewall/
-[USB]: /bg/doc/usb/
-[file]: /bg/doc/copying-files/
-[clipboard]: /bg/doc/copy-paste/
-[Template]: /bg/doc/templates/
-[Qubes-Whonix]: /bg/doc/whonix/
+[disposable qube]: /doc/disposablevm/
+[networking]: /doc/networking/
+[firewalls]: /doc/firewall/
+[USB]: /doc/usb/
+[file]: /doc/copying-files/
+[clipboard]: /doc/copy-paste/
+[Template]: /doc/templates/
+[Qubes-Whonix]: /doc/whonix/
 [Whonix]: https://www.whonix.org/
 [Tor]: https://www.torproject.org/
-[Anti Evil Maid]: /bg/doc/anti-evil-maid/
+[Anti Evil Maid]: /doc/anti-evil-maid/
 [Tails]: https://tails.boum.org/
 [Xen]: https://www.xenproject.org
 [paper-compart]: https://invisiblethingslab.com/resources/2014/Software_compartmentalization_vs_physical_separation.pdf
-[doc]: /bg/doc/
-[user-faq]: /bg/faq/#users
-[system-doc]: /bg/doc/system-doc/
-[devel-faq]: /bg/faq/#developers
-[downloads]: /bg/downloads/
-[getting started]: /bg/getting-started/
+[doc]: /doc/
+[user-faq]: /faq/#users
+[system-doc]: /doc/system-doc/
+[devel-faq]: /faq/#developers
+[downloads]: /downloads/
+[getting started]: /getting-started/
 

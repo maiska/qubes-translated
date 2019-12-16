@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Terms of Use
-permalink: /bg/terms/
-lang: bg
+permalink: /terms/
+lang: en
 ref: 206
 redirect_from:
 - /en/terms/

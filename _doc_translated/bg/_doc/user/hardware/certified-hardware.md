@@ -1,9 +1,9 @@
 ---
 layout: doc
 title: Certified Hardware
-permalink: /bg/doc/certified-hardware/
-lang: bg
-ref: 30
+permalink: /doc/certified-hardware/
+lang: en
+ref: 76
 redirect_from:
  - /doc/hardware/
  - /doc/certified-laptops/
@@ -88,10 +88,10 @@ To learn more about the certification process, or if you're interested in having
 
 
 [stateless laptop]: https://blog.invisiblethings.org/2015/12/23/state_harmful.html
-[System Requirements]: /bg/doc/system-requirements/
-[Hardware Compatibility List]: /bg/hcl/
+[System Requirements]: /doc/system-requirements/
+[Hardware Compatibility List]: /hcl/
 [Hardware Certification]: #hardware-certification
-[system requirements for Qubes 4.x]: /bg/doc/system-requirements/#qubes-release-4x
+[system requirements for Qubes 4.x]: /doc/system-requirements/#qubes-release-4x
 [contact us]: mailto:business@qubes-os.org
 [SLAT]: https://en.wikipedia.org/wiki/Second_Level_Address_Translation
 [EPT-enabled CPUs]: https://ark.intel.com/Search/FeatureFilter?productType=processors&ExtendedPageTables=true&MarketSegment=Mobile

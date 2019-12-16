@@ -1,9 +1,9 @@
 ---
 layout: doc
 title: Upgrading the Debian 8 Template to Debian 9
-permalink: /bg/doc/template/debian/upgrade-8-to-9/
-lang: bg
-ref: 25
+permalink: /doc/template/debian/upgrade-8-to-9/
+lang: en
+ref: 113
 redirect_from:
 - /doc/debian-template-upgrade-8/
 - /en/doc/debian-template-upgrade-8/
@@ -77,7 +77,7 @@ any template based on the standard Debian 8 template.
         [user@dom0 ~]$ qvm-trim-template debian-9
 
  8. (Recommended) [Switch everything that was set to the old template to the new
-    template.](/bg/doc/templates/#how-to-switch-templates)
+    template.](/doc/templates/#how-to-switch-templates)
 
  9. (Optional) Remove the old default template.
 

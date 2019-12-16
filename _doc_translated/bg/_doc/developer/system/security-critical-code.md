@@ -1,9 +1,9 @@
 ---
 layout: doc
 title: Security-critical Code
-permalink: /bg/doc/security-critical-code/
-lang: bg
-ref: 157
+permalink: /doc/security-critical-code/
+lang: en
+ref: 162
 redirect_from:
 - /en/doc/security-critical-code/
 - /doc/SecurityCriticalCode/
@@ -77,7 +77,7 @@ In practice, we trust the software provided by the [Fedora Project].
 This software is signed by Fedora distribution keys, so it is also critical that the tools used in domains for software updates (`dnf` and `rpm`) are trustworthy.
 
 
-[Qubes Security Goals]: /bg/security/goals/
+[Qubes Security Goals]: /security/goals/
 [Fedora Project]: https://getfedora.org/
-[Understanding and Preventing Data Leaks]: /bg/doc/data-leaks/
+[Understanding and Preventing Data Leaks]: /doc/data-leaks/
 

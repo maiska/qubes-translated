@@ -1,15 +1,15 @@
 ---
 layout: doc
 title: Updating Debian and Whonix
-permalink: /de/doc/troubleshooting/updating-debian-and-whonix/
-lang: de
-ref: 103
+permalink: /doc/troubleshooting/updating-debian-and-whonix/
+lang: en
+ref: 38
 ---
 
 Updating Debian and Whonix
 ==========================
 
-Despite Qubes shipping with [Debian Templates](/de/doc/templates/debian/), most of Qubes core components run on Fedora and thus our documentation has better coverage for Fedora. However, Qubes has been working closely with the [Whonix](https://whonix.org) project which is based on Debian.
+Despite Qubes shipping with [Debian Templates](/doc/templates/debian/), most of Qubes core components run on Fedora and thus our documentation has better coverage for Fedora. However, Qubes has been working closely with the [Whonix](https://whonix.org) project which is based on Debian.
 
 This troubleshooting guide is collection of tips about updating Whonix that also pertain to updating the normal Debian package manager. If you plan to use Debian heavily, **we highly recommend you install the Whonix templates and use them to update your normal Debian TemplateVM.**
 

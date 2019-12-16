@@ -1,9 +1,9 @@
 ---
 layout: doc
 title: Emergency Backup Recovery (v2)
-permalink: /de/doc/backup-emergency-restore-v2/
-lang: de
-ref: 65
+permalink: /doc/backup-emergency-restore-v2/
+lang: en
+ref: 86
 redirect_from:
 - /en/doc/backup-emergency-restore-v2/
 - /doc/BackupEmergencyRestoreV2/

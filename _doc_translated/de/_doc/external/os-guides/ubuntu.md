@@ -1,9 +1,9 @@
 ---
 layout: doc
 title: Ubuntu Template
-permalink: /de/doc/templates/ubuntu/
-lang: de
-ref: 121
+permalink: /doc/templates/ubuntu/
+lang: en
+ref: 68
 redirect_from:
 - /doc/ubuntu/
 - /en/doc/templates/ubuntu/
@@ -24,7 +24,7 @@ redistribution of a modified Ubuntu. The redistribution is not allowed by their
 Install
 -------
 
-It can be built using [Qubes Builder](/de/doc/qubes-builder/). You can also access its
+It can be built using [Qubes Builder](/doc/qubes-builder/). You can also access its
 documentation in the [source code
 repository](https://github.com/QubesOS/qubes-builder/blob/master/README.md).
 
@@ -40,4 +40,4 @@ The build for Ubuntu 16.04 LTS (Xenial) is straightforward. Note that packages p
 ----------
 
 If you want to help in improving the template, feel free to
-[contribute](/de/doc/contributing/).
+[contribute](/doc/contributing/).

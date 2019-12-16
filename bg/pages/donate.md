@@ -1,9 +1,9 @@
 ---
 layout: default
 title: Donate to Qubes
-permalink: /bg/donate/
-lang: bg
-ref: 212
+permalink: /donate/
+lang: en
+ref: 210
 redirect_from:
 - /en/donate/
 - /doc/Donations/
@@ -88,13 +88,13 @@ Visit our [introduction page to Qubes][intro page] or watch a [video overview of
 [open-collective-faq]: https://opencollective.com/faq
 [Open Collective]: https://opencollective.com/qubes-os
 [Open Collective donate]: https://opencollective.com/qubes-os#support
-[Qubes Partners page]: /bg/partners/
+[Qubes Partners page]: /en/partners/
 [contact]: mailto:funding@qubes-os.org
-[Qubes Security Pack]: /bg/doc/security-pack/
+[Qubes Security Pack]: /en/doc/security-pack/
 [fund]: https://github.com/QubesOS/qubes-secpack/tree/master/fund
-[verify]: /bg/security/pack/#how-to-obtain-verify-and-read
+[verify]: /en/security/pack/#how-to-obtain-verify-and-read
 [blockexplorer.com]: https://blockexplorer.com/address/3GakuQQDUGyyUnV1p5Jc3zd6CpQDkDwmDq
 [blockchain.info]: https://blockchain.info/address/3GakuQQDUGyyUnV1p5Jc3zd6CpQDkDwmDq
 [announcement]: /news/2016/07/13/qubes-distributed-fund/
-[intro page]: /bg/intro/
-[video page]: /bg/video-tours/
+[intro page]: /en/intro/
+[video page]: /en/video-tours/

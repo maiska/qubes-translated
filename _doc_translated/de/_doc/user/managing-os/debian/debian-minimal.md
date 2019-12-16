@@ -1,9 +1,9 @@
 ---
 layout: doc
 title: Debian Minimal Template
-permalink: /de/doc/templates/debian-minimal/
-lang: de
-ref: 26
+permalink: /doc/templates/debian-minimal/
+lang: en
+ref: 112
 ---
 
 Debian - minimal
@@ -85,12 +85,13 @@ Use case | Description | Required steps
 **Standard utilities** | If you need the commonly used utilities | Install the following packages: `pciutils` `vim-minimal` `less` `psmisc` `gnome-keyring`
 **Networking** | If you want networking | Install qubes-core-agent-networking
 **Audio** | If you want sound from your VM... | Install `pulseaudio-qubes`
-**FirewallVM** | You can use the minimal template as a template for a [FirewallVM](/de/doc/firewall/), like `sys-firewall` | Install `qubes-core-agent-networking`, and `nftables`.  Also install `qubes-core-agent-dom0-updates` if you want to use a qube based on the template as an updateVM (normally sys-firewall).
+**FirewallVM** | You can use the minimal template as a template for a [FirewallVM](/doc/firewall/), like `sys-firewall` | Install `qubes-core-agent-networking`, and `nftables`.  Also install `qubes-core-agent-dom0-updates` if you want to use a qube based on the template as an updateVM (normally sys-firewall).
 **NetVM** | You can use this template as the basis for a NetVM such as `sys-net` | Install the following packages:  `qubes-core-agent-networking`, `qubes-core-agent-network-manager`, and `nftables`.  
 **NetVM (extra firmware)** | If your network devices need extra packages for a network VM | Use the `lspci` command to identify the devices, then find the package that provides necessary firnware and install it.
 **Network utilities** | If you need utilities for debugging and analyzing network connections | Install the following packages: `tcpdump` `telnet` `nmap` `nmap-ncat`
-**USB** | If you want to use this template as the basis for a [USB](/de/doc/usb/) qube such as `sys-usb` | Install `qubes-usb-proxy`. To use USB mouse or keyboard install `qubes-input-proxy-sender`.
-**VPN** | You can use this template as basis for a [VPN](/de/doc/vpn/) qube | You may need to install network-manager VPN packages, depending on the VPN technology you'll be using. After creating a machine based on this template, follow the [VPN howto 
+**USB** | If you want to use this template as the basis for a [USB](/doc/usb/) qube such as `sys-usb` | Install `qubes-usb-proxy`. To use USB mouse or keyboard install `qubes-input-proxy-sender`.
+**VPN** | You can use this template as basis for a [VPN](/doc/vpn/) qube | You may need to install network-manager VPN packages, depending on the VPN technology you'll be using. After creating a machine based on this template, follow the [VPN howto](/doc/vpn/#set-up-a-proxyvm-as-a-vpn-gateway-using-networkmanager) to configure it.
+ 
 
 In Qubes 4.0, additional packages from the `qubes-core-agent` suite may be needed to make the customized minimal template work properly. 
 These packages are:
@@ -111,6 +112,6 @@ Also, there are packages to provide additional services:
 - `qubes-app-shutdown-idle`: If you want qubes to automatically shutdown when idle.
 - `qubes-mgmt-\*`: If you want to use salt management on the template and qubes.
 
-Documentation on all of these can be found in the [docs](/de/doc)
+Documentation on all of these can be found in the [docs](/doc)
 
 You could, of course, use qubes-vm-recommended to automatically install many of these, but in that case you are well on the way to a standard Debian template.

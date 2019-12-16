@@ -1,9 +1,9 @@
 ---
 layout: doc
 title: Architecture
-permalink: /de/doc/architecture/
-lang: de
-ref: 161
+permalink: /doc/architecture/
+lang: en
+ref: 163
 redirect_from:
 - /doc/qubes-architecture/
 - /en/doc/qubes-architecture/
@@ -18,7 +18,8 @@ Qubes implements a Security by Isolation approach. To do this, Qubes utilizes vi
 
 Qubes lets the user define many security domains, which are implemented as lightweight Virtual Machines (VMs), or “AppVMs.” For example, the user can have “personal,” “work,” “shopping,” “bank,” and “random” AppVMs and can use the applications within those VMs just as if they were executing on the local machine. At the same time, however, these applications are well isolated from each other. Qubes also supports secure copy-and-paste and file sharing between the AppVMs, of course.
 
-[![qubes-arch-diagram-1.png](/de/attachment/wiki/QubesArchitecture/qubes-arch-diagram-1.png)
+[![qubes-arch-diagram-1.png](/attachment/wiki/QubesArchitecture/qubes-arch-diagram-1.png)](/attachment/wiki/QubesArchitecture/qubes-arch-diagram-1.png)
+
 (Note: In the diagram above, "Storage domain" is actually a USB domain.)
 
 Key Architecture features
@@ -34,4 +35,4 @@ Key Architecture features
 -   Qubes GUI provides isolation between apps sharing the same desktop
 -   Secure system boot based (optional)
 
-[Architecture Spec v0.3 [PDF]](/de/attachment/wiki/QubesArchitecture/arch-spec-0.3.pdf) (The original 2009 document that started this all...)
+[Architecture Spec v0.3 [PDF]](/attachment/wiki/QubesArchitecture/arch-spec-0.3.pdf) (The original 2009 document that started this all...)

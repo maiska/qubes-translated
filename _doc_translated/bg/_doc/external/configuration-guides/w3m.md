@@ -1,9 +1,9 @@
 ---
 layout: doc
 title: Reducing the fingerprint of the text-based web browser w3m
-permalink: /bg/doc/w3m/
-lang: bg
-ref: 137
+permalink: /doc/w3m/
+lang: en
+ref: 35
 redirect_from:
 - /en/doc/mutt/
 - /doc/W3m/

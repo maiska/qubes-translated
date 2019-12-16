@@ -1,9 +1,9 @@
 ---
 layout: doc
 title: Source Code
-permalink: /de/doc/source-code/
-lang: de
-ref: 198
+permalink: /doc/source-code/
+lang: en
+ref: 205
 redirect_from:
 - /en/doc/source-code/
 - /doc/SourceCode/
@@ -83,8 +83,8 @@ method you choose, you must [sign your code] before it can be accepted.
 
 
 [QubesOS GitHub account]: https://github.com/QubesOS/
-[contribute code]: /de/doc/contributing/#contributing-code
-[sign your code]: /de/doc/code-signing/
+[contribute code]: /doc/contributing/#contributing-code
+[sign your code]: /doc/code-signing/
 [fork & pull requests]: https://guides.github.com/activities/forking/
-[qubes-devel mailing list]: /de/support/#qubes-devel
+[qubes-devel mailing list]: /support/#qubes-devel
 

@@ -1,9 +1,9 @@
 ---
 layout: doc
 title: Language Localization
-permalink: /bg/doc/language-localization/
-lang: bg
-ref: 133
+permalink: /doc/language-localization/
+lang: en
+ref: 58
 redirect_from:
 - /en/doc/language-localization/
 - /doc/LanguageLocalization/

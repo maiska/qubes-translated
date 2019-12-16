@@ -1,9 +1,9 @@
 ---
 layout: doc
 title: Security Bulletin Checklist
-permalink: /bg/security/bulletins/checklist/
-lang: bg
-ref: 88
+permalink: /security/bulletins/checklist/
+lang: en
+ref: 9
 redirect_from: /doc/security-bulletins/checklist/
 ---
 
@@ -23,6 +23,6 @@ Announcement
  * Upload packages to `security-testing` and `current-testing` repositories
  * Push QSB to public repository
  * Publish a [news post](/news/) using the [QSB Template](/security/bulletins/template/)
- * Send the content of the news post to the appropriate [mailing lists](/bg/support/) 
+ * Send the content of the news post to the appropriate [mailing lists](/support/) 
  * Share link to news post on social media
 

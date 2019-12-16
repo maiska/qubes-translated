@@ -1,9 +1,9 @@
 ---
 layout: doc
 title: Rxvt
-permalink: /de/doc/rxvt/
-lang: de
-ref: 140
+permalink: /doc/rxvt/
+lang: en
+ref: 29
 redirect_from:
 - /en/doc/rxvt/
 - /doc/Rxvt/

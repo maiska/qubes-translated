@@ -1,9 +1,9 @@
 ---
 layout: doc
 title: Upgrading the Fedora 29 TemplateVM to Fedora 30
-permalink: /de/doc/template/fedora/upgrade-29-to-30/
-lang: de
-ref: 18
+permalink: /doc/template/fedora/upgrade-29-to-30/
+lang: en
+ref: 109
 ---
 
 Upgrading the Fedora 29 TemplateVM to Fedora 30
@@ -177,11 +177,11 @@ In this case, you have several options:
     [Jason M](https://groups.google.com/d/msg/qubes-users/mCXkxlACILQ/5PxDfI-RKAsJ).
 
 
-[TemplateVM]: /de/doc/templates/
-[Fedora TemplateVM]: /de/doc/templates/fedora/
-[resize-disk-image]: /de/doc/resize-disk-image/
+[TemplateVM]: /doc/templates/
+[Fedora TemplateVM]: /doc/templates/fedora/
+[resize-disk-image]: /doc/resize-disk-image/
 [Additional Information]: #additional-information
 [Compacting the Upgraded Template]: #compacting-the-upgraded-template
-[switching]: /de/doc/templates/#how-to-switch-templates
-[DispVM]: /de/doc/dispvm/
+[switching]: /doc/templates/#how-to-switch-templates
+[DispVM]: /doc/dispvm/
 

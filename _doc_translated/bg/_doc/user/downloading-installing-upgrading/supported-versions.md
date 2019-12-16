@@ -1,9 +1,9 @@
 ---
 layout: doc
 title: Supported Versions
-permalink: /bg/doc/supported-versions/
-lang: bg
-ref: 33
+permalink: /doc/supported-versions/
+lang: en
+ref: 121
 ---
 
 Supported Versions
@@ -93,12 +93,12 @@ To be precise:
 We aim to announce both types of events one month in advance in order to remind users to upgrade.
 
 
-[Version Scheme]: /bg/doc/version-scheme/
-[Downloads]: /bg/downloads/
-[download mirrors]: /bg/downloads/#mirrors
-[security-critical]: /bg/doc/security-critical-code/
-[TemplateVM]: /bg/doc/templates/
+[Version Scheme]: /doc/version-scheme/
+[Downloads]: /downloads/
+[download mirrors]: /downloads/#mirrors
+[security-critical]: /doc/security-critical-code/
+[TemplateVM]: /doc/templates/
 [extended support]: /news/2018/03/28/qubes-40/#the-past-and-the-future
 [4.1]: https://github.com/QubesOS/qubes-issues/issues?utf8=%E2%9C%93&q=is%3Aissue+milestone%3A%22Release+4.1%22+
-[Whonix]: /bg/doc/whonix/
+[Whonix]: /doc/whonix/
 

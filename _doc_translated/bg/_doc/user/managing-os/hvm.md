@@ -1,9 +1,9 @@
 ---
 layout: doc
 title: HVM
-permalink: /bg/doc/hvm/
-lang: bg
-ref: 17
+permalink: /doc/hvm/
+lang: en
+ref: 104
 redirect_from:
 - /doc/hvm-create/
 - /en/doc/hvm-create/
@@ -71,7 +71,7 @@ Next, the VM will start booting from the attached installation media. Depending 
 Setting up networking for HVM domains
 -------------------------------------
 
-Just like standard paravirtualized AppVMs, the HVM domains get fixed IP addresses centrally assigned by Qubes.  Normally Qubes agent scripts (or services on Windows) running within each AppVM are responsible for setting up networking within the VM according the configuration created by Qubes (through [keys](/bg/doc/vm-interface/#qubesdb) exposed by dom0 to the VM). Such centrally managed networking infrastructure allows for [advanced networking configuration](https://blog.invisiblethings.org/2011/09/28/playing-with-qubes-networking-for-fun.html).
+Just like standard paravirtualized AppVMs, the HVM domains get fixed IP addresses centrally assigned by Qubes.  Normally Qubes agent scripts (or services on Windows) running within each AppVM are responsible for setting up networking within the VM according the configuration created by Qubes (through [keys](/doc/vm-interface/#qubesdb) exposed by dom0 to the VM). Such centrally managed networking infrastructure allows for [advanced networking configuration](https://blog.invisiblethings.org/2011/09/28/playing-with-qubes-networking-for-fun.html).
 
 A generic HVM domain such as a standard Windows or Ubuntu installation, however, has no Qubes agent scripts running inside it initially and thus requires manual networking configuration so that it match the values assigned by Qubes for this domain.
 
@@ -79,18 +79,18 @@ Even though we do have a small DHCP server that runs inside HVM untrusted stub d
 
 In order to manually configure networking in a VM, one should first find out the IP/netmask/gateway assigned to the particular VM by Qubes. This can be seen e.g. in the Qubes Manager in the VM's properties:
 
-![r2b1-manager-networking-config.png](/bg/attachment/wiki/HvmCreate/r2b1-manager-networking-config.png)
+![r2b1-manager-networking-config.png](/attachment/wiki/HvmCreate/r2b1-manager-networking-config.png)
 
 Alternatively, one can use the `qvm-ls -n` command to obtain the same information and configure the networking within the HVM according to those settings (IP/netmask/gateway).
 
 The DNS IP addresses are `10.139.1.1` and `10.139.1.2`.
-There is [opt-in support](/bg/doc/networking/#ipv6) for IPv6 forwarding.
+There is [opt-in support](/doc/networking/#ipv6) for IPv6 forwarding.
 
 
 Using Template-based HVM domains
 --------------------------------
 
-Please see our dedicated page on [installing and using Windows-based AppVMs](/bg/doc/windows-appvms/).
+Please see our dedicated page on [installing and using Windows-based AppVMs](/doc/windows-appvms/).
 
 
 Cloning HVM domains
@@ -197,17 +197,17 @@ timezone          : localtime
 Installing Qubes support tools in Windows 7 VMs
 -----------------------------------------------
 
-Windows specific steps are described on [separate page](/bg/doc/windows-appvms/).
+Windows specific steps are described on [separate page](/doc/windows-appvms/).
 
 
 Assigning PCI devices to HVM domains
 ------------------------------------
 
-HVM domains (including Windows VMs) can be [assigned PCI devices](/bg/doc/assigning-devices/) just like normal AppVMs. E.g. one can assign one of the USB controllers to the Windows VM and should be able to use various devices that require Windows software, such as phones, electronic devices that are configured via FTDI, etc.
+HVM domains (including Windows VMs) can be [assigned PCI devices](/doc/assigning-devices/) just like normal AppVMs. E.g. one can assign one of the USB controllers to the Windows VM and should be able to use various devices that require Windows software, such as phones, electronic devices that are configured via FTDI, etc.
 
 One problem at the moment however, is that after the whole system gets suspended into S3 sleep and subsequently resumed, some attached devices may stop working and should be restarted within the VM. This can be achieved under a Windows HVM by opening the Device Manager, selecting the actual device (such as a USB controller), 'Disabling' the device, and then 'Enabling' the device again. This is illustrated on the screenshot below:
 
-![r2b1-win7-usb-disable.png](/bg/attachment/wiki/HvmCreate/r2b1-win7-usb-disable.png)
+![r2b1-win7-usb-disable.png](/attachment/wiki/HvmCreate/r2b1-win7-usb-disable.png)
 
 
 Converting VirtualBox VM to HVM
@@ -285,6 +285,6 @@ Further reading
 
 Other documents related to HVM:
 
--   [Windows VMs](/bg/doc/windows-vm/)
--   [LinuxHVMTips](/bg/doc/linux-hvm-tips/)
+-   [Windows VMs](/doc/windows-vm/)
+-   [LinuxHVMTips](/doc/linux-hvm-tips/)
 

@@ -1,9 +1,9 @@
 ---
 layout: doc
 title: Apple MacBook Troubleshooting
-permalink: /bg/doc/macbook-troubleshooting/
-lang: bg
-ref: 109
+permalink: /doc/macbook-troubleshooting/
+lang: en
+ref: 39
 ---
 
 Apple MacBook Troubleshooting
@@ -137,7 +137,7 @@ Please see [this thread o the qubes-devel mailing list][macbook-air-2012-5-1].
 
 [1]: https://github.com/QubesOS/qubes-issues/issues/794
 [2]: https://github.com/QubesOS/qubes-issues/issues/1261
-[3]: /bg/doc/assigning-devices/
+[3]: /doc/assigning-devices/
 [bluetooth-replacement]: https://www.ifixit.com/Guide/MacBook+Air+13-Inch+Mid+2011+AirPort-Bluetooth+Card+Replacement/6360
 [macbook-air-2012-5-1]: https://groups.google.com/d/topic/qubes-devel/uLDYGdKk_Dk/discussion
 

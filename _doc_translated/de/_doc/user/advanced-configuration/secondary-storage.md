@@ -1,9 +1,9 @@
 ---
 layout: doc
 title: Secondary Storage
-permalink: /de/doc/secondary-storage/
-lang: de
-ref: 68
+permalink: /doc/secondary-storage/
+lang: en
+ref: 150
 redirect_from:
 - /en/doc/secondary-storage/
 - /doc/SecondaryStorage/
@@ -90,6 +90,6 @@ By default VMs will be created on the main Qubes disk (i.e. a small SSD), to cre
     qvm-create -P poolhd0_qubes --label red unstrusted-hdd
 
 
-[Qubes Backup]: /de/doc/BackupRestore/
-[TemplateVM]: /de/doc/Templates/
+[Qubes Backup]: /doc/BackupRestore/
+[TemplateVM]: /doc/Templates/
 

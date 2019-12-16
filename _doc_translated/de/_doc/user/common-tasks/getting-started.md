@@ -1,9 +1,9 @@
 ---
 layout: default
 title: Get Started
-permalink: /de/getting-started/
-lang: de
-ref: 54
+permalink: /getting-started/
+lang: en
+ref: 95
 redirect_from:
 - /doc/getting-started/
 - /en/doc/getting-started/
@@ -11,8 +11,8 @@ redirect_from:
 - /wiki/GettingStarted/
 ---
 
-<a name="already-installed"></a>After [installing Qubes](/de/doc/installation-guide/), let's cover some basic concepts.
-You might also like to refer to the [Glossary](/de/doc/glossary/).
+<a name="already-installed"></a>After [installing Qubes](/doc/installation-guide/), let's cover some basic concepts.
+You might also like to refer to the [Glossary](/doc/glossary/).
 
 AppVMs (qubes) and TemplateVMs
 --------------------------------
@@ -42,7 +42,7 @@ Personally, I find it natural to associate red with that which is untrusted and 
 I've also extended this scheme to include blue and black, which I interpret as indicating progressively more trusted domains than green, with black being ultimately trusted.
 Alternatively you might use the colors to show that qubes belong to the same domain - for example, you might use 3 or 4 qubes for work activities, and give them all the same distinct color label. It's entirely up to you.
 
-![snapshot12.png](/de/attachment/wiki/GettingStarted/snapshot12.png)
+![snapshot12.png](/attachment/wiki/GettingStarted/snapshot12.png)
 
 In addition to qubes and TemplateVMs, there's one special domain called "dom0," which is where the Desktop Manager runs. 
 This is where you log in to the system. 
@@ -51,7 +51,7 @@ If dom0 were ever compromised, it would be Game Over<sup>TM</sup>.
 (The entire system would effectively be compromised.) 
 Due to its overarching importance, dom0 has no network connectivity and is used only for running the Window and Desktop Managers. 
 Dom0 shouldn't be used for anything else. 
-In particular, [you should never run user applications in dom0](/de/doc/security-guidelines/#dom0-precautions). 
+In particular, [you should never run user applications in dom0](/doc/security-guidelines/#dom0-precautions). 
 (That's what your qubes are for!)
 
 Qubes VM Manager and Command Line Tools
@@ -67,16 +67,16 @@ Opening a console window in dom0 can be done in several ways:
     * Start → System Tools → Konsole
     * Press Alt-F2 and type `konsole`.
 
-Various command line tools are described as part of this guide, and the whole reference can be found [here](/de/doc/tools/).
+Various command line tools are described as part of this guide, and the whole reference can be found [here](/doc/tools/).
 
-![r2b1-dom0-konsole.png](/de/attachment/wiki/GettingStarted/r2b1-dom0-konsole.png)
+![r2b1-dom0-konsole.png](/attachment/wiki/GettingStarted/r2b1-dom0-konsole.png)
 
 Alternatively, you can use a rather intuitive GUI tool called **Qubes VM Manager**. 
 It supports most of the functionality that command line tools provide. 
 The Qubes VM Manager starts and opens automatically when Qubes starts up, but you can also start it by going to Start → System Tools → Qubes Manager.
 Once the Qubes VM Manager is running, you can open the window at any time by clicking on the Qubes tray icon, which typically resides in the bottom-right corner of the screen.
 
-![r2b1-qubes-manager-2.png](/de/attachment/wiki/GettingStarted/r2b1-qubes-manager-2.png)
+![r2b1-qubes-manager-2.png](/attachment/wiki/GettingStarted/r2b1-qubes-manager-2.png)
 
 Starting Apps in qubes
 ------------------------
@@ -87,7 +87,8 @@ You can start apps directly from the Start Menu or the Application Finder (Alt-F
 Each qube has its own menu directory under the scheme **Domain: \<name\>**. 
 After navigating into one of these directories, simply click on the application you'd like to start:
 
-![r2b1-appsmenu-1.png](/de/attachment/wiki/GettingStarted/r2b1-appsmenu-1.png) ![r2b1-appsmenu-3.png
+![r2b1-appsmenu-1.png](/attachment/wiki/GettingStarted/r2b1-appsmenu-1.png) ![r2b1-appsmenu-3.png](/attachment/wiki/GettingStarted/r2b1-appsmenu-3.png)
+
 By default, each qube's menu contains only a few shortcuts. 
 If you'd like to add more, simply click **Add more shortcuts...**, select the desired applications, and click **OK**. 
 You can also add shortcuts manually. 
@@ -126,7 +127,7 @@ If you plan on using your system for work, then it also depends on what kind of 
 
 It's a good idea to start out with the three qubes created automatically by the installer: work, personal, and untrusted. 
 Then, if and when you start to feel that some activity just doesn't fit into any of your existing qubes, or you want to partition some part of your life, you can easily create a new qube for it. 
-You'll also be able to easily copy any files you need to the newly created qube, as explained [here](/de/doc/copying-files/).
+You'll also be able to easily copy any files you need to the newly created qube, as explained [here](/doc/copying-files/).
 
 More paranoid people might find it worthwhile to read [this article](https://blog.invisiblethings.org/2011/03/13/partitioning-my-digital-life-into.html), which describes how one of the Qubes authors partitions her digital life into security domains.
 
@@ -134,16 +135,16 @@ Common Tasks
 ------------
 
 Here are the documentation pages for some of the main actions you'll want to perform.
-A full list is available in the [Common Tasks](/de/doc/#common-tasks) section of the documentation.
+A full list is available in the [Common Tasks](/doc/#common-tasks) section of the documentation.
 
- * [Copying and Pasting Text Between Domains](/de/doc/copy-paste/)
- * [Copying and Moving Files Between Domains](/de/doc/copying-files/)
- * [Copying from (and to) dom0](/de/doc/copy-from-dom0/)
- * [Updating Software in dom0](/de/doc/software-update-dom0/)
- * [Updating and Installing Software in VMs](/de/doc/software-update-vm/)
- * [Backup, Restoration, and Migration](/de/doc/backup-restore/)
- * [Using DisposableVMs](/de/doc/disposablevm/)
- * [Using and Managing USB Devices](/de/doc/usb/)
+ * [Copying and Pasting Text Between Domains](/doc/copy-paste/)
+ * [Copying and Moving Files Between Domains](/doc/copying-files/)
+ * [Copying from (and to) dom0](/doc/copy-from-dom0/)
+ * [Updating Software in dom0](/doc/software-update-dom0/)
+ * [Updating and Installing Software in VMs](/doc/software-update-vm/)
+ * [Backup, Restoration, and Migration](/doc/backup-restore/)
+ * [Using DisposableVMs](/doc/disposablevm/)
+ * [Using and Managing USB Devices](/doc/usb/)
 
 Running an application Full Screen
 ----------------------------------
@@ -181,7 +182,7 @@ To allow only select qubes to enter full screen mode, create a per-VM section, a
 
 In order for the changes to take effect, restart the qube(s).
 
-More details can be found [here](/de/doc/full-screen-mode/).
+More details can be found [here](/doc/full-screen-mode/).
 
 <div class="row">
   <div class="col-lg-4 col-md-4">

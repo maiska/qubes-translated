@@ -1,9 +1,9 @@
 ---
 layout: doc
 title: Block (Storage) Devices
-permalink: /bg/doc/block-devices/
-lang: bg
-ref: 61
+permalink: /doc/block-devices/
+lang: en
+ref: 92
 redirect_from:
 - /doc/stick-mounting/
 - /en/doc/stick-mounting/
@@ -222,12 +222,12 @@ This option accepts `cdrom` and `disk`, default is `disk`.
 
 
 
-[device handling in qubes]: /bg/doc/device-handling/
+[device handling in qubes]: /doc/device-handling/
 [mass-storage]: https://en.wikipedia.org/wiki/USB_mass_storage_device_class
 [device manager icon]:/attachment/wiki/Devices/media-removable.png
 [frontend-dev]: #frontend-dev
 [premature removal]: https://github.com/QubesOS/qubes-issues/issues/1082
-[detach dom0 device]: /bg/doc/usb/#what-if-i-removed-the-device-before-detaching-it-from-the-vm
+[detach dom0 device]: /doc/usb/#what-if-i-removed-the-device-before-detaching-it-from-the-vm
 [losetup]: https://linux.die.net/man/8/losetup
 [USB]:/doc/usb-devices/
 [1082]: https://github.com/QubesOS/qubes-issues/issues/1082

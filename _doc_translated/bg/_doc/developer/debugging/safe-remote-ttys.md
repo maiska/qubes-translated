@@ -1,9 +1,9 @@
 ---
 layout: doc
 title: Safe Remote Dom0 Terminals
-permalink: /bg/doc/safe-remote-ttys/
-lang: bg
-ref: 194
+permalink: /doc/safe-remote-ttys/
+lang: en
+ref: 159
 redirect_from:
 - /en/doc/safe-remote-ttys/
 - /doc/safe-remote-ttys/

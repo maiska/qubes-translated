@@ -1,9 +1,9 @@
 ---
 layout: doc
 title: Network Bridge Support
-permalink: /bg/doc/network-bridge-support/
-lang: bg
-ref: 143
+permalink: /doc/network-bridge-support/
+lang: en
+ref: 23
 redirect_from:
 - /en/doc/network-bridge-support/
 - /doc/NetworkBridgeSupport/

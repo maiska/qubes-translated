@@ -1,9 +1,9 @@
 ---
 layout: doc
 title: Multibooting
-permalink: /de/doc/multiboot/
-lang: de
-ref: 146
+permalink: /doc/multiboot/
+lang: en
+ref: 36
 ---
 
 Multibooting Qubes 
@@ -13,7 +13,7 @@ Introduction
 ---------------------
 
 You should think carefully before dual booting Qubes on your box.
-Read the [guidelines](/de/doc/security-guidelines) carefully.
+Read the [guidelines](/doc/security-guidelines) carefully.
 
 One problem is that when you dual or multiboot, even if you are using
 encryption on your Qubes installation, /boot is still unprotected and
@@ -24,7 +24,7 @@ The other problem is firmware security - for example the other system
 could infect BIOS firmware, which might enable compromise or spying on
 the Qubes system.
 
-You can use [Anti Evil Maid](/de/doc/anti-evil-maid/), which would inform
+You can use [Anti Evil Maid](/doc/anti-evil-maid/), which would inform
 you if /boot had been modified, but it cannot prevent or fix the problem.
 
 If you have considered these issues, tried out the live system and want to

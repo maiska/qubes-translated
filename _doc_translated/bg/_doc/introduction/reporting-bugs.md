@@ -1,9 +1,9 @@
 ---
 layout: doc
 title: Reporting bugs and other issues
-permalink: /bg/doc/reporting-bugs/
-lang: bg
-ref: 96
+permalink: /doc/reporting-bugs/
+lang: en
+ref: 17
 redirect_from:
 - /en/doc/reporting-bugs/
 - /doc/BugReportingGuide/
@@ -132,18 +132,18 @@ If the issue is closed without one of these specific resolutions, then it means,
 [manager/widget]: https://github.com/QubesOS/qubes-issues/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3A%22C%3A+manager%2Fwidget%22+
 [Xen]: https://github.com/QubesOS/qubes-issues/issues?q=is%3Aopen+is%3Aissue+label%3A%22C%3A+Xen%22
 [major]: https://github.com/QubesOS/qubes-issues/labels/P%3A%20major
-[Security]: /bg/security/
-[documentation]: /bg/doc/
-[website]: /bg/
+[Security]: /security/
+[documentation]: /doc/
+[website]: /
 [qubes-issues]: https://github.com/QubesOS/qubes-issues/issues
-[Help, Support, and Mailing Lists]: /bg/support/
-[qubes-users]: /bg/support/#qubes-users
-[qubes-devel]: /bg/support/#qubes-devel
+[Help, Support, and Mailing Lists]: /support/
+[qubes-users]: /support/#qubes-users
+[qubes-devel]: /support/#qubes-devel
 [updates-status]: https://github.com/QubesOS/updates-status/issues
-[how to copy information out of dom0]: /bg/doc/copy-from-dom0/
-[testing]: /bg/doc/testing/
-[How to Contribute]: /bg/doc/contributing/
-[Contributing Code]: /bg/doc/contributing/#contributing-code
-[Package Contributions]: /bg/doc/package-contributions/
-[Documentation Guidelines]: /bg/doc/doc-guidelines/
+[how to copy information out of dom0]: /doc/copy-from-dom0/
+[testing]: /doc/testing/
+[How to Contribute]: /doc/contributing/
+[Contributing Code]: /doc/contributing/#contributing-code
+[Package Contributions]: /doc/package-contributions/
+[Documentation Guidelines]: /doc/doc-guidelines/
 

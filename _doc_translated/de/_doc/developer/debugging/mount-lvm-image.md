@@ -1,9 +1,9 @@
 ---
 layout: doc
 title: Mount LVM image
-permalink: /de/doc/mount-lvm-image/
-lang: de
-ref: 196
+permalink: /doc/mount-lvm-image/
+lang: en
+ref: 157
 ---
 
 # How to mount LVM image

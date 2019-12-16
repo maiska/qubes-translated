@@ -1,9 +1,9 @@
 ---
 layout: doc
 title: Style-guide
-permalink: /bg/doc/style-guide/
-lang: bg
-ref: 184
+permalink: /doc/style-guide/
+lang: en
+ref: 172
 ---
 
 Style Guide

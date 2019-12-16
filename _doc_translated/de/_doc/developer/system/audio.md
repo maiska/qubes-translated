@@ -1,9 +1,9 @@
 ---
 layout: doc
 title: Audio Virtualization
-permalink: /de/doc/audio-virtualization/
-lang: de
-ref: 160
+permalink: /doc/audio-virtualization/
+lang: en
+ref: 165
 ---
 
 Audio Virtualization

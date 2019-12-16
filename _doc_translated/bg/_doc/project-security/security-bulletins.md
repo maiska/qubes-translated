@@ -1,9 +1,9 @@
 ---
 layout: doc
 title: Qubes Security Bulletins
-permalink: /bg/security/bulletins/
-lang: bg
-ref: 86
+permalink: /security/bulletins/
+lang: en
+ref: 6
 redirect_from: 
 - /doc/security-bulletins/
 - /en/doc/security-bulletins/
@@ -15,7 +15,7 @@ redirect_from:
 Qubes Security Bulletins (QSBs)
 ===============================
 
-Qubes Security Bulletins (QSBs) are published through the [Qubes Security Pack](/bg/security/pack/).
+Qubes Security Bulletins (QSBs) are published through the [Qubes Security Pack](/security/pack/).
 
 <table>
   <tr>

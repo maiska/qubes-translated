@@ -1,9 +1,9 @@
 ---
 layout: doc
 title: Lenovo ThinkPad Troubleshooting
-permalink: /bg/doc/thinkpad-troubleshooting/
-lang: bg
-ref: 104
+permalink: /doc/thinkpad-troubleshooting/
+lang: en
+ref: 47
 redirect_from:
 - /doc/thinkpad_x201/
 - /en/doc/thinkpad_x201/

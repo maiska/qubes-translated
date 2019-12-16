@@ -1,9 +1,9 @@
 ---
 layout: doc
 title: System Requirements
-permalink: /de/doc/system-requirements/
-lang: de
-ref: 27
+permalink: /doc/system-requirements/
+lang: en
+ref: 77
 redirect_from:
 - /system-requirements/
 - /en/doc/system-requirements/
@@ -84,14 +84,14 @@ redirect_from:
  * [Advice on finding a VT-d capable notebook][vt-d-notebook].
 
 
-[nvidia]: /de/doc/install-nvidia-driver/
+[nvidia]: /doc/install-nvidia-driver/
 [hardware certification requirements for Qubes 4.x]: /news/2016/07/21/new-hw-certification-for-q4/
-[Certified Hardware]: /de/doc/certified-hardware/
-[Hardware Compatibility List]: /de/hcl/
-[hcl-doc]: /de/doc/hcl/
-[hcl-report]: /de/doc/hcl/#generating-and-submitting-new-reports
-[Anti Evil Maid]: /de/doc/anti-evil-maid/
-[live USB]: /de/doc/live-usb/
+[Certified Hardware]: /doc/certified-hardware/
+[Hardware Compatibility List]: /hcl/
+[hcl-doc]: /doc/hcl/
+[hcl-report]: /doc/hcl/#generating-and-submitting-new-reports
+[Anti Evil Maid]: /doc/anti-evil-maid/
+[live USB]: /doc/live-usb/
 [#230]: https://github.com/QubesOS/qubes-issues/issues/230
 [vt-d-notebook]: https://groups.google.com/d/msg/qubes-users/Sz0Nuhi4N0o/ZtpJdoc0OY8J
 [Intel VT-x]: https://en.wikipedia.org/wiki/X86_virtualization#Intel_virtualization_.28VT-x.29

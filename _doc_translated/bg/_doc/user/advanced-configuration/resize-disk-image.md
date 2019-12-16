@@ -1,9 +1,9 @@
 ---
 layout: doc
 title: Resize Disk Image
-permalink: /bg/doc/resize-disk-image/
-lang: bg
-ref: 71
+permalink: /doc/resize-disk-image/
+lang: en
+ref: 153
 redirect_from:
 - /en/doc/resize-disk-image/
 - /en/doc/resize-root-disk-image/
@@ -19,10 +19,10 @@ Resize Disk Image
 There are several disk images which can be easily extended, but pay attention to the overall consumed space of your sparse/thin disk images.
 In most cases, the GUI tool Qube Settings (available for every qube from the Start menu, and also in the Qube Manager) will allow you to easily increase maximum disk image size.
 
-![vm-settings-disk-image.png](/bg/attachment/wiki/DiskSize/vm-settings-disk-image.png)
+![vm-settings-disk-image.png](/attachment/wiki/DiskSize/vm-settings-disk-image.png)
 
 In case of standalone qubes and templates, just change the Disk Storage settings above.
-In case of template-based qubes, the private storage (the /home directory and user files) can be changed in the qube's own settings, but the system root image is [inherited from the template](/bg/getting-started/#appvms-qubes-and-templatevms), and so it must be changed in the template settings. 
+In case of template-based qubes, the private storage (the /home directory and user files) can be changed in the qube's own settings, but the system root image is [inherited from the template](/getting-started/#appvms-qubes-and-templatevms), and so it must be changed in the template settings. 
 If you are increasing the disk image size for Linux-based qubes installed from Qubes OS repositories in Qubes 4.0 or later, changing the settings above is all you need to do - in other cases, you may need to do more, according to instructions below.
 See also the OS-specific follow-up instructions below.
 

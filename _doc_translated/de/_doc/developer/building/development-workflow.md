@@ -1,9 +1,9 @@
 ---
 layout: doc
 title: Development Workflow
-permalink: /de/doc/development-workflow/
-lang: de
-ref: 205
+permalink: /doc/development-workflow/
+lang: en
+ref: 201
 redirect_from:
 - /en/doc/development-workflow/
 - /doc/DevelopmentWorkflow/
@@ -15,7 +15,7 @@ Development Workflow
 
 A workflow for developing Qubes OS+
 
-First things first, setup [QubesBuilder](/de/doc/qubes-builder/). This guide
+First things first, setup [QubesBuilder](/doc/qubes-builder/). This guide
 assumes you're using qubes-builder to build Qubes.
 
 Repositories and committing Code
@@ -149,7 +149,7 @@ RPMS will appear in qubes-src/linux-kernel/pkgs/fc20/x86\_64:
 -rw-rw-r-- 1 user user 54502117 Nov 17 05:37 kernel-qubes-vm-3.4.18-1debug20121117a.pvops.qubes.x86_64.rpm
 ~~~
 
-### Useful [QubesBuilder](/de/doc/qubes-builder/) commands
+### Useful [QubesBuilder](/doc/qubes-builder/) commands
 
 1.  `make check` - will check if all the code was committed into repository and
 if all repository are tagged with signed tag.
@@ -175,7 +175,7 @@ testing.
 Here are some handy scripts Marek has shared to facilitate this.
 
 You may also like to run your [test environment on separate
-machine](/de/doc/test-bench/).
+machine](/doc/test-bench/).
 
 ### Syncing dom0 files
 
@@ -543,6 +543,6 @@ Usage: add this line to `/etc/apt/sources.list` on test machine (adjust host and
 deb http://local-test.lan/linux-deb/r3.1 jessie-unstable main
 ~~~
 
-[port-forwarding]: /de/doc/firewall/#port-forwarding-to-a-qube-from-the-outside-world
+[port-forwarding]: /doc/firewall/#port-forwarding-to-a-qube-from-the-outside-world
 [linux-yum]: https://github.com/QubesOS/qubes-linux-yum
 [linux-deb]: https://github.com/QubesOS/qubes-linux-deb

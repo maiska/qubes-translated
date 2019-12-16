@@ -1,9 +1,9 @@
 ---
 layout: doc
 title: Hardware Compatibility List (HCL)
-permalink: /bg/doc/hcl/
-lang: bg
-ref: 28
+permalink: /doc/hcl/
+lang: en
+ref: 75
 redirect_from:
 - /en/doc/hcl/
 - /doc/HCL/
@@ -15,12 +15,12 @@ redirect_from:
 Hardware Compatibility List (HCL) for All Qubes OS Releases
 ===========================================================
 
-The [HCL](/bg/hcl) is a compilation of reports generated and submitted by users across various Qubes versions about their hardware's compatibility with Qubes.
+The [HCL](/hcl) is a compilation of reports generated and submitted by users across various Qubes versions about their hardware's compatibility with Qubes.
 
  **Note:**
  Except in the case of developer-reported entries, the Qubes team has not independently verified the accuracy of these reports.
  Please first consult the data sheets (CPU, chipset, motherboard) prior to buying new hardware for Qubes.
- Make sure it meets the [System Requirements](/bg/doc/system-requirements/) and search in particular for support of:
+ Make sure it meets the [System Requirements](/doc/system-requirements/) and search in particular for support of:
 
 -   HVM ("AMD virtualization (AMD-V)", "Intel virtualization (VT-x)", "VIA virtualization (VIA VT)")
 -   IOMMU ("AMD I/O Virtualization Technology (AMD-Vi)", "Intel Virtualization Technology for Directed I/O (VT-d)")
@@ -40,7 +40,7 @@ and run `qubes-hcl-report <vm-name>`, where `<vm-name>` is the name of the VM to
 
 You are encouraged to submit your HCL report for the benefit of further Qubes development and other users.
 When submitting reports, test the hardware yourself, if possible.
-If you would like to submit your HCL report, please send the **HCL Info** `.yml` file to [\`qubes-users@googlegroups.com\`](/bg/support/#qubes-users) with the subject `HCL - <your machine model name>`.
+If you would like to submit your HCL report, please send the **HCL Info** `.yml` file to [\`qubes-users@googlegroups.com\`](/support/#qubes-users) with the subject `HCL - <your machine model name>`.
 Please include any useful information about any Qubes features you may have tested (see the legend below), as well as general machine compatibility (video, networking, sleep, etc.).
 Please consider sending the **HCL Support Files** `.cpio.gz` file as well. To generate these add the `-s` or `--support` command line option.
 

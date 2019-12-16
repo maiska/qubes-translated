@@ -1,9 +1,9 @@
 ---
 layout: doc
 title: Qubes R4.0 release notes
-permalink: /de/doc/releases/4.0/release-notes/
-lang: de
-ref: 174
+permalink: /doc/releases/4.0/release-notes/
+lang: en
+ref: 189
 ---
 
 Qubes R4.0 release notes
@@ -90,12 +90,12 @@ It is advised to install updates just after system installation to apply bug fix
 Downloads
 ---------
 
-See [Qubes Downloads](/de/downloads/).
+See [Qubes Downloads](/downloads/).
 
 Installation instructions
 -------------------------
 
-See [Installation Guide](/de/doc/installation-guide/).
+See [Installation Guide](/doc/installation-guide/).
 
 Upgrading
 ---------
@@ -106,7 +106,7 @@ supported option to upgrade to Qubes R4.0 is to install it from scratch and use
 We also provide [detailed instruction][upgrade-to-r4.0] for this procedure.
 
 
-[backup]: /de/doc/backup-restore/
+[backup]: /doc/backup-restore/
 [github-release-notes]: https://github.com/QubesOS/qubes-issues/issues?q=is%3Aissue+sort%3Aupdated-desc+milestone%3A%22Release+4.0%22+label%3Arelease-notes+is%3Aclosed
 [custom-ip]: https://github.com/QubesOS/qubes-issues/issues/1477
 [hide-ip]: https://github.com/QubesOS/qubes-issues/issues/1143
@@ -117,15 +117,15 @@ We also provide [detailed instruction][upgrade-to-r4.0] for this procedure.
 [qrexec-proxy]: https://github.com/QubesOS/qubes-issues/issues/1854
 [qrexec-policy-keywords]: https://github.com/QubesOS/qubes-issues/issues/865
 [qrexec-confirm]: https://github.com/QubesOS/qubes-issues/issues/910
-[qrexec-doc]: /de/doc/qrexec3/#extra-keywords-available-in-qubes-40-and-later
+[qrexec-doc]: /doc/qrexec3/#extra-keywords-available-in-qubes-40-and-later
 [storage]: https://github.com/QubesOS/qubes-issues/issues/1842
-[vm-interface]: /de/doc/vm-interface/
+[vm-interface]: /doc/vm-interface/
 [admin-api]: /news/2017/06/27/qubes-admin-api/
 [qsb-24]: https://github.com/QubesOS/qubes-secpack/blob/master/QSBs/qsb-024-2016.txt
 [qsb-37]: https://github.com/QubesOS/qubes-secpack/blob/master/QSBs/qsb-037-2018.txt
-[backup-format]: /de/doc/backup-emergency-restore-v4/
+[backup-format]: /doc/backup-emergency-restore-v4/
 [api-doc]: https://dev.qubes-os.org/projects/qubes-core-admin/en/latest/
-[upgrade-to-r4.0]: /de/doc/upgrade-to-r4.0/
+[upgrade-to-r4.0]: /doc/upgrade-to-r4.0/
 [locale-bug]: https://github.com/QubesOS/qubes-issues/issues/3753
 [keyboard-layout-bug]: https://github.com/QubesOS/qubes-issues/issues/3352
 [#3737]: https://github.com/QubesOS/qubes-issues/issues/3737

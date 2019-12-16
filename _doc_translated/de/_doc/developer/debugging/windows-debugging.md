@@ -1,9 +1,9 @@
 ---
 layout: doc
 title: Windows Debugging
-permalink: /de/doc/windows-debugging/
-lang: de
-ref: 191
+permalink: /doc/windows-debugging/
+lang: en
+ref: 158
 redirect_from:
 - /en/doc/windows-debugging/
 - /doc/WindowsDebugging/

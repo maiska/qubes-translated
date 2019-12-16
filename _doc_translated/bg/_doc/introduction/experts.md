@@ -1,9 +1,9 @@
 ---
 layout: home
 title: Experts
-permalink: /bg/experts/
-lang: bg
-ref: 99
+permalink: /experts/
+lang: en
+ref: 18
 ---
 
 <div class="home-content container">

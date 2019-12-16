@@ -1,9 +1,9 @@
 ---
 layout: doc
 title: Package Contributions
-permalink: /bg/doc/package-contributions/
-lang: bg
-ref: 185
+permalink: /doc/package-contributions/
+lang: en
+ref: 170
 ---
 
 Package Contributions
@@ -91,10 +91,10 @@ If you do not act on your maintainer duties for a given package for an extended 
 [Update Procedure]: #update-procedure
 [Review Procedure]: #review-procedure
 [Package Maintainer]: #package-maintainers
-[Qubes OS License]: /bg/doc/license/
-[sig]: /bg/doc/code-signing/
-[coding guidelines]: /bg/doc/coding-style/
-[qubes-devel mailing list]: /bg/support/#qubes-devel
+[Qubes OS License]: /doc/license/
+[sig]: /doc/code-signing/
+[coding guidelines]: /doc/coding-style/
+[qubes-devel mailing list]: /support/#qubes-devel
 [QubesOS-contrib]: https://github.com/QubesOS-contrib
 [qubes-issues]: https://github.com/QubesOS/qubes-issues/issues/
 

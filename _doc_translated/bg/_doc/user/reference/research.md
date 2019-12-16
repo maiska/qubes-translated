@@ -1,9 +1,9 @@
 ---
 layout: default
 title: Research
-permalink: /bg/research/
-lang: bg
-ref: 11
+permalink: /research/
+lang: en
+ref: 97
 redirect_from:
 - /doc/qubes-research/
 - /en/doc/qubes-research/

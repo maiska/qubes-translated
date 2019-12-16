@@ -1,9 +1,9 @@
 ---
 layout: doc
 title: Qfilecopy
-permalink: /de/doc/qfilecopy/
-lang: de
-ref: 166
+permalink: /doc/qfilecopy/
+lang: en
+ref: 184
 redirect_from:
 - /en/doc/qfilecopy/
 - /doc/Qfilecopy/

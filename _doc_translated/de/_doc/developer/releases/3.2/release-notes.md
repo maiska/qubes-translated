@@ -1,9 +1,9 @@
 ---
 layout: doc
 title: Qubes R3.2 release notes
-permalink: /de/doc/releases/3.2/release-notes/
-lang: de
-ref: 176
+permalink: /doc/releases/3.2/release-notes/
+lang: en
+ref: 191
 ---
 
 Qubes R3.2 release notes
@@ -39,12 +39,12 @@ It is advised to install updates just after system installation to apply bug fix
 Downloads
 ---------
 
-See [Qubes Downloads](/de/downloads/).
+See [Qubes Downloads](/downloads/).
 
 Installation instructions
 -------------------------
 
-See [Installation Guide](/de/doc/installation-guide/).
+See [Installation Guide](/doc/installation-guide/).
 After installation, [manually upgrade to Fedora 26](/news/2018/01/06/fedora-26-upgrade/).
 
 Upgrading
@@ -68,12 +68,12 @@ for migrating of all of the user VMs.
 Alternatively you can [upgrade to R3.1 using][upgrade-r3.1] first, then follow
 the instructions above. This will be time consuming process.
 
-[salt-doc]: /de/doc/salt/
-[usb]: /de/doc/usb/
-[i3]: /de/doc/i3/
-[upgrade]: /de/doc/upgrade-to-r3.2/
-[upgrade-r3.1]: /de/doc/releases/3.1/release-notes/#upgrading
-[backup]: /de/doc/backup-restore/
+[salt-doc]: /doc/salt/
+[usb]: /doc/usb/
+[i3]: /doc/i3/
+[upgrade]: /doc/upgrade-to-r3.2/
+[upgrade-r3.1]: /doc/releases/3.1/release-notes/#upgrading
+[backup]: /doc/backup-restore/
 [qrexec-argument]: https://github.com/QubesOS/qubes-issues/issues/1876
-[qrexec-doc]: /de/doc/qrexec3/#service-argument-in-policy
+[qrexec-doc]: /doc/qrexec3/#service-argument-in-policy
 [github-release-notes]: https://github.com/QubesOS/qubes-issues/issues?q=is%3Aissue+sort%3Aupdated-desc+milestone%3A%22Release+3.2%22+label%3Arelease-notes+is%3Aclosed

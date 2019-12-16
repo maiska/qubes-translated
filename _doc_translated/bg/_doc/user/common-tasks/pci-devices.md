@@ -1,9 +1,9 @@
 ---
 layout: doc
 title: PCI Devices
-permalink: /bg/doc/pci-devices/
-lang: bg
-ref: 51
+permalink: /doc/pci-devices/
+lang: en
+ref: 80
 redirect_from:
 - /doc/assigning-devices/
 - /en/doc/assigning-devices/
@@ -149,13 +149,13 @@ or
     It is **strongly discouraged to reattach PCI devices to dom0**, especially if they don't support resetting!
 
 
-[device handling in qubes]: /bg/doc/device-handling/
-[security considerations]: /bg/doc/device-handling-security/#pci-security
+[device handling in qubes]: /doc/device-handling/
+[security considerations]: /doc/device-handling-security/#pci-security
 [block]:/doc/block-devices/
 [USB]:/doc/usb-devices/
-[appmenu]: /bg/attachment/wiki/Devices/qubes-appmenu-select.png
-[domain manager icon]: /bg/attachment/wiki/Devices/qubes-logo-icon.png
-[qvm-device]: /bg/doc/device-handling/#general-qubes-device-widget-behavior-and-handling
+[appmenu]: /attachment/wiki/Devices/qubes-appmenu-select.png
+[domain manager icon]: /attachment/wiki/Devices/qubes-logo-icon.png
+[qvm-device]: /doc/device-handling/#general-qubes-device-widget-behavior-and-handling
 [side channel attacks]: https://en.wikipedia.org/wiki/Side-channel_attack
 [ml1]: https://groups.google.com/group/qubes-devel/browse_thread/thread/631c4a3a9d1186e3
 [ml2]: https://groups.google.com/forum/#!topic/qubes-users/Fs94QAc3vQI

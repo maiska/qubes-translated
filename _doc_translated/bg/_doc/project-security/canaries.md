@@ -1,16 +1,16 @@
 ---
 layout: doc
 title: Canaries
-permalink: /bg/security/canaries/
-lang: bg
-ref: 91
+permalink: /security/canaries/
+lang: en
+ref: 5
 redirect_from: /doc/canaries/
 ---
 
 Qubes Canaries
 ==============
 
-Qubes Canaries are published through the [Qubes Security Pack](/bg/security/pack/).
+Qubes Canaries are published through the [Qubes Security Pack](/security/pack/).
 
 <table>
   <tr>

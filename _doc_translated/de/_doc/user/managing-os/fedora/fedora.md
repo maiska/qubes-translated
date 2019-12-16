@@ -1,9 +1,9 @@
 ---
 layout: doc
 title: The Fedora TemplateVM
-permalink: /de/doc/templates/fedora/
-lang: de
-ref: 19
+permalink: /doc/templates/fedora/
+lang: en
+ref: 110
 ---
 
 The Fedora TemplateVM
@@ -50,18 +50,18 @@ Upgrading
 
 To upgrade your Fedora TemplateVM, please consult the guide that corresponds to your situation:
 
- * [Upgrading the Fedora 29 Template to Fedora 30](/de/doc/template/fedora/upgrade-29-to-30/)
- * [Upgrading the Fedora 28 Template to Fedora 29](/de/doc/template/fedora/upgrade-28-to-29/)
- * [Upgrading the Fedora 27 Template to Fedora 28](/de/doc/template/fedora/upgrade-27-to-28/)
- * [Upgrading the Fedora 26 Template to Fedora 27](/de/doc/template/fedora/upgrade-26-to-27/)
+ * [Upgrading the Fedora 29 Template to Fedora 30](/doc/template/fedora/upgrade-29-to-30/)
+ * [Upgrading the Fedora 28 Template to Fedora 29](/doc/template/fedora/upgrade-28-to-29/)
+ * [Upgrading the Fedora 27 Template to Fedora 28](/doc/template/fedora/upgrade-27-to-28/)
+ * [Upgrading the Fedora 26 Template to Fedora 27](/doc/template/fedora/upgrade-26-to-27/)
 
 
-[TemplateVM]: /de/doc/templates/
-[Fedora Minimal]: /de/doc/templates/fedora-minimal/
+[TemplateVM]: /doc/templates/
+[Fedora Minimal]: /doc/templates/fedora-minimal/
 [end-of-life]: https://fedoraproject.org/wiki/Fedora_Release_Life_Cycle#Maintenance_Schedule
-[supported]: /de/doc/supported-versions/#templatevms
-[How to Reinstall a TemplateVM]: /de/doc/reinstall-template/
-[Update the TemplateVM]: /de/doc/software-update-vm/
-[switch-templates]: /de/doc/templates/#how-to-switch-templates
-[uninstall the old TemplateVM]: /de/doc/templates/#how-to-uninstall
+[supported]: /doc/supported-versions/#templatevms
+[How to Reinstall a TemplateVM]: /doc/reinstall-template/
+[Update the TemplateVM]: /doc/software-update-vm/
+[switch-templates]: /doc/templates/#how-to-switch-templates
+[uninstall the old TemplateVM]: /doc/templates/#how-to-uninstall
 

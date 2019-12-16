@@ -1,9 +1,9 @@
 ---
 layout: doc
 title: Command-Line Tools
-permalink: /bg/doc/tools/
-lang: bg
-ref: 10
+permalink: /doc/tools/
+lang: en
+ref: 98
 redirect_from:
  - /doc/tools/4.0/
  - /doc/tools/4.0/dom0/

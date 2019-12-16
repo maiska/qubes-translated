@@ -1,9 +1,9 @@
 ---
 layout: doc
 title: Qubes Service
-permalink: /de/doc/qubes-service/
-lang: de
-ref: 12
+permalink: /doc/qubes-service/
+lang: en
+ref: 99
 redirect_from:
 - /en/doc/qubes-service/
 - /doc/QubesService/

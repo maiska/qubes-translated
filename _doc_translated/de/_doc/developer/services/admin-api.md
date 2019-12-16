@@ -1,9 +1,9 @@
 ---
 layout: doc-full
 title: Admin API
-permalink: /de/doc/admin-api/
-lang: de
-ref: 169
+permalink: /doc/admin-api/
+lang: en
+ref: 180
 redirect_from:
 - /doc/mgmt/
 - /doc/mgmt1/
@@ -99,7 +99,7 @@ to set the policy using current mechanism.
 | `admin.vm.tag.Get`                     | vm        | tag       | -                                         | `0` or `1`                                                | retcode? |
 | `admin.vm.tag.Remove`                  | vm        | tag       | -                                         | -                                                         |
 | `admin.vm.tag.Set`                     | vm        | tag       | -                                         | -                                                         |
-| `admin.vm.firewall.Get`                | vm        | -         | -                                         | `<rule>\n`                                                | rules syntax as in [firewall interface](/de/doc/vm-interface/#firewall-rules-in-4x) with addition of `expire=` and `comment=` options; `comment=` (if present) must be the last option
+| `admin.vm.firewall.Get`                | vm        | -         | -                                         | `<rule>\n`                                                | rules syntax as in [firewall interface](/doc/vm-interface/#firewall-rules-in-4x) with addition of `expire=` and `comment=` options; `comment=` (if present) must be the last option
 | `admin.vm.firewall.Set`                | vm        | -         | `<rule>\n`                                | -                                                         | set firewall rules, see `admin.vm.firewall.Get` for syntax
 | `admin.vm.firewall.Reload`             | vm        | -         | -                                         | -                                                         | force reload firewall without changing any rule
 | `admin.vm.device.<class>.Attach`       | vm        | device    | options                                   | -                                                         | `device` is in form `<backend-name>+<device-ident>` <br/>optional options given in `key=value` format, separated with spaces; <br/>options can include `persistent=True` to "persistently" attach the device (default is temporary)
@@ -322,5 +322,5 @@ destination_path: ncftpput -u my-ftp-username -p my-ftp-pass -c my-ftp-server /d
 
 <!-- vim: set ts=4 sts=4 sw=4 et : -->
 
-[admin-api-architecture]: /de/attachment/wiki/AdminAPI/admin-api-architecture.svg
+[admin-api-architecture]: /attachment/wiki/AdminAPI/admin-api-architecture.svg
 

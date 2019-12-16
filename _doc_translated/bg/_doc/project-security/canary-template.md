@@ -1,9 +1,9 @@
 ---
 layout: doc
 title: Canary Template
-permalink: /bg/security/canaries/template/
-lang: bg
-ref: 89
+permalink: /security/canaries/template/
+lang: en
+ref: 3
 redirect_from: /doc/canaries/template/
 ---
 

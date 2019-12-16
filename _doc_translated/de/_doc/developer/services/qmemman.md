@@ -1,9 +1,9 @@
 ---
 layout: doc
 title: Qmemman
-permalink: /de/doc/qmemman/
-lang: de
-ref: 164
+permalink: /doc/qmemman/
+lang: en
+ref: 178
 redirect_from:
 - /en/doc/qmemman/
 - /doc/Qmemman/
