@@ -1,18 +1,17 @@
 ---
-layout: doc
-title: Lenovo ThinkPad Troubleshooting
-permalink: /de/doc/thinkpad-troubleshooting/
 lang: de
-ref: 47
+layout: doc
+permalink: /de/doc/thinkpad-troubleshooting/
 redirect_from:
-- /doc/thinkpad_x201/
-- /en/doc/thinkpad_x201/
-- /doc/Thinkpad_X201/
-- /wiki/Thinkpad_X201/
-- /doc/lenovo450-tinkering/
-- /en/doc/lenovo450-tinkering/
-- /doc/Lenovo450Tinkering/
-- /wiki/Lenovo450Tinkering/
+- /de/doc/thinkpad_x201/
+- /de/doc/Thinkpad_X201/
+- /de/wiki/Thinkpad_X201/
+- /de/doc/lenovo450-tinkering/
+- /de/doc/Lenovo450Tinkering/
+- /de/wiki/Lenovo450Tinkering/
+ref: 49
+title: Lenovo ThinkPad Troubleshooting
+translated: 'yes'
 ---
 
 # Lenovo ThinkPad Troubleshooting #
@@ -93,4 +92,3 @@ Lenovo 450 uses UEFI, so some settings are needed to get Qubes (or Fedora) to bo
 5.  Install Qubes
 
 ... and now enjoy :) These settings may be needed also in other UEFI computers.
-

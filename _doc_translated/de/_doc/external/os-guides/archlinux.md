@@ -1,23 +1,23 @@
 ---
-layout: doc
-title: Archlinux-Template
-permalink: /de/doc/templates/archlinux/
 lang: de
-ref: 65
+layout: doc
+permalink: /de/doc/templates/archlinux/
 redirect_from:
-- /doc/archlinux/
-- /en/doc/templates/archlinux/
-- /doc/Templates/Archlinux/
-- /wiki/Templates/Archlinux/
+- /de/doc/archlinux/
+- /de/doc/Templates/Archlinux/
+- /de/wiki/Templates/Archlinux/
+ref: 67
+title: Archlinux Template
+translated: 'yes'
 ---
 
-# Archlinux-Template
+# Archlinux Template
 
 Archlinux template is one of the templates made by Qubes community. It should
 be considered experimental as Qubes developers team use mainly Fedora-based VMs
 to test new features/updates.
 
-Der primäre Hauptbetreuer dieses Templates ist [Olivier Médoc](mailto:o_medoc@yahoo.fr).
+Main maintainer of this template is [Olivier Médoc](mailto:o_medoc@yahoo.fr).
 
 Updates for this template are provided by [Olivier Médoc](mailto:o_medoc@yahoo.fr) and are signed by the following key:
 
@@ -39,7 +39,7 @@ The Qubes update repository is disabled by default in the Archlinux template. Yo
 Since November 2017, an activation package is present in the template. The update repository can thus be activated by running the following command inside the template:
 
     # pacman -sU /etc/pacman.d/qubes-vm-keyring*.pkg.tar.xz
-
+    
 It should be noted to this command will create a trust for packages provided by [Olivier Médoc](mailto:o_medoc@yahoo.fr) and signed by the PGP key above.
 
 If the qubes-vm-keyring package is not present in `/etc/pacman.d/`, please refer to the section #Activating binary packages manually.
@@ -74,7 +74,7 @@ Then you need to install and sign the public GPG key of the package maintainer (
 
     # pacman-key --recv-key 2043E7ACC1833B9C
     # pacman-key --finger 2043E7ACC1833B9C
-
+ 
 If the fingerprint is correct, you can then sign the key:
 
     # pacman-key --lsign-key 2043E7ACC1833B9C
@@ -103,7 +103,7 @@ You should then follow the instruction related to pacman-key in order to sign th
 
 The two lines that have just been added to /etc/pacman.conf should then be removed as they have been included in the qubes-vm-core update in the file `/etc/pacmand.d/99-qubes-repository-3.2.conf`
 
-## Bekannte Probleme
+## Known Issues
 
 ### Package cannot be updated because of errors related to xorg-server or pulseaudio versions
 
@@ -157,7 +157,7 @@ Please check out:
 *   edit /etc/pacman.conf
 
 *   **$ sudo nano -w /etc/pacman.conf**
-
+        
 * Below is the output of a correct pacman.conf file  Make the changes so your file matches this one or rename the original and create a new one and copy and paste this text into it.  Text should be justified left in the file.  The changes from your default are to make gpg signing mandatory for packages but not required for DBs for the archlinux repos.  Also to add the repo (at the end) for the Powerpill package.
 
 
@@ -300,7 +300,7 @@ Please check out:
     SigLevel = Required
     Server = http://xyne.archlinux.ca/repos/xyne
 
------------
+----------
 
 <br>
 
@@ -358,7 +358,7 @@ Note: For info on Reflector and its configs: [Reflector](https://wiki.archlinux.
 *   **$ sudo reflector --verbose -l 5 --sort rate --save /etc/pacman.d/mirrorlist**
 
     *   The above ranks all the most up to date and sorts for the 5 fastest
-
+    
     *    You can confirm the new list by opening the newly created mirrorlist.
 
 <br>

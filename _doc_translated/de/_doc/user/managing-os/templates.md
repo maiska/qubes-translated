@@ -1,14 +1,14 @@
 ---
-layout: doc
-title: Vorlagen
-permalink: /de/doc/templates/
 lang: de
-ref: 101
+layout: doc
+permalink: /de/doc/templates/
 redirect_from:
-- /doc/template/
-- /en/doc/templates/
-- /doc/Templates/
-- /wiki/Templates/
+- /de/doc/template/
+- /de/doc/Templates/
+- /de/wiki/Templates/
+ref: 103
+title: Templates
+translated: 'yes'
 ---
 
 # TemplateVMs
@@ -110,9 +110,9 @@ No changes in any other directories in TemplateBasedVMs persist in this manner. 
 
 |                    | Inheritance (1)                                           | Persistence (2)
 |--------------------|-----------------------------------------------------------|------------------------------------------
-|TemplateVM          | n/v                                                       | Alles
+|TemplateVM          | n/a                                                       | Everything
 |TemplateBasedVM (3) | `/etc/skel` to `/home`, `/usr/local.orig` to `/usr/local` | `/rw` (includes `/home`, `/usr/local` and `bind-dirs`)
-|DisposableVM        | `/rw` (includes `/home`, `/usr/local` and `bind-dirs`)    | Nichts
+|DisposableVM        | `/rw` (includes `/home`, `/usr/local` and `bind-dirs`)    | Nothing
 
 (1) Upon creation
 (2) Following shutdown
@@ -130,8 +130,7 @@ It will not be updated when the TemplateVM is updated.
 Rather, it must be updated individually from inside the StandaloneVM.
 
 
-## Wichtige Hinweise
+## Important Notes
 
  * `qvm-trim-template` is not necessary. All VMs are created in a thin pool
    and trimming is handled automatically. No user action is required.
-

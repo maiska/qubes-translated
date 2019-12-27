@@ -1,9 +1,10 @@
 ---
-layout: doc
-title: Package Contributions
-permalink: /de/doc/package-contributions/
 lang: de
-ref: 170
+layout: doc
+permalink: /de/doc/package-contributions/
+ref: 175
+title: Package Contributions
+translated: 'yes'
 ---
 
 Package Contributions
@@ -97,4 +98,3 @@ If you do not act on your maintainer duties for a given package for an extended 
 [qubes-devel mailing list]: /de/support/#qubes-devel
 [QubesOS-contrib]: https://github.com/QubesOS-contrib
 [qubes-issues]: https://github.com/QubesOS/qubes-issues/issues/
-

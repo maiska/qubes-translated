@@ -1,13 +1,13 @@
 ---
-layout: doc
-title: Profiling
-permalink: /de/doc/profiling/
 lang: de
-ref: 156
+layout: doc
+permalink: /de/doc/profiling/
 redirect_from:
-- /en/doc/profiling/
-- /doc/Profiling/
-- /wiki/Profiling/
+- /de/doc/Profiling/
+- /de/wiki/Profiling/
+ref: 161
+title: Profiling
+translated: 'yes'
 ---
 
 Profiling
@@ -43,7 +43,7 @@ You have to select area in which you suspect less than optimal performance. If y
 
 ### Replace suspect function with probe
 
-Ersetzen
+Replace
 
     def foo(self, bar):
         # function content

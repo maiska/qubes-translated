@@ -1,18 +1,17 @@
 ---
-layout: sidebar
-title: Help, Support, and Mailing Lists
-permalink: /de/support/
 lang: de
-ref: 15
+layout: sidebar
+permalink: /de/support/
 redirect_from:
-- /help/
-- /mailing-lists/
-- /doc/mailing-lists/
-- /en/doc/mailing-lists/
-- /en/doc/qubes-lists/
-- /doc/qubes-lists/
-- /doc/QubesLists/
-- /wiki/QubesLists/
+- /de/help/
+- /de/mailing-lists/
+- /de/doc/mailing-lists/
+- /de/doc/qubes-lists/
+- /de/doc/QubesLists/
+- /de/wiki/QubesLists/
+ref: 17
+title: Help, Support, and Mailing Lists
+translated: 'yes'
 ---
 
 # Help, Support, and Mailing Lists #
@@ -359,7 +358,7 @@ This list also has an optional [Google Groups web interface][qubes-translation-w
 [Whonix]: /de/doc/whonix/
 [HCL]: /de/doc/hcl/
 [Installation Guide]: /de/doc/installation-guide/
-[Systemanforderungen]: /de/doc/system-requirements/
+[System Requirements]: /de/doc/system-requirements/
 [User FAQ]: /de/faq/#users
 [documentation]: /de/doc/
 [MUAs]: https://en.wikipedia.org/wiki/Email_client
@@ -380,4 +379,3 @@ This list also has an optional [Google Groups web interface][qubes-translation-w
 [Transifex]: https://www.transifex.com/otf/qubes/
 [issue tracker]: /de/doc/reporting-bugs/
 [searching the issue tracker]: /de/doc/reporting-bugs/#search-tips
-

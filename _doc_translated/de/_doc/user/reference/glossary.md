@@ -1,13 +1,13 @@
 ---
-layout: doc
-title: Glossar
-permalink: /de/doc/glossary/
 lang: de
-ref: 100
+layout: doc
+permalink: /de/doc/glossary/
 redirect_from:
-- /en/doc/glossary/
-- /doc/Glossary/
-- /wiki/Glossary/
+- /de/doc/Glossary/
+- /de/wiki/Glossary/
+ref: 102
+title: Glossary
+translated: 'yes'
 ---
 
 Glossary of Qubes Terminology
@@ -197,4 +197,3 @@ An abbreviation of Qubes [Windows Tools](#windows-tools).
 
 [Disposable Virtual Machine]: /de/doc/disposablevm/
 [DisposableVM Customization]: /de/doc/disposablevm-customization/
-

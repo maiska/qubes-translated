@@ -1,13 +1,13 @@
 ---
-layout: doc
-title: Managing AppVm Shortcuts
-permalink: /de/doc/managing-appvm-shortcuts/
 lang: de
-ref: 81
+layout: doc
+permalink: /de/doc/managing-appvm-shortcuts/
 redirect_from:
-- /en/doc/managing-appvm-shortcuts/
-- /doc/ManagingAppVmShortcuts/
-- /wiki/ManagingAppVmShortcuts/
+- /de/doc/ManagingAppVmShortcuts/
+- /de/wiki/ManagingAppVmShortcuts/
+ref: 83
+title: Managing AppVm Shortcuts
+translated: 'yes'
 ---
 
 Managing shortcuts to applications in AppVMs
@@ -111,9 +111,8 @@ In Windows it's a PowerShell script located in `c:\Program Files\Invisible Thing
 The list of installed applications for each AppVM is stored in dom0's `~/.local/share/qubes-appmenus/<vmname>/apps.templates`.
 Each menu entry is a file that follows the [.desktop file format](https://standards.freedesktop.org/desktop-entry-spec/desktop-entry-spec-latest.html) with some wildcards (*%VMNAME%*, *%VMDIR%*).
 Applications selected to appear in the menu are stored in `~/.local/share/qubes-appmenus/<vmname>/apps`.
-
+   
 Actual command lines for the menu shortcuts involve `qvm-run` command which starts a process in another domain. 
 Examples: `qvm-run -q -a --service -- %VMNAME% qubes.StartApp+7-Zip-7-Zip_File_Manager` or `qvm-run -q -a --service -- %VMNAME% qubes.StartApp+firefox`
 
 Note that you can create a shortcut that points to a .desktop file in your AppVM with e.g. `qvm-run -q -a --service -- personal qubes.StartApp+firefox`.
-

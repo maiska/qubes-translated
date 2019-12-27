@@ -1,11 +1,11 @@
 ---
-layout: doc
-title: Managing VM kernel
-permalink: /de/doc/managing-vm-kernel/
 lang: de
-ref: 141
-redirect_from:
-- /en/doc/managing-vm-kernel/
+layout: doc
+permalink: /de/doc/managing-vm-kernel/
+redirect_from: []
+ref: 143
+title: Managing VM kernel
+translated: 'yes'
 ---
 
 VM kernel managed by dom0
@@ -288,20 +288,20 @@ If not, or you are building the kernel manually, do this using `dkms` and `initr
 
 The output should look like this:
 
-    $ sudo dkms autoinstall -k 3.16.0-4-amd64
+	$ sudo dkms autoinstall -k 3.16.0-4-amd64
 
-    u2mfn:
-    Running module version sanity check.
-     - Original module
-       - No original module exists within this kernel
-     - Installation
-       - Installing to /lib/modules/3.16.0-4-amd64/updates/dkms/
+	u2mfn:
+	Running module version sanity check.
+	 - Original module
+	   - No original module exists within this kernel
+	 - Installation
+	   - Installing to /lib/modules/3.16.0-4-amd64/updates/dkms/
 
-    depmod....
+	depmod....
 
-    DKMS: install completed.
-    $ sudo update-initramfs -u
-    update-initramfs: Generating /boot/initrd.img-3.16.0-4-amd64
+	DKMS: install completed.
+	$ sudo update-initramfs -u
+	update-initramfs: Generating /boot/initrd.img-3.16.0-4-amd64
 
 When the kernel is installed, you need to create a GRUB configuration. 
 You may want to adjust some settings in `/etc/default/grub`; for example, lower `GRUB_TIMEOUT` to speed up VM startup.
@@ -324,7 +324,7 @@ Then shutdown the VM.
 If you require `PV` mode, install `grub2-xen` in dom0 and change the template's kernel to `pvgrub2`.
 Booting to a kernel inside the template is not supported under `PVH`.
 
-### Fehlerbehebung
+### Troubleshooting
 
 In case of problems, you can access the VM console using `sudo xl console VMNAME` in dom0, then access the GRUB menu.
 You need to call it just after starting the VM (until `GRUB_TIMEOUT` expires); for example, in a separate dom0 terminal window.
@@ -332,4 +332,3 @@ You need to call it just after starting the VM (until `GRUB_TIMEOUT` expires); f
 In any case you can later access the VM's logs (especially the VM console log `guest-VMNAME.log`).
 
 You can always set the kernel back to some dom0-provided value to fix a VM kernel installation.
-

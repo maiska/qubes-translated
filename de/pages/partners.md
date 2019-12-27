@@ -1,12 +1,12 @@
 ---
-layout: Standard
-title: Qubes Partners
-permalink: /de/partners/
 lang: de
-ref: 212
+layout: default
+permalink: /de/partners/
 redirect_from:
- - /en/partners/
- - /funding/
+- /de/funding/
+ref: 217
+title: Qubes Partners
+translated: 'yes'
 ---
 
 Our Partners
@@ -41,14 +41,14 @@ Please [contact us][contact] if you or your organization is interested in becomi
 ### 2014 and earlier
 - **$∞** : [Invisible Things Lab]
 
-[Stiftung für Pressefreiheit]: #freedom-of-the-press-foundation
+[Freedom of the Press Foundation]: #freedom-of-the-press-foundation
 [Mullvad]: #mullvad
 [Boris]: #boris
 [zby]: #zby
 [NLnet Foundation]: #nlnet-foundation
 [Open Technology Fund]: #open-technology-fund
 [Invisible Things Lab]: #invisible-things-lab
-[Kontakt]: mailto:funding@qubes-os.org
+[contact]: mailto:funding@qubes-os.org
 
 ## Our Partners
 We would like to recognize the following Qubes Partners.
@@ -126,7 +126,7 @@ We are grateful for their support!
         The user is not jeopardized by installing additional applications or personalizing the desktop.
         Whonix is under active development and is the only operating system designed to be run inside a VM and paired with Tor.
         The developers of Qubes and Whonix are cooperating.
-        While Whonix is an independent Linux distribution, it has been integrated into Qubes OS as a system called <a href="/doc/whonix/">Qubes-Whonix</a>.</p>
+        While Whonix is an independent Linux distribution, it has been integrated into Qubes OS as a system called <a href="/de/doc/whonix/">Qubes-Whonix</a>.</p>
       </td>
     </tr>
     <tr id="open-technology-fund">
@@ -168,4 +168,3 @@ We are grateful for their support!
     </tr>
   </tbody>
 </table>
-

@@ -1,14 +1,14 @@
 ---
-layout: doc
-title: Upgrading the Debian 8 Template to Debian 9
-permalink: /de/doc/template/debian/upgrade-8-to-9/
 lang: de
-ref: 113
+layout: doc
+permalink: /de/doc/template/debian/upgrade-8-to-9/
 redirect_from:
-- /doc/debian-template-upgrade-8/
-- /en/doc/debian-template-upgrade-8/
-- /doc/DebianTemplateUpgrade8/
-- /wiki/DebianTemplateUpgrade8/
+- /de/doc/debian-template-upgrade-8/
+- /de/doc/DebianTemplateUpgrade8/
+- /de/wiki/DebianTemplateUpgrade8/
+ref: 115
+title: Upgrading the Debian 8 Template to Debian 9
+translated: 'yes'
 ---
 
 Upgrading the Debian 8 Template
@@ -26,7 +26,7 @@ Summary: Upgrading a Debian 8 Template to Debian 9
         [user@debian-9 ~]$ sudo sed -i 's/jessie/stretch/g' /etc/apt/sources.list.d/qubes-r3.list
         [user@debian-9 ~]$ sudo apt-get update && sudo apt-get dist-upgrade -y
         [user@debian-9 ~]$ sudo apt-get autoremove
-
+	
     (Shut down TemplateVM by any normal means.)
 
         [user@dom0 ~]$ qvm-trim-template debian-9
@@ -43,7 +43,7 @@ any template based on the standard Debian 8 template.
  1. Ensure the existing template is not running. 
 
         [user@dom0 ~]$ qvm-shutdown debian-8
-
+ 
  2. Clone the existing template and start a terminal in the new template.
 
         [user@dom0 ~]$ qvm-clone debian-8 debian-9
@@ -60,7 +60,7 @@ any template based on the standard Debian 8 template.
     it will likely prompt to overwrite two files, qubes-r3.list and
     pulse/client.conf. qubes-r3.list can be overwritten, while pulse/client.conf
     need to left as the currently installed version.
-
+ 
         [user@debian-9 ~]$ sudo apt-get update && sudo apt-get dist-upgrade -y
 
  5. Remove unnecessary packages that were previously installed
@@ -70,7 +70,7 @@ any template based on the standard Debian 8 template.
  6. Shutdown the new TemplateVM via dom0 command line or Qubes VM Manager;
 
         [user@dom0 ~]$ qvm-shutdown debian-9
-
+        
  7. Trim the new template (see **Compacting the Upgraded Template** for details
     and other options).
 
@@ -82,7 +82,7 @@ any template based on the standard Debian 8 template.
  9. (Optional) Remove the old default template.
 
         [user@dom0 ~]$ sudo yum remove qubes-template-debian-8
-
+	
 
 Compacting the Upgraded Template
 --------------------------------
@@ -134,4 +134,3 @@ Relevant Discussions
  * [Stretch availability in 3.2](https://groups.google.com/forum/#!topicsearchin/qubes-devel/debian$20stretch/qubes-devel/cekPfBqQMOI)
  * [Fixing sound in Debian Stretch](https://groups.google.com/forum/#!topic/qubes-users/JddCE54GFiU)
  * [User apt commands blocked on startup](https://github.com/QubesOS/qubes-issues/issues/2621)
-

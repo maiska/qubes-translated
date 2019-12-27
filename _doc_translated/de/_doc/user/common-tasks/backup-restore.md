@@ -1,19 +1,19 @@
 ---
-layout: doc
-title: Backup, Restoration, and Migration
-permalink: /de/doc/backup-restore/
 lang: de
-ref: 85
+layout: doc
+permalink: /de/doc/backup-restore/
 redirect_from:
-- /en/doc/backup-restore/
-- /doc/BackupRestore/
-- /wiki/BackupRestore/
+- /de/doc/BackupRestore/
+- /de/wiki/BackupRestore/
+ref: 87
+title: Backup, Restoration, and Migration
+translated: 'yes'
 ---
 
 Qubes Backup, Restoration, and Migration
 ========================================
 
-Mit Qubes ist es leicht, Ihr gesamtes System zu sichern und wiederherzustellen, genauso wie zwischen  zwei physischen Maschinen zu migrieren.
+With Qubes, it's easy to back up and restore your whole system, as well as to migrate between two physical machines.
 
 These functions are integrated into Qube Manager.
 There are also two command-line tools available which perform the same functions: `qvm-backup` and `qvm-backup-restore`.
@@ -30,7 +30,7 @@ VMs in the left-hand **Available** column will not be backed up.
 
    You may choose whether to compress backups by checking or unchecking the **Compress the backup** box.
    Normally this should be left on unless you have a specific reason otherwise.
-
+   
    Once you have selected all desired VMs, click **Next**.
 
 3. Select the destination for the backup:
@@ -50,7 +50,7 @@ VMs in the left-hand **Available** column will not be backed up.
    **Note:** The supplied passphrase is used for **both** encryption/decryption and integrity verification.
 
    At this point, you may also choose whether to save your settings by checking or unchecking the **Save settings as default backup profile** box.
-
+   
    **Warning: Saving the settings will result in your backup passphrase being saved in plaintext in dom0, so consider your threat model before checking this box.**
 
 4. You will now see the summary of VMs to be backed up.
@@ -139,4 +139,3 @@ Notes
 
  * For the technical details of the backup system, please refer to [this thread](https://groups.google.com/d/topic/qubes-devel/TQr_QcXIVww/discussion).
  * If working with symlinks, note the issues described in [this thread](https://groups.google.com/d/topic/qubes-users/EITd1kBHD30/discussion).
-

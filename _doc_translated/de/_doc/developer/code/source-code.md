@@ -1,13 +1,13 @@
 ---
-layout: doc
-title: Quellcode
-permalink: /de/doc/source-code/
 lang: de
-ref: 205
+layout: doc
+permalink: /de/doc/source-code/
 redirect_from:
-- /en/doc/source-code/
-- /doc/SourceCode/
-- /wiki/SourceCode/
+- /de/doc/SourceCode/
+- /de/wiki/SourceCode/
+ref: 210
+title: Source Code
+translated: 'yes'
 ---
 
 Qubes Source Code Repositories
@@ -87,4 +87,3 @@ method you choose, you must [sign your code] before it can be accepted.
 [sign your code]: /de/doc/code-signing/
 [fork & pull requests]: https://guides.github.com/activities/forking/
 [qubes-devel mailing list]: /de/support/#qubes-devel
-

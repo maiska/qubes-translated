@@ -1,12 +1,12 @@
 ---
-layout: doc
-title: YubiKey in Qubes
-permalink: /de/doc/yubi-key/
 lang: de
-ref: 135
+layout: doc
+permalink: /de/doc/yubi-key/
 redirect_from:
-- /en/doc/yubi-key/
-- /doc/YubiKey/
+- /de/doc/YubiKey/
+ref: 137
+title: YubiKey in Qubes
+translated: 'yes'
 ---
 
 Using YubiKey to Qubes authentication
@@ -88,9 +88,9 @@ To use this mode you need to:
    (This way your password will not leak to the terminal command history file.)
 
        read password
-
+       
    Now run the following command to calculate your hashed password.
-
+       
        echo -n "$password" | openssl dgst -sha1
 
 7. Edit `/etc/pam.d/login` in dom0. Add this line at the beginning:
@@ -107,7 +107,7 @@ To use this mode you need to:
 
         auth include yubikey
 
-### Verwendungszweck
+### Usage
 
 When you want to unlock your screen...
 

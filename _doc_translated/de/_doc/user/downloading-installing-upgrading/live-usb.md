@@ -1,9 +1,10 @@
 ---
-layout: doc
-title: Live USB
-permalink: /de/doc/live-usb/
 lang: de
-ref: 115
+layout: doc
+permalink: /de/doc/live-usb/
+ref: 117
+title: Live USB
+translated: 'yes'
 ---
 
 Qubes Live USB (alpha)

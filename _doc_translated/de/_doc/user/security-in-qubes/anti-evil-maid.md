@@ -1,13 +1,13 @@
 ---
-layout: doc
-title: Anti Evil Maid (AEM)
-permalink: /de/doc/anti-evil-maid/
 lang: de
-ref: 131
+layout: doc
+permalink: /de/doc/anti-evil-maid/
 redirect_from:
-- /en/doc/anti-evil-maid/
-- /doc/AntiEvilMaid/
-- /wiki/AntiEvilMaid/
+- /de/doc/AntiEvilMaid/
+- /de/wiki/AntiEvilMaid/
+ref: 133
+title: Anti Evil Maid (AEM)
+translated: 'yes'
 ---
 
 Installing and Using Anti Evil Maid (AEM) with Qubes OS
@@ -26,27 +26,27 @@ If you cleaned your Intel Management Engine with e.g. [me_cleaner](https://githu
 while installing [CoreBoot](https://www.coreboot.org/) then you are out of luck.
 For now you have to choose between cleaning your BIOS and deploying Anti Evil Maid.
 
-[Diskussion](https://groups.google.com/d/msg/qubes-users/sEmZfOZqYXM/j5rHeex1BAAJ)
+[Discussion](https://groups.google.com/d/msg/qubes-users/sEmZfOZqYXM/j5rHeex1BAAJ)
 
 Installing
 ----------
 
-In Dom0 Anti-Evil-Maid installieren:
+In Dom0 install anti-evil-maid:
 
 ~~~
 sudo qubes-dom0-update anti-evil-maid
 ~~~
 
-Weitere Informationen zur Konfiguration sind in der [README] nachzulesen: (https://github.com/QubesOS/qubes-antievilmaid/blob/master/anti-evil-maid/README)
+More information regarding configuration in the [README](https://github.com/QubesOS/qubes-antievilmaid/blob/master/anti-evil-maid/README) file.
 
 Security Considerations
 -----------------------
 
-Die [Qubes Sicherheitsrichtlinien](/de/doc/security-guidelines/) sehen vor, dass USB-Geräte zu keiner Zeit direkt mit der dom0 verbunden werden dürfen, da dies zu einer Kompromittierung des kompletten Systems führen kann. Jedoch ist es in den Voreinstellungen zur Installation und Nutzung von AEM erforderlich, ein USB-Gerät direkt mit der dom0 zu verbinden (siehe [Massenspeichergerät](https://en.wikipedia.org/wiki/USB_mass_storage_device_class)). (Alternativ kann AEM auf eine interne Festplatte installiert werden. Allerdings birgt dies enorme Sicherheitsrisiken, wie [hier] nachzulesen ist: (http://theinvisiblethings.blogspot.com/2011/09/anti-evil-maid.html).)Aus diesem Grund sind wir bei der Beachtung der Sicherheitsvorkehrungen ebenso auf die Selbstständigkeit jedes einzelnen Qubes-Benutzer angewiesen, denn jeder muss selbst entscheiden, wie einerseits dom0 vor potenziellen bösartigen USB-Sticks und andererseits das System vor Evil Maid-Angriffen zu schützen ist. Wenn man die praktische Durchführbarkeit von Angriffen wie z.B. bei [BadUSB](https://srlabs.de/badusb/) näher betrachtet und sich bewusst macht, dass Regierungen im alltäglichen Geschäft Hardware-Backdoors einsetzen, fällt diese Entscheidung nicht unbedingt leicht. Neue, abgefertigte USB-Sticks können von vornherein nicht als "sicher" angesehen werden (d.h., dass sich keine bösartige Mikrocontroller-Firmware darauf befindet). Deshalb ist es jedem einzelnen Qubes-Benutzer überlassen, das Risiko jedes potenziellen Angriffs auf sein oder ihr Sicherheitsmodell abzuwägen.
+[Qubes security guidelines](/de/doc/security-guidelines/) dictate that USB devices should never be attached directly to dom0, since this can result in the entire system being compromised. However, in its default configuration, installing and using AEM requires attaching a USB drive (i.e., [mass storage device](https://en.wikipedia.org/wiki/USB_mass_storage_device_class)) directly to dom0. (The other option is to install AEM to an internal disk. However, this carries significant security implications, as explained [here](https://blog.invisiblethings.org/2011/09/07/anti-evil-maid.html).) This presents us with a classic security trade-off: each Qubes user must make a choice between protecting dom0 from a potentially malicious USB drive, on the one hand, and protecting the system from Evil Maid attacks, on the other hand. Given the practical feasibility of attacks like [BadUSB](https://srlabs.de/badusb/) and revelations regarding pervasive government hardware backdoors, this is no longer a straightforward decision. New, factory-sealed USB drives cannot simply be assumed to be "clean" (e.g., to have non-malicious microcontroller firmware). Therefore, it is up to each individual Qubes user to evaluate the relative risk of each attack vector against his or her security model.
 
 For example, a user who frequently travels with a Qubes laptop holding sensitive data may be at a much higher risk of Evil Maid attacks than a home user with a stationary Qubes desktop. If the frequent traveler judges her risk of an Evil Maid attack to be higher than the risk of a malicious USB device, she might reasonably opt to install and use AEM. On the other hand, the home user might deem the probability of an Evil Maid attack occurring in her own home to be so low that there is a higher probability that any USB drive she purchases is already compromised, in which case she might reasonably opt never to attach any USB devices directly to dom0. (In either case, users can--and should--secure dom0 against further USB-related attacks through the use of a [USBVM](/de/doc/security-guidelines/#creating-and-using-a-usbvm).)
 
-Für weitere Informationen empfehlen wir, [diesen Leitfaden] durchzulesen: (https://groups.google.com/d/msg/qubes-devel/EBc4to5IBdg/n1hfsHSfbqsJ).
+For more information, please see [this discussion thread](https://groups.google.com/d/msg/qubes-devel/EBc4to5IBdg/n1hfsHSfbqsJ).
 
 Known issues
 ------------

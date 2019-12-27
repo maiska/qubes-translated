@@ -1,11 +1,11 @@
 ---
-layout: doc
-title: Building Whonix Templates
-permalink: /de/doc/building-whonix-template/
 lang: de
-ref: 50
-redirect_from:
-- /en/doc/building-whonix-template/
+layout: doc
+permalink: /de/doc/building-whonix-template/
+redirect_from: []
+ref: 52
+title: Building Whonix Templates
+translated: 'yes'
 ---
 
 ## Building Whonix Templates
@@ -80,7 +80,7 @@ Finally, use:
 make qubes-vm
 make template
 ~~~
-
+ 
 Once the build is complete, the install packages for your newly built templates will be located in `~/qubes-builder/qubes-src/linux-template-builder/rpm/noarch`.
 Copy them from there to dom0 and install:
 
@@ -92,5 +92,3 @@ sudo dnf install qubes-template-whonix-ws-4.0.0-201802250145.noarch.rpm
 ~~~
 
 And you are done!
-
-

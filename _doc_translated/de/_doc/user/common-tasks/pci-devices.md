@@ -1,14 +1,14 @@
 ---
-layout: doc
-title: PCI Devices
-permalink: /de/doc/pci-devices/
 lang: de
-ref: 80
+layout: doc
+permalink: /de/doc/pci-devices/
 redirect_from:
-- /doc/assigning-devices/
-- /en/doc/assigning-devices/
-- /doc/AssigningDevices/
-- /wiki/AssigningDevices/
+- /de/doc/assigning-devices/
+- /de/doc/AssigningDevices/
+- /de/wiki/AssigningDevices/
+ref: 82
+title: PCI Devices
+translated: 'yes'
 ---
 
 # PCI Devices #
@@ -136,7 +136,7 @@ In order to re-enable the device in dom0, either:
 
  *  Reboot the physical machine. (Best practice)
 
-oder
+or
 
  *  Go to the sysfs (`/sys/bus/pci`), find the right device, detach it from the pciback driver, and attach it back to the original driver. 
     Replace `<BDF>` with your full device, for example `0000:00:1c.2`:
@@ -160,4 +160,3 @@ oder
 [ml1]: https://groups.google.com/group/qubes-devel/browse_thread/thread/631c4a3a9d1186e3
 [ml2]: https://groups.google.com/forum/#!topic/qubes-users/Fs94QAc3vQI
 [PCI passthrough]: https://wiki.xen.org/wiki/Xen_PCI_Passthrough
-

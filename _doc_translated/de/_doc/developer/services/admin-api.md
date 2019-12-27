@@ -1,14 +1,15 @@
 ---
-layout: doc-full
-title: Admin API
-permalink: /de/doc/admin-api/
 lang: de
-ref: 180
+layout: doc-full
+permalink: /de/doc/admin-api/
 redirect_from:
-- /doc/mgmt/
-- /doc/mgmt1/
-- /doc/mgmt-architecture/
-- /doc/admin-api-architecture/
+- /de/doc/mgmt/
+- /de/doc/mgmt1/
+- /de/doc/mgmt-architecture/
+- /de/doc/admin-api-architecture/
+ref: 185
+title: Admin API
+translated: 'yes'
 ---
 
 # Qubes OS Admin API
@@ -32,7 +33,7 @@ The API would be used by:
 - remote management tools
 - any custom tools
 
-## Gefahrenanalyse
+## Threat model
 
 TBD
 
@@ -66,7 +67,7 @@ to set the policy using current mechanism.
 | `admin.vm.List`                        | `dom0|<vm>` | -         | -                                         | `<name> class=<class> state=<state>\n`                    |
 | `admin.vm.Create.<class>`              | `dom0`    | template  | `name=<name> label=<label>`               | -                                                         |
 | `admin.vm.CreateInPool.<class>`        | `dom0`    | template  | `name=<name> label=<label> `<br/>`pool=<pool> pool:<volume>=<pool>`   | -                                                         | either use `pool=` to put all volumes there, <br/>or `pool:<volume>=` for individual volumes - both forms are not allowed at the same time
-| `admin.vm.CreateDisposable`            | template  | -         | -                                         | Name                                                      | Create new DisposableVM, `template` is any AppVM with `dispvm_allowed` set to True, or `dom0` to use default defined in `default_dispvm` property of calling VM; VM created with this call will be automatically removed after its shutdown; the main difference from `admin.vm.Create.DispVM` is automatic (random) name generation.
+| `admin.vm.CreateDisposable`            | template  | -         | -                                         | name                                                      | Create new DisposableVM, `template` is any AppVM with `dispvm_allowed` set to True, or `dom0` to use default defined in `default_dispvm` property of calling VM; VM created with this call will be automatically removed after its shutdown; the main difference from `admin.vm.Create.DispVM` is automatic (random) name generation.
 | `admin.vm.Remove`                      | vm        | -         | -                                         | -                                                         |
 | `admin.label.List`                     | `dom0`    | -         | -                                         | `<property>\n`                                            |
 | `admin.label.Create`                   | `dom0`    | label     | `0xRRGGBB`                                | -                                                         |
@@ -102,9 +103,9 @@ to set the policy using current mechanism.
 | `admin.vm.firewall.Get`                | vm        | -         | -                                         | `<rule>\n`                                                | rules syntax as in [firewall interface](/de/doc/vm-interface/#firewall-rules-in-4x) with addition of `expire=` and `comment=` options; `comment=` (if present) must be the last option
 | `admin.vm.firewall.Set`                | vm        | -         | `<rule>\n`                                | -                                                         | set firewall rules, see `admin.vm.firewall.Get` for syntax
 | `admin.vm.firewall.Reload`             | vm        | -         | -                                         | -                                                         | force reload firewall without changing any rule
-| `admin.vm.device.<class>.Attach`       | vm        | Datenträger    | options                                   | -                                                         | `device` is in form `<backend-name>+<device-ident>` <br/>optional options given in `key=value` format, separated with spaces; <br/>options can include `persistent=True` to "persistently" attach the device (default is temporary)
-| `admin.vm.device.<class>.Detach`       | vm        | Datenträger    | -                                         | -                                                         | `device` is in form `<backend-name>+<device-ident>`
-| `admin.vm.device.<class>.Set.persistent`| vm       | Datenträger    | `True`|`False`                            | -                                                         | `device` is in form `<backend-name>+<device-ident>`
+| `admin.vm.device.<class>.Attach`       | vm        | device    | options                                   | -                                                         | `device` is in form `<backend-name>+<device-ident>` <br/>optional options given in `key=value` format, separated with spaces; <br/>options can include `persistent=True` to "persistently" attach the device (default is temporary)
+| `admin.vm.device.<class>.Detach`       | vm        | device    | -                                         | -                                                         | `device` is in form `<backend-name>+<device-ident>`
+| `admin.vm.device.<class>.Set.persistent`| vm       | device    | `True`|`False`                            | -                                                         | `device` is in form `<backend-name>+<device-ident>`
 | `admin.vm.device.<class>.List`         | vm        | -         | -                                         | `<device> <options>\n`                                    | options can include `persistent=True` for "persistently" attached devices (default is temporary)
 | `admin.vm.device.<class>.Available`    | vm        | device-ident | -                                         | `<device-ident> <properties> description=<desc>\n`        | optional service argument may be used to get info about a single device, <br/>optional (device class specific) properties are in `key=value` form, <br/>`description` must be the last one and is the only one allowed to contain spaces
 | `admin.pool.List`                      | `dom0`    | -         | -                                         | `<pool>\n`                                                |
@@ -124,15 +125,15 @@ to set the policy using current mechanism.
 | `admin.pool.volume.CloneFrom`          | `dom0`    | pool      | vid                                       | token, to be used in `admin.pool.volume.CloneTo`          | obtain a token to copy volume `vid` in `pool`;<br/>the token is one time use only, it's invalidated by `admin.pool.volume.CloneTo`, even if the operation fails |
 | `admin.pool.volume.CloneTo`            | `dom0`    | pool      | `<vid> <token>`                           | -                                                         | copy volume pointed by a token to volume `vid` in `pool` |
 | `admin.vm.volume.List`                 | vm        | -         | -                                         | `<volume>\n`                                              | `<volume>` is per-VM volume name (`root`, `private`, etc), `<vid>` is pool-unique volume id
-| `admin.vm.volume.Info`                 | vm        | Volume    | -                                         | `<property>=<value>\n`                                    |
-| `admin.vm.volume.Set.revisions_to_keep`| vm        | Volume    | value                                     | -                                                         |
-| `admin.vm.volume.ListSnapshots`        | vm        | Volume    | -                                         | snapshot                                                  | duplicate of `admin.pool.volume.`, but with other call params |
-| `admin.vm.volume.Snapshot`             | vm        | Volume    | -                                         | snapshot                                                  | id. |
-| `admin.vm.volume.Revert`               | vm        | Volume    | snapshot                                  | -                                                         | id. |
-| `admin.vm.volume.Resize`               | vm        | Volume    | size_in_bytes                             | -                                                         | id. |
-| `admin.vm.volume.Import`               | vm        | Volume    | raw volume data                           | -                                                         | id. |
-| `admin.vm.volume.CloneFrom`            | vm        | Volume    | -                                         | token, to be used in `admin.vm.volume.CloneTo`            | obtain a token to copy `volume` of `vm`;<br/>the token is one time use only, it's invalidated by `admin.vm.volume.CloneTo`, even if the operation fails |
-| `admin.vm.volume.CloneTo`              | vm        | Volume    | token, obtained with `admin.vm.volume.CloneFrom` | -                                                         | copy volume pointed by a token to `volume` of `vm` |
+| `admin.vm.volume.Info`                 | vm        | volume    | -                                         | `<property>=<value>\n`                                    |
+| `admin.vm.volume.Set.revisions_to_keep`| vm        | volume    | value                                     | -                                                         |
+| `admin.vm.volume.ListSnapshots`        | vm        | volume    | -                                         | snapshot                                                  | duplicate of `admin.pool.volume.`, but with other call params |
+| `admin.vm.volume.Snapshot`             | vm        | volume    | -                                         | snapshot                                                  | id. |
+| `admin.vm.volume.Revert`               | vm        | volume    | snapshot                                  | -                                                         | id. |
+| `admin.vm.volume.Resize`               | vm        | volume    | size_in_bytes                             | -                                                         | id. |
+| `admin.vm.volume.Import`               | vm        | volume    | raw volume data                           | -                                                         | id. |
+| `admin.vm.volume.CloneFrom`            | vm        | volume    | -                                         | token, to be used in `admin.vm.volume.CloneTo`            | obtain a token to copy `volume` of `vm`;<br/>the token is one time use only, it's invalidated by `admin.vm.volume.CloneTo`, even if the operation fails |
+| `admin.vm.volume.CloneTo`              | vm        | volume    | token, obtained with `admin.vm.volume.CloneFrom` | -                                                         | copy volume pointed by a token to `volume` of `vm` |
 | `admin.vm.Start`                       | vm        | -         | -                                         | -                                                         |
 | `admin.vm.Shutdown`                    | vm        | -         | -                                         | -                                                         |
 | `admin.vm.Pause`                       | vm        | -         | -                                         | -                                                         |
@@ -141,7 +142,7 @@ to set the policy using current mechanism.
 | `admin.backup.Execute`                 | `dom0`    | config id | -                                         | -                                                         | config in `/etc/qubes/backup/<id>.conf`, only one backup operation of given `config id` can be running at once |
 | `admin.backup.Info`                    | `dom0`    | config id | -                                         | backup info                                               | info what would be included in the backup
 | `admin.backup.Cancel`                  | `dom0`    | config id | -                                         | -                                                         | cancel running backup operation
-| `admin.Events`                         | `dom0|vm` | -         | -                                         | Ereignisse                                                    |
+| `admin.Events`                         | `dom0|vm` | -         | -                                         | events                                                    |
 | `admin.vm.Stats`                       | `dom0|vm` | -         | -                                         | `vm-stats` events, see below                              | emit VM statistics (CPU, memory usage) in form of events
 
 Volume properties:
@@ -211,7 +212,7 @@ Fields are should substituted into `%`-style format string, possibly after
 client-side translation, to form final message to be displayed unto user. Server
 does not by itself support translation.
 
-## Schlagwörter
+## Tags
 
 The tags provided can be used to write custom policies. They are not used in
 a&nbsp;default Qubes OS installation. However, they are created anyway.
@@ -323,4 +324,3 @@ destination_path: ncftpput -u my-ftp-username -p my-ftp-pass -c my-ftp-server /d
 <!-- vim: set ts=4 sts=4 sw=4 et : -->
 
 [admin-api-architecture]: /de/attachment/wiki/AdminAPI/admin-api-architecture.svg
-

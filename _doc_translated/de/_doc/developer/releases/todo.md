@@ -1,11 +1,11 @@
 ---
-layout: doc
-title: Release Checklist
-permalink: /de/doc/releases/todo/
 lang: de
-ref: 187
-redirect_from:
-- /en/doc/releases/todo/
+layout: doc
+permalink: /de/doc/releases/todo/
+redirect_from: []
+ref: 192
+title: Release Checklist
+translated: 'yes'
 ---
 
 Release Checklist

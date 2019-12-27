@@ -1,13 +1,13 @@
 ---
-layout: doc
-title: Fetchmail
-permalink: /de/doc/fetchmail/
 lang: de
-ref: 27
+layout: doc
+permalink: /de/doc/fetchmail/
 redirect_from:
-- /en/doc/fetchmail/
-- /doc/Fetchmail/
-- /wiki/Fetchmail/
+- /de/doc/Fetchmail/
+- /de/wiki/Fetchmail/
+ref: 29
+title: Fetchmail
+translated: 'yes'
 ---
 
 Fetchmail

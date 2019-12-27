@@ -1,13 +1,13 @@
 ---
-layout: doc
-title: Building Archlinux Template
-permalink: /de/doc/building-archlinux-template/
 lang: de
-ref: 49
+layout: doc
+permalink: /de/doc/building-archlinux-template/
 redirect_from:
-- /en/doc/building-archlinux-template/
-- /doc/BuildingArchlinuxTemplate/
-- /wiki/BuildingArchlinuxTemplate/
+- /de/doc/BuildingArchlinuxTemplate/
+- /de/wiki/BuildingArchlinuxTemplate/
+ref: 51
+title: Building Archlinux Template
+translated: 'yes'
 ---
 
 # Archlinux template building instructions
@@ -67,7 +67,7 @@ redirect_from:
 
     *   rpm-sign
 
-    *   gnupg
+    *	gnupg
 
 
 *   The tools can usually be installed all together with the following terminal command string:
@@ -340,9 +340,9 @@ redirect_from:
     **Note:** Take care when entering these cmd strings.  They are very long and have a number of characters that are easy to mix '**-**' vs '**.**' '**<u>T</u>emplates** (correct) vs **<u>t</u>emplates** (wrong) or **Template_**'(also wrong)  This script will also take care of transfering the actual template.rpm to Dom0 as well.
 
        *   **$ qvm-run --pass-io development 'cat /home/user/qubes-builder/qubes-src/linux-template-builder/rpm/install-templates.sh' > install-templates.sh**
-
+       
        *   **$ chmod +x install-templates.sh**
-
+       
        *   **$ ./install-templates.sh**
 
 <br>
@@ -374,7 +374,7 @@ In fact /etc/dbus-1/system.d/org.freedesktop.NetworkManager.conf does not allow 
 
 `<deny send_destination="org.freedesktop.NetworkManager"/>`
 
-bis
+to
 
 `<allow send_destination="org.freedesktop.NetworkManager"/>`
 

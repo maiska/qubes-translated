@@ -1,11 +1,12 @@
 ---
-layout: doc
-title: Custom Installation
-permalink: /de/doc/custom-install/
 lang: de
-ref: 116
+layout: doc
+permalink: /de/doc/custom-install/
 redirect_from:
- - /doc/encryption-config/
+- /de/doc/encryption-config/
+ref: 118
+title: Custom Installation
+translated: 'yes'
 ---
 
 # Custom Installation
@@ -121,7 +122,7 @@ Boot into the Qubes installer, then press `ctrl`+`alt`+`F2` to get a virtual con
         # fdisk /dev/sda
 
    Follow the steps to create two partitions:
-
+   
    - ~500MiB-1GiB for `/boot`
    - The rest for `/` (might want to leave some for overprovisioning if it's an SSD)
 
@@ -155,4 +156,3 @@ Proceed normally from there.
 [cryptsetup-faq]: https://gitlab.com/cryptsetup/cryptsetup/wikis/FrequentlyAskedQuestions
 [dm-crypt]: https://wiki.archlinux.org/index.php/dm-crypt/Device_encryption
 [tomb-238]: https://github.com/dyne/Tomb/issues/238
-

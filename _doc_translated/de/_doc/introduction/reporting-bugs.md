@@ -1,18 +1,18 @@
 ---
-layout: doc
-title: Reporting bugs and other issues
-permalink: /de/doc/reporting-bugs/
 lang: de
-ref: 17
+layout: doc
+permalink: /de/doc/reporting-bugs/
 redirect_from:
-- /en/doc/reporting-bugs/
-- /doc/BugReportingGuide/
-- /wiki/BugReportingGuide/
-- /reporting-bugs/
-- /bug/
-- /bugs/
-- /bug-report/
-- /bug-reports/
+- /de/doc/BugReportingGuide/
+- /de/wiki/BugReportingGuide/
+- /de/reporting-bugs/
+- /de/bug/
+- /de/bugs/
+- /de/bug-report/
+- /de/bug-reports/
+ref: 19
+title: Reporting bugs and other issues
+translated: 'yes'
 ---
 
 # Reporting bugs and other issues #
@@ -128,13 +128,13 @@ If the issue is closed without one of these specific resolutions, then it means,
 [qubes-issues-labels]: https://github.com/QubesOS/qubes-issues/labels
 [blocker]: https://github.com/QubesOS/qubes-issues/labels/P%3A%20blocker
 [critical]: https://github.com/QubesOS/qubes-issues/labels/P%3A%20critical
-[Kern]: https://github.com/QubesOS/qubes-issues/issues?q=is%3Aopen+is%3Aissue+label%3A%22C%3A+core%22
+[core]: https://github.com/QubesOS/qubes-issues/issues?q=is%3Aopen+is%3Aissue+label%3A%22C%3A+core%22
 [manager/widget]: https://github.com/QubesOS/qubes-issues/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3A%22C%3A+manager%2Fwidget%22+
 [Xen]: https://github.com/QubesOS/qubes-issues/issues?q=is%3Aopen+is%3Aissue+label%3A%22C%3A+Xen%22
 [major]: https://github.com/QubesOS/qubes-issues/labels/P%3A%20major
-[Sicherheit]: /de/security/
+[Security]: /de/security/
 [documentation]: /de/doc/
-[Webseite]: /de/
+[website]: /de/
 [qubes-issues]: https://github.com/QubesOS/qubes-issues/issues
 [Help, Support, and Mailing Lists]: /de/support/
 [qubes-users]: /de/support/#qubes-users
@@ -146,4 +146,3 @@ If the issue is closed without one of these specific resolutions, then it means,
 [Contributing Code]: /de/doc/contributing/#contributing-code
 [Package Contributions]: /de/doc/package-contributions/
 [Documentation Guidelines]: /de/doc/doc-guidelines/
-

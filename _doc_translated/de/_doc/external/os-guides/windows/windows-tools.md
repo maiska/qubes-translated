@@ -1,14 +1,14 @@
 ---
-layout: doc
-title: Qubes Windows Tools
-permalink: /de/doc/windows-tools/
 lang: de
-ref: 70
+layout: doc
+permalink: /de/doc/windows-tools/
 redirect_from:
-- /doc/windows-appvms/
-- /en/doc/windows-appvms/
-- /doc/WindowsAppVms/
-- /wiki/WindowsAppVms/
+- /de/doc/windows-appvms/
+- /de/doc/WindowsAppVms/
+- /de/wiki/WindowsAppVms/
+ref: 72
+title: Qubes Windows Tools
+translated: 'yes'
 ---
 
 Qubes Windows Tools
@@ -24,7 +24,7 @@ Qubes Windows Tools are a set of programs and drivers that provide integration o
 
 Qubes Windows Tools are open source and are distributed under a GPL license.
 
-ANMERKUNGEN:
+NOTES:
 - Qubes Windows Tools are currently unmaintained
 - Currently only 64-bit versions of Windows 7 are supported by Qubes Windows Tools. Only emulated SVGA GPU is supported (although [there has been reports](https://groups.google.com/forum/#!topic/qubes-users/cmPRMOkxkdA) on working GPU passthrough).
 - There is currently no audio support for Windows HVMs.
@@ -98,6 +98,7 @@ qvm-run -a my-win7-appvm explorer.exe
 ~~~
 
 ![windows-seamless-4.png](/de/attachment/wiki/WindowsAppVms/windows-seamless-4.png) ![windows-seamless-1.png
+
 Also, the inter-VM services work as usual -- e.g. to request opening a document or URL in the Windows AppVM from another VM:
 
 ~~~
@@ -156,4 +157,3 @@ Once the template has been created and installed it is easy to create AppVMs bas
 ~~~
 qvm-create --hvm <new windows appvm name> --template <name of template vm> --label <label color>
 ~~~
-

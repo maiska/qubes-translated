@@ -1,13 +1,13 @@
 ---
-layout: doc
-title: Installing and updating software in VMs
-permalink: /de/doc/software-update-vm/
 lang: de
-ref: 84
+layout: doc
+permalink: /de/doc/software-update-vm/
 redirect_from:
-- /en/doc/software-update-vm/
-- /doc/SoftwareUpdateVM/
-- /wiki/SoftwareUpdateVM/
+- /de/doc/SoftwareUpdateVM/
+- /de/wiki/SoftwareUpdateVM/
+ref: 86
+title: Installing and updating software in VMs
+translated: 'yes'
 ---
 
 Installing and updating software in VMs
@@ -208,7 +208,7 @@ There are two services (`qvm-service`, [service framework](https://www.qubes-os.
 Both the old and new names work.
 The defaults listed above are applied if the service is not explicitly listed in the services tab.
 
-### Technische Details
+### Technical details
 
 The updates proxy uses RPC/qrexec.
 The proxy is configured in qrexec policy on dom0: `/etc/qubes-rpc/policy/qubes.UpdatesProxy`.
@@ -256,4 +256,3 @@ If you would like to enable the [RPM Fusion](http://rpmfusion.org/) repository, 
 sudo dnf config-manager --set-enabled rpmfusion-free rpmfusion-nonfree
 sudo dnf upgrade --refresh
 ~~~
-

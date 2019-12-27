@@ -1,13 +1,13 @@
 ---
-layout: doc
-title: Language Localization
-permalink: /de/doc/language-localization/
 lang: de
-ref: 58
+layout: doc
+permalink: /de/doc/language-localization/
 redirect_from:
-- /en/doc/language-localization/
-- /doc/LanguageLocalization/
-- /wiki/LanguageLocalization/
+- /de/doc/LanguageLocalization/
+- /de/wiki/LanguageLocalization/
+ref: 60
+title: Language Localization
+translated: 'yes'
 ---
 
 Language Localization

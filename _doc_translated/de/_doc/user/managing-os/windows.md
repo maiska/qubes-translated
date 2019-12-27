@@ -1,9 +1,10 @@
 ---
-layout: doc
-title: Windows VMs
-permalink: /de/doc/windows/
 lang: de
-ref: 102
+layout: doc
+permalink: /de/doc/windows/
+ref: 104
+title: Windows VMs
+translated: 'yes'
 ---
 
 Windows VMs in Qubes OS
@@ -19,5 +20,3 @@ For more information about Windows VMs in Qubes OS, please see the specific guid
  * [Installing and Using Windows-based VMs](/de/doc/windows-vm/)
  * [Installing and Using Qubes Windows Tools](/de/doc/windows-tools/)
  * [Issue #3585 - Installation and know limitations of Qubes Windows Tools in Qubes R4.0](https://github.com/QubesOS/qubes-issues/issues/3585)
-
-

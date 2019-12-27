@@ -1,14 +1,14 @@
 ---
-layout: doc
-title: Copying from (and to) dom0
-permalink: /de/doc/copy-from-dom0/
 lang: de
-ref: 90
+layout: doc
+permalink: /de/doc/copy-from-dom0/
 redirect_from:
-- /doc/copy-to-dom0/
-- /en/doc/copy-to-dom0/
-- /doc/CopyToDomZero/
-- /wiki/CopyToDomZero/
+- /de/doc/copy-to-dom0/
+- /de/doc/CopyToDomZero/
+- /de/wiki/CopyToDomZero/
+ref: 92
+title: Copying from (and to) dom0
+translated: 'yes'
 ---
 
 Copying from (and to) dom0
@@ -34,7 +34,7 @@ In order to easily copy/paste the contents of logs from dom0 to the inter-VM cli
 3.  Click on the desired log.
 4.  Click "Copy to Qubes clipboard."
 
-Sie dürfen jetzt die Loginhalte in eine beliebige VM einfügen, wie Sie es normalerweise tun würden (z.B. Strg+Umschalt+V, dann Strg+V).
+You may now paste the log contents to any VM as you normally would (i.e., Ctrl-Shift-V, then Ctrl-V).
 
 ### Copy/paste from Dom0 ###
 
@@ -66,4 +66,3 @@ You can use the same method to copy files from Dom0 to VMs (if, for some reason,
 ~~~
 cat /path/to/file_in_dom0 | qvm-run --pass-io <dest-vm> 'cat > /path/to/file_name_in_appvm'
 ~~~
-

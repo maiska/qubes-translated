@@ -1,9 +1,10 @@
 ---
-layout: sidebar
-title: Google Season of Docs
-permalink: /de/gsod/
 lang: de
-ref: 173
+layout: sidebar
+permalink: /de/gsod/
+ref: 178
+title: Google Season of Docs
+translated: 'yes'
 ---
 
 # 2019 Google Season of Docs
@@ -60,7 +61,7 @@ Here's a suggested template for adding project ideas:
 
  - Review [past discussions on the issue](https://github.com/QubesOS/qubes-issues/issues/1774)
  - Provide visual mock-ups and proposed text 
-
+  
 **Knowledge prerequisite**: 
 
  - some experience with Anaconda would be helpful
@@ -177,4 +178,3 @@ This could be helped by writing consolidated guide with with a clear list of sym
 [getting started]: /de/getting-started/
 [markdown]: https://daringfireball.net/projects/markdown/
 [doc-issues]: https://github.com/QubesOS/qubes-issues/issues?q=is%3Aopen+is%3Aissue+label%3A%22C%3A+doc%22
-

@@ -1,10 +1,11 @@
 ---
-layout: doc
-title: Canary Template
-permalink: /de/security/canaries/template/
 lang: de
-ref: 3
-redirect_from: /doc/canaries/template/
+layout: doc
+permalink: /de/security/canaries/template/
+redirect_from: /de/doc/canaries/template/
+ref: 5
+title: Canary Template
+translated: 'yes'
 ---
 
 Canary Template
@@ -60,4 +61,3 @@ Footnotes
 ```
 
 ~~~
-

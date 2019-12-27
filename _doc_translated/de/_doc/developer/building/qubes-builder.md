@@ -1,18 +1,18 @@
 ---
-layout: doc
-title: Qubes Builder
-permalink: /de/doc/qubes-builder/
 lang: de
-ref: 200
+layout: doc
+permalink: /de/doc/qubes-builder/
 redirect_from:
-- /en/doc/qubes-builder/
-- /doc/QubesBuilder/
-- /wiki/QubesBuilder/
+- /de/doc/QubesBuilder/
+- /de/wiki/QubesBuilder/
+ref: 205
+title: Qubes Builder
+translated: 'yes'
 ---
 
-**Notiz: Bitte sehen sie [ISO building instructions](/de/doc/qubes-iso-building/) um einen Ueberblick zu bekommen, wie Sie das Buildsystem nutzen koennen.**
+**Note: See [ISO building instructions](/de/doc/qubes-iso-building/) for a streamlined overview on how to use the build system.**
 
-Qubes von Null aus bauen
+Building Qubes from scratch
 ===========================
 
 We have a fully automated build system for Qubes, that downloads, builds and
@@ -39,13 +39,13 @@ In order to use it, one should use an rpm-based distro, like Fedora :), and shou
 -   perl-Digest-MD5
 -   perl-Digest-SHA
 
-Ueblich Sie koennen diese Pakete auch installieren, indem Sie nur das Folgende machen:
+Usually one can install those packages by just issuing:
 
     sudo dnf install gnupg git createrepo rpm-build make wget rpmdevtools python2-sh dialog rpm-sign dpkg-dev debootstrap PyYAML devscripts perl-Digest-MD5 perl-Digest-SHA
 
 The build system creates build environments in chroots and so no other packages are needed on the host. All files created by the build system are contained within the qubes-builder directory. The full build requires some 25GB of free space, so keep that in mind when deciding where to place this directory.
 
-Das Build-System ist via builde.conf Datei konfiguriert - Sie sollen die gegebene default builder.conf kopieren, und nach Ihren Beduerfnissen modifizieren
+The build system is configured via builder.conf file -- one should copy the provided default builder.conf, and modify it as needed, e.g.:
 
     cp example-configs/qubes-os-master.conf builder.conf 
     # edit the builder.conf file and set the following variables: 
@@ -65,34 +65,34 @@ So, to build Qubes one would do:
 
     # Import the Qubes master key 
     gpg --recv-keys 0xDDFA1A3E36879494
-
+    
     # Verify its fingerprint, set as 'trusted'. 
     # This is described here: 
     # https://www.qubes-os.org/doc/VerifyingSignatures
-
+    
     wget https://keys.qubes-os.org/keys/qubes-developers-keys.asc
     gpg --import qubes-developers-keys.asc 
-
+    
     git clone git://github.com/QubesOS/qubes-builder.git qubes-builder 
     cd qubes-builder 
 
     # Verify its integrity:
     git tag -v `git describe`
-
+    
     cp example-configs/qubes-os-master.conf builder.conf 
     # edit the builder.conf file and set the following variables: 
     # NO_SIGN="1"
-
+    
     # Download all components:
-
+    
     make get-sources
-
+    
     # And now to build all Qubes rpms (this will take a few hours): 
-
+    
     make qubes 
-
+    
     # ... and then to build the ISO 
-
+    
     make iso 
 
 And this should produce a shiny new ISO.

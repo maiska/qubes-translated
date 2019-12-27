@@ -1,13 +1,13 @@
 ---
-layout: doc
-title: Secondary Storage
-permalink: /de/doc/secondary-storage/
 lang: de
-ref: 150
+layout: doc
+permalink: /de/doc/secondary-storage/
 redirect_from:
-- /en/doc/secondary-storage/
-- /doc/SecondaryStorage/
-- /wiki/SecondaryStorage/
+- /de/doc/SecondaryStorage/
+- /de/wiki/SecondaryStorage/
+ref: 152
+title: Secondary Storage
+translated: 'yes'
 ---
 
 Storing AppVMs on Secondary Drives
@@ -35,7 +35,7 @@ Take note of the VG and thin pool names for your HDD, then register it with Qube
     # <vg_name> is LVM volume group name
     # <thin_pool_name> is LVM thin pool name
     qvm-pool --add <pool_name> lvm_thin -o volume_group=<vg_name>,thin_pool=<thin_pool_name>,revisions_to_keep=2
-
+    
 Now, you can create qubes in that pool:
 
     qvm-create -P <pool_name> --label red <vmname>
@@ -58,7 +58,7 @@ Assuming the secondary hard disk is at /dev/sdb (it will be completely erased), 
 
     sudo cryptsetup luksFormat --hash=sha512 --key-size=512 --cipher=aes-xts-plain64 --verify-passphrase /dev/sdb
     sudo blkid /dev/sdb
-
+    
 Note the device's UUID (in this example "b209..."), we will use it as its luks name for auto-mounting at boot, by doing:
 
     sudo nano /etc/crypttab
@@ -72,7 +72,7 @@ Reboot the computer so the new luks device appears at /dev/mapper/luks-b209... a
 First create the physical volume
 
     sudo pvcreate /dev/mapper/luks-b20975aa-8318-433d-8508-6c23982c6cde 
-
+    
 Then create the LVM volume group, we will use for example "qubes" as the <vg_name>:
 
     sudo vgcreate qubes /dev/mapper/luks-b20975aa-8318-433d-8508-6c23982c6cde 
@@ -80,7 +80,7 @@ Then create the LVM volume group, we will use for example "qubes" as the <vg_nam
 And then use "poolhd0" as the <thin_pool_name> (LVM thin pool name):
 
     sudo lvcreate -T -n poolhd0 -l +100%FREE qubes
-
+   
 Finally we will tell Qubes to add a new pool on the just created thin pool
 
     qvm-pool --add poolhd0_qubes lvm_thin -o volume_group=qubes,thin_pool=poolhd0,revisions_to_keep=2
@@ -92,4 +92,3 @@ By default VMs will be created on the main Qubes disk (i.e. a small SSD), to cre
 
 [Qubes Backup]: /de/doc/BackupRestore/
 [TemplateVM]: /de/doc/Templates/
-

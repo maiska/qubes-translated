@@ -1,9 +1,10 @@
 ---
-layout: doc
-title: Dark Theme in Dom0 and DomU
-permalink: /de/doc/dark-theme/
 lang: de
-ref: 55
+layout: doc
+permalink: /de/doc/dark-theme/
+ref: 57
+title: Dark Theme in Dom0 and DomU
+translated: 'yes'
 ---
 
 Dark Theme in Dom0
@@ -66,7 +67,7 @@ This is the result after applying the steps described here.
 
         ![set to Obsidian Coast](/de/attachment/wiki/Dark-Theme/kde-app-appearance-menu-colors-set.png)
 
-    4. Änderungen anwenden
+    4. Apply Changes
 
             Qubes VM Manager should now look like the image below.
 

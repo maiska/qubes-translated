@@ -1,9 +1,10 @@
 ---
-layout: doc
-title: Usability & UX
-permalink: /de/doc/usability-ux/
 lang: de
-ref: 175
+layout: doc
+permalink: /de/doc/usability-ux/
+ref: 180
+title: Usability & UX
+translated: 'yes'
 ---
 
 Usability & UX

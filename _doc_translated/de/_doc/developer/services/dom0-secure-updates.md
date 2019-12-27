@@ -1,13 +1,13 @@
 ---
-layout: doc
-title: Dom0 Secure Updates
-permalink: /de/doc/dom0-secure-updates/
 lang: de
-ref: 182
+layout: doc
+permalink: /de/doc/dom0-secure-updates/
 redirect_from:
-- /en/doc/dom0-secure-updates/
-- /doc/Dom0SecureUpdates/
-- /wiki/Dom0SecureUpdates/
+- /de/doc/Dom0SecureUpdates/
+- /de/wiki/Dom0SecureUpdates/
+ref: 187
+title: Dom0 Secure Updates
+translated: 'yes'
 ---
 
 Qubes Dom0 secure update procedure

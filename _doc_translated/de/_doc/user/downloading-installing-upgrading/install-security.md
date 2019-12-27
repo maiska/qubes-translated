@@ -1,13 +1,13 @@
 ---
-layout: doc
-title: Installation Security
-permalink: /de/doc/install-security/
 lang: de
-ref: 117
+layout: doc
+permalink: /de/doc/install-security/
 redirect_from:
-- /en/doc/install-security/
-- /doc/InstallSecurity/
-- /wiki/InstallSecurity/
+- /de/doc/InstallSecurity/
+- /de/wiki/InstallSecurity/
+ref: 119
+title: Installation Security
+translated: 'yes'
 ---
 
 # Installation Security Considerations #
@@ -87,4 +87,3 @@ switch might be the option.
 [solutions]: https://www.dwheeler.com/trusting-trust/
 [USB qube]: /de/doc/usb-qubes/#creating-and-using-a-usb-qube
 [BadUSB]: https://srlabs.de/badusb/
-

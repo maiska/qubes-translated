@@ -1,14 +1,14 @@
 ---
-layout: doc
-title: Block (Storage) Devices
-permalink: /de/doc/block-devices/
 lang: de
-ref: 92
+layout: doc
+permalink: /de/doc/block-devices/
 redirect_from:
-- /doc/stick-mounting/
-- /en/doc/stick-mounting/
-- /doc/StickMounting/
-- /wiki/StickMounting/
+- /de/doc/stick-mounting/
+- /de/doc/StickMounting/
+- /de/wiki/StickMounting/
+ref: 94
+title: Block (Storage) Devices
+translated: 'yes'
 ---
 
 # Block (Storage) Devices #
@@ -67,9 +67,9 @@ The command-line tool you may use to mount whole USB drives or their partitions 
 In case of a USB-drive, make sure it's attached to your computer. If you don't see anything that looks like your drive, run `sudo udevadm trigger --action=change` in your USB-qube (typically `sys-usb`)
 
  1. In a dom0 console (running as a normal user), list all available block devices:
-
+    
         qvm-block
-
+    
     This will list all available block devices in your system across all VMs.
     The name of the qube hosting the block device is displayed before the colon in the device ID.
     The string after the colon is the ID of the device used within the qube, like so:
@@ -78,21 +78,21 @@ In case of a USB-drive, make sure it's attached to your computer. If you don't s
         sourceVM:sdb1    Disk () 2GiB
 
  2. Assuming your block device is attached to `sys-usb` and its device node is `sdb`, we attach the device to a qube with the name `work` like so:
-
+    
         qvm-block attach work sys-usb:sdb
-
+    
     This will attach the device to the qube as `/dev/xvdi` if that name is not already taken by another attached device, or `/dev/xvdj`, etc.
-
+    
     You may also mount one partition at a time by using the same command with the partition number, e.g. `sdb1`.
 
  3. The block device is now attached to the qube.
     If using a default qube, you may open the Nautilus file manager in the qube, and your drive should be visible in the **Devices** panel on the left.
     If you've attached a single partition (e.g. `sdb2` instead of `sdb` in our example), you may need to manually mount before it becomes visible:
-
+    
         cd ~
         mkdir mnt
         sudo mount /dev/xvdi mnt
-
+    
 
  4. When you finish using the block device, click the eject button or right-click and select **Unmount**.
 
@@ -231,4 +231,3 @@ This option accepts `cdrom` and `disk`, default is `disk`.
 [losetup]: https://linux.die.net/man/8/losetup
 [USB]:/doc/usb-devices/
 [1082]: https://github.com/QubesOS/qubes-issues/issues/1082
-

@@ -1,13 +1,13 @@
 ---
-layout: doc
-title: Qubes Service
-permalink: /de/doc/qubes-service/
 lang: de
-ref: 99
+layout: doc
+permalink: /de/doc/qubes-service/
 redirect_from:
-- /en/doc/qubes-service/
-- /doc/QubesService/
-- /wiki/QubesService/
+- /de/doc/QubesService/
+- /de/wiki/QubesService/
+ref: 101
+title: Qubes Service
+translated: 'yes'
 ---
 
 Usage documentation is on `qvm-service` man page. There are also described predefined services.
@@ -25,4 +25,3 @@ ConditionPathExists=/var/run/qubes-service/<service name>
 ~~~
 
 This will cause service to be started only when you enable it with qvm-service for this VM.
-

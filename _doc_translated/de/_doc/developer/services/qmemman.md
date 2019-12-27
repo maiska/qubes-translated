@@ -1,13 +1,13 @@
 ---
-layout: doc
-title: Qmemman
-permalink: /de/doc/qmemman/
 lang: de
-ref: 178
+layout: doc
+permalink: /de/doc/qmemman/
 redirect_from:
-- /en/doc/qmemman/
-- /doc/Qmemman/
-- /wiki/Qmemman/
+- /de/doc/Qmemman/
+- /de/wiki/Qmemman/
+ref: 183
+title: Qmemman
+translated: 'yes'
 ---
 
 qmemman, Qubes memory manager
@@ -76,4 +76,3 @@ Whenever *qmemman* is asked to return X megabytes of memory to Xen free pool, th
 3.  shrink donors, proportionally to their `prefmem`, so that X MB should become free
 4.  wait BALOON\_DELAY (0.1s)
 5.  if some domain have not given back any memory, remove it from the donors list, and go to step 2, unless we already did MAX\_TRIES (20) iterations (then return error).
-

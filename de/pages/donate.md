@@ -1,18 +1,18 @@
 ---
-layout: default
-title: Donate to Qubes
-permalink: /de/donate/
 lang: de
-ref: 211
+layout: default
+permalink: /de/donate/
 redirect_from:
-- /en/donate/
-- /doc/Donations/
-- /wiki/Donations/
+- /de/doc/Donations/
+- /de/wiki/Donations/
+ref: 216
+title: Donate to Qubes
+translated: 'yes'
 ---
 
-# Spenden Sie zu Qubes - Ihre Unterstuetzung zaehlt!
+# Donate to Qubes – Your Support Counts!
 
-## Hello to changed string to be translated 
+## Ways to Donate
 We accept monetary donations via Bitcoin and credit card in the following three ways:
 
 ### 1. Give a One-Time Donation
@@ -89,7 +89,7 @@ Visit our [introduction page to Qubes][intro page] or watch a [video overview of
 [Open Collective]: https://opencollective.com/qubes-os
 [Open Collective donate]: https://opencollective.com/qubes-os#support
 [Qubes Partners page]: /de/partners/
-[Kontakt]: mailto:funding@qubes-os.org
+[contact]: mailto:funding@qubes-os.org
 [Qubes Security Pack]: /de/doc/security-pack/
 [fund]: https://github.com/QubesOS/qubes-secpack/tree/master/fund
 [verify]: /de/security/pack/#how-to-obtain-verify-and-read

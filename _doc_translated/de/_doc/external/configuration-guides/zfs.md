@@ -1,13 +1,13 @@
 ---
-layout: doc
-title: ZFS
-permalink: /de/doc/zfs/
 lang: de
-ref: 25
+layout: doc
+permalink: /de/doc/zfs/
 redirect_from:
-- /en/doc/zfs/
-- /doc/ZFS/
-- /wiki/ZFS/
+- /de/doc/ZFS/
+- /de/wiki/ZFS/
+ref: 27
+title: ZFS
+translated: 'yes'
 ---
 
 ZFS in Qubes
@@ -196,4 +196,3 @@ Further Reading
 
 -   [http://www.open-zfs.org](http://www.open-zfs.org)
 -   [http://zfsonlinux.org](http://zfsonlinux.org)
-

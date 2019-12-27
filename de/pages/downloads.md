@@ -1,12 +1,13 @@
 ---
-layout: boxless
-title: Download Qubes OS
-permalink: /downloads/
 lang: de
-ref: 207
+layout: boxless
+permalink: /de/downloads/
 redirect_from:
-- /doc/QubesDownloads/
-- /wiki/QubesDownloads/
+- /de/doc/QubesDownloads/
+- /de/wiki/QubesDownloads/
+ref: 212
+title: Download Qubes OS
+translated: 'yes'
 ---
 
 <div class="white-box more-bottom page-content">

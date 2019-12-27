@@ -1,10 +1,11 @@
 ---
-layout: doc
-title: Fedora Minimal Template Customization
-permalink: /de/doc/fedora-minimal-template-customization/
 lang: de
-ref: 54
-redirect_from: /en/doc/fedora-minimal-template-customization/
+layout: doc
+permalink: /de/doc/fedora-minimal-template-customization/
+redirect_from: /de/en/doc/fedora-minimal-template-customization/
+ref: 56
+title: Fedora Minimal Template Customization
+translated: 'yes'
 ---
 
 FEDORA Packages Recommendations
@@ -37,7 +38,7 @@ Administration (documented)
 
 Some recommendations here: check your current network using the Network manager applet (eg: 192.168.1.65). 
 Then run nmap in your current AppVM/TemplateVM to search for the selected printer/equipment: 
-    nmap -sP 192.168.1.-. 
+	nmap -sP 192.168.1.-. 
 Don't forget to temporarily allow traffic via the Qubes Firewall if you are doing this in a TemplateVM.
 
 Administration (undocumented)
@@ -84,7 +85,7 @@ Search for a VPN package for your particular vpn solution then [configure][VPNNM
 
 > dnf search NetworkManager [openvpn\|openconnect\|openswat\|...]
 
-ODER
+OR
 
 Refer to [this guide][VPN] which includes instructions for failsafe anti-leak VPN configuration using CLI scripts. (An early discussion about OpenVPN configuration can be viewed [here][OPENVPNSETUP].) Required packages will be `iptables` in addition to VPN software such as `openvpn`.
 

@@ -1,14 +1,14 @@
 ---
-layout: doc
-title: HVM
-permalink: /de/doc/hvm/
 lang: de
-ref: 104
+layout: doc
+permalink: /de/doc/hvm/
 redirect_from:
-- /doc/hvm-create/
-- /en/doc/hvm-create/
-- /doc/HvmCreate/
-- /wiki/HvmCreate/
+- /de/doc/hvm-create/
+- /de/doc/HvmCreate/
+- /de/wiki/HvmCreate/
+ref: 106
+title: HVM
+translated: 'yes'
 ---
 
 HVM
@@ -287,4 +287,3 @@ Other documents related to HVM:
 
 -   [Windows VMs](/de/doc/windows-vm/)
 -   [LinuxHVMTips](/de/doc/linux-hvm-tips/)
-

@@ -1,19 +1,16 @@
 ---
-layout: doc
-title: Sicherheit
-permalink: /de/security/
 lang: de
-ref: 12
-redirect_from: 
-- /en/security/
-- /en/doc/security/
-- /en/doc/qubes-security/
-- /doc/QubesSecurity/
-- /wiki/QubesSecurity/
-- /en/doc/security-page/
-- /doc/SecurityPage/
-- /wiki/SecurityPage/
-- /trac/wiki/SecurityPage/
+layout: doc
+permalink: /de/security/
+redirect_from:
+- /de/doc/QubesSecurity/
+- /de/wiki/QubesSecurity/
+- /de/doc/SecurityPage/
+- /de/wiki/SecurityPage/
+- /de/trac/wiki/SecurityPage/
+ref: 14
+title: Security
+translated: 'yes'
 ---
 
 Qubes OS Project Security Center
@@ -84,4 +81,3 @@ Please see [Why and How to Verify Signatures] for information about how to verif
 [Simon Gaiser (aka HW42)]: /de/team/#simon-gaiser-aka-hw42
 [Joanna Rutkowska]: /de/team/#joanna-rutkowska
 [emeritus, canaries only]: /news/2018/11/05/qubes-security-team-update/
-

@@ -1,14 +1,14 @@
 ---
-layout: doc
-title: Ubuntu Template
-permalink: /de/doc/templates/ubuntu/
 lang: de
-ref: 68
+layout: doc
+permalink: /de/doc/templates/ubuntu/
 redirect_from:
-- /doc/ubuntu/
-- /en/doc/templates/ubuntu/
-- /doc/Templates/Ubuntu/
-- /wiki/Templates/Ubuntu/
+- /de/doc/ubuntu/
+- /de/doc/Templates/Ubuntu/
+- /de/wiki/Templates/Ubuntu/
+ref: 70
+title: Ubuntu Template
+translated: 'yes'
 ---
 
 Ubuntu template(s)
@@ -37,7 +37,7 @@ The build for Ubuntu 14.04 LTS (Trusty) should be straightforward.
 The build for Ubuntu 16.04 LTS (Xenial) is straightforward. Note that packages perl-Digest-MD5 and perl-Digest-SHA are required for the build to succeed.
 
 
------------
+----------
 
 If you want to help in improving the template, feel free to
 [contribute](/de/doc/contributing/).

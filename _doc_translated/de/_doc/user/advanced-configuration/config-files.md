@@ -1,14 +1,14 @@
 ---
-layout: doc
-title: Config Files
-permalink: /de/doc/config-files/
 lang: de
-ref: 151
+layout: doc
+permalink: /de/doc/config-files/
 redirect_from:
-- /en/doc/config-files/
-- /doc/ConfigFiles/
-- /doc/UserDoc/ConfigFiles/
-- /wiki/UserDoc/ConfigFiles/
+- /de/doc/ConfigFiles/
+- /de/doc/UserDoc/ConfigFiles/
+- /de/wiki/UserDoc/ConfigFiles/
+ref: 153
+title: Config Files
+translated: 'yes'
 ---
 
 Configuration Files
@@ -74,7 +74,7 @@ The scripts here all run as root.
 
   will be executed with arguments `online vif12.0 vif 10.137.0.100` when starting `work`. Please note that in case of HVM, the script will be called twice - once with vif_type `vif`, then with vif_type `vif_ioemu` (and different interface names). As long as the ioemu interface exists, it should be preferred (up to the hook script). When VM decide to use PV interface (vif_type `vif`), the ioemu one will be unplugged.
 
-Beachten Sie, dass Scripte ausführbar sein müssen (chmod +x), um benutzt werden zu können.
+Note that scripts need to be executable (chmod +x) to be used.
 
 Also, take a look at [bind-dirs](/de/doc/bind-dirs) for instructions on how to easily modify arbitrary system files in an AppVM and have those changes persist.
 
@@ -111,7 +111,7 @@ VM: {
 };
 ~~~
 
-Aktuell unterstützte Einstellungen:
+Currently supported settings:
 
 -   `allow_fullscreen` - allow VM to request its windows to go fullscreen (without any colorful frame).
 
@@ -128,4 +128,3 @@ Aktuell unterstützte Einstellungen:
 
 -   `audio_low_latency` - force low-latency audio mode (about 40ms compared to 200-500ms by default).
     Note that this will cause much higher CPU usage in dom0.
-

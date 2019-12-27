@@ -1,11 +1,12 @@
 ---
-layout: doc
-title: Running Tails in Qubes
-permalink: /de/doc/tails/
 lang: de
-ref: 64
+layout: doc
+permalink: /de/doc/tails/
 redirect_from:
-- /doc/running-tails
+- /de/doc/running-tails
+ref: 66
+title: Running Tails in Qubes
+translated: 'yes'
 ---
 
 Running Tails in Qubes
@@ -74,11 +75,11 @@ If you want to use an existing USB persistent volume:
  - Continue booting Tails: Tails-greeter will detect the encrypted partition on the attached USB. 
  - Unlock the persistent volume in Tails-greeter and use it as normal.
 
-### Herunterfahren
+### Shutdown
 The Tails qube will not shut down cleanly.
 Kill it from the GUI Manager or ```qvm-kill Tails``` in Konsole.
 
-### Sicherheit
+### Security
 You will probably want to implement [MAC spoofing](/de/doc/anonymizing-your-mac-address/).
 
 There are added security concerns for Tails users when running it in a virtual machine.

@@ -1,21 +1,20 @@
 ---
-layout: sidebar
-title: Häufig gestelle Fragen
-permalink: /de/faq/
 lang: de
-ref: 14
+layout: sidebar
+permalink: /de/faq/
 redirect_from:
-- /doc/user-faq/
-- /en/doc/user-faq/
-- /doc/UserFaq/
-- /wiki/UserFaq/
-- /doc/devel-faq/
-- /en/doc/devel-faq/
-- /doc/DevelFaq/
-- /wiki/DevelFaq/
+- /de/doc/user-faq/
+- /de/doc/UserFaq/
+- /de/wiki/UserFaq/
+- /de/doc/devel-faq/
+- /de/doc/DevelFaq/
+- /de/wiki/DevelFaq/
+ref: 16
+title: Frequently Asked Questions
+translated: 'yes'
 ---
 
-# Häufig gestelle Fragen
+# Frequently Asked Questions
 
 ## General & Security
 
@@ -99,11 +98,11 @@ Here are the answers for Xen 4.1 (which we use as of 2014-04-28):
 
 Here is an overview of the VM virtualization modes:
 
-VM type                                    | Modus |
+VM type                                    | Mode |
 ------------------------------------------ | ---- |
 Default VMs without PCI devices (most VMs) | PVH  |
 Default VMs with PCI devices               | HVM  |
-Stub domains - Default VMs w/o PCI devices | Nicht verfügbar  |
+Stub domains - Default VMs w/o PCI devices | N/A  |
 Stub domains - Default VMs w/ PCI devices  | PV   |
 Stub domains - HVMs                        | PV   |
 
@@ -141,7 +140,8 @@ This website is hosted on [GitHub Pages](https://pages.github.com/) ([why?](#why
 Therefore, it is largely outside of our control.
 We don't consider this a problem, however, since we explicitly [distrust the infrastructure](#what-does-it-mean-to-distrust-the-infrastructure).
 For this reason, we don't think that anyone should place undue trust in the live version of this site on the Web.
-Instead, if you want to obtain your own, trustworthy copy of this website in a secure way, you should clone our [website repo](https://github.com/QubesOS/qubesos.github.io), [verify the PGP signatures on the commits and/or tags](/de/security/verifying-signatures/#how-to-verify-qubes-repos) (signed by the [doc-signing keys](https://github.com/QubesOS/qubes-secpack/tree/master/keys/doc-signing)), then either [render the site on your local machine](https://github.com/QubesOS/qubesos.github.io/blob/master/README.md#instructions) or simply read the source, the vast majority of which was [intentionally written in Markdown so as to be readable as plain text for this very reasonWe've gone to special effort to set all of this up so that no one has to trust the infrastructure and so that the contents of this website are maximally available and accessible.
+Instead, if you want to obtain your own, trustworthy copy of this website in a secure way, you should clone our [website repo](https://github.com/QubesOS/qubesos.github.io), [verify the PGP signatures on the commits and/or tags](/de/security/verifying-signatures/#how-to-verify-qubes-repos) (signed by the [doc-signing keys](https://github.com/QubesOS/qubes-secpack/tree/master/keys/doc-signing)), then either [render the site on your local machine](https://github.com/QubesOS/qubesos.github.io/blob/master/README.md#instructions) or simply read the source, the vast majority of which was [intentionally written in Markdown so as to be readable as plain text for this very reason
+We've gone to special effort to set all of this up so that no one has to trust the infrastructure and so that the contents of this website are maximally available and accessible.
 
 ### What does it mean to "distrust the infrastructure"?
 
@@ -177,7 +177,7 @@ So, if feature X isn't enabled, it's most likely for one of three reasons:
    (If it seems like this is the case, let us know!)
 
 
-## Benutzer
+## Users
 
 ### Can I watch YouTube videos in qubes?
 
@@ -380,7 +380,7 @@ In order to re-enable the device in dom0, either:
 
  * Reboot the physical machine.
 
-oder
+or
 
  * Go to the sysfs (`/sys/bus/pci`), find the right device, detach it from the pciback driver and attach back to the original driver. Replace `<BDF>` with your device, for example `00:1c.2`:
 
@@ -511,7 +511,7 @@ Please don't ask for your favorite program to be installed by default or for som
 This is an incredibly selfish attitude that demonstrates a complete lack of consideration for the thousands of other Qubes users who don't happen to share your preferences.
 
 
-## Entwickler
+## Developers
 
 ### Are there restrictions on the software that the Qubes developers are willing to use?
 
@@ -520,7 +520,8 @@ In general, the Qubes developers will not use a piece of software unless there i
 Specifically:
 
  * If PGP signatures are used, the signing key(s) should have well-publicized fingerprint(s) verifiable via multiple independent channels or be accessible to the developers through a web of trust.
- * If the software is security-sensitive and requires communication with the outside world, a "split" implementation is highly preferred (for examples, see [Split GPG](/de/doc/split-gpg/) and [Split Bitcoin * If the software has dependencies, these should be packaged and available in repos for a [current, Qubes-supported version](/de/doc/supported-versions/#templatevms) of Fedora (preferred) or Debian (unless all the insecure dependencies can run in an untrusted VM in a "split" implementation).
+ * If the software is security-sensitive and requires communication with the outside world, a "split" implementation is highly preferred (for examples, see [Split GPG](/de/doc/split-gpg/) and [Split Bitcoin
+ * If the software has dependencies, these should be packaged and available in repos for a [current, Qubes-supported version](/de/doc/supported-versions/#templatevms) of Fedora (preferred) or Debian (unless all the insecure dependencies can run in an untrusted VM in a "split" implementation).
  * If the software must be built from source, the source code and any builders must be signed.
    (Practically speaking, the more cumbersome and time-consuming it is to build from source, the less likely the developers are to use it.)
 
@@ -589,4 +590,3 @@ If you need to support not-fully-updated systems, check for the existence of `/u
 Yes, Qubes natively supports automation via [Salt (SaltStack)](/de/doc/salt/).
 There is also the unofficial [ansible-qubes toolkit](https://github.com/Rudd-O/ansible-qubes).
 (**Warning:** Since this is an external project that has not been reviewed or endorsed by the Qubes team, [allowing it to manage dom0 may be a security risk](/de/doc/security-guidelines/#dom0-precautions).)
-

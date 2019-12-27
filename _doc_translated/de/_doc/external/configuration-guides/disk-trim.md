@@ -1,13 +1,13 @@
 ---
-layout: doc
-title: Disk TRIM
-permalink: /de/doc/disk-trim/
 lang: de
-ref: 28
+layout: doc
+permalink: /de/doc/disk-trim/
 redirect_from:
-- /en/doc/disk-trim/
-- /doc/DiskTRIM/
-- /wiki/DiskTRIM/
+- /de/doc/DiskTRIM/
+- /de/wiki/DiskTRIM/
+ref: 30
+title: Disk TRIM
+translated: 'yes'
 ---
 
 Disk Trim
@@ -24,7 +24,7 @@ In Qubes, this gets more complex due to virtualization, LUKS, and LVM (and thin 
 If you run `fstrim --all` inside a TemplateVM, in a worst case the `discard` can follow a path like:
 
     OS -> File-system Driver -> Virtual Storage Driver -> Backend Storage Driver -> LVM Storage Driver -> LUKS Driver -> Physical Storage Driver -> Physical Storage Device
-
+    
 If discards are not supported at any one of those layers, it will not make it to the underlying physical device.
 
 There are some security implications to permitting TRIM (read for example [this article](https://asalor.blogspot.com/2011/08/trim-dm-crypt-problems.html)), but in most cases not exploitable.

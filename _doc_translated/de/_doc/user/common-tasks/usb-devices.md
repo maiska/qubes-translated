@@ -1,11 +1,12 @@
 ---
-layout: doc
-title: USB Devices
-permalink: /de/doc/usb-devices/
 lang: de
-ref: 83
+layout: doc
+permalink: /de/doc/usb-devices/
 redirect_from:
-- /doc/usb/
+- /de/doc/usb/
+ref: 85
+title: USB Devices
+translated: 'yes'
 ---
 
 # USB Devices #
@@ -133,7 +134,7 @@ To find the right controller, follow the usb bus:
     readlink /sys/bus/usb/devices/usb3
 
 
-Dies sollte in etwa Folgendes ausgeben:
+This should output something like:
 
     ../../../devices/pci-0/pci0000:00/0000:00:1a.0/usb3
 

@@ -1,12 +1,12 @@
 ---
-layout: doc
-title: Emergency Backup Recovery (v3)
-permalink: /de/doc/backup-emergency-restore-v3/
 lang: de
-ref: 93
+layout: doc
+permalink: /de/doc/backup-emergency-restore-v3/
 redirect_from:
-- /en/doc/backup-emergency-restore-v3/
-- /doc/BackupEmergencyRestoreV3/
+- /de/doc/BackupEmergencyRestoreV3/
+ref: 95
+title: Emergency Backup Recovery (v3)
+translated: 'yes'
 ---
 
 Emergency Backup Recovery without Qubes (v3)
@@ -71,7 +71,7 @@ any GNU/Linux system with the following procedure.
         encrypted=True
         compressed=True
         compression-filter=gzip
-
+  
     **Note:** If you see `version=2` here, go to [Emergency Backup Recovery -
     format version 2](/de/doc/backup-emergency-restore-v2/) instead.
 
@@ -139,4 +139,3 @@ any GNU/Linux system with the following procedure.
     repository:
 
         https://github.com/QubesOS/qubes-doc.git
-

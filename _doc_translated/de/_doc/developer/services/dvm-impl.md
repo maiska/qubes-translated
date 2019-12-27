@@ -1,13 +1,13 @@
 ---
-layout: doc
-title: DVMimpl
-permalink: /de/doc/dvm-impl/
 lang: de
-ref: 177
+layout: doc
+permalink: /de/doc/dvm-impl/
 redirect_from:
-- /en/doc/dvm-impl/
-- /doc/DVMimpl/
-- /wiki/DVMimpl/
+- /de/doc/DVMimpl/
+- /de/wiki/DVMimpl/
+ref: 182
+title: DVMimpl
+translated: 'yes'
 ---
 
 DisposableVM implementation in Qubes

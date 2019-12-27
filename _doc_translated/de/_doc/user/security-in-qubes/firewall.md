@@ -1,14 +1,14 @@
 ---
-layout: doc
-title: The Qubes Firewall
-permalink: /de/doc/firewall/
 lang: de
-ref: 133
+layout: doc
+permalink: /de/doc/firewall/
 redirect_from:
-- /doc/qubes-firewall/
-- /en/doc/qubes-firewall/
-- /doc/QubesFirewall/
-- /wiki/QubesFirewall/
+- /de/doc/qubes-firewall/
+- /de/doc/QubesFirewall/
+- /de/wiki/QubesFirewall/
+ref: 135
+title: The Qubes Firewall
+translated: 'yes'
 ---
 
 The Qubes Firewall
@@ -51,7 +51,7 @@ firewall rules by hand. The firewall rules for each VM are saved in an XML file
 in that VM's directory in dom0:
 
     /var/lib/qubes/appvms/<vm-name>/firewall.xml
-
+    
 Please note that there is a 3 kB limit to the size of the `iptables` script in Qubes versions before R4.0. 
 This equates to somewhere between 35 and 39 rules. 
 If this limit is exceeded, the qube will not start.
@@ -215,7 +215,7 @@ the service
 
 > Note: If you want to expose the service on multiple interfaces, repeat the
   steps described in part 1 for each interface
-
+  
 > Note: In Qubes R4, at the moment ([QubesOS/qubes-issues#3644](https://github.com/QubesOS/qubes-issues/issues/3644)), nftables is also used which imply that additional rules need to be set in a `qubes-firewall` nft table with a forward chain.
 
 `nft add rule ip qubes-firewall forward meta iifname eth0 ip daddr 10.137.0.x tcp dport 443 ct state new counter accept`
@@ -433,4 +433,3 @@ iptables commands should be added to the `/rw/config/rc.local` script. For
 AppVMs supplying networking (`sys-firewall` inclusive), 
 iptables commands should be added to 
 `/rw/config/qubes-firewall-user-script`.
-

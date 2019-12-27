@@ -1,9 +1,10 @@
 ---
-layout: doc
-title: Martus
-permalink: /de/doc/martus/
 lang: de
-ref: 61
+layout: doc
+permalink: /de/doc/martus/
+ref: 63
+title: Martus
+translated: 'yes'
 ---
 
 Martus
@@ -48,4 +49,3 @@ To install Martus in a qube:
 
 
 [Martus]: https://martus.org/
-

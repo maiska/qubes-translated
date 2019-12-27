@@ -1,13 +1,13 @@
 ---
-layout: doc
-title: Upgrading to R4.0
-permalink: /de/doc/upgrade-to-r4.0/
 lang: de
-ref: 128
+layout: doc
+permalink: /de/doc/upgrade-to-r4.0/
 redirect_from:
-- /en/doc/upgrade-to-r4.0/
-- /doc/UpgradeToR4.0/
-- /doc/UpgradeToR4.0rc1/
+- /de/doc/UpgradeToR4.0/
+- /de/doc/UpgradeToR4.0rc1/
+ref: 130
+title: Upgrading to R4.0
+translated: 'yes'
 ---
 
 Upgrading Qubes R3.2 to R4.0
@@ -86,7 +86,9 @@ Restore from your backup
 4. Go to **Qubes menu -> System Tools -> Qubes Manager** to start it.
 
 5. Follow the **Restoring from a Backup** section in the [Backup, Restoration, and Migration](/de/doc/backup-restore/) guide.
-   We recommend that you restore only your [TemplateBasedVMs](/de/doc/glossary/#templatebasedvm) and [StandaloneVMs   Using [TemplateVMs](/de/doc/templates/) and [SystemVMs   Instead, we recommend using the TemplateVMs that were created specifically for R4.0, which you can [customize](/de/doc/software-update-vm/) according to your needs.
+   We recommend that you restore only your [TemplateBasedVMs](/de/doc/glossary/#templatebasedvm) and [StandaloneVMs
+   Using [TemplateVMs](/doc/templates/) and [SystemVMs](/doc/glossary/#systemvm) from R3.2 is not fully supported (see [#3514](https://github.com/QubesOS/qubes-issues/issues/3514)).
+   Instead, we recommend using the TemplateVMs that were created specifically for R4.0, which you can [customize](/de/doc/software-update-vm/) according to your needs.
    For the TemplateVM OS versions supported in R4.0, see [Supported Versions](/de/doc/supported-versions/#templatevms).
    If the restore tool complains about missing templates, you can select the option to restore the AppVMs anyway, then change them afterward to use one of the default R4.0 templates.
 
@@ -118,4 +120,3 @@ Please see [Supported Versions](/de/doc/supported-versions/) for information on 
  * [Upgrading Fedora TemplateVMs](/de/doc/templates/fedora/#upgrading)
  * [Upgrading Debian TemplateVMs](/de/doc/templates/debian/#upgrading)
  * [Updating Whonix TemplateVMs](https://www.whonix.org/wiki/Qubes/Update)
-

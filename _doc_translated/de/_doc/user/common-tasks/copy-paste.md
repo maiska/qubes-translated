@@ -1,30 +1,30 @@
 ---
-layout: doc
-title: Copy and Paste
-permalink: /de/doc/copy-paste/
 lang: de
-ref: 96
+layout: doc
+permalink: /de/doc/copy-paste/
 redirect_from:
-- /en/doc/copy-paste/
-- /doc/CopyPaste/
-- /wiki/CopyPaste/
+- /de/doc/CopyPaste/
+- /de/wiki/CopyPaste/
+ref: 98
+title: Copy and Paste
+translated: 'yes'
 ---
 
 Copy and Paste between domains
 ==============================
 
-Qubes unterstützt vollständig ein sicheres Kopieren-und-Einfügen-Verfahren zwischen Domains. Um die Zwischenablage von einer Domain A zu einer Domain B zu kopieren, führen Sie bitte folgende Schritte aus:
+Qubes fully supports secure copy and paste operation between domains. In order to copy a clipboard from domain A to domain B, follow those steps:
 
 1.  Click on the application window in domain A where you have selected text for copying. Then use the *app-specific* hot-key (or menu option) to copy this into domain's local clipboard (in other words: do the copy operation as usual, in most cases by pressing Ctrl-C).
 2.  Then (when the app in domain A is still in focus) press Ctrl-Shift-C magic hot-key. This will tell Qubes that we want to select this domain's clipboard for *global copy* between domains.
 3.  Now select the destination app, running in domain B, and press Ctrl-Shift-V, another magic hot-key that will tell Qubes to make the clipboard marked in the previous step available to apps running in domain B. This step is necessary because it ensures that only domain B will get access to the clipboard copied from domain A, and not any other domain that might be running in the system.
 4.  Now, in the destination app use the app-specific key combination (usually Ctrl-V) for pasting the clipboard.
 
-Beachten Sie, dass die globale Zwischenablage nach Schritt \#3 gelöscht wird, um ein unabsichtliches Leck in eine andere Domain zu verhindern, falls der Benutzer später Strg+Umschalt+V aus Versehen drücken sollte.
+Note that the global clipboard will be cleared after step \#3, to prevent accidental leakage to another domain, if the user accidentally pressed Ctrl-Shift-V later.
 
-Dieser 4-schrittige Prozess könnte kompliziert aussehen, aber nach ein wenig Übung ist er wirklich sehr einfach und schnell. Gleichzeitig gibt er dem Benutzer die volle Kontrolle darüber, wer Zugriff auf die Zwischenablage hat.
+This 4-step process might look complex, but after some little practice it really is very easy and fast. At the same time it provides the user with full control over who has access to the clipboard.
 
-Beachten Sie, dass nur einfaches Kopieren/Einfügen von reinem Text zwischen AppVMs unterstützt wird. Dies wird ein wenig detaillierter in [dieser Nachricht](https://groups.google.com/group/qubes-devel/msg/57fe6695eb8ec8cd) diskutiert.
+Note that only simple plain text copy/paste is supported between AppVMs. This is discussed in a bit more detail in [this message](https://groups.google.com/group/qubes-devel/msg/57fe6695eb8ec8cd).
 
 On Copy/Paste Security
 ----------------------
@@ -33,7 +33,7 @@ The scheme is *secure* because it doesn't allow other VMs to steal the content o
 
 See also [this article](https://blog.invisiblethings.org/2011/03/13/partitioning-my-digital-life-into.html) for more information on this topic, and some ideas of how we might solve this problem in some future version of Qubes.
 
-Und [diese Nachricht](https://groups.google.com/group/qubes-devel/msg/48b4b532cee06e01) von qubes-devel.
+And [this message](https://groups.google.com/group/qubes-devel/msg/48b4b532cee06e01) from qubes-devel.
 
 Copy/Paste between dom0 and other domains
 -----------------------------------------
@@ -49,7 +49,7 @@ The Qubes clipboard [RPC policy] is configurable in:
 /etc/qubes-rpc/policy/qubes.ClipboardPaste
 ~~~
 
-Sie können dieses Regelwerk konfigurieren, um Benutzerfehler zu verhindern. Wenn Sie sich zum Beispiel sicher sind, dass Sie niemals *in* Ihre »Schatzkammer«-VM etwas einzufügen wünschen (und es wird sehr empfohlen, es nicht zu tun), dann sollten Sie das Regelwerk wie folgt bearbeiten:
+You may wish to configure this policy in order to prevent user error. For example, if you are certain that you never wish to paste *into* your "vault" AppVM (and it is highly recommended that you do not), then you should edit the policy as follows:
 
 ~~~
 $anyvm  vault   deny
@@ -59,14 +59,13 @@ $anyvm  $anyvm  ask
 Shortcut Configuration
 ----------------------
 
-Die Kopieren/Einfügen-Tastenkürzel sind konfigurierbar in:
+The copy/paste shortcuts are configurable in:
 
 ~~~
 /etc/qubes/guid.conf
 ~~~
 
-VMs müssen neugestartet werden, damit Änderungen in `/etc/qubes/guid.conf` wirksam werden.
+VMs need to be restarted in order for changes in `/etc/qubes/guid.conf` to take effect.
 
 
 [RPC policy]: /de/doc/rpc-policy/
-

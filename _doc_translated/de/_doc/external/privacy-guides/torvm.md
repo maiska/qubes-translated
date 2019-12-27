@@ -1,15 +1,15 @@
 ---
-layout: doc
-title: TorVM
-permalink: /de/doc/torvm/
 lang: de
-ref: 60
+layout: doc
+permalink: /de/doc/torvm/
 redirect_from:
-- /doc/privacy/torvm/
-- /en/doc/torvm/
-- /doc/TorVM/
-- /doc/UserDoc/TorVM/
-- /wiki/UserDoc/TorVM/
+- /de/doc/privacy/torvm/
+- /de/doc/TorVM/
+- /de/doc/UserDoc/TorVM/
+- /de/wiki/UserDoc/TorVM/
+ref: 62
+title: TorVM
+translated: 'yes'
 ---
 
 Known issues:

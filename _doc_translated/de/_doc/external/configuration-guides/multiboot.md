@@ -1,9 +1,10 @@
 ---
-layout: doc
-title: Multibooting
-permalink: /de/doc/multiboot/
 lang: de
-ref: 36
+layout: doc
+permalink: /de/doc/multiboot/
+ref: 38
+title: Multibooting
+translated: 'yes'
 ---
 
 Multibooting Qubes 

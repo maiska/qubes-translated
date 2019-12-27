@@ -1,14 +1,14 @@
 ---
-layout: doc
-title: DisposableVMs
-permalink: /de/doc/disposablevm/
 lang: de
-ref: 89
+layout: doc
+permalink: /de/doc/disposablevm/
 redirect_from:
-- /doc/dispvm/
-- /en/doc/dispvm/
-- /doc/DisposableVms/
-- /wiki/DisposableVMs/
+- /de/doc/dispvm/
+- /de/doc/DisposableVms/
+- /de/wiki/DisposableVMs/
+ref: 91
+title: DisposableVMs
+translated: 'yes'
 ---
 
 # DisposableVMs #
@@ -82,7 +82,7 @@ Some DisposableVM Templates will automatically create a menu item to launch a DV
     qvm-features deb-dvm appmenus-dispvm 1
 
 To launch a DVM from the command line, in dom0 please type the following:
-
+    
     qvm-run --dispvm=NameOfDVM --service qubes.StartApp+NameOfApp
 
 
@@ -95,6 +95,7 @@ Once you close the viewing application the whole DisposableVM will be destroyed.
 If you have edited the file and saved the changes, the changed file will be saved back to the original AppVM, overwriting the original.
 
 ![r1-open-in-dispvm-1.png](/de/attachment/wiki/DisposableVms/r1-open-in-dispvm-1.png) ![r1-open-in-dispvm-2.png
+
 
 ## Opening a fresh web browser instance in a new DisposableVM ##
 
@@ -163,4 +164,3 @@ Full instructions can be found [here](/de/doc/disposablevm-customization/).
 
 
 [DisposableVM Template]: /de/doc/glossary/#disposablevm-template
-

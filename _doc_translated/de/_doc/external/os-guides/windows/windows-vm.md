@@ -1,11 +1,11 @@
 ---
-layout: doc
-title: Installing a Windows VM
-permalink: /de/doc/windows-vm/
 lang: de
-ref: 71
+layout: doc
+permalink: /de/doc/windows-vm/
+ref: 73
+title: Installing a Windows VM
+translated: 'yes'
 ---
-
 
 Installing a Windows VM
 =======================
@@ -187,4 +187,3 @@ Further customization
 ---------------------
 
 Please see the [Customizing Windows 7 templates](/de/doc/windows-template-customization/) page (despite the focus on preparing the VM for use as a template, most of the instructions are independent from how the VM will be used - ie. TemplateVM or StandaloneVM).
-

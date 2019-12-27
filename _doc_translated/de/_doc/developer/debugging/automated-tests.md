@@ -1,12 +1,12 @@
 ---
-layout: doc
-title: Automated Tests
-permalink: /de/doc/automated-tests/
 lang: de
-ref: 155
+layout: doc
+permalink: /de/doc/automated-tests/
 redirect_from:
-- /en/doc/automated-tests/
-- /doc/AutomatedTests/
+- /de/doc/AutomatedTests/
+ref: 160
+title: Automated Tests
+translated: 'yes'
 ---
 
 Automated Tests
@@ -32,7 +32,7 @@ Or our custom one:
 Our test runner runs mostly the same as the standard one, but it has some nice additional features like color output and not needing the "qubes.test" prefix. 
 It also has the ability to run lone selected template tests.
 
-Durch `python -m qubes.tests.run -h` erhält man zusätzliche Informationen:
+You can use `python -m qubes.tests.run -h` to get usage information:
 
     [user@dom0 ~]$ python -m qubes.tests.run -h
     usage: run.py [-h] [--verbose] [--quiet] [--list] [--failfast] [--no-failfast]
@@ -97,7 +97,7 @@ For instance, to run only the tests for the fedora-21 template, you can use the 
     vm_qrexec_gui/TC_20_DispVM_fedora-21/test_030_edit_file
     [user@dom0 ~]$ python -m qubes.tests.run -v `python -m qubes.tests.run -l | grep fedora-21`
 
-Beispiele:
+Example test run:
 
 ![snapshot-tests2.png](/de/attachment/wiki/developers/snapshot-tests2.png)
 
@@ -183,7 +183,7 @@ class SomeTestCase(unittest.TestCase):
         # first test that actually use event loop will try to dereference (already
         # destroyed) objects, resulting in SEGV
         self.loop = quamash.QEventLoop(self.qtapp)
-
+    
     def tearDown(self):
         [...]
         # process any pending events before destroying the object
@@ -228,4 +228,3 @@ Thanks to an anonymous donor, our openQA system is hosted in a datacenter on har
 
 [unittest]: https://docs.python.org/2/library/unittest.html
 [OpenQA]: http://open.qa/
-

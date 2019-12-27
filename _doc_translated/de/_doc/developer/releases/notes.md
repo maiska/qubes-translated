@@ -1,9 +1,10 @@
 ---
-layout: doc
-title: Versionshinweise
-permalink: /de/doc/releases/notes/
 lang: de
-ref: 186
+layout: doc
+permalink: /de/doc/releases/notes/
+ref: 191
+title: Release Notes
+translated: 'yes'
 ---
 
 Release Notes
@@ -15,4 +16,3 @@ Release Notes
  * [Qubes R3.1 release notes](/de/doc/releases/3.1/release-notes/)
  * [Qubes R3.2 release notes](/de/doc/releases/3.2/release-notes/)
  * [Qubes R4.0 release notes](/de/doc/releases/4.0/release-notes/)
-

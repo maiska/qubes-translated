@@ -1,11 +1,12 @@
 ---
-layout: doc
-title: Anonymizing your MAC Address
-permalink: /de/doc/anonymizing-your-mac-address/
 lang: de
-ref: 59
+layout: doc
+permalink: /de/doc/anonymizing-your-mac-address/
 redirect_from:
-- /doc/randomizing-your-mac-address/
+- /de/doc/randomizing-your-mac-address/
+ref: 61
+title: Anonymizing your MAC Address
+translated: 'yes'
 ---
 
 Anonymizing your MAC Address
@@ -68,4 +69,3 @@ Next, create a new NetVM using the edited template and assign network devices to
 Finally, shutdown all VMs and change the settings of sys-firewall, etc. to use the new NetVM.
 
 You can check the MAC address currently in use by looking at the status pages of your router device(s), or inside the NetVM with the command `sudo ip link show`.
-

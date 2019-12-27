@@ -1,9 +1,10 @@
 ---
-layout: doc
-title: Tips and Tricks
-permalink: /de/doc/tips-and-tricks/
 lang: de
-ref: 26
+layout: doc
+permalink: /de/doc/tips-and-tricks/
+ref: 28
+title: Tips and Tricks
+translated: 'yes'
 ---
 
 Tips and Tricks
@@ -13,6 +14,7 @@ This section provides user suggested tips that aim to increase Qubes OS usabilit
 Opening links in your preferred AppVM
 -------------------------------------
 To increase both security and usability you can set an AppVM so that it automatically opens any link in an different AppVM of your choice. You can do this for example in the email AppVM, in this way you avoid to make mistakes like opening links in it. To learn more you can check [security guidelines](/de/doc/security-guidelines/) and [security goals
+
 The command `qvm-open-in-vm` lets you open a document or a URL in another VM. It takes two parameters: vmname and filename.
 
 For example, if you launch this command from your email AppVM:

@@ -1,13 +1,13 @@
 ---
-layout: doc
-title: Documentation Guidelines
-permalink: /de/doc/doc-guidelines/
 lang: de
-ref: 174
+layout: doc
+permalink: /de/doc/doc-guidelines/
 redirect_from:
-- /en/doc/doc-guidelines/
-- /wiki/DocStyle/
-- /doc/DocStyle/
+- /de/wiki/DocStyle/
+- /de/doc/DocStyle/
+ref: 179
+title: Documentation Guidelines
+translated: 'yes'
 ---
 
 Documentation Guidelines
@@ -277,7 +277,7 @@ When making contributions, please try to observe the following style conventions
      The `#` symbol preceding each comment is ambiguous with a root command prompt.
      Instead, put your comments *outside* of the code block in normal prose.
  * Use `[reference-style][ref]` links.  
-
+ 
 `[ref]: https://daringfireball.net/projects/markdown/syntax#link`
 
 ([This][md] is a great source for learning about Markdown.)
@@ -293,7 +293,7 @@ Please try to write good commit messages, according to the
 [qubes-doc]: https://github.com/QubesOS/qubes-doc
 [glossary]: /de/doc/glossary/
 [issue]: /de/doc/reporting-bugs/
-[beitragen]: #how-to-contribute
+[contribute]: #how-to-contribute
 [qubes-issues]: https://github.com/QubesOS/qubes-issues/issues
 [gh-fork]: https://guides.github.com/activities/forking/
 [gh-pull]: https://help.github.com/articles/using-pull-requests/
@@ -302,9 +302,8 @@ Please try to write good commit messages, according to the
 [version-example]: /de/doc/template/fedora/upgrade-25-to-26/
 [version-thread]: https://groups.google.com/d/topic/qubes-users/H9BZX4K9Ptk/discussion
 [QSBs]: /de/security/bulletins/
-[Neuigkeiten]: /news/
+[News]: /news/
 [md]: https://daringfireball.net/projects/markdown/
 [git-commit]: /de/doc/coding-style/#commit-message-guidelines
 [render the site locally]: https://github.com/QubesOS/qubesos.github.io#instructions
 [qubes-attachment]: https://github.com/QubesOS/qubes-attachment
-

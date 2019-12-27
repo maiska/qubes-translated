@@ -1,14 +1,14 @@
 ---
-layout: doc
-title: VPN
-permalink: /de/doc/vpn/
 lang: de
-ref: 32
+layout: doc
+permalink: /de/doc/vpn/
 redirect_from:
-- /doc/privacy/vpn/
-- /en/doc/vpn/
-- /doc/VPN/
-- /wiki/VPN/
+- /de/doc/privacy/vpn/
+- /de/doc/VPN/
+- /de/wiki/VPN/
+ref: 34
+title: VPN
+translated: 'yes'
 ---
 
 How To make a VPN Gateway in Qubes
@@ -55,7 +55,7 @@ Set up a ProxyVM as a VPN gateway using NetworkManager
 4. (Optional) Make your VPN start automatically.
 
    Edit `/rw/config/rc.local` and add these lines:
-
+   
    ```bash
    # Automatically connect to the VPN once Internet is up
    while ! ping -c 1 -W 1 1.1.1.1; do
@@ -65,7 +65,7 @@ Set up a ProxyVM as a VPN gateway using NetworkManager
    nmcli connection up file-vpn-conn passwd-file $PWDFILE
    ```
    You can find the actual "file-vpn-conn" in `/rw/config/NM-system-connections/`.
-
+   
    Create directory `/rw/config/NM-system-connections/secrets/` (You can put your `*.crt` and `*.pem` files here too).
    Create a new file `/rw/config/NM-system-connections/secrets/passwd-file.txt`:
    ```
@@ -73,7 +73,7 @@ Set up a ProxyVM as a VPN gateway using NetworkManager
    ```
    And substitute "XXXXXXXXXXXXXX" for the actual password.
    The contents of `passwd-file.txt` may differ depending on your VPN settings.  See the [documentation for `nmcli up`](https://www.mankier.com/1/nmcli#up).
-
+   
 5. (Optional) Make the network fail-close for the AppVMs if the connection to the VPN breaks.
 
    Edit `/rw/config/qubes-firewall-user-script` and add these lines:
@@ -182,9 +182,9 @@ It has been tested with Fedora 23 and Debian 8 templates.
    #!/bin/bash
    set -e
    export PATH="$PATH:/usr/sbin:/sbin"
-
+  
    case "$1" in
-
+  
    up)
    # To override DHCP DNS, assign DNS addresses to 'vpn_dns' env variable before calling this script;
    # Format is 'X.X.X.X  Y.Y.Y.Y [...]'
@@ -196,7 +196,7 @@ It has been tested with Fedora 23 and Debian 8 templates.
            if [ ${fops[1]} == "DNS" ] ; then vpn_dns="$vpn_dns ${fops[2]}" ; fi
        done
    fi
-
+  
    iptables -t nat -F PR-QBS
    if [[ -n "$vpn_dns" ]] ; then
        # Set DNS address translation in firewall:
@@ -208,7 +208,7 @@ It has been tested with Fedora 23 and Debian 8 templates.
    else
        su - -c 'notify-send "$(hostname): LINK UP, NO DNS!" --icon=dialog-error' user
    fi
-
+  
    ;;
    down)
    su - -c 'notify-send "$(hostname): LINK IS DOWN !" --icon=dialog-error' user
@@ -250,19 +250,19 @@ It has been tested with Fedora 23 and Debian 8 templates.
    iptables -I FORWARD -i eth0 -j DROP
    ip6tables -I FORWARD -o eth0 -j DROP
    ip6tables -I FORWARD -i eth0 -j DROP
-
+   
    #    Block all outgoing traffic
    iptables -P OUTPUT DROP
    iptables -F OUTPUT
    iptables -I OUTPUT -o lo -j ACCEPT
-
+   
    #    Add the `qvpn` group to system, if it doesn't already exist
    if ! grep -q "^qvpn:" /etc/group ; then
         groupadd -rf qvpn
         sync
    fi
    sleep 2s
-
+   
    #    Allow traffic from the `qvpn` group to the uplink interface (eth0);
    #    Our VPN client will run with group `qvpn`.
    iptables -I OUTPUT -p all -o eth0 -m owner --gid-owner qvpn -j ACCEPT
@@ -283,7 +283,7 @@ It has been tested with Fedora 23 and Debian 8 templates.
    #!/bin/bash
    VPN_CLIENT='openvpn'
    VPN_OPTIONS='--cd /rw/config/vpn/ --config openvpn-client.ovpn --daemon'
-
+   
    su - -c 'notify-send "$(hostname): Starting $VPN_CLIENT..." --icon=network-idle' user
    groupadd -rf qvpn ; sleep 2s
    sg qvpn -c "$VPN_CLIENT $VPN_OPTIONS"

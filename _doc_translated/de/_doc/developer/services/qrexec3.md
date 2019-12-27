@@ -1,21 +1,19 @@
 ---
-layout: doc
-title: Qrexec3
-permalink: /de/doc/qrexec3/
 lang: de
-ref: 179
+layout: doc
+permalink: /de/doc/qrexec3/
 redirect_from:
-- /en/doc/qrexec3/
-- /doc/Qrexec3/
-- /wiki/Qrexec3/
-- /doc/qrexec/
-- /en/doc/qrexec/
-- /doc/Qrexec/
-- /wiki/Qrexec/
-- /doc/qrexec3-implementation/
-- /en/doc/qrexec3-implementation/
-- /doc/Qrexec3Implementation/
-- /wiki/Qrexec3Implementation/
+- /de/doc/Qrexec3/
+- /de/wiki/Qrexec3/
+- /de/doc/qrexec/
+- /de/doc/Qrexec/
+- /de/wiki/Qrexec/
+- /de/doc/qrexec3-implementation/
+- /de/doc/Qrexec3Implementation/
+- /de/wiki/Qrexec3Implementation/
+ref: 184
+title: Qrexec3
+translated: 'yes'
 ---
 
 # Command execution in VMs #
@@ -555,7 +553,7 @@ socket/named pipe).
             char target_domain[32];
             struct service_params request_id; /* service request id */
          };
-
+        
          struct service_params {
             char ident[32];
         };
@@ -627,4 +625,3 @@ a VM-VM connection.
 `qrexec-agent` (connection details were received before from **domX**'s
 `qrexec-daemon`).
 - After that, connection follows the flow of the previous example (dom0-VM).
-

@@ -1,9 +1,10 @@
 ---
-layout: doc
-title: Updating Debian and Whonix
-permalink: /de/doc/troubleshooting/updating-debian-and-whonix/
 lang: de
-ref: 38
+layout: doc
+permalink: /de/doc/troubleshooting/updating-debian-and-whonix/
+ref: 40
+title: Updating Debian and Whonix
+translated: 'yes'
 ---
 
 Updating Debian and Whonix

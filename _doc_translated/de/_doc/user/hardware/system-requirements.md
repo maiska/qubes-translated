@@ -1,14 +1,14 @@
 ---
-layout: doc
-title: Systemanforderungen
-permalink: /de/doc/system-requirements/
 lang: de
-ref: 77
+layout: doc
+permalink: /de/doc/system-requirements/
 redirect_from:
-- /system-requirements/
-- /en/doc/system-requirements/
-- /doc/SystemRequirements/
-- /wiki/SystemRequirements/
+- /de/system-requirements/
+- /de/doc/SystemRequirements/
+- /de/wiki/SystemRequirements/
+ref: 79
+title: System Requirements
+translated: 'yes'
 ---
 
 # System Requirements #
@@ -18,7 +18,7 @@ redirect_from:
   <b>Notice:</b>
   The system requirements on this page are <em>necessary, but not sufficient,</em> for Qubes compatibility at a minimal or recommended level.
   In other words, just because a computer satisfies these requirements doesn't mean that Qubes will successfully install and run on it.
-  We strongly recommend consulting the <a href="/hcl/">Hardware Compatibility List</a> to verify that Qubes can install and run on your specific model in the ways you need it to.
+  We strongly recommend consulting the <a href="/de/hcl/">Hardware Compatibility List</a> to verify that Qubes can install and run on your specific model in the ways you need it to.
 </div>
 
 ## Qubes Release 3.x ##
@@ -100,4 +100,3 @@ redirect_from:
 [AMD-Vi (aka AMD IOMMU)]: https://en.wikipedia.org/wiki/X86_virtualization#I.2FO_MMU_virtualization_.28AMD-Vi_and_Intel_VT-d.29
 [EPT]: https://en.wikipedia.org/wiki/Second_Level_Address_Translation#Extended_Page_Tables
 [RVI]: https://en.wikipedia.org/wiki/Second_Level_Address_Translation#Rapid_Virtualization_Indexing
-

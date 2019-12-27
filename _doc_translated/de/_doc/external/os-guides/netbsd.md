@@ -1,9 +1,10 @@
 ---
-layout: doc
-title: How to Create a NetBSD VM
-permalink: /de/doc/netbsd/
 lang: de
-ref: 69
+layout: doc
+permalink: /de/doc/netbsd/
+ref: 71
+title: How to Create a NetBSD VM
+translated: 'yes'
 ---
 
 How to Create a NetBSD VM

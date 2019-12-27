@@ -1,12 +1,12 @@
 ---
-layout: doc
-title: Multifactor Authentication
-permalink: /de/doc/multifactor-authentication/
 lang: de
-ref: 53
+layout: doc
+permalink: /de/doc/multifactor-authentication/
 redirect_from:
-- /en/doc/multifactor-authentication/
-- /doc/Multi-factorAuthentication/
+- /de/doc/Multi-factorAuthentication/
+ref: 55
+title: Multifactor Authentication
+translated: 'yes'
 ---
 
 Using Multi-factor Authentication with Qubes
@@ -153,7 +153,7 @@ is largely the same.
         [user@mfa ~]$ ./google
         640916
 
-    Fertig!
+    Done!
 
  5. Now you can create scripts for any other TOTP-supporting services you use,
     and enjoy the security and ease of quickly generating authentication tokens

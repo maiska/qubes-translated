@@ -1,9 +1,10 @@
 ---
-layout: doc
-title: Removing TemplateVM Packages
-permalink: /de/doc/removing-templatevm-packages/
 lang: de
-ref: 57
+layout: doc
+permalink: /de/doc/removing-templatevm-packages/
+ref: 59
+title: Removing TemplateVM Packages
+translated: 'yes'
 ---
 
 # Removing TemplateVM Packages
@@ -72,7 +73,7 @@ In your TemplateVM terminal, run:
 $ dnf remove --noautoremove package-name
 ```
 
-
+ 
 ## Recovering A TemplateVM which you've already removed needed qubes-* packages
 If you've already removed packages, run `apt autoremove` and restarted your VM you've lost passwordless sudo access. 
 You can login as root, open a terminal in dom0 and run: 

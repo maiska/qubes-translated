@@ -1,9 +1,10 @@
 ---
-layout: doc
-title: Upgrading the Fedora 29 TemplateVM to Fedora 30
-permalink: /de/doc/template/fedora/upgrade-29-to-30/
 lang: de
-ref: 109
+layout: doc
+permalink: /de/doc/template/fedora/upgrade-29-to-30/
+ref: 111
+title: Upgrading the Fedora 29 TemplateVM to Fedora 30
+translated: 'yes'
 ---
 
 Upgrading the Fedora 29 TemplateVM to Fedora 30
@@ -109,7 +110,7 @@ The same general procedure may be used to upgrade any template based on the stan
        (See [Additional Information] below for other options.)
 
  4. Check that you are on the correct (new) fedora release.
-
+ 
         [user@fedora-30 ~]$ cat /etc/fedora-release
 
  5. Trim the new template.
@@ -180,8 +181,7 @@ In this case, you have several options:
 [TemplateVM]: /de/doc/templates/
 [Fedora TemplateVM]: /de/doc/templates/fedora/
 [resize-disk-image]: /de/doc/resize-disk-image/
-[Zusätzliche Information]: #additional-information
+[Additional Information]: #additional-information
 [Compacting the Upgraded Template]: #compacting-the-upgraded-template
 [switching]: /de/doc/templates/#how-to-switch-templates
 [DispVM]: /de/doc/dispvm/
-

@@ -1,9 +1,10 @@
 ---
-layout: doc
-title: How to Remove VMs Manually
-permalink: /de/doc/remove-vm-manually/
 lang: de
-ref: 43
+layout: doc
+permalink: /de/doc/remove-vm-manually/
+ref: 45
+title: How to Remove VMs Manually
+translated: 'yes'
 ---
 
 How to Remove VMs Manually
@@ -35,4 +36,3 @@ When a template is marked as 'installed by package manager', but cannot be unins
 
 
 [normal method]: /de/doc/templates/#how-to-install-uninstall-reinstall-and-switch
-

@@ -1,14 +1,14 @@
 ---
-layout: doc
-title: Qrexec2
-permalink: /de/doc/qrexec2/
 lang: de
-ref: 183
+layout: doc
+permalink: /de/doc/qrexec2/
 redirect_from:
-- /doc/qrexec2-implementation/
-- /en/doc/qrexec2-implementation/
-- /doc/Qrexec2Implementation/
-- /wiki/Qrexec2Implementation/
+- /de/doc/qrexec2-implementation/
+- /de/doc/Qrexec2Implementation/
+- /de/wiki/Qrexec2Implementation/
+ref: 188
+title: Qrexec2
+translated: 'yes'
 ---
 
 # Command execution in VMs #

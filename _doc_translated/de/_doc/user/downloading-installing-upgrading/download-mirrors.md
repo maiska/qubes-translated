@@ -1,9 +1,10 @@
 ---
-layout: sidebar
-title: Download Mirrors
-permalink: /de/downloads/mirrors/
 lang: de
-ref: 114
+layout: sidebar
+permalink: /de/downloads/mirrors/
+ref: 116
+title: Download Mirrors
+translated: 'yes'
 ---
 
 Qubes Download Mirrors

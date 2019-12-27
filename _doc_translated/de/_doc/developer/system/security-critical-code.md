@@ -1,14 +1,14 @@
 ---
-layout: doc
-title: Security-critical Code
-permalink: /de/doc/security-critical-code/
 lang: de
-ref: 162
+layout: doc
+permalink: /de/doc/security-critical-code/
 redirect_from:
-- /en/doc/security-critical-code/
-- /doc/SecurityCriticalCode/
-- /wiki/SecurityCriticalCode/
-- /trac/wiki/SecurityCriticalCode/
+- /de/doc/SecurityCriticalCode/
+- /de/wiki/SecurityCriticalCode/
+- /de/trac/wiki/SecurityCriticalCode/
+ref: 167
+title: Security-critical Code
+translated: 'yes'
 ---
 
 Security-critical Code in Qubes OS
@@ -80,4 +80,3 @@ This software is signed by Fedora distribution keys, so it is also critical that
 [Qubes Security Goals]: /de/security/goals/
 [Fedora Project]: https://getfedora.org/
 [Understanding and Preventing Data Leaks]: /de/doc/data-leaks/
-

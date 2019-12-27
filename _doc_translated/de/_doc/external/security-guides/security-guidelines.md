@@ -1,13 +1,13 @@
 ---
-layout: doc
-title: Security Guidelines
-permalink: /de/doc/security-guidelines/
 lang: de
-ref: 51
+layout: doc
+permalink: /de/doc/security-guidelines/
 redirect_from:
-- /en/doc/security-guidelines/
-- /doc/SecurityGuidelines/
-- /wiki/SecurityGuidelines/
+- /de/doc/SecurityGuidelines/
+- /de/wiki/SecurityGuidelines/
+ref: 53
+title: Security Guidelines
+translated: 'yes'
 ---
 
 Security Guidelines
@@ -16,7 +16,8 @@ Security Guidelines
 Without some active and responsible participation of the user, no real security is possible. Running Firefox inside of an AppVM does not automagically make it (or any other app) more secure. 
 Programs themselves remain just as secure [(or insecure)](https://en.wikipedia.org/wiki/Computer_insecurity) on Qubes as on a normal Linux or Windows OS. 
 What drastically changes is the context in which your applications are used. 
-[This context](/de/doc/qubes-architecture/) is a [responsibility of the userBut managing security in this context well requires knowledge of some new concepts and procedures. So it is worth stressing some basic items:
+[This context](/de/doc/qubes-architecture/) is a [responsibility of the user
+But managing security in this context well requires knowledge of some new concepts and procedures. So it is worth stressing some basic items:
 
 Download Verification
 ---------------------
@@ -162,6 +163,5 @@ TemplateBasedVM Directories
    TemplateBasedVMs persist in this manner. If you would like to make changes
    in other directories which *do* persist in this manner, you must make those
    changes in the parent TemplateVM.
-
+   
  * See [here](/de/doc/templates) for more detail and version specific information.
-

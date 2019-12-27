@@ -1,13 +1,13 @@
 ---
-layout: doc
-title: Network Bridge Support
-permalink: /de/doc/network-bridge-support/
 lang: de
-ref: 23
+layout: doc
+permalink: /de/doc/network-bridge-support/
 redirect_from:
-- /en/doc/network-bridge-support/
-- /doc/NetworkBridgeSupport/
-- /wiki/NetworkBridgeSupport/
+- /de/doc/NetworkBridgeSupport/
+- /de/wiki/NetworkBridgeSupport/
+ref: 25
+title: Network Bridge Support
+translated: 'yes'
 ---
 
 Network Bridge Support (EXPERIMENTAL and UNSUPPORTED)

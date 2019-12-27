@@ -1,9 +1,10 @@
 ---
-layout: doc
-title: Apple MacBook Troubleshooting
-permalink: /de/doc/macbook-troubleshooting/
 lang: de
-ref: 39
+layout: doc
+permalink: /de/doc/macbook-troubleshooting/
+ref: 41
+title: Apple MacBook Troubleshooting
+translated: 'yes'
 ---
 
 Apple MacBook Troubleshooting
@@ -17,13 +18,13 @@ In this section, I explain how to install Qubes on a MacBook Air 13" mid 2011
 
 This model has the following features:
 
-*   Dual Intel i7-2677M 1.80 Ghz CPU (2 dual cores)
-*   Intel HD Graphics 3000
-*   4Gb RAM
-*   256Gb SDD
-*   Broadcom BCM43224 802.11 a/b/g/n wifi and Bluetooth adapter
-*   Intel DSL2310 Thunderbolt controller
-*   It has 1 DVI/Thunderbolt display port, 2 USB2.0 ports, a Magsafe power
+*	Dual Intel i7-2677M 1.80 Ghz CPU (2 dual cores)
+*	Intel HD Graphics 3000
+*	4Gb RAM
+*	256Gb SDD
+*	Broadcom BCM43224 802.11 a/b/g/n wifi and Bluetooth adapter
+*	Intel DSL2310 Thunderbolt controller
+*	It has 1 DVI/Thunderbolt display port, 2 USB2.0 ports, a Magsafe power
     adapter, a standard 3.5mm audio jack and SD reader.
 
 I first tried to install Qubes using the UEFI boot, but it failed. Not wanting
@@ -122,7 +123,7 @@ Results:
 * Wifi: +10%-20% ICMP packet loss when comparing with OSX (have similar rates
   with Tails Linux, more tests are required)
 
-### Empfehlungen
+### References
 
 1. <https://github.com/QubesOS/qubes-issues/issues/794>
 2. <https://github.com/QubesOS/qubes-issues/issues/1261>
@@ -161,20 +162,20 @@ I am already using Qubes for my daily job on Intel NUC. For the time being, I in
 
 This model has the following features:
 
-*   2,5 GHz Intel Core i7-4870HQ (2 quad cores)
-*   Dual Graphic Card
+*	2,5 GHz Intel Core i7-4870HQ (2 quad cores)
+*	Dual Graphic Card
     *  Intel Iris Pro
     *  AMD Radeon R9 M370X
-*   16Gb RAM
-*   512Gb SDD
-*   Broadcom BCM43602 802.11ac wifi adapter
+*	16Gb RAM
+*	512Gb SDD
+*	Broadcom BCM43602 802.11ac wifi adapter
 
 ### 1. Reclaim space to be able to multiboot OSX
 
 For security reasons, you should install Qubes using the whole disk. I preferred to keep OSX, so I shrunk OS partition:
 *  reboot in recovery mode
 *  run disk utility and shrink OSX partition, eg 150GB for OSX and the remaining space for Qubes OS
-*  Neustart
+*  reboot
 
 
 ### 2. Boot installer
@@ -323,8 +324,8 @@ xl pci-attach sys-net 04:00.0
 
 These latest steps are required to launch sys-net with wifi access. They can be automated in a custom systemd service.
 
+   
 
-
-
-
+   
+   
 [rEFInd]: http://www.rodsbooks.com/refind/getting.html

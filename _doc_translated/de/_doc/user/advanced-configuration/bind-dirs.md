@@ -1,11 +1,11 @@
 ---
-layout: doc
-title: How to make any file in a TemplateBasedVM persistent using bind-dirs
-permalink: /de/doc/bind-dirs/
 lang: de
-ref: 146
-redirect_from:
-- /en/doc/bind-dirs/
+layout: doc
+permalink: /de/doc/bind-dirs/
+redirect_from: []
+ref: 148
+title: How to make any file in a TemplateBasedVM persistent using bind-dirs
+translated: 'yes'
 ---
 
 # How to make any file in a TemplateBasedVM persistent using bind-dirs #
@@ -44,7 +44,7 @@ Inside the TemplateBasedVM.
 
 5. Reboot the TemplateBasedVM.
 
-6. Fertig.
+6. Done.
 
 From now on any files within the/var/lib/tor folder will persist across reboots.  
 

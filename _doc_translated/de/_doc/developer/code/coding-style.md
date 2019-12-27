@@ -1,14 +1,14 @@
 ---
-layout: doc
-title: Programmierstil
-permalink: /de/doc/coding-style/
 lang: de
-ref: 202
+layout: doc
+permalink: /de/doc/coding-style/
 redirect_from:
-- /en/doc/coding-style/
-- /doc/CodingStyle/
-- /wiki/CodingStyle/
-- /trac/wiki/CodingStyle/
+- /de/doc/CodingStyle/
+- /de/wiki/CodingStyle/
+- /de/trac/wiki/CodingStyle/
+ref: 207
+title: Coding Style
+translated: 'yes'
 ---
 
 Coding Guidelines for Qubes Developers

@@ -1,9 +1,10 @@
 ---
-layout: doc
-title: Management stack
-permalink: /de/doc/salt/
 lang: de
-ref: 140
+layout: doc
+permalink: /de/doc/salt/
+ref: 142
+title: Management stack
+translated: 'yes'
 ---
 
 # Management Infrastructure
@@ -66,7 +67,7 @@ when issued, will immediately halt a domain.
 There is another function called `state.highstate` which will synchronize the 
 state of the system with the administrator's configuration/desires.
 
-### Konfiguration
+### Configuration
 
 #### States
 
@@ -490,7 +491,7 @@ Template name on which a given VM is based (if any).
 
 VM which provides network to the given VM
 
-## Debuggen
+## Debugging
 
 The output for each VM is logged in `/var/log/qubes/mgmt-VM_NAME.log`.
 
@@ -516,7 +517,7 @@ The fedora-24-minimal package is missing the `sudo` package.
 You can install it via:
 
     $ qvm-run -p -u root fedora-24-minimal-template 'dnf install -y sudo'
-
+    
 The `-p` will cause the execution to wait until the package is installed.
 Having the `-p` flag is important when using a state with `cmd.run`.
 

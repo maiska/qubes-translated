@@ -1,13 +1,14 @@
 ---
-layout: doc
-title: Certified Hardware
-permalink: /de/doc/certified-hardware/
 lang: de
-ref: 76
+layout: doc
+permalink: /de/doc/certified-hardware/
 redirect_from:
- - /doc/hardware/
- - /doc/certified-laptops/
- - /hardware-certification/
+- /de/doc/hardware/
+- /de/doc/certified-laptops/
+- /de/hardware-certification/
+ref: 78
+title: Certified Hardware
+translated: 'yes'
 ---
 
 # Certified Hardware #
@@ -88,7 +89,7 @@ To learn more about the certification process, or if you're interested in having
 
 
 [stateless laptop]: https://blog.invisiblethings.org/2015/12/23/state_harmful.html
-[Systemanforderungen]: /de/doc/system-requirements/
+[System Requirements]: /de/doc/system-requirements/
 [Hardware Compatibility List]: /de/hcl/
 [Hardware Certification]: #hardware-certification
 [system requirements for Qubes 4.x]: /de/doc/system-requirements/#qubes-release-4x
@@ -104,4 +105,3 @@ To learn more about the certification process, or if you're interested in having
 [x86_harmful]: https://blog.invisiblethings.org/papers/2015/x86_harmful.pdf
 [stateless laptop]: https://blog.invisiblethings.org/papers/2015/state_harmful.pdf
 [audio_modem]: https://github.com/romanz/amodem/
-

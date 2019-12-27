@@ -1,14 +1,14 @@
 ---
-layout: doc
-title: Upgrading the Fedora 28 Template to Fedora 29
-permalink: /de/doc/template/fedora/upgrade-28-to-29/
 lang: de
-ref: 106
+layout: doc
+permalink: /de/doc/template/fedora/upgrade-28-to-29/
 redirect_from:
-- /doc/fedora-template-upgrade-28/
-- /en/doc/fedora-template-upgrade-28/
-- /doc/FedoraTemplateUpgrade28/
-- /wiki/FedoraTemplateUpgrade28/
+- /de/doc/fedora-template-upgrade-28/
+- /de/doc/FedoraTemplateUpgrade28/
+- /de/wiki/FedoraTemplateUpgrade28/
+ref: 108
+title: Upgrading the Fedora 28 Template to Fedora 29
+translated: 'yes'
 ---
 
 Upgrading the Fedora 28 Template to Fedora 29
@@ -128,7 +128,7 @@ should be entered (`@dom0` or `@fedora-29`).
        (See [Additional Information] below for other options.)
 
  4. Check that you are on the correct (new) fedora release.
-
+ 
         [user@fedora-29 ~]$ cat /etc/fedora-release
 
  5. Trim the new template.
@@ -207,8 +207,7 @@ In this case, you have several options:
 [TemplateVM]: /de/doc/templates/
 [Fedora TemplateVM]: /de/doc/templates/fedora/
 [resize-disk-image]: /de/doc/resize-disk-image/
-[Zusätzliche Information]: #additional-information
+[Additional Information]: #additional-information
 [Compacting the Upgraded Template]: #compacting-the-upgraded-template
 [switching]: /de/doc/templates/#how-to-switch-templates
 [DispVM]: /de/doc/dispvm/
-

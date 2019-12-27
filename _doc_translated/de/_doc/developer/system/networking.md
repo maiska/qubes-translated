@@ -1,14 +1,14 @@
 ---
-layout: doc
-title: Networking
-permalink: /de/doc/networking/
 lang: de
-ref: 166
+layout: doc
+permalink: /de/doc/networking/
 redirect_from:
-- /doc/qubes-net/
-- /en/doc/qubes-net/
-- /doc/QubesNet/
-- /wiki/QubesNet/
+- /de/doc/qubes-net/
+- /de/doc/QubesNet/
+- /de/wiki/QubesNet/
+ref: 171
+title: Networking
+translated: 'yes'
 ---
 
 VM network in Qubes
@@ -70,4 +70,3 @@ Besides enabling IPv6 forwarding, standard Qubes firewall can be used to limit w
 
 Currently only IPv4 DNS servers are configured, regardless of `ipv6` feature state. It is done this way to avoid reconfiguring all connected qubes whenever IPv6 DNS becomes available or not. Configuring qubes to always use IPv6 DNS and only fallback to IPv4 may result in relatively long timeouts and poor usability.
 But note that DNS using IPv4 does not prevent to return IPv6 addresses. In practice this is only a problem for IPv6-only networks.
-

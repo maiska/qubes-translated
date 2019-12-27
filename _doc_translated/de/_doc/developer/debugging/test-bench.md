@@ -1,13 +1,13 @@
 ---
-layout: doc
-title: Test Bench
-permalink: /de/doc/test-bench/
 lang: de
-ref: 154
+layout: doc
+permalink: /de/doc/test-bench/
 redirect_from:
-- /en/doc/test-bench/
-- /doc/TestBench/
-- /wiki/TestBench/
+- /de/doc/TestBench/
+- /de/wiki/TestBench/
+ref: 159
+title: Test Bench
+translated: 'yes'
 ---
 
 Test bench for Dom0

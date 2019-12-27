@@ -1,9 +1,10 @@
 ---
-layout: doc
-title: Supported Versions
-permalink: /de/doc/supported-versions/
 lang: de
-ref: 121
+layout: doc
+permalink: /de/doc/supported-versions/
+ref: 123
+title: Supported Versions
+translated: 'yes'
 ---
 
 Supported Versions
@@ -16,7 +17,7 @@ or minor release (see [Version Scheme]). The current release and past major
 releases are always available on the [Downloads] page, while all ISOs, including
 past minor releases, are available from our [download mirrors].
 
-| Qubes OS      | Startdatum | End Date   | Status                  |
+| Qubes OS      | Start Date | End Date   | Status                  |
 | ------------- | ---------- | ---------- | ----------------------- |
 | Release 1     | 2012-09-03 | 2015-03-26 | Old, unsupported        |
 | Release 2     | 2014-09-26 | 2016-04-01 | Old, unsupported        |
@@ -66,10 +67,10 @@ release. Currently, only Fedora, Debian, and Whonix TemplateVMs are officially s
 
 | Qubes OS      | Fedora                       | Debian                                        | Whonix |
 | ------------- | ---------------------------- | --------------------------------------------- | ------ |
-| Release 1     | 18, 20                       | Nichts                                          | Nichts   |
-| Release 2     | 21                           | Nichts                                          | Nichts   |
-| Release 3.0   | 21, 22\*, 23                 | 7 ("wheezy")\*, 8 ("jessie")                  | Nichts   |
-| Release 3.1   | 21, 22\*, 23                 | 7 ("wheezy")\*, 8 ("jessie"), 9 ("stretch")\* | Nichts   |
+| Release 1     | 18, 20                       | None                                          | None   |
+| Release 2     | 21                           | None                                          | None   |
+| Release 3.0   | 21, 22\*, 23                 | 7 ("wheezy")\*, 8 ("jessie")                  | None   |
+| Release 3.1   | 21, 22\*, 23                 | 7 ("wheezy")\*, 8 ("jessie"), 9 ("stretch")\* | None   |
 | Release 3.2   | 23\*, 24\*, 25\*, 26, 27, 28 | 8 ("jessie"), 9 ("stretch")                   | 13, 14 |
 | Release 4.0   | 26, 27, 28, 29, 30           | 8 ("jessie"), 9 ("stretch")                   | 13, 14 |
 
@@ -101,4 +102,3 @@ We aim to announce both types of events one month in advance in order to remind 
 [extended support]: /news/2018/03/28/qubes-40/#the-past-and-the-future
 [4.1]: https://github.com/QubesOS/qubes-issues/issues?utf8=%E2%9C%93&q=is%3Aissue+milestone%3A%22Release+4.1%22+
 [Whonix]: /de/doc/whonix/
-

@@ -1,10 +1,11 @@
 ---
-layout: doc
-title: KDE
-permalink: /de/doc/kde/
 lang: de
-ref: 139
-redirect_from: /en/doc/kde/
+layout: doc
+permalink: /de/doc/kde/
+redirect_from: /de/en/doc/kde/
+ref: 141
+title: KDE
+translated: 'yes'
 ---
 
 Using KDE in dom0
@@ -40,7 +41,7 @@ You can also change your default login manager (lightdm) to the new KDE default:
     $ sudo systemctl enable sddm
 ~~~
 
- * Neustart
+ * reboot
 
 If you encounter performance issues with KDE, try switching back to LightDM.
 

@@ -1,24 +1,22 @@
 ---
-layout: doc-index
-title: Dokumentation
-permalink: /de/doc/
 lang: de
-ref: 1
+layout: doc-index
+permalink: /de/doc/
 redirect_from:
-- /en/doc/
-- /doc/UserDoc/
-- /wiki/UserDoc/
-- /doc/QubesDocs/
-- /wiki/QubesDocs/
-- /help/
-- /en/help/
-- /en/community/
-- /community/
+- /de/doc/UserDoc/
+- /de/wiki/UserDoc/
+- /de/doc/QubesDocs/
+- /de/wiki/QubesDocs/
+- /de/help/
+- /de/community/
+ref: 2
+title: Documentation
+translated: 'yes'
 ---
 
-## Einleitung
+## Introduction
 
- * [Was ist Qubes OS?](/de/intro/)
+ * [What is Qubes OS?](/de/intro/)
  * [Video Tours](/de/video-tours/)
  * [Screenshots](/de/screenshots/)
  * [User FAQ](/de/faq/#users)
@@ -44,7 +42,7 @@ Core documentation for Qubes users.
 
 ### Choosing Your Hardware
 
- * [Systemanforderungen](/de/doc/system-requirements/)
+ * [System Requirements](/de/doc/system-requirements/)
  * [Certified Hardware](/de/doc/certified-hardware/)
  * [Hardware Compatibility List (HCL)](/de/hcl/)
 
@@ -59,7 +57,7 @@ Core documentation for Qubes users.
 
 ### Common Tasks
 
- * [Erste Schritte](/de/getting-started/)
+ * [Getting Started](/de/getting-started/)
  * [Copying and Pasting Text Between Domains](/de/doc/copy-paste/)
  * [Copying and Moving Files Between Domains](/de/doc/copying-files/)
  * [Copying from (and to) Dom0](/de/doc/copy-from-dom0/)
@@ -96,9 +94,9 @@ Core documentation for Qubes users.
  * [U2F Proxy](/de/doc/u2f-proxy/)
  * [YubiKey](/de/doc/yubi-key/)
 
-### Erweiterte Einstellungen
+### Advanced Configuration
 
- * [Konfiguration Dateien](/de/doc/config-files/)
+ * [Configuration Files](/de/doc/config-files/)
  * [Storing AppVMs on Secondary Drives](/de/doc/secondary-storage/)
  * [RPC Policies](/de/doc/rpc-policy/)
  * [USB Qubes](/de/doc/usb-qubes/)
@@ -117,7 +115,7 @@ Core documentation for Qubes users.
 ### Reference Pages
 
  * [Command-line Tools](/de/doc/tools/)
- * [Glossar](/de/doc/glossary/)
+ * [Glossary](/de/doc/glossary/)
  * [Qubes Service Framework](/de/doc/qubes-service/)
  * [Command Execution in VMs (and Qubes RPC)](/de/doc/qrexec/)
  * [Deprecated Documentation](https://github.com/QubesOS/qubesos.github.io#deprecated-documentation)
@@ -127,12 +125,12 @@ Core documentation for Qubes users.
 
 Core documentation for Qubes developers and advanced users.
 
-### Allgemein
+### General
 
  * [Developer FAQ](/de/faq/#developers)
  * [Package Contributions](/de/doc/package-contributions/)
  * [Documentation Guidelines](/de/doc/doc-guidelines/)
- * [Community-Developed Feature Tracker](/de/qubes-issues/)
+ * [Community-Developed Feature Tracker](/qubes-issues/)
  * [Google Summer of Code](/de/gsoc/)
  * [Google Season of Docs](/de/gsod/)
  * [Books for Developers](/de/doc/devel-books/)
@@ -141,7 +139,7 @@ Core documentation for Qubes developers and advanced users.
 
 ### Code
 
- * [Quellcode](/de/doc/source-code/)
+ * [Source Code](/de/doc/source-code/)
  * [Software License](/de/doc/license/)
  * [Coding Guidelines](/de/doc/coding-style/)
  * [Code Signing](/de/doc/code-signing/)
@@ -162,13 +160,14 @@ Core documentation for Qubes developers and advanced users.
  * [Storage Pools](/de/doc/storage-pools/)
  * [Audio virtualization](/de/doc/audio-virtualization/)
 
-### Dienste
+### Services
 
- * [Inter-domain file copying](/de/doc/qfilecopy/) (deprecates [`qfileexchgd` * [Dynamic memory management in Qubes](/de/doc/qmemman/)
+ * [Inter-domain file copying](/de/doc/qfilecopy/) (deprecates [`qfileexchgd`
+ * [Dynamic memory management in Qubes](/de/doc/qmemman/)
  * [Implementation of DisposableVMs](/de/doc/dvm-impl/)
  * [Dom0 secure update mechanism](/de/doc/dom0-secure-updates/)
 
-### Debuggen
+### Debugging
 
  * [Profiling python code](/de/doc/profiling/)
  * [Test environment in separate machine for automatic tests](/de/doc/test-bench/)
@@ -178,9 +177,10 @@ Core documentation for Qubes developers and advanced users.
  * [Safe Remote Dom0 Terminals](/de/doc/safe-remote-ttys/)
  * [Mount LVM Image](/de/doc/mount-lvm-image/)
 
-### Aufbauen
+### Building
 
- * [Building Qubes](/de/doc/qubes-builder/) (["API" Details * [UEBERSETZT](/de/doc/development-workflow/)
+ * [Building Qubes](/de/doc/qubes-builder/) (["API" Details
+ * [Development Workflow](/de/doc/development-workflow/)
  * [Building Qubes OS ISO](/de/doc/qubes-iso-building/)
  * [Qubes Template Configuration Files](https://github.com/QubesOS/qubes-template-configs)
 
@@ -254,7 +254,7 @@ Unofficial, third-party documentation from the Qubes community and others.
  * [Dark Theme in Dom0 and DomU](/de/doc/dark-theme/)
  * [Safely Removing TemplateVM Packages (Example: Thunderbird)](/de/doc/removing-templatevm-packages/)
 
-### Fehlerbehebung
+### Troubleshooting
 
  * [Home directory is out of disk space error](/de/doc/out-of-memory/)
  * [Installing on system with new AMD GPU (missing firmware problem)](https://groups.google.com/group/qubes-devel/browse_thread/thread/e27a57b0eda62f76)
@@ -273,4 +273,3 @@ Unofficial, third-party documentation from the Qubes community and others.
  * [Building the Archlinux Template](/de/doc/building-archlinux-template/)
  * [Building the Whonix Templates](/de/doc/building-whonix-template/)
  * [How to compile kernels for dom0](https://groups.google.com/d/topic/qubes-users/yBeUJPwKwHM/discussion)
-

@@ -1,9 +1,10 @@
 ---
-layout: doc
-title: The Fedora TemplateVM
-permalink: /de/doc/templates/fedora/
 lang: de
-ref: 110
+layout: doc
+permalink: /de/doc/templates/fedora/
+ref: 112
+title: The Fedora TemplateVM
+translated: 'yes'
 ---
 
 The Fedora TemplateVM
@@ -64,4 +65,3 @@ To upgrade your Fedora TemplateVM, please consult the guide that corresponds to 
 [Update the TemplateVM]: /de/doc/software-update-vm/
 [switch-templates]: /de/doc/templates/#how-to-switch-templates
 [uninstall the old TemplateVM]: /de/doc/templates/#how-to-uninstall
-

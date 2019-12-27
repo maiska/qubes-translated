@@ -1,21 +1,21 @@
 ---
-layout: doc
-title: DisposableVM Customization
-permalink: /de/doc/disposablevm-customization/
 lang: de
-ref: 152
+layout: doc
+permalink: /de/doc/disposablevm-customization/
 redirect_from:
-- /doc/dispvm-customization/
-- /en/doc/dispvm-customization/
-- /doc/DispVMCustomization/
-- /doc/UserDoc/DispVMCustomization/
-- /wiki/UserDoc/DispVMCustomization/
+- /de/doc/dispvm-customization/
+- /de/doc/DispVMCustomization/
+- /de/doc/UserDoc/DispVMCustomization/
+- /de/wiki/UserDoc/DispVMCustomization/
+ref: 154
+title: DisposableVM Customization
+translated: 'yes'
 ---
 
 # DisposableVM Customization
 
 
-## Einleitung
+## Introduction
 
 A DisposableVM (previously known as a "DispVM") in can be based on any TemplateBasedVM.
 You can also choose to use different DisposableVM Templates for different DisposableVMs.
@@ -28,7 +28,7 @@ Additionally, if you want to have menu entries for starting applications in Disp
     [user@dom0 ~]$ qvm-features fedora-26-dvm appmenus-dispvm 1
 
 
-## Sicherheit
+## Security
 
 If a DisposableVM Template becomes compromised, then any DisposableVM based on that DisposableVM Template could be compromised.
 Therefore, you should not make any risky customizations (e.g., installing untrusted browser plugins) in important DisposableVM Templates.
@@ -149,7 +149,7 @@ Functionality is not limited, users can:
 Using DisposableVMs in this manner is ideal for untrusted qubes which require persistent PCI devices, such as USB VMs and NetVMs.
 
 >_**Note:**_ Users who want customized VPN or firewall rule sets must create a separate DisposableVM Template for use by each DisposableVM. If DisposableVM Template customization is not needed, then a single DisposableVM Template is used as a template for all DisposableVMs.
-
+ 
 
 ### Create and configure the DisposableVM Template on which the DisposableVM will be based
 
@@ -160,7 +160,7 @@ Using DisposableVMs in this manner is ideal for untrusted qubes which require pe
 2. _(optional)_ In the DisposableVM Template, add custom firewall rule sets, Qubes VPN scripts etc
 
     Firewall rules sets and Qubes VPN scripts can be added just like any other VM   
-
+    
 3. Set the DisposableVM Template as template for DisposableVMs
 
        [user@dom0 ~]$ qvm-prefs <DisposableVM-Template-Name> template_for_dispvms true
@@ -195,7 +195,7 @@ Using DisposableVMs in this manner is ideal for untrusted qubes which require pe
 7. _(recommended)_ Set `disp-sys-net` to start automatically when Qubes boots
 
        [user@dom0 ~]$ qvm-prefs disp-sys-net autostart true
-
+     
 8. _(optional)_ Set `disp-sys-net` as the dom0 time source
 
        [user@dom0 ~]$ qubes-prefs clockvm disp-sys-net
@@ -247,13 +247,13 @@ Using DisposableVMs in this manner is ideal for untrusted qubes which require pe
        [user@dom0 ~]$ qvm-pci
 
 5. Attach the USB controller to the `disp-sys-usb`
-
+  
      >_**Note:**_ Most of the commonly used USB controllers (all Intel integrated controllers) require the `-o no-strict-reset=True` option to be set. Instructions detailing how this option is set can be found [here](/de/doc/pci-devices/#no-strict-reset).
 
        [user@dom0 ~]$ qvm-pci attach --persistent disp-sys-usb <backined>:<bdf>
-
+    
 6. _(optional)_ Set `disp-sys-usb` to auto-start when Qubes boots
-
+  
        [user@dom0 ~]$ qvm-prefs disp-sys-usb autostart true
 
 7. Users should now follow instructions on [How to hide USB controllers from dom0](/de/doc/usb-qubes/#how-to-hide-all-usb-controllers-from-dom0)
@@ -277,7 +277,7 @@ Prior to starting the new VMs, users should ensure that no other VMs such as the
     [user@dom0~]$ qvm-pci detach <vm_name> <backend>:<bdf>
 
 
-### Fehlerbehebung
+### Troubleshooting
 
 The `disp-sys-usb` VM does not start
 
@@ -301,8 +301,7 @@ You can then delete the DisposableVM Template:
     [user@dom0 ~]$ qvm-remove custom-disposablevm-template
     This will completely remove the selected VM(s)
       custom-disposablevm-template
-
+      
 If you still encounter the issue, you may have forgot to clean an entry. Looking at the system logs will help you
 
     [user@dom0 ~]$ journalctl | tail
-

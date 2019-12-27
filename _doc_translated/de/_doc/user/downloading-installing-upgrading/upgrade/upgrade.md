@@ -1,9 +1,10 @@
 ---
-layout: doc
-title: Upgrade Guides
-permalink: /de/doc/upgrade/
 lang: de
-ref: 130
+layout: doc
+permalink: /de/doc/upgrade/
+ref: 132
+title: Upgrade Guides
+translated: 'yes'
 ---
 
 Qubes OS Upgrade Guides
@@ -17,4 +18,3 @@ Qubes OS Upgrade Guides
  * [Upgrading from R3.0 to R3.1](/de/doc/upgrade-to-r3.1/)
  * [Upgrading from R3.1 to R3.2](/de/doc/upgrade-to-r3.2/)
  * [Upgrading from R3.2 to R4.0](/de/doc/upgrade-to-r4.0/)
-

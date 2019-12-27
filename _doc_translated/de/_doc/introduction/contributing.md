@@ -1,13 +1,13 @@
 ---
-layout: doc
-title: Contributing to the Qubes OS Project
-permalink: /de/doc/contributing/
 lang: de
-ref: 13
+layout: doc
+permalink: /de/doc/contributing/
 redirect_from:
-- /en/doc/contributing/
-- /doc/ContributingHowto/
-- /wiki/ContributingHowto/
+- /de/doc/ContributingHowto/
+- /de/wiki/ContributingHowto/
+ref: 15
+title: Contributing to the Qubes OS Project
+translated: 'yes'
 ---
 
 How to Contribute to the Qubes OS Project
@@ -49,8 +49,8 @@ some common issue labels:
 * [Help wanted](https://github.com/QubesOS/qubes-issues/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22&utf8=%E2%9C%93)
 * [UX and usability](https://github.com/QubesOS/qubes-issues/issues?q=is%3Aissue+is%3Aopen+label%3AUX)
 * [Windows tools](https://github.com/QubesOS/qubes-issues/issues?q=is%3Aissue+is%3Aopen+label%3A%22C%3A+windows+tools%22)
-* [Dokumentation](https://github.com/QubesOS/qubes-issues/issues?q=is%3Aissue+is%3Aopen+label%3A%22C%3A+doc%22)
-* [Privatsphäre](https://github.com/QubesOS/qubes-issues/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3A%22privacy%22%20)
+* [Documentation](https://github.com/QubesOS/qubes-issues/issues?q=is%3Aissue+is%3Aopen+label%3A%22C%3A+doc%22)
+* [Privacy](https://github.com/QubesOS/qubes-issues/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3A%22privacy%22%20)
 * [Debian](https://github.com/QubesOS/qubes-issues/issues?q=is%3Aissue+is%3Aopen+label%3A%22C%3A+Debian%22)
 
 Before you engage in an activity that will take you a significant amount of
@@ -60,7 +60,7 @@ details, we'll add you to our [Community-Developed Feature Tracker]. We'll then
 be grateful to [receive your patch][patch].
 
 
-[Quellcode]: /de/doc/source-code/
+[source code]: /de/doc/source-code/
 [Report security issues]: /de/security/
 [patch]: /de/doc/source-code/#how-to-send-patches
 [Contribute packages]: /de/doc/package-contributions
@@ -71,7 +71,7 @@ be grateful to [receive your patch][patch].
 [artwork]: https://github.com/QubesOS/qubes-artwork
 [Write and edit the documentation]: /de/doc/doc-guidelines
 [mailing lists]: /de/support/
-[Spenden]: /de/donate/
+[Donate]: /de/donate/
 [Qubes partner]: /de/partners/
 [Twitter]: https://twitter.com/QubesOS
 [Reddit]: https://www.reddit.com/r/Qubes/
@@ -79,6 +79,5 @@ be grateful to [receive your patch][patch].
 [LinkedIn]: https://www.linkedin.com/company/qubes-os/
 [GitHub issues]: https://github.com/QubesOS/qubes-issues/issues
 [qubes-devel]: /de/support/#qubes-devel
-[Community-Developed Feature Tracker]: /de/qubes-issues/
+[Community-Developed Feature Tracker]: /qubes-issues/
 [Qubes download mirror]: /de/downloads/mirrors/
-

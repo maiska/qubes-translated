@@ -1,13 +1,13 @@
 ---
-layout: doc
-title: How to Install an Nvidia Driver
-permalink: /de/doc/install-nvidia-driver/
 lang: de
-ref: 45
+layout: doc
+permalink: /de/doc/install-nvidia-driver/
 redirect_from:
-- /en/doc/install-nvidia-driver/
-- /doc/InstallNvidiaDriver/
-- /wiki/InstallNvidiaDriver/
+- /de/doc/InstallNvidiaDriver/
+- /de/wiki/InstallNvidiaDriver/
+ref: 47
+title: How to Install an Nvidia Driver
+translated: 'yes'
 ---
 
 # Nvidia proprietary driver installation
@@ -152,7 +152,7 @@ Specifically, the notes below are aimed to help when the GRUB menu shows up fine
    * Set the root password (this will also enable the root account login)
    * Double-check that `/boot/grub2/grub.cfg` contains a `nomodeset` kernel parameter.
    * Exit out of the chroot environment (`exit` or CTRL-D)
-6. Neustart
+6. Reboot
 
 *Note* If the kernel parameters do *not* include `quiet` and `rhgb`, the kernel messages can easily obscure the LUKS passphrase prompt. Additionally, each character entered will cause the LUKS passphrase prompt to repeat onto next line. Both of these are cosmetic. The trade-off between kernel messages and the easy-to-spot LUKS passphrase prompt is left as an exercise to the user.
 

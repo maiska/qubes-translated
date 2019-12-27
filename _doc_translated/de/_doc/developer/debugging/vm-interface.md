@@ -1,14 +1,14 @@
 ---
-layout: doc
-title: VM Configuration Interface
-permalink: /de/doc/vm-interface/
 lang: de
-ref: 160
+layout: doc
+permalink: /de/doc/vm-interface/
 redirect_from:
-- /en/doc/vm-interface/
-- /doc/VMInterface/
-- /doc/SystemDoc/VMInterface/
-- /wiki/SystemDoc/VMInterface/
+- /de/doc/VMInterface/
+- /de/doc/SystemDoc/VMInterface/
+- /de/wiki/SystemDoc/VMInterface/
+ref: 165
+title: VM Configuration Interface
+translated: 'yes'
 ---
 
 VM Configuration Interface

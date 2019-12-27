@@ -1,14 +1,14 @@
 ---
-layout: Standard
-title: Erste Schritte
-permalink: /de/getting-started/
 lang: de
-ref: 95
+layout: default
+permalink: /de/getting-started/
 redirect_from:
-- /doc/getting-started/
-- /en/doc/getting-started/
-- /doc/GettingStarted/
-- /wiki/GettingStarted/
+- /de/doc/getting-started/
+- /de/doc/GettingStarted/
+- /de/wiki/GettingStarted/
+ref: 97
+title: Get Started
+translated: 'yes'
 ---
 
 <a name="already-installed"></a>After [installing Qubes](/de/doc/installation-guide/), let's cover some basic concepts.
@@ -88,6 +88,7 @@ Each qube has its own menu directory under the scheme **Domain: \<name\>**.
 After navigating into one of these directories, simply click on the application you'd like to start:
 
 ![r2b1-appsmenu-1.png](/de/attachment/wiki/GettingStarted/r2b1-appsmenu-1.png) ![r2b1-appsmenu-3.png
+
 By default, each qube's menu contains only a few shortcuts. 
 If you'd like to add more, simply click **Add more shortcuts...**, select the desired applications, and click **OK**. 
 You can also add shortcuts manually. 
@@ -103,7 +104,7 @@ To start apps from the console in dom0, type:
 e.g.:
 
     qvm-run -a untrusted firefox
-
+    
 The -a parameter will start the qube if it is not already running.
 
 Adding, Removing, and Listing qubes
@@ -186,22 +187,22 @@ More details can be found [here](/de/doc/full-screen-mode/).
 <div class="row">
   <div class="col-lg-4 col-md-4">
     <h2>Compatible Hardware</h2>
-    <p>Ready to install Qubes? Make sure your hardware is compatible, as Qubes cannot run on every type of computer. Also, check out <a href="/doc/certified-laptops/">Qubes-certified Laptops</a>.</p>
-    <a href="/hcl/" class="btn btn-primary">
+    <p>Ready to install Qubes? Make sure your hardware is compatible, as Qubes cannot run on every type of computer. Also, check out <a href="/de/doc/certified-laptops/">Qubes-certified Laptops</a>.</p>
+    <a href="/de/hcl/" class="btn btn-primary">
       <i class="fa fa-laptop"></i> Hardware Compatibility List
     </a>
   </div>
   <div class="col-lg-4 col-md-4">
     <h2>Downloads</h2>
     <p>Download an ISO, learn how to verify its authenticity and integrity, and follow our guides to install Qubes. Looking for the source code? You'll find it on <a href="https://github.com/QubesOS">GitHub</a>.</p>
-    <a href="/downloads/" class="btn btn-primary">
+    <a href="/de/downloads/" class="btn btn-primary">
       <i class="fa fa-download"></i> Downloads
     </a>
   </div>
   <div class="col-lg-4 col-md-4">
     <h2>Documentation</h2>
-    <p>Peruse our extensive library of documentation for users and developers of Qubes. You can even help us <a href="/doc/doc-guidelines/">improve</a> it!</p>
-    <a href="/doc/" class="btn btn-primary">
+    <p>Peruse our extensive library of documentation for users and developers of Qubes. You can even help us <a href="/de/doc/doc-guidelines/">improve</a> it!</p>
+    <a href="/de/doc/" class="btn btn-primary">
       <i class="fa fa-book"></i> Documentation
     </a>
   </div>

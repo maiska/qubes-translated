@@ -1,9 +1,10 @@
 ---
-layout: doc
-title: The Qubes U2F Proxy
-permalink: /de/doc/u2f-proxy/
 lang: de
-ref: 137
+layout: doc
+permalink: /de/doc/u2f-proxy/
+ref: 139
+title: The Qubes U2F Proxy
+translated: 'yes'
 ---
 
 # The Qubes U2F Proxy
@@ -75,6 +76,7 @@ leaving all unnecessary data out, so it won't become a vector of attack. This is
 depicted in the diagram below (click for full size).
 
 [![Qubes U2F Proxy diagram](/de/attachment/wiki/posts/u2f.svg)
+
 The Qubes U2F Proxy has two parts: the frontend and the backend. The frontend
 runs in the same qube as the browser and presents a fake USB-like HID device
 using `uhid`. The backend runs in `sys-usb` and behaves like a browser. This is
@@ -206,4 +208,3 @@ and Chromium do not require any special browser extensions.
 [report any bugs you encounter]: /de/doc/reporting-bugs/
 [ff-u2f-addon]: https://addons.mozilla.org/en-US/firefox/addon/u2f-support-add-on/?src=api
 [qubes-devel]: /de/support/#qubes-devel
-

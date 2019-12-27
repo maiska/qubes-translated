@@ -1,13 +1,13 @@
 ---
-layout: doc
-title: Mutt
-permalink: /de/doc/mutt/
 lang: de
-ref: 24
+layout: doc
+permalink: /de/doc/mutt/
 redirect_from:
-- /en/doc/mutt/
-- /doc/Mutt/
-- /wiki/Mutt/
+- /de/doc/Mutt/
+- /de/wiki/Mutt/
+ref: 26
+title: Mutt
+translated: 'yes'
 ---
 
 Mutt

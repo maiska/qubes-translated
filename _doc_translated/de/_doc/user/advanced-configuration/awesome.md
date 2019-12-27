@@ -1,12 +1,12 @@
 ---
-layout: doc
-title: awesome
-permalink: /de/doc/awesome/
 lang: de
-ref: 144
+layout: doc
+permalink: /de/doc/awesome/
 redirect_from:
-- /en/doc/awesome/
-- /doc/awesome/
+- /de/doc/awesome/
+ref: 146
+title: awesome
+translated: 'yes'
 ---
 
 # Using awesome in dom0
@@ -22,10 +22,10 @@ redirect_from:
 awesome can be installed with the standard dom0 installation mechanisms.
 
     $ sudo qubes-dom0-update awesome
-
+    
 That's it. After logging out, you can select awesome in the login manager.
 
-## Entwicklung
+## Development
 
 To [contribute code](/de/doc/contributing/) you may clone the awesome repository as follows:
 
@@ -186,4 +186,3 @@ client.disconnect_signal("request::tag", ewmh.tag)
 ```
 
 The signal names may change across awesome versions.
-

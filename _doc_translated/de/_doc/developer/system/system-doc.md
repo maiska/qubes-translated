@@ -1,14 +1,13 @@
 ---
-layout: doc
-title: System Documentation
-permalink: /de/doc/system-doc/
 lang: de
-ref: 164
+layout: doc
+permalink: /de/doc/system-doc/
 redirect_from:
-- /en/doc/system-doc/
-- /doc/SystemDoc/
-- /wiki/SystemDoc/
+- /de/doc/SystemDoc/
+- /de/wiki/SystemDoc/
 redirect_to:
-- "/doc/#developer-documentation"
+- /doc/#developer-documentation
+ref: 169
+title: System Documentation
+translated: 'yes'
 ---
-

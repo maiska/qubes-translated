@@ -1,9 +1,10 @@
 ---
-layout: doc
-title: Debian Minimal Template
-permalink: /de/doc/templates/debian-minimal/
 lang: de
-ref: 112
+layout: doc
+permalink: /de/doc/templates/debian-minimal/
+ref: 114
+title: Debian Minimal Template
+translated: 'yes'
 ---
 
 Debian - minimal
@@ -80,7 +81,7 @@ which should give you output that includes the NOPASSWD keyword.
 
 ### Package table for Qubes 4.0
 
-Use case | Beschreibung | Required steps
+Use case | Description | Required steps
 --- | --- | ---
 **Standard utilities** | If you need the commonly used utilities | Install the following packages: `pciutils` `vim-minimal` `less` `psmisc` `gnome-keyring`
 **Networking** | If you want networking | Install qubes-core-agent-networking
@@ -91,6 +92,7 @@ Use case | Beschreibung | Required steps
 **Network utilities** | If you need utilities for debugging and analyzing network connections | Install the following packages: `tcpdump` `telnet` `nmap` `nmap-ncat`
 **USB** | If you want to use this template as the basis for a [USB](/de/doc/usb/) qube such as `sys-usb` | Install `qubes-usb-proxy`. To use USB mouse or keyboard install `qubes-input-proxy-sender`.
 **VPN** | You can use this template as basis for a [VPN](/de/doc/vpn/) qube | You may need to install network-manager VPN packages, depending on the VPN technology you'll be using. After creating a machine based on this template, follow the [VPN howto
+ 
 
 In Qubes 4.0, additional packages from the `qubes-core-agent` suite may be needed to make the customized minimal template work properly. 
 These packages are:

@@ -1,23 +1,23 @@
 ---
-layout: doc
-title: Whonix for Privacy & Anonymity
-permalink: /de/doc/whonix/
 lang: de
-ref: 62
+layout: doc
+permalink: /de/doc/whonix/
 redirect_from:
-- /doc/privacy/whonix/
-- /doc/templates/whonix/
-- /en/doc/templates/whonix/
-- /doc/Templates/Whonix/
-- /wiki/Templates/Whonix/
-- /doc/whonix/customize/
-- /doc/privacy/customizing-whonix/
-- /doc/whonix/install/
-- /doc/privacy/install-whonix/
-- /doc/whonix/uninstall/
-- /doc/privacy/uninstall-whonix/
-- /doc/whonix/update/
-- /doc/privacy/updating-whonix/
+- /de/doc/privacy/whonix/
+- /de/doc/templates/whonix/
+- /de/doc/Templates/Whonix/
+- /de/wiki/Templates/Whonix/
+- /de/doc/whonix/customize/
+- /de/doc/privacy/customizing-whonix/
+- /de/doc/whonix/install/
+- /de/doc/privacy/install-whonix/
+- /de/doc/whonix/uninstall/
+- /de/doc/privacy/uninstall-whonix/
+- /de/doc/whonix/update/
+- /de/doc/privacy/updating-whonix/
+ref: 64
+title: Whonix for Privacy & Anonymity
+translated: 'yes'
 ---
 
 Whonix for Privacy & Anonymity
@@ -57,4 +57,3 @@ Note: To install Whonix in Qubes, you must [install Qubes](/de/doc/installation-
 
 *  [Whonix Support](https://www.whonix.org/wiki/Support) - General Whonix, Debian, Tor, etc... related issues
 *  [Whonix Qubes Forum](https://forums.whonix.org/c/qubes) - Whonix specific issues
-

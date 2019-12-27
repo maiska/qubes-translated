@@ -1,9 +1,10 @@
 ---
-layout: doc
-title: UEFI Troubleshooting
-permalink: /de/doc/uefi-troubleshooting/
 lang: de
-ref: 143
+layout: doc
+permalink: /de/doc/uefi-troubleshooting/
+ref: 145
+title: UEFI Troubleshooting
+translated: 'yes'
 ---
 
 Troubleshooting UEFI related problems
@@ -37,7 +38,7 @@ There is some [common bug in UEFI implementation](http://xen.markmail.org/messag
 03. Perform installation normally, but don't reboot the system at the end yet.
 04. Go to `tty2` (Ctrl-Alt-F2).
 05. Enable `/mapbs /noexitboot` on just installed system. This step differs between Qubes releases:
-
+   
     **For Qubes 3.1:**
 
 06. Execute `mount | grep boot/efi` and note device name (first column). It should be something like `/dev/sda1`.
@@ -62,7 +63,7 @@ There is some [common bug in UEFI implementation](http://xen.markmail.org/messag
     **For Qubes 3.2 or later:**
 
 11. Edit `/mnt/sysimage/boot/efi/EFI/qubes/xen.cfg` (you can use `vi` editor) and add to every kernel section:
-
+            
         mapbs=1
         noexitboot=1
 
@@ -87,9 +88,9 @@ Some Dell systems and probably others have [another bug in UEFI firmware](http:/
 5. Execute:
 
         sed -i -e 's/^options=.*/\0 efi=attr=uc/' /mnt/sysimage/boot/efi/qubes/xen.cfg
-
+        
    or if you're installing 3.2 execute:
-
+   
         sed -i -e 's/^options=.*/\0 efi=attr=uc/' /mnt/sysimage/boot/efi/EFI/qubes/xen.cfg
 
 6. Now you can reboot the system by issuing `reboot` command.

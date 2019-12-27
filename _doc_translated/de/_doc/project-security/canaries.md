@@ -1,10 +1,11 @@
 ---
-layout: doc
-title: Canaries
-permalink: /de/security/canaries/
 lang: de
-ref: 5
-redirect_from: /doc/canaries/
+layout: doc
+permalink: /de/security/canaries/
+redirect_from: /de/doc/canaries/
+ref: 7
+title: Canaries
+translated: 'yes'
 ---
 
 Qubes Canaries
@@ -26,4 +27,3 @@ Qubes Canaries are published through the [Qubes Security Pack](/de/security/pack
   </tr>
 {% endfor %}
 </table>
-

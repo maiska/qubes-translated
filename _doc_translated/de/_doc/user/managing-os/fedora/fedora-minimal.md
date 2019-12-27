@@ -1,14 +1,14 @@
 ---
-layout: doc
-title: The Fedora Minimal TemplateVM
-permalink: /de/doc/templates/fedora-minimal/
 lang: de
-ref: 108
+layout: doc
+permalink: /de/doc/templates/fedora-minimal/
 redirect_from:
-- /doc/fedora-minimal/
-- /en/doc/templates/fedora-minimal/
-- /doc/Templates/FedoraMinimal/
-- /wiki/Templates/FedoraMinimal/
+- /de/doc/fedora-minimal/
+- /de/doc/Templates/FedoraMinimal/
+- /de/wiki/Templates/FedoraMinimal/
+ref: 110
+title: The Fedora Minimal TemplateVM
+translated: 'yes'
 ---
 
 The Fedora Minimal TemplateVM
@@ -133,4 +133,3 @@ To access the `journald` log, use the `journalctl` command.
 [doc-guidelines]: /de/doc/doc-guidelines/
 [pref-default]: /de/faq/#could-you-please-make-my-preference-the-default
 [customization]: /de/doc/fedora-minimal-template-customization/
-

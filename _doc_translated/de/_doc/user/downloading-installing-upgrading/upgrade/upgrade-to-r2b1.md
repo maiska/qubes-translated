@@ -1,13 +1,13 @@
 ---
-layout: doc
-title: Upgrading to R2B1
-permalink: /de/doc/upgrade-to-r2b1/
 lang: de
-ref: 122
+layout: doc
+permalink: /de/doc/upgrade-to-r2b1/
 redirect_from:
-- /en/doc/upgrade-to-r2b1/
-- /doc/UpgradeToR2B1/
-- /wiki/UpgradeToR2B1/
+- /de/doc/UpgradeToR2B1/
+- /de/wiki/UpgradeToR2B1/
+ref: 124
+title: Upgrading to R2B1
+translated: 'yes'
 ---
 
 Upgrading Qubes R1 to R2 Beta 1
@@ -76,4 +76,3 @@ Be sure to do steps described in this section after *all* your template and stan
     ~~~
 
 4.  Reboot your system. Please note that if you use Anti Evil Maid, then it won't be able to unseal the passphrase this time, because the Xen, kernel, and initramfs binaries have changed. Once the system boots up again, you could reseal your Anti Evil Maid's passphrase to the new configuration. Please consult Anti Evil Maid documentation for explanation on how to do that.
-

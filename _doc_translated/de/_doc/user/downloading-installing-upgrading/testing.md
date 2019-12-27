@@ -1,9 +1,10 @@
 ---
-layout: doc
-title: Testing New Releases and Updates
-permalink: /de/doc/testing/
 lang: de
-ref: 119
+layout: doc
+permalink: /de/doc/testing/
+ref: 121
+title: Testing New Releases and Updates
+translated: 'yes'
 ---
 
 Testing New Releases and Updates
@@ -40,7 +41,7 @@ We welcome any kind of feedback on any package in any testing repository.
 Even a simple <span class="fa fa-thumbs-up" title="Thumbs Up"></span> or <span class="fa fa-thumbs-down" title="Thumbs Down"></span> on the package's associated issue would help us to decide whether the package is ready to be migrated to a stable repository.
 If you [report a bug] in a package that is in a testing repository, please reference the appropriate issue in [updates-status].
 
-[beitragen]: /de/doc/contributing/
+[contribute]: /de/doc/contributing/
 [qubes-builder]: /de/doc/qubes-builder/
 [Version Scheme]: /de/doc/version-scheme/
 [Release Checklist]: /de/doc/releases/todo/
@@ -49,4 +50,3 @@ If you [report a bug] in a package that is in a testing repository, please refer
 [automated build process]: https://github.com/QubesOS/qubes-infrastructure/blob/master/README.md
 [updates-status]: https://github.com/QubesOS/updates-status/issues
 [report a bug]: /de/doc/reporting-bugs/
-

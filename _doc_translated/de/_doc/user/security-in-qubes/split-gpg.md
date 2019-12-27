@@ -1,19 +1,18 @@
 ---
-layout: doc
-title: Split GPG
-permalink: /de/doc/split-gpg/
 lang: de
-ref: 134
+layout: doc
+permalink: /de/doc/split-gpg/
 redirect_from:
-- /en/doc/split-gpg/
-- /doc/SplitGpg/
-- /doc/UserDoc/SplitGpg/
-- /wiki/UserDoc/SplitGpg/
-- /doc/open-pgp/
-- /en/doc/open-pgp/
-- /doc/OpenPGP/
-- /doc/UserDoc/OpenPGP/
-- /wiki/UserDoc/OpenPGP/
+- /de/doc/SplitGpg/
+- /de/doc/UserDoc/SplitGpg/
+- /de/wiki/UserDoc/SplitGpg/
+- /de/doc/open-pgp/
+- /de/doc/OpenPGP/
+- /de/doc/UserDoc/OpenPGP/
+- /de/wiki/UserDoc/OpenPGP/
+ref: 136
+title: Split GPG
+translated: 'yes'
 ---
 
 # Qubes Split GPG #
@@ -92,12 +91,12 @@ answer][se-pinentry] for more information.)
 In dom0, make sure the `qubes-gpg-split-dom0` package is installed.
 
     [user@dom0 ~]$ sudo qubes-dom0-update qubes-gpg-split-dom0
-
+    
 If using templates based on Debian or Whonix, make sure you have the `qubes-gpg-split`
 package installed.
 
     [user@debian-8 ~]$ sudo apt install qubes-gpg-split
-
+    
 For Fedora.
 
     [user@fedora-25 ~]$ sudo dnf install qubes-gpg-split
@@ -127,8 +126,8 @@ You can change this via the `QUBES_GPG_AUTOACCEPT` variable.
 You can override it e.g. in `~/.profile`:
 
     [user@work-gpg ~]$ echo "export QUBES_GPG_AUTOACCEPT=86400" >> ~/.profile
-
-
+    
+    
 Please note that at one time, this parameter was set in ~/.bash_profile.
 This will no longer work.
 If you have the parameter set in ~/.bash_profile you *must* update your configuration.
@@ -150,7 +149,7 @@ domain name and use `qubes-gpg-client` in place of `gpg`, e.g.:
     uid                  Qubes OS Security Team <security@qubes-os.org>
     ssb   4096R/30498E2A 2012-11-15
     (...)
-
+    
     [user@work ~]$ qubes-gpg-client secret_message.txt.asc 
     (...)
 
@@ -405,7 +404,7 @@ exercise caution and use your good judgment.)
 [intro]: #what-is-split-gpg-and-why-should-i-use-it-instead-of-the-standard-gpg
 [se-pinentry]: https://unix.stackexchange.com/a/379373
 [​subkeys]: https://wiki.debian.org/Subkeys
-[kopiert]: /de/doc/copying-files#on-inter-qube-file-copy-security
+[copied]: /de/doc/copying-files#on-inter-qube-file-copy-security
 [pasted]: /de/doc/copy-paste#on-copypaste-security
 [​MUA]: https://en.wikipedia.org/wiki/Mail_user_agent
 [covert channels]: /de/doc/data-leaks
@@ -415,4 +414,3 @@ exercise caution and use your good judgment.)
 [luck]: https://gist.github.com/abeluck/3383449
 [apapadop]: https://apapadop.wordpress.com/2013/08/21/using-gnupg-with-qubesos/
 [current-limitations]: #current-limitations
-

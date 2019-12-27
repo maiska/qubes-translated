@@ -1,11 +1,11 @@
 ---
-layout: doc
-title: Qubes R2.0 Release Notes
-permalink: /de/doc/releases/2.0/release-notes/
 lang: de
-ref: 196
-redirect_from:
-- /en/doc/releases/2.0/release-notes/
+layout: doc
+permalink: /de/doc/releases/2.0/release-notes/
+redirect_from: []
+ref: 201
+title: Qubes R2.0 Release Notes
+translated: 'yes'
 ---
 
 Qubes R2.0 Release Notes
@@ -63,6 +63,7 @@ Upgrading
 ### From Qubes R2 rc1
 
 Upgrading from Qubes R2 rc1 should be a simple matter of installing updates for [dom0](/de/doc/software-update-dom0/) and [VMs
+
 ### From Qubes R2 beta 3 and older
 
 The easiest and safest way to upgrade to Qubes R2 (especially from older releases) is to install it from scratch and use [qubes backup and restore tools](/de/doc/backup-restore/) for migrating of all of the user VMs.

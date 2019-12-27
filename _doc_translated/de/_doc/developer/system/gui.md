@@ -1,14 +1,13 @@
 ---
-layout: doc
-title: GUI
-permalink: /de/doc/gui/
 lang: de
-ref: 167
+layout: doc
+permalink: /de/doc/gui/
 redirect_from:
-- /en/doc/gui/
-- /en/doc/gui-docs/
-- /doc/GUIdocs/
-- /wiki/GUIdocs/
+- /de/doc/GUIdocs/
+- /de/wiki/GUIdocs/
+ref: 172
+title: GUI
+translated: 'yes'
 ---
 
 Qubes GUI protocol

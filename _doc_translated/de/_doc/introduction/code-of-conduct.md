@@ -1,12 +1,13 @@
 ---
-layout: Standard
-title: Code of Conduct
-permalink: /de/code-of-conduct/
 lang: de
-ref: 19
+layout: default
+permalink: /de/code-of-conduct/
+ref: 21
+title: Code of Conduct
+translated: 'yes'
 ---
 
-## Einleitung
+## Introduction
 
 This Code of Conduct is a collaborative, evolving document that attempts to transparently set out a public set of standards regarding appropriate conduct in the Qubes OS Project.
 It is *not* intended to be a statement or endorsement, whether implicit or explicit, of any particular political or philosophical attitude, belief, or way of living.
@@ -43,7 +44,7 @@ Examples of unacceptable behavior by participants include:
 
 Project maintainers are responsible for clarifying the standards of acceptable behavior and are expected to take appropriate and fair corrective action in response to any instances of unacceptable behavior. This action can include removing, editing, or rejecting comments, commits, code, wiki edits, issues, and other contributions, or to ban temporarily or permanently any contributor for other behaviors that they deem inappropriate, threatening, offensive, or harmful.
 
-## Umfang
+## Scope
 
 This Code of Conduct applies both within project spaces and in public spaces when an individual is representing the project or its community. Examples of representing a project or community include using an official project e-mail address, posting via an official social media account, or acting as an appointed representative at an online or offline event. Representation of a project may be further defined and clarified by project maintainers.
 
@@ -70,4 +71,3 @@ The initial published version of this Code of Conduct was adapted from the [Cont
 [mailing list discussion guidelines]: /de/support/#discussion-list-guidelines
 [Contributor Covenant, version 1.4]: http://contributor-covenant.org/version/1/4
 [Rust Code of Conduct]: https://www.rust-lang.org/en-US/conduct.html
-

@@ -1,11 +1,12 @@
 ---
-layout: doc
-title: How to Reinstall a TemplateVM
-permalink: /de/doc/reinstall-template/
 lang: de
-ref: 103
+layout: doc
+permalink: /de/doc/reinstall-template/
 redirect_from:
-- /doc/whonix/reinstall/
+- /de/doc/whonix/reinstall/
+ref: 105
+title: How to Reinstall a TemplateVM
+translated: 'yes'
 ---
 
 How to Reinstall a TemplateVM
@@ -78,12 +79,12 @@ If you want to reinstall more than one TemplateVM, repeat these instructions for
 
 5. If you temporarily changed all VMs based on the target TemplateVM to the clone template in step 3, change them back to the new target TemplateVM now.
    If you instead removed all VMs based on the old target TemplateVM, you can recreate your desired VMs from the newly reinstalled target TemplateVM now.
-
+   
 6. Delete the cloned template.
    You can do this in Qubes Manager by right-clicking on the VM and clicking **Remove VM**, or you can use the
    command `qvm-remove <vm-name>` in dom0.
-
-
+   
+   
 Manual Reinstallation Method (R3.0 or earlier)
 ----------------------------
 
@@ -135,4 +136,3 @@ If you want to reinstall more than one TemplateVM, repeat these instructions for
    If you instead removed all VMs based on the old target TemplateVM, you can recreate your desired VMs from the newly reinstalled target TemplateVM now.
 
 [TemplateVM]: /de/doc/templates/
-

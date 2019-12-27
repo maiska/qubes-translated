@@ -1,24 +1,25 @@
 ---
-layout: doc
-title: Entwicklungsprozess
-permalink: /de/doc/development-workflow/
 lang: de
-ref: 201
+layout: doc
+permalink: /de/doc/development-workflow/
 redirect_from:
-- /en/doc/development-workflow/
-- /doc/DevelopmentWorkflow/
-- /wiki/DevelopmentWorkflow/
+- /de/doc/DevelopmentWorkflow/
+- /de/wiki/DevelopmentWorkflow/
+ref: 206
+title: Development Workflow
+translated: 'yes'
 ---
 
-Entwicklungsprozess
+Development Workflow
 ====================
 
-Prozess um Qubes OS zu entwickeln
+A workflow for developing Qubes OS+
 
 First things first, setup [QubesBuilder](/de/doc/qubes-builder/). This guide
 assumes you're using qubes-builder to build Qubes.
 
-Repos und einchecken vom Code
+Repositories and committing Code
+--------------------------------
 
 Qubes is split into a bunch of git repos. This are all contained in the
 `qubes-src` directory under qubes-builder. Subdirectories there are separate

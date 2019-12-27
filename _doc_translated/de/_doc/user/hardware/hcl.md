@@ -1,15 +1,15 @@
 ---
-layout: doc
-title: Hardware Compatibility List (HCL)
-permalink: /de/doc/hcl/
 lang: de
-ref: 75
+layout: doc
+permalink: /de/doc/hcl/
 redirect_from:
-- /en/doc/hcl/
-- /doc/HCL/
-- /wiki/HCL/
-- /wiki/HCLR1/
-- /wiki/HCL-R2B2/
+- /de/doc/HCL/
+- /de/wiki/HCL/
+- /de/wiki/HCLR1/
+- /de/wiki/HCL-R2B2/
+ref: 77
+title: Hardware Compatibility List (HCL)
+translated: 'yes'
 ---
 
 Hardware Compatibility List (HCL) for All Qubes OS Releases

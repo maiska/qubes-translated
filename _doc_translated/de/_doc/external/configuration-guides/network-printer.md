@@ -1,13 +1,13 @@
 ---
-layout: doc
-title: Network Printer
-permalink: /de/doc/network-printer/
 lang: de
-ref: 34
+layout: doc
+permalink: /de/doc/network-printer/
 redirect_from:
-- /en/doc/network-printer/
-- /doc/NetworkPrinter/
-- /wiki/NetworkPrinter/
+- /de/doc/NetworkPrinter/
+- /de/wiki/NetworkPrinter/
+ref: 36
+title: Network Printer
+translated: 'yes'
 ---
 
 Configuring a network printer for Qubes AppVMs
@@ -54,4 +54,3 @@ Steps to configure a network printer in a template VM
   If it doesn't then probably the AppVM doesn't have networking access to the printer -- in that case adjust the firewall settings for that AppVM in Qubes Manager. 
   Also, make sure that the AppVM gets restarted after the template was shutdown.
 5.  Alternatively if you do not want to modify the firewall rules of the template VM (that have security scope) you can simply shut down the template VM without trying to print the test page (which will not work), start or restart an AppVM based on the template and test printing there.
-

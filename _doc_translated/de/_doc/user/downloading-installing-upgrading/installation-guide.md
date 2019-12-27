@@ -1,21 +1,21 @@
 ---
-layout: doc
-title: Installation Guide
-permalink: /de/doc/installation-guide/
 lang: de
-ref: 118
+layout: doc
+permalink: /de/doc/installation-guide/
 redirect_from:
-- /en/doc/installation-guide/
-- /doc/InstallationGuide/
-- /wiki/InstallationGuide/
-- /doc/InstallationGuideR1/
-- /doc/InstallationGuideR2B1/
-- /doc/InstallationGuideR2B2/
-- /doc/InstallationGuideR2B3/
-- /doc/InstallationGuideR2rc1/
-- /doc/InstallationGuideR2rc2/
-- /doc/InstallationGuideR3.0rc1/
-- /doc/InstallationGuideR3.0rc2/
+- /de/doc/InstallationGuide/
+- /de/wiki/InstallationGuide/
+- /de/doc/InstallationGuideR1/
+- /de/doc/InstallationGuideR2B1/
+- /de/doc/InstallationGuideR2B2/
+- /de/doc/InstallationGuideR2B3/
+- /de/doc/InstallationGuideR2rc1/
+- /de/doc/InstallationGuideR2rc2/
+- /de/doc/InstallationGuideR3.0rc1/
+- /de/doc/InstallationGuideR3.0rc2/
+ref: 120
+title: Installation Guide
+translated: 'yes'
 ---
 
 Installation Guide
@@ -149,5 +149,4 @@ Getting Help
 [documentation]: /de/doc/
 [improving]: /de/doc/doc-guidelines/
 [mailing lists]: /de/support/
-[Hilfe]: /de/help/
-
+[help]: /de/help/

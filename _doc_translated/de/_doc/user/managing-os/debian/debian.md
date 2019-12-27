@@ -1,14 +1,14 @@
 ---
-layout: doc
-title: Debian Template
-permalink: /de/doc/templates/debian/
 lang: de
-ref: 111
+layout: doc
+permalink: /de/doc/templates/debian/
 redirect_from:
-- /doc/debian/
-- /en/doc/templates/debian/
-- /doc/Templates/Debian/
-- /wiki/Templates/Debian/
+- /de/doc/debian/
+- /de/doc/Templates/Debian/
+- /de/wiki/Templates/Debian/
+ref: 113
+title: Debian Template
+translated: 'yes'
 ---
 
 Debian template(s)
@@ -120,5 +120,4 @@ More information
 * [Debian wiki](https://wiki.debian.org/Qubes)
 
 
-[stretch]: /de/doc/template/debian/upgrade-8-to-9/ 
-
+[stretch]: /de/doc/template/debian/upgrade-8-to-9/

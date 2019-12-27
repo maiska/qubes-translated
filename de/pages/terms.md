@@ -1,13 +1,13 @@
 ---
-layout: Standard
-title: Nutzungsbedingungen
-permalink: /de/terms/
 lang: de
-ref: 206
+layout: default
+permalink: /de/terms/
 redirect_from:
-- /en/terms/
-- /doc/terms/
-- /wiki/terms/
+- /de/doc/terms/
+- /de/wiki/terms/
+ref: 211
+title: Terms of Use
+translated: 'yes'
 ---
 
 Terms of Use
@@ -120,4 +120,3 @@ at any time without notice. By accessing or using the Services or the Content
 after such a revision or replacement of the Terms has occurred, you agree to be
 bound by the revised, then-current Terms. If you do not agree to the new Terms,
 you are prohibited from using the Services and the Content.
-

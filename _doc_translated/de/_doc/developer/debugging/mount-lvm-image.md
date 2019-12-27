@@ -1,15 +1,16 @@
 ---
-layout: doc
-title: Mount LVM image
-permalink: /de/doc/mount-lvm-image/
 lang: de
-ref: 157
+layout: doc
+permalink: /de/doc/mount-lvm-image/
+ref: 162
+title: Mount LVM image
+translated: 'yes'
 ---
 
 # How to mount LVM image
 
 You want to read your LVM image (ex: you did some errors and can't start the VM ). 
-
+ 
 1: make the image available for qubesdb.
 
 ```bash
@@ -47,6 +48,6 @@ From the GUI, or from the command line:
 [user@dom0]$ qubesdb-rm /qubes-block-devices/$dev/
 ```
 
-# Empfehlungen
+# References
 
 https://github.com/QubesOS/qubes-issues/issues/4687#issuecomment-451626625

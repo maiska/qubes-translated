@@ -1,13 +1,13 @@
 ---
-layout: doc
-title: Developer Books
-permalink: /de/doc/devel-books/
 lang: de
-ref: 171
+layout: doc
+permalink: /de/doc/devel-books/
 redirect_from:
-- /en/doc/devel-books/
-- /doc/DevelBooks/
-- /wiki/DevelBooks/
+- /de/doc/DevelBooks/
+- /de/wiki/DevelBooks/
+ref: 176
+title: Developer Books
+translated: 'yes'
 ---
 
 Below is a list of various books that might be useful in learning some basics needed for Qubes development.

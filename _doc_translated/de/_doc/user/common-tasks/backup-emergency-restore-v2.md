@@ -1,12 +1,12 @@
 ---
-layout: doc
-title: Emergency Backup Recovery (v2)
-permalink: /de/doc/backup-emergency-restore-v2/
 lang: de
-ref: 86
+layout: doc
+permalink: /de/doc/backup-emergency-restore-v2/
 redirect_from:
-- /en/doc/backup-emergency-restore-v2/
-- /doc/BackupEmergencyRestoreV2/
+- /de/doc/BackupEmergencyRestoreV2/
+ref: 88
+title: Emergency Backup Recovery (v2)
+translated: 'yes'
 ---
 
 Emergency Backup Recovery without Qubes (v2)
@@ -67,8 +67,8 @@ encrypted and compressed.
     [user@restore vm1]$ openssl enc -d -pass pass:your_passphrase -aes-256-cbc -in private.img.000 -out private.img.dec.000
     ~~~
 
-  **Anmerkung:** Für mehrteilige Dateien kann eine Schleife genutzt werden:
-
+  **Note:** For multi-part files, a loop can be used:
+ 
   ~~~
   for f in private.img.*; do
     openssl enc -d -pass pass:your_passphrase -aes-256-cbc -in $f -out
@@ -98,7 +98,7 @@ encrypted and compressed.
     vm1/private.img
     ~~~
 
-    **Anmerkung:** Für mehrteilige Dateien wird ein Script benötigt:
+    **Note:** For multi-part files, a script is required:
 
     1.  Create a `new-volume-script`:
 

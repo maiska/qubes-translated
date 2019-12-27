@@ -1,13 +1,13 @@
 ---
-layout: doc
-title: Windows Debugging
-permalink: /de/doc/windows-debugging/
 lang: de
-ref: 158
+layout: doc
+permalink: /de/doc/windows-debugging/
 redirect_from:
-- /en/doc/windows-debugging/
-- /doc/WindowsDebugging/
-- /wiki/WindowsDebugging/
+- /de/doc/WindowsDebugging/
+- /de/wiki/WindowsDebugging/
+ref: 163
+title: Windows Debugging
+translated: 'yes'
 ---
 
 Debugging Windows HVMs
@@ -87,11 +87,11 @@ Things get complicated if you need to perform kernel debugging or troubleshoot p
         {
             static int count = 0;
             static unsigned char buf[17] = {0};
-
+            
             // relay to ouptput port
             write(fd2, &c, 1);
             fprintf(stderr, "%c", mark);
-
+            
             /* dump all data going over the line
             if (count == 0)
                 fprintf(stderr, "%c", mark);
@@ -114,13 +114,13 @@ Things get complicated if you need to perform kernel debugging or troubleshoot p
             unsigned char c = 0;
             struct termios tio;
             ssize_t size;
-
+            
             if (argc < 3)
             {
                 fprintf(stderr, "Usage: %s pty1 pty2 [mark character]\n", argv[0]);
                 return EINVAL;
             }
-
+            
             fd1 = open(argv[1], O_RDONLY | O_NOCTTY);
             if (fd1 <= 0)
             {

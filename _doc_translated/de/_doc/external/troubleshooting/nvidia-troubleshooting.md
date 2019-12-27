@@ -1,13 +1,13 @@
 ---
-layout: doc
-title: Nvidia Troubleshooting
-permalink: /de/doc/nvidia-troubleshooting/
 lang: de
-ref: 46
+layout: doc
+permalink: /de/doc/nvidia-troubleshooting/
 redirect_from:
-- /en/doc/nvidia-troubleshooting/
-- /doc/NvidiaTroubleshooting/
-- /wiki/NvidiaTroubleshooting/
+- /de/doc/NvidiaTroubleshooting/
+- /de/wiki/NvidiaTroubleshooting/
+ref: 48
+title: Nvidia Troubleshooting
+translated: 'yes'
 ---
 
 NVidia Troubleshooting Guide
@@ -115,7 +115,7 @@ If you're seeing this error then that means another graphics card (most likely a
     ~~~
     module /vmlinux-4.1.13-9.pvops.qubes.x86_64 placeholder root=/dev/mapper/qubes_dom0-root ro ... rhgb quiet
     ~~~
-
+    
     It is not an exact copy as it may differ from system to system.
 
     Please note: choose the module that starts with `vmlinux`!
@@ -158,4 +158,3 @@ You'll have to do the following to make this change persistent, so that it will 
     ~~~
     sudo grub2-mkconfig -o /boot/grub2/grub.cfg
     ~~~
-

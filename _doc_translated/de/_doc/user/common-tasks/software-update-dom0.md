@@ -1,13 +1,13 @@
 ---
-layout: doc
-title: Installing and updating software in dom0
-permalink: /de/doc/software-update-dom0/
 lang: de
-ref: 82
+layout: doc
+permalink: /de/doc/software-update-dom0/
 redirect_from:
-- /en/doc/software-update-dom0/
-- /doc/SoftwareUpdateDom0/
-- /wiki/SoftwareUpdateDom0/
+- /de/doc/SoftwareUpdateDom0/
+- /de/wiki/SoftwareUpdateDom0/
+ref: 84
+title: Installing and updating software in dom0
+translated: 'yes'
 ---
 
 Installing and updating software in dom0
@@ -96,7 +96,7 @@ You can re-install in a similar fashion to downgrading.
 If you've installed a package such as anti-evil-maid, you can remove it with the following command:
 
     sudo dnf remove anti-evil-maid
-
+    
 ### Testing repositories
 
 There are three Qubes dom0 testing repositories:
@@ -156,4 +156,3 @@ Requires installed [Whonix](/de/doc/privacy/whonix/).
 Go to Qubes VM Manager -> System -> Global Settings. See the UpdateVM setting. Choose your desired Whonix-Gateway ProxyVM from the list. For example: sys-whonix.
 
     Qubes VM Manager -> System -> Global Settings -> UpdateVM -> sys-whonix
-

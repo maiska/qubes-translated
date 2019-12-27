@@ -1,14 +1,14 @@
 ---
-layout: doc
-title: Upgrading the Fedora 26 Template to Fedora 27
-permalink: /de/doc/template/fedora/upgrade-26-to-27/
 lang: de
-ref: 105
+layout: doc
+permalink: /de/doc/template/fedora/upgrade-26-to-27/
 redirect_from:
-- /doc/fedora-template-upgrade-26/
-- /en/doc/fedora-template-upgrade-26/
-- /doc/FedoraTemplateUpgrade26/
-- /wiki/FedoraTemplateUpgrade26/
+- /de/doc/fedora-template-upgrade-26/
+- /de/doc/FedoraTemplateUpgrade26/
+- /de/wiki/FedoraTemplateUpgrade26/
+ref: 107
+title: Upgrading the Fedora 26 Template to Fedora 27
+translated: 'yes'
 ---
 
 Upgrading the Fedora 26 Template to Fedora 27
@@ -203,8 +203,7 @@ In this case, you have several options:
 [TemplateVM]: /de/doc/templates/
 [Fedora TemplateVM]: /de/doc/templates/fedora/
 [resize-disk-image]: /de/doc/resize-disk-image/
-[Zusätzliche Information]: #additional-information
+[Additional Information]: #additional-information
 [Compacting the Upgraded Template]: #compacting-the-upgraded-template
 [switching]: /de/doc/templates/#how-to-switch-templates
 [DispVM]: /de/doc/disposablevm/
-

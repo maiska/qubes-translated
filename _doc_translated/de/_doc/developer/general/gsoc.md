@@ -1,10 +1,11 @@
 ---
-layout: sidebar
-title: Google Summer of Code
-permalink: /de/gsoc/
 lang: de
-ref: 176
-redirect_from: /GSoC/
+layout: sidebar
+permalink: /de/gsoc/
+redirect_from: /de/GSoC/
+ref: 181
+title: Google Summer of Code
+translated: 'yes'
 ---
 
 2019 Google Summer of Code
@@ -164,7 +165,7 @@ would override all the user changes there). More details:
 
 - basic USB architecture knowledge (buses, devices, interfaces, functions)
 - Python and Bash scripting
-- K
+- C
 - Windows USB stack and/or qemu USB stack
 
 **Mentor**: [Marek Marczykowski-Górecki](/de/team/)
@@ -184,7 +185,7 @@ would override all the user changes there). More details:
 **Knowledge prerequisite**:
 
 - Pulseaudio
-- K
+- C
 - Python
 
 **Mentor**: [Marek Marczykowski-Górecki](/de/team/)
@@ -210,6 +211,7 @@ would override all the user changes there). More details:
  - Vagrant concepts
 
 **Mentor**: [Wojtek Porczyk](/de/team/), [Marek Marczykowski-Górecki
+
 ### Mechanism for maintaining in-VM configuration
 
 **Project**: Mechanism for maintaining in-VM configuration
@@ -454,6 +456,7 @@ details in [#2618](https://github.com/QubesOS/qubes-issues/issues/2618).
  - For optional features, C language and x86 architecture (ACPI tables)
 
 **Mentor**: [Rafał Wojdyła](/de/team/), [Marek Marczykowski-Górecki
+
 ### GNOME support in dom0 / GUI VM
 
 **Project**: GNOME support in dom0
@@ -489,6 +492,7 @@ details in [#2618](https://github.com/QubesOS/qubes-issues/issues/2618).
  - Probably also javascript - for modifying GNOME shell extensions
 
 **Mentor**: [Frédéric Pierret](/de/team/), [Marek Marczykowski-Górecki
+
 ### Generalize the Qubes PDF Converter to other types of files
 
 **Project**: Qubes Converters
@@ -526,6 +530,7 @@ for more information and qubes-specific background.
 **Expected results**: Significant progress towards making the Qubes build process deterministic. This would likely involve cooperation with and hacking on several upstream build tools to eliminate sources of variability.
 
 **Knowledge prerequisite**: qubes-builder [[1]](/de/doc/qubes-builder/) [[2]
+
 **Mentor**: [Marek Marczykowski-Górecki](/de/team/)
 
 ### Porting Qubes to ARM/aarch64
@@ -553,7 +558,7 @@ Some related discussion:
  - Libvirt and Qubes toolstacks (C and python languages).
  - Xen debugging.
  - General ARM architecture knowledge.
-
+ 
 **Mentor**: [Marek Marczykowski-Górecki](/de/team/)
 
 ### Porting Qubes to POWER9/PPC64
@@ -585,7 +590,7 @@ More information and further links can be found in the related issue:
  - Libvirt and Qubes toolstacks (C and python languages).
  - KVM or XEN internals
  - General ppc64 architecture knowledge.
-
+ 
 **Mentor**: [Marek Marczykowski-Górecki](/de/team/)
 
 ### Android development in Qubes

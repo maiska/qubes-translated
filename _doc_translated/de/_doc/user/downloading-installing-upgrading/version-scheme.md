@@ -1,13 +1,13 @@
 ---
-layout: doc
-title: Version Scheme
-permalink: /de/doc/version-scheme/
 lang: de
-ref: 120
+layout: doc
+permalink: /de/doc/version-scheme/
 redirect_from:
-- /en/doc/version-scheme/
-- /doc/VersionScheme/
-- /wiki/VersionScheme/
+- /de/doc/VersionScheme/
+- /de/wiki/VersionScheme/
+ref: 122
+title: Version Scheme
+translated: 'yes'
 ---
 
 Version Scheme

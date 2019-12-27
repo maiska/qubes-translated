@@ -1,9 +1,10 @@
 ---
-layout: doc
-title: Audio Virtualization
-permalink: /de/doc/audio-virtualization/
 lang: de
-ref: 165
+layout: doc
+permalink: /de/doc/audio-virtualization/
+ref: 170
+title: Audio Virtualization
+translated: 'yes'
 ---
 
 Audio Virtualization
@@ -69,4 +70,3 @@ The current status is written into QubesDB at `/audio-input/VMNAME` (where `VMNA
 The lack of a key means that the `pacat-simple-vchan` for a given VM is not running.
 
 In either version, it is exposed to the user as device of class `mic`, which can be attached to a VM (for example, using the `qvm-device mic` command).
-

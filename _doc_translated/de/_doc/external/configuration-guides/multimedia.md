@@ -1,13 +1,13 @@
 ---
-layout: doc
-title: How to Make a Multimedia TemplateVM
-permalink: /de/doc/multimedia/
 lang: de
-ref: 30
+layout: doc
+permalink: /de/doc/multimedia/
 redirect_from:
-- /en/doc/multimedia/
-- /doc/Multimedia/
-- /wiki/Multimedia/
+- /de/doc/Multimedia/
+- /de/wiki/Multimedia/
+ref: 32
+title: How to Make a Multimedia TemplateVM
+translated: 'yes'
 ---
 
 How to Make a Multimedia TemplateVM
@@ -123,7 +123,7 @@ In an AppVM which has Internet access:
 - Open <https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x6BCA5E4DB84288D9>
 - Repeat all steps to save the public signing key on the AppVM (see above / Spotify example)
   `xclip -o > videolan.pubkey`
-
+  
 Copy the public signing key over to the multimedia template VM
 - copy the file via `qvm-copy-to-vm t-multimedia videolan.pubkey`
 - or create a new file on the Template VM and copy the content of the clipboard (the public key)
@@ -212,7 +212,7 @@ You can (and should) lookup the fingerprint on at least one (or more) keyservers
 
 <https://keyserver.ubuntu.com/pks/lookup?op=vindex&search=0x7721F63BD38B4796&fingerprint=on>
 
-oder
+or
 
 <https://www.google.com/linuxrepositories/>
 
@@ -239,4 +239,3 @@ Create a Multimedia AppVM
 The last step is to create a multimedia AppVM (named "my-multimedia" here) based on the new multimedia template.
 
 `qvm-create --template t-multimedia --label orange my-multimedia`
-

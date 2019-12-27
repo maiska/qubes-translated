@@ -1,10 +1,11 @@
 ---
-layout: doc
-title: Security Bulletin Template
-permalink: /de/security/bulletins/template/
 lang: de
-ref: 2
-redirect_from: /doc/security-bulletins/template/
+layout: doc
+permalink: /de/security/bulletins/template/
+redirect_from: /de/doc/security-bulletins/template/
+ref: 4
+title: Security Bulletin Template
+translated: 'yes'
 ---
 
 Security Bulletin Template
@@ -82,4 +83,3 @@ https://www.qubes-os.org/security/
 ```
 
 ~~~
-

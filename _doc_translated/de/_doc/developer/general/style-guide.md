@@ -1,9 +1,10 @@
 ---
-layout: doc
-title: Style-guide
-permalink: /de/doc/style-guide/
 lang: de
-ref: 172
+layout: doc
+permalink: /de/doc/style-guide/
+ref: 177
+title: Style-guide
+translated: 'yes'
 ---
 
 Style Guide

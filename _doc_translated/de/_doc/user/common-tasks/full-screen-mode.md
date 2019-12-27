@@ -1,13 +1,13 @@
 ---
-layout: doc
-title: Full Screen Mode
-permalink: /de/doc/full-screen-mode/
 lang: de
-ref: 94
+layout: doc
+permalink: /de/doc/full-screen-mode/
 redirect_from:
-- /en/doc/full-screen-mode/
-- /doc/FullScreenMode/
-- /wiki/FullScreenMode/
+- /de/doc/FullScreenMode/
+- /de/wiki/FullScreenMode/
+ref: 96
+title: Full Screen Mode
+translated: 'yes'
 ---
 
 Enabling Full Screen Mode for select VMs

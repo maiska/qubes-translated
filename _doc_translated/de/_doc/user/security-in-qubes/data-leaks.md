@@ -1,13 +1,13 @@
 ---
-layout: doc
-title: Data Leaks
-permalink: /de/doc/data-leaks/
 lang: de
-ref: 138
+layout: doc
+permalink: /de/doc/data-leaks/
 redirect_from:
-- /en/doc/data-leaks/
-- /doc/DataLeaks/
-- /wiki/DataLeaks/
+- /de/doc/DataLeaks/
+- /de/wiki/DataLeaks/
+ref: 140
+title: Data Leaks
+translated: 'yes'
 ---
 
 Understanding and Preventing Data Leaks

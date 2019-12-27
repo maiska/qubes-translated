@@ -1,13 +1,13 @@
 ---
-layout: doc
-title: Qfileexchgd
-permalink: /de/doc/qfileexchgd/
 lang: de
-ref: 181
+layout: doc
+permalink: /de/doc/qfileexchgd/
 redirect_from:
-- /en/doc/qfileexchgd/
-- /doc/Qfileexchgd/
-- /wiki/Qfileexchgd/
+- /de/doc/Qfileexchgd/
+- /de/wiki/Qfileexchgd/
+ref: 186
+title: Qfileexchgd
+translated: 'yes'
 ---
 
 **This mechanism is obsolete as of Qubes Beta 1!**
@@ -56,4 +56,3 @@ In order to minimize attack surface presented by necessity to process virtual pe
 2.  *qfilexchgd* sees that "send" argument=="disposable", and creates a new DisposableVM by calling */usr/lib/qubes/qubes\_restore*. It adds the new DisposableVM to qubesDB via qvm\_collection.add\_new\_disposablevm. Then it attaches the virtual pendrive (previously attached as `/dev/xvdg` at AppVM1) as `/dev/xvdh` in DisposableVM.
 3.  In DisposableVM, *qubes\_add\_pendrive\_script* sees non-zero `qubes_transaction_seq` key in xenstore, and instead processing the virtual pendrive as in the case of normal copy, treats it as DVM transaction (a request, because we run in DisposableVM). It retrieves the body of the file passed in `/dev/xvdh`, copies to /tmp, and runs *mime-open* utility to open appropriate executable to edit it. When *mime-open* returns, if the file was modified, it is sent back to AppVM1 (by writing "send AppVM1 SEQ" to `device/qpen` xenstore key). Then DisposableVM destroys itself.
 4.  In AppVM1, a new `/dev/xvdh` appears (because DisposableVM has sent it). *qubes\_add\_pendrive\_script* sees non-zero `qubes_transaction_seq` key, and treats it as DVM transaction (a response, because we run in AppVM, not DisposableVM). It retrieves the filename from `/home/user/.dvm/SEQ`, and copies data from `/dev/xvdh` to it.
-

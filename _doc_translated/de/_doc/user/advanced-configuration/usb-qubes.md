@@ -1,15 +1,15 @@
 ---
-layout: doc
-title:  USB Qubes
-permalink: /de/doc/usb-qubes/
 lang: de
-ref: 149
+layout: doc
+permalink: /de/doc/usb-qubes/
 redirect_from:
-- /doc/usbvm/
-- /en/doc/usbvm/
-- /doc/USBVM/
-- /wiki/USBVM/
-- /doc/sys-usb/
+- /de/doc/usbvm/
+- /de/doc/USBVM/
+- /de/wiki/USBVM/
+- /de/doc/sys-usb/
+ref: 151
+title: USB Qubes
+translated: 'yes'
 ---
 
 # USB Qubes #
@@ -124,7 +124,7 @@ which will ask for conformation each time a USB mouse is attached. If the file i
 In case you are absolutely sure you do not want to confirm mouse access from `sys-usb` to `dom0`, you may add the following line on top of the file:
 
     sys-usb dom0 allow
-
+    
 (Change `sys-usb` to your desired USB qube.)
 
 
@@ -161,7 +161,7 @@ The procedure to hide all USB controllers from dom0 is as follows:
  6. Reboot.
 
  * EFI
-
+ 
  1. Open the file `/boot/efi/EFI/qubes/xen.cfg` in dom0.
  2. Find the lines that begin with `kernel=`. There may be more than one.
  3. Add `rd.qubes.hide_all_usb` to those lines.
@@ -174,7 +174,7 @@ The procedure to hide all USB controllers from dom0 is as follows:
 **Warning:** This procedure will result in your USB controller(s) being attached directly to dom0.
 
  * GRUB2
-
+ 
  1. Shut down the USB qube.
  2. In Qubes Manager, right-click on the USB qube and select "Remove VM."
  3. Open the file `/etc/default/grub` in dom0.
@@ -185,7 +185,7 @@ The procedure to hide all USB controllers from dom0 is as follows:
  8. Reboot.
 
  * EFI
-
+ 
  1. Shut down the USB qube.
  2. In Qubes Manager, right-click on the USB qube and select "Remove VM."
  3. Open the file `/boot/efi/EFI/qubes/xen.cfg` in dom0.
@@ -207,4 +207,3 @@ The procedure to hide all USB controllers from dom0 is as follows:
 [hiding USB controllers from dom0]: #how-to-hide-all-usb-controllers-from-dom0
 [AEM]: /de/doc/anti-evil-maid/
 [create a USB qube]: #creating-and-using-a-usb-qube
-

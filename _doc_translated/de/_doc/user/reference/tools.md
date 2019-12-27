@@ -1,16 +1,17 @@
 ---
-layout: doc
-title: Command-Line Tools
-permalink: /de/doc/tools/
 lang: de
-ref: 98
+layout: doc
+permalink: /de/doc/tools/
 redirect_from:
- - /doc/tools/4.0/
- - /doc/tools/4.0/dom0/
- - /doc/tools/4.0/domU/
- - /doc/tools/3.2/
- - /doc/tools/3.2/dom0/
- - /doc/tools/3.2/domU/
+- /de/doc/tools/4.0/
+- /de/doc/tools/4.0/dom0/
+- /de/doc/tools/4.0/domU/
+- /de/doc/tools/3.2/
+- /de/doc/tools/3.2/dom0/
+- /de/doc/tools/3.2/domU/
+ref: 100
+title: Command-Line Tools
+translated: 'yes'
 ---
 
 Command-Line Tools
@@ -30,4 +31,3 @@ DomU
  * [qvm-open-in-dvm](https://raw.githubusercontent.com/QubesOS/qubes-core-agent-linux/master/doc/vm-tools/qvm-open-in-dvm.rst)
  * [qvm-open-in-vm](https://raw.githubusercontent.com/QubesOS/qubes-core-agent-linux/master/doc/vm-tools/qvm-open-in-vm.rst)
  * [qvm-run-vm](https://raw.githubusercontent.com/QubesOS/qubes-core-agent-linux/master/doc/vm-tools/qvm-run-vm.rst)
-

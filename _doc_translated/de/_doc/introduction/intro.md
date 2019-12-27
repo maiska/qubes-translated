@@ -1,15 +1,14 @@
 ---
-layout: intro
-title: An Introduction to Qubes OS
-permalink: /de/intro/
 lang: de
-ref: 22
+layout: intro
+permalink: /de/intro/
 redirect_from:
-- /tour/
-- /en/tour/
-- "/tour/#what-is-qubes-os"
-- /about/
-- /en/about/
+- /de/tour/
+- /de/tour/#what-is-qubes-os
+- /de/about/
+ref: 24
+title: An Introduction to Qubes OS
+translated: 'yes'
 ---
 
 What is Qubes OS?
@@ -181,21 +180,21 @@ pros and cons of this approach relative to Qubes:
     <div class="col-lg-4 col-md-4 col-xs-12">
       <h3>Video Tours</h3>
       <p>Want to see Qubes OS in action? Sit back and watch a guided tour!</p>
-      <a href="/video-tours/" class="btn btn-primary">
+      <a href="/de/video-tours/" class="btn btn-primary">
         <i class="fa fa-play-circle"></i> Video Tours
       </a>
     </div>
     <div class="col-lg-4 col-md-4 col-xs-12">
       <h3>Screenshots</h3>
       <p>See what using Qubes actually looks like with these screenshots of various applications running in Qubes.</p>
-      <a href="/screenshots/" class="btn btn-primary">
+      <a href="/de/screenshots/" class="btn btn-primary">
         <i class="fa fa-picture-o"></i> Screenshots
       </a>
     </div>
     <div class="col-lg-4 col-md-4 col-xs-12">
       <h3>Getting Started</h3>
       <p>Ready to get started with Qubes? Here's what you need to know after installing.</p>
-      <a href="/getting-started/" class="btn btn-primary">
+      <a href="/de/getting-started/" class="btn btn-primary">
         <i class="fa fa-cubes"></i> Getting Started
       </a>
     </div>
@@ -218,9 +217,9 @@ technical details have been omitted here for the sake of presentation.
 [networking]: /de/doc/networking/
 [firewalls]: /de/doc/firewall/
 [USB]: /de/doc/usb/
-[Datei]: /de/doc/copying-files/
+[file]: /de/doc/copying-files/
 [clipboard]: /de/doc/copy-paste/
-[Vorlage]: /de/doc/templates/
+[Template]: /de/doc/templates/
 [Qubes-Whonix]: /de/doc/whonix/
 [Whonix]: https://www.whonix.org/
 [Tor]: https://www.torproject.org/
@@ -234,4 +233,3 @@ technical details have been omitted here for the sake of presentation.
 [devel-faq]: /de/faq/#developers
 [downloads]: /de/downloads/
 [getting started]: /de/getting-started/
-

@@ -1,9 +1,10 @@
 ---
-layout: doc
-title: Signal
-permalink: /de/doc/signal/
 lang: de
-ref: 63
+layout: doc
+permalink: /de/doc/signal/
+ref: 65
+title: Signal
+translated: 'yes'
 ---
 
 Signal
@@ -39,7 +40,7 @@ Always obtain a trusted key fingerprint via other channels, and always check any
 2. Open a terminal in Debian 9
 
        [user@dom0 ~]$ qvm-run -a debian-9 gnome-terminal
-
+       
 3. Use these commands in your terminal
 
        (Optional)[user@debian-8 ~]$ sudo apt-get install curl
@@ -50,13 +51,13 @@ Always obtain a trusted key fingerprint via other channels, and always check any
 5. Shutdown the TemplateVM :
 
         [user@dom0 ~]$ qvm-shutdown debian-9
-
+        
 6. Create an AppVM based on this TemplateVM
 7. With your mouse select the `Q` menu -> `Domain: "AppVM Name"` -> `"AppVM Name": Add more shortcuts`
 (or `"AppVM Name": VM Settings` -> `Applications`). 
    Select `Signal` from the left `Available` column, move it to the right `Selected` column by clicking the `>` button and then `OK` to apply the changes and close the window.
 
------------
+-----
 
 [qubes-verifying-signatures]: /de/security/verifying-signatures/
 [Signal]: https://whispersystems.org/

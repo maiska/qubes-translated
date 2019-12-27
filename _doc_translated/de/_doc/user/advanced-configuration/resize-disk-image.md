@@ -1,16 +1,15 @@
 ---
-layout: doc
-title: Resize Disk Image
-permalink: /de/doc/resize-disk-image/
 lang: de
-ref: 153
+layout: doc
+permalink: /de/doc/resize-disk-image/
 redirect_from:
-- /en/doc/resize-disk-image/
-- /en/doc/resize-root-disk-image/
-- /doc/ResizeDiskImage/
-- /doc/ResizeRootDiskImage/
-- /wiki/ResizeDiskImage/
-- /wiki/ResizeRootDiskImage/
+- /de/doc/ResizeDiskImage/
+- /de/doc/ResizeRootDiskImage/
+- /de/wiki/ResizeDiskImage/
+- /de/wiki/ResizeRootDiskImage/
+ref: 155
+title: Resize Disk Image
+translated: 'yes'
 ---
 
 Resize Disk Image
@@ -34,7 +33,7 @@ Maximum size which can be assigned through Qube Settings is 1048576 MiB - if you
 ~~~
 qvm-volume extend <vm_name>:root <size>
 ~~~
-ODER
+OR
 ~~~
 qvm-volume extend <vm_name>:private <size>
 ~~~
@@ -75,4 +74,3 @@ zpool online -e poolname ada0
 Qubes will automatically grow the filesystem for you on all AppVMs with Qubes packages installed (which are all AppVMs installed from templates, cloned from templates etc. - if you have not created an empty HVM and installed a Linux distribution in it, without using Qubes repositories, you are almost certainly safe).
 Otherwise, you will see that there is unallocated free space at the end of your primary disk.
 You can use standard linux tools like `fdisk` and `resize2fs` to make this space available.
-

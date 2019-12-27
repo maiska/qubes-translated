@@ -1,9 +1,10 @@
 ---
-layout: doc
-title: Changing your Time Zone
-permalink: /de/doc/change-time-zone/
 lang: de
-ref: 37
+layout: doc
+permalink: /de/doc/change-time-zone/
+ref: 39
+title: Changing your Time Zone
+translated: 'yes'
 ---
 
 # Changing your Time Zone #
@@ -35,4 +36,3 @@ Europe/Berlin:
      Network time on: no
     NTP synchronized: no
      RTC in local TZ: no
-

@@ -1,14 +1,14 @@
 ---
-layout: doc
-title: Verifying Signatures
-permalink: /de/security/verifying-signatures/
 lang: de
-ref: 11
+layout: doc
+permalink: /de/security/verifying-signatures/
 redirect_from:
-- /doc/verifying-signatures/
-- /en/doc/verifying-signatures/
-- /doc/VerifyingSignatures/
-- /wiki/VerifyingSignatures/
+- /de/doc/verifying-signatures/
+- /de/doc/VerifyingSignatures/
+- /de/wiki/VerifyingSignatures/
+ref: 13
+title: Verifying Signatures
+translated: 'yes'
 ---
 
 On Digital Signatures and Key Verification
@@ -107,40 +107,40 @@ Once you're confident that you have the legitimate Qubes Master Signing Key, set
     gpg (GnuPG) 1.4.18; Copyright (C) 2014 Free Software Foundation, Inc.
     This is free software: you are free to change and redistribute it.
     There is NO WARRANTY, to the extent permitted by law.
-
-
+    
+    
     pub  4096R/36879494  created: 2010-04-01  expires: never       usage: SC
                          trust: unknown       validity: unknown
     [ unknown] (1). Qubes Master Signing Key
-
+    
     gpg> fpr
     pub   4096R/36879494 2010-04-01 Qubes Master Signing Key
      Primary key fingerprint: 427F 11FD 0FAA 4B08 0123  F01C DDFA 1A3E 3687 9494
-
+    
     gpg> trust
     pub  4096R/36879494  created: 2010-04-01  expires: never       usage: SC
                          trust: unknown       validity: unknown
     [ unknown] (1). Qubes Master Signing Key
-
+    
     Please decide how far you trust this user to correctly verify other users' keys
     (by looking at passports, checking fingerprints from different sources, etc.)
-
+    
       1 = I don't know or won't say
       2 = I do NOT trust
       3 = I trust marginally
       4 = I trust fully
       5 = I trust ultimately
       m = back to the main menu
-
+    
     Your decision? 5
     Do you really want to set this key to ultimate trust? (y/N) y
-
+    
     pub  4096R/36879494  created: 2010-04-01  expires: never       usage: SC
                          trust: ultimate      validity: unknown
     [ unknown] (1). Qubes Master Signing Key
     Please note that the shown key validity is not necessarily correct
     unless you restart the program.
-
+    
     gpg> q
 
 Now, when you import any of the legitimate Qubes developer keys and Release Signing Keys used to sign ISOs, RPMs, TGZs, Git tags, and Git commits, they will already be trusted in virtue of being signed by the Qubes Master Signing Key.
@@ -212,14 +212,14 @@ Inside, you should find text that looks similar to this:
 
     -----BEGIN PGP SIGNED MESSAGE-----
     Hash: SHA256
-
+    
     3c951138b8b9867d8657f173c1b58b82 *Qubes-RX-x86_64.iso
     1fc9508160d7c4cba6cacc3025165b0f996c843f *Qubes-RX-x86_64.iso
     6b998045a513dcdd45c1c6e61ace4f1b4e7eff799f381dccb9eb0170c80f678a *Qubes-RX-x86_64.iso
     de1eb2e76bdb48559906f6fe344027ece20658d4a7f04ba00d4e40c63723171c62bdcc869375e7a4a4499d7bff484d7a621c3acfe9c2b221baee497d13cd02fe *Qubes-RX-x86_64.iso
     -----BEGIN PGP SIGNATURE-----
     Version: GnuPG v2
-
+    
     iQIcBAEBCAAGBQJX4XO/AAoJEMsRyh0D+lCCL9sP/jlZ26zhvlDEX/eaA/ANa/6b
     Dpsh/sqZEpz1SWoUxdm0gS+anc8nSDoCQSMBxnafuBbmwTChdHI/P7NvNirCULma
     9nw+EYCsCiNZ9+WCeroR8XDFSiDjvfkve0R8nwfma1XDqu1bN2ed4n/zNoGgQ8w0
@@ -234,7 +234,7 @@ Inside, you should find text that looks similar to this:
     3N/6YZw1gSuvBlTquP27
     =e9oD
     -----END PGP SIGNATURE-----
-
+    
 Four digests have been computed for this ISO.
 The hash functions used, in order from top to bottom, are MD5, SHA1, SHA256, and SHA512.
 One way to verify that the ISO you downloaded matches any of these hash values is by using the respective `*sum` programs:
@@ -287,7 +287,7 @@ Since `Qubes-RX-x86_64.iso.DIGESTS` is a clearsigned PGP file, we can use GPG to
         gpg: using PGP trust model
         gpg: Good signature from "Qubes OS Release X Signing Key"
         gpg: textmode signature, digest algorithm SHA256
-
+    
 The signature is good.
 If our copy of the `Qubes OS Release X Signing Key` is being validated by the authentic Qubes Master Signing Key (see [above][QMSK]), we can be confident that these hash values came from the Qubes devs.
 
@@ -305,7 +305,7 @@ To verify a signature on a Git tag:
 
     $ git tag -v <tag name>
 
-oder
+or
 
     $ git verify-tag <tag name>
 
@@ -313,7 +313,7 @@ To verify a signature on a Git commit:
 
     $ git log --show-signature <commit ID>
 
-oder
+or
 
     $ git verify-commit <commit ID>
 
@@ -450,4 +450,3 @@ If you still have a question, please address it to the [qubes-users mailing list
 [Qubes repositories]: https://github.com/QubesOS
 [GPG documentation]: https://www.gnupg.org/documentation/
 [qubes-users mailing list]: /de/support/#qubes-users
-

@@ -1,11 +1,11 @@
 ---
-layout: doc
-title: Wireless Troubleshooting
-permalink: /de/doc/wireless-troubleshooting/
 lang: de
-ref: 41
-redirect_from:
-- /en/doc/wireless-troubleshooting/
+layout: doc
+permalink: /de/doc/wireless-troubleshooting/
+redirect_from: []
+ref: 43
+title: Wireless Troubleshooting
+translated: 'yes'
 ---
 
 Wireless Troubleshooting Guide
@@ -27,9 +27,9 @@ The easiest is via the output of `lspci -k` in your sys-net VM:
 ~~~
 [user@sys-net ~]$ lspci -k
 00:00.0 Network controller: Intel Corporation Wireless 8260 (rev 3a)
-    Subsystem: Intel Corporation Device 0130
-    Kernel driver in use: iwlwifi
-    Kernel modules: iwlwifi
+	Subsystem: Intel Corporation Device 0130
+	Kernel driver in use: iwlwifi
+	Kernel modules: iwlwifi
 ~~~
 
 Here we see that the machine in question has an Intel wireless card, being used by the `iwlwifi` kernel module.
