@@ -1,0 +1,392 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Ettore Atalan <atalanttore@googlemail.com>, 2021
+# erinm, 2021
+# Tobias Killer, 2021
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-15 16:25+0100\n"
+"PO-Revision-Date: 2021-12-15 15:07+0000\n"
+"Last-Translator: Tobias Killer, 2021\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../_doc/user/how-to-guides/how-to-use-devices.md:15
+#: b142353e625345f6b2522a4b49198962
+msgid ""
+"This is an overview of device handling in Qubes OS. For specific devices "
+"([block](/doc/how-to-use-block-storage-devices/), [USB](/doc/how-to-use-usb-"
+"devices/) and [PCI](/doc/how-to-use-pci-devices/) devices), please visit "
+"their respective pages."
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-devices.md:18
+#: e430e2fdbcb04543bd1152124226981a
+msgid ""
+"**Important security warning:** Device handling comes with many security "
+"implications. Please make sure you carefully read and understand the "
+"**[security considerations](/doc/device-handling-security/)**."
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-devices.md:21
+#: 0d442c01fa36474ab54e2954c34f6eb9
+msgid "Introduction"
+msgstr "Einführung"
+
+#: ../../_doc/user/how-to-guides/how-to-use-devices.md:23
+#: a8e5ee926d0f469babf8ecb36e841eac
+msgid ""
+"The interface to deal with devices of all sorts was unified in Qubes 4.0 "
+"with the `qvm-device` command and the Qubes Devices Widget. In Qubes 3.X, "
+"the Qubes VM Manager dealt with attachment as well. This functionality was "
+"moved to the Qubes Device Widget, the tool tray icon with a yellow square "
+"located in the top right of your screen by default."
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-devices.md:27
+#: c9cd9e67143b42ebb78ae04c38901ed6
+msgid "There are currently four categories of devices Qubes understands:"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-devices.md:28
+#: 307aee8687f94a5c9c7e7f08972bda11
+msgid "Microphones"
+msgstr "Mikrofone"
+
+#: ../../_doc/user/how-to-guides/how-to-use-devices.md:29
+#: 8177852f22894344b9e4692eb6bc92ce
+msgid "Block devices"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-devices.md:30
+#: 9d6a1fc7046742bbbbdab8aaea7d7110
+msgid "USB devices"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-devices.md:31
+#: 0474cee727f748a0bd25b97536b05a86
+msgid "PCI devices"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-devices.md:33
+#: 62e91c2b37064fb3a7a0d78ffe721b5b
+msgid ""
+"Microphones, block devices and USB devices can be attached with the GUI-"
+"tool. PCI devices can be attached using the Qube Settings, but require a VM "
+"reboot."
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-devices.md:36
+#: 2fe2683713564c908198c6be757f6921
+msgid "General Qubes Device Widget Behavior And Handling"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-devices.md:38
+#: 065745b19e504790b8bfea2cf2649aba
+msgid ""
+"When clicking on the tray icon (which looks similar to this): ![SD card and "
+"thumbdrive](/attachment/doc/media-removable.png) several device-classes "
+"separated by lines are displayed as tooltip. Block devices are displayed on "
+"top, microphones one below and USB-devices at the bottom."
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-devices.md:38
+#: 229bf19b96454e41a6f38e31dec02367
+msgid "SD card and thumbdrive"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-devices.md:41
+#: 7a504621251a46bdbc19b8b863568bc6
+msgid ""
+"On most laptops, integrated hardware such as cameras and fingerprint-readers"
+" are implemented as USB-devices and can be found here."
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-devices.md:43
+#: 4d5f9e05e4eb473fbfce785e591e878d
+msgid "Attaching Using The Widget"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-devices.md:45
+#: 1e787476e8ab4295ad623309abaf0a2f
+msgid ""
+"Click the tray icon. Hover on a device you want to attach to a VM. A list of"
+" running VMs (except dom0) appears. Click on one and your device will be "
+"attached!"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-devices.md:50
+#: 0c5b61cbdfa741b7951d73bb2f3de41e
+msgid "Detaching Using The Widget"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-devices.md:52
+#: a425245bb4694a6aa6a610ae9bb8991f
+msgid ""
+"To detach a device, click the Qubes Devices Widget icon again. Attached "
+"devices are displayed in bold. Hover the one you want to detach. A list of "
+"VMs appears, one showing the eject symbol: ![eject "
+"icon](/attachment/doc/media-eject.png)"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-devices.md:52
+#: 9bde3e7396b544eabcdc9279f0fefd10
+msgid "eject icon"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-devices.md:57
+#: 814baec6f44f488ba10ad6dc2bafedc3
+msgid "Attaching a Device to Several VMs"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-devices.md:59
+#: 053e91fd57304b1e9c03bb1239bb779b
+msgid ""
+"Only `mic` should be attached to more than one running VM. You may *assign* "
+"a device to more than one VM (using the `--persistent` option), however, "
+"only one of them can be started at the same time."
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-devices.md:62
+#: fc0c4abb29ab4a539a04b729520189eb
+msgid ""
+"But be careful: There is a [bug in `qvm-device block` or `qvm-"
+"block`](https://github.com/QubesOS/qubes-issues/issues/4692) which will "
+"allow you to *attach* a block device to two running VMs. Don't do that!"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-devices.md:65
+#: 6b068916acd74871b6247876626e021d
+msgid "General `qvm-device` Command Line Tool Behavior"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-devices.md:67
+#: 5390d7faa97449cd923f10fb03b9432f
+msgid ""
+"All devices, including PCI-devices, may be attached from the commandline "
+"using the `qvm-device`-tools."
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-devices.md:69
+#: 557420e4ecd34bcbb5364eac407bde8d
+msgid "Device Classes"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-devices.md:71
+#: a3e6c2de46e54d7a85a68cc66316cb2e
+msgid ""
+"`qvm-device` expects DEVICE_CLASS as first argument. DEVICE_CLASS can be one"
+" of"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-devices.md:74
+#: 2b71f5ca9b9548f285838b0ff97184db
+msgid "`pci`"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-devices.md:75
+#: bbd83abbe7c64600acd7924946c66e8b
+msgid "`usb`"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-devices.md:76
+#: b8512b18da47485299c16b4ac9611eae
+msgid "`block`"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-devices.md:77
+#: 76adae16e25d485eba77d1a581b8cb68
+msgid "`mic`"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-devices.md:79
+#: ../../_doc/user/how-to-guides/how-to-use-devices.md:102
+#: afec838da40a4143baf3b9ddacd843b7 3753d44839094f74bfd6028a8eaf2ae9
+msgid "Actions"
+msgstr "Aktionen"
+
+#: ../../_doc/user/how-to-guides/how-to-use-devices.md:81
+#: 08338cfbb74f4e31958ff95f91d53713
+msgid "`qvm-device` supports three actions:"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-devices.md:83
+#: 1102f6889d124eda969aeac4b3792299
+msgid "`list` (ls, l) - list all devices of DEVICE_CLASS"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-devices.md:84
+#: f9cf926a3f3c4b34be0d9fe1916f9c95
+msgid "`attach` (at, a) - attach a specific device of DEVICE_CLASS"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-devices.md:85
+#: 307b246f54324d48a88e8708c1271503
+msgid "`detach` (dt, d) - detach a specific device of DEVICE_CLASS"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-devices.md:87
+#: 8258d08b12e644b9b420fce97629db3f
+msgid "Global Options"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-devices.md:89
+#: e74e0b0d018f48d68b022da9b48a2035
+msgid "These three options are always available:"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-devices.md:91
+#: 2244163308e74dee8b04457bc9cd9cb1
+msgid "`--help`, `-h` - show help message and exit"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-devices.md:92
+#: 0b855460803d4efa9db43825c677b094
+msgid "`--verbose`, `-v` - increase verbosity"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-devices.md:93
+#: b29cf9d0603c43cd9d0adfdfac1690e5
+msgid "`--quiet`, `-q` - decrease verbosity"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-devices.md:95
+#: ff1737ce15d142748314f9141dc2da7e
+msgid ""
+"A full command consists of one DEVICE_CLASS and one action. If no action is "
+"given, list is implied. DEVICE_CLASS however is required."
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-devices.md:99
+#: 7337222fa88548d3b52323b35b8829e5
+msgid ""
+"**SYNOPSIS**: `qvm-device DEVICE_CLASS {action} [action-specific arguments] "
+"[options]`"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-devices.md:104
+#: a9a5fadeb28d4420a25e2b6ac0144e84
+msgid ""
+"Actions are applicable to every DEVICE_CLASS and expose some additional "
+"options."
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-devices.md:106
+#: 62c8ebf51ffa4f70b452508b920658c5
+msgid "Listing Devices"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-devices.md:108
+#: ddf93bf1d50347b58816e97e096833f0
+msgid ""
+"The `list` action lists known devices in the system. `list` accepts VM-names"
+" to narrow down listed devices. Devices available in, as well as attached to"
+" the named VMs will be listed."
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-devices.md:112
+#: e960a04bf1b945f4897e9f550f7f9976
+msgid "`list` accepts two options:"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-devices.md:114
+#: 667fcfd352964393af25dd87887b06cb
+msgid ""
+"`--all` - equivalent to specifying every VM name after `list`. No VM-name "
+"implies `--all`."
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-devices.md:116
+#: d506d091c3564b46ab0f1d1239d89555
+msgid "`--exclude` - exclude VMs from `--all`. Requires `--all`."
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-devices.md:119
+#: 57b5ad357b884106ba589dad29eed115
+msgid ""
+"**SYNOPSIS** `qvm-device DEVICE_CLASS {list|ls|l} [--all [--exclude VM [VM "
+"[...]]] | VM [VM [...]]]`"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-devices.md:122
+#: 80b56e47154a4f57babbc85999cbbe28
+msgid "Attaching Devices"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-devices.md:124
+#: 0e88cfabc52645788c331276f0b7ccfc
+msgid ""
+"The `attach` action assigns an exposed device to a VM. This makes the device"
+" available in the VM it's attached to. Required argument are targetVM and "
+"sourceVM:deviceID. (sourceVM:deviceID can be determined from `list` output)"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-devices.md:129
+#: 01f786eed53841a99084b3eb8d7acaa3
+msgid "`attach` accepts two options:"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-devices.md:131
+#: 1324e154f5fa4a6c9bab5fdefdf41817
+msgid ""
+"`--persistent` - attach device on targetVM-boot. If the device is "
+"unavailable (physically missing or sourceVM not started), booting the "
+"targetVM fails."
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-devices.md:133
+#: 23b3d20b3ea34a2eb1ff8a924aa04fda
+msgid "`--option`, `-o` - set additional options specific to DEVICE_CLASS."
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-devices.md:135
+#: d29028ed42da4a2cb70b97df3b0c0178
+msgid ""
+"**SYNOPSIS** `qvm-device DEVICE_CLASS {attach|at|a} targetVM "
+"sourceVM:deviceID [options]`"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-devices.md:138
+#: f5593a83173d4b19b88e408dbecdd92e
+msgid "Detaching Devices"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-devices.md:140
+#: b6d43051e6ae4d319be31ed6c740b043
+msgid ""
+"The `detach` action removes an assigned device from a targetVM. It won't be "
+"available afterwards anymore. Though it tries to do so gracefully, beware "
+"that data-connections might be broken unexpectedly, so close any transaction"
+" before detaching a device!"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-devices.md:144
+#: 17ca501ba01841c091cbaff32b4bb81b
+msgid ""
+"If no specific `sourceVM:deviceID` combination is given, *all devices of "
+"that DEVICE_CLASS will be detached.*"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-devices.md:146
+#: 74bcce11e8984beebac67c965aebdbec
+msgid "`detach` accepts no options."
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-devices.md:148
+#: 745239eb1fe14a1fb25a09dc981f5b7e
+msgid ""
+"**SYNOPSIS** `qvm-device DEVICE_CLASS {detach|dt|d} targetVM "
+"[sourceVM:deviceID]`"
+msgstr ""

@@ -1,0 +1,159 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-15 16:25+0100\n"
+"PO-Revision-Date: 2021-12-15 15:12+0000\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../_doc/project-security/security-pack.md:21
+#: 59b7a81470f444609c9ec796709aced1
+msgid ""
+"The **Qubes Security Pack** (`qubes-secpack`) is a Git repository that "
+"contains:"
+msgstr ""
+
+#: ../../_doc/project-security/security-pack.md:24
+#: c3bf958979224f7ab93906989388b3df
+msgid "[Qubes Security Bulletins (QSBs)](/security/qsb/)"
+msgstr ""
+
+#: ../../_doc/project-security/security-pack.md:25
+#: 3ad0e22070e149a8a1f8daa9f55b9427
+msgid "[Qubes Canaries](/security/canary/)"
+msgstr ""
+
+#: ../../_doc/project-security/security-pack.md:26
+#: c05f1f8e16654086a13022a06709ac56
+msgid ""
+"[Signed Qubes ISO digests](/security/verifying-signatures/#how-to-verify-"
+"qubes-iso-digests)"
+msgstr ""
+
+#: ../../_doc/project-security/security-pack.md:27
+#: ea41dc4ecf2a4a2ab67da71ad31b8236
+msgid ""
+"[Qubes fund information](https://github.com/QubesOS/qubes-"
+"secpack/tree/master/fund)"
+msgstr ""
+
+#: ../../_doc/project-security/security-pack.md:28
+#: 5eac12c0221749fa82b724a9043b897b
+msgid "[Qubes PGP keys](https://keys.qubes-os.org/keys/)"
+msgstr ""
+
+#: ../../_doc/project-security/security-pack.md:29
+#: 74d7d17c4d4f4210b00909873344007d
+msgid "Security-related information and announcements (e.g., key revocations)"
+msgstr ""
+
+#: ../../_doc/project-security/security-pack.md:31
+#: b4d4641c0d954a52ab5390ae1fa0f115
+msgid ""
+"While `qubes-secpack` itself is independent of any particular host, its "
+"current official location is:"
+msgstr ""
+
+#: ../../_doc/project-security/security-pack.md:34
+#: c9166b14b1d041f49b67dc4cb8974fbb
+msgid "<https://github.com/QubesOS/qubes-secpack>"
+msgstr ""
+
+#: ../../_doc/project-security/security-pack.md:36
+#: 1909237852854c0b9632fb0799871888
+msgid "How to obtain, verify, and read"
+msgstr ""
+
+#: ../../_doc/project-security/security-pack.md:38
+#: 90a972ad5dc84d1abcdadbedc9357d59
+msgid ""
+"The following example demonstrates one method of obtaining the `qubes-"
+"secpack`, verifying its contents, and reading them."
+msgstr ""
+
+#: ../../_doc/project-security/security-pack.md:41
+#: 4661502efaaa49b79b07cd49899d197a
+msgid "Clone the `qubes-secpack` repo."
+msgstr ""
+
+#: ../../_doc/project-security/security-pack.md:53
+#: c7e61110918f4c7aa1b9d9ffe71d63e1
+msgid "Import the included PGP keys."
+msgstr ""
+
+#: ../../_doc/project-security/security-pack.md:85
+#: 69d8d285b87841cebfa3faaef3af739e
+msgid "Verify and trust the Qubes Master Signing Key."
+msgstr ""
+
+#: ../../_doc/project-security/security-pack.md:129
+#: 32e43d70c39e4a0d8f6657a13a248a5d
+msgid "**Important!**"
+msgstr ""
+
+#: ../../_doc/project-security/security-pack.md:131
+#: b754cf52b5004ba9bc0c0627e425c199
+msgid ""
+"In order to verify the authenticity of the Qubes Master Signing Key prior to"
+" trusting it, you should obtain the Qubes Master Signing Key fingerprint "
+"from a trustworthy source (ideally, multiple sources) *other than* this "
+"website and visually compare it (them) to the fingerprint displayed in the "
+"preceding step, ensuring they match. You can read more about digital "
+"signatures and key verification [here](/security/verifying-signatures/)."
+msgstr ""
+
+#: ../../_doc/project-security/security-pack.md:138
+#: 41f3230ca31d447992fdc6a323a86e6a
+msgid "Verify signed Git tags."
+msgstr ""
+
+#: ../../_doc/project-security/security-pack.md:154
+#: a3651a9cf19243ddb1015c1febe9b4af
+msgid "(The final line of output confirms that the signature is good.)"
+msgstr ""
+
+#: ../../_doc/project-security/security-pack.md:156
+#: 553adda8dace43a4b3c49a39a960dcc9
+msgid "Verify detached PGP signatures."
+msgstr ""
+
+#: ../../_doc/project-security/security-pack.md:168
+#: 27b4d201f46b46c08d0f4342256c2be1
+msgid ""
+"(The fourth and final lines of output confirm that the two signatures are  "
+"good.)"
+msgstr ""
+
+#: ../../_doc/project-security/security-pack.md:171
+#: c36f5931c87d4ca78d6d62233a28b1a0
+msgid ""
+"The same procedures can be applied to any directory or file in the `qubes-"
+"secpack`. Two methods of verification (signed Git tags and detached PGP "
+"signatures) are provided to ensure that the system is robust (e.g., against "
+"a potential failure in Git tag-based verification) and to give users more "
+"options to verify the files."
+msgstr ""
+
+#: ../../_doc/project-security/security-pack.md:178
+#: de508090746e4de39273257217bbf3b7
+msgid "History and rationale"
+msgstr ""
+
+#: ../../_doc/project-security/security-pack.md:180
+#: 64a0a4c597974821b420fe3567870c5e
+msgid ""
+"On 2013-01-05, Joanna Rutkowska announced the `qubes-secpack` and explained "
+"its rationale in an [email](https://groups.google.com/d/msg/qubes-"
+"devel/twkOEaMLtNI/lZyGx6_jFCEJ) to the Qubes mailing lists:"
+msgstr ""

@@ -1,0 +1,99 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# erinm, 2021
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-15 16:25+0100\n"
+"PO-Revision-Date: 2021-12-15 15:11+0000\n"
+"Last-Translator: erinm, 2021\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../_doc/developer/releases/3_1/schedule.md:11
+#: bbe3ffc3318c407ebd1f53e36bf858d0
+msgid ""
+"This schedule is based on [Version Scheme](/doc/version-scheme/#release-"
+"schedule)."
+msgstr ""
+
+#: ../../_doc/developer/releases/3_1/schedule.md:0
+#: b901d7b7f3074fa4a8ca79dcc195d76d
+msgid "Date"
+msgstr "Datum"
+
+#: ../../_doc/developer/releases/3_1/schedule.md:0
+#: 4d4bda65807e4cf7bfd6825ece48f6b2
+msgid "Stage"
+msgstr ""
+
+#: ../../_doc/developer/releases/3_1/schedule.md:0
+#: 8f7cf844e37845a08b53434d4257bb3a
+msgid "8 Dec 2015"
+msgstr ""
+
+#: ../../_doc/developer/releases/3_1/schedule.md:0
+#: 67abd47a2f214249a2e1f4e2e03428d9
+msgid "3.1-rc1 release"
+msgstr ""
+
+#: ../../_doc/developer/releases/3_1/schedule.md:0
+#: 7d3bb6f62b9c4f40854809304e992c56
+msgid "5 Jan 2016"
+msgstr ""
+
+#: ../../_doc/developer/releases/3_1/schedule.md:0
+#: 0614519bc2054fc190ed72e03378faa0
+msgid "current-testing freeze before 3.1-rc2"
+msgstr ""
+
+#: ../../_doc/developer/releases/3_1/schedule.md:0
+#: 1cf554bb94604653b495a5435f72dcee
+msgid "12 Jan 2016"
+msgstr ""
+
+#: ../../_doc/developer/releases/3_1/schedule.md:0
+#: 4c296e7e1bc84369ac8fb504df3d4688
+msgid "3.1-rc2 release"
+msgstr ""
+
+#: ../../_doc/developer/releases/3_1/schedule.md:0
+#: abf8cb55c7d349168dd7b5968d45fef1
+msgid "26 Jan 2016"
+msgstr ""
+
+#: ../../_doc/developer/releases/3_1/schedule.md:0
+#: 143aa6f655654503819178e200c3dadc
+msgid "decide whether 3.1-rc2 is the final 3.1"
+msgstr ""
+
+#: ../../_doc/developer/releases/3_1/schedule.md:0
+#: 7a046c3c0fb442119130e12772287343
+msgid "9 Feb 2016"
+msgstr ""
+
+#: ../../_doc/developer/releases/3_1/schedule.md:0
+#: 4230a4cc76674c05afb73cb70253e3a6
+msgid "current-testing freeze before 3.1-rc3"
+msgstr ""
+
+#: ../../_doc/developer/releases/3_1/schedule.md:0
+#: ab5e47f53ab64836b82240c1fda567a9
+msgid "~~16 Feb 2016~~ <br/> 23 Feb 2016"
+msgstr ""
+
+#: ../../_doc/developer/releases/3_1/schedule.md:0
+#: 9b4df601c9b44631aba23e9fcb06625d
+msgid "3.1-rc3 release"
+msgstr ""

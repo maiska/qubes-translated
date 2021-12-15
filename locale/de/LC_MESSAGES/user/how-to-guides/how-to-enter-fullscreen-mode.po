@@ -1,0 +1,138 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-15 16:25+0100\n"
+"PO-Revision-Date: 2021-12-15 15:06+0000\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../_doc/user/how-to-guides/how-to-enter-fullscreen-mode.md:14
+#: 1af01e4a1ede48d7973adffc948c6cfb
+msgid "What is fullscreen mode?"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-enter-fullscreen-mode.md:17
+#: 5ef0b43cc09d4eac809c9113c3f06d04
+msgid ""
+"Normally, the Qubes GUI virtualization daemon restricts the VM from "
+"\"owning\" the full screen, ensuring that there are always clearly marked "
+"decorations drawn by the trusted Window Manager around each of the VMs "
+"window. This allows the user to easily realize to which domain a specific "
+"window belongs. See the [screenshots](/doc/QubesScreenshots/) page for "
+"examples."
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-enter-fullscreen-mode.md:21
+#: c6137736370f467cbb87501d5048d0c6
+msgid "Why is fullscreen mode potentially dangerous?"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-enter-fullscreen-mode.md:24
+#: 05f551c29fd1483981cfb3114064f59a
+msgid ""
+"If one allowed one of the VMs to \"own\" the full screen, e.g. to show a "
+"movie on a full screen, it might not be possible for the user to know if the"
+" applications/VM really \"released\" the full screen, or if it has started "
+"emulating the whole desktop and is pretending to be the trusted Window "
+"Manager, drawing shapes on the screen that look e.g. like other windows, "
+"belonging to other domains (e.g. to trick the user into entering a secret "
+"passphrase into a window that looks like belonging to some trusted domain)."
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-enter-fullscreen-mode.md:26
+#: 960d9b595e88471f8905740c1936887d
+msgid "Secure use of fullscreen mode"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-enter-fullscreen-mode.md:29
+#: 3cde476c972d45f5a1dfe75cd0ee676d
+msgid ""
+"However, it is possible to deal with fullscreen mode in a secure way "
+"assuming there are mechanisms that can be used at any time to switch between"
+" windows or show the full desktop and that cannot be intercepted by the VM. "
+"The simplest example is the use of Alt+Tab for switching between windows, "
+"which is a shortcut handled by dom0."
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-enter-fullscreen-mode.md:32
+#: 681234d047594ab6b8bf2f5e8bba073d
+msgid ""
+"Other examples such mechanisms are the KDE \"Present Windows\" and \"Desktop"
+" Grid\" effects, which are similar to Mac's \"Expose\" effect, and which can"
+" be used to immediately detect potential \"GUI forgery\", as they cannot be "
+"intercepted by any of the VM (as the GUID never passes down the key "
+"combinations that got consumed by KDE Window Manager), and so the VM cannot "
+"emulate those. Those effects are enabled by default in KDE once Compositing "
+"gets enabled in KDE (System Settings -\\> Desktop -\\> Enable Desktop "
+"Effects), which is recommended anyway. By default, they are triggered by "
+"Ctrl-F8 and Ctrl-F9 key combinations, but can also be reassigned to other "
+"shortcuts."
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-enter-fullscreen-mode.md:36
+#: 246dba105c6042d6aa95f3f73ef108e7
+msgid "Enabling fullscreen mode for select VMs"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-enter-fullscreen-mode.md:39
+#: 896de233b587497a8c12372939df6415
+msgid ""
+"You can always put a window into fullscreen mode in Xfce4 using the trusted "
+"window manager by right-clicking on a window's title bar and selecting "
+"\"Fullscreen\" or pressing `alt` + `f11`. This functionality should still be"
+" considered safe, since a VM window still can't voluntarily enter fullscreen"
+" mode. The user must select this option from the trusted window manager in "
+"dom0. To exit fullscreen mode from here, press `alt` + `space` to bring up "
+"the title bar menu again, then select \"Leave Fullscreen\" or simply press "
+"`alt` + `f11`. For StandaloneHVMs, you should set the screen resolution in "
+"the qube to that of the host, (or larger), *before* setting fullscreen mode "
+"in Xfce4."
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-enter-fullscreen-mode.md:45
+#: 1ddc91cfbe0c490eb4e3642600c5824f
+msgid ""
+"As an alternative to the Xfce4 method, you can enable fullscreen mode for "
+"select VMs by creating the following entry in the `/etc/qubes/guid.conf` "
+"file in dom0:"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-enter-fullscreen-mode.md:55
+#: 6d2ffe5c08814bc6b17099e8754dce07
+msgid ""
+"The string 'personal' above is an example only and should be replaced by the"
+" actual name of the VM for which you want to enable this functionality."
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-enter-fullscreen-mode.md:57
+#: dd4443d3fd2b4330a4e8d9d004ff12ab
+msgid ""
+"**Note:** There should be only one `VM: {}` block in the file (or you will "
+"[get into problems](https://groups.google.com/d/msg/qubes-"
+"users/-Yf9yNvTsVI/xXsEm8y2lrYJ))."
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-enter-fullscreen-mode.md:59
+#: c9105b8cbf82470ea32b407757b690be
+msgid ""
+"One can also enable this functionality for all the VMs globally in the same "
+"file, by modifying the 'global' section:"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-enter-fullscreen-mode.md:72
+#: 4a4348f1475b46779c68869ba071023e
+msgid ""
+"Be sure to restart the VM(s) after modifying this file, for the changes to "
+"take effect."
+msgstr ""

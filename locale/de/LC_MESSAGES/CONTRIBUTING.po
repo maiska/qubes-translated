@@ -1,0 +1,32 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-15 16:25+0100\n"
+"PO-Revision-Date: 2021-12-15 15:26+0000\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../_doc/CONTRIBUTING.md:1 2607cf55c4344f10a0b4a7f7d5f5a42c
+msgid "Contributing to `qubes-doc`"
+msgstr ""
+
+#: ../../_doc/CONTRIBUTING.md:3 2abacd6e94614e63af70f6ab39f77e5f
+msgid ""
+"Thank you for your interest in contributing to `qubes-doc`, the Qubes OS "
+"Project's dedicated documentation repository! Please take a moment to read "
+"our [Documentation Guidelines](https://www.qubes-os.org/doc/doc-guidelines/)"
+" before you begin writing. These guidelines are important to maintaining "
+"high quality documentation, and following them will increase the likelihood "
+"that your contribution will be accepted."
+msgstr ""

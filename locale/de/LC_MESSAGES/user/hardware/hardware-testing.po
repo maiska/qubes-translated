@@ -1,0 +1,129 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-15 16:25+0100\n"
+"PO-Revision-Date: 2021-12-15 15:08+0000\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../_doc/user/hardware/hardware-testing.md:9
+#: 9b0e408bd7c344a083e2c18133ae143a
+msgid ""
+"The Qubes developers test Qubes OS on certain hardware models. The tested "
+"hardware described on this page differs from [Qubes Certified "
+"Hardware](/doc/certified-hardware/) in a few key ways:"
+msgstr ""
+
+#: ../../_doc/user/hardware/hardware-testing.md:12
+#: 2046d000c2784489bce98421ac8e0448
+msgid ""
+"Qubes Certified Hardware has to meet more demanding standards than hardware "
+"that is merely tested."
+msgstr ""
+
+#: ../../_doc/user/hardware/hardware-testing.md:13
+#: 4dfefadf7cdc47fbbe5974bf3ef8f8cb
+msgid ""
+"All Qubes Certified Hardware is tested, but not all tested hardware is "
+"certified."
+msgstr ""
+
+#: ../../_doc/user/hardware/hardware-testing.md:14
+#: 5dd4bfc432494280830c4ad641543520
+msgid ""
+"A specific certified configuration is guaranteed to be supported on specific"
+" versions of Qubes OS, whereas hardware testing provides no guarantees."
+msgstr ""
+
+#: ../../_doc/user/hardware/hardware-testing.md:16
+#: 592de118bc6c4dc5866c33cd63e47a61
+msgid ""
+"In general, you can think of tested hardware as \"unofficial recommended\" "
+"hardware:"
+msgstr ""
+
+#: ../../_doc/user/hardware/hardware-testing.md:18
+#: 479593a02fe44e50afa9da869b263ce4
+msgid ""
+"[Qubes Certified Hardware](/doc/certified-hardware/) --- Qubes developer "
+"certified, officially recommended"
+msgstr ""
+
+#: ../../_doc/user/hardware/hardware-testing.md:19
+#: 363b462a9f6449e8ace1e013281f00cd
+msgid ""
+"Hardware Testing (this page) --- Qubes developer tested, unofficially "
+"recommended"
+msgstr ""
+
+#: ../../_doc/user/hardware/hardware-testing.md:20
+#: 14f074b0c30a4cf5919cf3946561b4a2
+msgid ""
+"[Hardware Compatibility List (HCL)](/hcl/) --- community test results, "
+"neither recommended nor disrecommended"
+msgstr ""
+
+#: ../../_doc/user/hardware/hardware-testing.md:22
+#: f25dbce285b44c379f025d727a283eff
+msgid "Tested Models"
+msgstr ""
+
+#: ../../_doc/user/hardware/hardware-testing.md:24
+#: e0c65fddeb6941d5978e926c62997545
+msgid ""
+"These hardware models have been (and continue to be) tested and work well "
+"with Qubes OS:"
+msgstr ""
+
+#: ../../_doc/user/hardware/hardware-testing.md:26
+#: 68c2181a324140c3a68c9f8df301d682
+msgid "Lenovo ThinkPad X1 Carbon Gen 5"
+msgstr ""
+
+#: ../../_doc/user/hardware/hardware-testing.md:27
+#: a9f373438ebc4ea3a4786bd2373ea537
+msgid "Lenovo ThinkPad x230"
+msgstr ""
+
+#: ../../_doc/user/hardware/hardware-testing.md:29
+#: ../../_doc/user/hardware/hardware-testing.md:39
+#: e92c4bd9f8dd490c9bce09493c8e7beb 9964a3c7d11f4700af3e44b64a070190
+msgid ""
+"Note: The Lenovo X and T series are similar enough to assume similar "
+"compatibility of the matching model from the other series."
+msgstr ""
+
+#: ../../_doc/user/hardware/hardware-testing.md:31
+#: aea5f31b1dff4da5b7d9011600d6fd52
+msgid "Desired Models"
+msgstr ""
+
+#: ../../_doc/user/hardware/hardware-testing.md:33
+#: e3915919c03549a19c95f865930bdf9a
+msgid ""
+"The Qubes devs would like to test these models, but the hardware is not "
+"available to us. If anyone is willing to lend or donate these models to us, "
+"we would be happy to test them:"
+msgstr ""
+
+#: ../../_doc/user/hardware/hardware-testing.md:36
+#: c0c0b5f1225543bdb7921475a40d0aaa
+msgid ""
+"Lenovo Thinkpad T or X series with Intel 8th Gen CPU and integrated graphics"
+msgstr ""
+
+#: ../../_doc/user/hardware/hardware-testing.md:37
+#: b6bf4a8394f84177b7f6670b22078f93
+msgid "Dell Latitude with Intel 8th Gen CPU and integrated graphics"
+msgstr ""

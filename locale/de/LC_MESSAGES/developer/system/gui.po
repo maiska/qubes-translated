@@ -1,0 +1,356 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-15 16:25+0100\n"
+"PO-Revision-Date: 2021-12-15 15:10+0000\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../_doc/developer/system/gui.md:14 2a3d2c729e0e4c7a88b49ecdc5bd3dcc
+msgid "qubes_gui and qubes_guid processes"
+msgstr ""
+
+#: ../../_doc/developer/system/gui.md:17 fd4b844e9f4d4773944053414497965b
+msgid ""
+"All AppVM X applications connect to local (running in AppVM) Xorg servers "
+"that use the following \"hardware\" drivers:"
+msgstr ""
+
+#: ../../_doc/developer/system/gui.md:19 c358397bc0f84e4ba46317bd0c3b401e
+msgid ""
+"*dummyqsb_drv* - video driver, that paints onto a framebuffer located in "
+"RAM, not connected to real hardware"
+msgstr ""
+
+#: ../../_doc/developer/system/gui.md:20 6528b4ed23ec4e8ea4a1fdf26826ce1b
+msgid ""
+"*qubes_drv* - it provides a virtual keyboard and mouse (in fact, more, see "
+"below)"
+msgstr ""
+
+#: ../../_doc/developer/system/gui.md:22 53f72b1ee4bb48b7ba8e195c58059e20
+msgid ""
+"For each AppVM, there is a pair of *qubes_gui* (running in AppVM) and "
+"*qubes_guid* (running in dom0) processes connected over vchan. The main "
+"responsibilities of *qubes_gui* are:"
+msgstr ""
+
+#: ../../_doc/developer/system/gui.md:25 bb646b5e8a8247a58967ad118f4b6930
+msgid ""
+"call XCompositeRedirectSubwindows on the root window, so that each window "
+"has its own composition buffer"
+msgstr ""
+
+#: ../../_doc/developer/system/gui.md:26 ad7bd8c838834054a0dfe40594897f53
+msgid ""
+"instruct the local Xorg server to notify it about window creation, "
+"configuration and damage events; pass information on these events to dom0"
+msgstr ""
+
+#: ../../_doc/developer/system/gui.md:27 ace9083c8d9c46c4b5c74187b21c46e3
+msgid ""
+"receive information about keyboard and mouse events from dom0, tell "
+"*qubes_drv* to fake appropriate events"
+msgstr ""
+
+#: ../../_doc/developer/system/gui.md:28 ../../_doc/developer/system/gui.md:35
+#: 8da2c1bf179c493ab25648b2cd9657a8 17ac6ef67970412895625680b699e1a6
+msgid ""
+"receive information about window size/position change, apply them to the "
+"local window"
+msgstr ""
+
+#: ../../_doc/developer/system/gui.md:30 2981d895222e44819076f7aab1cb91f3
+msgid "The main responsibilities of *qubes_guid* are:"
+msgstr ""
+
+#: ../../_doc/developer/system/gui.md:32 57c8bbfb2af44e7d8214c98188307dd3
+msgid ""
+"create a window in dom0 whenever an information on window creation in AppVM "
+"is received from *qubes_gui*"
+msgstr ""
+
+#: ../../_doc/developer/system/gui.md:33 9819d05aa12b42b4aad5494f26de24f2
+msgid ""
+"whenever the local window receives XEvent, pass information on it to AppVM "
+"(particularly, mouse and keyboard data)"
+msgstr ""
+
+#: ../../_doc/developer/system/gui.md:34 0d3755711dbf481592dc4cc05ec29b83
+msgid ""
+"whenever AppVM signals damage event, tell local Xorg server to repaint a "
+"given window fragment"
+msgstr ""
+
+#: ../../_doc/developer/system/gui.md:37 114e482ede2c4278aa81218933467325
+msgid ""
+"Note that keyboard and mouse events are passed to AppVM only if a window "
+"belonging to this AppVM has focus. AppVM has no way to get information on "
+"keystrokes fed to other AppVMs (e.g. XTEST extension will report the status "
+"of local AppVM keyboard only) or synthesize and pass events to other AppVMs."
+msgstr ""
+
+#: ../../_doc/developer/system/gui.md:40 288b403db57c402084a9a31a5670cae0
+msgid "Window content updates implementation"
+msgstr ""
+
+#: ../../_doc/developer/system/gui.md:43 fd7550a11c714432be48a9c7c348adc4
+msgid ""
+"Typical remote desktop applications, like *vnc*, pass information on all "
+"changed window content in-band (say, over tcp). As that channel has limited "
+"throughput, this impacts video performance. In the case of Qubes, "
+"*qubes_gui* does not transfer all changed pixels via vchan. Instead, for "
+"each window, upon its creation or size change, *qubes_gui*"
+msgstr ""
+
+#: ../../_doc/developer/system/gui.md:47 a540c71d2e924be9a42019bd4cc2ef0c
+msgid ""
+"asks *qubes_drv* driver for the list of physical memory frames that hold the"
+" composition buffer of a window"
+msgstr ""
+
+#: ../../_doc/developer/system/gui.md:48 11970382166f4cc7860d52d7b7e383f6
+msgid "passes this information via `MFNDUMP` message to *qubes_guid* in dom0"
+msgstr ""
+
+#: ../../_doc/developer/system/gui.md:50 df4f40f70e5745868577efc049c9380e
+msgid ""
+"Now, *qubes_guid* has to tell the dom0 Xorg server about the location of the"
+" buffer. There is no supported way (e.g. Xorg extension) to do this zero-"
+"copy style. The following method is used in Qubes:"
+msgstr ""
+
+#: ../../_doc/developer/system/gui.md:54 e44a666bdc134fbabab8dadbae1d952f
+msgid ""
+"in dom0, the Xorg server is started with *LD_PRELOAD*-ed library named "
+"*shmoverride.so*. This library hooks all function calls related to shared "
+"memory."
+msgstr ""
+
+#: ../../_doc/developer/system/gui.md:55 27bc9f174f714cee979d93694f830222
+msgid ""
+"*qubes_guid* creates a shared memory segment, and then tells Xorg to attach "
+"it via *MIT-SHM* extension"
+msgstr ""
+
+#: ../../_doc/developer/system/gui.md:56 6d2219150a5f4acfb744b1cf7724a735
+msgid ""
+"when Xorg tries to attach the segment (via glibc *shmat*) *shmoverride.so* "
+"intercepts this call and instead maps AppVM memory via "
+"*xc_map_foreign_pages*"
+msgstr ""
+
+#: ../../_doc/developer/system/gui.md:57 9dc75c66fafa4a09a614bb088ed880b2
+msgid ""
+"since then, we can use MIT-SHM functions, e.g. *XShmPutImage* to draw onto a"
+" dom0 window. *XShmPutImage* will paint with DRAM speed; actually, many "
+"drivers use DMA for this."
+msgstr ""
+
+#: ../../_doc/developer/system/gui.md:59 e510a6d8f4f94f5cb3c824b6da56714d
+msgid ""
+"The important detail is that *xc_map_foreign_pages* verifies that a given "
+"mfn range actually belongs to a given domain id (and the latter is provided "
+"by trusted *qubes_guid*). Therefore, rogue AppVM cannot gain anything by "
+"passing crafted mnfs in the `MFNDUMP` message."
+msgstr ""
+
+#: ../../_doc/developer/system/gui.md:62 c8d7ac474031455592e54a4b6ab2310b
+msgid "To sum up, this solution has the following benefits:"
+msgstr ""
+
+#: ../../_doc/developer/system/gui.md:64 1065d21c740648618c17e42d89d6dd32
+msgid "window updates at DRAM speed"
+msgstr ""
+
+#: ../../_doc/developer/system/gui.md:65 df7c2418e46742c18544d469d4db5552
+msgid "no changes to Xorg code"
+msgstr ""
+
+#: ../../_doc/developer/system/gui.md:66 770ae68dc1494df5a6f0cabe123de30e
+msgid "minimal size of the supporting code"
+msgstr ""
+
+#: ../../_doc/developer/system/gui.md:68 9695cc4842b74ba18a4c360177a3aabc
+msgid "![gui.png](/attachment/doc/gui.png)"
+msgstr ""
+
+#: ../../_doc/developer/system/gui.md:68 04799bedb3004dc5b88da2d497dc7d65
+msgid "gui.png"
+msgstr ""
+
+#: ../../_doc/developer/system/gui.md:70 991c3e4d291a45a5b1b9b896964fc916
+msgid "Security markers on dom0 windows"
+msgstr ""
+
+#: ../../_doc/developer/system/gui.md:73 d2e6d85bdd634a7ba1e90d8660e77ce9
+msgid ""
+"It is important that the user knows which AppVM a given window belongs to. "
+"This prevents a rogue AppVM from painting a window pretending to belong to "
+"other AppVM or dom0 and trying to steal, for example, passwords."
+msgstr ""
+
+#: ../../_doc/developer/system/gui.md:75 15ec558fedcc40ce98217e384c24e94b
+msgid ""
+"In Qubes, a custom window decorator is used that paints a colourful frame "
+"(the colour is determined during AppVM creation) around decorated windows. "
+"Additionally, the window title always starts with **[name of the AppVM]**. "
+"If a window has an *override_redirect* attribute, meaning that it should not"
+" be treated by a window manager (typical case is menu windows), *qubes_guid*"
+" draws a two-pixel colourful frame around it manually."
+msgstr ""
+
+#: ../../_doc/developer/system/gui.md:77 029cca55cb344250953ed1dcf75a3b33
+msgid "Clipboard sharing implementation"
+msgstr ""
+
+#: ../../_doc/developer/system/gui.md:80 4deff594f0bc46529fbb3a8e5d8281c5
+msgid ""
+"Certainly, it would be insecure to allow AppVM to read/write the clipboards "
+"of other AppVMs unconditionally. Therefore, the following mechanism is used:"
+msgstr ""
+
+#: ../../_doc/developer/system/gui.md:83 da94d862a811499d9c69285d74a3eca3
+msgid ""
+"there is a \"qubes clipboard\" in dom0 - its contents are stored in a "
+"regular file in dom0."
+msgstr ""
+
+#: ../../_doc/developer/system/gui.md:84 899db82076c74a9f858e64e3a8d47f33
+msgid ""
+"if the user wants to copy local AppVM clipboard to qubes clipboard, she must"
+" focus on any window belonging to this AppVM, and press **Ctrl-Shift-C**. "
+"This combination is trapped by *qubes-guid*, and `CLIPBOARD_REQ` message is "
+"sent to AppVM. *qubes-gui* responds with *CLIPBOARD_DATA* message followed "
+"by clipboard contents."
+msgstr ""
+
+#: ../../_doc/developer/system/gui.md:85 d06fbad4bf6140ad98fd027d53403eb3
+msgid ""
+"the user focuses on other AppVM window, presses **Ctrl-Shift-V**. This "
+"combination is trapped by *qubes-guid*, and `CLIPBOARD_DATA` message "
+"followed by qubes clipboard contents is sent to AppVM; *qubes_gui* copies "
+"data to the local clipboard, and then user can paste its contents to local "
+"applications normally."
+msgstr ""
+
+#: ../../_doc/developer/system/gui.md:87 b1674c41ab3a44599564658f967e554c
+msgid ""
+"This way, the user can quickly copy clipboards between AppVMs. This action "
+"is fully controlled by the user, it cannot be triggered/forced by any AppVM."
+msgstr ""
+
+#: ../../_doc/developer/system/gui.md:90 61ba60f9044c4d8cb00b273759cb0992
+msgid "*qubes_gui* and *qubes_guid* code notes"
+msgstr ""
+
+#: ../../_doc/developer/system/gui.md:93 619ada36868a48e494dde94a68144f23
+msgid ""
+"Both applications are structured similarly. They use *select* function to "
+"wait for any of these two event sources:"
+msgstr ""
+
+#: ../../_doc/developer/system/gui.md:95 26eede34526b4f5bb2a4ae534f4f21de
+msgid "messages from the local X server"
+msgstr ""
+
+#: ../../_doc/developer/system/gui.md:96 6dc2bd36c0f648ed91af82adf4c144f7
+msgid "messages from the vchan connecting to the remote party"
+msgstr ""
+
+#: ../../_doc/developer/system/gui.md:98 75691f10a0ff47848e1905dd40596beb
+msgid ""
+"The XEvents are handled by the *handle_xevent_eventname* function, and "
+"messages are handled by *handle_messagename* function. One should be very "
+"careful when altering the actual *select* loop, because both XEvents and "
+"vchan messages are buffered, and  *select* will not wake for each message."
+msgstr ""
+
+#: ../../_doc/developer/system/gui.md:100 18226e39528e4002b3ff52c7c221aea4
+msgid ""
+"If one changes the number/order/signature of messages, one should increase "
+"the *QUBES_GUID_PROTOCOL_VERSION* constant in *messages.h* include file."
+msgstr ""
+
+#: ../../_doc/developer/system/gui.md:102 cb29bf28c0224e84bda31f7a3edc9130
+msgid ""
+"*qubes_guid* writes debugging information to "
+"*/var/log/qubes/qubes.domain_id.log* file; *qubes_gui* writes debugging "
+"information to */var/log/qubes/gui_agent.log*. Include these files when "
+"reporting a bug."
+msgstr ""
+
+#: ../../_doc/developer/system/gui.md:105 18e9234d4055430fb13799f514f0b233
+msgid "AppVM -> dom0 messages"
+msgstr ""
+
+#: ../../_doc/developer/system/gui.md:108 df021e9af16c49ddb1b4c56ab4430bb0
+msgid ""
+"Proper handling of the below messages is security-critical. Observe that "
+"beside two messages (`CLIPBOARD` and `MFNDUMP`) the rest have fixed size, so"
+" the parsing code can be small."
+msgstr ""
+
+#: ../../_doc/developer/system/gui.md:111 970b667852cf43e282da96b1a51fdad2
+msgid ""
+"The *override_redirect* window attribute is explained at [Override Redirect "
+"Flag](https://tronche.com/gui/x/xlib/window/attributes/override-"
+"redirect.html). The *transient_for* attribute is explained at [Transient_for"
+" attribute](https://tronche.com/gui/x/icccm/sec-4.html#WM_TRANSIENT_FOR)."
+msgstr ""
+
+#: ../../_doc/developer/system/gui.md:113 117bcda7259e4a10bce74442dac34f60
+msgid ""
+"Window manager hints and flags are described in the [Extended Window Manager"
+" Hints (EWMH) spec](https://standards.freedesktop.org/wm-spec/latest/), "
+"especially under the `_NET_WM_STATE` section."
+msgstr ""
+
+#: ../../_doc/developer/system/gui.md:115 d4bfc422811f414990d9d5c7e4d2d753
+msgid "Each message starts with the following header:"
+msgstr ""
+
+#: ../../_doc/developer/system/gui.md:130 d07faa19923c4d49947951e0a8b7d52d
+msgid "This header is followed by message-specific data:"
+msgstr ""
+
+#: ../../_doc/developer/system/gui.md:207 ece4d5fdf8ac4bdfa1e82a1ac50591b4
+msgid ""
+"The \"num_mfn\" 32bit integers follow the shm_cmd structure; \"off\" is the "
+"offset of the composite buffer start in the first frame; \"shmid\" and "
+"\"domid\" parameters are just placeholders (to be filled by *qubes_guid*), "
+"so that we can use the same structure when talking to *shmoverride.so*|"
+msgstr ""
+
+#: ../../_doc/developer/system/gui.md:274 4e1a643abdcb41d9bb6dcbf5387d9658
+msgid "Dom0 -> AppVM messages"
+msgstr ""
+
+#: ../../_doc/developer/system/gui.md:277 1d7a7b7b69914952a8007807093dcd82
+msgid "Proper handling of the below messages is NOT security-critical."
+msgstr ""
+
+#: ../../_doc/developer/system/gui.md:279 b618e8cdebf94df7afda79d0c8f03d0f
+msgid "Each message starts with the following header"
+msgstr ""
+
+#: ../../_doc/developer/system/gui.md:288 a2566cda44f349a9bb43591edc04037b
+msgid "The header is followed by message-specific data:"
+msgstr ""
+
+#: ../../_doc/developer/system/gui.md:420 a3b0478c2cac40949f78fcf28ba5ce6a
+msgid ""
+"`KEYPRESS`, `BUTTON`, `MOTION`, `FOCUS` messages pass information extracted "
+"from dom0 XEvent; see appropriate event documentation."
+msgstr ""

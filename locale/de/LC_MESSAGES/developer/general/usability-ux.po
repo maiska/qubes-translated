@@ -1,0 +1,575 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-15 16:25+0100\n"
+"PO-Revision-Date: 2021-12-15 15:11+0000\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../_doc/developer/general/usability-ux.md:9
+#: 2eb110b8f961430baae62565467e69a2
+msgid ""
+"Software that is too complicated to use, is often unused. Because we want as"
+" many people as possible to benefit from its unique security properties, the"
+" usability and user experience of Qubes OS is an utmost priority!"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:11
+#: c8471192f3164208a221daa1e70b3ecc
+msgid ""
+"We ask anyone developing for Qubes OS to please read through this guide to "
+"better understand the user experience we strive to achieve. We also ask them"
+" to review [our style guide](/doc/style-guide/) for other design related "
+"information."
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:15
+#: 9f7360ecefc640498d7875616a7bdcd4
+msgid "Easy To Use"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:17
+#: 21f8612101b64cbc90cc50872880549c
+msgid ""
+"An ideal user experience is friendly, and it beckons a new user to explore "
+"the interface. In this process, they can naturally discover how to use the "
+"software. Below are some guidelines that will help you design a user "
+"interface that accomplishes this goal."
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:23
+#: 7975137908dd46faaee8c2a3a9d9279c
+msgid "Require extensive configuration before a user can *begin* doing things"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:24
+#: 7f6211cb8c8f43f983e171fe7e842175
+msgid ""
+"Make it possible to break provided features or actions in unrecoverable ways"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:25
+#: e3a8d789f8a945b4aff605c7e0990cf6
+msgid "Perform actions which compromise security and data"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:26
+#: 609763dc52d840dea4e1fbde412ed060
+msgid "Overwhelm the user with too much information and cognitive load"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:28
+#: e5e5f02f90bd4591b37b855470e09124
+msgid ""
+"Perhaps the most common cause of mistakes is complexity. If there is a "
+"configuration setting that will significantly affect the user's experience, "
+"choose a safe and smart default then tuck this setting in an `Advanced "
+"Settings` panel."
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:34
+#: 8f030f824e544b4caee45f49a43595b5
+msgid "Make it easy to discover features and available actions"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:35
+#: f574f3e510f84479ae55123d2e6924d8
+msgid "Provide some understanding of what discovered features do"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:36
+#: 30ae2798d585423f823ef66ca184056a
+msgid "Offer the ability to easily undo mistakes"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:37
+#: 501902a97613439ab67da73328e339d6
+msgid "Choose intelligent defaults for settings"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:39
+#: d872b9ade7104ef89ac9e5fa1ca51b66
+msgid ""
+"In making software easy to use, it is crucial to be mindful of [cognitive "
+"load](https://en.wikipedia.org/wiki/Cognitive_load) which dictates that "
+"*\"humans are generally able to hold only seven +/-  two units of "
+"information in short-term memory.\"* Making sure your interfaces don't pass "
+"this short-term memory limit is perhaps the most important factor in helping"
+" a user feel comfortable instead of overwhelmed."
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:43
+#: 6b11be3576194fc4a7b8ea32d9fad27b
+msgid "Easy to Understand"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:45
+#: cd5b2c184d8b425e972224b3a6b1f845
+msgid ""
+"There will always be the need to communicate things to users. In these "
+"cases, an interface should aim to make this information easy to understand. "
+"The following are simple guides to help achieve this - none of these are "
+"absolute maxims!"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:51
+#: 5f916cce435443deb3681f922f4d919a
+msgid ""
+"Acronyms are compact and make good names for command line tools. They do not"
+" make graphical user interfaces more intuitive for non-technical users. "
+"Until one learns an acronym's meaning, it is gibberish. Avoid acronyms in "
+"your interfaces whenever possible!"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:53
+#: 6be5ad030f064c078d7dc46df149103b
+msgid "`DVM` - Disposable Virtual Machine"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:54
+#: bd258197e6054ead8a408d71fdb35610
+msgid "`GUID` - Global Unique Identifier"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:55
+#: 699f66c77c0d4e0db922f9deda662cf8
+msgid "`PID` - Process Identification Number"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:56
+#: c2b6ae935c1b43bd8ef0f4d22f5b73dd
+msgid "`NetVM` - Networking Virtual Machine"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:58
+#: 672604be2567465f9c9c232d2f8d4e1f
+msgid ""
+"Despite this rule, some acronyms like `USB` are widely used and understood "
+"due to being in common use for over a decade. It is good to use these "
+"acronyms when the full words like `Universal Serial Bus` are more likely to "
+"confuse users."
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:64
+#: b218a839cb1a4d3a993343f76a2b002c
+msgid ""
+"Use the minimum amount of words needed to be descriptive, but also "
+"informative. Go with common words that are as widely understood. Sometimes, "
+"inventing a word such as `Qube` to describe a `virtual machine` makes the "
+"life of the user much easier."
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:66
+#: d69b510dfa4a470c84eee297272739c0
+msgid "Use `Disposable Qube` instead of `DVM` or `Disposable Virtual Machine`"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:67
+#: 356bfebc48a241e397db2db7afe3bbc0
+msgid "Use `interface` instead of `GUI` or `Graphical User Interface`"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:68
+#: 1e3ebc62929742a1a95f200c4040d617
+msgid ""
+"Use `application number` instead of `PID` or `Process Identification Number`"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:69
+#: db16032aa0c540dca8520322c9bbef05
+msgid "Use `Networking` or `Networking Qube` instead of `NetVM` given context"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:77
+#: 2c31fa05e4cb4e6c9532c49dea8b870a
+msgid ""
+"Technical words are usually more accurate, but they often *only* make sense "
+"to technical users and are confusing and unhelpful to non-technical users. "
+"Examples of technical words that might show up in Qubes OS are:"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:79
+#: 51aa505684c64cd58e8ba08f5a34accd
+msgid "`root.img`"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:80
+#: 5cfbc2b2e78c4ff5bc23cb8a83626451
+msgid "`savefile`"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:81
+#: 4646342c2f09411e92437ba49d989d34
+msgid "`qrexec-daemon`"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:83
+#: 2f50496720c04646ab89c62c74419181
+msgid ""
+"These are all terms that have at some point showed up in users' notification"
+" messages. Each term is very specific, but requires the user to understand "
+"virtualization to interpret."
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:89
+#: 831f92b243cb46d08ad1302fb82e230b
+msgid ""
+"Large amounts of the global population have been using computers for one or "
+"two decades and have formed some mental models of how things work. "
+"Leveraging these mental models are a huge gain."
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:91
+#: 819b98a9d07c4d4cb49bee6530180504
+msgid ""
+"Use `disk space` instead of `root.img`, since while not quite accurate, it "
+"makes contextual sense"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:92
+#: b129be6f95e04ad08eda3ef195f5a91b
+msgid ""
+"Use `saving` instead of `savefile` as the former is the action trying to be "
+"completed"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:93
+#: 2ff4fa74028b4883b30d7fa444a4c113
+msgid ""
+"Use `Qubes` instead of `qrexec-daemon` as it gives better context on what is"
+" happening"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:95
+#: cb686fed4a274f9eb5e2efc46ef653b9
+msgid ""
+"These words are more abstract and user relevant- they help a user understand"
+" what is happening based on already known concepts (disk space) or start to "
+"form a mental model of something new (Qubes)."
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:103
+#: 9c0f532ba24f42ca8a09971ac2d72142
+msgid ""
+"It is easy to start abbreviating (or making acronyms) of long terms like "
+"`Disposable Virtual Machine` depending on where the term shows up in an "
+"interface."
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:105
+#: 86ecdee4834c4f1ea8318779bbd4af41
+msgid "`DVM`"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:106
+#: b089bbd52ee840198624989f1594f28c
+msgid "`DispVM`"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:107
+#: c1d4ad2e26974180b974b8d1e84b9684
+msgid "`DisposableVM`"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:109
+#: 7e0d61dc8a6f41f58432d297e19dce23
+msgid ""
+"This variation in terms can cause new users to question or second guess what"
+" the three different variations mean, which can lead to inaction or "
+"mistakes."
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:115
+#: 7b8ac901deaf493dba08b7b2b7043997
+msgid ""
+"Always strive to keep things consistent in the interfaces as well as "
+"documentation and other materials."
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:117
+#: 4318f62324ba4e6aa688fa84bfd80d21
+msgid "Use `Disposable Qube` at all times as it meets other criteria as well."
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:119
+#: a7e8ba7f8c6f43fa81f0ccd91bcf8db5
+msgid ""
+"By using the same term throughout an interface, a user can create a mental "
+"model and relationship with that term allowing them to feel empowered."
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:127
+#: 586c64d64bc441678fd8ef430cdbe8b0
+msgid ""
+"It is easy to add words like `Domain` before items in a list or menu in an "
+"attempt to be descriptive, such as:"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:136
+#: 58c93238c1bc4cf0b558e0da3ced575b
+msgid ""
+"The repeated use of the word `Domain` requires a user to read it for each "
+"item in the list, which makes extra work for the eye in parsing out the "
+"relevant word like `work, banking, or personal`.  This also affects "
+"horizontal space on fixed width lines."
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:142
+#: aaf4114a06524f718bd446ff6b76ea01
+msgid ""
+"It is more efficient to group things under headings instead as this allows "
+"the eye to easily scan the uniqueness of the items. (As per our previous "
+"example:)"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:153
+#: 2d7d2f68383c4e8da1e6b927885ca52d
+msgid "Easy To Complete"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:155
+#: 5f5e1938ae9b495d8cad658bac738cb9
+msgid ""
+"Lastly, expected (and unexpected) situations often require user actions or "
+"input. Make resolving these occurences as easy as possible to complete the "
+"action."
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:161
+#: 1038f92d42b943859d85020563905a00
+msgid "Consider the following notifications:"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:163
+#: 5acff00c44124d978e63aeb7eaba5967
+msgid "`The disk space of your Qube \"Work\" is full`"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:164
+#: 42fe77b2771c43bfb99b31de64c1efe0
+msgid "`There was an error saving Qube \"Personal\"`"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:166
+#: c70fd3ac9870439380971aad94f87b14
+msgid ""
+"Instead of displaying solvable errors like these and neglecting to provide a"
+" fix:"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:172
+#: af4e4ad2657a4cfd83f95e5df8499273
+msgid ""
+"Error messages and limits such as those in the previous example can be "
+"greatly improved by adding buttons or links to helpful information."
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:174
+#: e3460b1fab654b08a5d4631059fe2a55
+msgid "Add a button to `Increase Disk Space`"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:175
+#: cbf37681b88748c8a801e1fc0a6f2a40
+msgid "Add a link to a documentation page called `Troubleshoot saving data`"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:177
+#: 6d831cbb077640dd80eb2d20f7c83bac
+msgid ""
+"In adhering to these principles, you'll make undesirable situations more "
+"manageable for users instead of feeling stranded."
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:185
+#: f8053b43162b45ef9520c2eb7256d25e
+msgid ""
+"There are many cases where a user wants to perform an action on more than "
+"one file or folder. However in order to do the action, the user must repeat "
+"certain steps such as:"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:187
+#: ../../_doc/developer/general/usability-ux.md:198
+#: fe66c29a33234ce9a03a1f12ea2ccaf4 184b0c88c7c940bcb24c67337ef46873
+msgid "Click on `Open File` from a menu or button"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:188
+#: 42c259dd33f046c2af6d6531643aa331
+msgid "Navigate through file system"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:189
+#: 1a9e7b94f19a4710892ef58a0fba1a88
+msgid "Click Folder One"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:190
+#: 21f706ab171345aab4cff5607d2a73e7
+msgid "Click Folder Two"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:191
+#: fca37432eedd4a03ad25ba35d49f8b79
+msgid "Click Folder Three"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:192
+#: b2ee09f95a984cd5b832e7dd84ecf951
+msgid "Click Folder Four"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:193
+#: ../../_doc/developer/general/usability-ux.md:200
+#: 3fe6229738e0475192777a4eb896bceb 616e35cb949b45d28c71d498179e2258
+msgid "Select proper file"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:194
+#: 15f99e1cb7a54a3caee501038bc93f4b
+msgid "Complete task on file"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:196
+#: 180aea1b348a46a1a10af8206d827276
+msgid ""
+"That subtle act of clicking through a file system can prove to be "
+"significant if a user needs to open more than a couple files in the same "
+"directory. We can alleviate some of the work by changing the process:"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:199
+#: 7dc298f22b07423098284fe80d387a57
+msgid "Remember last open folder/file system"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:201
+#: 11c2c24324f84921afc1dc38ba8f0859
+msgid "Complete task"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:203
+#: 49aea78b2d224e18b68c15a1ee918599
+msgid ""
+"Clearly, cutting out something as simple as navigating through the file "
+"system can save a user quite a bit of time. Alternatively, adding a button "
+"or menu item like `Open Multiple Files` might be even better, because "
+"remembering and using relevant hotkeys is often something only power users "
+"know how to do!"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:207
+#: fab81d93cd00446e870bd97bea9f5a7e
+msgid "GNOME, KDE, and Xfce"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:209
+#: fa02a5a2f24544a5b4729d3588379232
+msgid ""
+"The desktop GUIs that QubesOS versions 1 - 3.1 offer are "
+"[KDE](https://www.kde.org) and [Xfce](https://xfce.org). We are currently "
+"migrating towards using [GNOME](https://www.gnome.org). We know some people "
+"prefer KDE, but we believe Gnome is easier to use for average non-technical "
+"users. Xfce will always be supported, and technical users will always have "
+"the choice to use KDE or other desktop environments."
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:211
+#: 7b7dfaa3e5dc4bf4822aecfbd9d30337
+msgid ""
+"This change means you should use [GTK](https://www.gtk.org/) rather than Qt "
+"for new GUIs."
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:213
+#: 0ebb0b6c8453424ab00804785c706d57
+msgid ""
+"All three of these mentioned desktop environments have their own [human "
+"interface "
+"guidelines](https://en.wikipedia.org/wiki/Human_interface_guidelines), and "
+"we suggest you familiarize yourself with the platform you developing for."
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:215
+#: 0c22ad9016c74b0eae9da74ff7066be1
+msgid ""
+"[GNOME Human Interface Guidelines](https://developer.gnome.org/hig/3.18/)"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:216
+#: be4b14dc0d5940c89348c03ae85c165d
+msgid "[KDE HIG](https://techbase.kde.org/Projects/Usability/HIG)"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:217
+#: 62d0ec3aa28d4ab29bee70972734005c
+msgid "[Xfce UI Guidlines](https://wiki.xfce.org/dev/hig/general)"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:221
+#: c9c7200d953b4a5c8aa53f01ab17a398
+msgid "Further Learning & Inspiration"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:223
+#: 529100b62df74b7c9a137de52e649dfa
+msgid ""
+"Learning to make well designing intuitive interfaces and software is "
+"specialized skillset that can take years to cultivate, but if you are "
+"interested in furthering your understanding, we suggest the following "
+"resources:"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:225
+#: 00f84d98a76d41c797bd66a8549a570a
+msgid ""
+"[Learn Design Principles](http://learndesignprinciples.com) by Melissa "
+"Mandelbaum"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:226
+#: 5ed057c9d77c4a5a88ef9d642155a1d2
+msgid ""
+"[Usability in Free Software](http://jancborchardt.net/usability-in-free-"
+"software) by Jan C. Borchardt"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:227
+#: 457740e7e1e44840b9331f55b10a95a9
+msgid ""
+"[Superheroes & Villains in Design](https://vimeo.com/70030549) by Aral "
+"Balkan"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:228
+#: 290831355cba4b458a4fdffb390188d0
+msgid ""
+"[First Rule of Usability? Don’t Listen to "
+"Users](http://www.nngroup.com/articles/first-rule-of-usability-dont-listen-"
+"to-users/) by Jakob Nielsen"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:229
+#: ceb6383585b14c0f8375bcb30da62223
+msgid ""
+"[10 Usability Heuristics for User Interface "
+"Design](https://www.nngroup.com/articles/ten-usability-heuristics/) by Jakob"
+" Nielsen"
+msgstr ""
+
+#: ../../_doc/developer/general/usability-ux.md:230
+#: e5b51c98e3d94daabcb93c1d9f438080
+msgid "[Hack Design](https://hackdesign.org/) - online learning program"
+msgstr ""

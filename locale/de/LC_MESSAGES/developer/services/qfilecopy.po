@@ -1,0 +1,103 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-15 16:25+0100\n"
+"PO-Revision-Date: 2021-12-15 15:10+0000\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../_doc/developer/services/qfilecopy.md:13
+#: cbaade964eff49959ecb97e3472355c5
+msgid ""
+"There are two cases when we need a mechanism to copy files between VMs:"
+msgstr ""
+
+#: ../../_doc/developer/services/qfilecopy.md:15
+#: 077b6ea469344ebf951ba0b8f460e99e
+msgid ""
+"\"regular\" file copy - when user instructs file manager to copy a given "
+"files/directories to a different VM"
+msgstr ""
+
+#: ../../_doc/developer/services/qfilecopy.md:16
+#: e42f2c25370b4e1d94167b2fb95e8e8c
+msgid ""
+"DispVM copy - user selects \"open in DispVM\" on a file; this file must be "
+"copied to a DisposableVM, edited by user, and possibly a modified file "
+"copied back from DispVM to VM."
+msgstr ""
+
+#: ../../_doc/developer/services/qfilecopy.md:18
+#: fcf92761f6c0467a81cb55cf8753563d
+msgid ""
+"Prior to Qubes Beta1, for both cases, a block device (backed by a file in "
+"dom0 with a vfat filesystem on it) was attached to VM, file(s) copied there,"
+" and then the device was detached and attached to target VM. In the DispVM "
+"case, if a edited file has been modified, another block device is passed to "
+"requester VM in order to update the source file."
+msgstr ""
+
+#: ../../_doc/developer/services/qfilecopy.md:20
+#: d7bd97ead26440dabfda9595fc170a74
+msgid "This has the following disadvantages:"
+msgstr ""
+
+#: ../../_doc/developer/services/qfilecopy.md:22
+#: 220dcb5647ba4e60a6d5f18a8a4aa996
+msgid ""
+"performance - dom0 has to prepare and attach/detach block devices, which is "
+"slow because of hotplug scripts involvement."
+msgstr ""
+
+#: ../../_doc/developer/services/qfilecopy.md:23
+#: b16307fe77914c93ae4562fe9b9eed58
+msgid ""
+"security - VM kernel parses partition table and filesystem metadata from the"
+" block device; they are controlled by (potentially untrusted) sender VM."
+msgstr ""
+
+#: ../../_doc/developer/services/qfilecopy.md:25
+#: f30ce541469644edb0849a6ee902d3eb
+msgid ""
+"In Qubes Beta1, we have reimplemented interVM file copy using qrexec, which "
+"addresses the above mentioned disadvantages. In Qubes Beta2, even more "
+"generic solution (qubes rpc) is used. See the developer docs on qrexec and "
+"qubes rpc. In a nutshell, the file sender and the file receiver just "
+"read/write from stdin/stdout, and the qubes rpc layer passes data properly -"
+" so, no block devices are used."
+msgstr ""
+
+#: ../../_doc/developer/services/qfilecopy.md:27
+#: bc511a3fc7f5455fb40d8cfc7d30a6dd
+msgid ""
+"The rpc action for regular file copy is *qubes.Filecopy*, the rpc client is "
+"named *qfile-agent*, the rpc server is named *qfile-unpacker*. For DispVM "
+"copy, the rpc action is *qubes.OpenInVM*, the rpc client is named *qopen-in-"
+"vm*, rpc server is named *vm-file-editor*. Note that the qubes.OpenInVM "
+"action can be done on a normal AppVM, too."
+msgstr ""
+
+#: ../../_doc/developer/services/qfilecopy.md:29
+#: e98639a3bd914a4ca20b437a815a423c
+msgid ""
+"Being a rpc server, *qfile-unpacker* must be coded securely, as it processes"
+" potentially untrusted data format. Particularly, we do not want to use "
+"external tar or cpio and be prone to all vulnerabilities in them; we want a "
+"simplified, small utility, that handles only directory/file/symlink file "
+"type, permissions, mtime/atime, and assume user/user ownership. In the "
+"current implementation, the code that actually parses the data from srcVM "
+"has ca 100 lines of code and executes chrooted to the destination directory."
+" The latter is hardcoded to `~user/QubesIncoming/srcVM`; because of chroot, "
+"there is no possibility to alter files outside of this directory."
+msgstr ""

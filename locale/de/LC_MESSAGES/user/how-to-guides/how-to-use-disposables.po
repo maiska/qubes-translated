@@ -1,0 +1,422 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# erinm, 2021
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-15 16:25+0100\n"
+"PO-Revision-Date: 2021-12-15 15:07+0000\n"
+"Last-Translator: erinm, 2021\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../_doc/user/how-to-guides/how-to-use-disposables.md:17
+#: 13e36e411d564b4ea72839e766bdb7b6
+msgid ""
+"A [disposable](/doc/glossary/#disposable) is a lightweight "
+"[qube](/doc/glossary/#qube) that can be created quickly and will self-"
+"destruct when closed. Disposables are usually created in order to host a "
+"single application, like a viewer, editor, or web browser."
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-disposables.md:20
+#: 940a78485a414e3498bd346da9e56688
+msgid ""
+"From inside an app qube, choosing the `Open in disposable` option on a file "
+"will launch a disposable for just that file. Changes made to a file opened "
+"in a disposable are passed back to the originating VM. This means that you "
+"can safely work with untrusted files without risk of compromising your other"
+" VMs. Disposables can be launched either directly from dom0's Start Menu or "
+"terminal window, or from within app qubes. While running, disposables will "
+"appear in Qubes VM Manager with the name `disp####`."
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-disposables.md:26
+#: 2008c501d5014de5b8ab6201a993e198
+msgid ""
+"[![disposablevm-example.png](/attachment/doc/disposablevm-"
+"example.png)](/attachment/doc/disposablevm-example.png)"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-disposables.md:28
+#: ee81e9e9c98b4a67984f1fd650182def
+msgid ""
+"This diagram provides a general example of how disposables can be used to "
+"safely open untrusted links and attachments in disposables. See [this "
+"article](https://blog.invisiblethings.org/2010/06/01/disposable-vms.html) "
+"for more on why one would want to use a disposable."
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-disposables.md:30
+#: 364c935fe867406b9cd9f832ea764814
+msgid "Security"
+msgstr "Sicherheit"
+
+#: ../../_doc/user/how-to-guides/how-to-use-disposables.md:32
+#: 42c3e78b74b14e21adfc135875baa872
+msgid ""
+"If a [disposable template](/doc/glossary/#disposable-template) becomes "
+"compromised, then any disposable based on that disposable template could be "
+"compromised. In particular, the *default* disposable template is important "
+"because it is used by the \"Open in disposable\" feature. This means that it"
+" will have access to everything that you open with this feature. For this "
+"reason, it is strongly recommended that you base the default disposable "
+"template on a trusted template."
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-disposables.md:37
+#: f5f2d0d3cf6240d8ab2b52cd01d34381
+msgid "Disposables and Local Forensics"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-disposables.md:39
+#: bebd33d9c63c4388929fac0cdffee55b
+msgid ""
+"At this time, disposables should not be relied upon to circumvent local "
+"forensics, as they do not run entirely in RAM. For details, see [this "
+"thread](https://groups.google.com/d/topic/qubes-"
+"devel/QwL5PjqPs-4/discussion)."
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-disposables.md:42
+#: 24c3ebc2039d4d40bc19f16e828c3644
+msgid ""
+"When it is essential to avoid leaving any trace, consider using "
+"[Tails](https://tails.boum.org/)."
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-disposables.md:44
+#: 41e315591a1b48dfac2ead60cdbf5d74
+msgid "Disposables and Networking"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-disposables.md:46
+#: 41564824d146463c9dc786f0a3f7c622
+msgid ""
+"Similarly to how app qubes are based on their underlying "
+"[template](/doc/glossary/#template), disposables are based on their "
+"underlying [disposable template](/doc/glossary/#disposable-template). R4.0 "
+"introduces the concept of multiple disposable templates, whereas R3.2 was "
+"limited to only one."
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-disposables.md:49
+#: 76b2302f565f40dab3b51108c00d5626
+msgid ""
+"On a fresh installation of Qubes, the default disposable template is called "
+"`fedora-XX-dvm` (where `XX` is the Fedora version of the default template). "
+"If you have included the Whonix option in your install, there will also be a"
+" `whonix-ws-dvm` disposable template available for your use."
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-disposables.md:52
+#: 6c05c33ebb734175bc1c7219313a7051
+msgid ""
+"You can set any app qube to have the ability to act as a disposable template"
+" with:"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-disposables.md:58
+#: 7ebc52084cab459d9a97927c2e92995f
+msgid ""
+"The default system wide disposable template can be changed with `qubes-prefs"
+" default_dispvm`. By combining the two, choosing `Open in disposable` from "
+"inside an app qube will open the document in a disposable based on the "
+"default disposable template you specified."
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-disposables.md:61
+#: ce6a8845f847485aae7903e258b8ca18
+msgid ""
+"You can change this behaviour for individual VMs: in the Application Menu, "
+"open Qube Settings for the VM in question and go to the \"Advanced\" tab. "
+"Here you can edit the \"Default disposable\" setting to specify which "
+"disposable template will be used to launch disposables from that VM. This "
+"can also be changed from the command line with:"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-disposables.md:69
+#: b64d0b1cb6354d979f049398f1d21094
+msgid ""
+"For example, `anon-whonix` has been set to use `whonix-ws-dvm` as its "
+"`default_dispvm`, instead of the system default. You can even set an app "
+"qube that has also been configured as a disposable template to use itself, "
+"so disposables launched from within the app qube/disposable template would "
+"inherit the same settings."
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-disposables.md:72
+#: c1d9b32260354076b761c003afe4d4bd
+msgid ""
+"NetVM and firewall rules for disposable templates can be set as they can for"
+" a normal VM. By default a disposable will inherit the NetVM and firewall "
+"settings of the disposable template on which it is based. This is a change "
+"in behaviour from R3.2, where disposables would inherit the settings of the "
+"app qube from which they were launched. Therefore, launching a disposable "
+"from an app qube will result in it using the network/firewall settings of "
+"the disposable template on which it is based. For example, if an app qube "
+"uses sys-net as its NetVM, but the default system disposable uses sys-"
+"whonix, any disposable launched from this app qube will have sys-whonix as "
+"its NetVM."
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-disposables.md:78
+#: 7974efaaad1246cdbf7c9cd937e0d4c5
+msgid ""
+"**Warning:** The opposite is also true. This means if you have changed anon-"
+"whonix's `default_dispvm` to use the system default, and the system default "
+"disposable uses sys-net, launching a disposable from inside anon-whonix will"
+" result in the disposable using sys-net."
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-disposables.md:81
+#: 2c314f8f8d7f49468cc92599e3826d28
+msgid ""
+"A disposable launched from the Start Menu inherits the NetVM and firewall "
+"settings of the disposable template on which it is based. Note that changing"
+" the \"NetVM\" setting for the system default disposable template *does* "
+"affect the NetVM of disposables launched from the Start Menu. Different "
+"disposable templates with individual NetVM settings can be added to the "
+"Start Menu."
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-disposables.md:85
+#: 770371cf90204d67933a897a7f246c96
+msgid ""
+"**Important Notes:** Some disposable templates will automatically create a "
+"menu item to launch a disposable, if you do not see an entry and want to add"
+" one please use the command:"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-disposables.md:92
+#: 4282fb1140d348739af1933c5e1fd643
+msgid ""
+"To launch a disposable template from the command line, in dom0 please type "
+"the following:"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-disposables.md:98
+#: ec473bc481194ad19715567b2f8d0a6c
+msgid "Opening a file in a disposable via GUI"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-disposables.md:100
+#: b562796237ee41f3a2aaee0a40b3d6f9
+msgid ""
+"In an app qube's file manager, right click on the file you wish to open in a"
+" disposable, then choose \"View in disposable\" or \"Edit in disposable\". "
+"Wait a few seconds and the default application for this file type should "
+"appear displaying the file content. This app is running in its own dedicated"
+" VM -- a disposable created for the purpose of viewing or editing this very "
+"file. Once you close the viewing application the whole disposable will be "
+"destroyed. If you have edited the file and saved the changes, the changed "
+"file will be saved back to the original app qube, overwriting the original."
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-disposables.md:106
+#: efc37279ac1f4101b2cb175eafed01e4
+msgid ""
+"![r4.0-open-in-dispvm-1.png](/attachment/doc/r4.0-open-in-dispvm-1.png) "
+"![r4.0-open-in-dispvm-2.png](/attachment/doc/r4.0-open-in-dispvm-2.png)"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-disposables.md:106
+#: bcce8b9be44241b784005d1e0c7f9513
+msgid "r4.0-open-in-dispvm-1.png"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-disposables.md:106
+#: eb9ef5497ae04549b93b8f672e41cadf
+msgid "r4.0-open-in-dispvm-2.png"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-disposables.md:109
+#: c3df7a8963b14897bace3ab9ef07e620
+msgid "Opening a fresh web browser instance in a new disposable"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-disposables.md:111
+#: d22c2e16819e4d65b6314e5eea9463ff
+msgid ""
+"Sometimes it is desirable to open an instance of Firefox within a new fresh "
+"disposable. This can be done easily using the Start Menu: just go to "
+"**Application Menu -\\> Disposable -\\> Disposable:Firefox web browser**. "
+"Wait a few seconds until a web browser starts. Once you close the viewing "
+"application the whole disposable will be destroyed."
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-disposables.md:116
+#: 1dd886649a8c43139e5a25d52dc1cff2
+msgid ""
+"![r4.0-open-in-dispvm-3.png](/attachment/doc/r4.0-open-in-dispvm-3.png)"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-disposables.md:116
+#: 831d0dbe81e5476e8f5cdd050c1a5448
+msgid "r4.0-open-in-dispvm-3.png"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-disposables.md:119
+#: 69e473062fc747fe8caf63078fbab47b
+msgid "Opening a file in a disposable via command line (from app qube)"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-disposables.md:121
+#: 9f3a60ac693d4aa88a2b7192a7de0f07
+msgid "Use the `qvm-open-in-dvm` command from a terminal in your app qube:"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-disposables.md:127
+#: e498e628d2b14940b81dd8a3395a3b40
+msgid ""
+"Note that the `qvm-open-in-dvm` process will not exit until you close the "
+"application in the disposable."
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-disposables.md:129
+#: b1795e696e664b068f74c2cb330f43a8
+msgid "Starting an arbitrary program in a disposable from an app qube"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-disposables.md:131
+#: c0537ade60804154a8ec8555125b71dc
+msgid ""
+"Sometimes it can be useful to start an arbitrary program in a disposable. "
+"The disposable will stay running so long as the process which started the "
+"disposable has not exited. Some applications, such as GNOME Terminal, do not"
+" wait for the application to close before the process exits (details "
+"[here](https://github.com/QubesOS/qubes-"
+"issues/issues/2581#issuecomment-272664009)). Starting an arbitrary program "
+"can be done from an app qube by running"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-disposables.md:140
+#: 22993246705047e897ea151400c3bb90
+msgid ""
+"The created disposable can be accessed via other tools (such as `qvm-copy-"
+"to-vm`) using its `disp####` name as shown in the Qubes Manager or `qvm-ls`."
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-disposables.md:142
+#: de0d0857f88f435da892105d85fe642b
+msgid ""
+"Starting an arbitrary application in a disposable via command line from dom0"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-disposables.md:144
+#: 2c3e442d16ea41e5a579c8ba40c4ea87
+msgid ""
+"The Application Launcher has shortcuts for opening a terminal and a web "
+"browser in dedicated disposables, since these are very common tasks. The "
+"disposable will stay running so long as the process which started the "
+"disposable has not exited. Some applications, such as GNOME Terminal, do not"
+" wait for the application to close before the process exits (details "
+"[here](https://github.com/QubesOS/qubes-"
+"issues/issues/2581#issuecomment-272664009)). It is possible to start an "
+"arbitrary application in a disposable directly from dom0 by running:"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-disposables.md:153
+#: 0ab018dd37a1429fa309739565f77b3e
+msgid ""
+"The label color will be inherited from `<DISPOSABLE_TEMPLATE>`. (The "
+"disposable Application Launcher shortcut used for starting programs runs a "
+"very similar command to the one above.)"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-disposables.md:156
+#: 6f8bc388c0974e8faeb9dfbb7e2c9b48
+msgid ""
+"Opening a link in a disposable based on a non-default disposable template "
+"from a qube"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-disposables.md:158
+#: 1754c94985ce465ca2c1e1887cfadf36
+msgid ""
+"Suppose that the default disposable template for your `email` qube has no "
+"networking (e.g., so that untrusted attachments can't phone home). However, "
+"sometimes you want to open email links in disposables. Obviously, you can't "
+"use the default disposable template, since it has no networking, so you need"
+" to be able to specify a different disposable template. You can do that with"
+" this command from the `email` qube (as long as your RPC policies allow it):"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-disposables.md:167
+#: 659f05ccba114234b4040e1c946544d4
+msgid ""
+"This will create a new disposable based on `<ONLINE_DISPOSABLE_TEMPLATE>`, "
+"open the default web browser in that disposable, and navigate to "
+"`https://www.qubes-os.org`."
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-disposables.md:169
+#: b51977a1174c48cb823c32e689362c86
+msgid "Example of RPC policies to allow this behavior"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-disposables.md:171
+#: 6ec3deddbb194b37ac68adceb206f8e5
+msgid ""
+"In dom0, add the following line at the beginning of the file `/etc/qubes-"
+"rpc/policy/qubes.OpenURL`"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-disposables.md:177
+#: 13e122d4a91241978ee8ab1807c28400
+msgid "This line means:"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-disposables.md:178
+#: ee4dd7aa822d4c66881a60f224150c9e
+msgid "FROM: Any VM"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-disposables.md:179
+#: 4d01ffc039404b5d952246acf0d1a35f
+msgid "TO: A disposable based on `<ONLINE_DISPOSABLE_TEMPLATE>`"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-disposables.md:180
+#: 50d76852190346b09f1e2af2512b862b
+msgid "WHAT: Allow sending an \"Open URL\" request"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-disposables.md:182
+#: ed47d0d7a95b4ddaae2d37ed9ff99d77
+msgid ""
+"In other words, any VM will be allowed to create a new disposable based on "
+"`<ONLINE_DISPOSABLE_TEMPLATE>` and open a URL inside of that disposable."
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-disposables.md:184
+#: 5af6e9b843084a0fadc517d6ffaa1730
+msgid ""
+"More information about RPC policies for disposables can be found "
+"[here](/doc/qrexec/#qubes-rpc-administration)."
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-disposables.md:186
+#: cf7f4329eba0472190193038fbef03ac
+msgid "Customizing disposables"
+msgstr ""
+
+#: ../../_doc/user/how-to-guides/how-to-use-disposables.md:188
+#: 4b27dd12a60b47e2a964b93a068b9528
+msgid ""
+"You can change the template used to generate the disposables, and change "
+"settings used in the disposable savefile. These changes will be reflected in"
+" every new disposable based on that template. Full instructions can be found"
+" [here](/doc/disposable-customization/)."
+msgstr ""

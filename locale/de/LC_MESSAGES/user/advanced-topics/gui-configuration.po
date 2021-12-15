@@ -1,0 +1,105 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-15 16:25+0100\n"
+"PO-Revision-Date: 2021-12-15 15:08+0000\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../_doc/user/advanced-topics/gui-configuration.md:9
+#: 1225ac2f266f4b28b27fef156f664259
+msgid "Video RAM adjustment for high-resolution displays"
+msgstr ""
+
+#: ../../_doc/user/advanced-topics/gui-configuration.md:11
+#: 62717d670a4c44bcb6444bd7f331b50f
+msgid ""
+"When a qube starts, a fixed amount of RAM is allocated to the graphics "
+"buffer called video RAM. This buffer needs to be at least as big as the "
+"whole desktop, accounting for all displays that are or will be connected to "
+"the machine. By default, it is as much as needed for the current display and"
+" an additional full HD (FHD) display (1920×1080 8 bit/channel RGBA). This "
+"logic fails when the machine has primary display in FHD resolution and, "
+"after starting some qubes, a 4K display is connected. If the buffer is too "
+"small, and internal desktop resize fails."
+msgstr ""
+
+#: ../../_doc/user/advanced-topics/gui-configuration.md:17
+#: b41134bfbe50421eb79e991b46d7f05e
+msgid "To increase the minimum size of the video RAM buffer:"
+msgstr ""
+
+#: ../../_doc/user/advanced-topics/gui-configuration.md:24
+#: 80db5d250ed543a98b9b4a6e1008edfc
+msgid ""
+"Where `$WIDTH`×`$HEIGHT` is the maximum desktop size that you anticipate "
+"needing. For example, if you expect to use a 1080p display and a 4k display "
+"side-by-side, that is `(1920 + 3840) × 2160 × 4 / 1024 = 48600`, or slightly"
+" more than 48 MiB per qube. After making these adjustments, the qubes need "
+"to be restarted."
+msgstr ""
+
+#: ../../_doc/user/advanced-topics/gui-configuration.md:28
+#: 7c4bf7bd51b24a8d887b43fe4fef77cb
+msgid ""
+"In the case of multiple display with different orientations or if you "
+"plug/unplug displays, the following code will set correct memory size using "
+"xrandr."
+msgstr ""
+
+#: ../../_doc/user/advanced-topics/gui-configuration.md:34
+#: 8c80302a57f64b86b7ee9b0030221364
+msgid "The amount of memory allocated per qube is the maximum of:"
+msgstr ""
+
+#: ../../_doc/user/advanced-topics/gui-configuration.md:35
+#: c8c8e43a8ad8469a83a48589b411ae4f
+msgid "`gui-videoram-min`"
+msgstr ""
+
+#: ../../_doc/user/advanced-topics/gui-configuration.md:36
+#: 731dd62d4314432e8e81cbebba0d712a
+msgid "current display + `gui-videoram-overhead`"
+msgstr ""
+
+#: ../../_doc/user/advanced-topics/gui-configuration.md:38
+#: 837beacbe6694846821cf81b586d1bb8
+msgid ""
+"Default overhead is about 8 MiB, which is enough for a 1080p display (see "
+"above). So, the `gui-videoram-overhead` zeroing is not strictly necessary; "
+"it only avoids allocating memory that will not be used."
+msgstr ""
+
+#: ../../_doc/user/advanced-topics/gui-configuration.md:41
+#: 2fb001f8a28c488db746f751d793b38f
+msgid ""
+"You might face issues when playing video, if the video is choppy instead of "
+"smooth display this could be because the X server doesn't work. You can use "
+"the Linux terminal (Ctrl-Alt-F2) after starting the virtual machine, login. "
+"You can look at the Xorg logs file. As an option you can have the below "
+"config as well present in `/etc/X11/xorg.conf.d/90-intel.conf`, depends on "
+"HD graphics though -"
+msgstr ""
+
+#: ../../_doc/user/advanced-topics/gui-configuration.md:56
+#: 58a26ba1ddd54a2686f9c784480ed777
+msgid "GUI Troubleshooting"
+msgstr ""
+
+#: ../../_doc/user/advanced-topics/gui-configuration.md:58
+#: bddb7162c8f64528b84c900dfe3a84ca
+msgid ""
+"See [GUI Troubleshooting](/doc/gui-troubleshooting) for issues relating to "
+"the Qubes graphical user interface and how to fix them."
+msgstr ""

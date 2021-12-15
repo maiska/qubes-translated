@@ -1,0 +1,377 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# gamag, 2021
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-15 16:25+0100\n"
+"PO-Revision-Date: 2021-12-15 15:12+0000\n"
+"Last-Translator: gamag, 2021\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../_doc/introduction/reporting-bugs.md:18
+#: 4e9ec6f0ac034fb985d9d1579bb4db82
+msgid ""
+"All issues pertaining to the Qubes OS Project (including auxiliary "
+"infrastructure such as the [website](/)) are tracked in [qubes-"
+"issues](https://github.com/QubesOS/qubes-issues/issues), our GitHub issue "
+"tracker. If you're looking for help, please see [Help, Support, Mailing "
+"Lists, and Forum](/support/)."
+msgstr ""
+
+#: ../../_doc/introduction/reporting-bugs.md:24
+#: 3a75ec9176bf4fada54252006b9dba07
+msgid "Important"
+msgstr "Wichtig"
+
+#: ../../_doc/introduction/reporting-bugs.md:26
+#: 965b828253564cb5831f456a9f046ebf
+msgid ""
+"**To disclose a security issue confidentially, please see the "
+"[Security](/security/) page.**"
+msgstr ""
+
+#: ../../_doc/introduction/reporting-bugs.md:29
+#: 30f0edf1939844919de34503df6ffe96
+msgid ""
+"**In all other cases, please do not email individual developers about "
+"issues.**"
+msgstr ""
+
+#: ../../_doc/introduction/reporting-bugs.md:32
+#: f985ed3fa06f408c97ba91c2853a4609
+msgid ""
+"**Please note that many issues can be resolved by reading the "
+"[documentation](/doc/).**"
+msgstr ""
+
+#: ../../_doc/introduction/reporting-bugs.md:35
+#: 3f881c9e94e1455689169e129a4abdb1
+msgid ""
+"**If you see something that should be changed in the documentation, [submit "
+"a change](/doc/doc-guidelines/).**"
+msgstr ""
+
+#: ../../_doc/introduction/reporting-bugs.md:38
+#: 8be52123a5b4472cafba3a462caed4e6
+msgid "Search Tips"
+msgstr ""
+
+#: ../../_doc/introduction/reporting-bugs.md:40
+#: cf1fc83b54cd4dd1a0013dc29180c0f9
+msgid ""
+"[Search both open and closed issues.](https://github.com/QubesOS/qubes-"
+"issues/issues?utf8=%E2%9C%93&q=is%3Aissue) For example, you may be "
+"experiencing a bug that was just fixed, in which case the report for that "
+"bug is probably closed. In this case, it would be useful to view [all bug "
+"reports, both open and closed, with the most recently updated sorted to the "
+"top](https://github.com/QubesOS/qubes-"
+"issues/issues?q=label%3Abug+sort%3Aupdated-desc)."
+msgstr ""
+
+#: ../../_doc/introduction/reporting-bugs.md:48
+#: 41947f19aeba4cd9a85c54ecce4b1245
+msgid ""
+"[Search using labels.](https://github.com/QubesOS/qubes-issues/labels) For "
+"example, you can search issues by priority "
+"([blocker](https://github.com/QubesOS/qubes-issues/labels/P%3A%20blocker), "
+"[critical](https://github.com/QubesOS/qubes-issues/labels/P%3A%20critical), "
+"[major](https://github.com/QubesOS/qubes-issues/labels/P%3A%20major), etc.) "
+"and by component ([core](https://github.com/QubesOS/qubes-"
+"issues/issues?q=is%3Aopen+is%3Aissue+label%3A%22C%3A+core%22), "
+"[manager/widget](https://github.com/QubesOS/qubes-"
+"issues/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3A%22C%3A+manager%2Fwidget%22+),"
+" [Xen](https://github.com/QubesOS/qubes-"
+"issues/issues?q=is%3Aopen+is%3Aissue+label%3A%22C%3A+Xen%22), etc.)."
+msgstr ""
+
+#: ../../_doc/introduction/reporting-bugs.md:59
+#: 87db661340834dd79d33b2d85365cbd7
+msgid ""
+"Only Qubes team members can apply labels. Every issue must have exactly one "
+"**type** (`T: bug`, `T: enhancement`, or `T: task`), exactly one "
+"**priority** (e.g., `P: major`), and at least one **component** (e.g., `C: "
+"core`). Issues may have additional labels, if applicable (e.g., `crypto`, "
+"`ux`)."
+msgstr ""
+
+#: ../../_doc/introduction/reporting-bugs.md:64
+#: 0836854dcacb4f19bf6048e1777ae9a6
+msgid "Issue tracker guidelines"
+msgstr ""
+
+#: ../../_doc/introduction/reporting-bugs.md:66
+#: ceb2018a65b64c8b9d7c6d6479289ba2
+msgid "The issue tracker is not a discussion forum"
+msgstr ""
+
+#: ../../_doc/introduction/reporting-bugs.md:68
+#: 80e587e933584487a805c7357aade998
+msgid ""
+"The issue tracker is a tool to help the developers be more productive and "
+"efficient in their work. It is not a place for discussion. If you wish to "
+"discuss something in the issue tracker, please do so on the forum or mailing"
+" lists (see [Help, Support, Mailing Lists, and Forum](/support/)). You can "
+"simply link to the relevant issue in your discussion post."
+msgstr ""
+
+#: ../../_doc/introduction/reporting-bugs.md:74
+#: 2c7d67dbd685402b8fa7a0aaf199f9f7
+msgid ""
+"This guideline is important for keeping issues focused on *actionable "
+"information*, which helps the developers to stay focused on their work. When"
+" developers come back to an issue to work on it, we do not want them to have"
+" to sift through a large number of unnecessary comments before they can get "
+"started. In many cases, an issue that gets \"too big\" essentially becomes "
+"more trouble than it's worth, and no developer will touch it (also see "
+"[every issue must be about a single, actionable thing](#every-issue-must-be-"
+"about-a-single-actionable-thing)). In these cases, we sometimes have to "
+"close the issue and open a new one. This is a waste of energy for everyone "
+"involved, so we ask that everyone help to avoid repeating this pattern."
+msgstr ""
+
+#: ../../_doc/introduction/reporting-bugs.md:86
+#: 8b3f09e787464c8badf7f57cedece26b
+msgid "Do not submit questions"
+msgstr ""
+
+#: ../../_doc/introduction/reporting-bugs.md:88
+#: 79c12dd8a79a4aa38376971c6c5aa4b2
+msgid ""
+"[qubes-issues](https://github.com/QubesOS/qubes-issues/issues) is not the "
+"place to ask questions. This includes, but is not limited to, "
+"troubleshooting questions and questions about how to do things with Qubes. "
+"Instead, see [Help, Support, Mailing Lists, and Forum](/support/) for "
+"appropriate place to ask questions. By contrast, [qubes-"
+"issues](https://github.com/QubesOS/qubes-issues/issues) is meant for "
+"tracking more general bugs, enhancements, and tasks that affect a broad "
+"range of Qubes users."
+msgstr ""
+
+#: ../../_doc/introduction/reporting-bugs.md:97
+#: 8aa17c3748604fe285831b6aa6956cb9
+msgid "Use the issue template"
+msgstr ""
+
+#: ../../_doc/introduction/reporting-bugs.md:99
+#: fef0cf8f1e7e40de9e66575b6d780b24
+msgid ""
+"When you open a new issue, an issue template is provided for you. Please use"
+" it. Do not delete it. The issue template is carefully designed to elicit "
+"important information. Without this information, the issue is likely to be "
+"incomplete. (If certain sections are not applicable, you may remove them, "
+"but please do so only sparingly and only if they are *truly* not "
+"applicable.)"
+msgstr ""
+
+#: ../../_doc/introduction/reporting-bugs.md:105
+#: ../../_doc/introduction/reporting-bugs.md:171
+#: 1d6910ebe8f8467eb3eea4b731c3f0a7 1d66b2724b9b4c448f3906a0c739c58f
+msgid ""
+"It is also important to note the placement and content of the HTML comments "
+"in the issue template. These help us to have issues with a consistent "
+"format."
+msgstr ""
+
+#: ../../_doc/introduction/reporting-bugs.md:108
+#: c124e8c0633c4455b494bf02803f663b
+msgid "Every issue must be about a single, actionable thing"
+msgstr ""
+
+#: ../../_doc/introduction/reporting-bugs.md:110
+#: 192981b189494171be353e5e58d0bc20
+msgid ""
+"If your issue is not actionable, please see [Help, Support, Mailing Lists, "
+"and Forum](/support/) for the appropriate place to post it. If your issue "
+"would be about more than one thing, file them as separate issues instead. "
+"This means we should generally not try to use a single issue as a \"meta\" "
+"or \"epic\" issue that exists only to group, contain, or track other issues."
+" Instead, when there is a need to group multiple related issues together, "
+"use [projects](https://github.com/QubesOS/qubes-issues/projects)."
+msgstr ""
+
+#: ../../_doc/introduction/reporting-bugs.md:118
+#: 05733171e9fe46198a6b8813c5b79181
+msgid ""
+"This guideline is extremely important for making the issue tracker a useful "
+"tool for the developers. When an issue is too big and composite, it becomes "
+"intractable and drastically increases the likelihood that nothing will get "
+"done. Such issues also tend to encourage an excessive amount of general "
+"discussion that is simply not appropriate for a technical issue tracker (see"
+" [the issue tracker is not a discussion forum](#the-issue-tracker-is-not-a-"
+"discussion-forum))."
+msgstr ""
+
+#: ../../_doc/introduction/reporting-bugs.md:126
+#: 702896f3aa154dceab2051c338651fd1
+msgid "New issues should not be duplicates of existing issues"
+msgstr ""
+
+#: ../../_doc/introduction/reporting-bugs.md:128
+#: aea1afe933bf4c2f9bd618e72b2682b0
+msgid ""
+"Before you submit an issue, check to see whether it has already been "
+"reported. Search through the existing issues -- both open and closed -- by "
+"typing your key words in the **Filters** box. If you find an issue that "
+"seems to be similar to yours, read through it. If you find an issue that is "
+"the same as or subsumes yours, leave a comment on the existing issue rather "
+"than filing a new one, even if the existing issue is closed. If an issue "
+"affects more than one Qubes version, we usually keep only one issue for all "
+"versions. The Qubes team will see your comment and reopen the issue, if "
+"appropriate. For example, you can leave a comment with additional "
+"information to help the maintainer debug it. Adding a comment will subscribe"
+" you to email notifications, which can be helpful in getting important "
+"updates regarding the issue. If you don't have anything to add but still "
+"want to receive email updates, you can click the \"Subscribe\" button at the"
+" side or bottom of the comments."
+msgstr ""
+
+#: ../../_doc/introduction/reporting-bugs.md:142
+#: 860e9dfd3cf74c2f960282762a7023ff
+msgid "Every issue must be of a single type"
+msgstr ""
+
+#: ../../_doc/introduction/reporting-bugs.md:144
+#: 47abe2fb5db442c7aff1b0215d98bee5
+msgid ""
+"Every issue must be exactly one of the following types: a bug report "
+"(`bug`), a feature or improvement request (`enhancement`), or a task "
+"(`task`). Do not file multi-typed issues. Instead, file multiple issues of "
+"distinct types. The Qubes team will classify your issue according to its "
+"type."
+msgstr ""
+
+#: ../../_doc/introduction/reporting-bugs.md:149
+#: 1e339f0d42164d1681a5456168210396
+msgid "New issues should include all relevant information"
+msgstr ""
+
+#: ../../_doc/introduction/reporting-bugs.md:151
+#: d357703983744338a66847390b997e6a
+msgid ""
+"When you file a new issue, you should be sure to include the version of "
+"Qubes you're using, as well as versions of related software packages ([how "
+"to copy information out of dom0](/doc/how-to-copy-from-dom0/)). If your "
+"issue is related to hardware, provide as many details as possible about the "
+"hardware. A great way to do this is by [generating and submitting a Hardware"
+" Compatibility List (HCL) report](/doc/hcl/#generating-and-submitting-new-"
+"reports), then linking to it in your issue. You may also need to use "
+"command-line tools such as `lspci`. If you're reporting a bug in a package "
+"that is in a [testing](/doc/testing/) repository, please reference the "
+"appropriate issue in the [updates-"
+"status](https://github.com/QubesOS/updates-status/issues) repository. "
+"Project maintainers really appreciate thorough explanations. It usually "
+"helps them address the problem more quickly, so everyone wins!"
+msgstr ""
+
+#: ../../_doc/introduction/reporting-bugs.md:164
+#: e8478f663309460f84f02ae732e021f2
+msgid "Use the provided issue template"
+msgstr ""
+
+#: ../../_doc/introduction/reporting-bugs.md:166
+#: 9000553811994415a50396f9d5a15a46
+msgid ""
+"Please use the provided issue template. Do not delete it or remove parts of "
+"it. The issue template is carefully designed to elicit important "
+"information. Without this information, the issue is likely to be incomplete."
+msgstr ""
+
+#: ../../_doc/introduction/reporting-bugs.md:174
+#: fa534be5a38f4b2a91155be32ead9e71
+msgid "There are no guarantees that your issue will be addressed"
+msgstr ""
+
+#: ../../_doc/introduction/reporting-bugs.md:176
+#: 286774823b1e4d80a36a819d308ea85a
+msgid ""
+"Keep in mind that `qubes-issues` is an issue tracker, not a support system. "
+"Creating a new issue is simply a way for you to submit an item for the Qubes"
+" team's consideration. It is up to the Qubes team to decide whether or how "
+"to address your issue, which may include closing the issue without taking "
+"any action on it. Even if your issue is kept open, however, you should not "
+"expect it to be addressed within any particular time frame, or at all. At "
+"the time of this writing, there are well over one thousand open issues in "
+"`qubes-issues`. The Qubes team has its own roadmap and priorities, which "
+"will govern the manner and order in which open issues are addressed."
+msgstr ""
+
+#: ../../_doc/introduction/reporting-bugs.md:186
+#: 9265b433995346faa287f9e7096e8492
+msgid "Following up afterward"
+msgstr ""
+
+#: ../../_doc/introduction/reporting-bugs.md:188
+#: 28c926be189b4009a35f329c210ea837
+msgid ""
+"If the Qubes developers make a code change that resolves your issue, then "
+"your GitHub issue will typically be closed from the relevant patch message. "
+"After that, the package containing the fix will move to the appropriate "
+"[testing](/doc/testing/) repository, then to the appropriate stable "
+"repository. If you so choose, you can test the fix while it's in the "
+"[testing](/doc/testing/) repository, or you can wait for it to land in the "
+"stable repository. If, after testing the fix, you find that it does not "
+"really fix your bug, please leave a comment on your issue explaining the "
+"situation. When you do, we will receive a notification and respond on your "
+"issue or reopen it (or both). Please **do not** create a duplicate issue or "
+"attempt to contact the developers individually about your problem."
+msgstr ""
+
+#: ../../_doc/introduction/reporting-bugs.md:200
+#: b6d052599fcc4cd1995da7a6900706e8
+msgid ""
+"In other cases, your issue may be closed with a specific resolution, such as"
+" `R: invalid`, `R: duplicate`, or `R: won't fix`. Each of these labels has a"
+" description that explains the label. We'll also leave a comment explaining "
+"why we're closing the issue with one of these specific resolutions. If the "
+"issue is closed without one of these specific resolutions, then it means, by"
+" default, that your reported bug was fixed or your requested enhancement was"
+" implemented."
+msgstr ""
+
+#: ../../_doc/introduction/reporting-bugs.md:207
+#: b463cdb956a2470aacc4780801ca931f
+msgid "See also"
+msgstr ""
+
+#: ../../_doc/introduction/reporting-bugs.md:209
+#: d2bd3b8f869f4e30a569c6422497af7a
+msgid "[Help, Support, Mailing Lists, and Forum](/support/)"
+msgstr ""
+
+#: ../../_doc/introduction/reporting-bugs.md:210
+#: 70c51ad5abde47bf96fed1559673d7fd
+msgid "[Testing New Releases and Updates](/doc/testing/)"
+msgstr ""
+
+#: ../../_doc/introduction/reporting-bugs.md:211
+#: c50ae8e69946440abb5236e0f2db9818
+msgid "[How to Contribute](/doc/contributing/)"
+msgstr ""
+
+#: ../../_doc/introduction/reporting-bugs.md:212
+#: 5253b5d65e944f61b581238a9447a879
+msgid "[Contributing Code](/doc/contributing/#contributing-code)"
+msgstr ""
+
+#: ../../_doc/introduction/reporting-bugs.md:213
+#: bae296a8e7d2449bbe2c007a4a182ad1
+msgid "[Package Contributions](/doc/package-contributions/)"
+msgstr ""
+
+#: ../../_doc/introduction/reporting-bugs.md:214
+#: c6e4679b1acb4df78a0271fda9a9b545
+msgid "[Documentation Guidelines](/doc/doc-guidelines/)"
+msgstr ""

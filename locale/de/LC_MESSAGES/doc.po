@@ -1,0 +1,1060 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# ducki2p <ducki2p@gmail.com>, 2021
+# erinm, 2021
+# Lars Schimmer <echelon@i2pmail.org>, 2021
+# Emma Peel, 2021
+# Florencia Herra Vega <flohdot@gmail.com>, 2021
+# IDRASSI Mounir <mounir.idrassi@idrix.fr>, 2021
+# Tobias Killer, 2021
+# Curtis Baltimore <curtisbaltimore@protonmail.com>, 2021
+# m, 2021
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-15 16:25+0100\n"
+"PO-Revision-Date: 2021-12-15 15:06+0000\n"
+"Last-Translator: m, 2021\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../_doc/doc.md:17 d1d59edc21f448c99601cdb9389b0c23
+msgid "Qubes OS Documentation"
+msgstr "Qubes OS Dokumentation"
+
+#: ../../_doc/doc.md:19 0536cee0037545ab94781ab91610c4e4
+msgid "Welcome to the Qubes OS documentation!"
+msgstr ""
+
+#: ../../_doc/doc.md:21 803375e0f6ce4226a9fe02a16cb67bcf
+msgid "Introduction"
+msgstr "Einführung"
+
+#: ../../_doc/doc.md:23 6304eac04fae43f48784de942d9f5b88
+msgid "[What is Qubes OS?](/intro/)"
+msgstr ""
+
+#: ../../_doc/doc.md:24 4ee2457a86184c3cbd9b46505261386a
+msgid "[Video Tours](/video-tours/)"
+msgstr ""
+
+#: ../../_doc/doc.md:25 982d349aa7b74e44aef44c06a797f316
+msgid "[Screenshots](/screenshots/)"
+msgstr ""
+
+#: ../../_doc/doc.md:26 8061db0953cf4458b60744bd3336d745
+msgid "[User FAQ](/faq/#users)"
+msgstr ""
+
+#: ../../_doc/doc.md:27 d410e744252e4d4b8538ab8400e6a20a
+msgid "[Reporting Bugs and Other Issues](/doc/reporting-bugs/)"
+msgstr ""
+
+#: ../../_doc/doc.md:28 5e45f6fd019a43b2b7754ec9dea01be7
+msgid "[Help, Support, Mailing Lists, and Forum](/support/)"
+msgstr ""
+
+#: ../../_doc/doc.md:29 71e4176e00194759ba5fd63c42fbab2b
+msgid "[How to Contribute](/doc/contributing/)"
+msgstr ""
+
+#: ../../_doc/doc.md:31 4f15323b2d964b1fbec3828bba3b67ec
+msgid "Project Security"
+msgstr "Projektsicherheit"
+
+#: ../../_doc/doc.md:33 1a07ac81ae3844a4adb1f11a80bd0c45
+msgid "[Security Center](/security/)"
+msgstr ""
+
+#: ../../_doc/doc.md:34 795f76f871c44345a9b14770a333a6bb
+msgid "[Security FAQ](/faq/#general--security)"
+msgstr ""
+
+#: ../../_doc/doc.md:35 d3e32da291564daca4a34050c435f226
+msgid "[Security Pack](/security/pack/)"
+msgstr ""
+
+#: ../../_doc/doc.md:36 ab8c8c7d4ccd4aa897d3434893d30135
+msgid "[Security Bulletins](/security/bulletins/)"
+msgstr ""
+
+#: ../../_doc/doc.md:37 179c87bde9f743628ba025ca08de430a
+msgid "[Canaries](/security/canaries/)"
+msgstr ""
+
+#: ../../_doc/doc.md:38 be53fb03e7a24baf9b88c6cd33be9e10
+msgid "[Xen Security Advisory (XSA) Tracker](/security/xsa/)"
+msgstr ""
+
+#: ../../_doc/doc.md:39 129549d802ff4e79929f74d92955e2d7
+msgid "[Verifying Signatures](/security/verifying-signatures/)"
+msgstr ""
+
+#: ../../_doc/doc.md:40 1c386ac12761419d91e7b0e99724a428
+msgid "[Qubes PGP Keys](https://keys.qubes-os.org/keys/)"
+msgstr ""
+
+#: ../../_doc/doc.md:43 2cb144aae72648a0a1036774c168f44e
+msgid "User Documentation"
+msgstr "Benutzerdokumentation"
+
+#: ../../_doc/doc.md:45 ec8ca5c3505e406ca4db6f4855cc940b
+msgid "Core documentation for Qubes users."
+msgstr ""
+
+#: ../../_doc/doc.md:47 005d7a0ef7644d549cead4b49167f661
+msgid "Choosing Your Hardware"
+msgstr "Hardware auswählen"
+
+#: ../../_doc/doc.md:49 2f86fcf5f4134c3fbaae6c54ef5051d5
+msgid "[System Requirements](/doc/system-requirements/)"
+msgstr ""
+
+#: ../../_doc/doc.md:50 2ba116ce576049c3833af5821c4c4cc2
+msgid "[Certified Hardware](/doc/certified-hardware/)"
+msgstr ""
+
+#: ../../_doc/doc.md:51 8a960fa86e9d4541b74784b98278091d
+msgid "[Hardware Compatibility List (HCL)](/hcl/)"
+msgstr ""
+
+#: ../../_doc/doc.md:52 225c9f0e7deb417b9f8a3f6f08364240
+msgid "[Hardware Testing](/doc/hardware-testing/)"
+msgstr ""
+
+#: ../../_doc/doc.md:54 141166ac783c46c9a95afbc43b5f1848
+msgid "Downloading, Installing, and Upgrading Qubes"
+msgstr ""
+
+#: ../../_doc/doc.md:56 0811587f9d8940cf81962634dd8d8f70
+msgid "[Downloads](/downloads/)"
+msgstr ""
+
+#: ../../_doc/doc.md:57 802809fbbc714b05b914831bb0eb4318
+msgid "[Installation Guide](/doc/installation-guide/)"
+msgstr ""
+
+#: ../../_doc/doc.md:58 bbb5227b811b40f0a8722b7863af8e94
+msgid "[Upgrade Guides](/doc/upgrade/)"
+msgstr ""
+
+#: ../../_doc/doc.md:59 db0310e9032b4163a2d67d62a97923b8
+msgid "[Supported Versions](/doc/supported-versions/)"
+msgstr ""
+
+#: ../../_doc/doc.md:60 8a0844f475db48f2900e6f3c3c272f9c
+msgid "[Version Scheme](/doc/version-scheme/)"
+msgstr ""
+
+#: ../../_doc/doc.md:61 cf4473acd1f74107b03b38feb0d4bbaf
+msgid "[Testing New Releases and Updates](/doc/testing/)"
+msgstr ""
+
+#: ../../_doc/doc.md:63 76ced708922d4cc286061af45492da52
+msgid "Common Tasks"
+msgstr "Allgemeine Aufgaben"
+
+#: ../../_doc/doc.md:65 6f3d63f2abc94db08ce39e30e7c061d3
+msgid "[Getting Started](/getting-started/)"
+msgstr ""
+
+#: ../../_doc/doc.md:66 86fdb233e9ea404796bcac328f0b062e
+msgid "[Copying and Pasting Text Between Domains](/doc/copy-paste/)"
+msgstr ""
+
+#: ../../_doc/doc.md:67 f7fdbbcbff5b44e38c7b9ed27fd184e2
+msgid "[Copying and Moving Files Between Domains](/doc/copying-files/)"
+msgstr ""
+
+#: ../../_doc/doc.md:68 951389b67f5b4677bd668fd134c95155
+msgid "[Copying from (and to) Dom0](/doc/copy-from-dom0/)"
+msgstr ""
+
+#: ../../_doc/doc.md:69 f138ab4296614ed28a0e84f6ec632ea8
+msgid "[Updating Qubes OS](/doc/updating-qubes-os/)"
+msgstr ""
+
+#: ../../_doc/doc.md:70 42571a76664b48229ab3f6ffb34c802d
+msgid "[Installing and Updating Software in Dom0](/doc/software-update-dom0/)"
+msgstr ""
+
+#: ../../_doc/doc.md:71 d878ee7c966e4a9fb0ba5d6c61478ebb
+msgid ""
+"[Installing and Updating Software in DomUs](/doc/software-update-domu/)"
+msgstr ""
+
+#: ../../_doc/doc.md:72 96f11f8270b84369aebc2d1b42a8d437
+msgid "[Backup, Restoration, and Migration](/doc/backup-restore/)"
+msgstr ""
+
+#: ../../_doc/doc.md:73 6496f1a39acf4bb9ac031435eabee2d4
+msgid "[Volume Backup and Revert](/doc/volume-backup-revert/)"
+msgstr ""
+
+#: ../../_doc/doc.md:74 7ed3ea62dcb34455b74343abed02f8bf
+msgid "[DisposableVMs](/doc/disposablevm/)"
+msgstr ""
+
+#: ../../_doc/doc.md:75 c7b33378e85a4709acdf9e5156010b1e
+msgid "[Block (or Storage) Devices](/doc/block-devices/)"
+msgstr ""
+
+#: ../../_doc/doc.md:76 23bd0761f7c9494cb0502f1efcfcbec9
+msgid "[USB Devices](/doc/usb-devices)"
+msgstr ""
+
+#: ../../_doc/doc.md:77 42c7a37cd90f442eb35e2fb29e73cff7
+msgid "[PCI Devices](/doc/pci-devices/)"
+msgstr ""
+
+#: ../../_doc/doc.md:78 efd8b0e876784db59b06825eb70e0c32
+msgid "[Device Handling](/doc/device-handling/)"
+msgstr ""
+
+#: ../../_doc/doc.md:79 8cd73b6b131844c39e4239ebb7367b6d
+msgid "[Optical Discs](/doc/optical-discs/)"
+msgstr ""
+
+#: ../../_doc/doc.md:80 9789a9b0efbb4a7db8acf51376704e4c
+msgid "[Fullscreen Mode](/doc/full-screen-mode/)"
+msgstr ""
+
+#: ../../_doc/doc.md:82 e16db0109bc74689871840c1f2a36609
+msgid "Managing Operating Systems within Qubes"
+msgstr ""
+
+#: ../../_doc/doc.md:84 8bc070cedf3346e29964d446cd27b430
+msgid "[TemplateVMs](/doc/templates/)"
+msgstr ""
+
+#: ../../_doc/doc.md:85 f3b5ca309905441c84a06616cb306c3b
+msgid "[Fedora](/doc/templates/fedora/)"
+msgstr ""
+
+#: ../../_doc/doc.md:86 52e6d67ec3034712ac864f6fe6e0f841
+msgid "[Debian](/doc/templates/debian/)"
+msgstr ""
+
+#: ../../_doc/doc.md:87 335b5ecb7d1d4a38a454e5fbf3a28d4d
+msgid "[Minimal TemplateVMs](/doc/templates/minimal/)"
+msgstr ""
+
+#: ../../_doc/doc.md:88 1704ff069f264904bf2d91dc99a9f151
+msgid "[Windows](/doc/windows/)"
+msgstr ""
+
+#: ../../_doc/doc.md:89 30b826de4f6e4944b0472bd089f887b7
+msgid "[StandaloneVMs and HVMs](/doc/standalone-and-hvm/)"
+msgstr ""
+
+#: ../../_doc/doc.md:91 f4a152966c38461e92d78df75fac5c0b
+msgid "Security in Qubes"
+msgstr "Sicherheit in Qubes"
+
+#: ../../_doc/doc.md:93 8ffca1b4b5d14356a9da64de2af0f5fb
+msgid "[Qubes Firewall](/doc/firewall/)"
+msgstr ""
+
+#: ../../_doc/doc.md:94 7218f601bbc14009b04f5db6918b1780
+msgid "[Understanding and Preventing Data Leaks](/doc/data-leaks/)"
+msgstr ""
+
+#: ../../_doc/doc.md:95 28b2606209b44c43a5d51531d24e3d5d
+msgid "[Passwordless Root Access in VMs](/doc/vm-sudo/)"
+msgstr ""
+
+#: ../../_doc/doc.md:96 5575d95c13cc473bb597275bd2b2ce1f
+msgid "[Device Handling Security](/doc/device-handling-security/)"
+msgstr ""
+
+#: ../../_doc/doc.md:97 d3c065d424c84326ac7a1ce65e5ffe80
+msgid "[Anti Evil Maid](/doc/anti-evil-maid/)"
+msgstr ""
+
+#: ../../_doc/doc.md:98 4db38707eff449ee8f017ad03b5f1173
+msgid "[Split GPG](/doc/split-gpg/)"
+msgstr ""
+
+#: ../../_doc/doc.md:99 cf503baf8aad45feb3f1f3be1581df08
+msgid "[U2F Proxy](/doc/u2f-proxy/)"
+msgstr ""
+
+#: ../../_doc/doc.md:100 ed5244c3b33840c48c3c2f251a03d5ef
+msgid "[YubiKey](/doc/yubi-key/)"
+msgstr ""
+
+#: ../../_doc/doc.md:102 164356386c50437daa6c7e5ea4cd9b30
+msgid "Advanced Configuration"
+msgstr "Erweiterte Einstellungen"
+
+#: ../../_doc/doc.md:104 3e353b43c2144ff0b6353bd5176e0e34
+msgid "[Configuration Files](/doc/config-files/)"
+msgstr ""
+
+#: ../../_doc/doc.md:105 9dae44adefa443bf920107ddb1629be2
+msgid "[Storing AppVMs on Secondary Drives](/doc/secondary-storage/)"
+msgstr ""
+
+#: ../../_doc/doc.md:106 7fd7ec970ce74123ba80d0d4ac72297b
+msgid "[RPC Policies](/doc/rpc-policy/)"
+msgstr ""
+
+#: ../../_doc/doc.md:107 f51c5415303545ac80d6652f6585a6b0
+msgid "[USB Qubes](/doc/usb-qubes/)"
+msgstr ""
+
+#: ../../_doc/doc.md:108 2c3e15ad116542f8a29621ac3af5ed77
+msgid "[Managing VM Kernels](/doc/managing-vm-kernel/)"
+msgstr ""
+
+#: ../../_doc/doc.md:109 9acec58bff864b0bbe8633c1e1d6c077
+msgid "[Salt Management Stack](/doc/salt/)"
+msgstr ""
+
+#: ../../_doc/doc.md:110 b4ae5d8ccd5544408b2eec40ba065543
+msgid "[DisposableVM Customization](/doc/disposablevm-customization/)"
+msgstr ""
+
+#: ../../_doc/doc.md:111 c20809c74de34aa0bf4f92b3be002bb3
+msgid "[Making Any File Persistent Using `bind-dirs`](/doc/bind-dirs/)"
+msgstr ""
+
+#: ../../_doc/doc.md:112 707acfcdf5a94dfbb657f3668296a7d5
+msgid "[GUI Configuration](/doc/gui-configuration/)"
+msgstr ""
+
+#: ../../_doc/doc.md:113 58c8797e4e7a4dd8b6555568ce0b1349
+msgid "[Resizing Disk Images](/doc/resize-disk-image/)"
+msgstr ""
+
+#: ../../_doc/doc.md:114 2a69c4467f8b423ab1ed0f77abd13506
+msgid ""
+"[Mounting and Decrypting Qubes Partitions from Outside Qubes](/doc/mount-"
+"from-other-os/)"
+msgstr ""
+
+#: ../../_doc/doc.md:115 95f77e86a4114f39bfd70bb2e69691b7
+msgid "[KDE](/doc/kde/)"
+msgstr ""
+
+#: ../../_doc/doc.md:116 1a45dbf4291944efac4dbf0c1eef4445
+msgid "[i3 Window Manager](/doc/i3/)"
+msgstr ""
+
+#: ../../_doc/doc.md:117 ff61a1613fcd4159af8c362a7a0144cc
+msgid "[awesome Window Manager](/doc/awesome/)"
+msgstr ""
+
+#: ../../_doc/doc.md:119 ../../_doc/doc.md:281
+#: 1e82d3662b1b42179bf867241ea5990c 324e9ad690e542808dc562738e9737d2
+msgid "Troubleshooting"
+msgstr "Fehlerbehebung"
+
+#: ../../_doc/doc.md:121 2bd01f45c5e14122ab4e130fb2bbbd47
+msgid "[Installation Troubleshooting](/doc/installation-troubleshooting)"
+msgstr ""
+
+#: ../../_doc/doc.md:122 a6d443f37f6c4eb6bfbb8d8c2a97cb51
+msgid "[UEFI Troubleshooting](/doc/uefi-troubleshooting/)"
+msgstr ""
+
+#: ../../_doc/doc.md:123 a7384043d47048caae8dab961a876d5e
+msgid "[Suspend/Resume Troubleshooting](/doc/suspend-resume-troubleshooting/)"
+msgstr ""
+
+#: ../../_doc/doc.md:124 ff07066eeb454f33b6ccaeebc3f8700b
+msgid "[Application Shortcut Troubleshooting](/doc/managing-appvm-shortcuts/)"
+msgstr ""
+
+#: ../../_doc/doc.md:125 59f15ffe4ec64c09a5c4bccb4e0bac2a
+msgid "[VM Troubleshooting](/doc/vm-troubleshooting/)"
+msgstr ""
+
+#: ../../_doc/doc.md:126 4ddd4bc112414d85ae5a1b83e3011a97
+msgid "[HVM Troubleshooting](/doc/hvm-troubleshooting/)"
+msgstr ""
+
+#: ../../_doc/doc.md:127 d9ad498f891246d2ad67ba8e9ba9f6a0
+msgid "[Disk Troubleshooting](/doc/disk-troubleshooting/)"
+msgstr ""
+
+#: ../../_doc/doc.md:128 11da9ccf1bff46ba950ae90b0a153e5c
+msgid "[PCI Troubleshooting](/doc/pci-troubleshooting/)"
+msgstr ""
+
+#: ../../_doc/doc.md:129 dd4bc41a22f847ffac8a37aaacb33258
+msgid "[USB Troubleshooting](/doc/usb-troubleshooting/)"
+msgstr ""
+
+#: ../../_doc/doc.md:130 3aad66a31fa24086bd5e896bd0835355
+msgid "[GUI Troubleshooting](/doc/gui-troubleshooting/)"
+msgstr ""
+
+#: ../../_doc/doc.md:131 fea61d2e732d4ff58980780b80297a70
+msgid "[Media Troubleshooting](/doc/media-troubleshooting/)"
+msgstr ""
+
+#: ../../_doc/doc.md:132 5de0c47011134334a5dfe9b088b9b68e
+msgid "[Firewall Troubleshooting](/doc/firewall/#firewall-troubleshooting)"
+msgstr ""
+
+#: ../../_doc/doc.md:133 8ba397c1825b486b8bc1fa35fc0cf513
+msgid "[Hardware Troubleshooting](/doc/hardware-troubleshooting/)"
+msgstr ""
+
+#: ../../_doc/doc.md:134 43c30d4d27244052aeca5d3060c99665
+msgid "[VPN Troubleshooting](/doc/vpn-troubleshooting/)"
+msgstr ""
+
+#: ../../_doc/doc.md:135 9008bc6ec13d48cd92d75adf21f3a69c
+msgid "[Update Troubleshooting](/doc/update-troubleshooting/)"
+msgstr ""
+
+#: ../../_doc/doc.md:137 cd67b3583d4d413fa9054199cf3adf11
+msgid "Reference Pages"
+msgstr ""
+
+#: ../../_doc/doc.md:139 2629457150a84e2ea241667a90f73c0e
+msgid "[Command-line Tools](/doc/tools/)"
+msgstr ""
+
+#: ../../_doc/doc.md:140 b55f0617c6f64b1985a134cbc722f993
+msgid "[Glossary](/doc/glossary/)"
+msgstr ""
+
+#: ../../_doc/doc.md:141 f06f1f7e2e9f4f2492ded9414f1fb087
+msgid "[Qubes Service Framework](/doc/qubes-service/)"
+msgstr ""
+
+#: ../../_doc/doc.md:142 4571a5849c514afaa33bde9592ec0d4a
+msgid "[Command Execution in VMs (and Qubes RPC)](/doc/qrexec/)"
+msgstr ""
+
+#: ../../_doc/doc.md:143 f42709b433444438ac14a53332e45144
+msgid ""
+"[Deprecated "
+"Documentation](https://github.com/QubesOS/qubesos.github.io#deprecated-"
+"documentation)"
+msgstr ""
+
+#: ../../_doc/doc.md:146 9f16431cae2f4bcc8dfa4d58dc67345b
+msgid "Developer Documentation"
+msgstr ""
+
+#: ../../_doc/doc.md:148 fa9e7d5718274857b20b9e16bb415992
+msgid "Core documentation for Qubes developers and advanced users."
+msgstr ""
+
+#: ../../_doc/doc.md:150 b83fe218630f4665aca319f0d8ce36ee
+msgid "General"
+msgstr "Allgemein"
+
+#: ../../_doc/doc.md:152 02a47528fae049e8b19fe7b0545bccf8
+msgid "[Developer FAQ](/faq/#developers)"
+msgstr ""
+
+#: ../../_doc/doc.md:153 06a2a1bb371343d5909eab5e400c06e5
+msgid "[Package Contributions](/doc/package-contributions/)"
+msgstr ""
+
+#: ../../_doc/doc.md:154 7bf59699ee0d435f938381039f62c9a4
+msgid "[Documentation Guidelines](/doc/doc-guidelines/)"
+msgstr ""
+
+#: ../../_doc/doc.md:155 f399a9466150428fa6c921f7928d7916
+msgid "[Community-Developed Feature Tracker](/qubes-issues/)"
+msgstr ""
+
+#: ../../_doc/doc.md:156 55924bc39d134848b497e8da91c1ed55
+msgid "[Google Summer of Code](/gsoc/)"
+msgstr ""
+
+#: ../../_doc/doc.md:157 a94f78a8dadc4bf9a60c85f1e03a68b4
+msgid "[Google Season of Docs](/gsod/)"
+msgstr ""
+
+#: ../../_doc/doc.md:158 b04f9db461224e3bb19a6ad69c6a6846
+msgid "[Books for Developers](/doc/devel-books/)"
+msgstr ""
+
+#: ../../_doc/doc.md:159 31ce2b88d4614297b4dd82ad279c613f
+msgid "[Style Guide](/doc/style-guide/)"
+msgstr ""
+
+#: ../../_doc/doc.md:160 6825ac1ae8554d5b84e4ea66b8cfb019
+msgid "[Usability & UX](/doc/usability-ux/)"
+msgstr ""
+
+#: ../../_doc/doc.md:162 b90fa7db8efe4c55b6197b2f0c985ce8
+msgid "Code"
+msgstr "Code"
+
+#: ../../_doc/doc.md:164 2af0cecc3cad4f7a9d1e20a8491b4456
+msgid "[Source Code](/doc/source-code/)"
+msgstr ""
+
+#: ../../_doc/doc.md:165 0093671c559540f49f46db870e584b63
+msgid "[Software License](/doc/license/)"
+msgstr ""
+
+#: ../../_doc/doc.md:166 376dcb7a4db24e0a8146f9b6b04176ec
+msgid "[Coding Guidelines](/doc/coding-style/)"
+msgstr ""
+
+#: ../../_doc/doc.md:167 0b73e05a5c76416abf41a6446db0ed1a
+msgid "[Code Signing](/doc/code-signing/)"
+msgstr ""
+
+#: ../../_doc/doc.md:169 22a780c584cb4763bd7184d35ee1d1f2
+msgid "System"
+msgstr "System"
+
+#: ../../_doc/doc.md:171 d164eb91deb04bbdaf3d82dbf624763a
+msgid "[Qubes OS Architecture Overview](/doc/architecture/)"
+msgstr ""
+
+#: ../../_doc/doc.md:172 3ab4ea0fb8fc4ef19723370de2cd2c22
+msgid "[Security-critical Code in Qubes OS](/doc/security-critical-code/)"
+msgstr ""
+
+#: ../../_doc/doc.md:173 45f2a302316a4fc8ab8efebc5b401f9a
+msgid ""
+"[Qubes Core Admin](https://dev.qubes-os.org/projects/core-admin/en/latest/)"
+msgstr ""
+
+#: ../../_doc/doc.md:174 66d490b6ee944e24809444da45599598
+msgid ""
+"[Qubes Core Admin Client](https://dev.qubes-os.org/projects/core-admin-"
+"client/en/latest/)"
+msgstr ""
+
+#: ../../_doc/doc.md:175 97d2a01f0c184e0ca0fc7ea71865f361
+msgid "[Qubes Admin API](/news/2017/06/27/qubes-admin-api/)"
+msgstr ""
+
+#: ../../_doc/doc.md:176 bd1353534eb449c68547b5f6f0a4b179
+msgid "[Qubes Core Stack](/news/2017/10/03/core3/)"
+msgstr ""
+
+#: ../../_doc/doc.md:177 d1234a10270e4403976deedf965e7bb0
+msgid "[Qubes GUI virtualization protocol](/doc/gui/)"
+msgstr ""
+
+#: ../../_doc/doc.md:178 257f326b6c6c4055b634a8d99bc1768b
+msgid "[Networking in Qubes](/doc/networking/)"
+msgstr ""
+
+#: ../../_doc/doc.md:179 ef48918f8ea344879e20b351c28050d4
+msgid ""
+"[Implementation of template sharing and updating](/doc/template-"
+"implementation/)"
+msgstr ""
+
+#: ../../_doc/doc.md:180 f8cc053989004815a338830ac14d23cc
+msgid "[Storage Pools](/doc/storage-pools/)"
+msgstr ""
+
+#: ../../_doc/doc.md:181 e14be2ce8db547d78ec8becd4a0951b5
+msgid "[Audio virtualization](/doc/audio-virtualization/)"
+msgstr ""
+
+#: ../../_doc/doc.md:183 1184b08cc4514db991b6dc24d0ea8086
+msgid "Services"
+msgstr "Dienste"
+
+#: ../../_doc/doc.md:185 1095391c7593448fbbe8d2b4b309bec5
+msgid ""
+"[Inter-domain file copying](/doc/qfilecopy/) (deprecates "
+"[`qfileexchgd`](/doc/qfileexchgd/))"
+msgstr ""
+
+#: ../../_doc/doc.md:186 8ee9a045b77d4d9787f7dcd6e36f98b2
+msgid "[Dynamic memory management in Qubes](/doc/qmemman/)"
+msgstr ""
+
+#: ../../_doc/doc.md:187 61435e4b0a9243e49f9a46dd7f14de87
+msgid "[Implementation of DisposableVMs](/doc/dvm-impl/)"
+msgstr ""
+
+#: ../../_doc/doc.md:188 13b5da451ee245ee9218ec6323a0dd2d
+msgid "[Dom0 secure update mechanism](/doc/dom0-secure-updates/)"
+msgstr ""
+
+#: ../../_doc/doc.md:189 6af4fb429bb4484c8581317a553d01cd
+msgid "[Qrexec: secure communication across domains](/doc/qrexec/)"
+msgstr ""
+
+#: ../../_doc/doc.md:190 e9c42e2c197e4b9e9851bed1373c74af
+msgid "[Qrexec: Qubes RPC internals](/doc/qrexec-internals/)"
+msgstr ""
+
+#: ../../_doc/doc.md:191 43021d292de849f89f2f2349c578c034
+msgid "[Qrexec: Socket-based services](/doc/qrexec-socket-services/)"
+msgstr ""
+
+#: ../../_doc/doc.md:193 acc4119bffee48f0823a718af1c0fc46
+msgid "Debugging"
+msgstr "Debuggen"
+
+#: ../../_doc/doc.md:195 65caee7251c840d99d398c97a55d50b2
+msgid "[Profiling python code](/doc/profiling/)"
+msgstr ""
+
+#: ../../_doc/doc.md:196 45167aa3992d4e548236b77131d6c2e6
+msgid ""
+"[Test environment in separate machine for automatic tests](/doc/test-bench/)"
+msgstr ""
+
+#: ../../_doc/doc.md:197 3747c31850924d008336974cac801085
+msgid "[Automated tests](/doc/automated-tests/)"
+msgstr ""
+
+#: ../../_doc/doc.md:198 a50c46b8287340e3bb7c3abf4b34cbb5
+msgid "[VM-dom0 internal configuration interface](/doc/vm-interface/)"
+msgstr ""
+
+#: ../../_doc/doc.md:199 3f91cb69d3b74c93ae948358c56299bb
+msgid "[Debugging Windows VMs](/doc/windows-debugging/)"
+msgstr ""
+
+#: ../../_doc/doc.md:200 acbce9ac3a5941e99830d2203b490907
+msgid "[Safe Remote Dom0 Terminals](/doc/safe-remote-ttys/)"
+msgstr ""
+
+#: ../../_doc/doc.md:201 98787a375c4348ca9a272a5db8d0f8ce
+msgid "[Mount LVM Image](/doc/mount-lvm-image/)"
+msgstr ""
+
+#: ../../_doc/doc.md:203 9da1c33ee1484aa79fb180036d06b3a0
+msgid "Building"
+msgstr "Aufbauen"
+
+#: ../../_doc/doc.md:205 9a09cf8ddf5045de96926d08e808c366
+msgid ""
+"[Building Qubes](/doc/qubes-builder/) ([\"API\" Details](/doc/qubes-builder-"
+"details/))"
+msgstr ""
+
+#: ../../_doc/doc.md:206 ef71e0a415f5430bb384bfc444997dc3
+msgid "[Development Workflow](/doc/development-workflow/)"
+msgstr ""
+
+#: ../../_doc/doc.md:207 288486bbad1141cc9a2515538832fe2e
+msgid "[Building Qubes OS ISO](/doc/qubes-iso-building/)"
+msgstr ""
+
+#: ../../_doc/doc.md:208 65a9d97f82834cafa21fd5853613dc78
+msgid ""
+"[Qubes Template Configuration Files](https://github.com/QubesOS/qubes-"
+"template-configs)"
+msgstr ""
+
+#: ../../_doc/doc.md:210 0479110b4b8b401a8e96ed0c6dc73586
+msgid "Releases"
+msgstr "Versionen"
+
+#: ../../_doc/doc.md:212 f2fd51a4f8484040818acbc4929bce9b
+msgid "[Release notes](/doc/releases/notes/)"
+msgstr ""
+
+#: ../../_doc/doc.md:213 e201d738ea6b44ffb89be32847db6c53
+msgid "[Release schedules](/doc/releases/schedules/)"
+msgstr ""
+
+#: ../../_doc/doc.md:214 4865824a404441969e5d1e7eea66aac1
+msgid "[Release checklist](/doc/releases/todo/)"
+msgstr ""
+
+#: ../../_doc/doc.md:217 3d3630f262a2412c84ebbc3ae362f76d
+msgid "External Documentation"
+msgstr ""
+
+#: ../../_doc/doc.md:219 b95a44dd0dbf4fb0a76ae19438b2ff3a
+msgid ""
+"Unofficial, third-party documentation from the Qubes community and others. "
+"For more, please see [Qubes Community "
+"Documentation](https://github.com/Qubes-"
+"Community/Contents/tree/master/docs)."
+msgstr ""
+
+#: ../../_doc/doc.md:222 296a17a6583b4be7babeb6abac190f0a
+msgid "Operating System Guides"
+msgstr ""
+
+#: ../../_doc/doc.md:224 87e7364665ea44c4b6c027cc72f93522
+msgid ""
+"[Template: Ubuntu](https://github.com/Qubes-"
+"Community/Contents/blob/master/docs/os/ubuntu.md)"
+msgstr ""
+
+#: ../../_doc/doc.md:225 88c6e9ac61c6454c9235630f391f6964
+msgid ""
+"[Template: Whonix](https://github.com/Qubes-"
+"Community/Contents/blob/master/docs/privacy/whonix.md)"
+msgstr ""
+
+#: ../../_doc/doc.md:226 b9dd75dbf8a048798910299fb1419544
+msgid ""
+"[Template: CentOS](https://github.com/Qubes-"
+"Community/Contents/blob/master/docs/os/centos.md)"
+msgstr ""
+
+#: ../../_doc/doc.md:227 14fa69f6c6824fd79a419a05bfc1909f
+msgid ""
+"[Template: Gentoo](https://github.com/Qubes-"
+"Community/Contents/blob/master/docs/os/gentoo.md)"
+msgstr ""
+
+#: ../../_doc/doc.md:228 581ca8aa2cdc40ddbbdb9c2c28d74fdc
+msgid ""
+"[Pentesting](https://github.com/Qubes-"
+"Community/Contents/blob/master/docs/os/pentesting.md)"
+msgstr ""
+
+#: ../../_doc/doc.md:229 487f5db9c8bf4a739544f07a7cc439fd
+msgid ""
+"[Pentesting: BlackArch](https://github.com/Qubes-"
+"Community/Contents/blob/master/docs/os/pentesting/blackarch.md)"
+msgstr ""
+
+#: ../../_doc/doc.md:230 e7e4f557ad6a495e8abc6af18c961af0
+msgid ""
+"[Pentesting: Kali](https://github.com/Qubes-"
+"Community/Contents/blob/master/docs/os/pentesting/kali.md)"
+msgstr ""
+
+#: ../../_doc/doc.md:231 3a91d47f81dc4d48978470104e524a35
+msgid ""
+"[Pentesting: PTF](https://github.com/Qubes-"
+"Community/Contents/blob/master/docs/os/pentesting/ptf.md)"
+msgstr ""
+
+#: ../../_doc/doc.md:232 b94120f846d14eafbf36e07a52fd090b
+msgid ""
+"[Tips for Using Linux in an HVM](https://github.com/Qubes-"
+"Community/Contents/blob/master/docs/os/linux-hvm-tips.md)"
+msgstr ""
+
+#: ../../_doc/doc.md:233 d1c00d00d8064611a690f74b1795133b
+msgid ""
+"[Creating a NetBSD VM](https://github.com/Qubes-"
+"Community/Contents/blob/master/docs/os/netbsd.md)"
+msgstr ""
+
+#: ../../_doc/doc.md:235 17f7cd7f7f4449aa98bd069f121ed80a
+msgid "Security Guides"
+msgstr ""
+
+#: ../../_doc/doc.md:237 eb90c429e25a434995dfbd1a722061b3
+msgid ""
+"[Security Guidelines](https://github.com/Qubes-"
+"Community/Contents/blob/master/docs/security/security-guidelines.md)"
+msgstr ""
+
+#: ../../_doc/doc.md:238 bff2b28c5b4943c88fdfb4760ddf4591
+msgid ""
+"[Using Multi-factor Authentication with Qubes](https://github.com/Qubes-"
+"Community/Contents/blob/master/docs/security/multifactor-authentication.md)"
+msgstr ""
+
+#: ../../_doc/doc.md:239 8abdef47647443eda1823d9ab9cf355d
+msgid ""
+"[How to Set Up a Split Bitcoin Wallet in Qubes](https://github.com/Qubes-"
+"Community/Contents/blob/master/docs/security/split-bitcoin.md)"
+msgstr ""
+
+#: ../../_doc/doc.md:240 9570c7c93b154bd9bdeff91ed7ab0e3d
+msgid "[Split dm-crypt](https://github.com/rustybird/qubes-split-dm-crypt)"
+msgstr ""
+
+#: ../../_doc/doc.md:241 bf82161a73214c9682b86d2e9ce8cc88
+msgid ""
+"[Split SSH](https://github.com/Qubes-"
+"Community/Contents/blob/master/docs/configuration/split-ssh.md)"
+msgstr ""
+
+#: ../../_doc/doc.md:242 c3295f8aa94543698367db4f7dbb0336
+msgid "[Using OnlyKey with Qubes OS](https://docs.crp.to/qubes.html)"
+msgstr ""
+
+#: ../../_doc/doc.md:244 bf1691b287d44d229aef2af373d75f13
+msgid "Privacy Guides"
+msgstr ""
+
+#: ../../_doc/doc.md:246 b71afb527ea3487ab5dda9a466fe7d03
+msgid ""
+"[Whonix for Privacy & Anonymity](https://github.com/Qubes-"
+"Community/Contents/blob/master/docs/privacy/whonix.md)"
+msgstr ""
+
+#: ../../_doc/doc.md:247 8002c604106440b28d500cdac15ddf96
+msgid ""
+"[Running Tails in Qubes](https://github.com/Qubes-"
+"Community/Contents/blob/master/docs/privacy/tails.md)"
+msgstr ""
+
+#: ../../_doc/doc.md:248 ea192f0b01fc4b0486818f42332dd6f4
+msgid ""
+"[Anonymizing your MAC Address](https://github.com/Qubes-"
+"Community/Contents/blob/master/docs/privacy/anonymizing-your-mac-address.md)"
+msgstr ""
+
+#: ../../_doc/doc.md:249 0173f405d0f5487bbad028f0240ef4a2
+msgid ""
+"[Signal](https://github.com/Qubes-"
+"Community/Contents/blob/master/docs/privacy/signal.md)"
+msgstr ""
+
+#: ../../_doc/doc.md:250 b49a9e9f1fea4690aed6e6a7b99cb838
+msgid ""
+"[Reducing the fingerprint of the text-based web browser "
+"w3m](https://github.com/Qubes-"
+"Community/Contents/blob/master/docs/configuration/w3m.md)"
+msgstr ""
+
+#: ../../_doc/doc.md:252 e3b309ad91a94b4892d78e96396d615f
+msgid "Configuration Guides"
+msgstr ""
+
+#: ../../_doc/doc.md:254 68a992f4065c4e57a23a2569811e71af
+msgid ""
+"[Qubes Tips and Tricks](https://github.com/Qubes-"
+"Community/Contents/blob/master/docs/configuration/tips-and-tricks.md)"
+msgstr ""
+
+#: ../../_doc/doc.md:255 d243262bbf48438a89e5b5326da87469
+msgid ""
+"[How to set up a ProxyVM as a VPN Gateway](https://github.com/Qubes-"
+"Community/Contents/blob/master/docs/configuration/vpn.md)"
+msgstr ""
+
+#: ../../_doc/doc.md:256 ba176e5fec274919b97236709f1a0483
+msgid ""
+"[Multibooting](https://github.com/Qubes-"
+"Community/Contents/blob/master/docs/configuration/multiboot.md)"
+msgstr ""
+
+#: ../../_doc/doc.md:257 686f684228094a3ab7f602f95ef66833
+msgid ""
+"[Changing your Time Zone](https://github.com/Qubes-"
+"Community/Contents/blob/master/docs/configuration/change-time-zone.md)"
+msgstr ""
+
+#: ../../_doc/doc.md:258 ae9ffa19252343eeb6154dd5409a6f3d
+msgid ""
+"[Installing ZFS in Qubes](https://github.com/Qubes-"
+"Community/Contents/blob/master/docs/configuration/zfs.md)"
+msgstr ""
+
+#: ../../_doc/doc.md:259 71ee8fadc81c4ddaa332736c8c74a750
+msgid ""
+"[Mutt Guide](https://github.com/Qubes-"
+"Community/Contents/blob/master/docs/configuration/mutt.md)"
+msgstr ""
+
+#: ../../_doc/doc.md:260 66baa79af9164655b4f58010980965d0
+msgid ""
+"[Postfix Guide](https://github.com/Qubes-"
+"Community/Contents/blob/master/docs/configuration/postfix.md)"
+msgstr ""
+
+#: ../../_doc/doc.md:261 d53d26b12aac4c5c8453a4a404f78b61
+msgid ""
+"[Fetchmail Guide](https://github.com/Qubes-"
+"Community/Contents/blob/master/docs/configuration/fetchmail.md)"
+msgstr ""
+
+#: ../../_doc/doc.md:262 bce2af3ff89242d3b6f099ae6ff50107
+msgid ""
+"[Creating Custom NetVMs and "
+"ProxyVMs](https://theinvisiblethings.blogspot.com/2011/09/playing-with-"
+"qubes-networking-for-fun.html)"
+msgstr ""
+
+#: ../../_doc/doc.md:263 22c4d396519047fcb3ca62210f728793
+msgid ""
+"[How to make proxy for individual tcp connection from networkless "
+"VM](https://groups.google.com/group/qubes-devel/msg/4ca950ab6d7cd11a)"
+msgstr ""
+
+#: ../../_doc/doc.md:264 e4e16c417fca4c50a524f306451d6ebb
+msgid ""
+"[Adding Bridge Support to the NetVM "
+"(EXPERIMENTAL)](https://github.com/Qubes-"
+"Community/Contents/blob/master/docs/configuration/network-bridge-support.md)"
+msgstr ""
+
+#: ../../_doc/doc.md:265 f21d81d04ae3441aad02c71191635f84
+msgid ""
+"[Enabling TRIM for SSD disks](https://github.com/Qubes-"
+"Community/Contents/blob/master/docs/configuration/disk-trim.md)"
+msgstr ""
+
+#: ../../_doc/doc.md:266 207c8e4c1a9a456ca7b1222a1cf83149
+msgid ""
+"[Configuring a Network Printer](https://github.com/Qubes-"
+"Community/Contents/blob/master/docs/configuration/network-printer.md)"
+msgstr ""
+
+#: ../../_doc/doc.md:267 405ad15699bd4656afb1fcf470f7213e
+msgid ""
+"[Using External Audio Devices](https://github.com/Qubes-"
+"Community/Contents/blob/master/docs/configuration/external-audio.md)"
+msgstr ""
+
+#: ../../_doc/doc.md:268 3b82e6e873cd45318119b2649b73a962
+msgid ""
+"[Rxvt Guide](https://github.com/Qubes-"
+"Community/Contents/blob/master/docs/configuration/rxvt.md)"
+msgstr ""
+
+#: ../../_doc/doc.md:269 2e757f9113a84dfbaa3d0b663d8438c4
+msgid ""
+"[Adding SSD storage cache](https://groups.google.com/d/msgid/qubes-"
+"users/a08359c9-9eb0-4d1a-ad92-a8a9bc676ea6%40googlegroups.com)"
+msgstr ""
+
+#: ../../_doc/doc.md:270 e23af0ab4fc24e898f8e2b14a6d4033b
+msgid ""
+"[How to Make a Multimedia TemplateVM](https://github.com/Qubes-"
+"Community/Contents/blob/master/docs/configuration/multimedia.md)"
+msgstr ""
+
+#: ../../_doc/doc.md:271 d102164260ec4e9385af6df2f4004d9e
+msgid ""
+"[How to install an Nvidia driver in dom0](https://github.com/Qubes-"
+"Community/Contents/blob/master/docs/configuration/install-nvidia-driver.md)"
+msgstr ""
+
+#: ../../_doc/doc.md:273 b24f04ad32f44d709fd37967c340dbe9
+msgid "Customization Guides"
+msgstr ""
+
+#: ../../_doc/doc.md:275 48ddd0a272844c3eba5acf073213985e
+msgid ""
+"[Customizing Fedora minimal templates](https://github.com/Qubes-"
+"Community/Contents/blob/master/docs/customization/fedora-minimal-template-"
+"customization.md)"
+msgstr ""
+
+#: ../../_doc/doc.md:276 88e5221cb4a140fcb4fbebfaaf1af55f
+msgid ""
+"[Customizing Windows 7 templates](https://github.com/Qubes-"
+"Community/Contents/blob/master/docs/customization/windows-template-"
+"customization.md)"
+msgstr ""
+
+#: ../../_doc/doc.md:277 cfc4ff0a23644d2589b9a2b7d1cd3f1a
+msgid ""
+"[Language Localization](https://github.com/Qubes-"
+"Community/Contents/blob/master/docs/customization/language-localization.md)"
+msgstr ""
+
+#: ../../_doc/doc.md:278 5b4a9d2652f74661965ea90072fa6b34
+msgid ""
+"[Dark Theme in Dom0 and DomU](https://github.com/Qubes-"
+"Community/Contents/blob/master/docs/customization/dark-theme.md)"
+msgstr ""
+
+#: ../../_doc/doc.md:279 ce68952724884dd8965d6ab45923b4dc
+msgid ""
+"[Safely Removing TemplateVM Packages (Example: "
+"Thunderbird)](https://github.com/Qubes-"
+"Community/Contents/blob/master/docs/customization/removing-templatevm-"
+"packages.md)"
+msgstr ""
+
+#: ../../_doc/doc.md:283 6e6ffc6794a047c493617beb5e51ae32
+msgid ""
+"[Nvidia Troubleshooting](https://github.com/Qubes-"
+"Community/Contents/blob/master/docs/troubleshooting/nvidia-"
+"troubleshooting.md)"
+msgstr ""
+
+#: ../../_doc/doc.md:284 f38b3ddce3fd4ff299bdbf52c09b1105
+msgid ""
+"[Lenovo ThinkPad Troubleshooting](https://github.com/Qubes-"
+"Community/Contents/blob/master/docs/troubleshooting/thinkpad-"
+"troubleshooting.md)"
+msgstr ""
+
+#: ../../_doc/doc.md:285 92259f6c9ec047c99c3522810c4ac5ba
+msgid ""
+"[Apple MacBook Troubleshooting](https://github.com/Qubes-"
+"Community/Contents/blob/master/docs/troubleshooting/macbook-"
+"troubleshooting.md)"
+msgstr ""
+
+#: ../../_doc/doc.md:286 91c9f6e3b5db4b8e947f7a8bdc51b562
+msgid ""
+"[Sony Vaio Troubleshooting](https://github.com/Qubes-"
+"Community/Contents/blob/master/docs/troubleshooting/sony-vaio-tinkering.md)"
+msgstr ""
+
+#: ../../_doc/doc.md:287 5f316820abd3438ca43eb32697a65c12
+msgid ""
+"[Intel Integrated Graphics Troubleshooting](https://github.com/Qubes-"
+"Community/Contents/blob/master/docs/troubleshooting/intel-igfx-"
+"troubleshooting.md)"
+msgstr ""
+
+#: ../../_doc/doc.md:288 06baec7841494aa6b98bedfc4016841a
+msgid ""
+"[Multiboot Troubleshooting](https://github.com/Qubes-"
+"Community/Contents/blob/master/docs/configuration/multiboot.md#troubleshooting)"
+msgstr ""
+
+#: ../../_doc/doc.md:289 c773cc3070b640bca780236172d9b864
+msgid ""
+"[Application Troubleshooting](https://github.com/Qubes-"
+"Community/Contents/blob/master/docs/troubleshooting/application-"
+"troubleshooting.md)"
+msgstr ""
+
+#: ../../_doc/doc.md:290 391918905efe446fb052ca9137c0018f
+msgid ""
+"[Tails Troubleshooting](https://github.com/Qubes-"
+"Community/Contents/blob/master/docs/troubleshooting/tails-"
+"troubleshooting.md)"
+msgstr ""
+
+#: ../../_doc/doc.md:292 8de6e67c562a49dd836ae76feee2b981
+msgid "Building Guides"
+msgstr ""
+
+#: ../../_doc/doc.md:294 96d6111f825045ddb2798f7d2f8a9b7c
+msgid ""
+"[Building a TemplateVM based on a new OS (ArchLinux "
+"example)](https://github.com/Qubes-"
+"Community/Contents/blob/master/docs/building/building-non-fedora-"
+"template.md)"
+msgstr ""
+
+#: ../../_doc/doc.md:295 b2f0b296c6e44cffb0a4081a5d266c35
+msgid ""
+"[Building the Archlinux Template](https://github.com/Qubes-"
+"Community/Contents/blob/master/docs/building/building-archlinux-template.md)"
+msgstr ""
+
+#: ../../_doc/doc.md:296 ced2774c681e4597bd599110bdd7a85c
+msgid ""
+"[Building the Whonix Templates](https://github.com/Qubes-"
+"Community/Contents/blob/master/docs/building/building-whonix-template.md)"
+msgstr ""
+
+#: ../../_doc/doc.md:297 43df3d3e143a409e866d3f5b4f2e501b
+msgid ""
+"[How to compile kernels for dom0](https://groups.google.com/d/topic/qubes-"
+"users/yBeUJPwKwHM/discussion)"
+msgstr ""

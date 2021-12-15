@@ -1,0 +1,50 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# m, 2021
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-15 16:25+0100\n"
+"PO-Revision-Date: 2021-12-15 15:26+0000\n"
+"Last-Translator: m, 2021\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../_doc/README.md:1 99dcb4536b114aa190701d03de9d14c0
+msgid "Qubes OS Documentation"
+msgstr "Qubes OS Dokumentation"
+
+#: ../../_doc/README.md:3 16be3a664a504e56b1cd31895bf283f5
+msgid "do u check out the submdule branch"
+msgstr ""
+
+#: ../../_doc/README.md:5 e8b3f9ea1d574785b2835020c0d4fc5e
+msgid "Canonical URL: https://www.qubes-os.org/doc/"
+msgstr ""
+
+#: ../../_doc/README.md:7 0807768a63a5428d8195a529250f42ba
+msgid ""
+"All [Qubes OS Project](https://github.com/QubesOS) documentation pages are "
+"stored as plain text files in this dedicated repository. By cloning and "
+"regularly pulling from this repo, users can maintain their own up-to-date "
+"offline copy of all Qubes documentation rather than relying solely on the "
+"Web."
+msgstr ""
+
+#: ../../_doc/README.md:12 6c0f3df3aa2a430eab63b82f2fce11d0
+msgid ""
+"For more information about the documentation, including how to contribute, "
+"please see the [Documentation Guidelines](https://www.qubes-os.org/doc/doc-"
+"guidelines/)."
+msgstr ""

@@ -1,0 +1,171 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-15 16:25+0100\n"
+"PO-Revision-Date: 2021-12-15 15:12+0000\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../_doc/introduction/contributing.md:13 99fd63cc843c4e1b809b69cd055cd51f
+msgid ""
+"Thank you for your interest in contributing to Qubes! Here are some of the "
+"many ways in which you can help:"
+msgstr ""
+
+#: ../../_doc/introduction/contributing.md:16 a6d5bf4b6d1c4fb881f53b34e7249d4a
+msgid "Audit the [source code](/doc/source-code/)"
+msgstr ""
+
+#: ../../_doc/introduction/contributing.md:17 c0ceb8f5462c46219054f6af6fa50c07
+msgid "[Report security issues](/security/)"
+msgstr ""
+
+#: ../../_doc/introduction/contributing.md:18 20ac9991880a4a2aa7aae3238e5814e0
+msgid ""
+"[Send patches](/doc/source-code/#how-to-send-patches) to fix bugs or "
+"implement features"
+msgstr ""
+
+#: ../../_doc/introduction/contributing.md:20 02a1503e2938416ebcf1955c38d4fbc1
+msgid "[Contribute packages](/doc/package-contributions)"
+msgstr ""
+
+#: ../../_doc/introduction/contributing.md:21 174963714a674055a3df4ee1d3765f94
+msgid "[Report bugs](/doc/issue-tracking/)"
+msgstr ""
+
+#: ../../_doc/introduction/contributing.md:22 df1ae7d950824768bc3cedba53da9a55
+msgid "[Test new releases and updates](/doc/testing/)"
+msgstr ""
+
+#: ../../_doc/introduction/contributing.md:23 54833131600746a99c1eaf0999f4d40c
+msgid "Submit [HCL reports](/doc/hcl/) for your hardware"
+msgstr ""
+
+#: ../../_doc/introduction/contributing.md:24 e03fd5f23da0422d85012f3392430642
+msgid "Record [video tours](/video-tours/)"
+msgstr ""
+
+#: ../../_doc/introduction/contributing.md:25 1a70339d56df438ca900750285b1e224
+msgid ""
+"Create [artwork](https://github.com/QubesOS/qubes-artwork) (plymouth themes,"
+" installer themes, wallpapers, etc.)"
+msgstr ""
+
+#: ../../_doc/introduction/contributing.md:27 6c71ce6050db4f49a0f9b7f8a58779df
+msgid "[Write and edit the documentation](/doc/doc-guidelines)"
+msgstr ""
+
+#: ../../_doc/introduction/contributing.md:28 b24e6a99fd5c403ea871ffe980856379
+msgid "[Donate](/donate/) to the project"
+msgstr ""
+
+#: ../../_doc/introduction/contributing.md:29 b720dc6c8e9342d2b7c98a1d1828f5e2
+msgid "If you represent an organization, become a [Qubes partner](/partners/)"
+msgstr ""
+
+#: ../../_doc/introduction/contributing.md:30 55db1d2f16a24922962943030534d046
+msgid "Add a [Qubes download mirror](/downloads/mirrors/)"
+msgstr ""
+
+#: ../../_doc/introduction/contributing.md:31 18388cfb7e684d95b8bd234bd20b4874
+msgid ""
+"Answer questions and discuss Qubes on the [mailing lists](/support/) and "
+"[forum](/support/#forum)"
+msgstr ""
+
+#: ../../_doc/introduction/contributing.md:33 08e6ab3d0fe64ece9452d590008ed156
+msgid "Engage with us on social media:"
+msgstr ""
+
+#: ../../_doc/introduction/contributing.md:34 daeba287e2cd4718af16d0b7e5269e33
+msgid "Follow us on [Twitter](https://twitter.com/QubesOS)"
+msgstr ""
+
+#: ../../_doc/introduction/contributing.md:35 1969e22cd5bd4704900cfeb952c453a7
+msgid "Join us on [Reddit](https://www.reddit.com/r/Qubes/)"
+msgstr ""
+
+#: ../../_doc/introduction/contributing.md:36 d48a7c4c152c46929096b3a732c8f381
+msgid "Like us on [Facebook](https://www.facebook.com/QubesOS)"
+msgstr ""
+
+#: ../../_doc/introduction/contributing.md:37 d1109a58a2f842008e028af583163fdb
+msgid ""
+"Connect with us on [LinkedIn](https://www.linkedin.com/company/qubes-os/)"
+msgstr ""
+
+#: ../../_doc/introduction/contributing.md:38 f7612a46c7fa4463a20ddd8b4138080f
+msgid ""
+"And last but not least, tell your friends and colleagues about how Qubes can"
+" help them secure their digital lives!"
+msgstr ""
+
+#: ../../_doc/introduction/contributing.md:41 67c3ea0e8ca141708743fa2d5ac9222f
+msgid "Contributing Code"
+msgstr ""
+
+#: ../../_doc/introduction/contributing.md:44 47a7671ea34243a98c4658ed2ffff783
+msgid ""
+"If you're interested in contributing code, the best starting point is to "
+"have a look at our [GitHub issues](https://github.com/QubesOS/qubes-"
+"issues/issues) to see which tasks are the most urgent. You can filter issues"
+" depending on your interest and experience. For example, here are some "
+"common issue labels:"
+msgstr ""
+
+#: ../../_doc/introduction/contributing.md:49 9346eba147c6409ba26db831798c0e54
+msgid ""
+"[Help wanted](https://github.com/QubesOS/qubes-"
+"issues/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22&utf8=%E2%9C%93)"
+msgstr ""
+
+#: ../../_doc/introduction/contributing.md:50 71ab820a0b6a40fdb198cac302430834
+msgid ""
+"[UX and usability](https://github.com/QubesOS/qubes-"
+"issues/issues?q=is%3Aissue+is%3Aopen+label%3AUX)"
+msgstr ""
+
+#: ../../_doc/introduction/contributing.md:51 cba1b6f1441d4fc39cac335ea9cb04a9
+msgid ""
+"[Windows tools](https://github.com/QubesOS/qubes-"
+"issues/issues?q=is%3Aissue+is%3Aopen+label%3A%22C%3A+windows+tools%22)"
+msgstr ""
+
+#: ../../_doc/introduction/contributing.md:52 ec053bfb14c1400ebfe20186c358b5ef
+msgid ""
+"[Documentation](https://github.com/QubesOS/qubes-"
+"issues/issues?q=is%3Aissue+is%3Aopen+label%3A%22C%3A+doc%22)"
+msgstr ""
+
+#: ../../_doc/introduction/contributing.md:53 0f4871893cf54ab7b5a7db618090666f
+msgid ""
+"[Privacy](https://github.com/QubesOS/qubes-"
+"issues/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3A%22privacy%22%20)"
+msgstr ""
+
+#: ../../_doc/introduction/contributing.md:54 6b18c1a25557489ab857b2aa5be54de2
+msgid ""
+"[Debian](https://github.com/QubesOS/qubes-"
+"issues/issues?q=is%3Aissue+is%3Aopen+label%3A%22C%3A+Debian%22)"
+msgstr ""
+
+#: ../../_doc/introduction/contributing.md:56 90e25b42cc8f410a90ccae6b7101aa43
+msgid ""
+"Before you engage in an activity that will take you a significant amount of "
+"time, like implementing a new feature, it's always good to contact us first,"
+" preferably via the [qubes-devel](/support/#qubes-devel) mailing list. Once "
+"we've worked out the details, we'll be grateful to [receive your "
+"patch](/doc/source-code/#how-to-send-patches)."
+msgstr ""

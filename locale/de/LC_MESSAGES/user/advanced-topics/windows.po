@@ -1,0 +1,66 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-15 16:25+0100\n"
+"PO-Revision-Date: 2021-12-15 15:09+0000\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../_doc/user/advanced-topics/windows.md:9
+#: 57da3a90ffee4aea9589eb63e9bc4694
+msgid ""
+"Like any other unmodified OSes, Windows can be installed in Qubes as an "
+"[HVM](/doc/standalone-and-hvm/) domain."
+msgstr ""
+
+#: ../../_doc/user/advanced-topics/windows.md:11
+#: 92418156d21a4725bf4769e8c98a0bde
+msgid ""
+"Qubes Windows Tools are then usually installed to provide integration with "
+"the rest of the Qubes system; they also include Xen's paravirtualized (PV) "
+"drivers to increase performance compared to qemu emulated devices. "
+"Alternatively, only Xen's PV drivers can be installed if integration with "
+"Qubes isn't required or if the tools aren't supported on a give version of "
+"Windows. In the latter case, one would have to [enable inter-VM "
+"networking](/doc/firewall/#enabling-networking-between-two-qubes) to be able"
+" to exchange files with HVMs."
+msgstr ""
+
+#: ../../_doc/user/advanced-topics/windows.md:13
+#: a5ab43c16444458396d28e8cd89b4bcc
+msgid ""
+"For more information about Windows VMs in Qubes OS, please see the following"
+" external resources:"
+msgstr ""
+
+#: ../../_doc/user/advanced-topics/windows.md:15
+#: d4ace40dc96c483b943bd9612012d3b0
+msgid ""
+"[Installing and Using Windows-based VMs](https://github.com/Qubes-"
+"Community/Contents/blob/master/docs/os/windows/windows-vm.md)"
+msgstr ""
+
+#: ../../_doc/user/advanced-topics/windows.md:16
+#: b984e90132cc4f959feaa5ab98d9dcab
+msgid ""
+"[Installing and Using Qubes Windows Tools](https://github.com/Qubes-"
+"Community/Contents/blob/master/docs/os/windows/windows-tools.md)"
+msgstr ""
+
+#: ../../_doc/user/advanced-topics/windows.md:17
+#: 94be1364053142b2a6ce7b521da60975
+msgid ""
+"[Issue #3585 - Installation and know limitations of Qubes Windows Tools in "
+"Qubes R4.0](https://github.com/QubesOS/qubes-issues/issues/3585)"
+msgstr ""
