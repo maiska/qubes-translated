@@ -1,0 +1,152 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-15 21:10+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../project-security/security.md:19
+#: 3e279181bf624eddafacb359887bb365
+msgid "This page provides a central hub for topics pertaining to the security of the Qubes OS Project. For topics pertaining to software security *within* Qubes OS, see [Security in Qubes](/doc/#security-in-qubes). The following is a list of important project security pages:"
+msgstr ""
+
+#: ../project-security/security.md:24
+#: bfe12fa8a69f4ee8a4656dd1c743a995
+msgid "[Qubes Security Pack (`qubes-secpack`)](/security/pack/)"
+msgstr ""
+
+#: ../project-security/security.md:25
+#: 3efcd17870b84b51bcd9629ecbca25c3
+msgid "[Qubes Security Bulletins (QSBs)](/security/qsb/)"
+msgstr ""
+
+#: ../project-security/security.md:26
+#: 38422362350e4aaa9bed78ad9e7aa059
+msgid "[Qubes Canaries](/security/canary/)"
+msgstr ""
+
+#: ../project-security/security.md:27
+#: 083dacf543c04022820bfccc159506ad
+msgid "[Xen Security Advisory (XSA) Tracker](/security/xsa/)"
+msgstr ""
+
+#: ../project-security/security.md:28
+#: 151d648442b94c9fa40c12a7e234c06c
+msgid "[Verifying signatures](/security/verifying-signatures/)"
+msgstr ""
+
+#: ../project-security/security.md:29
+#: f3f896a6bbfb48f4bd5ab4aff686facd
+msgid "[PGP keys](https://keys.qubes-os.org/keys/)"
+msgstr ""
+
+#: ../project-security/security.md:30
+#: f47c0980c1f6455583dedc374798ffc0
+msgid "[Security FAQ](/faq/#general--security)"
+msgstr ""
+
+#: ../project-security/security.md:32
+#: 5113260d12774cfaa8a5a62a22661d8c
+msgid "Reporting Security Issues in Qubes OS"
+msgstr ""
+
+#: ../project-security/security.md:34
+#: 5fd05a20a71d4c4280d94e3c37efaf03
+msgid "If you believe you have found a security issue affecting Qubes OS, either directly or indirectly (e.g., the issue affects Xen in a configuration that is used in Qubes OS), then we would be more than happy to hear from you! Please send a [PGP-encrypted](#security-team-pgp-key) email to the [Qubes Security Team](#qubes-security-team). We promise to take all reported issues seriously. If our investigation confirms that an issue affects Qubes, we will patch it within a reasonable time and release a public [Qubes Security Bulletin (QSB)](/security/qsb/) that describes the issue, discusses the potential impact of the vulnerability, references applicable patches or workarounds, and credits the discoverer."
+msgstr ""
+
+#: ../project-security/security.md:45
+#: 7b4904e9601e4b448c4ed49d26cebf40
+msgid "Security Updates"
+msgstr ""
+
+#: ../project-security/security.md:47
+#: 9200a9e44bd4484f989623902e41d19c
+msgid "Qubes security updates are obtained by [updating Qubes OS](/doc/how-to-update/)."
+msgstr ""
+
+#: ../project-security/security.md:50
+#: 7afb64617a904ffab527dfa72b8d8156
+msgid "Qubes Security Team"
+msgstr ""
+
+#: ../project-security/security.md:52
+#: c123d5efb68d4929a5bb862a32b2a743
+msgid "The **Qubes Security Team (QST)** is the subset of the [Core Qubes Team](/team/#core-team) that is responsible for ensuring the security of Qubes OS and the Qubes OS Project. In particular, the QST is responsible for:"
+msgstr ""
+
+#: ../project-security/security.md:56
+#: e24bdab3933d4f70a0623c2777fdc28f
+msgid "Responding to [reported security issues](#reporting-security-issues-in-qubes-os)"
+msgstr ""
+
+#: ../project-security/security.md:58
+#: 1dcce976175746d49caa6b384849583d
+msgid "Evaluating whether [XSAs](/security/xsa/) affect the security of Qubes OS"
+msgstr ""
+
+#: ../project-security/security.md:59
+#: 8ab39b5cb79c413fba9b225007b3a99c
+msgid "Writing, applying, and/or distributing security patches to fix vulnerabilities in Qubes OS"
+msgstr ""
+
+#: ../project-security/security.md:61
+#: 34752824628448b6b1660b443af167c8
+msgid "Writing, signing, and publishing [Qubes Security Bulletins (QSBs)](/security/qsb/)"
+msgstr ""
+
+#: ../project-security/security.md:63
+#: 62f775c8d8f149f4acc26be2bc2b5ca0
+msgid "Writing, signing, and publishing [Qubes Canaries](/security/canary/)"
+msgstr ""
+
+#: ../project-security/security.md:64
+#: 984b05388e424a8488ba44d5b25bed89
+msgid "Generating, safeguarding, and using the project's [PGP keys](https://keys.qubes-os.org/keys/)"
+msgstr ""
+
+#: ../project-security/security.md:67
+#: 29e928fee4cd4423afdb21b9ab7f5b58
+msgid "As a security-oriented operating system, the QST is fundamentally important to Qubes, and every Qubes user implicitly trusts the members of the QST by virtue of the actions listed above. The Qubes Security Team can be contacted via email at the following address:"
+msgstr ""
+
+#: ../project-security/security.md:76
+#: 5654b0913b3249f995c95b645f07c779
+msgid "Security Team PGP Key"
+msgstr ""
+
+#: ../project-security/security.md:78
+#: 9728ee8e9a3e48a285cd05e811251632
+msgid "Please use the [Security Team PGP Key](https://keys.qubes-os.org/keys/qubes-os-security-team-key.asc) to encrypt all emails sent to this address. This key is signed by the [Qubes Master Signing Key](https://keys.qubes-os.org/keys/qubes-master-signing-key.asc). Please see [Verify Signatures](/security/verifying-signatures/) for information about how to authenticate these keys."
+msgstr ""
+
+#: ../project-security/security.md:85
+#: a71dad1f37474d039ada8efdcf5b7c6a
+msgid "Members of the Security Team"
+msgstr ""
+
+#: ../project-security/security.md:87
+#: 312e6dee455440dc851b7de64988aa24
+msgid "[Marek Marczykowski-Górecki](/team/#marek-marczykowski-górecki)"
+msgstr ""
+
+#: ../project-security/security.md:88
+#: 8af35c8f92d34b289438bae340b9bd7a
+msgid "[Simon Gaiser (aka HW42)](/team/#simon-gaiser-aka-hw42)"
+msgstr ""
+
+#: ../project-security/security.md:89
+#: 9869135a28cd4841a62e407412395521
+msgid "[Joanna Rutkowska](/team/#joanna-rutkowska) ([emeritus, canaries only](/news/2018/11/05/qubes-security-team-update/))"
+msgstr ""

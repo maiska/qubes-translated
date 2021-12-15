@@ -1,0 +1,72 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-15 21:10+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../user/troubleshooting/autostart-troubleshooting.md:8
+#: 87dcae1cd0904fee8123458ce079b226
+msgid "The following instructions are valid for **Qubes OS R4.0 legacy mode** and **Qubes OS R4.1 legacy and UEFI modes**. For **Qubes OS R4.0 in UEFI mode**, there is no GRUB, so manual boot from another operating system is needed."
+msgstr ""
+
+#: ../user/troubleshooting/autostart-troubleshooting.md:12
+#: fabb3116dbce4deebf301e104eb90179
+msgid "In several cases, there is a need to prevent `autostart=True` for qubes on boot. For example:"
+msgstr ""
+
+#: ../user/troubleshooting/autostart-troubleshooting.md:15
+#: 9e35da5876cd440da7752240233b6fdc
+msgid "`sys-usb` was enabled, but the only keyboard is attached via USB, and the `qubes.InputKeyboard` service is disabled."
+msgstr ""
+
+#: ../user/troubleshooting/autostart-troubleshooting.md:17
+#: 50560893b2814401aba3bf61c8026624
+msgid "A PCI device assigned to an autostarting qube crashes the system (e.g., a GPU or RAID controller card)."
+msgstr ""
+
+#: ../user/troubleshooting/autostart-troubleshooting.md:20
+#: 44f472ab243a4f9dac8d2fd5e0defa50
+msgid "To address this, there is a `qubes.skip_autostart` option for the kernel command line. You can use it at the grub boot menu."
+msgstr ""
+
+#: ../user/troubleshooting/autostart-troubleshooting.md:23
+#: dbcd8a503aa84f54bd4343938eca137d
+msgid "[![grub1.png](/attachment/doc/grub1.png)](/attachment/doc/grub1.png)"
+msgstr ""
+
+#: ../user/troubleshooting/autostart-troubleshooting.md:25
+#: b6f0904644e14ba5a4366437ace7ad32
+msgid "Press the `E` key on the first prompt (or your custom prompt). Then, press the down arrow key multiple times to reach the line starting with `module2`."
+msgstr ""
+
+#: ../user/troubleshooting/autostart-troubleshooting.md:28
+#: e1ae87187d824cc7bc651c7d43f74fa0
+msgid "[![grub2.png](/attachment/doc/grub2.png)](/attachment/doc/grub2.png)"
+msgstr ""
+
+#: ../user/troubleshooting/autostart-troubleshooting.md:30
+#: 587bbf3d2ef74c5f8e5c6811a26ea8dc
+msgid "Append `qubes.skip_autostart` to the end of this line (generally after the `rhgb quiet` options)."
+msgstr ""
+
+#: ../user/troubleshooting/autostart-troubleshooting.md:33
+#: 7368a282776b40af944a692c84c9ffbc
+msgid "[![grub3.png](/attachment/doc/grub3.png)](/attachment/doc/grub3.png)"
+msgstr ""
+
+#: ../user/troubleshooting/autostart-troubleshooting.md:35
+#: 2dff1174fcb34f36b48d50cb4c7f8ef1
+msgid "Press `Ctrl+X` to boot with the edited GRUB entry. The boot will proceed as usual from here, except that no qube will be autostarted."
+msgstr ""

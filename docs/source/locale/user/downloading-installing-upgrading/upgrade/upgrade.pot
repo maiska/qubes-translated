@@ -1,0 +1,62 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-15 21:10+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../user/downloading-installing-upgrading/upgrade/upgrade.md:9
+#: 62d8ddce13fc4a3ebc1097754eb8d18d
+msgid "These guides are for upgrading from one version of Qubes to another. If you're just looking to update your system while staying on the same version, see [How to Update](/doc/how-to-update/)."
+msgstr ""
+
+#: ../user/downloading-installing-upgrading/upgrade/upgrade.md:13
+#: 13dc058d3e1545aabe6c224fa9598e68
+msgid "[Upgrading from R1 to R2 Beta 1](/doc/upgrade-to-r2b1/)"
+msgstr ""
+
+#: ../user/downloading-installing-upgrading/upgrade/upgrade.md:14
+#: 33188902b00442008fe6e13152032920
+msgid "[Upgrading from R1 to R2 Beta 2](/doc/upgrade-to-r2b2/)"
+msgstr ""
+
+#: ../user/downloading-installing-upgrading/upgrade/upgrade.md:15
+#: 065c2ae598c84bea829968983842c861
+msgid "[Upgrading from R2 Beta 2 to R2 Beta 3](/doc/upgrade-to-r2b3/)"
+msgstr ""
+
+#: ../user/downloading-installing-upgrading/upgrade/upgrade.md:16
+#: 56be3d1c5cac42beb9f0bb0f08e92695
+msgid "[Upgrading from R2 Beta 3 to R2](/doc/upgrade-to-r2/)"
+msgstr ""
+
+#: ../user/downloading-installing-upgrading/upgrade/upgrade.md:17
+#: deffdeb723b04135888f0c3d94228a26
+msgid "[Upgrading from R2 to R3.0](/doc/upgrade-to-r3.0/)"
+msgstr ""
+
+#: ../user/downloading-installing-upgrading/upgrade/upgrade.md:18
+#: f2415a2414374439b58237da3987af5f
+msgid "[Upgrading from R3.0 to R3.1](/doc/upgrade-to-r3.1/)"
+msgstr ""
+
+#: ../user/downloading-installing-upgrading/upgrade/upgrade.md:19
+#: 2060f424e32245d7a98653bbb47f90bd
+msgid "[Upgrading from R3.1 to R3.2](/doc/upgrade-to-r3.2/)"
+msgstr ""
+
+#: ../user/downloading-installing-upgrading/upgrade/upgrade.md:20
+#: e2a9768c95e54f5bad031321917badc7
+msgid "[Upgrading from R3.2 to R4.0](/doc/upgrade-to-r4.0/)"
+msgstr ""

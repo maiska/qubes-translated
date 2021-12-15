@@ -1,0 +1,32 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-15 21:10+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../introduction/video-tours.md:9
+#: c48da2b09fa54ab2bc7b0e01341ffbb9
+msgid "Micah Lee presents \"Qubes OS: The Operating System That Can Protect You Even If You Get Hacked\""
+msgstr ""
+
+#: ../introduction/video-tours.md:11
+#: 051be19516864d13858f930fb5416aed
+msgid "[Micah Lee](https://micahflee.com/), a long-time Qubes [advocate](/experts/), presented [Qubes OS: The Operating System That Can Protect You Even If You Get Hacked](https://www.hope.net/schedule.html#-qubes-os-the-operating-system-that-can-protect-you-even-if-you-get-hacked-) at the [Circle of HOPE](https://www.hope.net/index.html) conference, which took place July 20-22, 2018 in New York City."
+msgstr ""
+
+#: ../introduction/video-tours.md:17
+#: 5505fc2e2e8245be81832f63e27ba784
+msgid "Explaining Computers presents \"Qubes OS: Security Oriented Operating System\""
+msgstr ""

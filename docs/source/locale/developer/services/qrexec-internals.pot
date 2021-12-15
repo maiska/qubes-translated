@@ -1,0 +1,564 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-15 21:10+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../developer/services/qrexec-internals.md:14
+#: bc7f37c1e89744c38178a28c7af31183
+msgid "(*This page details the current implementation of qrexec (qrexec3). A [general introduction](/doc/qrexec/) to qrexec is also available. For the implementation of qrexec2, see [here](/doc/qrexec2/#qubes-rpc-internals).*)"
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:18
+#: b77c645269c04b6dad14004c99da88e8
+msgid "The qrexec framework consists of a number of processes communicating with each other using a common IPC protocol, described in detail below."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:20
+#: b62f8c6377c64c21a2c9e1f3f5f87b5e
+msgid "Components residing in the same domain (`qrexec-client-vm` to `qrexec-agent`, `qrexec-client` to `qrexec-daemon`) use local sockets as the underlying transport medium. Components in separate domains (`qrexec-daemon` to `qrexec-agent`, data channel between `qrexec-agent`s) use vchan links. Because of [vchan limitation](https://github.com/qubesos/qubes-issues/issues/951), it is not possible to establish qrexec connection back to the source domain."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:24
+#: 759ab0b8906c411396770d56fe7345bb
+msgid "Dom0 tools implementation"
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:26
+#: 8b01fa942960453b95890329d4c27e3e
+msgid "The following programs handle parts of the framework: sending and receiving requests, verifying permissions, and administering connections. These tools are not designed to be used by users directly."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:29
+#: 8a5d8025fed741b08a2bfce246944a79
+msgid "qrexec-daemon"
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:31
+#: 6000aed474b1444c9736d42dd5026dab
+msgid "`/usr/sbin/qrexec-daemon`"
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:33
+#: 6093c89600eb45509ddf1198b26e4899
+msgid "One instance is required for every active domain. `qrexec-daemon` is responsible for both:"
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:36
+#: 18e8c07b955847a3b70b724500cea310
+msgid "handling execution and service requests from **dom0** (source: `qrexec-client`); and"
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:37
+#: 6659d80ea0684646bf317a690e845dc6
+msgid "handling service requests from the associated domain (source: `qrexec-client-vm`, then `qrexec-agent`)."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:39
+#: ../developer/services/qrexec-internals.md:53
+#: ../developer/services/qrexec-internals.md:82
+#: 810301c4ce9542f5a6a3aa8e90f92c69
+#: 3f694455eccf46aaba1d27a00c776501
+#: f1d3011d32c24f819e0d5cc26c93f231
+msgid "Command line usage:"
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:41
+#: 07fcf2ef069044218d6fdb5d8060ea05
+msgid "`qrexec-daemon domain-id domain-name [default user]`"
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:43
+#: 7bf80c7b0b5843cab9cdbed737bfa6ea
+msgid "`domain-id`: Numeric Qubes ID assigned to the associated domain."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:44
+#: ac0849e6ec32439b93046313df009892
+msgid "`domain-name`: Associated domain name."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:45
+#: ba4849d1cd7e4d34b654363d39a1e578
+msgid "`default user`: Optional. If passed, `qrexec-daemon` uses this user as default for all execution requests that don't specify one."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:47
+#: 2b944fc7d28042bdba4017f9767d8a4a
+msgid "qrexec-client"
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:49
+#: 53892859711f4335bc3743b0865b1a72
+msgid "`/usr/bin/qrexec-client`"
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:51
+#: 8969765c56234a37a007326990afd1cb
+msgid "Used to pass execution and service requests to `qrexec-daemon`."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:55
+#: 67ed841294234a8daf9d1c263b22ba56
+msgid "`-d target-domain-name`: Specifies the target for the execution/service request."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:56
+#: 710c020f09ea445098a020d87aaea9a1
+msgid "`-l local-program`: Optional. If present, `local-program` is executed and its stdout/stdin are used when sending/receiving data to/from the remote peer."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:57
+#: 38476a76a05f44ec9b80ad291bc287da
+msgid "`-e`: Optional. If present, stdout/stdin are not connected to the remote   peer. Only process creation status code is received."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:58
+#: 9926299163a440d8a7d347c7682c7655
+msgid "`-c <request-id,src-domain-name,src-domain-id>`: used for connecting a VM-VM service request by `qrexec-policy`. Details described below in the service example."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:59
+#: f2646024705e4d2dba5ecff1afb1b2eb
+msgid "`cmdline`: Command line to pass to `qrexec-daemon` as the execution/service request. Service request format is described below in the service example."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:61
+#: f131c85c5d81444ea0b23d48ffbc7bc5
+msgid "VM tools implementation"
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:63
+#: 8e8769e78b0b45018d239f15f5ddff3c
+msgid "qrexec-agent"
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:65
+#: abf16a2bcb664a1a9c907eb106b6221f
+msgid "`/usr/lib/qubes/qrexec-agent`"
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:67
+#: ab1387cd206a48b0aa823f2e5349e8c6
+msgid "One instance runs in each active domain. Responsible for:"
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:70
+#: 8442f5db0a9447f0b487679a5b4b782b
+msgid "Handling service requests from `qrexec-client-vm` and passing them to connected `qrexec-daemon` in dom0."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:71
+#: 48e3a5ce1b884b4990fa025c27e7bbd7
+msgid "Executing associated `qrexec-daemon` execution/service requests."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:73
+#: 38bd3d3943404136afce79e7dca9b370
+msgid "The `qrexec-agent` command takes no parameters."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:75
+#: cf1d1a13f822439daadda32988dbf0f1
+msgid "qrexec-client-vm"
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:77
+#: a307145b7fe748a2b7a2eecdfc8ad9cd
+msgid "`/usr/bin/qrexec-client-vm`"
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:79
+#: 414138aec90e40568713e2d75cb73c3c
+msgid "Runs in an active domain. Used to pass service requests to `qrexec-agent`."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:84
+#: bb74c8f9a968451390aaaafda8e1bd87
+msgid "`qrexec-client-vm target-domain-name service-name local-program [local program arguments]`"
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:86
+#: a834a0c2bbe34c89b52d741bb092b915
+msgid "`target-domain-name`: Target domain for the service request. Source is the current domain."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:87
+#: c866a3e99890405b9eb1ed4b67006983
+msgid "`service-name`: Requested service name."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:88
+#: 56ab46042a204db2863c7ad1318337b7
+msgid "`local-program`: `local-program` is executed locally and its stdin/stdout are connected to the remote service endpoint."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:90
+#: 3315be1b2cf6499ea08be8bd428219d4
+msgid "Qrexec protocol details"
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:92
+#: 1afd558efb424bb6927a2801951afa68
+msgid "The qrexec protocol is message-based. All messages share a common header followed by an optional data packet."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:103
+#: 96b6281baa11400ebcd27aea30622f06
+msgid "When two peers establish connection, the server sends `MSG_HELLO` followed by `peer_info` struct:"
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:111
+#: 4818d4ab5bf94d7c94b73058fbe8fded
+msgid "The client then should reply with its own `MSG_HELLO` and `peer_info`. The lower of two versions define protocol used for this connection. If either side does not support this version, the connection is closed."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:115
+#: 3405c104aa4e428e9a539e8d317387c7
+msgid "Details of all possible use cases and the messages involved are described below."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:117
+#: bdfe5e813a484b7f9c9f2f547ede3f0b
+msgid "dom0: request execution of `cmd` in domX"
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:119
+#: 831da41aa6b54a239b2e466aab2d19eb
+msgid "![qrexec internals diagram dom0-vm](/attachment/doc/qrexec-dom0-vm.png)"
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:119
+#: 722b2c18e6054172bd7ebd402a5ca9aa
+msgid "qrexec internals diagram dom0-vm"
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:121
+#: 47c796f54d7649dfa75dd5b57a7e3c8d
+msgid "**dom0**: `qrexec-client` is invoked in **dom0** as follows:"
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:125
+#: e2bfc228f5bd4699a57072b05334d6d5
+msgid "(If `local_program` is set, `qrexec-client` executes it and uses that child's stdin/stdout in place of its own when exchanging data with `qrexec-agent` later.)"
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:127
+#: 8d77a3faba2b4eec98f705d73c8d083b
+msgid "`qrexec-client` translates that request into a `MSG_EXEC_CMDLINE` message sent to `qrexec-daemon`, with `connect_domain` set to 0 (connect to **dom0**) and `connect_port also set to 0 (allocate a port)."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:129
+#: 3a439700309b43d8b8d9a9152f49f468
+msgid "**dom0**: `qrexec-daemon` allocates a free port (in this case 513), and sends a `MSG_EXEC_CMDLINE` back to the client with connection parameters (**domX** and 513) and with command field empty."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:131
+#: 9ccf3dc06b1440dd91d48ab1d20a5061
+msgid "`qrexec-client` disconnects from the daemon, starts a vchan server on port 513 and awaits connection."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:133
+#: ba1f337b1d4044b2bcc82d0c60ac3cb9
+msgid "Then, `qrexec-daemon` passes on the request as `MSG_EXEC_CMDLINE` message to the `qrexec-agent` running in **domX**. In this case, the connection parameters are **dom0** and 513."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:135
+#: a481cd22e2cb4c2590a8d6b74301ed52
+msgid "**domX**: `qrexec-agent` receives `MSG_EXEC_CMDLINE`, and starts the command (`user:cmd`, or `cmd` as user `user`). If possible, this is actually delegated to a separate server (`qrexec-fork-server`) also running on domX."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:137
+#: 2b5b3caadd444876989d66aa2b8d43c9
+msgid "After starting the command, `qrexec-fork-server` connects to `qrexec-client` in **dom0** over the provided vchan port 513."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:139
+#: 09594adb37b5400390c81130dd1a319e
+msgid "Data is forwarded between the `qrexec-client` in **dom0** and the command executed in **domX** using `MSG_DATA_STDIN`, `MSG_DATA_STDOUT` and `MSG_DATA_STDERR`."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:141
+#: f30799704d974da396da1332f8615c51
+msgid "Empty messages (with data `len` field set to 0 in `msg_header`) are an EOF marker. Peer receiving such message should close the associated input/output pipe."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:143
+#: 1bbd461b8f3c458483ecda953b950c76
+msgid "When `cmd` terminates, **domX**'s `qrexec-fork-server` sends `MSG_DATA_EXIT_CODE` header to `qrexec-client` followed by the exit code (**int**)."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:145
+#: 8887d01d6b784d6181f584c606307efc
+msgid "domX: request execution of service `admin.Service` in dom0"
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:147
+#: 609d3793cd314d5d8ce1659b39fadf6b
+msgid "![qrexec internals diagram vm-dom0](/attachment/doc/qrexec-vm-dom0.png)"
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:147
+#: 3247c53b2871416d8c53b1b0ab916c17
+msgid "qrexec internals diagram vm-dom0"
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:149
+#: ../developer/services/qrexec-internals.md:195
+#: 6c4e4806dc7e41179876840400a3e093
+#: fb7c0ddd82d14f7aa70bef0d2397a3c9
+msgid "**domX**: `qrexec-client-vm` is invoked as follows:"
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:153
+#: ../developer/services/qrexec-internals.md:199
+#: f67d2b039c7043d38d7f8afe437a2ba2
+#: 1dadadaae9164eddbfda4ab0cd9e8848
+msgid "(If `local_program` is set, it will be executed in **domX** and connected to the remote command's stdin/stdout)."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:155
+#: a1624f56aa314bfd8c20abd7924604f0
+msgid "`qrexec-client-vm` connects to `qrexec-agent` and requests service execution (`admin.Service`) in **dom0**."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:157
+#: eda57f64cec44d42a7b7f969a4d53dd9
+msgid "`qrexec-agent` assigns an internal identifier to the request. It's based on a file descriptor of the connected `qrexec-client-vm`: in this case, `SOCKET11`."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:159
+#: f833b2220049443b988732fb31bd19cd
+msgid "`qrexec-agent` forwards the request (`MSG_TRIGGER_SERVICE3`) to its corresponding `qrexec-daemon` running in dom0."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:161
+#: 87c3d2abacf74f8cb8db4c341a9eea05
+msgid "**dom0**: `qrexec-daemon` receives the request and triggers `qrexec-policy` program, passing all necessary parameters: source domain **domX**, target domain **dom0**, service `admin.Service` and identifier `SOCKET11`."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:163
+#: bad35f535b4e42a592a127415d2d6446
+msgid "`qrexec-policy` evaluates if the RPC should be allowed or denied, possibly also launching a GUI confirmation prompt."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:165
+#: ab0c2ac9cfd341ad800eed3699b00b07
+msgid "(If the RPC is denied, it returns with exit code 1, in which case `qrexec-daemon` sends a `MSG_SERVICE_REFUSED` back)."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:167
+#: ../developer/services/qrexec-internals.md:205
+#: bccf4f42880b43dcaa01b9c389a5e632
+#: fed463b9db6f4814b55d8eb06ec707c3
+msgid "**dom0**: If the RPC is allowed, `qrexec-policy` will launch a `qrexec-client` with the right command:"
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:171
+#: ../developer/services/qrexec-internals.md:209
+#: 4334beb850664cb1adaf6142d87b5219
+#: 87d2aa1d2efe4eb58ebee992c50349d9
+msgid "The `-c domX,X,SOCKET11` are parameters indicating how connect back to **domX** and pass its input/output."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:173
+#: 705d1e858e474e29ae2d09c38d35a998
+msgid "The command parameter describes the RPC call: it contains service name (`admin.Service`), source domain (`domX`) and target description (`name dom0`, could also be e.g. `keyword @dispvm`). The target description is important in case the original target wasn't dom0, but the service is executing in dom0."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:175
+#: 3c2cad824a334ba4ab7c8f006abe0a06
+msgid "`qrexec-client` connects to a `qrexec-daemon` for **domX** and sends a `MSG_SERVICE_CONNECT` with connection parameters (**dom0**, and port 0, indicating a port should be allocated) and request identifier (`SOCKET11`)."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:177
+#: cbbeb7966ba34503a2164de292fc103c
+msgid "`qrexec-daemon` allocates a free port (513) and sends back connection parameters to `qrexec-client` (**domX** port 513)."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:179
+#: c1e9c474390745d39af1b88c8f4872ca
+msgid "`qrexec-client` starts the command, and tries to connect to **domX** over the provided port 513."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:181
+#: 67195e712ac648ebb4ec1eb46c507fcf
+msgid "Then, `qrexec-daemon` forwards the connection request (`MSG_SERVICE_CONNECT`) to `qrexec-agent` running in **domX**, with the right parameters (**dom0** port 513, request `SOCKET11`)."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:183
+#: d9cc2d4fad574160abd5cf25438948b0
+msgid "**dom0**: Because the command has the form `QUBESRPC: ...`, it is started through the `qubes-rpc-multiplexer` program with the provided parameters (`admin.Service domX name dom0`). That program finds and executes the necessary script in `/etc/qubes-rpc/`."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:185
+#: 6f857c730998457591c6505bfbeb2c49
+msgid "**domX**: `qrexec-agent` receives the `MSG_SERVICE_CONNECT` and passes the connection parameters back to the connected `qrexec-client-vm`. It identifies the `qrexec-client-vm` by the request identifier (`SOCKET11` means file descriptor 11)."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:187
+#: 4626bf2009a54b4cad0c16e354b066fa
+msgid "`qrexec-client-vm` starts a vchan server on 513 and receives a connection from `qrexec-client`."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:189
+#: 0324958c35724220b28b830a3379b02f
+msgid "Data is forwarded between **dom0** and **domX** as in the previous example (dom0-VM)."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:191
+#: 1abaf618933f43e4a576330aa86241b3
+msgid "domX: invoke execution of qubes service `qubes.Service` in domY"
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:193
+#: a3b4415ae17d49b7a953abd69fc47128
+msgid "![qrexec internals diagram vm-vm](/attachment/doc/qrexec-vm-vm.png)"
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:193
+#: a2344ab001de459db381b638f9c4de3a
+msgid "qrexec internals diagram vm-vm"
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:201
+#: 9e35701ddd114395a3ac063127d21da5
+msgid "The request is forwarded as `MSG_TRIGGER_SERVICE3` to `qrexec-daemon` running in **dom0**, then to `qrexec-policy`, then (if allowed) to `qrexec-client`."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:203
+#: 77d8fdda0bdd42f7aebc2259724e9055
+msgid "This is the same as in the previous example (VM-dom0)."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:211
+#: e0dfda40fb6f49afb700da80b52de9a9
+msgid "The command parameter describes the service call: it contains the username (or `DEFAULT`), service name (`qubes.Service`) and source domain (`domX`)."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:213
+#: b475b60bce7e44d795d399ed55b44337
+msgid "`qrexec-client` will then send a `MSG_EXEC_CMDLINE` message to `qrexec-daemon` for **domY**. The message will be with port number 0, requesting port allocation."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:215
+#: e5396210cf3a483db4f047636ddf0659
+msgid "`qrexec-daemon` for **domY** will allocate a port (513) and send it back. It will also send a `MSG_EXEC_CMDLINE` to its corresponding agent. (It will also translate `DEFAULT` to the configured default username)."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:217
+#: 3d5f0718552841c5b6c93aad2aa292b9
+msgid "Then, `qrexec-client` will also send `MSG_SERVICE_CONNECT` message to **domX**'s agent, indicating that it should connect to **domY** over port 513."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:219
+#: 34ad429083f749a7a2bef98fd2518eae
+msgid "Having notified both domains about a connection, `qrexec-client` now exits."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:221
+#: 39a9172b4e6e4e28bfaa94b4a9c189f5
+msgid "**domX**: `qrexec-agent` receives a `MSG_SERVICE_CONNECT` with connection parameters (**domY** port 513) and request identifier (`SOCKET11`). It sends the connection parameters back to the right `qrexec-client-vm`."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:223
+#: 6a2b173ce95c4ed7b029eb85c3da7372
+msgid "`qrexec-client-vm` starts a vchan server on port 513. note that this is different than in the other examples: `MSG_SERVICE_CONNECT` means you should start a server, `MSG_EXEC_CMDLINE` means you should start a client."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:225
+#: 266bba4aabb74ad284e51916b8199d8b
+msgid "**domY**: `qrexec-agent` receives a `MSG_EXEC_CMDLINE` with the command to execute (`user:QUBESRPC...`) and connection parameters (**domX** port 513)."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:227
+#: 2094415c383c407fb7cd1825f6a2ad19
+msgid "It forwards the request to `qrexec-fork-server`, which handles the command and connects to **domX** over the provided port."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:229
+#: 445c4b69440a4c208f196afcc6933e65
+msgid "Because the command is of the form `QUBESRPC ...`, `qrexec-fork-server` starts it using `qubes-rpc-multiplexer` program, which finds and executes the necessary script in `/etc/qubes-rpc/`."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:231
+#: c95b37d855494ce193a12df94122219e
+msgid "After that, the data is passed between **domX** and **domY** as in the previous examples (dom0-VM, VM-dom0)."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:233
+#: 5789770735dc4a26b27bcc5ec0e00624
+msgid "`qrexec-policy` implementation"
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:235
+#: 592236c0fce2402e8dd05836c9fdd49b
+msgid "`qrexec-policy` is a mechanism for evaluating whether an RPC call should be allowed. For introduction, see [Qubes RPC administration](/doc/qrexec/#qubes-rpc-administration)."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:237
+#: 80a9283859944c1e9130e04714dcea9a
+msgid "`qrexec-policy-daemon`"
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:239
+#: 1742b33509d343f78593b554c0dd6190
+msgid "This is a service running in dom0. It is called by `qrexec-daemon` and is responsible for evaluating the request and possibly launching an action."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:241
+#: 4f6cb37c37ed48c9a815c5d23c2ff639
+msgid "The daemon listens on a socket (`/var/run/qubes/policy.sock`). It accepts requests in the format described in [qrexec-policy-daemon.rst](https://github.com/QubesOS/qubes-core-qrexec/blob/master/doc/qrexec-policy-daemon.rst) and replies with `result=allow/deny`."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:243
+#: 87ea9f845868451aaa36ca157f484529
+msgid "A standalone version is called `qrexec-policy-exec` and is available as a fallback."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:245
+#: a09eeb296be142e597fa9959fd862c3b
+msgid "`qrexec-policy-agent`"
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:247
+#: 5fcdc890c7b74de29ece972367a67e90
+msgid "This is a service running in the GuiVM. It is called by `qrexec-policy-daemon` in order to display prompts and notifications to the user."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:249
+#: 2bc20379b32f4d26a3e0526cca05ae2e
+msgid "It is a [socket-based Qubes RPC service](/doc/qrexec-socket-services/). Requests are in JSON format, and response is simple ASCII."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:251
+#: 8e4ff6a3a74c4ffdbf342a3e92311cb0
+msgid "There are two endpoints:"
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:253
+#: 1bfac2a3dec942459f21bd945aa915d6
+msgid "`policy.Ask` - ask the user about whether to execute a given action"
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:254
+#: bfd2b96bff3c46d38a4c96f97b7cbc68
+msgid "`policy.Notify` - notify the user about about an action."
+msgstr ""
+
+#: ../developer/services/qrexec-internals.md:256
+#: 8e4d6da5fd614a8bb606cef5d48533a6
+msgid "See [qrexec-policy-agent.rst](https://github.com/QubesOS/qubes-core-qrexec/blob/master/Documentation/qrexec-policy-agent.rst) for protocol details."
+msgstr ""

@@ -1,0 +1,37 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-15 21:10+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../user/advanced-topics/qubes-service.md:13
+#: 7b51ab4352c0462499dceaf9958c817d
+msgid "Usage documentation is in the `qvm-service` man page. There are also described predefined services."
+msgstr ""
+
+#: ../user/advanced-topics/qubes-service.md:15
+#: 92d2e8264e51420fb7de35b2e3c4ea87
+msgid "Under the hood, an enabled service in a VM is signaled by a file in `/var/run/qubes-service`. This can be used to implement an almost enable/disable **per-VM** switch controlled by dom0."
+msgstr ""
+
+#: ../user/advanced-topics/qubes-service.md:18
+#: c427f50591954354b0d3bdda1f63f2ea
+msgid "Adding support for systemd services is pretty simple. In the VM, create the following file (and directory, if needed): `/etc/systemd/system/<service name>.service.d/30_qubes.conf`. It should contain the following:"
+msgstr ""
+
+#: ../user/advanced-topics/qubes-service.md:25
+#: ab2ec7fe08644f528a45689712daa6e5
+msgid "This will cause the service to be started only when you enable it with `qvm-service` for this VM."
+msgstr ""

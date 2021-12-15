@@ -1,0 +1,104 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-15 21:10+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../user/hardware/hardware-testing.md:9
+#: f52c94eab99b41139aad6b55ac4ecb1e
+msgid "The Qubes developers test Qubes OS on certain hardware models. The tested hardware described on this page differs from [Qubes Certified Hardware](/doc/certified-hardware/) in a few key ways:"
+msgstr ""
+
+#: ../user/hardware/hardware-testing.md:12
+#: a69b003f36da4b41ac67249d649bdc4d
+msgid "Qubes Certified Hardware has to meet more demanding standards than hardware that is merely tested."
+msgstr ""
+
+#: ../user/hardware/hardware-testing.md:13
+#: a03eaac635314d90aa39be7163306108
+msgid "All Qubes Certified Hardware is tested, but not all tested hardware is certified."
+msgstr ""
+
+#: ../user/hardware/hardware-testing.md:14
+#: 5a80671a00704d8c929ddbab25813daf
+msgid "A specific certified configuration is guaranteed to be supported on specific versions of Qubes OS, whereas hardware testing provides no guarantees."
+msgstr ""
+
+#: ../user/hardware/hardware-testing.md:16
+#: c4967a0a054b404092bde0c2dd2d24c6
+msgid "In general, you can think of tested hardware as \"unofficial recommended\" hardware:"
+msgstr ""
+
+#: ../user/hardware/hardware-testing.md:18
+#: 06911599ad494780a8ddd5158671d15b
+msgid "[Qubes Certified Hardware](/doc/certified-hardware/) --- Qubes developer certified, officially recommended"
+msgstr ""
+
+#: ../user/hardware/hardware-testing.md:19
+#: a8ba1d86e60644a1b6afbc60f79a746e
+msgid "Hardware Testing (this page) --- Qubes developer tested, unofficially recommended"
+msgstr ""
+
+#: ../user/hardware/hardware-testing.md:20
+#: f02876cd867b4d7090dff7721fdfeb0f
+msgid "[Hardware Compatibility List (HCL)](/hcl/) --- community test results, neither recommended nor disrecommended"
+msgstr ""
+
+#: ../user/hardware/hardware-testing.md:22
+#: ef02edca90b64419b00e57674eb67abf
+msgid "Tested Models"
+msgstr ""
+
+#: ../user/hardware/hardware-testing.md:24
+#: 3166b9fed1c14aaea2006316fb82632f
+msgid "These hardware models have been (and continue to be) tested and work well with Qubes OS:"
+msgstr ""
+
+#: ../user/hardware/hardware-testing.md:26
+#: bde3b2e106744c1896199dc004a9f532
+msgid "Lenovo ThinkPad X1 Carbon Gen 5"
+msgstr ""
+
+#: ../user/hardware/hardware-testing.md:27
+#: 369d01d15ed943dca1b5c6a74b69bc19
+msgid "Lenovo ThinkPad x230"
+msgstr ""
+
+#: ../user/hardware/hardware-testing.md:29
+#: ../user/hardware/hardware-testing.md:39
+#: 3e086980d45a4bc18ee8a867e5d83a82
+#: dcecea3ad54746338a15ad05c6e109ef
+msgid "Note: The Lenovo X and T series are similar enough to assume similar compatibility of the matching model from the other series."
+msgstr ""
+
+#: ../user/hardware/hardware-testing.md:31
+#: b0f6a26a78dc4bb187b3a37f48b0b322
+msgid "Desired Models"
+msgstr ""
+
+#: ../user/hardware/hardware-testing.md:33
+#: c95041c8a7984a4fbf05a3f63ab8ebd4
+msgid "The Qubes devs would like to test these models, but the hardware is not available to us. If anyone is willing to lend or donate these models to us, we would be happy to test them:"
+msgstr ""
+
+#: ../user/hardware/hardware-testing.md:36
+#: d55f1c681b03412ab09c7937e7de39e6
+msgid "Lenovo Thinkpad T or X series with Intel 8th Gen CPU and integrated graphics"
+msgstr ""
+
+#: ../user/hardware/hardware-testing.md:37
+#: fe5a8781668840c3834325eab85471b2
+msgid "Dell Latitude with Intel 8th Gen CPU and integrated graphics"
+msgstr ""

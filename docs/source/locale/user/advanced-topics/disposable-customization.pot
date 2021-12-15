@@ -1,0 +1,452 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-15 21:10+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../user/advanced-topics/disposable-customization.md:16
+#: 458024cda5854c5cba976bf2178fa3f4
+msgid "Introduction"
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:18
+#: e284498a6bc6416da18f9d143fb115fe
+msgid "A [disposable](/doc/disposable/) can be based on any [app qube](/doc/glossary/#app-qube). You can also choose to use different [disposable templates](/doc/glossary/#disposable-template) for different disposables. To prepare an app qube to be a disposable template, you need to set `template_for_dispvms` property, for example:"
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:26
+#: ad56dedc538e4fc1bd93dfebea888afa
+msgid "Additionally, if you want to have menu entries for starting applications in disposable based on this app qube (instead of in the app qube itself), you can achieve it with `appmenus-dispvm` feature:"
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:32
+#: 8e2776bb62e0431ca50f93d08a360f41
+msgid "Note: application shortcuts that existed before setting this feature will not be updated automatically. Please go the the \"Applications\" tab in the qube's \"Settings\" dialog and unselect all existing shortcuts by clicking \"<<\", then click \"OK\" and close the dialog. Give it a few seconds time and then reopen and re-select all the shortcuts you want to see in the menu. See [this page](/doc/managing-appvm-shortcuts) for background information."
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:34
+#: aa5babdaf15449fcbbbb572407eb9dee
+msgid "Security"
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:36
+#: 6e7fa2c518e64ba3af00ca0f57ab163c
+msgid "If a disposable template becomes compromised, then any disposable based on that disposable template could be compromised. Therefore, you should not make any risky customizations (e.g., installing untrusted browser plugins) in important disposable templates. In particular, the *default* disposable template is important because it is used by the \"Open in disposable\" feature. This means that it will have access to everything that you open with this feature. For this reason, it is strongly recommended that you base the default disposable template on a trusted template and refrain from making any risky customizations to it."
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:42
+#: 12894a267b2c456db27a38d7b574fa60
+msgid "Creating a new disposable template"
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:44
+#: a1a2433631db4f1cabc39b64751e1fba
+msgid "In Qubes 4.0, you're no longer restricted to a single disposable template. Instead, you can create as many as you want. Whenever you start a new disposable, you can choose to base it on whichever disposable template you like. To create new disposable template, lets say `custom-disposable-template`, based on `debian-9` template, use following commands:"
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:53
+#: acb4ed9078fc4d9ab93eadd0b2d384d7
+msgid "Additionally you may want to set it as default disposable template:"
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:59
+#: 2844d35451cf4a559461c031b2f781f2
+msgid "The above default is used whenever a qube request starting a new disposable and do not specify which one (for example `qvm-open-in-dvm` tool). This can be also set in qube settings and will affect service calls from that qube. See [qrexec documentation](/doc/qrexec/#specifying-vms-tags-types-targets-etc) for details."
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:61
+#: 3a9b307d09f44a31885e10608bc36878
+msgid "If you wish to use a [Minimal Template](/doc/templates/minimal/) as a disposable template, please see the [Minimal Template](/doc/templates/minimal/) page."
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:63
+#: 9cb3bb605c1143b4bfce9cb56f4f0064
+msgid "Customization of disposable"
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:65
+#: ace416c7bff0442f8311b44f8a0944c9
+msgid "_**Note:** If you are trying to customize Tor Browser in a Whonix disposable, please consult the [Whonix documentation](https://www.whonix.org/wiki/Tor_Browser/Advanced_Users#disposable_Template_Customization)._"
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:67
+#: 9fa4687aa5ce4ece9a0ba34941be5e41
+msgid "It is possible to change the settings for each new disposable. This can be done by customizing the disposable template on which it is based:"
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:70
+#: a928bc6285a548e28a209c74d70ba41d
+msgid "Start a terminal in the `fedora-26-dvm` qube (or another disposable template) by running the following command in a dom0 terminal. (If you enable `appmenus-dispvm` feature (as explained at the top), applications menu for this VM (`fedora-26-dvm`) will be \"Disposable: fedora-26-dvm\" (instead of \"Domain: fedora-26-dvm\") and entries there will start new disposable based on that VM (`fedora-26-dvm`). Not in that VM (`fedora-26-dvm`) itself)."
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:76
+#: e7c6159f9b4646ee9a2c2b3f79bdd94c
+msgid "Change the qube's settings and/or applications, as desired. Some examples of changes you may want to make include:"
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:77
+#: c15289ea25294df5b7b726acea202d38
+msgid "Changing Firefox's default startup settings and homepage."
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:78
+#: 437665faf9d743068edeaf50f4e479c6
+msgid "Changing default editor, image viewer. In Debian-based templates this can be done with the `mimeopen` command."
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:79
+#: 779c9cd5c00140fba7acffb291dcbce9
+msgid "Changing the disposable's default NetVM. For example, you may wish to set the NetVM to \"none.\" Then, whenever you start a new disposable, you can choose your desired ProxyVM manually (by changing the newly-started disposables settings). This is useful if you sometimes wish to use a disposable with a Whonix Gateway, for example. It is also useful if you sometimes wish to open untrusted files in a network-disconnected disposable."
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:81
+#: 3064f38aa6d34f6f9315846bd923646d
+msgid "Shutdown the qube (either by `poweroff` from qube's terminal, or `qvm-shutdown` from dom0 terminal)."
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:83
+#: 967d6c87fba148e8bb4db9b3ce93ed71
+msgid "Using named disposables for sys-*"
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:85
+#: 0e90ee9c4d304ad4a67a1003bbbf28d0
+msgid "You can use a [named disposable](/doc/glossary/#named-disposable) for `sys-*` as long as it is stateless. For example, a `sys-net` using DHCP or `sys-usb` will work. In most cases `sys-firewall` will also work, even if you have configured app qube firewall rules. The only exception is if you require something like VM to VM communication and have manually edited `iptables` or other items directly inside the firewall app qube."
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:90
+#: 89fc5152bab24a8fb121565851d7c8b1
+msgid "To create one that has no PCI devices attached, such as for `sys-firewall`:"
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:100
+#: c93501b2d3074c98a6d004b2da3d7514
+msgid "Next, set the old `sys-firewall` autostart to false, and update any references to the old one to instead point to the new. For example, with `qvm-prefs work netvm sys-firewall2`."
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:103
+#: ffc53fb122d4495083102eb07dac849a
+msgid "To create one with a PCI device attached such as for `sys-net` or `sys-usb`, use the additional commands as follows."
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:105
+#: 5077ea7e40304e448520bac6c60416e1
+msgid "**Note** You can use `qvm-pci` to [determine](/doc/how-to-use-pci-devices/#qvm-pci-usage) the `<BDF>`. Also, you will often need to include the `-o no-strict-reset=True` [option](/doc/how-to-use-pci-devices/#no-strict-reset) with USB controllers."
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:120
+#: 67d4690ebee34aed93b84a0286640d53
+msgid "Next, set the old `sys-` VM's autostart to false, and update any references to the old one. In particular, make sure to update `/etc/qubes-rpc/policy/qubes.UpdatesProxy` in dom0."
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:123
+#: 2d95609eed804434be1fbad5c8663550
+msgid "For example, `qvm-prefs sys-firewall netvm <sys-VMName>`. See below for a complete example of a `sys-net` replacement:"
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:140
+#: 03f2953f716b4a76abfe8740d1529947
+msgid "Adding programs to disposable Application Menu"
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:142
+#: 704e2189e05b44aebb1fc916f0b60851
+msgid "For added convenience, arbitrary programs can be added to the Application Menu of the disposable."
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:144
+#: a6edf6b93d2445a49827cd24bae491f1
+msgid "In order to do that, select \"Qube settings\" entry in selected base app qube, go to \"Applications\" tab and select desired applications as for any other qube."
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:146
+#: cd1457563c5143458f36877e129e9579
+msgid "Note that currently only applications whose main process keeps running until you close the application (i.e. do not start a background process instead) will work. One of known examples of incompatible applications is GNOME Terminal (shown on the list as \"Terminal\"). Choose different terminal emulator (like XTerm) instead."
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:148
+#: 29108c96862a4509a2d37743ffa1eadf
+msgid "Create Custom sys-net sys-firewall and sys-usb disposables"
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:150
+#: 34f0d577ee354b28b2b07b8f273a1dac
+msgid "Users have the option of creating customized disposables for the `sys-net`, `sys-firewall` and `sys-usb` VMs. In this configuration, a fresh VM instance is created each time a disposable is launched. Functionality is near-identical to the default VMs created following a new Qubes’ installation, except the user benefits from a non-persistent filesystem."
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:152
+#: ee648905f5d94f3781591350a41204c8
+msgid "Functionality is not limited, users can:"
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:154
+#: e43d8df5c3ce47b4838780d4b5bbc2b4
+msgid "Set custom firewall rule sets and run Qubes VPN scripts."
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:155
+#: 54ad0a704ae0428d9884a5e5d1124c17
+msgid "Set disposables to autostart at system boot."
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:156
+#: 5f2ba21eb15b464bb4e9a91b61b00ae7
+msgid "Attach PCI devices with the `--persistent` option."
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:158
+#: 0ac1a98c5ca5405a999c4b63b77d6b91
+msgid "Using disposables in this manner is ideal for untrusted qubes which require persistent PCI devices, such as USB VMs and NetVMs."
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:160
+#: 8a8018fd90ae43f199470eed7f6125b3
+msgid "_**Note:**_ Users who want customized VPN or firewall rule sets must create a separate disposable template for use by each disposable. If disposable template customization is not needed, then a single disposable template is used as a template for all disposables."
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:162
+#: 696fcbc5f77344aab4825213bf7a4c52
+msgid "Create and configure the disposable template on which the disposable will be based"
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:164
+#: 26d383d737554f6baf777691e8beed87
+msgid "Create the disposable template:"
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:170
+#: 91e6476e997747539601982c58ca5a43
+msgid "_(optional)_ In the disposable template, add custom firewall rule sets, Qubes VPN scripts, etc."
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:172
+#: 060680b16d8f46bc8627a192671869e5
+msgid "Firewall rules sets and Qubes VPN scripts can be added just like any other VM."
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:174
+#: 40ae9988894144fdb6492668fb21a4b2
+msgid "Set the disposable template as template for disposables:"
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:180
+#: cf84a8a843d84a42b5fecd167ffd2a47
+msgid "Create the sys-net disposable"
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:182
+#: d80dd08b7dfe46bb8a063493b0cbfcb5
+msgid "Create `sys-net` disposable based on the disposable template:"
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:188
+#: 35ccdc70f8a54fa1a7ff5d30ab462dd4
+msgid "Set `disp-sys-net` virtualization mode to [hvm](/doc/hvm/):"
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:194
+#: faaa6ee562564044ae3e7e8439e84188
+msgid "Set `disp-sys-net` to provide network for other VMs:"
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:200
+#: 3933c38237cf4ddca88a87841dd16ff0
+msgid "Set `disp-sys-net` NetVM to none:"
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:206
+#: a3892c4694614582be9fc43403f419ef
+msgid "List all available PCI devices to determine the correct _backend:BDF_ address(es) to assign to `disp-sys-net`:"
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:212
+#: 1652607cb7d44a5282c04e4025a909fd
+msgid "Attach the network PCI device(s) to `disp-sys-net` (finding and assigning PCI devices can be found [here](/doc/how-to-use-pci-devices/):"
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:218
+#: aeb489fd480845239541b0471bcdb322
+msgid "_(recommended)_ Set `disp-sys-net` to start automatically when Qubes boots:"
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:224
+#: bb05a6d520664d08bc6781f4ff5d5099
+msgid "_(recommended)_ Disable the `appmenus-dispvm` feature, as disp-sys-net is not itself a disposable template (Note: this is only necessary if you enabled the `appmenus-dispvm` feature for the disposable template):"
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:230
+#: c40da55827514ff8b3bb172cf8202417
+msgid "_(optional)_ Set `disp-sys-net` as the dom0 time source:"
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:236
+#: 37244d4deab149a5875a05c57f29c3fa
+msgid "_(recommended)_ Allow templates to be updated via `disp-sys-net`. In dom0, edit `/etc/qubes-rpc/policy/qubes.UpdatesProxy` to change the target from `sys-net` to `disp-sys-net`."
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:238
+#: a907d372fc4b4f1d9190fa11298de918
+msgid "Create the sys-firewall disposable"
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:240
+#: a0a2fef027e34e81829a8854cc6995f9
+msgid "Create `sys-firewall` disposable:"
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:246
+#: 25514aa272cf482099ddb5684a23e810
+msgid "Set `disp-sys-firewall` to provide network for other VMs:"
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:252
+#: 4c8e95c805ce4e2f964cb323bc56d047
+msgid "Set `disp-sys-net` as the NetVM for `disp-sys-firewall`:"
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:258
+#: 2f172532598543059c29d8b9c856ca4c
+msgid "Set `disp-sys-firewall` as NetVM for other app qubes:"
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:264
+#: 83cd59c1408844eaaf05404071defbf1
+msgid "_(recommended)_ Set `disp-sys-firewall` to auto-start when Qubes boots:"
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:270
+#: 84e1550b2fce49f387c865ddb6dc8dfe
+msgid "_(recommended)_ Disable the `appmenus-dispvm` feature, as disp-sys-firewall is not itself a disposable template (Note: this is only necessary if you enabled the `appmenus-dispvm` feature for the disposable template):"
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:276
+#: 12af4955e3ba4f3e8dba727baff8ae58
+msgid "_(optional)_ Set `disp-sys-firewall` as the default NetVM:"
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:282
+#: 9255c75978284d2b987b0a1597a91490
+msgid "Create the sys-usb disposable"
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:284
+#: 3b7e5fadea8445b48354c756405e35c2
+msgid "Create the `disp-sys-usb`:"
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:290
+#: 391f10ed13624fc3939ae53141b03e3b
+msgid "Set the `disp-sys-usb` virtualization mode to hvm:"
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:296
+#: 14ec06642f89444d9add59ac5337aa3b
+msgid "Set `disp-sys-usb` NetVM to none:"
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:302
+#: bc3ca136eaa9410f8768a670b7205bd6
+msgid "List all available PCI devices:"
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:308
+#: 529acc71dd6f4a9281c35e1ecb1e5893
+msgid "Attach the USB controller to the `disp-sys-usb`:"
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:309
+#: cd74cfe3cd4544fba339b64bf85ee104
+msgid "_**Note:**_ Most of the commonly used USB controllers (all Intel integrated controllers) require the `-o no-strict-reset=True` option to be set. Instructions detailing how this option is set can be found [here](/doc/how-to-use-pci-devices/#no-strict-reset)."
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:315
+#: 9785e46207f44f1aacbb687913a42b56
+msgid "_(optional)_ Set `disp-sys-usb` to auto-start when Qubes boots:"
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:321
+#: 30d3a5a07c2a412bbe45fe1898dccb16
+msgid "_(recommended)_ Disable the `appmenus-dispvm` feature, as disp-sys-usb is not itself a disposable template (Note: this is only necessary if you enabled the `appmenus-dispvm` feature for the disposable template):"
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:327
+#: a3549e9a39444d859c3122588d55c2aa
+msgid "Users should now follow instructions on [How to hide USB controllers from dom0](/doc/usb-qubes/#how-to-hide-all-usb-controllers-from-dom0)."
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:329
+#: 3012c71c309b43e4940ecfcf8254e9f7
+msgid "At this point, your mouse may not work. Edit the `qubes.InputMouse` policy file in dom0, which is located here:"
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:336
+#: 6d06930844484d28a0bd4f8fe76bcecf
+msgid "Add a line like this to the top of the file:"
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:342
+#: fa56a78060244ff1b4d659e384b7b7ec
+msgid "Starting the disposables"
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:344
+#: 3f5eb5602ab84510a1e0c8a82b536a69
+msgid "Prior to starting the new VMs, users should ensure that no other VMs such as the old `sys-net` and `sys-usb` VMs are running. This is because no two VMs can share the same PCI device while both running. It is recommended that users detach the PCI devices from the old VMs without deleting them. This will allow users to reattach the PCI devices if the newly created disposables fail to start."
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:346
+#: ba8ae5046aca477a87abaf0c6df9077a
+msgid "Detach PCI device from VM:"
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:352
+#: b46827b39c164e6387c55bb23aa93055
+msgid "Troubleshooting"
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:354
+#: 714b0ecd1dd0465f9700cd8deadc3520
+msgid "If the `disp-sys-usb` does not start, it could be due to a PCI passthrough problem. For more details on this issue along with possible solutions, users can look [here](/doc/pci-troubleshooting/#pci-passthrough-issues)."
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:356
+#: 1d57544903ea4936b9a64edb1ae5b14a
+msgid "Deleting disposables"
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:358
+#: 5dbb595b5655427292293e5a397ea14b
+msgid "While working in a disposable, you may want to open a document in another disposable. For this reason, the property `default_dispvm` may be set to the name of your disposable in a number of VMs:"
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:366
+#: 6518e72b5a894ea0b765db6b99d66caf
+msgid "This will prevent the deletion of the disposable template. In order to fix this you need to unset the `default_dispvm` property:"
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:372
+#: beab68b282c94835b194b579782b98d2
+msgid "You can then delete the disposable template:"
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:378
+#: f3dade518ea448c883f85a620fd68253
+msgid "This will completely remove the selected VM(s) `custom-disposablevm-template`"
+msgstr ""
+
+#: ../user/advanced-topics/disposable-customization.md:380
+#: ace6c493af6446bbb0d566697639dc7d
+msgid "If you still encounter the issue, you may have forgot to clean an entry. Looking at the system logs will help you:"
+msgstr ""

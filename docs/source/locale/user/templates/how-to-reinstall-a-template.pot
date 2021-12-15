@@ -1,0 +1,112 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-15 21:10+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../user/templates/how-to-reinstall-a-template.md:12
+#: 2f605499b76f4355b4bba8a1d36d9e9d
+msgid "If you suspect your [template](/doc/templates/) is broken, misconfigured, or compromised, you can reinstall any template that was installed from the Qubes repository."
+msgstr ""
+
+#: ../user/templates/how-to-reinstall-a-template.md:14
+#: e638f8e0a96b41bc9eb97239a85d58ec
+msgid "Automatic Method"
+msgstr ""
+
+#: ../user/templates/how-to-reinstall-a-template.md:17
+#: 64599d33b80a417c8524411d4738a1bd
+msgid "First, copy any files that you wish to keep from the template's `/home` and `/rw` folders to a safe storage location. Then, in a dom0 terminal, run:"
+msgstr ""
+
+#: ../user/templates/how-to-reinstall-a-template.md:24
+#: 8b769d7f34034a04b4c21e51eae96857
+msgid "Replace `qubes-template-package-name` with the name of the *package* of the template you wish to reinstall. For example, use `qubes-template-fedora-25` if you wish to reinstall the `fedora-25` template. Only one template can be reinstalled at a time."
+msgstr ""
+
+#: ../user/templates/how-to-reinstall-a-template.md:28
+#: 945b1345a08b4415ae2cf72e54fbe59a
+msgid "Note that Qubes may initially refuse to perform the reinstall if the exact revision of the template package on your system is no longer in the Qubes online repository. In this case, you can specify `upgrade` as the action instead and the newer version will be used. The other `dnf` package actions that are supported in addition to `reinstall` and `upgrade` are `upgrade-to` and `downgrade`. Note that the `upgrade`, `upgrade-to`, and `downgrade` commands are only supported under Fedora based UpdateVMs. If you receive a message about them being unsupported, review the manual reinstallation method below."
+msgstr ""
+
+#: ../user/templates/how-to-reinstall-a-template.md:34
+#: f4b9a8b294aa4542a483595b46448daa
+msgid "**Reminder:** If you're trying to reinstall a template that is not in an enabled repo, you must enable that repo. For example:"
+msgstr ""
+
+#: ../user/templates/how-to-reinstall-a-template.md:41
+#: 2b4881f1cd674e54a4dfb445389ea5e5
+msgid "**Note:** VMs that are using the reinstalled template will not be affected until they are restarted."
+msgstr ""
+
+#: ../user/templates/how-to-reinstall-a-template.md:43
+#: 5a3838b164a64965a00f0ba8a1a84111
+msgid "Manual Method"
+msgstr ""
+
+#: ../user/templates/how-to-reinstall-a-template.md:46
+#: 5ed9f7fb3dec4edba1ee93cdcbd3f763
+msgid "In what follows, the term \"target template\" refers to whichever template you want to reinstall. If you want to reinstall more than one template, repeat these instructions for each one."
+msgstr ""
+
+#: ../user/templates/how-to-reinstall-a-template.md:49
+#: f012459a9cfc41f0ba85291167b14110
+msgid "Clone the existing target template."
+msgstr ""
+
+#: ../user/templates/how-to-reinstall-a-template.md:51
+#: c7c833094c0d4b63ba7f222e62988ea4
+msgid "This can be a good idea if you've customized the existing template and want to keep your customizations. On the other hand, if you suspect that this template is broken, misconfigured, or compromised, be certain you do not start any VMs using it in the below procedure."
+msgstr ""
+
+#: ../user/templates/how-to-reinstall-a-template.md:54
+#: 15d4c9b062244ac59e092fc5afe601f9
+msgid "Temporarily change all VMs based on the target template to the new clone template, or remove them."
+msgstr ""
+
+#: ../user/templates/how-to-reinstall-a-template.md:56
+#: 06a01e3e62f745c69bf4dd1c90e68fe0
+msgid "This can be a good idea if you have user data in these VMs that you want to keep. On the other hand, if you suspect that these VMs (or the templates on which they are based) are broken, misconfigured, or compromised, you may want to remove them instead. You can do this in Qubes Manager by right-clicking on the VM and clicking **Remove VM**, or you can use the command `qvm-remove <vm-name>` in dom0."
+msgstr ""
+
+#: ../user/templates/how-to-reinstall-a-template.md:60
+#: 16a6fb98815b49fdbe27cd80b15d1482
+msgid "Uninstall the target template from dom0:"
+msgstr ""
+
+#: ../user/templates/how-to-reinstall-a-template.md:66
+#: 8f8263713d624bea85b7593a7e2ecb89
+msgid "For example, to uninstall the `whonix-gw` template:"
+msgstr ""
+
+#: ../user/templates/how-to-reinstall-a-template.md:72
+#: 9f58303685d64b3f88074f75f3c31bed
+msgid "Reinstall the target template in dom0:"
+msgstr ""
+
+#: ../user/templates/how-to-reinstall-a-template.md:79
+#: 21f848aab9e4451baa5823b24e5106f1
+msgid "For example, to install the `whonix-gw` template:"
+msgstr ""
+
+#: ../user/templates/how-to-reinstall-a-template.md:86
+#: b65c6b060ce64013be88050c13ed0f07
+msgid "If you temporarily changed all VMs based on the target template to the clone template in step 3, change them back to the new target template now. If you instead removed all VMs based on the old target template, you can recreate your desired VMs from the newly reinstalled target template now."
+msgstr ""
+
+#: ../user/templates/how-to-reinstall-a-template.md:89
+#: c78f0a2740594d2f8b37e8f66cec1de3
+msgid "Delete the cloned template. You can do this in Qubes Manager by right-clicking on the VM and clicking **Remove VM**, or you can use the command `qvm-remove <vm-name>` in dom0."
+msgstr ""

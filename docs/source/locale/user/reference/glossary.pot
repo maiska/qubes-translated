@@ -1,0 +1,367 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-15 21:10+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../user/reference/glossary.md:13
+#: 406cc29435ad4c78ad63e1db4a89e016
+msgid "admin qube"
+msgstr ""
+
+#: ../user/reference/glossary.md:15
+#: 5eb1c45edcdd452c914158fb7e07f657
+msgid "A type of [qube](#qube) used for administering Qubes OS."
+msgstr ""
+
+#: ../user/reference/glossary.md:17
+#: 77e31cdd2ba24778a6e65cfa9dbe8fec
+msgid "Currently, the only admin qube is [dom0](#dom0)."
+msgstr ""
+
+#: ../user/reference/glossary.md:19
+#: eee2dfe64f934f8bb41a0a498f049629
+msgid "app qube"
+msgstr ""
+
+#: ../user/reference/glossary.md:21
+#: a269b780cba3455eae7192d2dce072a6
+msgid "Any [qube](#qube) that does not have a root filesystem of its own. Every app qube is based on a [template](#template) from which it borrows the root filesystem."
+msgstr ""
+
+#: ../user/reference/glossary.md:25
+#: 40e637e889c0406797c8dd1322d37605
+msgid "Previously known as: `AppVM`, `TemplateBasedVM`."
+msgstr ""
+
+#: ../user/reference/glossary.md:27
+#: 810fcf215aa24c9a9be9f94533c0f016
+msgid "Historical note: This term originally meant \"a qube intended for running user software applications\" (hence the name \"app\")."
+msgstr ""
+
+#: ../user/reference/glossary.md:30
+#: 5c1621a7a1a04c7f97ce2ab72524d07c
+msgid "disposable"
+msgstr ""
+
+#: ../user/reference/glossary.md:32
+#: cb4bfe4e414e4b36ac968a8fec294627
+msgid "A type of temporary [app qube](#app-qube) that self-destructs when its originating window closes. Each disposable is based on a [disposable template](#disposable-template)."
+msgstr ""
+
+#: ../user/reference/glossary.md:36
+#: a5228ed1a61d494083b9d0f0af1f7847
+msgid "See [How to Use Dispoables](/doc/how-to-use-disposables/)."
+msgstr ""
+
+#: ../user/reference/glossary.md:38
+#: ce0464c8d3684a20b5fb7ad76e02414c
+msgid "Previously known as: `DisposableVM`, `DispVM`."
+msgstr ""
+
+#: ../user/reference/glossary.md:40
+#: 71d67f1e13424ce2958433902649381c
+msgid "disposable template"
+msgstr ""
+
+#: ../user/reference/glossary.md:42
+#: 8f27574d02eb47f1994aed28c0ef2f2c
+msgid "Any [app qube](#app-qube) on which [disposables](#disposable) are based. A disposable template shares its user directories (and, indirectly, the root filesystem of the regular [template](#template) on which it is based) with all [disposables](#disposable) based on it."
+msgstr ""
+
+#: ../user/reference/glossary.md:47
+#: 06e509dad9ac448ab9a93d41a5f9e2c3
+msgid "Not to be confused with the concept of a regular [template](#template) that is itself disposable, which does not exist in Qubes OS."
+msgstr ""
+
+#: ../user/reference/glossary.md:50
+#: 421eebc6a05641a3bb33fccef22ff50f
+msgid "Disposable templates must be app qubes. They cannot be regular [templates](#template)."
+msgstr ""
+
+#: ../user/reference/glossary.md:53
+#: 15f96974a566404fb720195e2fb15ed7
+msgid "Every [disposable](#disposable) is based on a disposable template, which is in turn based on a regular [template](#template)."
+msgstr ""
+
+#: ../user/reference/glossary.md:56
+#: 8c8ee177b56d48779ac9e03f128ab14b
+msgid "Unlike [disposables](#disposable), disposable templates have the persistence properties of normal [app qubes](#app-qube)."
+msgstr ""
+
+#: ../user/reference/glossary.md:59
+#: 716a2db7f1ef4d78b9487945e854d8a4
+msgid "Previously known as: `DisposableVM Template`, `DVM Template`, `DVM`."
+msgstr ""
+
+#: ../user/reference/glossary.md:61
+#: f95c1ca06eaf40b4a652802a26e309da
+msgid "dom0"
+msgstr ""
+
+#: ../user/reference/glossary.md:63
+#: dc9c052f16894ab09f781f921d12131f
+msgid "[Domain](#domain) zero. A type of [admin qube](#admin-qube). Also known as the **host** domain, dom0 is the initial qube started by the Xen hypervisor on boot. Dom0 runs the Xen management toolstack and has special privileges relative to other domains, such as direct access to most hardware."
+msgstr ""
+
+#: ../user/reference/glossary.md:68
+#: f485f626d4a54a9f839b66baef4419b8
+msgid "The term \"dom0\" is a common noun and should follow the capitalization rules of common nouns."
+msgstr ""
+
+#: ../user/reference/glossary.md:71
+#: e3b2ce1d7f6449bd9be970acf7ac6a4e
+msgid "domain"
+msgstr ""
+
+#: ../user/reference/glossary.md:73
+#: 7022f8c216c34b7e9f50a30cd6cc8227
+msgid "In Xen, a synonym for [VM](#vm)."
+msgstr ""
+
+#: ../user/reference/glossary.md:75
+#: e5ec35982a7b48e89e2bf00064c18966
+msgid "See [\"domain\" on the Xen Wiki](https://wiki.xenproject.org/wiki/Domain)."
+msgstr ""
+
+#: ../user/reference/glossary.md:77
+#: cb7a53ab1a9d44468e417da9e73d828d
+msgid "This term has no official meaning in Qubes OS."
+msgstr ""
+
+#: ../user/reference/glossary.md:79
+#: 73b93f5831754d908c260eee9c17cff6
+msgid "domU"
+msgstr ""
+
+#: ../user/reference/glossary.md:81
+#: 436b56fa7b964eb99b5e2b4d67bf1068
+msgid "Unprivileged [domain](#domain). Also known as **guest** domains, domUs are the counterparts to dom0. In Xen, all VMs except dom0 are domUs. By default, most domUs lack direct hardware access."
+msgstr ""
+
+#: ../user/reference/glossary.md:85
+#: ea4e0b1dd90a40d98f73f278aed9eeba
+msgid "The term \"domU\" is a common noun and should follow the capitalization rules of common nouns."
+msgstr ""
+
+#: ../user/reference/glossary.md:88
+#: 51931278f28f4c9f92f8d9e39e3340ed
+msgid "Sometimes the term [VM](#vm) is used as a synonym for domU. This is technically inaccurate, as [dom0](#dom0) is also a VM in Xen."
+msgstr ""
+
+#: ../user/reference/glossary.md:91
+#: 5fcfe7fd12a74ff88cd7280027339a03
+msgid "HVM"
+msgstr ""
+
+#: ../user/reference/glossary.md:93
+#: ee62873da6d74ffab148e54b3fb490c0
+msgid "Hardware-assisted Virtual Machine. Any fully virtualized, or hardware-assisted, [VM](#vm) utilizing the virtualization extensions of the host CPU. Although HVMs are typically slower than paravirtualized qubes due to the required emulation, HVMs allow the user to create domains based on any operating system."
+msgstr ""
+
+#: ../user/reference/glossary.md:98
+#: 7c701eb2daed40f0ad9620366b9309e7
+msgid "See [Standalones and HVM](/doc/standalones-and-hvms/)."
+msgstr ""
+
+#: ../user/reference/glossary.md:100
+#: b592b3d104014d6da2f71b37729212c9
+msgid "management qube"
+msgstr ""
+
+#: ../user/reference/glossary.md:102
+#: a0378703eaa743fcb285256654e10ca6
+msgid "A [qube](#qube) used for automated management of a Qubes OS installation via [Salt](/doc/salt/)."
+msgstr ""
+
+#: ../user/reference/glossary.md:105
+#: 982833751a0a4c97aa96e1b7ba485136
+msgid "named disposable"
+msgstr ""
+
+#: ../user/reference/glossary.md:107
+#: 575cd93f5ad14e4e8bc654160599180b
+msgid "A type of [disposable](#disposable) given a permanent name that continues to exist even after it is shut down and can be restarted again. Like a regular [disposable](#disposable), a named disposable has no persistent state: Any changes made are lost when it is shut down."
+msgstr ""
+
+#: ../user/reference/glossary.md:112
+#: df96d19182534767803c5ac9d10948b1
+msgid "Only one instance of a named disposable can run at a time."
+msgstr ""
+
+#: ../user/reference/glossary.md:114
+#: efd42e618082486cb9ed6f2c47b41287
+msgid "Like a regular [disposable](#disposable), a named disposable always has the same state when it starts, namely that of the [disposable template](#disposable-template) on which it is based."
+msgstr ""
+
+#: ../user/reference/glossary.md:118
+#: 5fce318c747042919a8eef041a252b96
+msgid "Technical note: Named disposables are useful for certain [service qubes](#service-qube), where the combination of persistent device assignment and ephemeral qube state is desirable."
+msgstr ""
+
+#: ../user/reference/glossary.md:122
+#: b3d59b2ecb0a4d019a36145987dca176
+msgid "netvm"
+msgstr ""
+
+#: ../user/reference/glossary.md:124
+#: 7b8bdaa6afb34c70bbb10ece7bded8bf
+msgid "The property of a [qube](#qube) that specifies from which qube, if any, it receives network access. Despite the name, `netvm` is a *property* of a qube, not a type of VM. For example, it is common for the `netvm` of an [app qube](#app-qube) to be the [service qube](#service-qube) `sys-firewall`, which in turn uses `sys-net` as its `netvm`."
+msgstr ""
+
+#: ../user/reference/glossary.md:130
+#: 21c6a34b9dc34f3597609b1b414ea89d
+msgid "If a qube does not have a `netvm` (i.e., its `netvm` is set to `None`), then that qube is offline. It is disconnected from all networking."
+msgstr ""
+
+#: ../user/reference/glossary.md:133
+#: 5ba6a64909dd45b8ba36038911618833
+msgid "The name derives from \"Networking Virtual Machine.\" Before Qubes 4.0, there was a type of [service qube](#service-qube) called a \"NetVM.\" The name of the `netvm` property is a holdover from that era."
+msgstr ""
+
+#: ../user/reference/glossary.md:137
+#: 59fd6bd14f0f422c9cc14e1ac4fb8da8
+msgid "qube"
+msgstr ""
+
+#: ../user/reference/glossary.md:139
+#: 6f7fa349fe23409486fe0e3678d86b9f
+msgid "A secure compartment in Qubes OS. Currently, qubes are implemented as Xen [VMs](#vm), but Qubes OS is independent of its underlying compartmentalization technology. VMs could be replaced with a different technology, and qubes would still be called \"qubes.\""
+msgstr ""
+
+#: ../user/reference/glossary.md:144
+#: 5fe314d08f8545d99bb5a89d19890f3d
+msgid "**Important:** The term \"qube\" is a common noun and should follow the capitalization rules of common nouns. For example, \"I have three qubes\" is correct,\" while \"I have three Qubes\" is incorrect."
+msgstr ""
+
+#: ../user/reference/glossary.md:148
+#: baf42903ce994b48b85e2790454750f6
+msgid "Note that starting a sentence with the plural of \"qube\" (i.e., \"Qubes...\") can be ambiguous, since it may not be clear whether the referent is a plurality of qubes or [Qubes OS](#qubes-os)."
+msgstr ""
+
+#: ../user/reference/glossary.md:152
+#: 2d2028ef35734a4bad786d571d0a181f
+msgid "Example usage: \"In Qubes OS, you do your banking in your 'banking' qube and your web surfing in your 'untrusted' qube. That way, if your 'untrusted' qube is compromised, your banking activities will remain secure.\""
+msgstr ""
+
+#: ../user/reference/glossary.md:156
+#: 660f25794bf641c2a73dfb8982cb2e13
+msgid "Historical note: The term \"qube\" was originally invented as an alternative to \"VM\" intended to make it easier for less technical users to understand Qubes OS and learn how to use it."
+msgstr ""
+
+#: ../user/reference/glossary.md:160
+#: 1125f39fc37848fbbf0e88fc54eb567a
+msgid "Qubes OS"
+msgstr ""
+
+#: ../user/reference/glossary.md:162
+#: 450f923708b1452b9b4e6665e97ae3cf
+msgid "A security-oriented operating system (OS). The main principle of Qubes OS is security by compartmentalization (or isolation), in which activities are compartmentalized (or isolated) in separate [qubes](#qube)."
+msgstr ""
+
+#: ../user/reference/glossary.md:166
+#: 8628d707ac66492ea578b356e74172cb
+msgid "**Important:** The official name is \"Qubes OS\" (note the capitalization and the space between \"Qubes\" and \"OS\"). In casual conversation, this is often shortened to \"Qubes.\" Only in technical contexts where spaces are not permitted (e.g., in usernames) may the space be omitted, as in `@QubesOS`."
+msgstr ""
+
+#: ../user/reference/glossary.md:171
+#: 975ae474fbe04f49b8e7a82a03e05023
+msgid "Qubes Windows Tools (QWT)"
+msgstr ""
+
+#: ../user/reference/glossary.md:173
+#: 03ee24a782844d01bc16ac48c94581f7
+msgid "A set of programs and drivers that provide integration of Windows qubes with the rest of the Qubes OS system."
+msgstr ""
+
+#: ../user/reference/glossary.md:176
+#: 8f21565bed144ede922f39d4193b45d5
+msgid "See [Qubes Windows Tools](/doc/windows-tools/) and [Windows](/doc/windows/)."
+msgstr ""
+
+#: ../user/reference/glossary.md:178
+#: e8452bcc440e45ac822e0013f262ddf9
+msgid "service qube"
+msgstr ""
+
+#: ../user/reference/glossary.md:180
+#: 7613bd9c50d347d5828e6df9aed6fdac
+msgid "Any [app qube](#app-qube) the primary purpose of which is to provide services to other qubes. `sys-net` and `sys-firewall` are examples of service qubes."
+msgstr ""
+
+#: ../user/reference/glossary.md:183
+#: cc66217f697a444486ea4158759b71f0
+msgid "standalone"
+msgstr ""
+
+#: ../user/reference/glossary.md:185
+#: 804376a4f87b40ac87e6ea6bacb9789a
+msgid "Any [qube](#qube) that has its own root filesystem and does not share it with another qube. Distinct from both [templates](#template) and [app qubes](#app-qube)."
+msgstr ""
+
+#: ../user/reference/glossary.md:189
+#: 20961b5cc06b441e8234519aeb2916ae
+msgid "See [Standalones and HVMs](/doc/standalones-and-hvms/)."
+msgstr ""
+
+#: ../user/reference/glossary.md:191
+#: 00c6941c19d249e998ba2d8e4d149ccd
+msgid "Previously known as: `StandaloneVM`."
+msgstr ""
+
+#: ../user/reference/glossary.md:193
+#: f0238497cf8c4e9d874db01d2ac91809
+msgid "template"
+msgstr ""
+
+#: ../user/reference/glossary.md:195
+#: 9791f94bb9a44e3eb8db12fa2b977750
+msgid "Any [qube](#qube) that shares its root filesystem with another qube. A qube that is borrowing a template's root filesystem is known as an [app qube](#app-qube) and is said to be \"based on\" the template. Templates are intended for installing and updating software applications, but not for running them."
+msgstr ""
+
+#: ../user/reference/glossary.md:201
+#: f47c9e73d3f244ab81140809cf5a76c9
+msgid "See [Templates](/doc/templates/)."
+msgstr ""
+
+#: ../user/reference/glossary.md:203
+#: 6338d8cc35e04236a4209671a4b6ee13
+msgid "No template is an [app qube](#app-qube)."
+msgstr ""
+
+#: ../user/reference/glossary.md:205
+#: 97ba4b29c77646c1b111ee5482e7227c
+msgid "A template cannot be based on another template."
+msgstr ""
+
+#: ../user/reference/glossary.md:207
+#: 26b2f45754b0486c9bc4dae48d1ee325
+msgid "Regular templates cannot function as [disposable templates](#disposable-template). (Disposable templates must be app qubes.)"
+msgstr ""
+
+#: ../user/reference/glossary.md:210
+#: b74ea32f66594183889439ee31cf4430
+msgid "Previously known as: `TemplateVM`."
+msgstr ""
+
+#: ../user/reference/glossary.md:212
+#: 41e98cc34dca4768b254157ec692b492
+msgid "VM"
+msgstr ""
+
+#: ../user/reference/glossary.md:214
+#: 97fcb1b6abf244cdb382a188a2ba5e8d
+msgid "An abbreviation for \"virtual machine.\" A software implementation of a machine (for example, a computer) that executes programs like a physical machine."
+msgstr ""

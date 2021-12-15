@@ -1,0 +1,587 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-15 21:10+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../developer/general/doc-guidelines.md:13
+#: b64975d5c1f7485d96e914784a4671eb
+msgid "All Qubes OS documentation pages are stored as plain text files in the dedicated [qubes-doc](https://github.com/QubesOS/qubes-doc) repository. By cloning and regularly pulling from this repo, users can maintain their own up-to-date offline copy of all Qubes documentation rather than relying solely on the web."
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:19
+#: 9fca22f5a12b434aa3be63ee7ede7ade
+msgid "The documentation is a community effort. Volunteers work hard trying to keep everything accurate and comprehensive. If you notice a problem or some way it can be improved, please [edit the documentation](#how-to-contribute)!"
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:23
+#: a3d82564dd1e4983a51cd3190ef6ae7e
+msgid "Security"
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:25
+#: bcc7a2f209094492a4c7c0669ae94d87
+msgid "*Also see: [Should I trust this website?](/faq/#should-i-trust-this-website)*"
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:27
+#: b981dd5f41c545b4bcf5579fe45ba22f
+msgid "All pull requests (PRs) against [qubes-doc](https://github.com/QubesOS/qubes-doc) must pass review prior to be merged, except in the case of [external documentation](/doc/#external-documentation) (see [#4693](https://github.com/QubesOS/qubes-issues/issues/4693)). This process is designed to ensure that contributed text is accurate and non-malicious. This process is a best effort that should provide a reasonable degree of assurance, but it is not foolproof. For example, all text characters are checked for ANSI escape sequences. However, binaries, such as images, are simply checked to ensure they appear or function the way they should when the website is rendered. They are not further analyzed in an attempt to determine whether they are malicious."
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:40
+#: f003e160d35c4bd9aa3e7ac20d3eb5c3
+msgid "Once a pull request passes review, the reviewer should add a signed comment stating, \"Passed review as of `<latest_commit>`\" (or similar). The documentation maintainer then verifies that the pull request is mechanically sound (no merge conflicts, broken links, ANSI escapes, etc.). If so, the documentation maintainer then merges the pull request, adds a PGP-signed tag to the latest commit (usually the merge commit), then pushes to the remote. In cases in which another reviewer is not required, the documentation maintainer may review the pull request (in which case no signed comment is necessary, since it would be redundant with the signed tag)."
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:50
+#: 8fc4d462d6ae40e3875a751a505f2356
+msgid "Questions, problems, and improvements"
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:52
+#: a22b36eeae54474b9a8f23f75412339a
+msgid "If you have a question about something you read in the documentation, please send it to the appropriate [mailing list](/support/). If you see that something in the documentation should be fixed or improved, please [contribute](#how-to-contribute) the change yourself. To report an issue with the documentation, please follow our standard [issue reporting guidelines](/doc/issue-tracking/). (If you report an issue with the documentation, you will likely be asked to address it, unless there is a clear indication in your report that you are not willing or able to do so.)"
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:61
+#: 07e1ac245db7494baf90b3c91dbf841c
+msgid "How to contribute"
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:63
+#: 3910c4c22cfe452bb9415a730f8ce9c3
+msgid "Editing the documentation is easy, so if you see that a change should be made, please contribute it!"
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:66
+#: 0aec218317f04e339bb0804281b98d74
+msgid "A few notes before we get started:"
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:68
+#: d355affea555457d911e7a26bb52328f
+msgid "Since Qubes is a security-oriented project, every documentation change will be reviewed before it's accepted. This allows us to maintain quality control and protect our users."
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:71
+#: 5893692b51e74b35a2ef51922ebfa4ee
+msgid "We don't want you to spend time and effort on a contribution that we can't accept. If your contribution would take a lot of time, please [file an issue](/doc/issue-tracking/) for it first so that we can make sure we're on the same page before significant works begins."
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:75
+#: 519bb2995def4eacbd7d28f085193c19
+msgid "Alternatively, you may already have written content that doesn't conform to these guidelines, but you'd be willing to modify it so that it does. In this case, you can still submit it by following the instructions below. Just make a note in your pull request (PR) that you're aware of the changes that need to be made and that you're just asking for the content to be reviewed before you spend time making those changes."
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:82
+#: 15049e63fade4ff3b12d7f20d35d90c5
+msgid "As mentioned above, we keep all the documentation in a dedicated [Git repository](https://github.com/QubesOS/qubes-doc) hosted on [GitHub](https://github.com/). Thanks to GitHub's interface, you can edit the documentation even if you don't know Git at all! The only thing you need is a GitHub account, which is free."
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:88
+#: 009de1bfa9764961a25e52663327b8b2
+msgid "(**Note:** If you're already familiar with GitHub or wish to work from the command line, you can skip the rest of this section. All you need to do to contribute is to [fork and clone](https://guides.github.com/activities/forking/) the [qubes-doc](https://github.com/QubesOS/qubes-doc) repo, make your changes, then [submit a pull request](https://help.github.com/articles/using-pull-requests/).)"
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:96
+#: e1131435ae9047029bbcce860a02f57b
+msgid "Ok, let's start. Every documentation page has an \"Edit this page\" button. It may be on the side (in the desktop layout):"
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:99
+#: c87fa4cc2a714784ae6b449349372f71
+msgid "[![edit-button-desktop](/attachment/doc/03-button2.png)](/attachment/doc/03-button2.png)"
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:101
+#: a59ce489478d4834a6b28659bbbb8cb3
+msgid "Or at the bottom (in the mobile layout):"
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:103
+#: 5d9b15a901b6435faefe3e64dedc6e57
+msgid "[![edit-button-mobile](/attachment/doc/02-button1.png)](/attachment/doc/02-button1.png)"
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:105
+#: 301ea5f941a34f998fdfc8889945026e
+msgid "When you click on it, you'll be prompted for your GitHub username and password (if you aren't already logged in). You can also create an account from here."
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:108
+#: 12cf85c34e014bc28b99cc683ae4f797
+msgid "[![github-sign-in](/attachment/doc/04-sign-in.png)](/attachment/doc/04-sign-in.png)"
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:110
+#: 259f674d2a0f42fcb1492881b777dd5f
+msgid "If this is your first contribution to the documentation, you need to \"fork\" the repository (make your own copy). It's easy --- just click the big green button on the next page. This step is only needed the first time you make a contribution."
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:115
+#: a07bb1ae0a19496b86f5e79a370ebeb4
+msgid "[![fork](/attachment/doc/05-fork.png)](/attachment/doc/05-fork.png)"
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:117
+#: 22d3f4ed8c104bbf96ba59e67d43f775
+msgid "Now you can make your modifications. You can also preview the changes to see how they'll be formatted by clicking the \"Preview changes\" tab. If you want to add images, please see [How to add images](#how-to-add-images). If you're making formatting changes, please [render the site locally](https://github.com/QubesOS/qubesos.github.io#instructions) to verify that everything looks correct before submitting any changes."
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:124
+#: 5f40008f390d426d9ae0194e588e2b7f
+msgid "[![edit](/attachment/doc/06-edit.png)](/attachment/doc/06-edit.png)"
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:126
+#: b5f539e96f8a40bc9e47df3173e36db0
+msgid "Once you're finished, describe your changes at the bottom and click \"Propose file change\"."
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:129
+#: ff1379d1c415408fa46b498c60e6f7de
+msgid "[![commit](/attachment/doc/07-commit-msg.png)](/attachment/doc/07-commit-msg.png)"
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:131
+#: 5492f0bcdbbe4c00ba6a1b880a3ed890
+msgid "After that, you'll see exactly what modifications you've made. At this stage, those changes are still in your own copy of the documentation (\"fork\"). If everything looks good, send those changes to us by pressing the \"Create pull request\" button."
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:136
+#: 60d5871f1a694776813e3945dcbbc568
+msgid "[![pull-request](/attachment/doc/08-review-changes.png)](/attachment/doc/08-review-changes.png)"
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:138
+#: 39b9ef8d07954598847243692075c83a
+msgid "You will be able to adjust the pull request message and title there. In most cases, the defaults are ok, so you can just confirm by pressing the \"Create pull request\" button again."
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:142
+#: 0236023643fb46f39b8d53614873463d
+msgid "[![pull-request-confirm](/attachment/doc/09-create-pull-request.png)](/attachment/doc/09-create-pull-request.png)"
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:144
+#: 9ce46d7492004fb38cea480372139c94
+msgid "If any of your changes should be reflected in the [documentation index (a.k.a. table of contents)](/doc/) --- for example, if you're adding a new page, changing the title of an existing page, or removing a page --- please see [How to edit the documentation index](#how-to-edit-the-documentation-index)."
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:149
+#: 4d29146749da43919be985440ea7112b
+msgid "That's all! We will review your changes. If everything looks good, we'll pull them into the official documentation. Otherwise, we may have some questions for you, which we'll post in a comment on your pull request. (GitHub will automatically notify you if we do.) If, for some reason, we can't accept your pull request, we'll post a comment explaining why we can't."
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:155
+#: 71f1620f94bc4fb8b5a9c0e2a222a671
+msgid "[![done](/attachment/doc/10-done.png)](/attachment/doc/10-done.png)"
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:157
+#: 0b5ea2311e864113afdcf771d58c1b7c
+msgid "How to edit the documentation index"
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:159
+#: b0bd87979ecc414fbd1990f323b8314c
+msgid "The source file for the [documentation index (a.k.a. table of contents)](/doc/) lives here:"
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:162
+#: d028201b015045e3a8470aaf80a1407e
+msgid "<https://github.com/QubesOS/qubesos.github.io/blob/master/_data/doc-index.yml>"
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:164
+#: cbefc526b3924557925c7f6d9d41e804
+msgid "Editing this file will change what appears on the documentation index. If your pull request (PR) adds, removes, or edits anything that should be reflected in the documentation index, please make sure you also submit an associated pull request against this file."
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:169
+#: e7de1f65a8df424a9cbdeda636c5507d
+msgid "How to add images"
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:171
+#: c76e2835ad98404da7f66503a8d70c92
+msgid "To add an image to a page, use the following syntax in the main document. This will make the image a hyperlink to the image file, allowing the reader to click on the image in order to view the image by itself."
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:179
+#: 4bad11453f5e422399eadd53420b3e12
+msgid "Then, submit your image(s) in a separate pull request to the [qubes-attachment](https://github.com/QubesOS/qubes-attachment) repository using the same path and filename. This is the only permitted way to include images. Do not link to images on other websites."
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:184
+#: cb41cfa8d42c4070bf7635d56ae72462
+msgid "Organizational guidelines"
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:186
+#: a0c1c3f4179c46669d482e4453bc41d3
+msgid "Do not duplicate documentation"
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:188
+#: 2a538a40f2bb424296b536c3dd2e1064
+msgid "Duplicating documentation is almost always a bad idea. There are many reasons for this. The main one is that almost all documentation has to be updated as some point. When similar documentation appears in more than one place, it is very easy for it to get updated in one place but not the others (perhaps because the person updating it doesn't realize it's in more than once place). When this happens, the documentation as a whole is now inconsistent, and the outdated documentation becomes a trap, especially for novice users. Such traps are often more harmful than if the documentation never existed in the first place. The solution is to **link** to existing documentation rather than duplicating it. There are some exceptions to this policy (e.g., information that is certain not to change for a very long time), but they are rare."
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:200
+#: 1af819633def49eaac268b0b1e8bc9ea
+msgid "Core vs. external documentation"
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:202
+#: 6b5b582e9344430580848bcc35bfd292
+msgid "Core documentation resides in the [Qubes OS Project's official repositories](https://github.com/QubesOS/), mainly in [qubes-doc](https://github.com/QubesOS/qubes-doc). External documentation can be anywhere else (such as forums, community websites, and blogs), but there is an especially large collection in the [Qubes Community](https://github.com/Qubes-Community) project. External documentation should not be submitted to [qubes-doc](https://github.com/QubesOS/qubes-doc). If you've written a piece of documentation that is not appropriate for [qubes-doc](https://github.com/QubesOS/qubes-doc), we encourage you to submit it to the [Qubes Community](https://github.com/Qubes-Community) project instead. However, *linking* to external documentation from [qubes-doc](https://github.com/QubesOS/qubes-doc) is perfectly fine. Indeed, the maintainers of the [Qubes Community](https://github.com/Qubes-Community) project should regularly submit PRs against the documentation index (see [How to edit the documentation index](#how-to-edit-the-documentation-index)) to add and update Qubes Community links in the \"External Documentation\" section of the documentation table of contents."
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:220
+#: 1ddf76fd56d9467aba903bca29a0861a
+msgid "The main difference between **core** (or **official**) and **external** (or **community** or **unofficial**) documentation is whether it documents software that is officially written and maintained by the Qubes OS Project. The purpose of this distinction is to keep the core docs maintainable and high-quality by limiting them to the software output by the Qubes OS Project. In other words, we take responsibility for documenting all of the software we put out into the world, but it doesn't make sense for us to take on the responsibility of documenting or maintaining documentation for anything else. For example, Qubes OS may use a popular Linux distribution for an official [TemplateVM](/doc/templates/). However, it would not make sense for a comparatively small project like ours, with modest funding and a lean workforce, to attempt to document software belonging to a large, richly-funded project with an army of paid and volunteer contributors, especially when they probably already have documentation of their own. This is particularly true when it comes to Linux in general. Although many users who are new to Qubes are also new to Linux, it makes absolutely no sense for our comparatively tiny project to try to document Linux in general when there is already a plethora of documentation out there."
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:239
+#: fb121400835f4218ad0b5e562e2b2b72
+msgid "Many contributors do not realize that there is a significant amount of work involved in *maintaining* documentation after it has been written. They may wish to write documentation and submit it to the core docs, but they see only their own writing process and fail to consider that it will have to be kept up-to-date and consistent with the rest of the docs for years afterward. Submissions to the core docs also have to go through a review process to ensure accuracy before being merged (see [security](#security)), which takes up valuable time from the team. We aim to maintain high quality standards for the core docs (style and mechanics, formatting), which also takes up a lot of time. If the documentation involves anything external to the Qubes OS Project (such as a website, platform, program, protocol, framework, practice, or even a reference to a version number), the documentation is likely to become outdated when that external thing changes. It's also important to periodically review and update this documentation, especially when a new Qubes release comes out. Periodically, there may be technical or policy changes that affect all the core documentation. The more documentation there is relative to maintainers, the harder all of this will be. Since there are many more people who are willing to write documentation than to maintain it, these individually small incremental additions amount to a significant maintenance burden for the project."
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:259
+#: bded6724b936439ebb411eceaef5189d
+msgid "On the positive side, we consider the existence of community documentation to be a sign of a healthy ecosystem, and this is quite common in the software world. The community is better positioned to write and maintain documentation that applies, combines, and simplifies the official documentation, e.g., tutorials that explain how to install and use various programs in Qubes, how to create custom VM setups, and introductory tutorials that teach basic Linux concepts and commands in the context of Qubes. In addition, just because the Qubes OS Project has officially written and maintains some flexible framework, such as `qrexec`, it does not make sense to include every tutorial that says \"here's how to do something cool with `qrexec`\" in the core docs. Such tutorials generally also belong in the community documentation."
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:271
+#: 025c40a933bd4175a573d2d0dc6d5558
+msgid "See [#4693](https://github.com/QubesOS/qubes-issues/issues/4693) for more background information."
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:274
+#: 079ae497735c49e0941934a202560fb6
+msgid "Version-specific documentation"
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:276
+#: 80dd9ec853d74c3c86040b0102494389
+msgid "*See [#5308](https://github.com/QubesOS/qubes-issues/issues/5308) for potential changes to this policy.*"
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:279
+#: 46b9af4c788e4dd48e7d425cf6608b60
+msgid "We maintain only one set of documentation for Qubes OS. We do not maintain a different set of documentation for each version of Qubes. Our single set of Qubes OS documentation is updated on a continual, rolling basis. Our first priority is to document all **current, stable releases** of Qubes. Our second priority is to document the next, upcoming release (if any) that is currently in the beta or release candidate stage."
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:286
+#: 153cbf996a904c3baa2ffbf4bcbbc303
+msgid "In cases where a documentation page covers functionality that differs considerably between Qubes OS versions, the page should be subdivided into clearly-labeled sections that cover the different functionality in different versions:"
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:291
+#: cad1d0ed25034e9291893bb1440d046a
+msgid "Incorrect Example"
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:316
+#: 54e6d03716d146019262bd24af96dd49
+msgid "Correct Example"
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:352
+#: 465033087e0941d499d4c4c2e451845a
+msgid "Subdividing the page into clearly-labeled sections for each version has several benefits:"
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:355
+#: 4de3f5acfe07449fa1c0661c3171e745
+msgid "It preserves good content for older (but still supported) versions. Many documentation contributors are also people who prefer to use the latest version. Many of them are tempted to *replace* existing content that applies to an older, supported version with content that applies only to the latest version. This is somewhat understandable. Since they only use the latest version, they may be focused on their own experience, and they may even regard the older version as deprecated, even when it's actually still supported. However, allowing this replacement of content would do a great disservice to those who still rely on the older, supported version. In many cases, these users value the stability and reliability of the older, supported version. With the older, supported version, there has been more time to fix bugs and make improvements in both the software and the documentation. Consequently, much of the documentation content for this version may have gone through several rounds of editing, review, and revision. It would be a tragedy for this content to vanish while the very set of users who most prize stability and reliability are depending on it."
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:371
+#: 3d8ab433875747688ee7c7f1078bc79a
+msgid "It's easy for readers to quickly find the information they're looking for, since they can go directly to the section that applies to their version."
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:373
+#: 6192a0cf3514459a969d281883f9594d
+msgid "It's hard for readers to miss information they need, since it's all in one place. In the incorrect example, information that the reader needs could be in any paragraph in the entire document, and there's no way to tell without reading the entire page. In the correct example, the reader can simply skim the headings in order to know which parts of the page need to be read and which can be safely ignored. The fact that some content is repeated in the two version-specific sections is not a problem, since no reader has to read the same thing twice. Moreover, as one version gets updated, it's likely that the documentation for that version will also be updated. Therefore, content that is initially duplicated between version-specific sections will not necessarily stay that way, and this is a good thing: We want the documentation for a version that *doesn't* change to stay the same, and we want the documentation for a version that *does* change to change along with the software."
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:387
+#: f0621acc61d44d1a8748dedd0bb74f1b
+msgid "It's easy for documentation contributors and maintainers to know which file to edit and update, since there's only one page for all Qubes OS versions. Initially creating the new headings and duplicating content that applies to both is only a one-time cost for each page, and many pages don't even require this treatment, since they apply to all currently-supported Qubes OS versions."
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:394
+#: 0db26c798a954538b504455ba12f7e2f
+msgid "By contrast, an alternative approach, such as segregating the documentation into two different branches, would mean that contributions that apply to both Qubes versions would only end up in one branch, unless someone remembered to manually submit the same thing to the other branch and actually made the effort to do so. Most of the time, this wouldn't happen. When it did, it would mean a second pull request that would have to be reviewed. Over time, the different branches would diverge in non-version-specific content. Good general content that was submitted only to one branch would effectively disappear once that version was deprecated. (Even if it were still on the website, no one would look at it, since it would explicitly be in the subdirectory of a  deprecated version, and there would be a motivation to remove it from the website so that search results wouldn't be populated with out-of-date information.)"
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:407
+#: 97b4a13c0868449484c0bde5bfba78e7
+msgid "For further discussion about version-specific documentation in Qubes, see [here](https://groups.google.com/d/topic/qubes-users/H9BZX4K9Ptk/discussion)."
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:410
+#: 5b6053ed95e54978a20b78885615d69a
+msgid "Style guidelines"
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:412
+#: 0f3ba2ce5f7c41aa9fcbcf11d1dddcd3
+msgid "Familiarize yourself with the terms defined in the [glossary](/doc/glossary/). Use these terms consistently and accurately throughout your writing."
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:415
+#: cf695c9bf62a48bfa3f1697d89bd1691
+msgid "Syntactically distinguish variables in commands."
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:417
+#: 0e4924c459a94760abbe28a722707b6a
+msgid "For example, this is ambiguous:"
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:423
+#: 65163dd3824c4894a5641049dc3392d9
+msgid "It should instead be:"
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:429
+#: 064ec8c02f8047bcab176a7d4f1466ea
+msgid "Note that we syntactically distinguish variables in three ways:"
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:430
+#: 250a11004d9142fca7ff85a4760bba49
+msgid "Surrounding them in angled brackets (`< >`)"
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:431
+#: 232ce92d995747eeb7d19722deed050f
+msgid "Using underscores (`_`) between words"
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:432
+#: 207d27e826664ad4a2ab0bf8397444c4
+msgid "Using all capital letters"
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:434
+#: 191afa0f37d142f7af4c3a6e106c50d9
+msgid "Markdown conventions"
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:436
+#: aa1c605d42454c3dbf990d213a95e66f
+msgid "All the documentation is written in Markdown for maximum accessibility. When making contributions, please try to observe the following style conventions:"
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:439
+#: 11b25ee5db844b0eb4b55176b33d0fbe
+msgid "Use spaces instead of tabs."
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:440
+#: cd81abe512b6496196628c6b18b694b8
+msgid "Do not write HTML inside Markdown documents (except in rare, unavoidable cases, such as alerts). In particular, never include HTML or CSS for styling, formatting, or white space control. That belongs in the (S)CSS files instead."
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:443
+#: 6267afe129aa4b468070bffab9587113
+msgid "Link only to images in [qubes-attachment](https://github.com/QubesOS/qubes-attachment) (see [instructions above](#how-to-add-images)). Do not link to images on other websites."
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:447
+#: a7be356ebaad46658d72a4f5ff6a34b8
+msgid "In order to enable offline browsing and automatic onion redirection, always use relative (rather than absolute) links, e.g., `/doc/doc-guidelines/` instead of `https://www.qubes-os.org/doc/doc-guidelines/`. Examples of exceptions:"
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:451
+#: 81ffa2d40a064cbeaac8451c02bd49ba
+msgid "The signed plain text portions of [QSBs](/security/qsb/) and [Canaries](/security/canary/)"
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:453
+#: 1b57f49216704094aac67f7f092f069a
+msgid "URLs that appear inside code blocks (e.g., in comments and document templates)"
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:455
+#: 556f80781ab74558a0f62c64aebae51e
+msgid "Files like `README.md` and `CONTRIBUTING.md`"
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:456
+#: 1045f2a615be478da2a3f58eefcb4a5f
+msgid "Hard wrap Markdown lines at 80 characters, unless the line can't be broken (e.g., code or a URL)."
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:458
+#: b249f8df42be4f00a407210f3ec62223
+msgid "If appropriate, make numerals in numbered lists match between Markdown source and HTML output."
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:460
+#: 5fc2b56ae28b40f3afbe45689a11f88d
+msgid "Rationale: In the event that a user is required to read the Markdown source directly, this will make it easier to follow, e.g., numbered steps in a set of instructions."
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:463
+#: b3f1da1f1ad849a681c08a5f6e5f3a94
+msgid "Use hanging indentations where appropriate."
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:464
+#: 9465d4c4f10749babaa138f0d5c8bec5
+msgid "Do not use `h1` headings (single `#` or `======` underline). These are automatically generated from the `title:` line in the YAML frontmatter."
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:466
+#: 877f634f96424250b30611a256e658bc
+msgid "Use Atx-style headings: , `##h 2`, `### h3`, etc."
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:467
+#: 3c400ebefaf84c9189e83298da175dde
+msgid "When writing code blocks, use [syntax highlighting](https://github.github.com/gfm/#info-string) where [possible](https://github.com/jneen/rouge/wiki/List-of-supported-languages-and-lexers) and use `[...]` for anything omitted."
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:471
+#: 4cc8ea6bc75f40f7944e892649ddc964
+msgid "When providing command line examples:"
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:472
+#: a928d5b360e74d9dae0b07e37cfa0f6c
+msgid "Tell the reader where to open a terminal (dom0 or a specific domU), and show the command along with its output (if any) in a code block, e.g.:"
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:484
+#: 5bd89ba3c1f649e68a1c6f157935b125
+msgid "Precede each command with the appropriate command prompt: At a minimum, the prompt should contain a trailing `#` (for the user `root`) or `$` (for other users) on Linux systems and `>` on Windows systems, respectively."
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:487
+#: 7ac451d7ea4040fc92db6314d01e348a
+msgid "Don't try to add comments inside the code block. For example, *don't* do this:"
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:501
+#: 99b6354ad74f40e9a156d19acf55f673
+msgid "The `#` symbol preceding each comment is ambiguous with a root command  prompt. Instead, put your comments *outside* of the code block in normal  prose."
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:504
+#: ea7fa8ddc32f4a948c3b9513b312b143
+msgid "Use non-reference-style links like `[website](https://example.com/)`. Do *not* use reference links like `[website][example]`, `[website][]` or `[website]`."
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:508
+#: 93faff8a0fef4cbaaf9c899f8c40a47f
+msgid "([This](https://daringfireball.net/projects/markdown/) is a great source for learning about Markdown.)"
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:511
+#: 35b9946bed504aaaa71019f7ca6f8ddb
+msgid "Coding conventions"
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:513
+#: 849c8fd459cd4879a0aebb5857c76842
+msgid "These conventions apply to the website as a whole, including everything written in HTML, CSS, YAML, and Liquid. These conventions are intended to keep the codebase consistent when multiple collaborators are working on it. They should be understood as a practical set of rules for maintaining order in this specific codebase rather than as a statement of what is objectively right or good."
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:520
+#: 9a621eb2049c450782f19234a03c4c75
+msgid "Always use spaces. Never use tabs."
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:521
+#: 056de1ce99c04eeeafed20af92bee285
+msgid "Indent by exactly two (2) spaces."
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:522
+#: 7df1a12d9e3b40d7ac269a4f2648dff9
+msgid "Whenever you add an opening tag, indent the following line. (Exception: If you open and close the tag on the same line, do not indent the following line.)"
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:525
+#: ac50ba6be01f470681d3d38bbbeb9925
+msgid "Indent Liquid the same way as HTML."
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:526
+#: ff7c1723800f4114a2d0b920de548c9c
+msgid "In general, the starting columns of every adjacent pair of lines should be no more than two spaces apart (example below)."
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:528
+#: 652c774692b143b7bf95cd89f0148397
+msgid "No blank or empty lines. (Hint: When you feel you need one, add a comment on that line instead.)"
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:530
+#: e800275f1a004738a34d2fe28d6a935d
+msgid "Use comments to indicate the purposes of different blocks of code. This makes the file easier to understand and navigate."
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:532
+#: 5c9b167882664da591b31609f95a2594
+msgid "Use descriptive variable names. Never use one or two letter variable names. Avoid uncommon abbreviations and made-up words."
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:534
+#: 05c2028d5cc9493c81e82505e158316d
+msgid "In general, make it easy for others to read your code. Your future self will thank you, and so will your collaborators!"
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:536
+#: 8d33f38414a148bf87f4bd22a571680a
+msgid "[Don't Repeat Yourself (DRY)!](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) Instead of repeating the same block of code multiple times, abstract it out into a separate file and `include` that file where you need it."
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:541
+#: 0baf644dbf3840db9dcece37fb8fe3a6
+msgid "Indentation example"
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:543
+#: 24c1723df45a4614841dfdc1090d64fb
+msgid "Here's an example that follows the indentation rules:"
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:545
+#: ddd696cf41ed4d7d9834dd209ea7e1de
+msgid "{% raw %}"
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:563
+#: 2125cee504d34611a0d4d82160fef4bb
+msgid "{% endraw %}"
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:565
+#: f1d4eff5c8074187a910f845828425ea
+msgid "Git conventions"
+msgstr ""
+
+#: ../developer/general/doc-guidelines.md:567
+#: 01557f465fa4488f816a89a90c1bb191
+msgid "Please try to write good commit messages, according to the [instructions in our coding style guidelines](/doc/coding-style/#commit-message-guidelines)."
+msgstr ""

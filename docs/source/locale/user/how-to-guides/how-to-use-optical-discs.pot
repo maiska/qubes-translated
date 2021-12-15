@@ -1,0 +1,42 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-15 21:10+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../user/how-to-guides/how-to-use-optical-discs.md:13
+#: 061e83ef001846cf9ac7e96aa1d797f7
+msgid "Passthrough reading and recording (a.k.a., \"burning\") are not supported by Xen. Currently, the only options for reading and recording optical discs (e.g., CDs, DVDs, BRDs) in Qubes are:"
+msgstr ""
+
+#: ../user/how-to-guides/how-to-use-optical-discs.md:16
+#: 4774161305804fa2b361d8eaa7f4488e
+msgid "Use a USB optical drive."
+msgstr ""
+
+#: ../user/how-to-guides/how-to-use-optical-discs.md:17
+#: c8f81d6f06b646f6965b5dfec2c210e4
+msgid "Attach a SATA optical drive to a secondary SATA controller, then assign this secondary SATA controller to a VM."
+msgstr ""
+
+#: ../user/how-to-guides/how-to-use-optical-discs.md:18
+#: d31790f5adca45a08a11642170a97dbe
+msgid "Use a SATA optical drive attached to dom0. (**Caution:** This option is [potentially dangerous](https://github.com/Qubes-Community/Contents/blob/master/docs/security/security-guidelines.md#dom0-precautions).)"
+msgstr ""
+
+#: ../user/how-to-guides/how-to-use-optical-discs.md:21
+#: 7702eefe15a84531ae1a01343c3ddae2
+msgid "To access an optical disc via USB follow the [typical procedure for attaching a USB device](/doc/how-to-use-usb-devices/#with-the-command-line-tool), then check with the **Qubes Devices** widget to see what device in the target qube the USB optical drive was attached to. Typically this would be `sr0`. For example, if `sys-usb` has device `3-2` attached to the `work` qube's `sr0`, you would mount it with `mount /dev/sr0 /mnt/removable`. You could also write to a disc with `wodim -v dev=/dev/sr0 -eject /home/user/Qubes.iso`."
+msgstr ""

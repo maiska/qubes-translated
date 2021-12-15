@@ -1,0 +1,132 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-15 21:10+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../developer/debugging/test-bench.md:13
+#: fbe48a83b24e4880b5f5b2d02368e922
+msgid "This guide shows how to set up simple test bench that automatically test your code you're about to push. It is written especially for `core3` branch of `core-admin.git` repo, but some ideas are universal."
+msgstr ""
+
+#: ../developer/debugging/test-bench.md:15
+#: b856b10fb4a343fd97c3399bcbb6b746
+msgid "We will set up a spare machine (bare metal, not a virtual) that will be hosting our experimental Dom0. We will communicate with it via Ethernet and SSH. This tutorial assumes you are familiar with [QubesBuilder](/doc/qubes-builder/) and you have it set up and running flawlessly."
+msgstr ""
+
+#: ../developer/debugging/test-bench.md:17
+#: 1b3d7e553c724cbfa089cd1d9dd7909a
+msgid "Setting up the machine"
+msgstr ""
+
+#: ../developer/debugging/test-bench.md:19
+#: 260011aaee2f4966adb6d8d17258a0e1
+msgid "First, do a clean install from ISO you built or grabbed elsewhere."
+msgstr ""
+
+#: ../developer/debugging/test-bench.md:21
+#: 1f7db630b5584f83a07432e8370175fd
+msgid "You have to fix network, because it is intentionally broken. This script should reenable your network card without depending on anything else."
+msgstr ""
+
+#: ../developer/debugging/test-bench.md:57
+#: d697460e0b3d4a1bbe5f38020b6dd15a
+msgid "TODO: describe how to run this at every startup"
+msgstr ""
+
+#: ../developer/debugging/test-bench.md:59
+#: 514f7f64858444acb04df4e26814d85f
+msgid "Now configure your DHCP server so your testbench gets static IP and connect your machine to your local network. You should ensure that your testbench can reach the Internet."
+msgstr ""
+
+#: ../developer/debugging/test-bench.md:61
+#: ab6bc26dfdda4f2d924a3964f86dbf96
+msgid "Install `openssh-server` on your testbench:"
+msgstr ""
+
+#: ../developer/debugging/test-bench.md:67
+#: b8da662006a74789a99a32dbb6e5bce8
+msgid "Ensure that sudo works without password from your user account (it should by default)."
+msgstr ""
+
+#: ../developer/debugging/test-bench.md:69
+#: 4cfa233536774f9a9447928eb23c5810
+msgid "Development VM"
+msgstr ""
+
+#: ../developer/debugging/test-bench.md:71
+#: aa7745da86284c25b7a53bfc047dfe28
+msgid "SSH"
+msgstr ""
+
+#: ../developer/debugging/test-bench.md:73
+#: 43a041de04e74782980449dc78f59d98
+msgid "Arrange firewall so you can reach the testbench from your `qubes-dev` VM. Generate SSH key in `qubes-dev`:"
+msgstr ""
+
+#: ../developer/debugging/test-bench.md:79
+#: a380f7261dc44d28b77e082a29393358
+msgid "Add the following section in `.ssh/config` in `qubes-dev`:"
+msgstr ""
+
+#: ../developer/debugging/test-bench.md:89
+#: cdb9468a05ed46788f8eef47b82f1bc5
+msgid "Then connect to your testbench and paste newly generated `id_ecdsa.pub` to `.ssh/authorized_keys` on testbench so you can log in without entering password every time."
+msgstr ""
+
+#: ../developer/debugging/test-bench.md:91
+#: 89bd447e0ba048f29a8159dd2f7b0a62
+msgid "Scripting"
+msgstr ""
+
+#: ../developer/debugging/test-bench.md:93
+#: 4d8ce8bba5604931b567721ce6b99336
+msgid "This step is optional, but very helpful. Put these scripts somewhere in your `${PATH}`, like `/usr/local/bin`."
+msgstr ""
+
+#: ../developer/debugging/test-bench.md:95
+#: 473230113fce47b39002aac2330aa21a
+msgid "`qtb-runtests`:"
+msgstr ""
+
+#: ../developer/debugging/test-bench.md:103
+#: fb06db6dec8b4a92a288031f6d3932a0
+msgid "`qtb-install`:"
+msgstr ""
+
+#: ../developer/debugging/test-bench.md:126
+#: 316546a982c54c46ae86fee4661e7f44
+msgid "`qtb-iterate`:"
+msgstr ""
+
+#: ../developer/debugging/test-bench.md:145
+#: b05c9d26c9764ccba8ccfb672891d56d
+msgid "Hooking git"
+msgstr ""
+
+#: ../developer/debugging/test-bench.md:147
+#: 2d27f5f42bd14ea7a19f87b3b7754b4d
+msgid "I (woju) have those two git hooks. They ensure tests are passing (or are marked as expected failure) when committing and pushing. For committing it is only possible to run tests that may be executed from git repo (even if the rest were available, I probably wouldn't want to do that). For pushing, I also install RPM and run tests on testbench."
+msgstr ""
+
+#: ../developer/debugging/test-bench.md:149
+#: 0e2018f0a348413ebd95e10be4289166
+msgid "`core-admin/.git/hooks/pre-commit`: (you may retain also the default hook, here omitted for readability)"
+msgstr ""
+
+#: ../developer/debugging/test-bench.md:159
+#: 88e4dd4d30804690993ad36300e4eb24
+msgid "`core-admin/.git/hooks/pre-push`:"
+msgstr ""

@@ -1,0 +1,82 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-15 21:10+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../user/hardware/hcl.md:15
+#: 7ac4e75458ae46f5b20c93325d1487e6
+msgid "The [HCL](/hcl) is a compilation of reports generated and submitted by users across various Qubes versions about their hardware's compatibility with Qubes."
+msgstr ""
+
+#: ../user/hardware/hcl.md:17
+#: 44407743aadc440ba6a0f5e6d7503a4c
+msgid "**Note:**  Except in the case of developer-reported entries, the Qubes team has not independently verified the accuracy of these reports.  Please first consult the data sheets (CPU, chipset, motherboard) prior to buying new hardware for Qubes.  Make sure it meets the [System Requirements](/doc/system-requirements/) and search in particular for support of:"
+msgstr ""
+
+#: ../user/hardware/hcl.md:22
+#: 4c3fdc9f2eca4a26b4207a1c765431b8
+msgid "HVM (\"AMD virtualization (AMD-V)\", \"Intel virtualization (VT-x)\", \"VIA virtualization (VIA VT)\")"
+msgstr ""
+
+#: ../user/hardware/hcl.md:23
+#: fd0bc5cc8161462092236adb15b00d1a
+msgid "IOMMU (\"AMD I/O Virtualization Technology (AMD-Vi)\", \"Intel Virtualization Technology for Directed I/O (VT-d)\")"
+msgstr ""
+
+#: ../user/hardware/hcl.md:24
+#: cb61cd3ba84d420aa2b5d4c6d305743c
+msgid "TPM (\"Trusted Platform Module (TPM)\" connected to a \"20-pin TPM header\" on motherboards.)"
+msgstr ""
+
+#: ../user/hardware/hcl.md:26
+#: 0366154cfa264e8185f0bf53416f2e25
+msgid "If using the list to make a purchasing decision, we recommend that you choose hardware with:"
+msgstr ""
+
+#: ../user/hardware/hcl.md:28
+#: a19335a3e73946f3b28bc7ae7c089865
+msgid "the best achievable Qubes security level (green columns in HVM, IOMMU, TPM)"
+msgstr ""
+
+#: ../user/hardware/hcl.md:29
+#: a79af34ecb054a64ad3bed6f73860657
+msgid "and general machine compatibility (green columns in Qubes version, dom0 kernel, remarks)."
+msgstr ""
+
+#: ../user/hardware/hcl.md:31
+#: 638d6f3a1e554283a1b57a842fbc0ed2
+msgid "Also see [Certified Hardware](/doc/certified-hardware/) and [Hardware Testing](/doc/hardware-testing/)."
+msgstr ""
+
+#: ../user/hardware/hcl.md:33
+#: 39c0be7a443f4628be1da60845d0056f
+msgid "Generating and Submitting New Reports"
+msgstr ""
+
+#: ../user/hardware/hcl.md:36
+#: e907b76905ac434883d32f641be45321
+msgid "In order to generate an HCL report in Qubes, simply open a terminal in dom0 (KDE: start-menu -\\> System Tools -\\> Konsole or Terminal Emulator) and run `qubes-hcl-report <vm-name>`, where `<vm-name>` is the name of the VM to which the generated HCL files will be saved. (Note: If you are working with a new Qubes installation, you may need to update your system in order to download this script.)"
+msgstr ""
+
+#: ../user/hardware/hcl.md:40
+#: 0d8eaeb7ed664d12987495852ea2ea94
+msgid "You are encouraged to submit your HCL report for the benefit of further Qubes development and other users. When submitting reports, test the hardware yourself, if possible. If you would like to submit your HCL report, please send the **HCL Info** `.yml` file to [\\`qubes-users@googlegroups.com\\`](/support/#qubes-users) with the subject `HCL - <your machine model name>`. Alternatively you can also create a post in the [HCL Reports category](https://qubes-os.discourse.group/c/user-support/hcl-reports/23) of the forum. Please include any useful information about any Qubes features you may have tested (see the legend below), as well as general machine compatibility (video, networking, sleep, etc.). Please consider sending the **HCL Support Files** `.cpio.gz` file as well. To generate these add the `-s` or `--support` command line option."
+msgstr ""
+
+#: ../user/hardware/hcl.md:46
+#: 9c3d7ccbddd0405bac14fbe950d5c9ff
+msgid "**Please note:**  The **HCL Support Files** may contain numerous hardware details, including serial numbers. If, for privacy or security reasons, you do not wish to make this information public, please **do not** send the `.cpio.gz` file to the public mailing list."
+msgstr ""

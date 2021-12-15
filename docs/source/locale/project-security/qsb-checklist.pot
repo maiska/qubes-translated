@@ -1,0 +1,67 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-15 21:10+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../project-security/qsb-checklist.md:12
+#: ff7af29652bf4e68a623e5ad648ca058
+msgid "Preparation"
+msgstr ""
+
+#: ../project-security/qsb-checklist.md:14
+#: a6c0b73aa14245408732c8dd3e26296b
+msgid "Draft QSB and push to private repository"
+msgstr ""
+
+#: ../project-security/qsb-checklist.md:15
+#: 639aaf012983492285e78758af44e0f3
+msgid "Build fixed packages"
+msgstr ""
+
+#: ../project-security/qsb-checklist.md:16
+#: 2d353866c3c24c17afca3b152d2e08a3
+msgid "Finalize QSB, sign, and add signed tags"
+msgstr ""
+
+#: ../project-security/qsb-checklist.md:18
+#: 5c477f903ca64988991b7d1d5f4da3e2
+msgid "Announcement"
+msgstr ""
+
+#: ../project-security/qsb-checklist.md:20
+#: b671469540e04fb58a5c3c7bae1e0ce3
+msgid "Upload packages to `security-testing` and `current-testing` repositories"
+msgstr ""
+
+#: ../project-security/qsb-checklist.md:21
+#: a94a7f11128144aab0953b5d5486e49e
+msgid "Push QSB to public repository"
+msgstr ""
+
+#: ../project-security/qsb-checklist.md:22
+#: 440a9b5e5d04401481601080ae31e8f3
+msgid "Publish a [news post](/news/) using the [QSB Template](/security/qsb/template/)"
+msgstr ""
+
+#: ../project-security/qsb-checklist.md:24
+#: 7c153716a26f409caf84c7a6cd832961
+msgid "Send the content of the news post to the appropriate [mailing lists](/support/)"
+msgstr ""
+
+#: ../project-security/qsb-checklist.md:26
+#: 89c515a485674243acc4e2560c5ed608
+msgid "Share link to news post on social media"
+msgstr ""

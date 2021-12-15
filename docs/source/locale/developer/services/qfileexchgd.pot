@@ -1,0 +1,147 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-15 21:10+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../developer/services/qfileexchgd.md:13
+#: 0753313653d941488e5efb65e0bd9d0d
+msgid "**This mechanism is obsolete as of Qubes Beta 1!**"
+msgstr ""
+
+#: ../developer/services/qfileexchgd.md:15
+#: 2c89f828692a4c1e9c4259dd8be4f91e
+msgid "Please see this [page](/doc/qfilecopy/) instead."
+msgstr ""
+
+#: ../developer/services/qfileexchgd.md:18
+#: 24a7793ff7a3414b84dd4a8f7d4a178b
+msgid "Overview"
+msgstr ""
+
+#: ../developer/services/qfileexchgd.md:21
+#: 5b55221b53484884a3d17564432259e4
+msgid "*qfilexchgd* is a dom0 daemon responsible for managing exchange of block devices (\"virtual pendrives\") between VMs. It is used for"
+msgstr ""
+
+#: ../developer/services/qfileexchgd.md:23
+#: 2dc613c960af497cbbae9744b1dff975
+msgid "copying files between AppVMs"
+msgstr ""
+
+#: ../developer/services/qfileexchgd.md:24
+#: 420e2cf9cc064e81b54a3826c8533a9c
+msgid "copying a single file between an AppVM and a DisposableVM"
+msgstr ""
+
+#: ../developer/services/qfileexchgd.md:26
+#: b1e2ce00ff7f413eb181545f8b5328f8
+msgid "*qfilexchgd* is started after first *qubes\\_guid* has been started, so that it has access to X display in dom0 to present dialog messages."
+msgstr ""
+
+#: ../developer/services/qfileexchgd.md:28
+#: 980d41fad2d64b2f8be0364c9a99a756
+msgid "*qfilexchgd* is event driven. The sources of events are:"
+msgstr ""
+
+#: ../developer/services/qfileexchgd.md:30
+#: aba9a9a3334d4b66bb8d270c91f1540f
+msgid "trigger of xenstore watch for the changes in `/local/domain` xenstore hierarchy - to detect start/stop of VMs, and maintain vmname-\\>vm\\_xid dictionary"
+msgstr ""
+
+#: ../developer/services/qfileexchgd.md:31
+#: e877d3ebc25e41b29c94899e2bb08203
+msgid "trigger of xenstore watch for a change in `/local/domain/domid/device/qpen` key - VMs write to this key to request service from *qfilexchgd*"
+msgstr ""
+
+#: ../developer/services/qfileexchgd.md:33
+#: c10d2079fba0461bb9335cb59f2316ca
+msgid "Copying files between AppVMs"
+msgstr ""
+
+#: ../developer/services/qfileexchgd.md:36
+#: 4db0762a41554bee97c125eb945951be
+msgid "AppVM1 user runs *qvm-copy-to-vm* script (accessible from Dolphin file manager by right click on a \"file(s)-\\>Actions-\\>Send to VM\" menu). It calls */usr/lib/qubes/qubes\\_penctl new*, and it writes \"new\" request to its `device/qpen` xenstore key. *qfilexchgd* creates a new 1G file, makes vfat fs on it, and does block-attach so that this file is attached as `/dev/xvdg` in AppVM1."
+msgstr ""
+
+#: ../developer/services/qfileexchgd.md:37
+#: 613e1e639aca4915a80ebbbf22efe5f8
+msgid "AppVM1 mounts `/dev/xvdg` on `/mnt/outgoing` and copies requested files there, then unmounts it."
+msgstr ""
+
+#: ../developer/services/qfileexchgd.md:38
+#: 47d12d84767e4a2fa578e6cb54f20bb8
+msgid "AppVM1 writes \"send DestVM\" request to its `device/qpen` xenstore key (calling */usr/lib/qubes/qubes\\_penctl send DestVM*). After getting confirmation by displaying a dialog box in dom0 display, *qfilexchgd* detaches `/dev/xvdg` from AppVM1, attaches it as `/dev/xvdh` to DestVM."
+msgstr ""
+
+#: ../developer/services/qfileexchgd.md:39
+#: 1ca21af41ef742108cf5824f72d02746
+msgid "In DestVM, udev script for `/dev/xvdh` named *qubes\\_add\\_pendrive\\_script* (see `/etc/udev/rules.d/qubes.rules`) mounts `/dev/xvdh` on `/mnt/incoming`, and then waits for `/mnt/incoming` to become unmounted. A file manager running in DestVM shows a new volume, and user in DestVM may copy files from it. When user in DestVM is done, then user unmounts `/mnt/incoming`. *qubes\\_add\\_pendrive*\\_script then tells *qfilexchgd* to detach `/dev/xvdh` and terminates."
+msgstr ""
+
+#: ../developer/services/qfileexchgd.md:41
+#: 739cfa99bfab47bf85daa852b8f7c148
+msgid "Copying a single file between AppVM and a DisposableVM"
+msgstr ""
+
+#: ../developer/services/qfileexchgd.md:44
+#: 23b4a322b2eb485aa526b96eeb173a8d
+msgid "In order to minimize attack surface presented by necessity to process virtual pendrive metadata sent by (potentially compromised and malicious) DisposableVM, AppVM\\<-\\>DisposableVM file exchange protocol does not use any filesystem."
+msgstr ""
+
+#: ../developer/services/qfileexchgd.md:46
+#: 1baf87feabfc46dc8316f61c78c61ace
+msgid "User in AppVM1 runs *qvm-open-in-dvm* (accessible from Dolphin file manager by right click on a \"file-\\>Actions-\\>Open in DisposableVM\" menu). *qvm-open-in-dvm*"
+msgstr ""
+
+#: ../developer/services/qfileexchgd.md:47
+#: 190da30b07e74d429b1a970304a55431
+msgid "gets a new `/dev/xvdg` (just as described in previous paragraph)"
+msgstr ""
+
+#: ../developer/services/qfileexchgd.md:48
+#: 00e2509fc0c1449bac9645669d0950e6
+msgid "computes a new unique transaction seq SEQ by incrementing `/home/user/.dvm/seq` contents,"
+msgstr ""
+
+#: ../developer/services/qfileexchgd.md:49
+#: fb0f191a220b489d8727b136359cd1a6
+msgid "writes the requested file name (say, /home/user/document.txt) to `/home/user/.dvm/SEQ`"
+msgstr ""
+
+#: ../developer/services/qfileexchgd.md:50
+#: 5a09bbba31654635a89de12475322b32
+msgid "creates a dvm\\_header (see core.git/appvm/dvm.h) on `/dev/xvdg`, followed by file contents"
+msgstr ""
+
+#: ../developer/services/qfileexchgd.md:51
+#: 23dd20d24e804148809b3a289de0395b
+msgid "writes the \"send disposable SEQ\" command to its `device/qpen` xenstore key."
+msgstr ""
+
+#: ../developer/services/qfileexchgd.md:53
+#: 73f00a0d26c347778e4f991d6b452fe4
+msgid "*qfilexchgd* sees that \"send\" argument==\"disposable\", and creates a new DisposableVM by calling */usr/lib/qubes/qubes\\_restore*. It adds the new DisposableVM to qubesDB via qvm\\_collection.add\\_new\\_disposablevm. Then it attaches the virtual pendrive (previously attached as `/dev/xvdg` at AppVM1) as `/dev/xvdh` in DisposableVM."
+msgstr ""
+
+#: ../developer/services/qfileexchgd.md:54
+#: 2b2c3129401644e68986f0a61c434076
+msgid "In DisposableVM, *qubes\\_add\\_pendrive\\_script* sees non-zero `qubes_transaction_seq` key in xenstore, and instead processing the virtual pendrive as in the case of normal copy, treats it as DVM transaction (a request, because we run in DisposableVM). It retrieves the body of the file passed in `/dev/xvdh`, copies to /tmp, and runs *mime-open* utility to open appropriate executable to edit it. When *mime-open* returns, if the file was modified, it is sent back to AppVM1 (by writing \"send AppVM1 SEQ\" to `device/qpen` xenstore key). Then DisposableVM destroys itself."
+msgstr ""
+
+#: ../developer/services/qfileexchgd.md:55
+#: 3c1e02e5a9ba4aea8fd44aaa5452755c
+msgid "In AppVM1, a new `/dev/xvdh` appears (because DisposableVM has sent it). *qubes\\_add\\_pendrive\\_script* sees non-zero `qubes_transaction_seq` key, and treats it as DVM transaction (a response, because we run in AppVM, not DisposableVM). It retrieves the filename from `/home/user/.dvm/SEQ`, and copies data from `/dev/xvdh` to it."
+msgstr ""

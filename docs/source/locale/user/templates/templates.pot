@@ -1,0 +1,539 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-15 21:10+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../user/templates/templates.md:14
+#: 6021d6c509934924bbaaef761594c490
+msgid "In [How to Get Started](/doc/how-to-get-started/), we covered the distinction in Qubes OS between where you *install* your software and where you *run* your software. Your software is installed in [templates](/doc/glossary/#template). Each template shares its root filesystem (i.e., all of its programs and system files) with all the qubes based on it. [App qubes](/doc/glossary/#app-qube) are where you run your software and store your data."
+msgstr ""
+
+#: ../user/templates/templates.md:21
+#: 4cec8be7ff8a4da49f4b103d9841cc6f
+msgid "The template system has significant benefits:"
+msgstr ""
+
+#: ../user/templates/templates.md:23
+#: 49c114abb9fd4a8c86ec8ff839b1b897
+msgid "**Security:** Each qube has read-only access to the template on which it's based, so if a qube is compromised, it cannot infect its template or any of the other qubes based on that template."
+msgstr ""
+
+#: ../user/templates/templates.md:27
+#: 67d3bba32cf949cabc39c5d7f9d5aa9d
+msgid "**Storage:** Each qube based on a template uses only the disk space required to store its own data (i.e., your files in its home directory), which dramatically saves on disk space."
+msgstr ""
+
+#: ../user/templates/templates.md:31
+#: b084c785da3449b7925a42d4bc2e158a
+msgid "**Speed:** It is extremely fast to create new app qubes, since the root filesystem already exists in the template."
+msgstr ""
+
+#: ../user/templates/templates.md:34
+#: b08484faf86249d29c9c82003476d6f0
+msgid "**Updates:** Updates are naturally centralized, since updating a template means that all qubes based on it will automatically use those updates after they're restarted."
+msgstr ""
+
+#: ../user/templates/templates.md:38
+#: 5e2bee1bd657460e991191cd84a25ebb
+msgid "An important side effect of this system is that any software installed in an app qube (rather than in the template on which it is based) will disappear after the app qube reboots (see [Inheritance and Persistence](#inheritance-and-persistence)). For this reason, we recommend installing most of your software in templates, not app qubes."
+msgstr ""
+
+#: ../user/templates/templates.md:44
+#: 21f3bfcf0361432884f039c3e26bf1b1
+msgid "The default template in Qubes is based on Fedora, but there are additional templates based on other Linux distributions. There are also templates available with or without certain software preinstalled. You may find it useful to have multiple templates installed in order to provide:"
+msgstr ""
+
+#: ../user/templates/templates.md:49
+#: a51256f7d4eb4d1f9aaa53803bc8668d
+msgid "Different security levels (e.g., more or less trusted software installed)"
+msgstr ""
+
+#: ../user/templates/templates.md:50
+#: df8aa89e1a8f4bfdb1eda1da3836749f
+msgid "Different environments (e.g., Fedora, Debian, Whonix)"
+msgstr ""
+
+#: ../user/templates/templates.md:51
+#: b60a306375cb44e2aec98930277642d4
+msgid "Different tools (e.g., office, media, development, hardware drivers)"
+msgstr ""
+
+#: ../user/templates/templates.md:53
+#: 72845a5db2964a6c872de0085f0ecc06
+msgid "Official"
+msgstr ""
+
+#: ../user/templates/templates.md:55
+#: da8ed660fa444ef48d4fe6d74a6eec75
+msgid "These are the official Qubes OS Project templates. We build and release updates for these templates. We guarantee that the binary updates are compiled from exactly the same source code as we publish."
+msgstr ""
+
+#: ../user/templates/templates.md:59
+#: 339c03bd6c504cb8a06a1a3fef157443
+msgid "[Fedora](/doc/templates/fedora/) (default)"
+msgstr ""
+
+#: ../user/templates/templates.md:60
+#: 1f00ecbf4ec1441ca1ff884128108ebe
+msgid "[Fedora Minimal](/doc/templates/minimal/)"
+msgstr ""
+
+#: ../user/templates/templates.md:61
+#: e042bb75f1a8426e9d6ce6faf9738a10
+msgid "[Fedora Xfce](/doc/templates/xfce)"
+msgstr ""
+
+#: ../user/templates/templates.md:62
+#: f6063d73cc0148d98502f73ba671eb31
+msgid "[Debian](/doc/templates/debian/)"
+msgstr ""
+
+#: ../user/templates/templates.md:63
+#: d88c2cafcde04ef2bbb43bcb20bcba54
+msgid "[Debian Minimal](/doc/templates/minimal/)"
+msgstr ""
+
+#: ../user/templates/templates.md:65
+#: 39de67b975144ac782c9dbab326efe0d
+msgid "Community"
+msgstr ""
+
+#: ../user/templates/templates.md:67
+#: 92c12e8c9e884d29b7cabde27d85f5bb
+msgid "These templates are supported by the Qubes community. Some of them are available in ready-to-use binary package form (built by the Qubes developers), while others are available only in source code form. In all cases, the Qubes OS Project does not provide updates for these templates. However, such updates may be provided by the template maintainer."
+msgstr ""
+
+#: ../user/templates/templates.md:73
+#: 81ce8bb183af4014ab9774ff2e7362b8
+msgid "By installing these templates, you are trusting not only the Qubes developers and the distribution maintainers, but also the template maintainer. In addition, these templates may be somewhat less stable, since the Qubes developers do not test them."
+msgstr ""
+
+#: ../user/templates/templates.md:78
+#: 8b0a7d1455d34149a3e2859ef04d92d1
+msgid "[Whonix](/doc/templates/whonix/)"
+msgstr ""
+
+#: ../user/templates/templates.md:79
+#: 3a28da23836648c5be31a840de1bce62
+msgid "[Ubuntu](/doc/templates/ubuntu/)"
+msgstr ""
+
+#: ../user/templates/templates.md:80
+#: 0608d46c619740b2a3e53881d627dbb3
+msgid "[Arch Linux](/doc/building-archlinux-template/)"
+msgstr ""
+
+#: ../user/templates/templates.md:81
+#: 53da56101f8740729f342821eb3a1228
+msgid "[CentOS](/doc/templates/centos/)"
+msgstr ""
+
+#: ../user/templates/templates.md:82
+#: 8f0760208f5740c4ab1435d667171731
+msgid "[CentOS Minimal](/doc/templates/minimal/)"
+msgstr ""
+
+#: ../user/templates/templates.md:83
+#: 3c20cfee768141248039f1816540a668
+msgid "[Gentoo](/doc/templates/gentoo/)"
+msgstr ""
+
+#: ../user/templates/templates.md:84
+#: d10b0c19008c4bd2a383872dd3f20a3c
+msgid "[Gentoo Minimal](/doc/templates/minimal/)"
+msgstr ""
+
+#: ../user/templates/templates.md:86
+#: e5f986868c8e419585844b4b82cd6922
+msgid "Installing"
+msgstr ""
+
+#: ../user/templates/templates.md:88
+#: 36bafd119d2f4764a4758f1c603a576f
+msgid "Certain templates come preinstalled with Qubes OS. However, there may be times when you wish to install a fresh template from the Qubes repositories, e.g.:"
+msgstr ""
+
+#: ../user/templates/templates.md:91
+#: 7e7b60a14ba14277b93f1192b785505b
+msgid "When a template version you're using reaches [end-of-life](/doc/supported-versions/)."
+msgstr ""
+
+#: ../user/templates/templates.md:93
+#: c89dea8a4ced49dba7b87b04496f8885
+msgid "When a new version of a template that you wish to use becomes [supported](/doc/supported-versions/)."
+msgstr ""
+
+#: ../user/templates/templates.md:95
+#: 956635310fa14d30bfcfeafacf4c4c09
+msgid "When you suspect your template has been compromised."
+msgstr ""
+
+#: ../user/templates/templates.md:96
+#: 3cdf6154599f40b0ba95c351e1ee128d
+msgid "When you have made modifications to your template that you no longer want."
+msgstr ""
+
+#: ../user/templates/templates.md:98
+#: a78e712b29ca47ae87bd5dd1ea3eee0c
+msgid "Please refer to each template's installation instructions. Usually, the installation method is to execute the following type of command in dom0:"
+msgstr ""
+
+#: ../user/templates/templates.md:105
+#: e00132b4a44244d680e732804fa24db5
+msgid "`qubes-template-<DISTRO_NAME>-<RELEASE_NUMBER>` is the name of the desired template package. Advanced users can install a [minimal](/doc/templates/minimal/) version of the template, if one exists, by appending `-minimal` directly to the end of the template package name."
+msgstr ""
+
+#: ../user/templates/templates.md:110
+#: 189973cd7c774bd3bd8e64c988c7acf2
+msgid "If you wish to install a community template, you must enable the community template repo:"
+msgstr ""
+
+#: ../user/templates/templates.md:117
+#: 69c61de311214f469ed742da586bc466
+msgid "If you receive the message that no match is found for `qubes-template-<DISTRO_NAME>-<RELEASE_NUMBER>`, see [here](/faq/#when-i-try-to-install-a-template-it-says-no-match-is-found)."
+msgstr ""
+
+#: ../user/templates/templates.md:121
+#: 128072ef1bad42d4926ac1553ecf51f9
+msgid "After Installing"
+msgstr ""
+
+#: ../user/templates/templates.md:123
+#: e6f8c930070a4c6d9a8b45a12d208c37
+msgid "After installing a fresh template, we recommend performing the following steps:"
+msgstr ""
+
+#: ../user/templates/templates.md:125
+#: a636633a6a244b999f2653de7b910375
+msgid "[Update the template](#updating)."
+msgstr ""
+
+#: ../user/templates/templates.md:127
+#: 91e4b37646db41bca4543a31c4289e38
+msgid "[Switch any app qubes that are based on the old template to the new one](#switching)."
+msgstr ""
+
+#: ../user/templates/templates.md:130
+#: 0719b551061441caaf1a9a027961731b
+msgid "If desired, [uninstall the old template](#uninstalling)."
+msgstr ""
+
+#: ../user/templates/templates.md:132
+#: a090caa3f8854e14b73a8bbda5d8a4c7
+msgid "Updating"
+msgstr ""
+
+#: ../user/templates/templates.md:134
+#: f085e229b2fc4fcbb19459b66c0be3e8
+msgid "Please see [How to Update](/doc/how-to-update/)."
+msgstr ""
+
+#: ../user/templates/templates.md:136
+#: a0f90a6e5a5146088dd0db53be98040c
+msgid "Installing Software"
+msgstr ""
+
+#: ../user/templates/templates.md:138
+#: b26dfee8b2d647e898a36f460ce4090f
+msgid "Please see [How to Install Software](/doc/how-to-install-software)."
+msgstr ""
+
+#: ../user/templates/templates.md:140
+#: c808509be62b4a0aa19b7c9ccc7578af
+msgid "Uninstalling"
+msgstr ""
+
+#: ../user/templates/templates.md:142
+#: 3110830f32184b119a65017cbeb04688
+msgid "The procedure for uninstalling a template depends on how it was created."
+msgstr ""
+
+#: ../user/templates/templates.md:144
+#: 42b0b2d9c07348d9a5583c494add76f1
+msgid "If the template was originaly created by cloning another template, then you can delete it the same way as you would any other qube. In the Qube Manager, right-click on the template and select **Delete qube**. (If you're not sure, you can safely try this method first to see if it works.)"
+msgstr ""
+
+#: ../user/templates/templates.md:149
+#: de8df785b5b749f3b2d585517f354b48
+msgid "If, on the other hand, the template came pre-installed or was installed by installing a template package in dom0, per the instructions [above](#installing), then you must execute the following type of command in dom0 in order to uninstall it:"
+msgstr ""
+
+#: ../user/templates/templates.md:158
+#: a4dc0f309016418aa762f3c6ef7531e4
+msgid "`qubes-template-<DISTRO_NAME>-<RELEASE_NUMBER>` is the name of the desired template package."
+msgstr ""
+
+#: ../user/templates/templates.md:161
+#: 2cb4393fe7df451cb847866defbcbcf0
+msgid "You may see warning messages like the following:"
+msgstr ""
+
+#: ../user/templates/templates.md:180
+#: 2959e81c49e14f9abb030449fbcbc251
+msgid "These are normal and expected. Nothing is wrong, and no action is required to address these warnings."
+msgstr ""
+
+#: ../user/templates/templates.md:183
+#: 0591307c671e4ffaa349728c2c84c859
+msgid "If this uninstallation command doesn't work, please see [VM Troubleshooting](/doc/vm-troubleshooting/)."
+msgstr ""
+
+#: ../user/templates/templates.md:186
+#: e221cab296d84068a0952ef627d68c86
+msgid "If the Applications Menu entry doesn't go away after you uninstall a template, execute the following type of command in dom0:"
+msgstr ""
+
+#: ../user/templates/templates.md:193
+#: d669c239b9be47269cf9de1b5ddb12de
+msgid "Applications Menu entries for backups of removed qubes can also be found in `/usr/local/share/applications/` of dom0."
+msgstr ""
+
+#: ../user/templates/templates.md:200
+#: 3720cf2bb72a481fad663b9d9bdc17ea
+msgid "Reinstalling"
+msgstr ""
+
+#: ../user/templates/templates.md:202
+#: cf0015046b684fb3834bd92b5faeefb0
+msgid "Please see [How to Reinstall a Template](/doc/reinstall-template/)."
+msgstr ""
+
+#: ../user/templates/templates.md:204
+#: 3c679fa8ba4f42508582588d0e7ae5bb
+msgid "Switching"
+msgstr ""
+
+#: ../user/templates/templates.md:206
+#: c98585af53a24dbfa0c577c549dabdc1
+msgid "When you install a new template or upgrade a clone of a template, it is recommended that you switch everything that was set to the old template to the new template:"
+msgstr ""
+
+#: ../user/templates/templates.md:210
+#: becacc3e2f9646dfa6d53a53174b3398
+msgid "Make the new template the default template."
+msgstr ""
+
+#: ../user/templates/templates.md:216
+#: 7f7a7c40ca5942bcb1509243251b8db6
+msgid "If your keyboard or mouse is connected through `sys-usb`, switch `sys-usb` to the new template. (Note that this is a single command to ensure that `sys-usb` restarts. If it does not, you will not be able to use your USB keyboard or mouse.)"
+msgstr ""
+
+#: ../user/templates/templates.md:225
+#: 9ee7300c40d8424c8867b41a57fa309d
+msgid "Base app qubes on the new template."
+msgstr ""
+
+#: ../user/templates/templates.md:231
+#: e312ee4228e141e183439e9e900a50f8
+msgid "Base the [disposable template](/doc/glossary/#disposable-template) on the new template."
+msgstr ""
+
+#: ../user/templates/templates.md:241
+#: 3e8bea7eeac04eed8c1018378f5995e3
+msgid "Advanced"
+msgstr ""
+
+#: ../user/templates/templates.md:243
+#: d71c4f700e6d40ef8da960dccae76046
+msgid "The following sections cover advanced topics pertaining to templates."
+msgstr ""
+
+#: ../user/templates/templates.md:245
+#: 9bf0abed261a42cab56f27e9b7c77538
+msgid "Inheritance and Persistence"
+msgstr ""
+
+#: ../user/templates/templates.md:247
+#: b78ea0281e574c33ac02bb2b72b82ddd
+msgid "Whenever an app qube is created, the contents of the `/home` directory of its parent template are *not* copied to the child app qube's `/home`. The child app qube's `/home` is always independent from its parent template's `/home`, which means that any subsequent changes to the parent template's `/home` will not affect the child app qube's `/home`."
+msgstr ""
+
+#: ../user/templates/templates.md:253
+#: 4eb4a35b772b43739e04be124f16f0c7
+msgid "Once an app qube has been created, any changes in its `/home`, `/usr/local`, or `/rw/config` directories will be persistent across reboots, which means that any files stored there will still be available after restarting the app qube. No changes in any other directories in app qubes persist in this manner. If you would like to make changes in other directories which *do* persist in this manner, you must make those changes in the parent template."
+msgstr ""
+
+#: ../user/templates/templates.md:0
+#: d800a5a369c847c6868c4d79b5206669
+msgid "Qube Type"
+msgstr ""
+
+#: ../user/templates/templates.md:0
+#: dda7fdab68154bd8b303b2220bc96d80
+msgid "Inheritance<sup>1</sup>"
+msgstr ""
+
+#: ../user/templates/templates.md:0
+#: 50b27f4174ae45ad9fe411e05c89f089
+msgid "Persistence<sup>2</sup>"
+msgstr ""
+
+#: ../user/templates/templates.md:0
+#: 0b179cc6b277474fb299730ced09b03c
+msgid "[template](/doc/glossary/#template)"
+msgstr ""
+
+#: ../user/templates/templates.md:0
+#: 4cdbbae73c2c41779908640e0ec42d1c
+msgid "N/A (templates cannot be based on templates)"
+msgstr ""
+
+#: ../user/templates/templates.md:0
+#: a72dfeee441e40dea8f6503d7b65723a
+msgid "everything"
+msgstr ""
+
+#: ../user/templates/templates.md:0
+#: d054f6bc75164970a754355c47a5a6c7
+msgid "[app qube](/doc/glossary/#app-qube)<sup>3</sup>"
+msgstr ""
+
+#: ../user/templates/templates.md:0
+#: 505f4077330b47a2a9aebb287ec85cc9
+msgid "`/etc/skel` to `/home`; `/usr/local.orig` to `/usr/local`"
+msgstr ""
+
+#: ../user/templates/templates.md:0
+#: ../user/templates/templates.md:0
+#: fc2587d3cbc24016a8f216b3ee3ef804
+#: c84858dbc1d14c72a11c2d6782dd8ca8
+msgid "`/rw` (includes `/home`, `/usr/local`, and `bind-dirs`)"
+msgstr ""
+
+#: ../user/templates/templates.md:0
+#: 3d0573bf80df45d78adbc07c950f27b7
+msgid "[disposable](/doc/glossary/#disposable)"
+msgstr ""
+
+#: ../user/templates/templates.md:0
+#: eacc18742ba6451b9ebb096d35afb3fe
+msgid "nothing"
+msgstr ""
+
+#: ../user/templates/templates.md:266
+#: f1a5ef9f19d04ee88c33d12fbc360479
+msgid "<sup>1</sup>Upon creation   <sup>2</sup>Following shutdown   <sup>3</sup>Includes [disposable templates](/doc/glossary/#disposable-template)"
+msgstr ""
+
+#: ../user/templates/templates.md:270
+#: 9e5037d8cb4b454a8c82d8b8f57853c5
+msgid "Trusting your templates"
+msgstr ""
+
+#: ../user/templates/templates.md:272
+#: 1986ff9c4f4942dcb2275bd55255a4d4
+msgid "As the template is used for creating filesystems for other app qubes where you actually do the work, it means that the template is as trusted as the most trusted app qube based on this template. In other words, if your template gets compromised, e.g. because you installed an application, whose *installer's scripts* were malicious, then *all* your app qubes (based on this template) will inherit this compromise."
+msgstr ""
+
+#: ../user/templates/templates.md:279
+#: ced01befa8b642af9573441cffd09b53
+msgid "There are several ways to deal with this problem:"
+msgstr ""
+
+#: ../user/templates/templates.md:281
+#: ea5fe87048dd40098bdac1da04035425
+msgid "Only install packages from trusted sources -- e.g. from the pre-configured Fedora repositories. All those packages are signed by Fedora, and we expect that at least the package's installation scripts are not malicious. This is enforced by default (at the [firewall qube level](/doc/firewall/)), by not allowing any networking connectivity in the default template, except for access to the Fedora repos."
+msgstr ""
+
+#: ../user/templates/templates.md:288
+#: 43045b5da803414a9f910d2edb6a116c
+msgid "Use [standalones](/doc/glossary/#standalone) (see below) for installation of untrusted software packages."
+msgstr ""
+
+#: ../user/templates/templates.md:291
+#: 634cc145b8544ec196a95bf242e6fe4d
+msgid "Use multiple templates (see below) for different classes of domains, e.g. a less trusted template, used for creation of less trusted app qubes, would get various packages from less trusted vendors, while the template used for more trusted app qubes will only get packages from the standard Fedora repos."
+msgstr ""
+
+#: ../user/templates/templates.md:296
+#: a93a147d719749fc95c8e02e0d85dbe3
+msgid "Some popular questions:"
+msgstr ""
+
+#: ../user/templates/templates.md:298
+#: d6c94b952d6a43598accc8b739033056
+msgid "So, why should we actually trust Fedora repos -- it also contains large amount of third-party software that might be buggy, right?"
+msgstr ""
+
+#: ../user/templates/templates.md:301
+#: 8454b130ca3342c5ac346b46dcef8963
+msgid "As far as the template's compromise is concerned, it doesn't really matter whether `/usr/bin/firefox` is buggy and can be exploited, or not. What matters is whether its *installation* scripts (such as %post in the rpm.spec) are benign or not. A template should be used only for installation of packages, and nothing more, so it should never get a chance to actually run `/usr/bin/firefox` and get infected from it, in case it was compromised. Also, some of your more trusted app qubes would have networking restrictions enforced by the [firewall qube](/doc/firewall/), and again they should not fear this proverbial `/usr/bin/firefox` being potentially buggy and easy to compromise."
+msgstr ""
+
+#: ../user/templates/templates.md:311
+#: 2030d1205ade488abde0bc4b6ed446f2
+msgid "But why trust Fedora?"
+msgstr ""
+
+#: ../user/templates/templates.md:313
+#: 40b93192fdaf49848b7c75d8873b298b
+msgid "Because we chose to use Fedora as a vendor for the Qubes OS foundation (e.g. for dom0 packages and for app qube packages). We also chose to trust several other vendors, such as Xen.org, kernel.org, and a few others whose software we use in dom0. We had to trust *somebody* as we are unable to write all the software from scratch ourselves. But there is a big difference in trusting all Fedora packages to be non-malicious (in terms of installation scripts) vs. trusting all those packages are non-buggy and non-exploitable. We certainly do not assume the latter."
+msgstr ""
+
+#: ../user/templates/templates.md:322
+#: 034a8b67eab443439fb0b6329ed4fe73
+msgid "So, are the templates as trusted as dom0?"
+msgstr ""
+
+#: ../user/templates/templates.md:324
+#: e8ba17444d0146b89dc40b7251533f8b
+msgid "Not quite. Dom0 compromise is absolutely fatal, and it leads to Game Over<sup>TM</sup>. However, a compromise of a template affects only a subset of all your app qubes (in case you use more than one template, or also some standalones). Also, if your app qubes are network disconnected, even though their filesystems might get compromised due to the corresponding template compromise, it still would be difficult for the attacker to actually leak out the data stolen in an app qube. Not impossible (due to existence of covert channels between VMs on x86 architecture), but difficult and slow."
+msgstr ""
+
+#: ../user/templates/templates.md:333
+#: 5302a2834cbc40ec9e76d30757f5dfbc
+msgid "Note on treating app qubes' root filesystem non-persistence as a security feature"
+msgstr ""
+
+#: ../user/templates/templates.md:335
+#: 05ad66a6e3b5431fb0543b465866bc12
+msgid "Any app qube that is based on a template has its root filesystem non-persistent across qube reboots. In other words, whatever changes the qube makes (or the malware running in this qube makes) to its root filesystem, are automatically discarded whenever one restarts the qube."
+msgstr ""
+
+#: ../user/templates/templates.md:340
+#: 70d1c22b610f4f03a8c66cfccec83e8f
+msgid "This might seem like an excellent anti-malware mechanism to be used inside the qube. However, one should be careful with treating this property as a reliable way to keep the qube malware-free. This is because the non-persistence, in the case of normal qubes, applies only to the root filesystem and not to the user filesystem (on which the `/home`, `/rw`, and `/usr/local` are stored) for obvious reasons. It is possible that malware, especially malware that could be specifically written to target Qubes, could install its hooks inside the user home directory files only. Examples of obvious places for such hooks could be: `.bashrc`, the Firefox profile directory which contains the extensions, or some PDF or DOC documents that are expected to be opened by the user frequently (assuming the malware found an exploitable bug in the PDF or DOC reader), and surely many others places, all in the user's home directory."
+msgstr ""
+
+#: ../user/templates/templates.md:353
+#: daa698fda68a4454aed0c4890ac282e8
+msgid "One advantage of the non-persistent rootfs though, is that the malware is still inactive before the user's filesystem gets mounted and \"processed\" by system/applications, which might theoretically allow for some scanning programs (or a skilled user) to reliably scan for signs of infections of the app qube. But, of course, the problem of finding malware hooks in general is hard, so this would work likely only for some special cases (e.g. an app qube which doesn't use Firefox, as otherwise it would be hard to scan the Firefox profile directory reliably to find malware hooks there). Also note that the user filesystem's metadata might got maliciously modified by malware in order to exploit a hypothetical bug in the app qube kernel whenever it mounts the malformed filesystem. However, these exploits will automatically stop working (and so the infection might be cleared automatically) after the hypothetical bug got patched and the update applied (via template update), which is an exceptional feature of Qubes OS."
+msgstr ""
+
+#: ../user/templates/templates.md:368
+#: cc8117f2dfbc477f927a4ea770253a5f
+msgid "Also note that disposable qubes do not have persistent user filesystem, and so they start up completely \"clean\" every time. Note the word \"clean\" means in this context: the same as their template filesystem, of course."
+msgstr ""
+
+#: ../user/templates/templates.md:372
+#: aa0c7209b3bd47e6a2e2e42a65eaf6cd
+msgid "Important Notes"
+msgstr ""
+
+#: ../user/templates/templates.md:374
+#: 02ccd7eb976a4b7c8e478ac5db1de9cd
+msgid "`qvm-trim-template` is no longer necessary or available in Qubes 4.0 and higher. All qubes are created in a thin pool and trimming is handled automatically. No user action is required. See [Disk Trim](/doc/disk-trim) for more information."
+msgstr ""
+
+#: ../user/templates/templates.md:379
+#: dc724524ae0643d995910fe139f7b7d6
+msgid "RPM-installed templates are \"system managed\" and therefore cannot be backed up using Qubes' built-in backup function. In order to ensure the preservation of your custom settings and the availability of a \"known-good\" backup template, you may wish to clone the default system template and use your clone as the default template for your app qubes."
+msgstr ""
+
+#: ../user/templates/templates.md:385
+#: b7e95af0414146daa87c4dc7c8ef5519
+msgid "Some templates are available in ready-to-use binary form, but some of them are available only as source code, which can be built using the [Qubes Builder](/doc/qubes-builder/). In particular, some template \"flavors\" are available in source code form only. For the technical details of the template system, please see [Template Implementation](/doc/template-implementation/). Take a look at the [Qubes Builder](/doc/qubes-builder/) documentation for instructions on how to compile them."
+msgstr ""

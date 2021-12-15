@@ -1,0 +1,167 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-15 21:10+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../introduction/contributing.md:13
+#: 72a32ad9511840a38025cee26105025a
+msgid "Thank you for your interest in contributing to Qubes! Here are some of the many ways in which you can help:"
+msgstr ""
+
+#: ../introduction/contributing.md:16
+#: 44af6cfe7cd84e60a74c948bf3bff863
+msgid "Audit the [source code](/doc/source-code/)"
+msgstr ""
+
+#: ../introduction/contributing.md:17
+#: b878c7ced2cf44c0a483d8dd2a6d1d68
+msgid "[Report security issues](/security/)"
+msgstr ""
+
+#: ../introduction/contributing.md:18
+#: 1d332e49a4d24345bb36c17fd5b61690
+msgid "[Send patches](/doc/source-code/#how-to-send-patches) to fix bugs or implement features"
+msgstr ""
+
+#: ../introduction/contributing.md:20
+#: cd8bf974e95a495581e8390e5551daa1
+msgid "[Contribute packages](/doc/package-contributions)"
+msgstr ""
+
+#: ../introduction/contributing.md:21
+#: 1ccaa89651bb412d9c6f15fa8b80c759
+msgid "[Report bugs](/doc/issue-tracking/)"
+msgstr ""
+
+#: ../introduction/contributing.md:22
+#: a29f3c76b45e48e49093e89903d50944
+msgid "[Test new releases and updates](/doc/testing/)"
+msgstr ""
+
+#: ../introduction/contributing.md:23
+#: 25e51629f0144798bb5953156cb54fd5
+msgid "Submit [HCL reports](/doc/hcl/) for your hardware"
+msgstr ""
+
+#: ../introduction/contributing.md:24
+#: 49008d5fde3249aa9742c8e1a81eb11c
+msgid "Record [video tours](/video-tours/)"
+msgstr ""
+
+#: ../introduction/contributing.md:25
+#: 8192813b0f6a46fcb9b8196d820a6a32
+msgid "Create [artwork](https://github.com/QubesOS/qubes-artwork) (plymouth themes, installer themes, wallpapers, etc.)"
+msgstr ""
+
+#: ../introduction/contributing.md:27
+#: 5dd284fe289e472b81ec6581741ffa52
+msgid "[Write and edit the documentation](/doc/doc-guidelines)"
+msgstr ""
+
+#: ../introduction/contributing.md:28
+#: f4c1bef787fe4769b1f7470d05ff9c68
+msgid "[Donate](/donate/) to the project"
+msgstr ""
+
+#: ../introduction/contributing.md:29
+#: 756794698cc44f108b53e4970934628f
+msgid "If you represent an organization, become a [Qubes partner](/partners/)"
+msgstr ""
+
+#: ../introduction/contributing.md:30
+#: c3d666b8f7ab4d5984dea0f6e0ce83af
+msgid "Add a [Qubes download mirror](/downloads/mirrors/)"
+msgstr ""
+
+#: ../introduction/contributing.md:31
+#: 1441a8d6a63b467893fab34b1c916824
+msgid "Answer questions and discuss Qubes on the [mailing lists](/support/) and [forum](/support/#forum)"
+msgstr ""
+
+#: ../introduction/contributing.md:33
+#: 6bc9d71913da494c8ed2f5f8f981fe65
+msgid "Engage with us on social media:"
+msgstr ""
+
+#: ../introduction/contributing.md:34
+#: 4716c2a203f34bc996c5349a7dd8d50e
+msgid "Follow us on [Twitter](https://twitter.com/QubesOS)"
+msgstr ""
+
+#: ../introduction/contributing.md:35
+#: 0803d091a3fb424a8f2fc40c7069f264
+msgid "Join us on [Reddit](https://www.reddit.com/r/Qubes/)"
+msgstr ""
+
+#: ../introduction/contributing.md:36
+#: 1d19301562b0415fb3b7bd47cd30cded
+msgid "Like us on [Facebook](https://www.facebook.com/QubesOS)"
+msgstr ""
+
+#: ../introduction/contributing.md:37
+#: bd86c43d662f4645b29d0c902db3ef07
+msgid "Connect with us on [LinkedIn](https://www.linkedin.com/company/qubes-os/)"
+msgstr ""
+
+#: ../introduction/contributing.md:38
+#: bbab9596caf247608b98752edc05963e
+msgid "And last but not least, tell your friends and colleagues about how Qubes can help them secure their digital lives!"
+msgstr ""
+
+#: ../introduction/contributing.md:41
+#: 441c8e6ca6014f0eaf1a5d38f45f5278
+msgid "Contributing Code"
+msgstr ""
+
+#: ../introduction/contributing.md:44
+#: c0622346d4c74e1e8376f15f8a93cd59
+msgid "If you're interested in contributing code, the best starting point is to have a look at our [GitHub issues](https://github.com/QubesOS/qubes-issues/issues) to see which tasks are the most urgent. You can filter issues depending on your interest and experience. For example, here are some common issue labels:"
+msgstr ""
+
+#: ../introduction/contributing.md:49
+#: d3b6d10bac5d4873b941848003c31c0e
+msgid "[Help wanted](https://github.com/QubesOS/qubes-issues/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22&utf8=%E2%9C%93)"
+msgstr ""
+
+#: ../introduction/contributing.md:50
+#: e70e4bae79444baaabb883f36c099e29
+msgid "[UX and usability](https://github.com/QubesOS/qubes-issues/issues?q=is%3Aissue+is%3Aopen+label%3AUX)"
+msgstr ""
+
+#: ../introduction/contributing.md:51
+#: 89fdd30c720f4e3da6f043e1f4d3ed59
+msgid "[Windows tools](https://github.com/QubesOS/qubes-issues/issues?q=is%3Aissue+is%3Aopen+label%3A%22C%3A+windows+tools%22)"
+msgstr ""
+
+#: ../introduction/contributing.md:52
+#: ca721802d074406a951d438b86e3172f
+msgid "[Documentation](https://github.com/QubesOS/qubes-issues/issues?q=is%3Aissue+is%3Aopen+label%3A%22C%3A+doc%22)"
+msgstr ""
+
+#: ../introduction/contributing.md:53
+#: 7852436490a24e939b279868a858b56a
+msgid "[Privacy](https://github.com/QubesOS/qubes-issues/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3A%22privacy%22%20)"
+msgstr ""
+
+#: ../introduction/contributing.md:54
+#: 5306503294c44109a59392f92758746b
+msgid "[Debian](https://github.com/QubesOS/qubes-issues/issues?q=is%3Aissue+is%3Aopen+label%3A%22C%3A+Debian%22)"
+msgstr ""
+
+#: ../introduction/contributing.md:56
+#: 280af31e0d7041c183d3a1970638cb1c
+msgid "Before you engage in an activity that will take you a significant amount of time, like implementing a new feature, it's always good to contact us first, preferably via the [qubes-devel](/support/#qubes-devel) mailing list. Once we've worked out the details, we'll be grateful to [receive your patch](/doc/source-code/#how-to-send-patches)."
+msgstr ""

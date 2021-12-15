@@ -1,0 +1,538 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-15 21:10+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../developer/services/admin-api.md:15
+#: d0e305a5e9724c44b65d638ac354ef3e
+msgid "_You may also be interested in the article [Introducing the Qubes Admin API](/news/2017/06/27/qubes-admin-api/)._"
+msgstr ""
+
+#: ../developer/services/admin-api.md:18
+#: 1282a423844f471c8f444bb306fc925a
+msgid "Goals"
+msgstr ""
+
+#: ../developer/services/admin-api.md:20
+#: 805fe961ea3945599fb020ec61c1bf38
+msgid "The goals of the Admin API system is to provide a way for the user to manage the domains without direct access to dom0."
+msgstr ""
+
+#: ../developer/services/admin-api.md:23
+#: cfb53ce9eff9427db49a353d8a23ff8a
+msgid "Foreseen benefits include:"
+msgstr ""
+
+#: ../developer/services/admin-api.md:25
+#: a01678837f83405db387df9e29120e02
+msgid "Ability to remotely manage the Qubes OS."
+msgstr ""
+
+#: ../developer/services/admin-api.md:26
+#: 530a9d4de423489d9b04cbc1ae5adc91
+msgid "Possibility to create multi-user system, where different users are able to use different sets of domains, possibly overlapping. This would also require to have separate GUI domain."
+msgstr ""
+
+#: ../developer/services/admin-api.md:30
+#: 4c086ec03a074b5b8de685a5a5a4ae0e
+msgid "The API would be used by:"
+msgstr ""
+
+#: ../developer/services/admin-api.md:32
+#: 874082ec10ce4d78b8ae63e36d0bea03
+msgid "Qubes OS Manager (or any tools that would replace it)"
+msgstr ""
+
+#: ../developer/services/admin-api.md:33
+#: 228b1cb1e1114104acd528c1c3c7602b
+msgid "CLI tools, when run from another VM (and possibly also from dom0)"
+msgstr ""
+
+#: ../developer/services/admin-api.md:34
+#: 060fbcf23e1a46449bd1a9066349da26
+msgid "remote management tools"
+msgstr ""
+
+#: ../developer/services/admin-api.md:35
+#: 8aa2fc18c6c94c87b1857479aa59c12e
+msgid "any custom tools"
+msgstr ""
+
+#: ../developer/services/admin-api.md:37
+#: 8682de6c90c947edb4492551eb27c6fb
+msgid "Threat model"
+msgstr ""
+
+#: ../developer/services/admin-api.md:39
+#: 9956683bf7524cbebbc05f43f990cdad
+msgid "TBD"
+msgstr ""
+
+#: ../developer/services/admin-api.md:41
+#: 1755d9d4812042c78e3f29410ea6a13f
+msgid "Components"
+msgstr ""
+
+#: ../developer/services/admin-api.md:43
+#: 2d401b8576fc44c989b247ca21956eef
+msgid "![Admin API Architecture](/attachment/doc/admin-api-architecture.svg)"
+msgstr ""
+
+#: ../developer/services/admin-api.md:43
+#: 8b0e977ef86047dfacbc1e56e44fb107
+msgid "Admin API Architecture"
+msgstr ""
+
+#: ../developer/services/admin-api.md:45
+#: 67aa605b0dee46f5a08500fd5fc52951
+msgid "A central entity in the Qubes Admin API system is a `qubesd` daemon, which holds information about all domains in the system and mediates all actions (like starting and stopping a qube) with `libvirtd`. The `qubesd` daemon also manages the `qubes.xml` file, which stores all persistent state information and dispatches events to extensions. Last but not least, `qubesd` is responsible for querying the RPC policy for qrexec daemon."
+msgstr ""
+
+#: ../developer/services/admin-api.md:52
+#: e5ee70b7b6eb4ac48583fb68d5b99575
+msgid "The `qubesd` daemon may be accessed from other domains through a set of qrexec API calls called the \"Admin API\". This API is the intended management interface supported by the Qubes OS. The API is stable. When called, the RPC handler performs basic validation and forwards the request to the `qubesd` via UNIX domain socket. The socket API is private, unstable, and not yet documented."
+msgstr ""
+
+#: ../developer/services/admin-api.md:59
+#: ca83448ca05044ed934a85992950d508
+msgid "The calls"
+msgstr ""
+
+#: ../developer/services/admin-api.md:61
+#: 16569e6084744b689b27ecac62c17dac
+msgid "The API should be implemented as a set of qrexec calls. This is to make it easy to set the policy using current mechanism."
+msgstr ""
+
+#: ../developer/services/admin-api.md:64
+#: ../developer/services/admin-api.md:68
+#: f3ce81f84fb8452884654fafd2d4d3a3
+#: 804184f178c140458bcfc9f2ebf16ae3
+msgid "[View this table on a fullscreen page.](/doc/admin-api/table/)"
+msgstr ""
+
+#: ../developer/services/admin-api.md:66
+#: 281b2a0025dc4ff4a4ac438e711c5d1e
+msgid "{% include admin-api-table.md %}"
+msgstr ""
+
+#: ../developer/services/admin-api.md:70
+#: 06ca61dbe7424d7ebdc2840dbe040d03
+msgid "Volume properties:"
+msgstr ""
+
+#: ../developer/services/admin-api.md:72
+#: 8e03bd15200842ee9e9d9fbc03476370
+msgid "`pool`"
+msgstr ""
+
+#: ../developer/services/admin-api.md:73
+#: 5944d8bc6911487f84775ad3f95cb4c1
+msgid "`vid`"
+msgstr ""
+
+#: ../developer/services/admin-api.md:74
+#: f60ca788328d41b580a267471dcb6f3f
+msgid "`size`"
+msgstr ""
+
+#: ../developer/services/admin-api.md:75
+#: fe4664e4fa92441d98ecdf4ab7c0d7e3
+msgid "`usage`"
+msgstr ""
+
+#: ../developer/services/admin-api.md:76
+#: 8246a5e169f840bbb54ad41a02146ef6
+msgid "`rw`"
+msgstr ""
+
+#: ../developer/services/admin-api.md:77
+#: 3a156ab7df4d4af2bfd7398177092242
+msgid "`source`"
+msgstr ""
+
+#: ../developer/services/admin-api.md:78
+#: 7e56371916804611b37171f20fe7a2c0
+msgid "`save_on_stop`"
+msgstr ""
+
+#: ../developer/services/admin-api.md:79
+#: 4280cdcb1a5d4e169793322ca47a156a
+msgid "`snap_on_start`"
+msgstr ""
+
+#: ../developer/services/admin-api.md:80
+#: 6836e9ca1d4a420e9a003f8b39278856
+msgid "`revisions_to_keep`"
+msgstr ""
+
+#: ../developer/services/admin-api.md:81
+#: 5914299858564770a1c09e4a5bc05eab
+msgid "`is_outdated`"
+msgstr ""
+
+#: ../developer/services/admin-api.md:83
+#: c8b63de173a94471a69f6612f00ee4ea
+msgid "Method `admin.vm.Stats` returns `vm-stats` events every `stats_interval` seconds, for every running VM. Parameters of `vm-stats` events:"
+msgstr ""
+
+#: ../developer/services/admin-api.md:85
+#: e491c3b524f74e349a5202eb8e6c1d3a
+msgid "`memory_kb` - memory usage in kB"
+msgstr ""
+
+#: ../developer/services/admin-api.md:86
+#: 19176ae5927942c7868d0114982021b4
+msgid "`cpu_time` - absolute CPU time (in milliseconds) spent by the VM since its startup, normalized for one CPU"
+msgstr ""
+
+#: ../developer/services/admin-api.md:87
+#: d8b177f2ddfb4f95bf362d5565fef374
+msgid "`cpu_usage` - CPU usage in percents"
+msgstr ""
+
+#: ../developer/services/admin-api.md:89
+#: cf2124777f3e4129b6813b0e5b67bef9
+msgid "Returned messages"
+msgstr ""
+
+#: ../developer/services/admin-api.md:91
+#: dd7904705c7744f6855e9f9765bf50a1
+msgid "First byte of a message is a message type. This is 8 bit non-zero integer. Values start at 0x30 (48, `'0'`, zero digit in ASCII) for readability in hexdump. Next byte must be 0x00 (a separator)."
+msgstr ""
+
+#: ../developer/services/admin-api.md:95
+#: d7c82c11558a48c8a4ddc6464a2e56a3
+msgid "This alternatively can be thought of as zero-terminated string containing single ASCII digit."
+msgstr ""
+
+#: ../developer/services/admin-api.md:98
+#: 8a062aff82e54ee0a540409741809159
+msgid "OK (0)"
+msgstr ""
+
+#: ../developer/services/admin-api.md:104
+#: 037a0e99f65f41f59b5b5808cc659201
+msgid "Server will close the connection after delivering single message."
+msgstr ""
+
+#: ../developer/services/admin-api.md:106
+#: 4ae35e44e3dd47bd97ab2e6554c2226f
+msgid "EVENT (1)"
+msgstr ""
+
+#: ../developer/services/admin-api.md:112
+#: 48f4c62db26b420abb0e74a7fa6a9646
+msgid "Events are returned as stream of messages in selected API calls. Normally server will not close the connection."
+msgstr ""
+
+#: ../developer/services/admin-api.md:115
+#: 0973050d881f42f6a9c8085d05a6fca4
+msgid "A method yielding events will not ever return a `OK` or `EXCEPTION` message."
+msgstr ""
+
+#: ../developer/services/admin-api.md:117
+#: aa92a6b937d2488483e7c93e35343197
+msgid "When calling such method, it will produce an artificial event `connection-established` just after connection, to help avoiding race conditions during event handler registration."
+msgstr ""
+
+#: ../developer/services/admin-api.md:121
+#: 0808961f15824a6bb191d3d6f2449a9e
+msgid "EXCEPTION (2)"
+msgstr ""
+
+#: ../developer/services/admin-api.md:127
+#: c3dac9958d0b42f4af3a80da680b28e5
+msgid "Server will close the connection."
+msgstr ""
+
+#: ../developer/services/admin-api.md:129
+#: 83de8c0b1f1445af8775013586fedb6c
+msgid "Traceback may be empty, can be enabled server-side as part of debug mode. Delimiting zero-byte is always present."
+msgstr ""
+
+#: ../developer/services/admin-api.md:132
+#: 107e413dafd64c3c8de63d3809068c3b
+msgid "Fields are should substituted into `%`-style format string, possibly after client-side translation, to form final message to be displayed unto user. Server does not by itself support translation."
+msgstr ""
+
+#: ../developer/services/admin-api.md:136
+#: 1daff23f585c41129642ee962fcadf7f
+msgid "Tags"
+msgstr ""
+
+#: ../developer/services/admin-api.md:138
+#: 0aac4f74890c4ee79766acad197e7dfc
+msgid "The tags provided can be used to write custom policies. They are not used in a&nbsp;default Qubes OS installation. However, they are created anyway."
+msgstr ""
+
+#: ../developer/services/admin-api.md:141
+#: c5e858ebbc3941aaa30c9a58461d3f7e
+msgid "`created-by-<vm>` &mdash;&nbsp;Created in an extension to qubesd at the moment of creation of the VM. Cannot be changed via API, which is also enforced by this extension."
+msgstr ""
+
+#: ../developer/services/admin-api.md:144
+#: b7d0ba32736e445bbd02836bb182aa4f
+msgid "`managed-by-<vm>` &mdash;&nbsp;Can be used for the same purpose, but it is not created automatically, nor is it forbidden to set or reset this tag."
+msgstr ""
+
+#: ../developer/services/admin-api.md:147
+#: 70f2b1c5cec749fa835d9532b4bd802f
+msgid "Backup profile"
+msgstr ""
+
+#: ../developer/services/admin-api.md:149
+#: a2a7c30690104e75ab267d4866e0ba35
+msgid "Backup-related calls do not allow (yet) to specify what should be included in the backup. This needs to be configured separately in dom0, with a backup profile, stored in `/etc/qubes/backup/<profile>.conf`. The file use yaml syntax and have following settings:"
+msgstr ""
+
+#: ../developer/services/admin-api.md:154
+#: 303520c27355490bbb9851d1c056ed4e
+msgid "`include` - list of VMs to include, can also contains tags using `$tag:some-tag` syntax or all VMs of given type using `$type:AppVM`, known from qrexec policy"
+msgstr ""
+
+#: ../developer/services/admin-api.md:157
+#: d1616eb785b048fdb17be3c7580914e2
+msgid "`exclude` - list of VMs to exclude, after evaluating `include` setting"
+msgstr ""
+
+#: ../developer/services/admin-api.md:158
+#: 14e2dd09540e48fdbc77975468b9180d
+msgid "`destination_vm` - VM to which the backup should be send"
+msgstr ""
+
+#: ../developer/services/admin-api.md:159
+#: abd08c7b1d364e4488c4510be48be153
+msgid "`destination_path` - path to which backup should be written in `destination_vm`. This setting is given to `qubes.Backup` service and technically it's up to it how to interpret it. In current implementation it is interpreted as a directory where a new file should be written (with a name based on the current timestamp), or a command where the backup should be piped to"
+msgstr ""
+
+#: ../developer/services/admin-api.md:165
+#: 5b84513b715d44aca69f3b8ab1bbaacb
+msgid "`compression` - should the backup be compressed (default: True)? The value can be either `False` or `True` for default compression, or a compression command (needs to accept `-d` argument for decompression)"
+msgstr ""
+
+#: ../developer/services/admin-api.md:168
+#: ea8bd9bddaa3417a9a8fb75cde67d880
+msgid "`passphrase_text` - passphrase used to encrypt and integrity protect the backup"
+msgstr ""
+
+#: ../developer/services/admin-api.md:169
+#: 119a99c57ee24755bfbaa4cced3ac9f9
+msgid "`passphrase_vm` - VM which should be asked what backup passphrase should be used. The asking is performed using `qubes.BackupPassphrase+profile_name` service, which is expected to output chosen passphrase to its stdout. Empty output cancel the backup operation. This service can be used either to ask the user interactively, or to have some automated passphrase handling (for example: generate randomly, then encrypt with a public key and send somewhere)"
+msgstr ""
+
+#: ../developer/services/admin-api.md:177
+#: a13c0b40280a4ad385f3f6aec18c603e
+msgid "Not all settings needs to be set."
+msgstr ""
+
+#: ../developer/services/admin-api.md:179
+#: d70105b923f94095957e84b891fcc598
+msgid "Example backup profile:"
+msgstr ""
+
+#: ../developer/services/admin-api.md:197
+#: 84616f0d7c594c36bb68e5aff9046519
+msgid "And slightly more advanced one:"
+msgstr ""
+
+#: ../developer/services/admin-api.md:220
+#: 25b905448b4c43538ad4503acb555565
+msgid "General notes"
+msgstr ""
+
+#: ../developer/services/admin-api.md:222
+#: abe04de10efe4984bfe89f4c1a375db2
+msgid "there is no provision for `qvm-run`, but there already exists `qubes.VMShell` call"
+msgstr ""
+
+#: ../developer/services/admin-api.md:223
+#: aa99f47fd39842b691c62d1eec43c344
+msgid "generally actions `*.List` return a list of objects and have \"object identifier\" as first word in a row. Such action can be also called with \"object identifier\" in argument to get only a single entry (in the same format)."
+msgstr ""
+
+#: ../developer/services/admin-api.md:226
+#: 81cc3d50380a466bb424719a39491da1
+msgid "closing qrexec connection normally does _not_ interrupt running operation; this is important to avoid leaving the system in inconsistent state"
+msgstr ""
+
+#: ../developer/services/admin-api.md:227
+#: 4acb0ae75b56493d8695cea9bfe54466
+msgid "actual operation starts only after caller send all the parameters (including a payload), signaled by sending EOF mark; there is no support for interactive protocols, to keep the protocol reasonable simple"
+msgstr ""
+
+#: ../developer/services/admin-api.md:229
+#: 90f061c5363447399d539066f7697f0d
+msgid "Policy admin API"
+msgstr ""
+
+#: ../developer/services/admin-api.md:231
+#: d608ce26a48241dcbb49f7c8616ea166
+msgid "There is also an API to view and update [Qubes RPC policy files](/doc/qrexec) in dom0. All of the following calls have dom0 as destination:"
+msgstr ""
+
+#: ../developer/services/admin-api.md:0
+#: f5e3cd2177994ac1ac9f79ae0bba8ce5
+msgid "call"
+msgstr ""
+
+#: ../developer/services/admin-api.md:0
+#: a8577e52ce9b467389f79c142bdb1406
+msgid "argument"
+msgstr ""
+
+#: ../developer/services/admin-api.md:0
+#: adf143c423364c1da45043b6d610ab91
+msgid "inside"
+msgstr ""
+
+#: ../developer/services/admin-api.md:0
+#: 1fd5ed42f3d24366a4a7ea7076167a57
+msgid "return"
+msgstr ""
+
+#: ../developer/services/admin-api.md:0
+#: 99731b69a43e451cb3b055135d554f3e
+msgid "`policy.List` <br> `policy.include.List`"
+msgstr ""
+
+#: ../developer/services/admin-api.md:0
+#: ../developer/services/admin-api.md:0
+#: ../developer/services/admin-api.md:0
+#: ../developer/services/admin-api.md:0
+#: ../developer/services/admin-api.md:0
+#: b9fa1f54ab6b4c609ce7471bf4ce3ca5
+#: 61f1f8d7abcd4ed09121eb6054122a39
+#: 55a51d02b8a840dba341c99f14dd4614
+#: b764db995516455daf805abf5a51fa6d
+#: d4cd26b4af31408e9ba4293e21edaab3
+msgid "-"
+msgstr ""
+
+#: ../developer/services/admin-api.md:0
+#: f939e4f05c0f4684a2b064e871553721
+msgid "`<name1>\\n<name2>\\n...`"
+msgstr ""
+
+#: ../developer/services/admin-api.md:0
+#: 6dc9a3473eba4aa89fb64b506a9a27ec
+msgid "`policy.Get` <br> `policy.include.Get`"
+msgstr ""
+
+#: ../developer/services/admin-api.md:0
+#: ../developer/services/admin-api.md:0
+#: ../developer/services/admin-api.md:0
+#: f9991882e99f47a1809f38ec77b2696c
+#: 93cd1f9c15f44b8cb982cbe52544efe1
+#: 13e7c4a0850f43bf8e65c006b70491bc
+msgid "name"
+msgstr ""
+
+#: ../developer/services/admin-api.md:0
+#: ../developer/services/admin-api.md:0
+#: 727f7ad7cce14af09d14eccfbaef0138
+#: 1f0c3a59516a4203adff13d8ca051c4a
+msgid "`<token>\\n<content>`"
+msgstr ""
+
+#: ../developer/services/admin-api.md:0
+#: ee692adc126c4f0590810d99441f0f6a
+msgid "`policy.Replace` <br> `policy.include.Replace`"
+msgstr ""
+
+#: ../developer/services/admin-api.md:0
+#: 4d3b30e790424cfeb402d04825768592
+msgid "`policy.Remove` <br> `policy.include.Remove`"
+msgstr ""
+
+#: ../developer/services/admin-api.md:0
+#: 029c854bfae84988b870f48e82a8d506
+msgid "`<token>`"
+msgstr ""
+
+#: ../developer/services/admin-api.md:240
+#: 2c6661df6cde471785e08fdb4c51b873
+msgid "The `policy.*` calls refer to main policy files (`/etc/qubes/policy.d/`), and the `policy.include.*` calls refer to the include directory (`/etc/qubes/policy.d/include/`). The `.policy` extension for files in the main directory is always omitted."
+msgstr ""
+
+#: ../developer/services/admin-api.md:245
+#: b0e435a514ed47e3818e8fbf303552c3
+msgid "The responses do not follow admin API protocol, but signal error using an exit code and a message on stdout."
+msgstr ""
+
+#: ../developer/services/admin-api.md:248
+#: 1ec642e59f744ad684ad3210664dc595
+msgid "The changes are validated before saving, so that the policy cannot end up in an invalid state (e.g. syntax error, missing include file)."
+msgstr ""
+
+#: ../developer/services/admin-api.md:251
+#: add4b143185d4ca6a10f66f7d269050e
+msgid "In addition, there is a mechanism to prevent concurrent modifications of the policy files:"
+msgstr ""
+
+#: ../developer/services/admin-api.md:253
+#: d29afae0fac04787a1f93e52e6c08f33
+msgid "A `*.Get` call returns a file along with a *token* (currently implemented as a hash of the file)."
+msgstr ""
+
+#: ../developer/services/admin-api.md:255
+#: 71e7969bf4a04b998271d995e4f66765
+msgid "When calling `Replace` or `Remove`, you need to include the current token as first line. If the token does not match, the modification will fail."
+msgstr ""
+
+#: ../developer/services/admin-api.md:257
+#: fe7feaa040184befbf40cb7c211531bb
+msgid "When adding a new file using `Replace`, pass `new` as token. This will ensure that the file does not exist before adding."
+msgstr ""
+
+#: ../developer/services/admin-api.md:259
+#: 768a2caabbd1414db4f94bc4682f347b
+msgid "To skip the check, pass `any` as token."
+msgstr ""
+
+#: ../developer/services/admin-api.md:261
+#: e5b660226b9d4838a62d4986ded451b6
+msgid "TODO"
+msgstr ""
+
+#: ../developer/services/admin-api.md:263
+#: 97ee1227eba346889582cebb16538852
+msgid "notifications"
+msgstr ""
+
+#: ../developer/services/admin-api.md:264
+#: 6c8005459e6343d7bb6603881c0be5dc
+msgid "how to constrain the events?"
+msgstr ""
+
+#: ../developer/services/admin-api.md:265
+#: d58dac68aba14cbb9ed687853b576be1
+msgid "how to pass the parameters? maybe XML, since this is trusted anyway and parser may be complicated"
+msgstr ""
+
+#: ../developer/services/admin-api.md:267
+#: 8fc53367013e4aa8937b31862d3483e6
+msgid "how to constrain the possible values for `admin.vm.property.Set` etc, like \"you can change `netvm`, but you have to pick from this set\"; this currently can be done by writing an extension"
+msgstr ""
+
+#: ../developer/services/admin-api.md:270
+#: e0e1d4b0c45346d1808f714df51e7880
+msgid "a call for executing `*.desktop` file from `/usr/share/applications`, for use with appmenus without giving access to `qubes.VMShell`; currently this can be done by writing custom qrexec calls"
+msgstr ""
+
+#: ../developer/services/admin-api.md:273
+#: 592d2fdc57d843b6b5c19119ccf528e7
+msgid "maybe some generator for `.desktop` for appmenus, which would wrap calls in `qrexec-client-vm`"
+msgstr ""

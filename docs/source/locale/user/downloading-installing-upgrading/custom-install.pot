@@ -1,0 +1,142 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-15 21:10+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../user/downloading-installing-upgrading/custom-install.md:12
+#: 2a071ab841594243961a02eaf4ebb94a
+msgid "In the present context, \"custom installation\" refers to things like manual partitioning, setting up LVM and RAID, and manual LUKS encryption configuration."
+msgstr ""
+
+#: ../user/downloading-installing-upgrading/custom-install.md:14
+#: d363c92a1fcc440d8ad6aafc4a20e12b
+msgid "Installer Defaults"
+msgstr ""
+
+#: ../user/downloading-installing-upgrading/custom-install.md:16
+#: eedc1306a8b54a98b9096adcdaa30dfb
+msgid "For reference, these are the typical defaults for a single disk with legacy boot:"
+msgstr ""
+
+#: ../user/downloading-installing-upgrading/custom-install.md:61
+#: 059e11859a8b486592effb6034fe02a2
+msgid "Typical Partition Schemes"
+msgstr ""
+
+#: ../user/downloading-installing-upgrading/custom-install.md:63
+#: c89f00b526d14e1e988271d48e5e541c
+msgid "If you want your partition/LVM scheme to look like the Qubes default but with a few tweaks, follow this example. With a single disk, the result should look something like this:"
+msgstr ""
+
+#: ../user/downloading-installing-upgrading/custom-install.md:77
+#: a6b84811a3584b719fb09f6230d8da78
+msgid "Encryption Defaults"
+msgstr ""
+
+#: ../user/downloading-installing-upgrading/custom-install.md:79
+#: 23b813a669514b54b86645460085d166
+msgid "By default, `cryptsetup 1.7.5` will create a LUKS/dm-crypt volume as follows:"
+msgstr ""
+
+#: ../user/downloading-installing-upgrading/custom-install.md:97
+#: 3a7d2040285e42d89c807d4dc8be4ddb
+msgid "This means that, by default, Qubes inherits these upstream defaults:"
+msgstr ""
+
+#: ../user/downloading-installing-upgrading/custom-install.md:99
+#: 24e92cd8f0914ddca3df58ed75f79b09
+msgid "AES-128 [[1]](https://gitlab.com/cryptsetup/cryptsetup/wikis/FrequentlyAskedQuestions)[[2]](https://wiki.archlinux.org/index.php/dm-crypt/Device_encryption)[[3]](https://github.com/dyne/Tomb/issues/238)"
+msgstr ""
+
+#: ../user/downloading-installing-upgrading/custom-install.md:100
+#: 96a1140ffba84b84abadec604cbb83cb
+msgid "SHA-256"
+msgstr ""
+
+#: ../user/downloading-installing-upgrading/custom-install.md:101
+#: 1f2a2bf4c1344d8b96c34e788762dd83
+msgid "`/dev/urandom`"
+msgstr ""
+
+#: ../user/downloading-installing-upgrading/custom-install.md:102
+#: c0c13c5d0d8640ee991e6d47c5753d64
+msgid "probably an `iter-time` of one second"
+msgstr ""
+
+#: ../user/downloading-installing-upgrading/custom-install.md:104
+#: 96d6ab040e684cf39520b7ea8fc510c4
+msgid "If, instead, you'd like to use AES-256, SHA-512, `/dev/random`, and a longer `iter-time`, for example, you can configure encryption manually by following the instructions below."
+msgstr ""
+
+#: ../user/downloading-installing-upgrading/custom-install.md:106
+#: 01927501976d42d29608da10a2d1179b
+msgid "Example: Custom LUKS Configuration"
+msgstr ""
+
+#: ../user/downloading-installing-upgrading/custom-install.md:108
+#: 469785b936b94ffeb4243fae0e01532e
+msgid "Boot into the Qubes installer, then press `ctrl`+`alt`+`F2` to get a virtual console."
+msgstr ""
+
+#: ../user/downloading-installing-upgrading/custom-install.md:110
+#: d4346fd473544373921bff8e7984395d
+msgid "(Optional) Wipe the disk:"
+msgstr ""
+
+#: ../user/downloading-installing-upgrading/custom-install.md:116
+#: b5097de10d004d09887fa8faf89d8d61
+msgid "Create partitions:"
+msgstr ""
+
+#: ../user/downloading-installing-upgrading/custom-install.md:122
+#: 8121e50e41ed436b81545fd5036350d0
+msgid "Follow the steps to create two partitions:"
+msgstr ""
+
+#: ../user/downloading-installing-upgrading/custom-install.md:124
+#: 83c4d22fee624f67b0434f621250201d
+msgid "~500MiB-1GiB for `/boot`"
+msgstr ""
+
+#: ../user/downloading-installing-upgrading/custom-install.md:125
+#: 6f4fb513c5874c33a56ba5057bb7dd68
+msgid "The rest for `/` (might want to leave some for overprovisioning if it's an SSD)"
+msgstr ""
+
+#: ../user/downloading-installing-upgrading/custom-install.md:127
+#: 6c86582f7c264077ab99af0d51dca766
+msgid "Create LUKS encrypted volume:"
+msgstr ""
+
+#: ../user/downloading-installing-upgrading/custom-install.md:133
+#: e0c9b64b85d3466f83749e514bba45c6
+msgid "Open encrypted volume:"
+msgstr ""
+
+#: ../user/downloading-installing-upgrading/custom-install.md:139
+#: 1047f6432df5407d8abc1fe6d0b86166
+msgid "Create LVM volumes:"
+msgstr ""
+
+#: ../user/downloading-installing-upgrading/custom-install.md:150
+#: 12616db6b2f840038f6f38f427428df4
+msgid "Proceed with the installer. You can do that either by pressing `ctrl`+`alt`+`F6`, or by rebooting and restarting the installation. At the disk selection screen, select:"
+msgstr ""
+
+#: ../user/downloading-installing-upgrading/custom-install.md:158
+#: 484388a3320a42a1ac7c12df3388bfcc
+msgid "Decrypt your partition. After decrypting you may assign mount points: Open the Unknown list and select `qubes_dom0-root`. Check the reformat box to the right and choose `ext4` as a filesystem. Enter `/` into the Mount Point field at the top. Repeat the process for `sda1` and `qubes_dom0-swap`. Those should be assigned to `/boot` and `swap` respectively. The default file systems are ext4 for `/boot` and `/`, and swap for `swap`. When you are finished, the Unknown list should go away, and all three mount points should be assigned. Proceed normally with the installation from there."
+msgstr ""

@@ -1,0 +1,281 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-15 21:10+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../developer/releases/4_0/release-notes.md:9
+#: 55eaa910a8a443ac86da7cf7ebac75cc
+msgid "New features since 3.2"
+msgstr ""
+
+#: ../developer/releases/4_0/release-notes.md:12
+#: a96b85b572b44aedb8c897a251593736
+msgid "Core management scripts rewrite with better structure and extensibility, [API documentation](https://dev.qubes-os.org/projects/qubes-core-admin/en/latest/)"
+msgstr ""
+
+#: ../developer/releases/4_0/release-notes.md:13
+#: 7d95177ba9114d8e86001a7c3641d4da
+msgid "[Admin API](/news/2017/06/27/qubes-admin-api/) allowing strictly controlled managing from non-dom0"
+msgstr ""
+
+#: ../developer/releases/4_0/release-notes.md:14
+#: 8ef1de9eb9b94f75bb74ebaf17a3beed
+msgid "All `qvm-*` command-line tools rewritten, some options have changed"
+msgstr ""
+
+#: ../developer/releases/4_0/release-notes.md:15
+#: d5c01febf0994712be13d14083bf65b4
+msgid "Renaming VM directly is prohibited, there is GUI to clone under new name and remove old VM"
+msgstr ""
+
+#: ../developer/releases/4_0/release-notes.md:16
+#: f158b2530d4a4d69ace25058e3f18385
+msgid "Use [PVH](https://github.com/QubesOS/qubes-secpack/blob/master/QSBs/qsb-037-2018.txt) and [HVM](https://github.com/QubesOS/qubes-issues/issues/2185) by default to [mitigate Meltdown & Spectre](https://github.com/QubesOS/qubes-secpack/blob/master/QSBs/qsb-037-2018.txt) and lower the [attack surface on Xen](https://github.com/QubesOS/qubes-secpack/blob/master/QSBs/qsb-024-2016.txt)"
+msgstr ""
+
+#: ../developer/releases/4_0/release-notes.md:17
+#: 71b7c4ad267e45ef8feebac7320a0a71
+msgid "Create USB VM by default"
+msgstr ""
+
+#: ../developer/releases/4_0/release-notes.md:18
+#: fa1ddd7c55bd47568577fd29ae6a2837
+msgid "[Multiple DisposableVMs templates support](https://github.com/QubesOS/qubes-issues/issues/2253)"
+msgstr ""
+
+#: ../developer/releases/4_0/release-notes.md:19
+#: a3b3450e0b5142f9a72ff45c9558c030
+msgid "New [backup format](/doc/backup-emergency-restore-v4/) using scrypt key-derivation function"
+msgstr ""
+
+#: ../developer/releases/4_0/release-notes.md:20
+#: f920b70bc3034d6ea28de7789c180c4a
+msgid "Non-encrypted backups no longer supported"
+msgstr ""
+
+#: ../developer/releases/4_0/release-notes.md:21
+#: 848d72fc14c3453298abf28e45ebcaff
+msgid "[split VM packages](https://github.com/QubesOS/qubes-issues/issues/2771), for better support minimal, specialized templates"
+msgstr ""
+
+#: ../developer/releases/4_0/release-notes.md:22
+#: c0c2ce875a2e468e959dc9aba108d5ce
+msgid "[Qubes Manager decomposition](https://github.com/QubesOS/qubes-issues/issues/2132) - domains and devices widgets instead of full Qubes Manager; devices widget support also USB"
+msgstr ""
+
+#: ../developer/releases/4_0/release-notes.md:23
+#: 650a8dfe84334e80a83927760485b720
+msgid "[More flexible firewall interface](/doc/vm-interface/) for ease unikernel integration"
+msgstr ""
+
+#: ../developer/releases/4_0/release-notes.md:24
+#: 7484c330b34b4485beabf9cec8a3c2b4
+msgid "Template VMs do not have network interface by default, [qrexec-based updates proxy](https://github.com/QubesOS/qubes-issues/issues/1854) is used instead"
+msgstr ""
+
+#: ../developer/releases/4_0/release-notes.md:25
+#: 8da8644985a5422fa3eed3d80099aace
+msgid "More flexible IP addressing for VMs - [custom IP](https://github.com/QubesOS/qubes-issues/issues/1477), [hidden from the IP](https://github.com/QubesOS/qubes-issues/issues/1143)"
+msgstr ""
+
+#: ../developer/releases/4_0/release-notes.md:26
+#: 3eea910f418d402780dabbd77453f8c3
+msgid "More flexible Qubes RPC policy - [related ticket](https://github.com/QubesOS/qubes-issues/issues/865), [documentation](/doc/qrexec/#specifying-vms-tags-types-targets-etc)"
+msgstr ""
+
+#: ../developer/releases/4_0/release-notes.md:27
+#: 1326ca5d2ab04871beab61c98a7dec18
+msgid "[New Qubes RPC confirmation window](https://github.com/QubesOS/qubes-issues/issues/910), including option to specify destination VM"
+msgstr ""
+
+#: ../developer/releases/4_0/release-notes.md:28
+#: efd8a73b5c5d4e63a907ef46ec0fdf62
+msgid "[New storage subsystem design](https://github.com/QubesOS/qubes-issues/issues/1842)"
+msgstr ""
+
+#: ../developer/releases/4_0/release-notes.md:29
+#: 48f307e55046447197505fa7a9b90857
+msgid "Dom0 update to Fedora 25 for better hardware support"
+msgstr ""
+
+#: ../developer/releases/4_0/release-notes.md:30
+#: 31da4e8758ca40fb909a58c09678fd28
+msgid "Kernel 4.9.x"
+msgstr ""
+
+#: ../developer/releases/4_0/release-notes.md:32
+#: c15e2c7a0c824ed089f6f4e32cd50c3f
+msgid "You can get detailed description in [completed github issues](https://github.com/QubesOS/qubes-issues/issues?q=is%3Aissue+sort%3Aupdated-desc+milestone%3A%22Release+4.0%22+label%3Arelease-notes+is%3Aclosed)"
+msgstr ""
+
+#: ../developer/releases/4_0/release-notes.md:34
+#: e0dd0229ebe84f2e86e51d91116c9aff
+msgid "Security Notes"
+msgstr ""
+
+#: ../developer/releases/4_0/release-notes.md:37
+#: 10fd5fdc1df2400aa6548b15d8f06fd8
+msgid "PV VMs migrated from 3.2 to 4.0-rc4 or later are automatically set to PVH mode in order to protect against Meltdown (see [QSB #37](https://github.com/QubesOS/qubes-secpack/blob/master/QSBs/qsb-037-2018.txt)). However, PV VMs migrated from any earlier 4.0 release candidate (RC1, RC2, or RC3) are not automatically set to PVH mode. These must be set manually."
+msgstr ""
+
+#: ../developer/releases/4_0/release-notes.md:41
+#: 45b4051a7ddd41148eb8d7d979da27bd
+msgid "The following steps may need to be applied in dom0 and Fedora 26 TemplateVMs in order to receive updates (see [#3737](https://github.com/QubesOS/qubes-issues/issues/3737))."
+msgstr ""
+
+#: ../developer/releases/4_0/release-notes.md:43
+#: 081f1edf068c41d1b3a95828f77d9dd7
+msgid "Steps for dom0 updates:"
+msgstr ""
+
+#: ../developer/releases/4_0/release-notes.md:45
+#: ../developer/releases/4_0/release-notes.md:59
+#: a959da7dca4f4751b2d0b16d91222fb7
+#: ae12a8d6c9c443518bc7c8031017d2d9
+msgid "Open the Qubes Menu by clicking on the \"Q\" icon in the top-left corner of the screen."
+msgstr ""
+
+#: ../developer/releases/4_0/release-notes.md:46
+#: 3e6e0afe62834117b067b6d4a5a818fd
+msgid "Select `Terminal Emulator`."
+msgstr ""
+
+#: ../developer/releases/4_0/release-notes.md:47
+#: 4cf8b989d5f5407680851a99cc00944f
+msgid "In the window that opens, enter this command:"
+msgstr ""
+
+#: ../developer/releases/4_0/release-notes.md:53
+#: 82520884eb6f4beebce905810aa912f0
+msgid "This opens the nano text editor. Change all four instances of `http` to `https`."
+msgstr ""
+
+#: ../developer/releases/4_0/release-notes.md:54
+#: 4265375bba2a427988f7c419917eafc0
+msgid "Press `CTRL+X`, then `Y`, then `ENTER` to save changes and exit."
+msgstr ""
+
+#: ../developer/releases/4_0/release-notes.md:55
+#: ../developer/releases/4_0/release-notes.md:71
+#: 7b311c083e464a2b92b97ce618d180fb
+#: 1e05baf0cf284c0391cd023162b1696f
+msgid "Check for updates normally."
+msgstr ""
+
+#: ../developer/releases/4_0/release-notes.md:57
+#: 141061806c6d46e0bb6b9c5ffedd4760
+msgid "Steps for Fedora 26 TemplateVM updates:"
+msgstr ""
+
+#: ../developer/releases/4_0/release-notes.md:60
+#: 1c1daf85a8ab4803932eb2ff9d3f8f89
+msgid "Select `Template: fedora-26`, then `fedora-26: Terminal`."
+msgstr ""
+
+#: ../developer/releases/4_0/release-notes.md:61
+#: 4a35d18d4d8e492e80c2f83584ea8240
+msgid "In the window that opens, enter the command for your version:"
+msgstr ""
+
+#: ../developer/releases/4_0/release-notes.md:68
+#: 5ac6f53239d944f7ab364739ec7f2c85
+msgid "This opens the gedit text editor in a window. Change all four instances of `http` to `https`."
+msgstr ""
+
+#: ../developer/releases/4_0/release-notes.md:69
+#: b3668d9f465442da9c5dd822d6aa8d25
+msgid "Click the \"Save\" button in the top-right corner of the window."
+msgstr ""
+
+#: ../developer/releases/4_0/release-notes.md:70
+#: 59c8bbab62a0419a890ab32d95627824
+msgid "Close the window."
+msgstr ""
+
+#: ../developer/releases/4_0/release-notes.md:72
+#: 566ea156f1394ee893457b365a2ef7db
+msgid "Shut down the TemplateVM."
+msgstr ""
+
+#: ../developer/releases/4_0/release-notes.md:74
+#: dd16fd3840934f569acb941cbe0522d1
+msgid "Known issues"
+msgstr ""
+
+#: ../developer/releases/4_0/release-notes.md:77
+#: 2b598f9cbb3a4b758d6a547a0d98f8ce
+msgid "Locale using coma as decimal separator [crashes qubesd](https://github.com/QubesOS/qubes-issues/issues/3753). Either install with different locale (English (United States) for example), or manually apply fix explained in that issue."
+msgstr ""
+
+#: ../developer/releases/4_0/release-notes.md:79
+#: 8db707d3cd8b4cad86c1dedeed88b6b5
+msgid "In the middle of installation, [keyboard layout reset to US](https://github.com/QubesOS/qubes-issues/issues/3352). Be careful what is the current layout while setting default user password (see upper right screen corner)."
+msgstr ""
+
+#: ../developer/releases/4_0/release-notes.md:81
+#: 2d7882d363634cda9795973476e25e62
+msgid "On some laptops (for example Librem 15v2), touchpad do not work directly after installation. Reboot the system to fix the issue."
+msgstr ""
+
+#: ../developer/releases/4_0/release-notes.md:83
+#: b3873337e5e24db5b168dd455bb002d8
+msgid "List of USB devices may contain device identifiers instead of name"
+msgstr ""
+
+#: ../developer/releases/4_0/release-notes.md:85
+#: 7681e65a15ff44748795e56bbdad4847
+msgid "With R4.0.1, which ships kernel-4.19, you may never reach the anaconda startup and be block on an idle black screen with blinking cursor. You can try to add `plymouth.ignore-serial-consoles` in the grub installer boot menu right after `quiet rhgb`. With legacy mode, you can do it directly when booting the DVD or USB key. In UEFI mode, follow the same procedure described for [disabling](/doc/uefi-troubleshooting/#installation-freezes-before-displaying-installer) `nouveau` module (related [solved issue](https://github.com/QubesOS/qubes-issues/issues/3849) in further version of Qubes)."
+msgstr ""
+
+#: ../developer/releases/4_0/release-notes.md:87
+#: 3e34d29532514312a9802acc4af160f0
+msgid "For other known issues take a look at [our tickets](https://github.com/QubesOS/qubes-issues/issues?q=is%3Aopen+is%3Aissue+milestone%3A%22Release+4.0%22+label%3Abug)"
+msgstr ""
+
+#: ../developer/releases/4_0/release-notes.md:89
+#: fc4eea3dcc5b45b8af4203fce87672ce
+msgid "It is advised to install updates just after system installation to apply bug fixes for (some of) the above problems."
+msgstr ""
+
+#: ../developer/releases/4_0/release-notes.md:91
+#: 99adfcccd8fa4bdab38c1f1ae3baa145
+msgid "Downloads"
+msgstr ""
+
+#: ../developer/releases/4_0/release-notes.md:94
+#: bf71c4009f7c438599461b2b0d71984a
+msgid "See [Qubes Downloads](/downloads/)."
+msgstr ""
+
+#: ../developer/releases/4_0/release-notes.md:96
+#: 019cbfb4e0eb4a3984f7f384d896bf2d
+msgid "Installation instructions"
+msgstr ""
+
+#: ../developer/releases/4_0/release-notes.md:99
+#: a8d074b8fa4347c087e70309b252e3ed
+msgid "See [Installation Guide](/doc/installation-guide/)."
+msgstr ""
+
+#: ../developer/releases/4_0/release-notes.md:101
+#: 2ff07a8987dd40708bba14ff5b419ee4
+msgid "Upgrading"
+msgstr ""
+
+#: ../developer/releases/4_0/release-notes.md:104
+#: f472099ff9fa4721a0a2870c2269c9f1
+msgid "There is no in-place upgrade path from earlier Qubes versions. The only supported option to upgrade to Qubes R4.0 is to install it from scratch and use [qubes backup and restore tools](/doc/backup-restore/) for migrating of all of the user VMs. We also provide [detailed instruction](/doc/upgrade-to-r4.0/) for this procedure."
+msgstr ""

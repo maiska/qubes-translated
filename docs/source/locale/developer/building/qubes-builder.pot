@@ -1,0 +1,297 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-15 21:10+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../developer/building/qubes-builder.md:13
+#: 771537287b3a4b88917a7c42354d3a45
+msgid "**Note: See [ISO building instructions](/doc/qubes-iso-building/) for a streamlined overview on how to use the build system.**"
+msgstr ""
+
+#: ../developer/building/qubes-builder.md:16
+#: 9c6ce726c058410396a8ca787efd4748
+msgid "We have a fully automated build system for Qubes, that downloads, builds and packages all the Qubes components, and finally should spit out a ready-to-use installation ISO, all in a [secure](/news/2016/05/30/build-security/) way."
+msgstr ""
+
+#: ../developer/building/qubes-builder.md:20
+#: 74a7545d9dab4975b4ec3827d08a985f
+msgid "In order to use it, you should use an rpm-based distro, like Fedora :), and should ensure the following packages are installed:"
+msgstr ""
+
+#: ../developer/building/qubes-builder.md:22
+#: 0005ad0d3a4745a99193687d2ec0b73c
+msgid "sudo"
+msgstr ""
+
+#: ../developer/building/qubes-builder.md:23
+#: dac4108532c34cc9ae37ba2708655b14
+msgid "gnupg"
+msgstr ""
+
+#: ../developer/building/qubes-builder.md:24
+#: 32cfb3eea0784c0992cca8bab976a2ba
+msgid "git"
+msgstr ""
+
+#: ../developer/building/qubes-builder.md:25
+#: 6e37ae2d3bf645748f84e453308cbd9e
+msgid "createrepo"
+msgstr ""
+
+#: ../developer/building/qubes-builder.md:26
+#: e8741945e9c34b28bade689e924b900a
+msgid "rpm-build"
+msgstr ""
+
+#: ../developer/building/qubes-builder.md:27
+#: cdbf9f09c3894413b2605d0287265303
+msgid "make"
+msgstr ""
+
+#: ../developer/building/qubes-builder.md:28
+#: adfbe7156a7d446ebdafb73254c75647
+msgid "wget"
+msgstr ""
+
+#: ../developer/building/qubes-builder.md:29
+#: 24abae22c0a1410f8e4cb01cb856696c
+msgid "rpmdevtools"
+msgstr ""
+
+#: ../developer/building/qubes-builder.md:30
+#: 21d699800a7f45b7b0208d0397f8dd39
+msgid "python3-sh"
+msgstr ""
+
+#: ../developer/building/qubes-builder.md:31
+#: b5e10ff16d814b94af082eeb2e9b9f3a
+msgid "dialog"
+msgstr ""
+
+#: ../developer/building/qubes-builder.md:32
+#: 8fa1a61cc5564d77a65969782e255d85
+msgid "rpm-sign"
+msgstr ""
+
+#: ../developer/building/qubes-builder.md:33
+#: b1a7d222823d4d2794cdb923bfede818
+msgid "dpkg-dev"
+msgstr ""
+
+#: ../developer/building/qubes-builder.md:34
+#: 89ec737fcdc746cbb4627c68192c507c
+msgid "debootstrap"
+msgstr ""
+
+#: ../developer/building/qubes-builder.md:35
+#: 4995f191e87046e5a868b36ae9ef30da
+msgid "python3-pyyaml"
+msgstr ""
+
+#: ../developer/building/qubes-builder.md:36
+#: 45b193f4a8114875ba3d224ce08c8f6b
+msgid "devscripts"
+msgstr ""
+
+#: ../developer/building/qubes-builder.md:37
+#: 1319a0f6e4194aa49eb7fbdd1222fcae
+msgid "perl-Digest-MD5"
+msgstr ""
+
+#: ../developer/building/qubes-builder.md:38
+#: 807838c2f251483e9b8873f2bf6d61fb
+msgid "perl-Digest-SHA"
+msgstr ""
+
+#: ../developer/building/qubes-builder.md:40
+#: 59c71ca52c534d94a55d6d8f004dcdcc
+msgid "Usually you can install those packages by just issuing:"
+msgstr ""
+
+#: ../developer/building/qubes-builder.md:46
+#: eaa9606968c24fe5b38b226c65e6f863
+msgid "The build system creates build environments in chroots and so no other packages are needed on the host. All files created by the build system are contained within the qubes-builder directory. The full build requires some 25GB of free space, so keep that in mind when deciding where to place this directory."
+msgstr ""
+
+#: ../developer/building/qubes-builder.md:50
+#: 29806f10204f4f19a6a368d8b1cb1419
+msgid "The build system is configured via builder.conf file. You can use the setup.sh script to create and modify this file. Alternatively, you can copy the provided default builder.conf, and modify it as needed, e.g.:"
+msgstr ""
+
+#: ../developer/building/qubes-builder.md:60
+#: 8e04fea62f054fd59427c00512c980d5
+msgid "One additional useful requirement is that 'sudo root' must work without any prompt, which is default on most distros (e.g. 'sudo bash' brings you the root shell without asking for any password). This is important as the builder needs to switch to root and then back to user several times during the build process."
+msgstr ""
+
+#: ../developer/building/qubes-builder.md:63
+#: 37a05723d6364458965a15089498d775
+msgid "Additionally, if building with signing enabled (NO\\_SIGN is not set), you must adjust \\~/.rpmmacro file so that it points to the GPG key used for package signing, e.g.:"
+msgstr ""
+
+#: ../developer/building/qubes-builder.md:71
+#: ccb82116814d44f19d6b7bb029d27c13
+msgid "It is also recommended that you use an empty passphrase for the private key used for signing. Contrary to a popular belief, this doesn't affect your key or sources security -- if somebody compromised your system, then the game is over anyway, whether you have used an additional passphrase for the key or not."
+msgstr ""
+
+#: ../developer/building/qubes-builder.md:74
+#: b3cbe3e0cede498e9d2965a5e8af89ea
+msgid "So, to build Qubes you would do:"
+msgstr ""
+
+#: ../developer/building/qubes-builder.md:110
+#: 0ec30463158d442fb21f3407a5e88d56
+msgid "And this should produce a shiny new ISO."
+msgstr ""
+
+#: ../developer/building/qubes-builder.md:112
+#: 731d2dbf8bcd4905b8b95eee06d04305
+msgid "You can also build selected component separately. Eg. to compile only gui virtualization agent/daemon:"
+msgstr ""
+
+#: ../developer/building/qubes-builder.md:118
+#: 892b26396b2d48e892d0239abb2f55ad
+msgid "You can get a full list from make help."
+msgstr ""
+
+#: ../developer/building/qubes-builder.md:120
+#: cd534040bbdd4f2a9da3d73ee159aef9
+msgid "Making customized build"
+msgstr ""
+
+#: ../developer/building/qubes-builder.md:122
+#: 4ada80a812b04bebb12ac89bbd389248
+msgid "Manual source modification"
+msgstr ""
+
+#: ../developer/building/qubes-builder.md:124
+#: ec03793e58f24d4dbe3d8d8b9e49e1d6
+msgid "You can also modify sources somehow if you wish. Here are some basic steps:"
+msgstr ""
+
+#: ../developer/building/qubes-builder.md:127
+#: b211339712974d01a8d325593c581900
+msgid "Download qubes-builder as described above (if you want to use marmarek's branches, you should also download qubes-builder from his repo - replace 'QubesOS' with 'marmarek' in above git clone command)"
+msgstr ""
+
+#: ../developer/building/qubes-builder.md:128
+#: 074fa2fd67d54f5ea05b66ac31e2699a
+msgid "Edit builder.conf (still the same as above), some useful additions:"
+msgstr ""
+
+#: ../developer/building/qubes-builder.md:129
+#: 1c265c18fb4044b2a4c6c1ed21b64427
+msgid "You can also set GIT\\_PREFIX=\"marmarek/qubes-\" to use marmarek's repo instead of \"mainstream\" - it contains newer (but less tested) versions"
+msgstr ""
+
+#: ../developer/building/qubes-builder.md:130
+#: df726e8ac959444b8305c6e9862d15b2
+msgid "Download unmodified sources"
+msgstr ""
+
+#: ../developer/building/qubes-builder.md:136
+#: 25b8fe7ed52f47b9b242c24b41988b38
+msgid "**Make your modifications here**"
+msgstr ""
+
+#: ../developer/building/qubes-builder.md:138
+#: 9d117bbb4c57446481d283c5ba532661
+msgid "Build the Qubes   `make qubes` actually is just meta target which builds all required   components in correct order. The list of components is configured in   builder.conf. You can also check the current value at the end of `make   help`, or using `make build-info`."
+msgstr ""
+
+#: ../developer/building/qubes-builder.md:144
+#: d9b43ad57f844a6c99d2c477d3fd5caa
+msgid "`get-sources` is already done, so continue with the next one. You can skip `sign-all` if you've disabled signing"
+msgstr ""
+
+#: ../developer/building/qubes-builder.md:150
+#: 7f2809730e114610ae210fddc36822e8
+msgid "build iso installation image"
+msgstr ""
+
+#: ../developer/building/qubes-builder.md:156
+#: c252dc2f978946bdbfe71cf4873fb82e
+msgid "Use pre-built Qubes packages"
+msgstr ""
+
+#: ../developer/building/qubes-builder.md:158
+#: 4994717b080c45c9afd478dca7c10478
+msgid "For building just a few selected packages, it's very useful to download pre-built qubes-specific dependencies from `{yum,deb}.qubes-os.org`. This is especially true for `gcc`, which takes several hours to build."
+msgstr ""
+
+#: ../developer/building/qubes-builder.md:161
+#: 03a319d575bd48c086dd09f72c8fac4e
+msgid "Before creating the `chroot`, add this to your `builder.conf`:"
+msgstr ""
+
+#: ../developer/building/qubes-builder.md:167
+#: 388b9f8e3cd44d46a4f2be075f80e5fc
+msgid "It will add the 'current' Qubes repository to your `chroot` environment. Next, specify which components (`gcc`, for example) you want to download instead of compiling:"
+msgstr ""
+
+#: ../developer/building/qubes-builder.md:174
+#: 94dc16e8953147b78730a4576360551d
+msgid "Alternatively, edit the actual COMPONENTS list which is defined in the included version-dependent config from example-configs (see series of include directives near the beginning of `builder.conf`). This way, you can build only the packages in which you are interested."
+msgstr ""
+
+#: ../developer/building/qubes-builder.md:177
+#: 03932dca1d444bb48cadd0ed9147f0c8
+msgid "If you also want to use the 'current-testing' repository, add this to your configuration:"
+msgstr ""
+
+#: ../developer/building/qubes-builder.md:183
+#: 67f7b8db33c940619b44640e8a8a5de3
+msgid "In the case of an existing `chroot`, for mock-enabled builds, this works immediately because `chroot` is constructed each time separately. For legacy builds, it will not add the necessary configuration into the build environment unless a specific builder change or configuration would force rebuilding chroot."
+msgstr ""
+
+#: ../developer/building/qubes-builder.md:186
+#: f5d993a4568f4afb89ba734926900464
+msgid "Also, once enabled, disabling this setting will not disable repositories in relevant chroots. And even if it did, there could be some leftover packages installed from those repos (which may or may not be desirable)."
+msgstr ""
+
+#: ../developer/building/qubes-builder.md:189
+#: 6c9b504e6ac14e499f8d684d72c09825
+msgid "**Note** If you are building Ubuntu templates, you cannot use this option. This is because Qubes does not provide official packages for Ubuntu templates."
+msgstr ""
+
+#: ../developer/building/qubes-builder.md:193
+#: 5942b81e72bd4b55bc7c3d826e7159cb
+msgid "Code verification keys management"
+msgstr ""
+
+#: ../developer/building/qubes-builder.md:195
+#: a3b67c7ca0f541b3ae0ee11cca6f33b0
+msgid "[QubesBuilder](/doc/qubes-builder/) by default verifies signed tags on every downloaded code. Public keys used for that are stored in `keyrings/git`. By default Qubes developers' keys are imported automatically, but if you need some additional keys (for example your own), you can add them using:"
+msgstr ""
+
+#: ../developer/building/qubes-builder.md:205
+#: 191c5afbf346468b86239ac12ae6522a
+msgid "All Qubes developers' keys are signed by the Qubes Master Signing Key (which is set as ultimately trusted key), so are trusted automatically."
+msgstr ""
+
+#: ../developer/building/qubes-builder.md:207
+#: b362542f912b4fc993726e9c82d92216
+msgid "If you are the owner of Master key and want to revoke such signature, use the `revsig` gpg key edit command and update the key in qubes-developers-keys.asc - now the key will be no longer trusted (unless manually set as such)."
+msgstr ""
+
+#: ../developer/building/qubes-builder.md:209
+#: 5bf287c2703748f8b88a68eab426b28c
+msgid "Further information"
+msgstr ""
+
+#: ../developer/building/qubes-builder.md:211
+#: b255fabe3af74855be4a4e2f38171af9
+msgid "For advanced [QubesBuilder](/doc/qubes-builder/) use, and preparing sources, take a look at [QubesBuilderDetails](/doc/qubes-builder-details/) page, or [QubesBuilder's doc directory](https://github.com/marmarek/qubes-builder/tree/master/doc)."
+msgstr ""

@@ -1,0 +1,62 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-15 21:10+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../project-security/canary-checklist.md:11
+#: 12f76ec371c44173a2636bdb717bcf07
+msgid "Preparation"
+msgstr ""
+
+#: ../project-security/canary-checklist.md:13
+#: 51f223670f8d4bdf8bae5ca592ec63c8
+msgid "Draft canary and push to private repository"
+msgstr ""
+
+#: ../project-security/canary-checklist.md:14
+#: 7e69e7462ff347f6a575fbc1affc5178
+msgid "Finalize canary, sign, and add signed tags"
+msgstr ""
+
+#: ../project-security/canary-checklist.md:16
+#: 55b4f925e9a445e3b16f293e3fffdc96
+msgid "Announcement"
+msgstr ""
+
+#: ../project-security/canary-checklist.md:18
+#: d5dac74c0abf4c9e944df931518e6454
+msgid "Push canary to public repository"
+msgstr ""
+
+#: ../project-security/canary-checklist.md:19
+#: 4ce628c580374d0ea43b3809ab44190c
+msgid "Publish a [news post](/news/) using the [Canary Template](/security/canary/template/)"
+msgstr ""
+
+#: ../project-security/canary-checklist.md:21
+#: fc43f799d26b44fda4ca5f3148e0cf3b
+msgid "Send the content of the news post to the appropriate [mailing lists](/support/)"
+msgstr ""
+
+#: ../project-security/canary-checklist.md:23
+#: 375ddeccb49644b1bfdcc6f457e1dafd
+msgid "Share link to news post on social media"
+msgstr ""
+
+#: ../project-security/canary-checklist.md:24
+#: abe3287253cf4a818a73fc42dae8af35
+msgid "Set a reminder for the next canary"
+msgstr ""

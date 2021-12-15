@@ -1,0 +1,27 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-15 21:10+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../project-security/qsb.md:16
+#: 6eac0e10d8424c16865ca743613f7e9a
+msgid "A **Qubes Security Bulletin (QSB)** is a security announcement issued by the [Qubes Security Team](/security/#qubes-security-team) through the [Qubes Security Pack](/security/pack/). A QSB typically provides a summary and impact analysis of one or more recently-discovered software vulnerabilities, including details about patching to address them."
+msgstr ""
+
+#: ../project-security/qsb.md:22
+#: aa5aeeaf3a1349f79d5014de7c47cc23
+msgid "Full list"
+msgstr ""

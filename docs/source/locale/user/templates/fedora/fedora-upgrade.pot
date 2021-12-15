@@ -1,0 +1,226 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-15 21:10+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../user/templates/fedora/fedora-upgrade.md:32
+#: e1163b00e3a042888f510883ca5fd2e3
+msgid "This page provides instructions for performing an in-place upgrade of an installed [Fedora Template](/doc/templates/fedora/). If you wish to install a new, unmodified Fedora template instead of upgrading a template that is already installed in your system, please see the [Fedora Template](/doc/templates/fedora/) page instead. ([Learn more about the two options.](/doc/templates/fedora/#upgrading))"
+msgstr ""
+
+#: ../user/templates/fedora/fedora-upgrade.md:35
+#: 2fa16bd89130427f9f9a45f2dd0d1ffa
+msgid "Summary instructions for standard Fedora templates"
+msgstr ""
+
+#: ../user/templates/fedora/fedora-upgrade.md:37
+#: ../user/templates/fedora/fedora-upgrade.md:61
+#: ../user/templates/fedora/fedora-upgrade.md:173
+#: 603a8e7e428d4537ab1a40b62ee4578a
+#: 8309bde72789449e96238ac012bf8f35
+#: 8d7d5242654d456ea5c80e598219882d
+msgid "**Note:** The prompt on each line indicates where each command should be entered: `dom0`, `fedora-<old>`, or `fedora-<new>`, where `<old>` is the Fedora version number *from* which you are upgrading, and `<new>` is the Fedora version number *to* which you are upgrading."
+msgstr ""
+
+#: ../user/templates/fedora/fedora-upgrade.md:54
+#: 7ef6c42fda05479ca1c2085d008b9742
+msgid "**Recommended:** [Switch everything that was set to the old template to the new template.](/doc/templates/#switching)"
+msgstr ""
+
+#: ../user/templates/fedora/fedora-upgrade.md:56
+#: b6d06b0ae82b47f3be0d20f566df5d0e
+msgid "Detailed instructions for standard Fedora templates"
+msgstr ""
+
+#: ../user/templates/fedora/fedora-upgrade.md:58
+#: f8076b4d957a45b7acde83eb520b2bca
+msgid "These instructions will show you how to upgrade the standard Fedora template. The same general procedure may be used to upgrade any template based on the standard Fedora template."
+msgstr ""
+
+#: ../user/templates/fedora/fedora-upgrade.md:63
+#: 0cce52288992432cb063e1a1c92553cc
+msgid "Ensure the existing template is not running."
+msgstr ""
+
+#: ../user/templates/fedora/fedora-upgrade.md:69
+#: 8488fdd5c6ce47f99c1e851c2a6c29e3
+msgid "Clone the existing template and start a terminal in the new template."
+msgstr ""
+
+#: ../user/templates/fedora/fedora-upgrade.md:76
+#: 641d5cece1d2481f8a3e8c0b9fa19548
+msgid "Attempt the upgrade process in the new template."
+msgstr ""
+
+#: ../user/templates/fedora/fedora-upgrade.md:83
+#: 34ef5d29b8f146e88ee56eb95afacd6f
+msgid "**Note:** `dnf` might ask you to approve importing a new package signing key.  For example, you might see a prompt like this one:"
+msgstr ""
+
+#: ../user/templates/fedora/fedora-upgrade.md:95
+#: 2be2c82b7b11408c884bf68ca7092e86
+msgid "This key was already checked when it was installed (notice that the \"From\" line refers to a location on your local disk), so you can safely say yes to this prompt."
+msgstr ""
+
+#: ../user/templates/fedora/fedora-upgrade.md:97
+#: 1bf79edf9290407999ae539d710fdfff
+msgid "**Note:** If you encounter no errors, proceed to step 4.  If you do encounter errors, see the next two points first."
+msgstr ""
+
+#: ../user/templates/fedora/fedora-upgrade.md:100
+#: c478f4962cfe40d2a04b63914361210b
+msgid "If `dnf` reports that you do not have enough free disk space to proceed with the upgrade process, create an empty file in dom0 to use as a cache and attach it to the template as a virtual disk."
+msgstr ""
+
+#: ../user/templates/fedora/fedora-upgrade.md:110
+#: 563a079b32b941f6b1b8a17e0e4f04dc
+msgid "Then reattempt the upgrade process, but this time use the virtual disk as a cache."
+msgstr ""
+
+#: ../user/templates/fedora/fedora-upgrade.md:119
+#: ea90405bd8c248d7a677a5bce8290702
+msgid "If this attempt is successful, proceed to step 4."
+msgstr ""
+
+#: ../user/templates/fedora/fedora-upgrade.md:121
+#: cf14c7eabb004be6b7c3b4259933bc7a
+msgid "`dnf` may complain:"
+msgstr ""
+
+#: ../user/templates/fedora/fedora-upgrade.md:123
+#: 71fde436a98348ffad920e41677ad521
+msgid "`  At least X MB more space needed on the / filesystem.  `"
+msgstr ""
+
+#: ../user/templates/fedora/fedora-upgrade.md:127
+#: 59d23f54ca2d4c9b8211d57921aa0b82
+msgid "In this case, one option is to [resize the template's disk image](/doc/resize-disk-image/) before reattempting the upgrade process. (See [Additional Information](#additional-information) below for other options.)"
+msgstr ""
+
+#: ../user/templates/fedora/fedora-upgrade.md:130
+#: 1879deb3140a485aaacebe3337059067
+msgid "Check that you are on the correct (new) Fedora release. Do this check only after completing the upgrade process. This is *not* a troubleshooting procedure for fixing download issues from the repository. This check simply verifies that your clone has successfully been upgraded."
+msgstr ""
+
+#: ../user/templates/fedora/fedora-upgrade.md:136
+#: 3629a0cdf2764785ac211b48751c14a1
+msgid "(Optional) Trim the new template.  (This should [no longer be necessary](/doc/templates/#important-notes), but it does not hurt.  Some users have [reported](https://github.com/QubesOS/qubes-issues/issues/5055) that it makes a difference.)"
+msgstr ""
+
+#: ../user/templates/fedora/fedora-upgrade.md:147
+#: 14c9baaeffef4b43afde8d68e383c369
+msgid "Shut down the new template."
+msgstr ""
+
+#: ../user/templates/fedora/fedora-upgrade.md:153
+#: ad8ecad0ddbf463ba2df0aee4c766ad5
+msgid "Remove the cache file, if you created one."
+msgstr ""
+
+#: ../user/templates/fedora/fedora-upgrade.md:160
+#: 2e4bb9f575934b339af6170ba278d8ef
+msgid "(Recommended) [Switch everything that was set to the old template to the new template.](/doc/templates/#switching)"
+msgstr ""
+
+#: ../user/templates/fedora/fedora-upgrade.md:162
+#: 10cd5b73d9824deeb9d36f866613c0b8
+msgid "(Optional) Make the new template the global default."
+msgstr ""
+
+#: ../user/templates/fedora/fedora-upgrade.md:168
+#: d304391544194caeb033ec9f758bb891
+msgid "(Optional) [Uninstall the old template.](/doc/templates/#uninstalling) Make sure that the template you're uninstalling is the old one, not the new one!"
+msgstr ""
+
+#: ../user/templates/fedora/fedora-upgrade.md:171
+#: 19c6f9a1e7fb4656b4d5b47835bfb101
+msgid "Summary instructions for Fedora Minimal templates"
+msgstr ""
+
+#: ../user/templates/fedora/fedora-upgrade.md:183
+#: bd758b4fcbff4b7d9e72b6b478692a29
+msgid "(Shut down template by any normal means.)"
+msgstr ""
+
+#: ../user/templates/fedora/fedora-upgrade.md:185
+#: 35b36a58ff984d0ea9001f2b07c6003d
+msgid "(If you encounter insufficient space issues, you may need to use the methods described for the standard template above.)"
+msgstr ""
+
+#: ../user/templates/fedora/fedora-upgrade.md:187
+#: 2c6e8674c3484377bf6dcdbf80aff39d
+msgid "Standalones"
+msgstr ""
+
+#: ../user/templates/fedora/fedora-upgrade.md:189
+#: b28be114390a4880b81807be0dcfda27
+msgid "The procedure for upgrading a Fedora [standalone](/doc/standalone-and-hvm/) is the same as for a template."
+msgstr ""
+
+#: ../user/templates/fedora/fedora-upgrade.md:191
+#: fa58e8390c58459e8b07190578f1c7b0
+msgid "Release-specific notes"
+msgstr ""
+
+#: ../user/templates/fedora/fedora-upgrade.md:193
+#: 36992b3b2d8740d29b1b834f8fc8a48d
+msgid "See the [news](/news/) announcement for each specific template release for any important notices about that particular release."
+msgstr ""
+
+#: ../user/templates/fedora/fedora-upgrade.md:195
+#: 953d4f1e24c84a3784c249fa3753e733
+msgid "End-of-life (EOL) releases"
+msgstr ""
+
+#: ../user/templates/fedora/fedora-upgrade.md:197
+#: b0b673e8014a49b59f5820ae3cd7b71a
+msgid "We strongly recommend against using any Fedora release that has reached [end-of-life (EOL)](https://fedoraproject.org/wiki/End_of_life). Also see [supported versions](/doc/supported-versions/)."
+msgstr ""
+
+#: ../user/templates/fedora/fedora-upgrade.md:200
+#: 60560a4e46964db79f4c577293934f60
+msgid "Additional information"
+msgstr ""
+
+#: ../user/templates/fedora/fedora-upgrade.md:202
+#: bae82bb966854e7fa13393909958c633
+msgid "As mentioned above, you may encounter the following `dnf` error:"
+msgstr ""
+
+#: ../user/templates/fedora/fedora-upgrade.md:208
+#: 837f91306ab6464fb1813f3a7533b235
+msgid "In this case, you have several options:"
+msgstr ""
+
+#: ../user/templates/fedora/fedora-upgrade.md:210
+#: 00c1236d70824bc1972fef6e69c88485
+msgid "[Increase the template's disk image size](/doc/resize-disk-image/). This is the solution mentioned in the main instructions above."
+msgstr ""
+
+#: ../user/templates/fedora/fedora-upgrade.md:212
+#: 7a72544cfbef4cd9ba2d9ea52f50fce6
+msgid "Delete files in order to free up space. One way to do this is by uninstalling packages. You may then reinstall them again after you finish the upgrade process, if desired). However, you may end up having to increase the disk image size anyway (see previous option)."
+msgstr ""
+
+#: ../user/templates/fedora/fedora-upgrade.md:215
+#: 114cff25a1bc47f599d814920d5abf8d
+msgid "Do the upgrade in parts, e.g., by using package groups. (First upgrade `@core` packages, then the rest.)"
+msgstr ""
+
+#: ../user/templates/fedora/fedora-upgrade.md:217
+#: 49a19c76ec684fc6a3b5249c3421e370
+msgid "Do not perform an in-place upgrade, see [Upgrading Fedora templates](/doc/templates/fedora/#upgrading)."
+msgstr ""

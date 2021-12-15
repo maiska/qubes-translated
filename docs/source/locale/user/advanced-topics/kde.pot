@@ -1,0 +1,107 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-15 21:10+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../user/advanced-topics/kde.md:11
+#: 1f7784ba664c4a44b075d5d8dadb7d6e
+msgid "Installation"
+msgstr ""
+
+#: ../user/advanced-topics/kde.md:14
+#: c1e8878ac6c0482fb38869687c541ff7
+msgid "Prior to R3.2, KDE was the default desktop environment in Qubes. Beginning with R3.2, however, [XFCE is the new default desktop environment](/doc/releases/3.2/release-notes/). Nonetheless, it is still possible to install KDE by issuing this command in dom0:"
+msgstr ""
+
+#: ../user/advanced-topics/kde.md:22
+#: 2243b696fae64b20809a3961186f0f2c
+msgid "You can also change your default login manager (lightdm) to the new KDE default: sddm"
+msgstr ""
+
+#: ../user/advanced-topics/kde.md:24
+#: 70a97de0b1dc4753aeb301e4c64c3086
+msgid "first you need to edit the `/etc/sddm.conf` to make sure if the custom X parameter is set according to Qubes needs:"
+msgstr ""
+
+#: ../user/advanced-topics/kde.md:31
+#: 03b8f25b626e478fb124262f69b8cdfe
+msgid "disable the lightdm service:"
+msgstr ""
+
+#: ../user/advanced-topics/kde.md:37
+#: 76d40d1dd7774e49a7af8d9f6bc17711
+msgid "enable the sddm service:"
+msgstr ""
+
+#: ../user/advanced-topics/kde.md:43
+#: cf4dcc6771b8428a9eaabe11b71921d3
+msgid "reboot"
+msgstr ""
+
+#: ../user/advanced-topics/kde.md:45
+#: 13f1082f26574e9ab20c0b9a04f41921
+msgid "If you encounter performance issues with KDE, try switching back to LightDM."
+msgstr ""
+
+#: ../user/advanced-topics/kde.md:47
+#: 87c09426c36144f7806d59554ca897a8
+msgid "Window Management"
+msgstr ""
+
+#: ../user/advanced-topics/kde.md:50
+#: a61e585004af4273914e6426a843894f
+msgid "You can set each window's position and size like this:"
+msgstr ""
+
+#: ../user/advanced-topics/kde.md:64
+#: 082a9aff645c4973bd2059983b703a0d
+msgid "You can also use `kstart` to control virtual desktop placement like this:"
+msgstr ""
+
+#: ../user/advanced-topics/kde.md:70
+#: fa87e37dd9c34f31a5c57b0ffc4508d1
+msgid "(Replace \"3\" with whichever virtual desktop you want the window to be on.)"
+msgstr ""
+
+#: ../user/advanced-topics/kde.md:73
+#: 7a783d64d4ba4495a6d56e66374a78d3
+msgid "This can be useful for creating a simple shell script which will set up your workspace the way you like."
+msgstr ""
+
+#: ../user/advanced-topics/kde.md:76
+#: 0e6b747d3f2149ebbb11666c5d61f9d7
+msgid "Removal"
+msgstr ""
+
+#: ../user/advanced-topics/kde.md:79
+#: 4e90c22975f846f598c9f93970899547
+msgid "If you decide to remove KDE do **not** use `dnf remove @kde-desktop-qubes`. You will almost certainly break your system."
+msgstr ""
+
+#: ../user/advanced-topics/kde.md:81
+#: 4bd85dc9e38d4b19bc7415f82eeb9808
+msgid "The safest way to remove (most of) KDE is:"
+msgstr ""
+
+#: ../user/advanced-topics/kde.md:87
+#: 8f7ebca3fa524c4eb930dad00d3718c8
+msgid "Mailing List Threads"
+msgstr ""
+
+#: ../user/advanced-topics/kde.md:90
+#: 1f2fa8c63cca4b448f0e45535eb02d22
+msgid "[Nalu's KDE customization thread](https://groups.google.com/d/topic/qubes-users/KhfzF19NG1s/discussion)"
+msgstr ""

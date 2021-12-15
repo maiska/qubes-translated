@@ -1,0 +1,543 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-15 21:10+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../user/security-in-qubes/split-gpg.md:19
+#: 16e2cf745b704167bb4ee4a9d24828e4
+msgid "Split GPG implements a concept similar to having a smart card with your private GPG keys, except that the role of the \"smart card\" is played by another Qubes app qube. This way one not-so-trusted domain, e.g. the one where Thunderbird is running, can delegate all crypto operations -- such as encryption/decryption and signing -- to another, more trusted, network-isolated domain. This way the compromise of your domain where Thunderbird or another client app is running -- arguably a not-so-unthinkable scenario -- does not allow the attacker to automatically also steal all your keys. (We should make a rather obvious comment here that the so-often-used passphrases on private keys are pretty meaningless because the attacker can easily set up a simple backdoor which would wait until the user enters the passphrase and steal the key then.)"
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:24
+#: b992f716989545d7b3817ee03d755b40
+msgid "[![split-gpg-diagram.png](/attachment/doc/split-gpg-diagram.png)](/attachment/doc/split-gpg-diagram.png)"
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:26
+#: 533a000642e043ae80dd02f2b8526a64
+msgid "This diagram presents an overview of the Split GPG architecture."
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:28
+#: 042425f80ca5469aa1496f5e13324372
+msgid "Advantages of Split GPG vs. traditional GPG with a smart card"
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:30
+#: a6fbb6374aca47eea062b25f98d7a973
+msgid "It is often thought that the use of smart cards for private key storage guarantees ultimate safety. While this might be true (unless the attacker can find a usually-very-expensive-and-requiring-physical-presence way to extract the key from the smart card) but only with regards to the safety of the private key itself. However, there is usually nothing that could stop the attacker from requesting the smart card to perform decryption of all the user documents the attacker has found or need to decrypt. In other words, while protecting the user's private key is an important task, we should not forget that ultimately it is the user data that are to be protected and that the smart card chip has no way of knowing the requests to decrypt documents are now coming from the attacker's script and not from the user sitting in front of the monitor. (Similarly the smart card doesn't make the process of digitally signing a document or a transaction in any way more secure -- the user cannot know what the chip is really signing. Unfortunately this problem of signing reliability is not solvable by Split GPG)"
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:37
+#: ffedf7e7be1f47f2a4155d88587a10d1
+msgid "With Qubes Split GPG this problem is drastically minimized, because each time the key is to be used the user is asked for consent (with a definable time out, 5 minutes by default), plus is always notified each time the key is used via a tray notification from the domain where GPG backend is running. This way it would be easy to spot unexpected requests to decrypt documents."
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:40
+#: b27f1c7742cc40e3a124a56dcd06be9d
+msgid "[![r2-split-gpg-1.png](/attachment/doc/r2-split-gpg-1.png)](/attachment/doc/r2-split-gpg-1.png) [![r2-split-gpg-3.png](/attachment/doc/r2-split-gpg-3.png)](/attachment/doc/r2-split-gpg-3.png)"
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:43
+#: 6c60646e500d48d693acc967c06f535b
+msgid "Configuring Split GPG"
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:45
+#: cce8855655204feebaf82475c57d4154
+msgid "In dom0, make sure the `qubes-gpg-split-dom0` package is installed."
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:51
+#: affe6cec5f564fdc91c29b09877250b4
+msgid "Make sure you have the `qubes-gpg-split` package installed in the template you will use for the GPG domain."
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:53
+#: 4364d3f8193b41bbbe5862da4bc55c2a
+msgid "For Debian or Whonix:"
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:59
+#: fc8136d8c0fa4dd1984cfb44978e2aad
+msgid "For Fedora:"
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:65
+#: 0f8805554d7f4af89c7cb75ece4a54b8
+msgid "Setting up the GPG backend domain"
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:67
+#: 2e372a4977a742f4b018e1f9029da921
+msgid "First, create a dedicated app qube for storing your keys (we will be calling it the GPG backend domain). It is recommended that this domain be network disconnected (set its netvm to `none`) and only used for this one purpose. In later examples this app qube is named `work-gpg`, but of course it might have any other name."
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:71
+#: 9c1600b028094dcd94c03f4edd50a8c9
+msgid "Make sure that gpg is installed there. At this stage you can add the private keys you want to store there, or you can now set up Split GPG and add the keys later. To check which private keys are in your GPG keyring, use:"
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:85
+#: 1f6291fa8c9b4fa2ae9b581d0942bc45
+msgid "This is pretty much all that is required. However, you might want to modify the default timeout: this tells the backend for how long the user's approval for key access should be valid. (The default is 5 minutes.) You can change this via the `QUBES_GPG_AUTOACCEPT` environment variable. You can override it e.g. in `~/.profile`:"
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:94
+#: 83fa7fdd4a444a80a53f609177bca3cf
+msgid "Please note that previously, this parameter was set in ~/.bash_profile. This will no longer work. If you have the parameter set in ~/.bash_profile you *must* update your configuration."
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:98
+#: 5776958551124864b85d44c0fd4c5cdd
+msgid "Please be aware of the caveat regarding passphrase-protected keys in the [Current limitations](#current-limitations) section."
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:100
+#: 1666563b991245a88b732972a20bd0dc
+msgid "Configuring the client apps to use Split GPG backend"
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:102
+#: 5705f69d8e814ab793f38178d22dade5
+msgid "Normally it should be enough to set the `QUBES_GPG_DOMAIN` to the GPG backend domain name and use `qubes-gpg-client` in place of `gpg`, e.g.:"
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:119
+#: 2a2d2513e8434c30932762fc7f5528e0
+msgid "Note that running normal `gpg -K` in the demo above shows no private keys stored in this app qube."
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:121
+#: a23187121fa24141b6f22e8a5a1079bb
+msgid "A note on `gpg` and `gpg2`:"
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:123
+#: e4b443f3bd9242488f0f4c8e100bd4bc
+msgid "Throughout this guide, we refer to `gpg`, but note that Split GPG uses `gpg2` under the hood for compatibility with programs like Enigmail (which now supports only `gpg2`). If you encounter trouble while trying to set up Split GPG, make sure you're using `gpg2` for your configuration and testing, since keyring data may differ between the two installations."
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:126
+#: 0274dc1decd441f090131e83f179c776
+msgid "Advanced Configuration"
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:128
+#: 044fcbda4c234dfdba12639c6f34d719
+msgid "The `qubes-gpg-client-wrapper` script sets the `QUBES_GPG_DOMAIN` variable automatically based on the content of the file `/rw/config/gpg-split-domain`, which should be set to the name of the GPG backend VM. This file survives the app qube reboot, of course."
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:135
+#: e537a8552a104302a0e55376830f5562
+msgid "Split GPG's default qrexec policy requires the user to enter the name of the app qube containing GPG keys on each invocation. To improve usability for applications like Thunderbird with Enigmail, in `dom0` place the following line at the top of the file `/etc/qubes-rpc/policy/qubes.Gpg`:"
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:141
+#: c22f2ae3c6aa4170b265307744a25278
+msgid "where `work-email` is the Thunderbird + Enigmail app qube and `work-gpg` contains your GPG keys."
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:143
+#: 23521e9425c045eda6ec42c837cb82e2
+msgid "You may also edit the qrexec policy file for Split GPG in order to tell Qubes your default gpg vm (qrexec prompts will appear with the gpg vm preselected as the target, instead of the user needing to type a name in manually). To do this, append `,default_target=<vmname>` to `ask` in `/etc/qubes-rpc/policy/qubes.Gpg`. For the examples given on this page:"
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:149
+#: bbf60a2d075147e9a681a533a90bc7f1
+msgid "Note that, because this makes it easier to accept Split GPG's qrexec authorization prompts, it may decrease security if the user is not careful in reviewing presented prompts. This may also be inadvisable if there are multiple app qubes with Split GPG set up."
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:151
+#: f01c6ebe5562485e9913c029a530b5da
+msgid "Using Thunderbird"
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:153
+#: ec80c31e0bef49169b62534fc0e67fcd
+msgid "Thunderbird 78 and higher"
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:155
+#: 21144cb5badc4cdc8a035721e48831ac
+msgid "Starting with version 78, Thunderbird has a built-in PGP feature and no longer requires the Enigmail extension. For users coming from the Enigmail extension, the built-in functionality is more limited currently, including that **public keys must live in your `work-email` qube with Thunderbird rather than your offline `work-gpg` qube**."
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:157
+#: 1cf19c3fb11048efa446c5bf8dc17eb9
+msgid "In `work-email`, use the Thunderbird config editor (found at the bottom of preferences/options), and search for `mail.openpgp.allow_external_gnupg`. Switch the value to true. Still in config editor, search for `mail.openpgp.alternative_gpg_path`. Set its value to `/usr/bin/qubes-gpg-client-wrapper`. Restart Thunderbird after this change."
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:159
+#: 00accbb184e640aa8a16270610ab1ae6
+msgid "[![tb78-1.png](/attachment/doc/tb78-1.png)](/attachment/doc/tb78-1.png) [![tb78-2.png](/attachment/doc/tb78-2.png)](/attachment/doc/tb78-2.png) [![tb78-3.png](/attachment/doc/tb78-3.png)](/attachment/doc/tb78-3.png)"
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:163
+#: 422a931d255644599f9e5b0f34c53b32
+msgid "You need to obtain your key ID which should be **exactly 16 characters**. Enter the command `qubes-gpg-client-wrapper -K --keyid-format long`:"
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:179
+#: 5e95c08a33724358a5f7da80db952a7f
+msgid "Open the Account Settings and open the *End-to-End Encryption* tab of the respective email account. Click the *Add Key* button. You'll be offered the choice *Use your external key through GnuPG*. Select it and click Continue."
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:181
+#: f6b97a76eca04e65a4b6915102baa346
+msgid "[![tb78-4.png](/attachment/doc/tb78-4.png)](/attachment/doc/tb78-4.png) [![tb78-5.png](/attachment/doc/tb78-5.png)](/attachment/doc/tb78-5.png)"
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:184
+#: 36fa959e18f64a4694936e1cb56341d0
+msgid "The key ID reference you would need here is `777402E6D301615C`. Now paste or type the ID of the secret key that you would like to use. Be careful to enter it correctly, because your input isn't verified. Confirm to save this key ID. Now you can select the key ID to use."
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:186
+#: fe3779f144dc463e99ffa8e7c38664d7
+msgid "[![tb78-6.png](/attachment/doc/tb78-6.png)](/attachment/doc/tb78-6.png) [![tb78-7.png](/attachment/doc/tb78-7.png)](/attachment/doc/tb78-7.png)"
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:189
+#: 1db08a8bf3ec4ceeb716ccf9fd4f5da9
+msgid "This key ID will be used to digitally sign or send an encrypted message with your account. For this to work, Thunderbird needs a copy of your public key. At this time, Thunderbird doesn't fetch the public key from `/usr/bin/qubes-gpg-client-wrapper`, you must manually import it. Export the key as follow (assuming the key ID would be `777402E6D301615C`):"
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:191
+#: f917220e9d8946c1b9c52d0f64e17f92
+msgid "[![tb78-8.png](/attachment/doc/tb78-8.png)](/attachment/doc/tb78-8.png) [![tb78-9.png](/attachment/doc/tb78-9.png)](/attachment/doc/tb78-9.png)"
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:194
+#: 24a3bbd63a424b02ae6ee441824f117c
+msgid "Use Thunderbird's Tools menu to open *OpenPGP Key Management*. In that window, use the File menu to access the *Import Public Key(s) From File* command. Open the file with your public key. After the import was successful, right click on the imported key in the list and select *Key Properties*. You must mark your own key as *Yes, I've verified in person this key has the correct fingerprint*."
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:196
+#: a065dc779e9f42b5a0eafd4ff0a76bb4
+msgid "Once this is done, you should be able to send an encrypted and signed email by selecting *Require Encryption* or *Digitally Sign This Message* in the compose menu *Options* or *Security* toolbar button. You can try it by sending an email to yourself."
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:198
+#: 3f5c6efacebb40e6b5dda704a06e18ae
+msgid "[![tb78-10.png](/attachment/doc/tb78-10.png)](/attachment/doc/tb78-10.png)"
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:200
+#: 994c8e065ce1428ebbabb3c7f944173f
+msgid "For more details about using smart cards/Split GPG with Thunderbird PGP feature, please see [Thunderbird:OpenPGP:Smartcards](https://wiki.mozilla.org/Thunderbird:OpenPGP:Smartcards) from which the above documentation is inspired."
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:202
+#: 2d4b48d15c444e42bf5f589f2fe057e8
+msgid "Older Thunderbird versions"
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:204
+#: 8993a0eb61364d7b963674d2a6de773f
+msgid "For Thunderbird versions below 78, the traditional Enigmail + Split GPG setup is required. It is recommended to set up and use `/usr/bin/qubes-gpg-client-wrapper`, as discussed above, in Thunderbird through the Enigmail addon."
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:207
+#: cfe20e6b44ab4c5f8c988c59241ed0bc
+msgid "**Warning:** Before adding any account, configuring Enigmail with `/usr/bin/qubes-gpg-client-wrapper` is **required**. By default, Enigmail will generate a default GPG key in `work-email` associated with the newly created Thunderbird account. Generally, it corresponds to the email used in `work-gpg` associated to your private key. In consequence, a new, separate private key will be stored in `work-email` but it _does not_ correspond to your private key in `work-gpg`. Comparing the `fingerprint` or `expiration date` will show that they are not the same private key. In order to prevent Enigmail using this default generated local key in `work-email`, you can safely remove it."
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:209
+#: dc2550dd51e64eae801054b477a352e8
+msgid "On a fresh Enigmail install, your need to change the default `Enigmail Junior Mode`. Go to Thunderbird preferences and then privacy tab. Select `Force using S/MIME and Enigmail`. Then, in the preferences of Enigmail, make it point to `/usr/bin/qubes-gpg-client-wrapper` instead of the standard GnuPG binary:"
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:211
+#: ebd3aaf50f324e18becd872c550260e0
+msgid "[![tb-enigmail-split-gpg-settings-2.png](/attachment/doc/tb-enigmail-split-gpg-settings-2.png)](/attachment/doc/tb-enigmail-split-gpg-settings-2.png)"
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:213
+#: b7be30d7e8264bbaa1b13ce38e1ed4eb
+msgid "Using Keybase with Split GPG"
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:215
+#: 3bb490988b1d4ce5ba7c2e5ff0ab0913
+msgid "Keybase, a security focused messaging and file-sharing app with GPG integration, can be configured to use Split GPG."
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:217
+#: d6a073c6209a46aa9c2a1758843c139f
+msgid "The Keybase service does not preserve/pass the `QUBES_GPG_DOMAIN` environment variable through to underlying GPG processes, so it **must** be configured to use `/usr/bin/qubes-gpg-client-wrapper` (as discussed above) rather than `/usr/bin/qubes-gpg-client`."
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:219
+#: 9ec284d967ed49eab085c1cd5db5864d
+msgid "The following command will configure Keybase to use `/usr/bin/qubes-gpg-client-wrapper` instead of its built-in GPG client:"
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:225
+#: d9c40bc005d546608d44cb888a4bb2ff
+msgid "Now that Keybase is configured to use `qubes-gpg-client-wrapper`, you will be able to use `keybase pgp select` to choose a GPG key from your backend GPG app qube and link that key to your Keybase identity."
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:227
+#: 8474bc0e0ac948f4be9f232216653e7c
+msgid "Using Git with Split GPG"
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:229
+#: 33241150bba54a7585d4d156fabaebeb
+msgid "Git can be configured to used with Split GPG, something useful if you would like to contribute to the Qubes OS Project as every commit is required to be signed. The most basic `~/.gitconfig` file to with working Split GPG looks something like this."
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:242
+#: cf2cc6a8e1e347d18e9d817e28a6773c
+msgid "Your key id is the public id of your signing key, which can be found by running `qubes-gpg-client -k`. In this instance, the key id is DD160C74."
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:253
+#: 61dfd0f466974a4f876043bbbaa883d3
+msgid "To sign commits, you now add the \"-S\" flag to your commit command, which should prompt for Split GPG usage. If you would like automatically sign all commits, you can add the following snippet to `~/.gitconfig`."
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:261
+#: 5e80a3a5433240c087e7a1bb2b38f923
+msgid "Lastly, if you would like to add aliases to sign and verify tags using the conventions the Qubes OS Project recommends, you can add the following snippet to `~/.gitconfig`."
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:269
+#: c1f77f20f5d64957bb2aee07e5279793
+msgid "Replace `user` with your short, unique nickname. Now you can use `git stag` to add a signed tag to a commit and `git vtag` to verify the most recent tag that is reachable from a commit."
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:272
+#: e91de26d706441528794f8dbb033616f
+msgid "Importing public keys"
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:274
+#: f407beae3dc94fc4997f3b65f7ffe923
+msgid "Use `qubes-gpg-import-key` in the client app qube to import the key into the GPG backend VM."
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:281
+#: e60dc917c4f74b33b705ecf3f596280e
+msgid "A safe, unspoofable user consent dialog box is displayed."
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:283
+#: 9afb1c93aa61438ebccf21c431ae74fa
+msgid "[![r2-split-gpg-5.png](/attachment/doc/r2-split-gpg-5.png)](/attachment/doc/r2-split-gpg-5.png)"
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:285
+#: 126956758b7c4acba48b8119908243f3
+msgid "Selecting \"Yes to All\" will add a line in the corresponding [RPC Policy](/doc/rpc-policy/) file."
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:287
+#: 010a31e3e5b1478c89404bfb07b364e2
+msgid "Advanced: Using Split GPG with Subkeys"
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:289
+#: a9c6dc193f174145a2fcf031c785964a
+msgid "Users with particularly high security requirements may wish to use Split GPG with [subkeys](https://wiki.debian.org/Subkeys). However, this setup comes at a significant cost: It will be impossible to sign other people's keys with the master secret key without breaking this security model. Nonetheless, if signing others' keys is not required, then Split GPG with subkeys offers unparalleled security for one's master secret key."
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:293
+#: 42eded02b0264fb98afd0094ae41d1a8
+msgid "Setup Description"
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:295
+#: 62be1222f30f4db3b5952e718bb41757
+msgid "In this example, the following keys are stored in the following locations (see below for definitions of these terms):"
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:0
+#: a859dcd941af4232b139756e810480e5
+msgid "PGP Key(s)"
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:0
+#: e29d3fcaace14189b311175b0a2318d7
+msgid "VM Name"
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:0
+#: 0ac2e73c289c47bf9367098be0819266
+msgid "`sec`"
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:0
+#: ../user/security-in-qubes/split-gpg.md:339
+#: 5871f5593720475195febdf626d9b217
+#: aeef46481812435883f38333b8064cb0
+msgid "`vault`"
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:0
+#: a75989fb89994d9699db2766af457e06
+msgid "`ssb`"
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:0
+#: ../user/security-in-qubes/split-gpg.md:346
+#: fd702116507447e4871c85180c889e8d
+#: 8bd938ee8a5f4d4b87e3f597c98eb459
+msgid "`work-gpg`"
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:0
+#: b0558610acba4beab738df9708cd744d
+msgid "`pub`"
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:0
+#: ../user/security-in-qubes/split-gpg.md:353
+#: 3a85b3bf0e514d0b8637688e2dc0c908
+#: 43635f753e83478497edf6b9f140b053
+msgid "`work-email`"
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:303
+#: 57899bb8f97349aea0ff8beacbe10f77
+msgid "`sec` (master secret key)"
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:305
+#: 26e27e60c8f7409cb3a1882bcea9c604
+msgid "Depending on your needs, you may wish to create this as a **certify-only (C)** key, i.e., a key which is capable only of signing (a.k.a., \"certifying\") other keys.  This key may be created *without* an expiration date.  This is for two reasons.  First, the master secret key is never to leave the `vault` VM, so it is extremely unlikely ever to be obtained by an adversary (see below).  Second, an adversary who *does* manage to obtain the master secret key either possesses the passphrase to unlock the key (if one is used) or does not.  An adversary who *does* possess the passphrase can simply use it to legally extend the expiration date of the key (or remove it entirely).  An adversary who does *not* possess the passphrase cannot use the key at all.  In either case, an expiration date provides no additional benefit."
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:314
+#: 98553995833443fa9693f73e376d4858
+msgid "By the same token, however, having a passphrase on the key is of little value.  An adversary who is capable of stealing the key from your `vault` would almost certainly also be capable of stealing the passphrase as you enter it.  An adversary who obtains the passphrase can then use it in order to change or remove the passphrase from the key.  Therefore, using a passphrase at all should be considered optional.  It is, however, recommended that a **revocation certificate** be created and safely stored in multiple locations so that the master keypair can be revoked in the (exceedingly unlikely) event that it is ever compromised."
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:320
+#: 408e8d9c15bd47e2b08a4b36546fe6f9
+msgid "`ssb` (secret subkey)"
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:322
+#: 9231456aa0094d13882019971aa64520
+msgid "Depending on your needs, you may wish to create two different subkeys: one for **signing (S)** and one for **encryption (E)**.  You may also wish to give these subkeys reasonable expiration dates (e.g., one year).  Once these keys expire, it is up to you whether to *renew* these keys by extending the expiration dates or to create *new* subkeys when the existing set expires."
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:326
+#: 234f3a1246c143a785766306fae10367
+msgid "On the one hand, an adversary who obtains any existing encryption subkey (for example) will be able to use it in order to decrypt all emails (for example) which were encrypted to that subkey.  If the same subkey were to continue to be used--and its expiration date continually extended--only that one key would need to be stolen (e.g., as a result of the `work-gpg` VM being compromised; see below) in order to decrypt *all* of the user's emails.  If, on the other hand, each encryption subkey is used for at most approximately one year, then an adversary who obtains the secret subkey will be capable of decrypting at most approximately one year's worth of emails."
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:330
+#: c1b8480537eb4bbfb1f6d853aa8ab88b
+msgid "On the other hand, creating a new signing subkey each year without renewing (i.e., extending the expiration dates of) existing signing subkeys would mean that all of your old signatures would eventually read as \"EXPIRED\" whenever someone attempts to verify them.  This can be problematic, since there is no consensus on how expired signatures should be handled.  Generally, digital signatures are intended to last forever, so this is a strong reason against regularly retiring one's signing subkeys."
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:334
+#: 0bdf907ec8604a34847bbaeded1d74df
+msgid "`pub` (public key)"
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:336
+#: a04883296a784cbb9589bf00827795de
+msgid "This is the complement of the master secret key.  It can be uploaded to keyservers (or otherwise publicly distributed) and may be signed by others."
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:341
+#: d659a9941b044a00b124a82b7b83060e
+msgid "This is a network-isolated VM.  The initial master keypair and subkeys are generated in this VM.  The master secret key *never* leaves this VM under *any* circumstances.  No files or text is *ever* [copied](/doc/how-to-copy-and-move-files/#security) or [pasted](/doc/how-to-copy-and-paste-text/#security) into this VM under *any* circumstances."
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:348
+#: 706da721887747058d2918fa5ca85778
+msgid "This is a network-isolated VM.  This VM is used *only* as the GPG backend for `work-email`.  The secret subkeys (but *not* the master secret key) are [copied](/doc/how-to-copy-and-move-files/#security) from the `vault` VM to this VM.  Files from less trusted VMs are *never* [copied](/doc/how-to-copy-and-move-files/#security) into this VM under *any* circumstances."
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:355
+#: 22640e36075a4c978efe71270a4abd75
+msgid "This VM has access to the mail server.  It accesses the `work-gpg` VM via the Split GPG protocol.  The public key may be stored in this VM so that it can be attached to emails and for other such purposes."
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:359
+#: f66c889ff6494bc8ad2de50c82ebe1d9
+msgid "Security Benefits"
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:361
+#: 77aee796ddea4a77800992d8c04de69f
+msgid "In the standard Split GPG setup, there are at least two ways in which the `work-gpg` VM might be compromised. First, an attacker who is capable of exploiting a hypothetical bug in `work-email`'s [MUA](https://en.wikipedia.org/wiki/Mail_user_agent) could gain control of the `work-email` VM and send a malformed request which exploits a hypothetical bug in the GPG backend (running in the `work-gpg` VM), giving the attacker control of the `work-gpg` VM. Second, a malicious public key file which is imported into the `work-gpg` VM might exploit a hypothetical bug in the GPG backend which is running there, again giving the attacker control of the `work-gpg` VM. In either case, such an attacker might then be able to leak both the master secret key and its passphrase (if any is used, it would regularly be input in the work-gpg VM and therefore easily obtained by an attacker who controls this VM) back to the `work-email` VM or to another VM (e.g., the `netvm`, which is always untrusted by default) via the Split GPG protocol or other [covert channels](/doc/data-leaks/). Once the master secret key is in the `work-email` VM, the attacker could simply email it to himself (or to the world)."
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:367
+#: 0d2b1e3c56794def8e932f6abf4ca617
+msgid "In the alternative setup described in this section (i.e., the subkey setup), even an attacker who manages to gain access to the `work-gpg` VM will not be able to obtain the user's master secret key since it is simply not there. Rather, the master secret key remains in the `vault` VM, which is extremely unlikely to be compromised, since nothing is ever copied or transferred into it. <sup>\\*</sup> The attacker might nonetheless be able to leak the secret subkeys from the `work-gpg` VM in the manner described above, but even if this is successful, the secure master secret key can simply be used to revoke the compromised subkeys and to issue new subkeys in their place. (This is significantly less devastating than having to create a new *master* keypair.)"
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:372
+#: 00d5c8d1fc144b0c84e7bf9e7654acc2
+msgid "<sup>\\*</sup>In order to gain access to the `vault` VM, the attacker would require the use of, e.g., a general Xen VM escape exploit or a [signed, compromised package which is already installed in the template](/doc/templates/#trusting-your-templates) upon which the `vault` VM is based."
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:374
+#: 0c7c0d70c67b4f799fa928ea1fda5125
+msgid "Subkey Tutorials and Discussions"
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:376
+#: 382dfae2fecc4340b422503d36ad492a
+msgid "(Note: Although the tutorials below were not written with Qubes Split GPG in mind, they can be adapted with a few commonsense adjustments. As always, exercise caution and use your good judgment.)"
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:379
+#: 84f44dc8585646d583bf8510862ad54f
+msgid "[\"OpenPGP in Qubes OS\" on the qubes-users mailing list](https://groups.google.com/d/topic/qubes-users/Kwfuern-R2U/discussion)"
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:380
+#: f9dfc6b551dc4d75a547f1d3ab41357d
+msgid "[\"Creating the Perfect GPG Keypair\" by Alex Cabal](https://alexcabal.com/creating-the-perfect-gpg-keypair/)"
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:381
+#: 7474ad95cab240ffb1af317ea3569052
+msgid "[\"GPG Offline Master Key w/ smartcard\" maintained by Abel Luck](https://gist.github.com/abeluck/3383449)"
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:382
+#: 1140c813e8d5412fa2dc5536895ceb4d
+msgid "[\"Using GnuPG with QubesOS\" by Alex](https://apapadop.wordpress.com/2013/08/21/using-gnupg-with-qubesos/)"
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:384
+#: 06e36efc5ce445209367c805b958ced2
+msgid "Current limitations"
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:386
+#: 9bd075b58a6c4740a3c11d8991068cdc
+msgid "Current implementation requires importing of public keys to the vault domain. This opens up an avenue to attack the gpg running in the backend domain via a hypothetical bug in public key importing code. See ticket [#474](https://github.com/QubesOS/qubes-issues/issues/474) for more details and plans how to get around this problem, as well as the section on [using Split GPG with subkeys](#advanced-using-split-gpg-with-subkeys)."
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:390
+#: e3a9a8080f3d4baea8d10b3e81c95690
+msgid "It doesn't solve the problem of allowing the user to know what is to be signed before the operation gets approved. Perhaps the GPG backend domain could start a disposable and have the to-be-signed document displayed there? To Be Determined."
+msgstr ""
+
+#: ../user/security-in-qubes/split-gpg.md:393
+#: 0f70e9e99563452a96458ede4f0e3b25
+msgid "The Split GPG client will fail to sign or encrypt if the private key in the GnuPG backend is protected by a passphrase. It will give an `Inappropriate ioctl for device` error. Do not set passphrases for the private keys in the GPG backend domain. Doing so won't provide any extra security anyway, as explained in the introduction and in [using Split GPG with subkeys](#advanced-using-split-gpg-with-subkeys). If you are generating a new key pair, or if you have a private key that already has a passphrase, you can use `gpg2 --edit-key <key_id>` then `passwd` to set an empty passphrase. Note that `pinentry` might show an error when you try to set an empty passphrase, but it will still make the change. (See [this StackExchange answer](https://unix.stackexchange.com/a/379373) for more information.) Note: The error shows only if you **do not** have graphical pinentry installed."
+msgstr ""

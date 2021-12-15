@@ -1,0 +1,222 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-15 21:10+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../user/templates/debian/debian.md:14
+#: ede32950ea5f4a0b825f04178268cde5
+msgid "The Debian [template](/doc/templates/) is an officially [supported](/doc/supported-versions/#templates) template in Qubes OS. This page is about the standard (or \"full\") Debian template. For the minimal version, please see the [Minimal templates](/doc/templates/minimal/) page. There is also a [Qubes page on the Debian Wiki](https://wiki.debian.org/Qubes)."
+msgstr ""
+
+#: ../user/templates/debian/debian.md:19
+#: 7cfe47512229456d9023425bab8ec172
+msgid "Installing"
+msgstr ""
+
+#: ../user/templates/debian/debian.md:21
+#: 332d226a0e3a4677b7a0e705676f5161
+msgid "To [install](/doc/templates/#installing) a specific Debian template that is not currently installed in your system, use the following command in dom0:"
+msgstr ""
+
+#: ../user/templates/debian/debian.md:27
+#: 89b21a7c8d4b447d841df0ecae3e70bd
+msgid "(Replace `XX` with the Debian version number of the template you wish to install.)"
+msgstr ""
+
+#: ../user/templates/debian/debian.md:29
+#: c83f31938f3046e3bcd8901645747cd6
+msgid "To reinstall a Debian template that is already installed in your system, see [How to Reinstall a template](/doc/reinstall-template/)."
+msgstr ""
+
+#: ../user/templates/debian/debian.md:31
+#: 6d0d51c0886c488a85d96d164fb68048
+msgid "After Installing"
+msgstr ""
+
+#: ../user/templates/debian/debian.md:33
+#: ca5e099dd7d24f1791d195c767226d57
+msgid "After installing a fresh Debian template, we recommend performing the following steps:"
+msgstr ""
+
+#: ../user/templates/debian/debian.md:35
+#: 80cba71980734316bd3e28fa7a738ffb
+msgid "[Update the template](/doc/software-update-vm/)."
+msgstr ""
+
+#: ../user/templates/debian/debian.md:37
+#: 4fe1442110704280ab90b1c4fbc75228
+msgid "[Switch any app qubes that are based on the old template to the new one](/doc/templates/#switching)."
+msgstr ""
+
+#: ../user/templates/debian/debian.md:39
+#: 4091673ed6bf4989b87106945c351150
+msgid "If desired, [uninstall the old template](/doc/templates/#uninstalling)."
+msgstr ""
+
+#: ../user/templates/debian/debian.md:41
+#: 4bce3085d69c462987ac01d765770660
+msgid "Installing software"
+msgstr ""
+
+#: ../user/templates/debian/debian.md:43
+#: 3eb9fea19399435395225b8862b91e16
+msgid "See [How to Install Software](/doc/how-to-install-software/)."
+msgstr ""
+
+#: ../user/templates/debian/debian.md:45
+#: 06834b9e81474a238a4a42633274c4d9
+msgid "Updating"
+msgstr ""
+
+#: ../user/templates/debian/debian.md:47
+#: d203e269aef5402d852ca245c0d4eced
+msgid "For routine daily updates within a given release, see [How to Update](/doc/how-to-update/)."
+msgstr ""
+
+#: ../user/templates/debian/debian.md:49
+#: 33bf7312f9ae4fe4b0d8199d981351f3
+msgid "Upgrading"
+msgstr ""
+
+#: ../user/templates/debian/debian.md:51
+#: 794e9334cc9846d8b2d5f5cdf9dc4f05
+msgid "There are two ways to upgrade your template to a new Debian release:"
+msgstr ""
+
+#: ../user/templates/debian/debian.md:53
+#: 29469f2452984a1da7a49fdb76cccd5e
+msgid "**Recommended:** [Install a fresh template to replace the existing one.](#installing) **This option may be simpler for less experienced users.** After you install the new template, redo all desired template modifications and [switch everything that was set to the old template to the new template](/doc/templates/#switching). You may want to write down the modifications you make to your templates so that you remember what to redo on each fresh install. In the old Debian template, see `/var/log/dpkg.log` and `/var/log/apt/history.log` for logs of package manager actions."
+msgstr ""
+
+#: ../user/templates/debian/debian.md:55
+#: 175d5a0be4374f2b83201ca58556d6ae
+msgid "**Advanced:** [Perform an in-place upgrade of an existing Debian template.](/doc/template/debian/upgrade/) This option will preserve any modifications you've made to the template, **but it may be more complicated for less experienced users.**"
+msgstr ""
+
+#: ../user/templates/debian/debian.md:57
+#: c2fcf9089edc444e847ece922ae9cfbc
+msgid "Release-specific notes"
+msgstr ""
+
+#: ../user/templates/debian/debian.md:59
+#: c41e6d84da5c4e3e8341e5475c229040
+msgid "This section contains notes about specific Debian releases."
+msgstr ""
+
+#: ../user/templates/debian/debian.md:61
+#: 32520a5e45984aee9c7aa145b90095ee
+msgid "Debian 10"
+msgstr ""
+
+#: ../user/templates/debian/debian.md:63
+#: 8af61a27d545470c98cb81e9e06f2850
+msgid "Debian 10 (buster) - minimal:"
+msgstr ""
+
+#: ../user/templates/debian/debian.md:69
+#: 32ec7ed6ace24a78b687ac8a7ecdaec2
+msgid "Debian 10 (buster) - stable:"
+msgstr ""
+
+#: ../user/templates/debian/debian.md:75
+#: 282530420a9241799dde8a3a8a32c24f
+msgid "Starting services"
+msgstr ""
+
+#: ../user/templates/debian/debian.md:77
+#: 0cdd50a96d6e4420a16e4ec1c054ecc9
+msgid "The Debian way (generally) is to start daemons if they are installed. This means that if you install (say) ssh-server in a template, *all* the qubes that use that template will run a ssh server when they start. (They will, naturally, all have the same server key.) This may not be what you want."
+msgstr ""
+
+#: ../user/templates/debian/debian.md:80
+#: a99cca0e2fe841848a3906ab3fe787cc
+msgid "So be very careful when installing software in Templates - if the daemon spawns outbound connections then there is a serious security risk."
+msgstr ""
+
+#: ../user/templates/debian/debian.md:82
+#: 5a3def746dc84fccb366559b15b978fd
+msgid "In general, a reasonable approach would be, (using ssh as example):"
+msgstr ""
+
+#: ../user/templates/debian/debian.md:84
+#: 738fb9485dff431a832392ad8eb7cd13
+msgid "Install the ssh service."
+msgstr ""
+
+#: ../user/templates/debian/debian.md:85
+#: add1b2b9d1a34e6096f3e10c6e94517f
+msgid "`systemctl stop ssh`"
+msgstr ""
+
+#: ../user/templates/debian/debian.md:86
+#: 8a21e4ffa2c4409e9f619fa1525f9a11
+msgid "`systemctl disable ssh`"
+msgstr ""
+
+#: ../user/templates/debian/debian.md:87
+#: ce17b177066b4a9590ed6b03a6dade24
+msgid "`systemctl mask ssh`"
+msgstr ""
+
+#: ../user/templates/debian/debian.md:88
+#: 87b31d9db11745a08c551572c7d2d1d3
+msgid "Close down template"
+msgstr ""
+
+#: ../user/templates/debian/debian.md:90
+#: a398ba547b9e4f97b54d624c70e12e1d
+msgid "Now the ssh service will **NOT** start in qubes based on this template."
+msgstr ""
+
+#: ../user/templates/debian/debian.md:92
+#: 51940d362ec040a885656c105d335f02
+msgid "Where you **DO** want the service to run, put this in `/rw/config/rc.local`:"
+msgstr ""
+
+#: ../user/templates/debian/debian.md:99
+#: 4e47f2a6306f4c0790221a28c85ae136
+msgid "Don't forget to make the file executable."
+msgstr ""
+
+#: ../user/templates/debian/debian.md:101
+#: e39633e62c874f6f9364b08eda0f1f5b
+msgid "Unattended Upgrades"
+msgstr ""
+
+#: ../user/templates/debian/debian.md:103
+#: 0b873bf0f6c24430bddf39f33ccd1c62
+msgid "Some users have noticed that on upgrading to Stretch, the `unattended-upgrade` package is installed."
+msgstr ""
+
+#: ../user/templates/debian/debian.md:105
+#: c8d9964d8917427aa05d2c750439284a
+msgid "This package is pulled in as part of a Recommend chain, and can be purged."
+msgstr ""
+
+#: ../user/templates/debian/debian.md:107
+#: 479aa05e92014b44aecaac908f6572fc
+msgid "The lesson is that you should carefully look at what is being installed to your system, particularly if you run `dist-upgrade`."
+msgstr ""
+
+#: ../user/templates/debian/debian.md:109
+#: 49483f8f0b4e47eba0412c144a6710ab
+msgid "Package installation errors in Qubes 4.0"
+msgstr ""
+
+#: ../user/templates/debian/debian.md:111
+#: c45cf18d407b44188ba7dcbc0f7ec06d
+msgid "If some packages throw installation errors, see [this guide.](/doc/vm-troubleshooting/#fixing-package-installation-errors)"
+msgstr ""

@@ -1,0 +1,82 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-15 21:10+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../user/troubleshooting/hardware-troubleshooting.md:11
+#: 360303edadf94e44badb94483c94bae7
+msgid "Audio doesn't work / Troubleshooting newer hardware"
+msgstr ""
+
+#: ../user/troubleshooting/hardware-troubleshooting.md:13
+#: 3c8f2b42a6ca4f639f445e2785fe1033
+msgid "By default, the kernel that is installed in dom0 comes from the `kernel` package, which is an older Linux LTS kernel. For most cases this works fine since the Linux kernel developers backport fixes to this kernel, but for some newer hardware, you may run into issues. For example, the audio might not work if the sound card is too new for the LTS kernel. To fix this, you can try the `kernel-latest` package -- though be aware that it's less tested! (See [here](/doc/how-to-install-software-in-dom0/#kernel-upgrade) for more information about upgrading kernels in dom0). In dom0:"
+msgstr ""
+
+#: ../user/troubleshooting/hardware-troubleshooting.md:24
+#: 60a0b8d8d91f4e0880b4863449092040
+msgid "Reboot when it's done installing. You can double-check that the boot used the newer kernel with `uname -r`, which prints the version of the currently-running kernel. Compare this with the output of `rpm -q kernel`. If the start of `uname -r` matches one of the versions printed by `rpm`, then you're still using the Linux LTS kernel, and you'll probably need to manually fix your boot settings. If `uname -r` reports a higher version number, then you've successfully booted with the kernel shipped by `kernel-latest`."
+msgstr ""
+
+#: ../user/troubleshooting/hardware-troubleshooting.md:30
+#: b67492a556974b98b2fd765b2d677ac0
+msgid "\"Unsupported Hardware Detected\" error"
+msgstr ""
+
+#: ../user/troubleshooting/hardware-troubleshooting.md:32
+#: 6daa7c3a89f6466792b6bb13b58c2243
+msgid "See [Installation Troubleshooting](/doc/installation-troubleshooting/#unsupported-hardware-detected-error)."
+msgstr ""
+
+#: ../user/troubleshooting/hardware-troubleshooting.md:34
+#: cc584ab28916436d9ebbd9c777646d37
+msgid "Keyboard layout settings not behaving correctly"
+msgstr ""
+
+#: ../user/troubleshooting/hardware-troubleshooting.md:36
+#: ed6897d8968849c6a89feed429d350b7
+msgid "The best approach is to choose the right keyboard layout during the installation process. But if you want to change things afterwards, you can try this workaround."
+msgstr ""
+
+#: ../user/troubleshooting/hardware-troubleshooting.md:39
+#: 986ecf50e01743e6bf63787fa89937ea
+msgid "Assuming XFCE desktop: in `Q` → `System Tools` → `Keyboard` → `Layout`, leave the checkbox \"`Use system defaults`\" checked. Do not customize the keyboard layout here."
+msgstr ""
+
+#: ../user/troubleshooting/hardware-troubleshooting.md:41
+#: c93f0a301fb547ca9fe4de90d38de235
+msgid "Set the system-wide layout and options for `xorg` with the `localectl` command in `dom0`. You can use `localectl --help` as a starting point."
+msgstr ""
+
+#: ../user/troubleshooting/hardware-troubleshooting.md:43
+#: 2e0d1366e2634087aef4b73417ae6cb6
+msgid "Example: `localectl set-x11-keymap us dell ,qwerty compose:caps`."
+msgstr ""
+
+#: ../user/troubleshooting/hardware-troubleshooting.md:45
+#: b925df9798b74e2083a7ac87c1fea49a
+msgid "This generates the appropriate configuration in `/etc/X11/xorg.conf.d/00-keyboard.conf`. This file is auto-generated. Do not edit it by hand, unless you know what you are doing."
+msgstr ""
+
+#: ../user/troubleshooting/hardware-troubleshooting.md:49
+#: 3b2b0c2b2bd54e2b98247a2cf4028803
+msgid "Restarting `xorg` is required. The most straightforward way is to reboot the system."
+msgstr ""
+
+#: ../user/troubleshooting/hardware-troubleshooting.md:52
+#: ddea14b5880742339acca7df7ff17edf
+msgid "More information in [this discussion](https://groups.google.com/d/topic/qubes-devel/d8ZQ_62asKI/discussion) and [this GitHub issue](https://github.com/QubesOS/qubes-issues/issues/1396)."
+msgstr ""
