@@ -112,6 +112,16 @@ html_theme_options = {
 #    'sphinx_jekyll_builder'
 #]
 
+extensions = [
+    'sphinx.ext.duration',
+    'sphinx.ext.doctest',
+    'sphinx.ext.autodoc',
+    'sphinx.ext.autosummary',
+    'sphinx.ext.intersphinx',
+]
+
+epub_show_urls = 'footnote'
+latex_show_urls ='footnote'
 source_parsers = {
    '.md': 'recommonmark.parser.CommonMarkParser',
 }
