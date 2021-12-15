@@ -120,3 +120,5 @@ gettext_uuid=True
 gettext_compact=False
 
 language="de"
+locale_dirs=['localce']
+
