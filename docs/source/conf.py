@@ -93,25 +93,25 @@ html_static_path = ['_static']
 
 
 #html_theme = 'classic'
-#html_theme = 'alabaster'
-#html_theme_options = {
-#    'externalrefs': True, 
-    #'bgcolor': '#eff2f6',
-#    'bgcolor': 'white',
-#    'display_version': True,
-#    'linkcolor': '#99bfff',
-#    'textcolor': '#000000',
-#    'visitedlinkcolor': '#7b7b7b',
-#    'style_nav_header_background': 'white',
-#    'bodyfont': '"Open Sans", Arial, sans-serif',
-#    'codebgcolor': '$color-qube-light',
-#    'codebgcolor': 'grey'
-#}
-
-html_theme = 'sphinx_rtd_theme'
+html_theme = 'alabaster'
 html_theme_options = {
-    'navigation_depth': -1, 
+    'externalrefs': True, 
+    #'bgcolor': '#eff2f6',
+    'bgcolor': 'white',
+    'display_version': True,
+    'linkcolor': '#99bfff',
+    'textcolor': '#000000',
+    'visitedlinkcolor': '#7b7b7b',
+    'style_nav_header_background': 'white',
+    'bodyfont': '"Open Sans", Arial, sans-serif',
+    'codebgcolor': '$color-qube-light',
+    'codebgcolor': 'grey'
 }
+
+#html_theme = 'sphinx_rtd_theme'
+#html_theme_options = {
+#    'navigation_depth': -1, 
+#}
 
 
 
