@@ -92,8 +92,8 @@ html_static_path = ['_static']
 
 
 
-#html_theme = 'classic'
-html_theme = 'alabaster'
+html_theme = 'classic'
+#html_theme = 'alabaster'
 html_theme_options = {
     'externalrefs': True, 
     #'bgcolor': '#eff2f6',
@@ -104,7 +104,7 @@ html_theme_options = {
     'visitedlinkcolor': '#7b7b7b',
     'style_nav_header_background': 'white',
     'bodyfont': '"Open Sans", Arial, sans-serif',
-    'codebgcolor': '$color-qube-light',
+    'codebgcolor': 'white',
     'codebgcolor': 'grey'
 }
 
