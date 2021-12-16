@@ -1,0 +1,4 @@
+[submodule "_doc"]
+	path = _doc
+	url = https://github.com/maiska/qubes-doc.testrun.git
+	branch = classic-theme
