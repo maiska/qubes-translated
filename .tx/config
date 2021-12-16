@@ -1,0 +1,1365 @@
+[main]
+host = https://www.transifex.com
+
+[qubes-translation-rtd._doc__build_gettext_README]
+file_filter = locale/<lang>/LC_MESSAGES/README.po
+source_file = _doc/_build/gettext/README.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_CONTRIBUTING]
+file_filter = locale/<lang>/LC_MESSAGES/CONTRIBUTING.po
+source_file = _doc/_build/gettext/CONTRIBUTING.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_doc]
+file_filter = locale/<lang>/LC_MESSAGES/doc.po
+source_file = _doc/_build/gettext/doc.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_security-in-qubes_u2f-proxy]
+file_filter = locale/<lang>/LC_MESSAGES/user/security-in-qubes/u2f-proxy.po
+source_file = _doc/_build/gettext/user/security-in-qubes/u2f-proxy.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_security-in-qubes_anti-evil-maid]
+file_filter = locale/<lang>/LC_MESSAGES/user/security-in-qubes/anti-evil-maid.po
+source_file = _doc/_build/gettext/user/security-in-qubes/anti-evil-maid.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_security-in-qubes_split-gpg]
+file_filter = locale/<lang>/LC_MESSAGES/user/security-in-qubes/split-gpg.po
+source_file = _doc/_build/gettext/user/security-in-qubes/split-gpg.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_security-in-qubes_firewall]
+file_filter = locale/<lang>/LC_MESSAGES/user/security-in-qubes/firewall.po
+source_file = _doc/_build/gettext/user/security-in-qubes/firewall.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_security-in-qubes_yubi-key]
+file_filter = locale/<lang>/LC_MESSAGES/user/security-in-qubes/yubi-key.po
+source_file = _doc/_build/gettext/user/security-in-qubes/yubi-key.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_security-in-qubes_device-handling-security]
+file_filter = locale/<lang>/LC_MESSAGES/user/security-in-qubes/device-handling-security.po
+source_file = _doc/_build/gettext/user/security-in-qubes/device-handling-security.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_security-in-qubes_data-leaks]
+file_filter = locale/<lang>/LC_MESSAGES/user/security-in-qubes/data-leaks.po
+source_file = _doc/_build/gettext/user/security-in-qubes/data-leaks.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_security-in-qubes_vm-sudo]
+file_filter = locale/<lang>/LC_MESSAGES/user/security-in-qubes/vm-sudo.po
+source_file = _doc/_build/gettext/user/security-in-qubes/vm-sudo.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_how-to-guides_how-to-use-usb-devices]
+file_filter = locale/<lang>/LC_MESSAGES/user/how-to-guides/how-to-use-usb-devices.po
+source_file = _doc/_build/gettext/user/how-to-guides/how-to-use-usb-devices.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_how-to-guides_backup-emergency-restore-v4]
+file_filter = locale/<lang>/LC_MESSAGES/user/how-to-guides/backup-emergency-restore-v4.po
+source_file = _doc/_build/gettext/user/how-to-guides/backup-emergency-restore-v4.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_how-to-guides_how-to-update]
+file_filter = locale/<lang>/LC_MESSAGES/user/how-to-guides/how-to-update.po
+source_file = _doc/_build/gettext/user/how-to-guides/how-to-update.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_how-to-guides_how-to-use-block-storage-devices]
+file_filter = locale/<lang>/LC_MESSAGES/user/how-to-guides/how-to-use-block-storage-devices.po
+source_file = _doc/_build/gettext/user/how-to-guides/how-to-use-block-storage-devices.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_how-to-guides_how-to-enter-fullscreen-mode]
+file_filter = locale/<lang>/LC_MESSAGES/user/how-to-guides/how-to-enter-fullscreen-mode.po
+source_file = _doc/_build/gettext/user/how-to-guides/how-to-enter-fullscreen-mode.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_how-to-guides_how-to-copy-and-move-files]
+file_filter = locale/<lang>/LC_MESSAGES/user/how-to-guides/how-to-copy-and-move-files.po
+source_file = _doc/_build/gettext/user/how-to-guides/how-to-copy-and-move-files.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_how-to-guides_backup-emergency-restore-v3]
+file_filter = locale/<lang>/LC_MESSAGES/user/how-to-guides/backup-emergency-restore-v3.po
+source_file = _doc/_build/gettext/user/how-to-guides/backup-emergency-restore-v3.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_how-to-guides_how-to-copy-and-paste-text]
+file_filter = locale/<lang>/LC_MESSAGES/user/how-to-guides/how-to-copy-and-paste-text.po
+source_file = _doc/_build/gettext/user/how-to-guides/how-to-copy-and-paste-text.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_how-to-guides_how-to-use-optical-discs]
+file_filter = locale/<lang>/LC_MESSAGES/user/how-to-guides/how-to-use-optical-discs.po
+source_file = _doc/_build/gettext/user/how-to-guides/how-to-use-optical-discs.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_how-to-guides_backup-emergency-restore-v2]
+file_filter = locale/<lang>/LC_MESSAGES/user/how-to-guides/backup-emergency-restore-v2.po
+source_file = _doc/_build/gettext/user/how-to-guides/backup-emergency-restore-v2.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_how-to-guides_how-to-use-disposables]
+file_filter = locale/<lang>/LC_MESSAGES/user/how-to-guides/how-to-use-disposables.po
+source_file = _doc/_build/gettext/user/how-to-guides/how-to-use-disposables.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_how-to-guides_how-to-install-software]
+file_filter = locale/<lang>/LC_MESSAGES/user/how-to-guides/how-to-install-software.po
+source_file = _doc/_build/gettext/user/how-to-guides/how-to-install-software.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_how-to-guides_how-to-copy-from-dom0]
+file_filter = locale/<lang>/LC_MESSAGES/user/how-to-guides/how-to-copy-from-dom0.po
+source_file = _doc/_build/gettext/user/how-to-guides/how-to-copy-from-dom0.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_how-to-guides_how-to-use-pci-devices]
+file_filter = locale/<lang>/LC_MESSAGES/user/how-to-guides/how-to-use-pci-devices.po
+source_file = _doc/_build/gettext/user/how-to-guides/how-to-use-pci-devices.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_how-to-guides_how-to-get-started]
+file_filter = locale/<lang>/LC_MESSAGES/user/how-to-guides/how-to-get-started.po
+source_file = _doc/_build/gettext/user/how-to-guides/how-to-get-started.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_how-to-guides_how-to-back-up-restore-and-migrate]
+file_filter = locale/<lang>/LC_MESSAGES/user/how-to-guides/how-to-back-up-restore-and-migrate.po
+source_file = _doc/_build/gettext/user/how-to-guides/how-to-back-up-restore-and-migrate.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_how-to-guides_how-to-use-devices]
+file_filter = locale/<lang>/LC_MESSAGES/user/how-to-guides/how-to-use-devices.po
+source_file = _doc/_build/gettext/user/how-to-guides/how-to-use-devices.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_templates_how-to-reinstall-a-template]
+file_filter = locale/<lang>/LC_MESSAGES/user/templates/how-to-reinstall-a-template.po
+source_file = _doc/_build/gettext/user/templates/how-to-reinstall-a-template.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_templates_templates]
+file_filter = locale/<lang>/LC_MESSAGES/user/templates/templates.po
+source_file = _doc/_build/gettext/user/templates/templates.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_templates_minimal-templates]
+file_filter = locale/<lang>/LC_MESSAGES/user/templates/minimal-templates.po
+source_file = _doc/_build/gettext/user/templates/minimal-templates.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_templates_xfce-templates]
+file_filter = locale/<lang>/LC_MESSAGES/user/templates/xfce-templates.po
+source_file = _doc/_build/gettext/user/templates/xfce-templates.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_templates_debian_debian]
+file_filter = locale/<lang>/LC_MESSAGES/user/templates/debian/debian.po
+source_file = _doc/_build/gettext/user/templates/debian/debian.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_templates_debian_debian-upgrade]
+file_filter = locale/<lang>/LC_MESSAGES/user/templates/debian/debian-upgrade.po
+source_file = _doc/_build/gettext/user/templates/debian/debian-upgrade.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_templates_fedora_fedora]
+file_filter = locale/<lang>/LC_MESSAGES/user/templates/fedora/fedora.po
+source_file = _doc/_build/gettext/user/templates/fedora/fedora.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_templates_fedora_fedora-upgrade]
+file_filter = locale/<lang>/LC_MESSAGES/user/templates/fedora/fedora-upgrade.po
+source_file = _doc/_build/gettext/user/templates/fedora/fedora-upgrade.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_troubleshooting_usb-troubleshooting]
+file_filter = locale/<lang>/LC_MESSAGES/user/troubleshooting/usb-troubleshooting.po
+source_file = _doc/_build/gettext/user/troubleshooting/usb-troubleshooting.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_troubleshooting_hardware-troubleshooting]
+file_filter = locale/<lang>/LC_MESSAGES/user/troubleshooting/hardware-troubleshooting.po
+source_file = _doc/_build/gettext/user/troubleshooting/hardware-troubleshooting.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_troubleshooting_autostart-troubleshooting]
+file_filter = locale/<lang>/LC_MESSAGES/user/troubleshooting/autostart-troubleshooting.po
+source_file = _doc/_build/gettext/user/troubleshooting/autostart-troubleshooting.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_troubleshooting_updating-debian-and-whonix]
+file_filter = locale/<lang>/LC_MESSAGES/user/troubleshooting/updating-debian-and-whonix.po
+source_file = _doc/_build/gettext/user/troubleshooting/updating-debian-and-whonix.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_troubleshooting_vpn-troubleshooting]
+file_filter = locale/<lang>/LC_MESSAGES/user/troubleshooting/vpn-troubleshooting.po
+source_file = _doc/_build/gettext/user/troubleshooting/vpn-troubleshooting.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_troubleshooting_vm-troubleshooting]
+file_filter = locale/<lang>/LC_MESSAGES/user/troubleshooting/vm-troubleshooting.po
+source_file = _doc/_build/gettext/user/troubleshooting/vm-troubleshooting.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_troubleshooting_gui-troubleshooting]
+file_filter = locale/<lang>/LC_MESSAGES/user/troubleshooting/gui-troubleshooting.po
+source_file = _doc/_build/gettext/user/troubleshooting/gui-troubleshooting.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_troubleshooting_installation-troubleshooting]
+file_filter = locale/<lang>/LC_MESSAGES/user/troubleshooting/installation-troubleshooting.po
+source_file = _doc/_build/gettext/user/troubleshooting/installation-troubleshooting.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_troubleshooting_resume-suspend-troubleshooting]
+file_filter = locale/<lang>/LC_MESSAGES/user/troubleshooting/resume-suspend-troubleshooting.po
+source_file = _doc/_build/gettext/user/troubleshooting/resume-suspend-troubleshooting.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_troubleshooting_app-menu-shortcut-troubleshooting]
+file_filter = locale/<lang>/LC_MESSAGES/user/troubleshooting/app-menu-shortcut-troubleshooting.po
+source_file = _doc/_build/gettext/user/troubleshooting/app-menu-shortcut-troubleshooting.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_troubleshooting_uefi-troubleshooting]
+file_filter = locale/<lang>/LC_MESSAGES/user/troubleshooting/uefi-troubleshooting.po
+source_file = _doc/_build/gettext/user/troubleshooting/uefi-troubleshooting.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_troubleshooting_pci-troubleshooting]
+file_filter = locale/<lang>/LC_MESSAGES/user/troubleshooting/pci-troubleshooting.po
+source_file = _doc/_build/gettext/user/troubleshooting/pci-troubleshooting.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_troubleshooting_media-troubleshooting]
+file_filter = locale/<lang>/LC_MESSAGES/user/troubleshooting/media-troubleshooting.po
+source_file = _doc/_build/gettext/user/troubleshooting/media-troubleshooting.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_troubleshooting_update-troubleshooting]
+file_filter = locale/<lang>/LC_MESSAGES/user/troubleshooting/update-troubleshooting.po
+source_file = _doc/_build/gettext/user/troubleshooting/update-troubleshooting.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_troubleshooting_disk-troubleshooting]
+file_filter = locale/<lang>/LC_MESSAGES/user/troubleshooting/disk-troubleshooting.po
+source_file = _doc/_build/gettext/user/troubleshooting/disk-troubleshooting.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_troubleshooting_hvm-troubleshooting]
+file_filter = locale/<lang>/LC_MESSAGES/user/troubleshooting/hvm-troubleshooting.po
+source_file = _doc/_build/gettext/user/troubleshooting/hvm-troubleshooting.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_hardware_hcl]
+file_filter = locale/<lang>/LC_MESSAGES/user/hardware/hcl.po
+source_file = _doc/_build/gettext/user/hardware/hcl.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_hardware_certified-hardware]
+file_filter = locale/<lang>/LC_MESSAGES/user/hardware/certified-hardware.po
+source_file = _doc/_build/gettext/user/hardware/certified-hardware.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_hardware_system-requirements]
+file_filter = locale/<lang>/LC_MESSAGES/user/hardware/system-requirements.po
+source_file = _doc/_build/gettext/user/hardware/system-requirements.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_hardware_hardware-testing]
+file_filter = locale/<lang>/LC_MESSAGES/user/hardware/hardware-testing.po
+source_file = _doc/_build/gettext/user/hardware/hardware-testing.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_downloading-installing-upgrading_download-mirrors]
+file_filter = locale/<lang>/LC_MESSAGES/user/downloading-installing-upgrading/download-mirrors.po
+source_file = _doc/_build/gettext/user/downloading-installing-upgrading/download-mirrors.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_downloading-installing-upgrading_custom-install]
+file_filter = locale/<lang>/LC_MESSAGES/user/downloading-installing-upgrading/custom-install.po
+source_file = _doc/_build/gettext/user/downloading-installing-upgrading/custom-install.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_downloading-installing-upgrading_installation-guide]
+file_filter = locale/<lang>/LC_MESSAGES/user/downloading-installing-upgrading/installation-guide.po
+source_file = _doc/_build/gettext/user/downloading-installing-upgrading/installation-guide.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_downloading-installing-upgrading_testing]
+file_filter = locale/<lang>/LC_MESSAGES/user/downloading-installing-upgrading/testing.po
+source_file = _doc/_build/gettext/user/downloading-installing-upgrading/testing.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_downloading-installing-upgrading_supported-versions]
+file_filter = locale/<lang>/LC_MESSAGES/user/downloading-installing-upgrading/supported-versions.po
+source_file = _doc/_build/gettext/user/downloading-installing-upgrading/supported-versions.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_downloading-installing-upgrading_install-security]
+file_filter = locale/<lang>/LC_MESSAGES/user/downloading-installing-upgrading/install-security.po
+source_file = _doc/_build/gettext/user/downloading-installing-upgrading/install-security.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_downloading-installing-upgrading_downloads]
+file_filter = locale/<lang>/LC_MESSAGES/user/downloading-installing-upgrading/downloads.po
+source_file = _doc/_build/gettext/user/downloading-installing-upgrading/downloads.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_downloading-installing-upgrading_upgrade_upgrade-to-r2b2]
+file_filter = locale/<lang>/LC_MESSAGES/user/downloading-installing-upgrading/upgrade/upgrade-to-r2b2.po
+source_file = _doc/_build/gettext/user/downloading-installing-upgrading/upgrade/upgrade-to-r2b2.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_downloading-installing-upgrading_upgrade_upgrade-to-r3_1]
+file_filter = locale/<lang>/LC_MESSAGES/user/downloading-installing-upgrading/upgrade/upgrade-to-r3_1.po
+source_file = _doc/_build/gettext/user/downloading-installing-upgrading/upgrade/upgrade-to-r3_1.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_downloading-installing-upgrading_upgrade_upgrade]
+file_filter = locale/<lang>/LC_MESSAGES/user/downloading-installing-upgrading/upgrade/upgrade.po
+source_file = _doc/_build/gettext/user/downloading-installing-upgrading/upgrade/upgrade.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_downloading-installing-upgrading_upgrade_upgrade-to-r3_2]
+file_filter = locale/<lang>/LC_MESSAGES/user/downloading-installing-upgrading/upgrade/upgrade-to-r3_2.po
+source_file = _doc/_build/gettext/user/downloading-installing-upgrading/upgrade/upgrade-to-r3_2.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_downloading-installing-upgrading_upgrade_upgrade-to-r4_0]
+file_filter = locale/<lang>/LC_MESSAGES/user/downloading-installing-upgrading/upgrade/upgrade-to-r4_0.po
+source_file = _doc/_build/gettext/user/downloading-installing-upgrading/upgrade/upgrade-to-r4_0.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_downloading-installing-upgrading_upgrade_upgrade-to-r2b3]
+file_filter = locale/<lang>/LC_MESSAGES/user/downloading-installing-upgrading/upgrade/upgrade-to-r2b3.po
+source_file = _doc/_build/gettext/user/downloading-installing-upgrading/upgrade/upgrade-to-r2b3.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_downloading-installing-upgrading_upgrade_upgrade-to-r3_0]
+file_filter = locale/<lang>/LC_MESSAGES/user/downloading-installing-upgrading/upgrade/upgrade-to-r3_0.po
+source_file = _doc/_build/gettext/user/downloading-installing-upgrading/upgrade/upgrade-to-r3_0.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_downloading-installing-upgrading_upgrade_upgrade-to-r2b1]
+file_filter = locale/<lang>/LC_MESSAGES/user/downloading-installing-upgrading/upgrade/upgrade-to-r2b1.po
+source_file = _doc/_build/gettext/user/downloading-installing-upgrading/upgrade/upgrade-to-r2b1.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_downloading-installing-upgrading_upgrade_upgrade-to-r2]
+file_filter = locale/<lang>/LC_MESSAGES/user/downloading-installing-upgrading/upgrade/upgrade-to-r2.po
+source_file = _doc/_build/gettext/user/downloading-installing-upgrading/upgrade/upgrade-to-r2.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_advanced-topics_gui-configuration]
+file_filter = locale/<lang>/LC_MESSAGES/user/advanced-topics/gui-configuration.po
+source_file = _doc/_build/gettext/user/advanced-topics/gui-configuration.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_advanced-topics_how-to-install-software-in-dom0]
+file_filter = locale/<lang>/LC_MESSAGES/user/advanced-topics/how-to-install-software-in-dom0.po
+source_file = _doc/_build/gettext/user/advanced-topics/how-to-install-software-in-dom0.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_advanced-topics_volume-backup-revert]
+file_filter = locale/<lang>/LC_MESSAGES/user/advanced-topics/volume-backup-revert.po
+source_file = _doc/_build/gettext/user/advanced-topics/volume-backup-revert.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_advanced-topics_bind-dirs]
+file_filter = locale/<lang>/LC_MESSAGES/user/advanced-topics/bind-dirs.po
+source_file = _doc/_build/gettext/user/advanced-topics/bind-dirs.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_advanced-topics_config-files]
+file_filter = locale/<lang>/LC_MESSAGES/user/advanced-topics/config-files.po
+source_file = _doc/_build/gettext/user/advanced-topics/config-files.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_advanced-topics_qubes-service]
+file_filter = locale/<lang>/LC_MESSAGES/user/advanced-topics/qubes-service.po
+source_file = _doc/_build/gettext/user/advanced-topics/qubes-service.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_advanced-topics_usb-qubes]
+file_filter = locale/<lang>/LC_MESSAGES/user/advanced-topics/usb-qubes.po
+source_file = _doc/_build/gettext/user/advanced-topics/usb-qubes.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_advanced-topics_rpc-policy]
+file_filter = locale/<lang>/LC_MESSAGES/user/advanced-topics/rpc-policy.po
+source_file = _doc/_build/gettext/user/advanced-topics/rpc-policy.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_advanced-topics_kde]
+file_filter = locale/<lang>/LC_MESSAGES/user/advanced-topics/kde.po
+source_file = _doc/_build/gettext/user/advanced-topics/kde.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_advanced-topics_windows]
+file_filter = locale/<lang>/LC_MESSAGES/user/advanced-topics/windows.po
+source_file = _doc/_build/gettext/user/advanced-topics/windows.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_advanced-topics_managing-vm-kernels]
+file_filter = locale/<lang>/LC_MESSAGES/user/advanced-topics/managing-vm-kernels.po
+source_file = _doc/_build/gettext/user/advanced-topics/managing-vm-kernels.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_advanced-topics_resize-disk-image]
+file_filter = locale/<lang>/LC_MESSAGES/user/advanced-topics/resize-disk-image.po
+source_file = _doc/_build/gettext/user/advanced-topics/resize-disk-image.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_advanced-topics_standalones-and-hvms]
+file_filter = locale/<lang>/LC_MESSAGES/user/advanced-topics/standalones-and-hvms.po
+source_file = _doc/_build/gettext/user/advanced-topics/standalones-and-hvms.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_advanced-topics_i3]
+file_filter = locale/<lang>/LC_MESSAGES/user/advanced-topics/i3.po
+source_file = _doc/_build/gettext/user/advanced-topics/i3.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_advanced-topics_salt]
+file_filter = locale/<lang>/LC_MESSAGES/user/advanced-topics/salt.po
+source_file = _doc/_build/gettext/user/advanced-topics/salt.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_advanced-topics_mount-from-other-os]
+file_filter = locale/<lang>/LC_MESSAGES/user/advanced-topics/mount-from-other-os.po
+source_file = _doc/_build/gettext/user/advanced-topics/mount-from-other-os.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_advanced-topics_disposable-customization]
+file_filter = locale/<lang>/LC_MESSAGES/user/advanced-topics/disposable-customization.po
+source_file = _doc/_build/gettext/user/advanced-topics/disposable-customization.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_advanced-topics_awesomewm]
+file_filter = locale/<lang>/LC_MESSAGES/user/advanced-topics/awesomewm.po
+source_file = _doc/_build/gettext/user/advanced-topics/awesomewm.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_advanced-topics_installing-contributed-packages]
+file_filter = locale/<lang>/LC_MESSAGES/user/advanced-topics/installing-contributed-packages.po
+source_file = _doc/_build/gettext/user/advanced-topics/installing-contributed-packages.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_advanced-topics_secondary-storage]
+file_filter = locale/<lang>/LC_MESSAGES/user/advanced-topics/secondary-storage.po
+source_file = _doc/_build/gettext/user/advanced-topics/secondary-storage.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_reference_glossary]
+file_filter = locale/<lang>/LC_MESSAGES/user/reference/glossary.po
+source_file = _doc/_build/gettext/user/reference/glossary.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_user_reference_tools]
+file_filter = locale/<lang>/LC_MESSAGES/user/reference/tools.po
+source_file = _doc/_build/gettext/user/reference/tools.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_developer_debugging_windows-debugging]
+file_filter = locale/<lang>/LC_MESSAGES/developer/debugging/windows-debugging.po
+source_file = _doc/_build/gettext/developer/debugging/windows-debugging.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_developer_debugging_mount-lvm-image]
+file_filter = locale/<lang>/LC_MESSAGES/developer/debugging/mount-lvm-image.po
+source_file = _doc/_build/gettext/developer/debugging/mount-lvm-image.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_developer_debugging_vm-interface]
+file_filter = locale/<lang>/LC_MESSAGES/developer/debugging/vm-interface.po
+source_file = _doc/_build/gettext/developer/debugging/vm-interface.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_developer_debugging_automated-tests]
+file_filter = locale/<lang>/LC_MESSAGES/developer/debugging/automated-tests.po
+source_file = _doc/_build/gettext/developer/debugging/automated-tests.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_developer_debugging_test-bench]
+file_filter = locale/<lang>/LC_MESSAGES/developer/debugging/test-bench.po
+source_file = _doc/_build/gettext/developer/debugging/test-bench.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_developer_debugging_profiling]
+file_filter = locale/<lang>/LC_MESSAGES/developer/debugging/profiling.po
+source_file = _doc/_build/gettext/developer/debugging/profiling.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_developer_debugging_safe-remote-ttys]
+file_filter = locale/<lang>/LC_MESSAGES/developer/debugging/safe-remote-ttys.po
+source_file = _doc/_build/gettext/developer/debugging/safe-remote-ttys.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_developer_building_development-workflow]
+file_filter = locale/<lang>/LC_MESSAGES/developer/building/development-workflow.po
+source_file = _doc/_build/gettext/developer/building/development-workflow.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_developer_building_qubes-template-configs]
+file_filter = locale/<lang>/LC_MESSAGES/developer/building/qubes-template-configs.po
+source_file = _doc/_build/gettext/developer/building/qubes-template-configs.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_developer_building_qubes-builder]
+file_filter = locale/<lang>/LC_MESSAGES/developer/building/qubes-builder.po
+source_file = _doc/_build/gettext/developer/building/qubes-builder.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_developer_building_qubes-builder-details]
+file_filter = locale/<lang>/LC_MESSAGES/developer/building/qubes-builder-details.po
+source_file = _doc/_build/gettext/developer/building/qubes-builder-details.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_developer_building_qubes-iso-building]
+file_filter = locale/<lang>/LC_MESSAGES/developer/building/qubes-iso-building.po
+source_file = _doc/_build/gettext/developer/building/qubes-iso-building.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_developer_code_source-code]
+file_filter = locale/<lang>/LC_MESSAGES/developer/code/source-code.po
+source_file = _doc/_build/gettext/developer/code/source-code.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_developer_code_code-signing]
+file_filter = locale/<lang>/LC_MESSAGES/developer/code/code-signing.po
+source_file = _doc/_build/gettext/developer/code/code-signing.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_developer_code_license]
+file_filter = locale/<lang>/LC_MESSAGES/developer/code/license.po
+source_file = _doc/_build/gettext/developer/code/license.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_developer_code_coding-style]
+file_filter = locale/<lang>/LC_MESSAGES/developer/code/coding-style.po
+source_file = _doc/_build/gettext/developer/code/coding-style.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_developer_system_storage-pools]
+file_filter = locale/<lang>/LC_MESSAGES/developer/system/storage-pools.po
+source_file = _doc/_build/gettext/developer/system/storage-pools.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_developer_system_qubes-core-admin]
+file_filter = locale/<lang>/LC_MESSAGES/developer/system/qubes-core-admin.po
+source_file = _doc/_build/gettext/developer/system/qubes-core-admin.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_developer_system_networking]
+file_filter = locale/<lang>/LC_MESSAGES/developer/system/networking.po
+source_file = _doc/_build/gettext/developer/system/networking.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_developer_system_qubes-core-stack]
+file_filter = locale/<lang>/LC_MESSAGES/developer/system/qubes-core-stack.po
+source_file = _doc/_build/gettext/developer/system/qubes-core-stack.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_developer_system_security-design-goals]
+file_filter = locale/<lang>/LC_MESSAGES/developer/system/security-design-goals.po
+source_file = _doc/_build/gettext/developer/system/security-design-goals.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_developer_system_security-critical-code]
+file_filter = locale/<lang>/LC_MESSAGES/developer/system/security-critical-code.po
+source_file = _doc/_build/gettext/developer/system/security-critical-code.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_developer_system_gui]
+file_filter = locale/<lang>/LC_MESSAGES/developer/system/gui.po
+source_file = _doc/_build/gettext/developer/system/gui.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_developer_system_system-doc]
+file_filter = locale/<lang>/LC_MESSAGES/developer/system/system-doc.po
+source_file = _doc/_build/gettext/developer/system/system-doc.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_developer_system_architecture]
+file_filter = locale/<lang>/LC_MESSAGES/developer/system/architecture.po
+source_file = _doc/_build/gettext/developer/system/architecture.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_developer_system_template-implementation]
+file_filter = locale/<lang>/LC_MESSAGES/developer/system/template-implementation.po
+source_file = _doc/_build/gettext/developer/system/template-implementation.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_developer_system_qubes-core-admin-client]
+file_filter = locale/<lang>/LC_MESSAGES/developer/system/qubes-core-admin-client.po
+source_file = _doc/_build/gettext/developer/system/qubes-core-admin-client.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_developer_system_audio]
+file_filter = locale/<lang>/LC_MESSAGES/developer/system/audio.po
+source_file = _doc/_build/gettext/developer/system/audio.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_developer_services_admin-api]
+file_filter = locale/<lang>/LC_MESSAGES/developer/services/admin-api.po
+source_file = _doc/_build/gettext/developer/services/admin-api.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_developer_services_qfilecopy]
+file_filter = locale/<lang>/LC_MESSAGES/developer/services/qfilecopy.po
+source_file = _doc/_build/gettext/developer/services/qfilecopy.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_developer_services_disposablevm-implementation]
+file_filter = locale/<lang>/LC_MESSAGES/developer/services/disposablevm-implementation.po
+source_file = _doc/_build/gettext/developer/services/disposablevm-implementation.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_developer_services_qmemman]
+file_filter = locale/<lang>/LC_MESSAGES/developer/services/qmemman.po
+source_file = _doc/_build/gettext/developer/services/qmemman.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_developer_services_qfileexchgd]
+file_filter = locale/<lang>/LC_MESSAGES/developer/services/qfileexchgd.po
+source_file = _doc/_build/gettext/developer/services/qfileexchgd.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_developer_services_qrexec-socket-services]
+file_filter = locale/<lang>/LC_MESSAGES/developer/services/qrexec-socket-services.po
+source_file = _doc/_build/gettext/developer/services/qrexec-socket-services.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_developer_services_qrexec2]
+file_filter = locale/<lang>/LC_MESSAGES/developer/services/qrexec2.po
+source_file = _doc/_build/gettext/developer/services/qrexec2.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_developer_services_dom0-secure-updates]
+file_filter = locale/<lang>/LC_MESSAGES/developer/services/dom0-secure-updates.po
+source_file = _doc/_build/gettext/developer/services/dom0-secure-updates.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_developer_services_qrexec-internals]
+file_filter = locale/<lang>/LC_MESSAGES/developer/services/qrexec-internals.po
+source_file = _doc/_build/gettext/developer/services/qrexec-internals.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_developer_services_admin-api-table]
+file_filter = locale/<lang>/LC_MESSAGES/developer/services/admin-api-table.po
+source_file = _doc/_build/gettext/developer/services/admin-api-table.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_developer_services_qrexec]
+file_filter = locale/<lang>/LC_MESSAGES/developer/services/qrexec.po
+source_file = _doc/_build/gettext/developer/services/qrexec.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_developer_general_devel-books]
+file_filter = locale/<lang>/LC_MESSAGES/developer/general/devel-books.po
+source_file = _doc/_build/gettext/developer/general/devel-books.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_developer_general_gsod]
+file_filter = locale/<lang>/LC_MESSAGES/developer/general/gsod.po
+source_file = _doc/_build/gettext/developer/general/gsod.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_developer_general_package-contributions]
+file_filter = locale/<lang>/LC_MESSAGES/developer/general/package-contributions.po
+source_file = _doc/_build/gettext/developer/general/package-contributions.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_developer_general_join]
+file_filter = locale/<lang>/LC_MESSAGES/developer/general/join.po
+source_file = _doc/_build/gettext/developer/general/join.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_developer_general_doc-guidelines]
+file_filter = locale/<lang>/LC_MESSAGES/developer/general/doc-guidelines.po
+source_file = _doc/_build/gettext/developer/general/doc-guidelines.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_developer_general_usability-ux]
+file_filter = locale/<lang>/LC_MESSAGES/developer/general/usability-ux.po
+source_file = _doc/_build/gettext/developer/general/usability-ux.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_developer_general_gsoc]
+file_filter = locale/<lang>/LC_MESSAGES/developer/general/gsoc.po
+source_file = _doc/_build/gettext/developer/general/gsoc.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_developer_general_style-guide]
+file_filter = locale/<lang>/LC_MESSAGES/developer/general/style-guide.po
+source_file = _doc/_build/gettext/developer/general/style-guide.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_developer_releases_version-scheme]
+file_filter = locale/<lang>/LC_MESSAGES/developer/releases/version-scheme.po
+source_file = _doc/_build/gettext/developer/releases/version-scheme.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_developer_releases_schedules]
+file_filter = locale/<lang>/LC_MESSAGES/developer/releases/schedules.po
+source_file = _doc/_build/gettext/developer/releases/schedules.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_developer_releases_todo]
+file_filter = locale/<lang>/LC_MESSAGES/developer/releases/todo.po
+source_file = _doc/_build/gettext/developer/releases/todo.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_developer_releases_notes]
+file_filter = locale/<lang>/LC_MESSAGES/developer/releases/notes.po
+source_file = _doc/_build/gettext/developer/releases/notes.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_developer_releases_2_0_release-notes]
+file_filter = locale/<lang>/LC_MESSAGES/developer/releases/2_0/release-notes.po
+source_file = _doc/_build/gettext/developer/releases/2_0/release-notes.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_developer_releases_3_1_release-notes]
+file_filter = locale/<lang>/LC_MESSAGES/developer/releases/3_1/release-notes.po
+source_file = _doc/_build/gettext/developer/releases/3_1/release-notes.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_developer_releases_3_1_schedule]
+file_filter = locale/<lang>/LC_MESSAGES/developer/releases/3_1/schedule.po
+source_file = _doc/_build/gettext/developer/releases/3_1/schedule.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_developer_releases_3_0_release-notes]
+file_filter = locale/<lang>/LC_MESSAGES/developer/releases/3_0/release-notes.po
+source_file = _doc/_build/gettext/developer/releases/3_0/release-notes.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_developer_releases_3_0_schedule]
+file_filter = locale/<lang>/LC_MESSAGES/developer/releases/3_0/schedule.po
+source_file = _doc/_build/gettext/developer/releases/3_0/schedule.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_developer_releases_4_0_release-notes]
+file_filter = locale/<lang>/LC_MESSAGES/developer/releases/4_0/release-notes.po
+source_file = _doc/_build/gettext/developer/releases/4_0/release-notes.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_developer_releases_4_0_schedule]
+file_filter = locale/<lang>/LC_MESSAGES/developer/releases/4_0/schedule.po
+source_file = _doc/_build/gettext/developer/releases/4_0/schedule.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_developer_releases_3_2_release-notes]
+file_filter = locale/<lang>/LC_MESSAGES/developer/releases/3_2/release-notes.po
+source_file = _doc/_build/gettext/developer/releases/3_2/release-notes.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_developer_releases_3_2_schedule]
+file_filter = locale/<lang>/LC_MESSAGES/developer/releases/3_2/schedule.po
+source_file = _doc/_build/gettext/developer/releases/3_2/schedule.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_developer_releases_1_0_release-notes]
+file_filter = locale/<lang>/LC_MESSAGES/developer/releases/1_0/release-notes.po
+source_file = _doc/_build/gettext/developer/releases/1_0/release-notes.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_project-security_verifying-signatures]
+file_filter = locale/<lang>/LC_MESSAGES/project-security/verifying-signatures.po
+source_file = _doc/_build/gettext/project-security/verifying-signatures.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_project-security_canary-template]
+file_filter = locale/<lang>/LC_MESSAGES/project-security/canary-template.po
+source_file = _doc/_build/gettext/project-security/canary-template.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_project-security_pgp-keys]
+file_filter = locale/<lang>/LC_MESSAGES/project-security/pgp-keys.po
+source_file = _doc/_build/gettext/project-security/pgp-keys.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_project-security_canary-checklist]
+file_filter = locale/<lang>/LC_MESSAGES/project-security/canary-checklist.po
+source_file = _doc/_build/gettext/project-security/canary-checklist.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_project-security_qsb]
+file_filter = locale/<lang>/LC_MESSAGES/project-security/qsb.po
+source_file = _doc/_build/gettext/project-security/qsb.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_project-security_canary]
+file_filter = locale/<lang>/LC_MESSAGES/project-security/canary.po
+source_file = _doc/_build/gettext/project-security/canary.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_project-security_security-pack]
+file_filter = locale/<lang>/LC_MESSAGES/project-security/security-pack.po
+source_file = _doc/_build/gettext/project-security/security-pack.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_project-security_xsa]
+file_filter = locale/<lang>/LC_MESSAGES/project-security/xsa.po
+source_file = _doc/_build/gettext/project-security/xsa.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_project-security_qsb-template]
+file_filter = locale/<lang>/LC_MESSAGES/project-security/qsb-template.po
+source_file = _doc/_build/gettext/project-security/qsb-template.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_project-security_security]
+file_filter = locale/<lang>/LC_MESSAGES/project-security/security.po
+source_file = _doc/_build/gettext/project-security/security.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_project-security_qsb-checklist]
+file_filter = locale/<lang>/LC_MESSAGES/project-security/qsb-checklist.po
+source_file = _doc/_build/gettext/project-security/qsb-checklist.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_introduction_issue-tracking]
+file_filter = locale/<lang>/LC_MESSAGES/introduction/issue-tracking.po
+source_file = _doc/_build/gettext/introduction/issue-tracking.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_introduction_contributing]
+file_filter = locale/<lang>/LC_MESSAGES/introduction/contributing.po
+source_file = _doc/_build/gettext/introduction/contributing.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_introduction_screenshots]
+file_filter = locale/<lang>/LC_MESSAGES/introduction/screenshots.po
+source_file = _doc/_build/gettext/introduction/screenshots.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_introduction_video-tours]
+file_filter = locale/<lang>/LC_MESSAGES/introduction/video-tours.po
+source_file = _doc/_build/gettext/introduction/video-tours.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_introduction_code-of-conduct]
+file_filter = locale/<lang>/LC_MESSAGES/introduction/code-of-conduct.po
+source_file = _doc/_build/gettext/introduction/code-of-conduct.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_introduction_faq]
+file_filter = locale/<lang>/LC_MESSAGES/introduction/faq.po
+source_file = _doc/_build/gettext/introduction/faq.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_introduction_reporting-bugs]
+file_filter = locale/<lang>/LC_MESSAGES/introduction/reporting-bugs.po
+source_file = _doc/_build/gettext/introduction/reporting-bugs.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_introduction_privacy]
+file_filter = locale/<lang>/LC_MESSAGES/introduction/privacy.po
+source_file = _doc/_build/gettext/introduction/privacy.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_introduction_support]
+file_filter = locale/<lang>/LC_MESSAGES/introduction/support.po
+source_file = _doc/_build/gettext/introduction/support.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_introduction_statistics]
+file_filter = locale/<lang>/LC_MESSAGES/introduction/statistics.po
+source_file = _doc/_build/gettext/introduction/statistics.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_introduction_intro]
+file_filter = locale/<lang>/LC_MESSAGES/introduction/intro.po
+source_file = _doc/_build/gettext/introduction/intro.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_external_building-guides_building-whonix-template]
+file_filter = locale/<lang>/LC_MESSAGES/external/building-guides/building-whonix-template.po
+source_file = _doc/_build/gettext/external/building-guides/building-whonix-template.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_external_building-guides_building-non-fedora-template]
+file_filter = locale/<lang>/LC_MESSAGES/external/building-guides/building-non-fedora-template.po
+source_file = _doc/_build/gettext/external/building-guides/building-non-fedora-template.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_external_building-guides_building-archlinux-template]
+file_filter = locale/<lang>/LC_MESSAGES/external/building-guides/building-archlinux-template.po
+source_file = _doc/_build/gettext/external/building-guides/building-archlinux-template.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_external_os-guides_ubuntu]
+file_filter = locale/<lang>/LC_MESSAGES/external/os-guides/ubuntu.po
+source_file = _doc/_build/gettext/external/os-guides/ubuntu.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_external_os-guides_pentesting]
+file_filter = locale/<lang>/LC_MESSAGES/external/os-guides/pentesting.po
+source_file = _doc/_build/gettext/external/os-guides/pentesting.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_external_os-guides_netbsd]
+file_filter = locale/<lang>/LC_MESSAGES/external/os-guides/netbsd.po
+source_file = _doc/_build/gettext/external/os-guides/netbsd.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_external_os-guides_linux-hvm-tips]
+file_filter = locale/<lang>/LC_MESSAGES/external/os-guides/linux-hvm-tips.po
+source_file = _doc/_build/gettext/external/os-guides/linux-hvm-tips.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_external_os-guides_gentoo]
+file_filter = locale/<lang>/LC_MESSAGES/external/os-guides/gentoo.po
+source_file = _doc/_build/gettext/external/os-guides/gentoo.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_external_os-guides_centos]
+file_filter = locale/<lang>/LC_MESSAGES/external/os-guides/centos.po
+source_file = _doc/_build/gettext/external/os-guides/centos.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_external_os-guides_pentesting_ptf]
+file_filter = locale/<lang>/LC_MESSAGES/external/os-guides/pentesting/ptf.po
+source_file = _doc/_build/gettext/external/os-guides/pentesting/ptf.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_external_os-guides_pentesting_kali]
+file_filter = locale/<lang>/LC_MESSAGES/external/os-guides/pentesting/kali.po
+source_file = _doc/_build/gettext/external/os-guides/pentesting/kali.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_external_os-guides_pentesting_blackarch]
+file_filter = locale/<lang>/LC_MESSAGES/external/os-guides/pentesting/blackarch.po
+source_file = _doc/_build/gettext/external/os-guides/pentesting/blackarch.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_external_os-guides_windows_windows-vm]
+file_filter = locale/<lang>/LC_MESSAGES/external/os-guides/windows/windows-vm.po
+source_file = _doc/_build/gettext/external/os-guides/windows/windows-vm.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_external_os-guides_windows_windows-tools]
+file_filter = locale/<lang>/LC_MESSAGES/external/os-guides/windows/windows-tools.po
+source_file = _doc/_build/gettext/external/os-guides/windows/windows-tools.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_external_privacy-guides_torvm]
+file_filter = locale/<lang>/LC_MESSAGES/external/privacy-guides/torvm.po
+source_file = _doc/_build/gettext/external/privacy-guides/torvm.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_external_privacy-guides_signal]
+file_filter = locale/<lang>/LC_MESSAGES/external/privacy-guides/signal.po
+source_file = _doc/_build/gettext/external/privacy-guides/signal.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_external_privacy-guides_anonymizing-your-mac-address]
+file_filter = locale/<lang>/LC_MESSAGES/external/privacy-guides/anonymizing-your-mac-address.po
+source_file = _doc/_build/gettext/external/privacy-guides/anonymizing-your-mac-address.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_external_privacy-guides_tails]
+file_filter = locale/<lang>/LC_MESSAGES/external/privacy-guides/tails.po
+source_file = _doc/_build/gettext/external/privacy-guides/tails.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_external_privacy-guides_whonix]
+file_filter = locale/<lang>/LC_MESSAGES/external/privacy-guides/whonix.po
+source_file = _doc/_build/gettext/external/privacy-guides/whonix.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_external_troubleshooting_macbook-troubleshooting]
+file_filter = locale/<lang>/LC_MESSAGES/external/troubleshooting/macbook-troubleshooting.po
+source_file = _doc/_build/gettext/external/troubleshooting/macbook-troubleshooting.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_external_troubleshooting_intel-igfx-troubleshooting]
+file_filter = locale/<lang>/LC_MESSAGES/external/troubleshooting/intel-igfx-troubleshooting.po
+source_file = _doc/_build/gettext/external/troubleshooting/intel-igfx-troubleshooting.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_external_troubleshooting_nvidia-troubleshooting]
+file_filter = locale/<lang>/LC_MESSAGES/external/troubleshooting/nvidia-troubleshooting.po
+source_file = _doc/_build/gettext/external/troubleshooting/nvidia-troubleshooting.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_external_troubleshooting_tails-troubleshooting]
+file_filter = locale/<lang>/LC_MESSAGES/external/troubleshooting/tails-troubleshooting.po
+source_file = _doc/_build/gettext/external/troubleshooting/tails-troubleshooting.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_external_troubleshooting_sony-vaio-tinkering]
+file_filter = locale/<lang>/LC_MESSAGES/external/troubleshooting/sony-vaio-tinkering.po
+source_file = _doc/_build/gettext/external/troubleshooting/sony-vaio-tinkering.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_external_troubleshooting_thinkpad-troubleshooting]
+file_filter = locale/<lang>/LC_MESSAGES/external/troubleshooting/thinkpad-troubleshooting.po
+source_file = _doc/_build/gettext/external/troubleshooting/thinkpad-troubleshooting.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_external_troubleshooting_application-troubleshooting]
+file_filter = locale/<lang>/LC_MESSAGES/external/troubleshooting/application-troubleshooting.po
+source_file = _doc/_build/gettext/external/troubleshooting/application-troubleshooting.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_external_customization-guides_windows-template-customization]
+file_filter = locale/<lang>/LC_MESSAGES/external/customization-guides/windows-template-customization.po
+source_file = _doc/_build/gettext/external/customization-guides/windows-template-customization.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_external_customization-guides_fedora-minimal-template-customization]
+file_filter = locale/<lang>/LC_MESSAGES/external/customization-guides/fedora-minimal-template-customization.po
+source_file = _doc/_build/gettext/external/customization-guides/fedora-minimal-template-customization.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_external_customization-guides_dark-theme]
+file_filter = locale/<lang>/LC_MESSAGES/external/customization-guides/dark-theme.po
+source_file = _doc/_build/gettext/external/customization-guides/dark-theme.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_external_customization-guides_removing-templatevm-packages]
+file_filter = locale/<lang>/LC_MESSAGES/external/customization-guides/removing-templatevm-packages.po
+source_file = _doc/_build/gettext/external/customization-guides/removing-templatevm-packages.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_external_customization-guides_language-localization]
+file_filter = locale/<lang>/LC_MESSAGES/external/customization-guides/language-localization.po
+source_file = _doc/_build/gettext/external/customization-guides/language-localization.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_external_configuration-guides_w3m]
+file_filter = locale/<lang>/LC_MESSAGES/external/configuration-guides/w3m.po
+source_file = _doc/_build/gettext/external/configuration-guides/w3m.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_external_configuration-guides_change-time-zone]
+file_filter = locale/<lang>/LC_MESSAGES/external/configuration-guides/change-time-zone.po
+source_file = _doc/_build/gettext/external/configuration-guides/change-time-zone.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_external_configuration-guides_external-audio]
+file_filter = locale/<lang>/LC_MESSAGES/external/configuration-guides/external-audio.po
+source_file = _doc/_build/gettext/external/configuration-guides/external-audio.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_external_configuration-guides_postfix]
+file_filter = locale/<lang>/LC_MESSAGES/external/configuration-guides/postfix.po
+source_file = _doc/_build/gettext/external/configuration-guides/postfix.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_external_configuration-guides_mutt]
+file_filter = locale/<lang>/LC_MESSAGES/external/configuration-guides/mutt.po
+source_file = _doc/_build/gettext/external/configuration-guides/mutt.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_external_configuration-guides_multimedia]
+file_filter = locale/<lang>/LC_MESSAGES/external/configuration-guides/multimedia.po
+source_file = _doc/_build/gettext/external/configuration-guides/multimedia.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_external_configuration-guides_zfs]
+file_filter = locale/<lang>/LC_MESSAGES/external/configuration-guides/zfs.po
+source_file = _doc/_build/gettext/external/configuration-guides/zfs.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_external_configuration-guides_disk-trim]
+file_filter = locale/<lang>/LC_MESSAGES/external/configuration-guides/disk-trim.po
+source_file = _doc/_build/gettext/external/configuration-guides/disk-trim.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_external_configuration-guides_network-bridge-support]
+file_filter = locale/<lang>/LC_MESSAGES/external/configuration-guides/network-bridge-support.po
+source_file = _doc/_build/gettext/external/configuration-guides/network-bridge-support.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_external_configuration-guides_rxvt]
+file_filter = locale/<lang>/LC_MESSAGES/external/configuration-guides/rxvt.po
+source_file = _doc/_build/gettext/external/configuration-guides/rxvt.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_external_configuration-guides_vpn]
+file_filter = locale/<lang>/LC_MESSAGES/external/configuration-guides/vpn.po
+source_file = _doc/_build/gettext/external/configuration-guides/vpn.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_external_configuration-guides_fetchmail]
+file_filter = locale/<lang>/LC_MESSAGES/external/configuration-guides/fetchmail.po
+source_file = _doc/_build/gettext/external/configuration-guides/fetchmail.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_external_configuration-guides_multiboot]
+file_filter = locale/<lang>/LC_MESSAGES/external/configuration-guides/multiboot.po
+source_file = _doc/_build/gettext/external/configuration-guides/multiboot.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_external_configuration-guides_tips-and-tricks]
+file_filter = locale/<lang>/LC_MESSAGES/external/configuration-guides/tips-and-tricks.po
+source_file = _doc/_build/gettext/external/configuration-guides/tips-and-tricks.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_external_configuration-guides_network-printer]
+file_filter = locale/<lang>/LC_MESSAGES/external/configuration-guides/network-printer.po
+source_file = _doc/_build/gettext/external/configuration-guides/network-printer.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_external_configuration-guides_install-nvidia-driver]
+file_filter = locale/<lang>/LC_MESSAGES/external/configuration-guides/install-nvidia-driver.po
+source_file = _doc/_build/gettext/external/configuration-guides/install-nvidia-driver.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_external_security-guides_multifactor-authentication]
+file_filter = locale/<lang>/LC_MESSAGES/external/security-guides/multifactor-authentication.po
+source_file = _doc/_build/gettext/external/security-guides/multifactor-authentication.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_external_security-guides_security-guidelines]
+file_filter = locale/<lang>/LC_MESSAGES/external/security-guides/security-guidelines.po
+source_file = _doc/_build/gettext/external/security-guides/security-guidelines.pot
+source_lang = en
+type = PO
+
+[qubes-translation-rtd._doc__build_gettext_external_security-guides_split-bitcoin]
+file_filter = locale/<lang>/LC_MESSAGES/external/security-guides/split-bitcoin.po
+source_file = _doc/_build/gettext/external/security-guides/split-bitcoin.pot
+source_lang = en
+type = PO
+
