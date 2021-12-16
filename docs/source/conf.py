@@ -17,12 +17,12 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'qubes-docs'
+project = 'qubes-docs-translation'
 copyright = '2021, test'
 author = 'test'
 
-title = "Qubes Docs"
-html_title = "Qubes Docs"
+title = "Qubes Docs Translation"
+html_title = "Qubes Docs Translation"
 
 # The full version, including alpha/beta/rc tags
 release = '0.1'
@@ -137,4 +137,4 @@ gettext_compact=False
 
 epub_show_urls = 'footnote'
 latex_show_urls ='footnote'
-
+`
