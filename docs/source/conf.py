@@ -20,8 +20,9 @@
 project = 'qubes-docs'
 copyright = '2021, test'
 author = 'test'
-title = "German translation"
-html_title = "German translation"
+
+title = "Qubes Docs"
+html_title = "Qubes Docs"
 
 # The full version, including alpha/beta/rc tags
 release = '0.1'
@@ -33,7 +34,12 @@ release = '0.1'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-        'myst_parser'
+        'myst_parser',
+        'sphinx.ext.duration',
+        'sphinx.ext.doctest',
+        'sphinx.ext.autodoc',
+        'sphinx.ext.autosummary',
+        'sphinx.ext.intersphinx',
 ]
 
 myst_enable_extensions = [
@@ -49,7 +55,7 @@ myst_enable_extensions = [
     "smartquotes",
     "substitution",
     "tasklist",
-    "front-matter",
+#    "frontmatter",
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -80,7 +86,7 @@ exclude_patterns = []
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
+#html_static_path = ['_static']
 
 # html_static_path = ['../'] goes into recursion
 
@@ -93,18 +99,17 @@ html_static_path = ['_static']
 
 
 html_theme = 'classic'
+
 #html_theme = 'alabaster'
 html_theme_options = {
     'externalrefs': True, 
     #'bgcolor': '#eff2f6',
     'bgcolor': 'white',
-    'display_version': True,
     'linkcolor': '#99bfff',
     'textcolor': '#000000',
     'visitedlinkcolor': '#7b7b7b',
-    'style_nav_header_background': 'white',
     'bodyfont': '"Open Sans", Arial, sans-serif',
-    'codebgcolor': 'white',
+    'codebgcolor': '$color-qube-light',
     'codebgcolor': 'grey'
 }
 
@@ -115,27 +120,20 @@ html_theme_options = {
 
 
 
-
 #extensions = [
 #    'sphinx_jekyll_builder'
 #]
 
-extensions = [
-    'sphinx.ext.duration',
-    'sphinx.ext.doctest',
-    'sphinx.ext.autodoc',
-    'sphinx.ext.autosummary',
-    'sphinx.ext.intersphinx',
-]
-
-epub_show_urls = 'footnote'
-latex_show_urls ='footnote'
-source_parsers = {
-   '.md': 'recommonmark.parser.CommonMarkParser',
-}
+#source_parsers = {
+#   '.md': 'recommonmark.parser.CommonMarkParser',
+#}
 
 
-#source_suffix = ['.rst', '.md']
 
 gettext_uuid=True
 gettext_compact=False
+
+
+epub_show_urls = 'footnote'
+latex_show_urls ='footnote'
+
