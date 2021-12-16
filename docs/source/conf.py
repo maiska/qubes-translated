@@ -90,7 +90,8 @@ html_static_path = ['_static']
 
 
 #html_theme = 'alabaster'
-html_theme = 'classic'
+#html_theme = 'classic'
+html_theme = 'sphinx_rtd_theme'
 
 html_theme_options = {
     'externalrefs': True, 
