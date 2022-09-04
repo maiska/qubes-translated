@@ -1,3 +1,3 @@
 # qubes-translated
-Test repo for translated QubesOS website files 
+Test repo for translated QubesOS RST doc files 
 
